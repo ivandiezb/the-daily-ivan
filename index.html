@@ -64,6 +64,21 @@ h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
 .mast{display:grid;gap:6px;padding-bottom:20px;border-bottom:3px solid var(--ink)}
 .mast-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;position:relative}
 [hidden]{display:none!important}
+/* Masthead tools: theme toggle + editions */
+.mast-tools{display:inline-flex;align-items:center;gap:8px}
+.icon-btn{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:999px;border:1px solid var(--rule);background:var(--sheet);color:var(--ink);cursor:pointer;padding:0}
+.icon-btn:hover{border-color:var(--accent);color:var(--accent)}
+.icon-btn svg,.jump svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+#theme-btn .i-sun{display:none}
+#theme-btn[data-mode="dark"] .i-sun{display:block}
+#theme-btn[data-mode="dark"] .i-moon{display:none}
+/* Floating block navigation */
+.jump{position:fixed;right:max(14px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:40;display:flex;flex-direction:column;gap:8px}
+.jump button{width:42px;height:42px;border-radius:999px;border:1px solid var(--rule);background:var(--sheet);background:color-mix(in srgb,var(--sheet) 90%,transparent);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);color:var(--ink);box-shadow:0 4px 14px rgba(0,0,0,.16);display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.jump button:hover{border-color:var(--accent);color:var(--accent)}
+.jump svg{width:19px;height:19px}
+@media (max-width:480px){.jump{right:max(10px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom))}.jump button{width:38px;height:38px}}
+@media print{.jump,.mast-tools{display:none}}
 /* Archive: calendar of past editions */
 .cal-btn{display:inline-flex;align-items:center;gap:7px;font-family:var(--f-display);font-weight:650;font-stretch:88%;font-size:13.5px;color:var(--ink);background:var(--sheet);border:1px solid var(--rule);border-radius:999px;padding:6px 12px 6px 10px;cursor:pointer}
 .cal-btn:hover,.cal-btn[aria-expanded="true"]{border-color:var(--accent);color:var(--accent)}
@@ -225,7 +240,7 @@ section[id]{scroll-margin-top:56px}
 <body>
 <div class="wrap">
   <header class="mast" id="top">
-    <div class="mast-top"><span class="brand" id="brand">The Daily Iván</span><button type="button" class="cal-btn" id="cal-btn" aria-expanded="false" aria-controls="cal-pop" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Ediciones</span><span class="chev" aria-hidden="true"></span></button><div class="cal-pop" id="cal-pop" role="dialog" aria-label="Ediciones anteriores" hidden></div></div>
+    <div class="mast-top"><span class="brand" id="brand">The Daily Iván</span><span class="mast-tools"><button type="button" class="icon-btn" id="theme-btn" aria-label="Cambiar a tema oscuro" title="Tema claro / oscuro"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button><button type="button" class="cal-btn" id="cal-btn" aria-expanded="false" aria-controls="cal-pop" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Ediciones</span><span class="chev" aria-hidden="true"></span></button></span><div class="cal-pop" id="cal-pop" role="dialog" aria-label="Ediciones anteriores" hidden></div></div>
     <p class="slogan" id="slogan">Ahí van las noticias: lo que pasa en el mundo, contrastado y con fuentes.</p>
     <h1 id="edfecha"></h1>
     <p class="meta" id="edmeta"></p>
@@ -270,6 +285,8 @@ section[id]{scroll-margin-top:56px}
     <ul id="method"></ul>
   </aside>
 </div>
+
+<nav class="jump" id="jump" aria-label="Desplazamiento rápido"><button type="button" id="jump-top" aria-label="Ir al principio" title="Ir al principio" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h12M12 9v11M7 14l5-5 5 5"/></svg></button><button type="button" id="jump-prev" aria-label="Bloque anterior" title="Bloque anterior" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg></button><button type="button" id="jump-next" aria-label="Bloque siguiente" title="Bloque siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></nav>
 
 <script type="application/json" id="edition">
 {
@@ -1038,6 +1055,25 @@ section[id]{scroll-margin-top:56px}
   var MESES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
   var api = {}, io = null, shown = LATEST.fechaISO, booted = false;
 
+  /* Theme: follows the device unless the reader picks one; the choice is remembered on this device */
+  var ROOT = document.documentElement;
+  var DARKQ = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : {matches:false};
+  try { var savedTheme = localStorage.getItem('parte.theme'); if (savedTheme === 'light' || savedTheme === 'dark') ROOT.setAttribute('data-theme', savedTheme); } catch(e){}
+  function effectiveTheme(){ var t = ROOT.getAttribute('data-theme'); return (t === 'light' || t === 'dark') ? t : (DARKQ.matches ? 'dark' : 'light'); }
+  function paintThemeBtn(){
+    var b = document.getElementById('theme-btn'); if (!b) return;
+    var cur = effectiveTheme();
+    b.setAttribute('data-mode', cur);
+    b.setAttribute('aria-label', cur === 'dark' ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro');
+  }
+  function toggleTheme(){
+    var next = effectiveTheme() === 'dark' ? 'light' : 'dark';
+    ROOT.setAttribute('data-theme', next);
+    try { localStorage.setItem('parte.theme', next); } catch(e){}
+    paintThemeBtn();
+  }
+  if (DARKQ.addEventListener) DARKQ.addEventListener('change', paintThemeBtn);
+
   var CONF = {
     'confirmado':'confirmada por varias fuentes o por fuente oficial','una-fuente':'una sola fuente','en-desarrollo':'en desarrollo, puede cambiar',
     'seguimiento':'seguimiento de una noticia anterior','agenda':'previsto hoy, sin resultado conocido'
@@ -1364,6 +1400,8 @@ section[id]{scroll-margin-top:56px}
 
     /* Calendar button lives in the masthead, so wire it after every render */
     document.getElementById('cal-btn').addEventListener('click', function(){ calToggle(); });
+    document.getElementById('theme-btn').addEventListener('click', toggleTheme);
+    paintThemeBtn();
   }
 
   /* Balanced two-column layout of a block's dispatches */
@@ -1504,7 +1542,49 @@ section[id]{scroll-margin-top:56px}
   });
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape') calClose(); });
 
+  /* Floating navigation: jump to the top, or block by block */
+  var SMOOTH = !(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  function headOffset(){ var n = document.querySelector('.secnav'); return (n ? n.getBoundingClientRect().height : 0) + 14; }
+  function blockList(){ return Array.prototype.filter.call(document.querySelectorAll('.wrap section[id]'), function(s){ return s.offsetParent !== null; }); }
+  function scrollToY(y){ window.scrollTo({top: Math.max(0, y), behavior: SMOOTH ? 'smooth' : 'auto'}); }
+  var lastJump = {el: null, at: 0};
+  function goBlock(dir){
+    var o = headOffset(), list = blockList(), target = null;
+    /* Quick repeated taps: count from the block we are already heading to, not from mid-scroll */
+    var k = lastJump.el ? list.indexOf(lastJump.el) : -1;
+    if (k >= 0 && Date.now() - lastJump.at < 900){
+      target = list[k + dir] || null;
+      if (!target){ scrollToY(dir > 0 ? document.documentElement.scrollHeight : 0); return; }
+      lastJump = {el: target, at: Date.now()};
+      scrollToY(target.getBoundingClientRect().top + window.scrollY - o);
+      return;
+    }
+    if (dir > 0){
+      for (var i = 0; i < list.length; i++){ if (list[i].getBoundingClientRect().top > o + 6){ target = list[i]; break; } }
+      if (!target){ scrollToY(document.documentElement.scrollHeight); return; }
+    } else {
+      for (var j = list.length - 1; j >= 0; j--){ if (list[j].getBoundingClientRect().top < o - 6){ target = list[j]; break; } }
+      if (!target){ scrollToY(0); return; }
+    }
+    lastJump = {el: target, at: Date.now()};
+    scrollToY(target.getBoundingClientRect().top + window.scrollY - o);
+  }
+  document.getElementById('jump-top').addEventListener('click', function(){ scrollToY(0); });
+  document.getElementById('jump-prev').addEventListener('click', function(){ goBlock(-1); });
+  document.getElementById('jump-next').addEventListener('click', function(){ goBlock(1); });
+  var jumpTick = false;
+  function paintJump(){
+    jumpTick = false;
+    var y = window.scrollY, atEnd = y + window.innerHeight >= document.documentElement.scrollHeight - 40;
+    document.getElementById('jump-top').hidden = y < 300;
+    document.getElementById('jump-prev').hidden = y < 120;
+    document.getElementById('jump-next').hidden = atEnd;
+  }
+  window.addEventListener('scroll', function(){ if (!jumpTick){ jumpTick = true; requestAnimationFrame(paintJump); } }, {passive: true});
+  window.addEventListener('resize', paintJump);
+
   render(LATEST);
+  paintJump();
   var h = location.hash;
   var m = /^#ed=(\d{4}-\d{2}-\d{2})$/.exec(h);
   if (m && m[1] !== LATEST.fechaISO) openEdition(m[1], true);
