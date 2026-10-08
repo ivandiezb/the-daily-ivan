@@ -1,0 +1,1517 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Jueves, 8 de octubre de 2026. Ahí van las noticias: lo que pasa en el mundo, contrastado y con fuentes">
+<meta property="og:title" content="The Daily Iván">
+<meta property="og:description" content="Jueves, 8 de octubre de 2026. Ahí van las noticias: lo que pasa en el mundo, contrastado y con fuentes">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23FFEFA0'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='%233D3400'%3EDI%3C/text%3E%3C/svg%3E">
+<title>The Daily Iván</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: one reading column (~68ch) — masthead, ranked keys, market panel, sticky section index, then dispatches coded by section (M1, G2…) */
+:root{
+  --paper:#EEF1F4; --sheet:#FFFFFF; --ink:#141B23; --ink-2:#4B5765; --rule:#D5DCE4;
+  --accent:#1D4A93; --accent-soft:#E3EAF5;
+  --hl:#FFEFA0; --hl-ink:#3D3400;
+  --blue-band:#DCE5F2; --blue-ink:#14325F; --blue-ink2:#465C7E; --blue-lbl:#3A659F;
+  --gray-band:#E2E5E9; --gray-ink:#262D36; --gray-ink2:#5A6470; --gray-lbl:#5A6470;
+  --sand-band:#F3E4CC; --sand-ink:#5E3A10; --sand-ink2:#86602F; --sand-lbl:#8A5A1E;
+  --green-band:#DCEDE2; --green-ink:#174A2C; --green-ink2:#47705A; --green-lbl:#2E7149;
+  --up:#16703D; --down:#B3261E; --warn:#9A5800; --neutral:#5B6673;
+  --f-display:"Archivo","Arial Narrow","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --f-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E1318; --sheet:#151C24; --ink:#E6EBF0; --ink-2:#9DA9B6; --rule:#2A3440;
+    --accent:#8FB0EA; --accent-soft:#1B2A42;
+    --hl:#4A4219; --hl-ink:#FFEFA0;
+    --blue-band:#1C2B44; --blue-ink:#DCE7FA; --blue-ink2:#A3B6D6; --blue-lbl:#93B2E4;
+    --gray-band:#232A33; --gray-ink:#E1E6EC; --gray-ink2:#A2ADB9; --gray-lbl:#A2ADB9;
+    --sand-band:#3A2C19; --sand-ink:#F4DDB8; --sand-ink2:#CDB08A; --sand-lbl:#DDB57E;
+    --green-band:#18301F; --green-ink:#CFEBD8; --green-ink2:#93BFA2; --green-lbl:#86C79C;
+    --up:#55C98F; --down:#F2867C; --warn:#E6AE55; --neutral:#9DA9B6;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E1318; --sheet:#151C24; --ink:#E6EBF0; --ink-2:#9DA9B6; --rule:#2A3440;
+  --accent:#8FB0EA; --accent-soft:#1B2A42;
+  --hl:#4A4219; --hl-ink:#FFEFA0;
+  --blue-band:#1C2B44; --blue-ink:#DCE7FA; --blue-ink2:#A3B6D6; --blue-lbl:#93B2E4;
+  --gray-band:#232A33; --gray-ink:#E1E6EC; --gray-ink2:#A2ADB9; --gray-lbl:#A2ADB9;
+  --sand-band:#3A2C19; --sand-ink:#F4DDB8; --sand-ink2:#CDB08A; --sand-lbl:#DDB57E;
+  --green-band:#18301F; --green-ink:#CFEBD8; --green-ink2:#93BFA2; --green-lbl:#86C79C;
+  --up:#55C98F; --down:#F2867C; --warn:#E6AE55; --neutral:#9DA9B6;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.48;margin:0}
+.wrap{max-width:720px;margin:0 auto;padding-inline:18px;padding-block:28px 64px}
+a{color:var(--accent);text-underline-offset:2px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
+
+/* Masthead */
+.mast{display:grid;gap:6px;padding-bottom:20px;border-bottom:3px solid var(--ink)}
+.mast-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;position:relative}
+[hidden]{display:none!important}
+/* Archive: calendar of past editions */
+.cal-btn{display:inline-flex;align-items:center;gap:7px;font-family:var(--f-display);font-weight:650;font-stretch:88%;font-size:13.5px;color:var(--ink);background:var(--sheet);border:1px solid var(--rule);border-radius:999px;padding:6px 12px 6px 10px;cursor:pointer}
+.cal-btn:hover,.cal-btn[aria-expanded="true"]{border-color:var(--accent);color:var(--accent)}
+.cal-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.cal-btn .chev{width:7px;height:7px;border-width:0 1.8px 1.8px 0;margin-left:1px}
+.cal-btn[aria-expanded="true"] .chev{transform:translateY(2px) rotate(225deg)}
+.cal-pop{position:absolute;right:0;top:calc(100% + 8px);z-index:30;width:min(304px,calc(100vw - 32px));background:var(--sheet);color:var(--ink);border:1px solid var(--rule);border-radius:10px;box-shadow:0 12px 32px rgba(0,0,0,.22);padding:12px 12px 10px}
+.cal-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}
+.cal-title{font-family:var(--f-display);font-weight:700;font-stretch:88%;font-size:15.5px;text-transform:capitalize}
+.cal-nav{width:34px;height:34px;border-radius:999px;border:1px solid var(--rule);background:transparent;color:var(--ink);font-size:19px;line-height:1;cursor:pointer}
+.cal-nav:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+.cal-nav:disabled{opacity:.35;cursor:default}
+.cal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;text-align:center}
+.cal-wd{font-family:var(--f-mono);font-size:11px;color:var(--ink-2);padding:2px 0 4px}
+.cal-day{font-family:var(--f-mono);font-size:13px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:8px;border:1px solid transparent;background:transparent;color:var(--ink);font-variant-numeric:tabular-nums;padding:0}
+.cal-day.off{color:var(--ink-2);opacity:.5}
+button.cal-day{cursor:pointer;background:var(--accent-soft);color:var(--accent);font-weight:600}
+button.cal-day:hover{border-color:var(--accent)}
+button.cal-day.sel{background:var(--accent);color:var(--sheet)}
+.cal-foot{margin:10px 2px 0;font-size:12.5px;font-style:italic;color:var(--ink-2)}
+.arch-note{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin:4px 0 0;padding:8px 12px;border-radius:6px;background:var(--hl);color:var(--hl-ink);font-family:var(--f-display);font-size:14px;font-weight:600;font-stretch:90%}
+.arch-note button{font:inherit;color:inherit;background:transparent;border:0;padding:0;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.brand{font-family:var(--f-display);font-weight:800;font-stretch:75%;text-transform:uppercase;letter-spacing:.14em;font-size:15px;background:var(--hl);color:var(--hl-ink);padding:3px 9px;border-radius:4px}
+.mast h1{font-size:clamp(29px,6.2vw,42px);font-weight:750;font-stretch:82%;line-height:1.08;letter-spacing:-.01em}
+.meta{font-family:var(--f-mono);font-style:italic;font-size:12px;color:var(--ink-2);margin:0}
+.slogan{margin:0;font-style:italic;font-size:14px;color:var(--ink-2)}
+.meta b{color:var(--ink);font-weight:600}
+.lede{margin:6px 0 0;color:var(--ink-2);font-size:14.5px}
+
+/* Section scaffolding */
+section{padding-top:24px}
+/* Block headers: a tinted band that reads one level above the dispatches; tap to fold */
+section{--band:var(--blue-band);--band-ink:var(--blue-ink);--band-ink-2:var(--blue-ink2);--lbl:var(--blue-lbl)}
+.k-gray{--band:var(--gray-band);--band-ink:var(--gray-ink);--band-ink-2:var(--gray-ink2);--lbl:var(--gray-lbl)}
+.k-sand{--band:var(--sand-band);--band-ink:var(--sand-ink);--band-ink-2:var(--sand-ink2);--lbl:var(--sand-lbl)}
+.k-green{--band:var(--green-band);--band-ink:var(--green-ink);--band-ink-2:var(--green-ink2);--lbl:var(--green-lbl)}
+.sec-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:6px}
+.sec-head h2{font-size:24px;font-weight:780;font-stretch:84%;letter-spacing:.003em;line-height:1.15;width:100%}
+.sec-head .count{font-family:var(--f-mono);font-size:12px;color:var(--ink-2);white-space:nowrap}
+.sec-btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;background:var(--band);color:var(--band-ink);border:0;border-radius:6px;padding:12px 14px;cursor:pointer;font:inherit}
+.sec-btn:hover{filter:brightness(.98)}
+.sec-btn .count{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-mono);font-weight:400;font-stretch:100%;font-size:12px;color:var(--band-ink-2);white-space:nowrap}
+.chev{display:inline-block;width:9px;height:9px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+.sec-btn[aria-expanded="false"] .chev{transform:rotate(-45deg)}
+@media (prefers-reduced-motion:no-preference){.chev{transition:transform .18s ease}}
+.sec-body{padding-top:2px}
+.blk-tools{display:flex;justify-content:flex-end;gap:4px;align-items:center;margin-top:8px;font-family:var(--f-mono);font-size:12px;color:var(--ink-2)}
+.blk-tools button{font:inherit;color:var(--accent);background:transparent;border:0;padding:4px 6px;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.sec-note{font-size:14px;color:var(--ink-2);font-style:italic;margin:8px 0 0}
+
+/* Keys */
+.keys{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:12px}
+.keys li{display:grid;grid-template-columns:2.2em minmax(0,1fr);gap:10px;align-items:baseline}
+.keys .n{font-family:var(--f-mono);font-weight:600;font-size:14px;color:var(--accent);font-variant-numeric:tabular-nums}
+.keys p{margin:0}
+.keys a.ref{font-family:var(--f-mono);font-size:12px;white-space:nowrap;margin-left:4px;text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:3px}
+.keys a.ref:hover{text-decoration-color:var(--accent)}
+
+/* Market panel */
+.panel{background:var(--sheet);border:1px solid var(--rule);border-radius:6px;margin-top:8px}
+.mk-block{padding-top:18px}
+.mk-title{display:flex;align-items:baseline;justify-content:space-between;gap:10px;font-family:var(--f-display);font-weight:700;font-stretch:85%;text-transform:uppercase;letter-spacing:.08em;font-size:12px;color:var(--lbl)}
+.mk-title span{font-family:var(--f-mono);font-weight:400;text-transform:none;letter-spacing:0;color:var(--ink-2)}
+.sec-ico{display:inline-flex;width:24px;height:24px;margin-right:10px;flex:none;vertical-align:-4px}
+.sec-ico svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.sec-btn > span:first-child{display:inline-flex;align-items:center;min-width:0}
+.panel-bar{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;justify-content:space-between;padding:10px 14px;border-bottom:1px solid var(--rule)}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:999px;padding:2px;background:var(--paper)}
+.seg button{font-family:var(--f-mono);font-size:12.5px;border:0;background:transparent;color:var(--ink-2);padding:4px 10px;border-radius:999px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--sheet)}
+.seg-label{font-family:var(--f-display);font-weight:650;font-stretch:85%;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2);margin-right:6px}
+.seg-wrap{display:flex;align-items:center}
+.mk{display:grid;grid-template-columns:minmax(0,1fr) auto auto;column-gap:12px;row-gap:2px;padding:7px 14px;border-top:1px solid var(--rule);align-items:center}
+.mk:first-of-type{border-top:0}
+.mk .name{font-family:var(--f-display);font-weight:650;font-stretch:88%;font-size:14.5px;line-height:1.2}
+.mk .unit{display:block;font-family:var(--f-mono);font-weight:400;font-stretch:100%;font-size:11px;color:var(--ink-2);margin-top:1px}
+.mk .val,.mk .chg{font-family:var(--f-mono);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap;border:0;background:transparent;color:inherit;padding:4px 6px;margin:-4px -6px;border-radius:4px}
+.mk .val{font-size:14px;color:var(--ink)}
+.mk .chg{font-size:12.5px;min-width:6.4em}
+.mk button.val,.mk button.chg{cursor:pointer;text-decoration:underline dotted;text-decoration-color:var(--rule);text-underline-offset:4px}
+.mk button.val:hover,.mk button.chg:hover{background:var(--accent-soft)}
+.mk .sub{display:block;font-family:var(--f-mono);font-weight:400;font-stretch:100%;font-size:10.5px;color:var(--ink-2);margin-top:1px;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mk .name{min-width:0}
+.mk .sub a{color:var(--ink-2)}
+.up{color:var(--up)!important} .down{color:var(--down)!important} .flat{color:var(--neutral)!important}
+.panel-note{font-size:13px;color:var(--ink-2);margin:10px 2px 0}
+
+/* Sticky index */
+.secnav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);margin-top:26px;border-block:1px solid var(--rule)}
+.secnav ul{list-style:none;margin:0;padding:8px 0;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.secnav ul::-webkit-scrollbar{display:none}
+.secnav a{display:block;white-space:nowrap;font-family:var(--f-display);font-weight:600;font-stretch:85%;font-size:13px;text-decoration:none;color:var(--ink);padding:5px 10px;border:1px solid var(--rule);border-radius:999px;background:var(--sheet)}
+.secnav a:hover{border-color:var(--accent);color:var(--accent)}
+.secnav a.on{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+:target{scroll-margin-top:64px}
+section[id]{scroll-margin-top:56px}
+
+/* Dispatch items */
+.item{padding:20px 0 18px;border-bottom:1px solid var(--rule);scroll-margin-top:64px}
+.item:last-child{border-bottom:0}
+.item-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.code{font-family:var(--f-mono);font-weight:600;font-size:12px;color:var(--sheet);background:var(--ink);padding:1px 7px;border-radius:3px;letter-spacing:.04em}
+.item h3{font-size:19px;font-weight:680;font-stretch:90%;line-height:1.26}
+.item h3{text-wrap:pretty}
+.item.breve h3{font-size:17px}
+.item.breve .blk p{font-size:15px}
+.item h3 .code{position:relative;top:-2px;margin-right:8px;opacity:.7}
+.blk{margin-top:10px}
+.lbl{display:block;font-family:var(--f-display);font-weight:700;font-stretch:85%;text-transform:uppercase;letter-spacing:.08em;font-size:10px;color:var(--lbl);margin-bottom:1px}
+.blk p{margin:0}
+.contrast{margin:10px 0 0;font-size:13.5px;font-style:italic;color:var(--ink-2)}
+.status{display:block;margin-top:2px}
+.foot{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;justify-content:space-between}
+.srcs{font-family:var(--f-body);font-style:italic;font-size:13px;color:var(--ink-2);line-height:1.5;min-width:0;flex:1 1 300px}
+.srcs a{color:var(--ink-2)}
+.deep{font-family:var(--f-display);font-weight:650;font-stretch:88%;font-size:13px;color:var(--accent);background:var(--accent-soft);border:1px solid transparent;border-radius:5px;padding:7px 12px;cursor:pointer}
+.deep:hover{border-color:var(--accent)}
+.deep[data-done]{color:var(--up);background:transparent;border-color:var(--up)}
+.fallback{width:100%;margin-top:8px;font-family:var(--f-mono);font-size:12.5px;color:var(--ink);background:var(--sheet);border:1px solid var(--rule);border-radius:5px;padding:8px;min-height:90px}
+
+/* Radar & agenda */
+.radar,.agenda{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:0}
+.radar li{position:relative;padding:9px 0 9px 20px;border-bottom:1px solid var(--rule);font-size:15px}
+.radar li::before{content:"";position:absolute;left:4px;top:19px;width:6px;height:6px;border-radius:50%;background:var(--gray-lbl)}
+.radar li:last-child,.agenda li:last-child{border-bottom:0}
+.radar .who{font-style:italic;font-size:13px;color:var(--ink-2);margin-left:6px;white-space:nowrap}
+.agenda li{display:grid;grid-template-columns:5.6em minmax(0,1fr);gap:12px;padding:9px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.agenda .d{font-family:var(--f-mono);font-size:12.5px;font-weight:600;color:var(--accent);font-variant-numeric:tabular-nums;border-left:3px solid var(--sand-lbl);padding-left:8px;line-height:1.3}
+.agenda .area{display:block;font-family:var(--f-display);font-weight:700;font-stretch:85%;text-transform:uppercase;letter-spacing:.08em;font-size:11px;color:var(--ink-2)}
+.method{margin-top:34px;padding:16px 16px 6px;background:var(--sheet);border:1px solid var(--rule);border-radius:6px;font-size:14px;color:var(--ink-2)}
+.method h2{font-size:15px;font-stretch:85%;text-transform:uppercase;letter-spacing:.09em;color:var(--ink);margin-bottom:6px}
+.method ul{margin:0;padding-left:18px}
+.method li{margin-bottom:8px}
+
+@media (max-width:480px){
+  body{font-size:15.5px}
+  .mk{column-gap:10px}
+  .item h3{font-size:18px}
+  .sec-head h2{font-size:21px}
+}
+@media (min-width:760px){
+  .wrap{max-width:840px;padding-inline:28px}
+}
+@media (min-width:980px){
+  .wrap{max-width:1180px;padding-inline:36px}
+  .lede{font-size:16.5px}
+  .keys{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:44px}
+  .cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:48px;align-items:start}
+  .cols .col > .item:last-child{border-bottom:0}
+  #panel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  #panel .mk:nth-child(2){border-top:0}
+  #panel .mk:nth-child(odd){border-right:1px solid var(--rule)}
+  .radar,.agenda{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:44px}
+  .radar li:nth-last-child(2):nth-child(odd),.agenda li:nth-last-child(2):nth-child(odd){border-bottom:0}
+}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mast" id="top">
+    <div class="mast-top"><span class="brand" id="brand">The Daily Iván</span><button type="button" class="cal-btn" id="cal-btn" aria-expanded="false" aria-controls="cal-pop" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Ediciones</span><span class="chev" aria-hidden="true"></span></button><div class="cal-pop" id="cal-pop" role="dialog" aria-label="Ediciones anteriores" hidden></div></div>
+    <p class="slogan" id="slogan">Ahí van las noticias: lo que pasa en el mundo, contrastado y con fuentes.</p>
+    <h1 id="edfecha"></h1>
+    <p class="meta" id="edmeta"></p>
+    <p class="arch-note" id="arch-note" hidden>Estás leyendo una edición anterior.<button type="button" id="arch-back">Volver a la última</button></p>
+    <p class="lede" id="edlede"></p>
+  </header>
+
+  <section id="claves" class="k-gray" aria-labelledby="h-claves">
+    <div class="sec-head"><h2 id="h-claves">Las 5 claves</h2></div>
+    <ol class="keys" id="keys"></ol>
+  </section>
+
+  <div id="datos" class="mk-block">
+    <div class="mk-title">Indicadores de mercado<span id="mkcount"></span></div>
+    <div class="panel">
+      <div class="panel-bar">
+        <div class="seg-wrap"><span class="seg-label">Moneda</span><span class="seg" role="group" aria-label="Moneda"><button type="button" id="cur-usd" aria-pressed="true">$</button><button type="button" id="cur-eur" aria-pressed="false">€</button></span></div>
+        <div class="seg-wrap"><span class="seg-label">Variación</span><span class="seg" role="group" aria-label="Variación"><button type="button" id="chg-pct" aria-pressed="true">%</button><button type="button" id="chg-abs" aria-pressed="false">cifra</button></span></div>
+      </div>
+      <div id="panel"></div>
+    </div>
+    <p class="panel-note" id="panelnote"></p>
+  </div>
+
+  <nav class="secnav" aria-label="Secciones"><ul id="secnav"></ul></nav>
+  <div class="blk-tools"><span>Bloques:</span><button type="button" id="open-all">abrir todos</button><span aria-hidden="true">·</span><button type="button" id="close-all">cerrar todos</button></div>
+
+  <div id="sections"></div>
+
+  <section id="radar" class="k-gray" aria-labelledby="h-radar">
+    <div class="sec-head"><h2 id="h-radar">Otras noticias en el radar</h2><span class="count">en una línea</span></div>
+    <ul class="radar" id="radarlist"></ul>
+  </section>
+
+  <section id="agenda" class="k-sand" aria-labelledby="h-agenda">
+    <div class="sec-head"><h2 id="h-agenda">Agenda: lo que viene</h2><span class="count">fechas a vigilar</span></div>
+    <ul class="agenda" id="agendalist"></ul>
+  </section>
+
+  <aside class="method" aria-labelledby="h-method">
+    <h2 id="h-method">Cómo se ha hecho</h2>
+    <ul id="method"></ul>
+  </aside>
+</div>
+
+<script type="application/json" id="edition">
+{
+ "fechaISO": "2026-10-08",
+ "fechaTexto": "Jueves, 8 de octubre de 2026",
+ "tipo": "",
+ "cierre": "13:15",
+ "lede": "Jueves de pantallas en rojo: el Ibex pierde los 19.000 puntos mientras el Brent se instala por encima de los 100 dólares, que empieza a parecer su domicilio habitual. En Ucrania, un ataque ruso contra dos autobuses deja al menos 33 muertos en Kramatorsk. En España la precampaña del 29-N ya rueda, con los decretos de vivienda de vuelta en el BOE, retocados pero reconocibles. Y el oro, el refugio que debía brillar en plena guerra, ha preferido pasar desapercibido.",
+ "claves": [
+  {
+   "t": "El Ibex pierde los 19.000 puntos y marca mínimos desde junio: el crudo por encima de 100 $ y unos bonos en máximos de varios años reavivan el miedo a la inflación y a más subidas de tipos de la Fed.",
+   "ref": "M1"
+  },
+  {
+   "t": "Ormuz se recalienta: suben los ataques a petroleros y, según The Atlantic, la Casa Blanca estudia atacar Irán antes de las elecciones de mitad de mandato del 3 de noviembre. El Brent sube un 2,4 %.",
+   "ref": "G1"
+  },
+  {
+   "t": "Ucrania: al menos 33 muertos en un ataque ruso con una bomba guiada contra dos autobuses en Kramatorsk.",
+   "ref": "G2"
+  },
+  {
+   "t": "España ya está en campaña: elecciones generales el 29 de noviembre y los dos decretos de vivienda, de vuelta en el BOE a la espera de convalidación.",
+   "ref": "E1"
+  },
+  {
+   "t": "Vivienda: los decretos apenas tocan el alquiler en Madrid por ahora, porque la región no tiene municipios declarados zona tensionada.",
+   "ref": "V1"
+  }
+ ],
+ "mercados": [
+  {
+   "n": "Ibex 35",
+   "tipo": "indice",
+   "v": 18854.2,
+   "dec": 1,
+   "prev": 19118,
+   "c": -1.38,
+   "s": "≈12:00 · Estrategias de Inversión",
+   "u": "https://www.estrategiasdeinversion.com/actualidad/la-bolsa-hoy-en-directo/08-10-2026"
+  },
+  {
+   "n": "S&P 500",
+   "tipo": "indice",
+   "v": 7801.77,
+   "dec": 2,
+   "prev": 7818.93,
+   "c": -0.22,
+   "s": "cierre 7 oct · Estrategias de Inversión / Euronews",
+   "u": "https://www.estrategiasdeinversion.com/actualidad/noticias/bolsa-eeuu/dow-jones-sp-500-y-nasdaq-caen-al-cierre-tras-n-958279"
+  },
+  {
+   "n": "Nasdaq Composite",
+   "tipo": "indice",
+   "v": 27538.69,
+   "dec": 2,
+   "prev": 27599.79,
+   "c": -0.22,
+   "s": "cierre 7 oct · iProUP / Euronews",
+   "u": "https://www.iproup.com/finanzas/72167-wall-street-ajusta-posiciones-este-miercoles-7-de-octubre"
+  },
+  {
+   "n": "Dow Jones",
+   "tipo": "indice",
+   "v": 51179.87,
+   "dec": 2,
+   "prev": 51521.28,
+   "c": -0.66,
+   "s": "cierre 7 oct · El CEO",
+   "u": "https://elceo.com/mercados/bmv-ipc-wall-street-hoy-7-de-octubre-de-2026-cierre/"
+  },
+  {
+   "n": "Brent",
+   "tipo": "usd",
+   "por": "barril",
+   "v": 102.68,
+   "dec": 2,
+   "c": 2.4,
+   "s": "primera hora 8 oct · Euronews/AP",
+   "u": "https://es.euronews.com/2026/10/08/el-precio-del-petroleo-sube-ante-el-temor-a-una-guerra-creciente-con-iran"
+  },
+  {
+   "n": "WTI",
+   "tipo": "usd",
+   "por": "barril",
+   "v": 90.2,
+   "dec": 2,
+   "c": 2.2,
+   "s": "primera hora 8 oct · Euronews/AP",
+   "u": "https://es.euronews.com/2026/10/08/el-precio-del-petroleo-sube-ante-el-temor-a-una-guerra-creciente-con-iran"
+  },
+  {
+   "n": "Oro",
+   "tipo": "usd",
+   "por": "onza",
+   "v": 4119.66,
+   "dec": 2,
+   "c": 0.21,
+   "s": "≈12:00 · Estrategias de Inversión",
+   "u": "https://www.estrategiasdeinversion.com/actualidad/la-bolsa-hoy-en-directo/08-10-2026"
+  },
+  {
+   "n": "Bitcoin",
+   "tipo": "usd",
+   "v": 82637.5,
+   "dec": 0,
+   "c": -1.35,
+   "s": "≈12:00 · Estrategias de Inversión",
+   "u": "https://www.estrategiasdeinversion.com/actualidad/la-bolsa-hoy-en-directo/08-10-2026"
+  },
+  {
+   "n": "Euro / dólar",
+   "tipo": "divisa",
+   "v": 1.1183,
+   "dec": 4,
+   "c": -0.11,
+   "s": "≈12:00 · Estrategias de Inversión",
+   "u": "https://www.estrategiasdeinversion.com/actualidad/la-bolsa-hoy-en-directo/08-10-2026"
+  },
+  {
+   "n": "Bono EE. UU. 10 años",
+   "tipo": "rent",
+   "v": 5.32,
+   "dec": 2,
+   "c": null,
+   "s": "mañana 8 oct · Euronews/AP",
+   "u": "https://es.euronews.com/2026/10/08/el-precio-del-petroleo-sube-ante-el-temor-a-una-guerra-creciente-con-iran"
+  },
+  {
+   "n": "Bono alemán 10 años",
+   "tipo": "rent",
+   "v": 3.48,
+   "dec": 2,
+   "c": null,
+   "s": "mañana 8 oct · Euronews/AP",
+   "u": "https://es.euronews.com/2026/10/08/el-precio-del-petroleo-sube-ante-el-temor-a-una-guerra-creciente-con-iran"
+  },
+  {
+   "n": "Bono francés 10 años",
+   "tipo": "rent",
+   "v": 4.89,
+   "dec": 2,
+   "c": null,
+   "s": "mañana 8 oct · Euronews/AP",
+   "u": "https://es.euronews.com/2026/10/08/el-precio-del-petroleo-sube-ante-el-temor-a-una-guerra-creciente-con-iran"
+  },
+  {
+   "n": "Bono español 10 años",
+   "tipo": "rent",
+   "v": 4.17,
+   "dec": 2,
+   "c": null,
+   "s": "último dato verificado: 1 oct · Investing",
+   "u": "https://www.investing.com/rates-bonds/spain-10-year-bond-yield-historical-data"
+  }
+ ],
+ "mercadosNota": "Cifras de prensa económica con su hora y fuente: orientativas, no cotizaciones en tiempo real. Los índices van en puntos; materias primas y bitcoin, en dólares, y su conversión a euros usa el cambio de 1,1183 $/€ (≈12:00). Cuando falta el cierre anterior, la variación en cifra se calcula a partir del porcentaje y aparece con ≈. En euros, la variación no recoge el movimiento del tipo de cambio. Los bonos se expresan en rentabilidad anual.",
+ "secciones": [
+  {
+   "id": "mercados",
+   "titulo": "Economía y mercados",
+   "items": [
+    {
+     "code": "M1",
+     "conf": "confirmado",
+     "titulo": "El Ibex pierde los 19.000 puntos: el crudo y los bonos mandan",
+     "hecho": "El Ibex caía entre un 1,2 % y un 1,4 % a media sesión, hasta la zona de 18.850–18.880 puntos, su nivel más bajo desde junio. Viene de perder un 1,68 % el miércoles, con cierre en 19.118. IAG (−3,2 %) y ArcelorMittal (−3,1 %) encabezaban las caídas; Repsol y Enagás subían con el petróleo. Wall Street cerró el miércoles en rojo tras publicarse las actas de la Reserva Federal.",
+     "importa": "La caída no nace de un problema español, sino de la pinza entre petróleo y tipos de interés. Con el Brent por encima de 100 $ vuelve el miedo a la inflación. El bono estadounidense a 10 años está en el 5,32 %, y la Fed, que en septiembre subió tipos por primera vez desde julio de 2023 (hasta el 3,75–4 %), ve probable otra subida antes de fin de año según sus actas. Una deuda más cara castiga sobre todo a bancos y cíclicas, que pesan mucho en el Ibex.",
+     "vigilar": "Si el Ibex consolida por debajo de 19.000 y cómo evoluciona el bono estadounidense. Para la reunión de octubre de la Fed, el mercado da un 81 % de probabilidad a que no toque tipos (CME FedWatch, según Estrategias de Inversión).",
+     "nota": "Discrepancia entre fuentes: El CEO da un −0,77 % para el Nasdaq. Calculado sobre el cierre anterior (27.599,79), el descenso es del −0,22 %, que es lo que publican Euronews/AP e iProUP. Uso esa cifra.",
+     "fuentes": [
+      {
+       "t": "Estrategias de Inversión (8 oct)",
+       "u": "https://www.estrategiasdeinversion.com/actualidad/noticias/bolsa-espana/el-ibex-35-cae-por-debajo-de-los-19000-puntos-n-958323"
+      },
+      {
+       "t": "El Español Invertia",
+       "u": "https://www.elespanol.com/invertia/mercados/20261008/ibex-bolsa-directo-hoy-cotizaciones-noticias-tiempo-real/1003744412723_10.html"
+      },
+      {
+       "t": "El Periódico de Ceuta (cierre 7 oct)",
+       "u": "https://www.elperiodicodeceuta.es/cierre-ibex-35-bolsa-espana-hoy-miercoles-7-de-octubre-de-2026/"
+      },
+      {
+       "t": "Euronews/AP",
+       "u": "https://es.euronews.com/2026/10/08/el-precio-del-petroleo-sube-ante-el-temor-a-una-guerra-creciente-con-iran"
+      }
+     ]
+    },
+    {
+     "code": "M2",
+     "conf": "confirmado",
+     "titulo": "El oro, en mínimos de dos meses pese a la guerra",
+     "hecho": "La onza cotiza en torno a 4.120 $ (unos 3.680 €), tras tocar el miércoles su nivel más bajo en dos meses. Entre el 28 de septiembre y el 5 de octubre cedió un 3,2 %. Está alrededor de un 24 % por debajo del máximo de finales de enero, 5.434 $.",
+     "importa": "Parece contradictorio que el valor refugio baje con una guerra abierta en el Golfo. La explicación es que suben los tipos reales y el dólar, y eso encarece mantener un activo que no paga intereses. Bank of America sitúa su previsión media para el trimestre en torno a 4.000 $ y no descarta 3.750 $ en un escenario adverso, según Mitrade.",
+     "vigilar": "Más que los titulares bélicos, el bono estadounidense y el dólar. El análisis técnico sitúa un soporte en 4.115–4.120 $. Si estás valorando invertir en oro, pide el informe ampliado de M2 con escenarios, formas de inversión (física, ETF o fondos), costes y fiscalidad.",
+     "fuentes": [
+      {
+       "t": "Mitrade (8 oct)",
+       "u": "https://www.mitrade.com/es/articulo/materias-analysis/oro/precio-del-oro-20261008"
+      },
+      {
+       "t": "Inversoro",
+       "u": "https://www.inversoro.es/precio-del-oro/grafico-precio-oro-6-meses/"
+      },
+      {
+       "t": "Euronews/AP",
+       "u": "https://es.euronews.com/2026/10/08/el-precio-del-petroleo-sube-ante-el-temor-a-una-guerra-creciente-con-iran"
+      },
+      {
+       "t": "Farms.com (máximo de enero)",
+       "u": "https://www.farms.com/markets/commodity/gold-commodity-update-for-the-week-ending-aug-28-2026"
+      }
+     ]
+    },
+    {
+     "code": "M3",
+     "conf": "confirmado",
+     "titulo": "Energía: el Eurogrupo examina hoy el golpe del gas y la luz",
+     "hecho": "Los ministros de Economía de la eurozona, con Carlos Cuerpo, analizan hoy en Luxemburgo el impacto del encarecimiento del gas y la electricidad por la crisis de Ormuz. Según la patronal Eurelectric, la electricidad mayorista en la UE subió un 22,8 % entre febrero y agosto, frente al 88,4 % del gas. El gas europeo de referencia (TTF) superó los 82 €/MWh en septiembre, máximos de tres años.",
+     "importa": "Es la vía por la que la guerra llega a la factura de hogares y empresas en España, y condiciona la inflación y al BCE. Capital recoge una alerta de la OCU según la cual la tarifa regulada del gas subiría un 54 % en octubre, unos 310 € más al año.",
+     "vigilar": "Si el Eurogrupo acuerda alguna respuesta común. Para el invierno, los escenarios publicados sitúan la electricidad entre 129 y 189 €/MWh según cómo evolucionen Ormuz y el frío.",
+     "nota": "El dato de la OCU procede de un titular recogido por Capital; no he consultado la nota original.",
+     "fuentes": [
+      {
+       "t": "Agenda EFE vía Infobae",
+       "u": "https://www.infobae.com/america/agencias/2026/10/08/jueves-8-de-octubre-de-2026-0700-gmt/"
+      },
+      {
+       "t": "Eurelectric vía EFE/Infobae",
+       "u": "https://www.infobae.com/america/agencias/2026/09/29/los-precios-de-la-electricidad-en-la-ue-suben-el-228-desde-febrero-frente-al-alza-del-884-del-gas/"
+      },
+      {
+       "t": "ClimateTrade (datos ICE)",
+       "u": "https://www.climatetrade.com/precio-gas-luz-ormuz-empresas/"
+      },
+      {
+       "t": "Capital",
+       "u": "https://capital.es/actualidad/ormuz-y-el-frio-amenazan-con-elevar-la-factura-de-la-luz-este-invierno-hasta-189-euros-mwh/219249"
+      }
+     ]
+    }
+   ],
+   "corto": "Mercados"
+  },
+  {
+   "id": "inversion",
+   "tipo": "inversion",
+   "titulo": "Inversión y oportunidades",
+   "items": [
+    {
+     "code": "B1",
+     "conf": "confirmado",
+     "titulo": "Chips de memoria: Samsung anticipa un beneficio récord y SanDisk sube más de un 600 % en el año",
+     "hecho": "Samsung prevé un beneficio operativo de unos 107,4 billones de wones en el tercer trimestre (unos 71.500 millones de euros), un 782 % más que hace un año, con ventas de 195 billones de wones (+126,6 %). Lo atribuye a la demanda de chips para centros de datos de inteligencia artificial. Aun así, su acción cayó un 2,4 % el jueves, aunque acumula un 103 % de subida en el año. En EE. UU., SanDisk se revaloriza más de un 613 % en 2026 y Micron en torno a un 272 %, según The Motley Fool.",
+     "importa": "Es el tipo de escalada que mencionabas: la escasez de memoria por la inteligencia artificial permite a los fabricantes subir precios, y sus beneficios se han multiplicado. La caída de Samsung tras un resultado récord sugiere que el mercado ya lo esperaba (interpretación mía). La memoria es un negocio cíclico: según TrendForce, citada por The Motley Fool, los precios han caído históricamente cuando llega nueva capacidad de producción.",
+     "vigilar": "Los resultados definitivos de Samsung, la evolución de los precios contractuales de DRAM y NAND, y los próximos resultados de Micron y SanDisk. Si quieres valorarlo como inversión, pide el informe ampliado de B1 con valoraciones, riesgos y alternativas más diversificadas (ETF de semiconductores).",
+     "nota": "Discrepancia menor: JKN cifra el beneficio previsto de Samsung en 105 billones de wones; Europa Press y Euronews/AP, en 107,4 billones.",
+     "fuentes": [
+      {
+       "t": "Europa Press vía Infobae",
+       "u": "https://www.infobae.com/america/agencias/2026/10/08/samsung-anticipa-un-beneficio-operativo-record-de-71500-millones-en-el-tercer-trimestre-un-782-mas/"
+      },
+      {
+       "t": "The Motley Fool (7 oct)",
+       "u": "https://www.fool.com/investing/2026/10/07/sandisk-is-up-500-in-2026-and-micron-isnt-far-behi/"
+      },
+      {
+       "t": "Euronews/AP",
+       "u": "https://es.euronews.com/2026/10/08/el-precio-del-petroleo-sube-ante-el-temor-a-una-guerra-creciente-con-iran"
+      },
+      {
+       "t": "JKN",
+       "u": "https://news.jkn.co.kr/editions/spanish/post/1010150"
+      }
+     ]
+    },
+    {
+     "code": "B2",
+     "conf": "confirmado",
+     "breve": true,
+     "titulo": "Rotación por el crudo: energéticas arriba, aerolíneas abajo",
+     "hecho": "En una sesión de caídas generalizadas, Repsol y Enagás subían con el petróleo, mientras IAG (−3,2 %) y ArcelorMittal (−3,1 %) encabezaban los descensos del Ibex a media sesión.",
+     "importa": "Con el Brent por encima de 100 $, el mercado tiende a premiar a las productoras de energía y a castigar a quienes la consumen intensivamente, como las aerolíneas por el queroseno. Es una pauta habitual, no una regla: un acuerdo sobre Ormuz la daría la vuelta en horas.",
+     "fuentes": [
+      {
+       "t": "Estrategias de Inversión (8 oct)",
+       "u": "https://www.estrategiasdeinversion.com/actualidad/noticias/bolsa-espana/el-ibex-35-cae-por-debajo-de-los-19000-puntos-n-958323"
+      },
+      {
+       "t": "El Español Invertia (8 oct)",
+       "u": "https://www.elespanol.com/invertia/mercados/20261008/ibex-bolsa-directo-hoy-cotizaciones-noticias-tiempo-real/1003744412723_10.html"
+      }
+     ]
+    },
+    {
+     "code": "B3",
+     "conf": "confirmado",
+     "breve": true,
+     "titulo": "Blue Origin: Bezos ve probable salir a bolsa, pero «dentro de varios años»",
+     "hecho": "Jeff Bezos dijo el miércoles a Fox News que probablemente tenga sentido que Blue Origin cotice algún día, pero no antes de varios años. La compañía captó este año 10.000 millones de dólares en su primera gran ronda externa, con una valoración de entre 130.000 y 140.000 millones.",
+     "importa": "Hoy no se puede invertir en ella; es una señal para seguir el negocio espacial, que según Investing ya vivió en junio la salida a bolsa de SpaceX, con 75.000 millones captados.",
+     "fuentes": [
+      {
+       "t": "Bloomberg Línea (8 oct)",
+       "u": "https://www.bloomberglinea.com/negocios/blue-origin-de-jeff-bezos-contempla-salir-a-bolsa-tras-recaudar-us10000-millones/"
+      },
+      {
+       "t": "Investing (8 oct)",
+       "u": "https://es.investing.com/news/stock-market-news/la-opv-de-blue-origin-esta-a-anos-vista-pero-tiene-sentido-dice-bezos-3865389"
+      }
+     ]
+    }
+   ],
+   "corto": "Inversión"
+  },
+  {
+   "id": "geopolitica",
+   "titulo": "Geopolítica y defensa",
+   "items": [
+    {
+     "code": "G1",
+     "conf": "en-desarrollo",
+     "titulo": "Ormuz: más ataques a petroleros y Washington estudia golpear Irán antes del 3 de noviembre",
+     "hecho": "Entre el 28 de septiembre y el 5 de octubre hubo al menos 12 ataques, intentos o acosos a petroleros y metaneros en torno a Ormuz, según fuentes de seguridad marítima citadas por Reuters; la Organización Marítima Internacional contabiliza 93 incidentes en la zona. The Atlantic publicó el miércoles que la Casa Blanca ha pedido al Pentágono opciones para atacar objetivos iraníes antes de las elecciones de mitad de mandato del 3 de noviembre. El Brent subía esta mañana un 2,4 %, hasta 102,68 $.",
+     "importa": "Al mismo tiempo, el petróleo del Golfo sin contar Irán ha recuperado buena parte de su flujo gracias a escoltas de EE. UU. y al oleoducto saudí hacia el mar Rojo, así que el mercado oscila entre más oferta y más riesgo. La agencia energética de EE. UU. (EIA) prevé un Brent medio de 105 $ en el cuarto trimestre. A eso se suma el huracán Isaias, que ha parado más de 500.000 barriles diarios en el golfo de México. Para España, petróleo caro significa inflación, tipos altos y bolsa a la baja (ver M1).",
+     "vigilar": "Si la información de The Atlantic se confirma o se desmiente oficialmente: hoy descansa en una sola fuente. Y los contactos con mediación de Omán.",
+     "nota": "Contexto: la guerra empezó a principios de marzo de 2026, tras los bombardeos de EE. UU. e Israel sobre Irán.",
+     "fuentes": [
+      {
+       "t": "Mundiario (cita a Reuters)",
+       "u": "https://www.mundiario.com/articulo/internacional/iran-intensifica-ataques-petroleros-amenaza-cerrar-rutas-alternativas-ormuz/20261008080333445555.html"
+      },
+      {
+       "t": "Euronews/AP",
+       "u": "https://es.euronews.com/2026/10/08/el-precio-del-petroleo-sube-ante-el-temor-a-una-guerra-creciente-con-iran"
+      },
+      {
+       "t": "El Imparcial (flujos y EIA)",
+       "u": "https://www.elimparcial.com/mundo/2026/10/06/el-petroleo-vuelve-a-fluir-por-ormuz-hasta-recuperar-81-del-nivel-previo-a-la-guerra-mientras-arabia-saudi-reactiva-su-oleoducto-hacia-el-mar-rojo-una-combinacion-que-aumenta-la-oferta-disponible-y-presiona-al-brent-por-debajo-de-100-dolares/"
+      }
+     ]
+    },
+    {
+     "code": "G2",
+     "conf": "confirmado",
+     "titulo": "Ucrania: al menos 33 muertos en un ataque ruso contra dos autobuses en Kramatorsk",
+     "hecho": "Una bomba guiada rusa alcanzó hacia las 10:00 (hora de Kiev) una calle de Kramatorsk por la que circulaban dos autobuses: al menos 33 muertos y 18 heridos, según el Servicio Estatal de Emergencias de Ucrania. El corresponsal de El Español en la ciudad recoge las mismas cifras y las autoridades señalan una bomba planeadora UMPB D-30. En Kiev, varios ataques con drones han causado también víctimas mortales. Zelenski afirmó el miércoles que sus fuerzas atacaron dos instalaciones petroleras y un campo de pruebas en Rusia.",
+     "importa": "Llega después de que Rusia pidiera el día 3 a diplomáticos y extranjeros que abandonaran Kiev y anunciara ataques masivos, y de que Putin advirtiera de que usaría «todo tipo de armas» si la OTAN atacara Kaliningrado.",
+     "vigilar": "La respuesta europea y si el ultimátum sobre Kiev se traduce en una ofensiva aérea mayor.",
+     "nota": "El balance ha subido a lo largo del día, de 12 a 33 muertos, y aún puede cambiar. Los recuentos de víctimas en Kiev difieren entre fuentes.",
+     "fuentes": [
+      {
+       "t": "Ukrinform: balance de 33 muertos (en inglés)",
+       "u": "https://www.ukrinform.net/rubric-ato/4172298-death-toll-from-russian-strike-on-two-buses-in-kramatorsk-rises-to-33-18-injured.html"
+      },
+      {
+       "t": "El Español, desde Kramatorsk",
+       "u": "https://www.elespanol.com/mundo/europa/20261008/bombardeo-ruso-autobus-ucrania-mata-personas-deja-heridos-kramatorsk/1003744413060_0.html"
+      },
+      {
+       "t": "La Nación: ultimátum ruso sobre Kiev (3 oct)",
+       "u": "https://www.lanacion.com.ar/el-mundo/rusia-insta-a-diplomaticos-y-extranjeros-a-abandonar-kiev-y-anuncia-ataques-masivos-nid03102026/"
+      }
+     ]
+    },
+    {
+     "code": "G3",
+     "conf": "una-fuente",
+     "breve": true,
+     "titulo": "Suecia enviará un Patriot a Polonia para proteger el gran nudo logístico de la ayuda a Ucrania",
+     "hecho": "Suecia desplegará un sistema Patriot y 100 soldados en Rzeszów-Jasionka, en el sureste de Polonia, por donde pasan unas 18.000 toneladas de material al mes con destino a Ucrania. La misión, en el marco de la OTAN, empieza el 1 de diciembre, dura siete meses y releva a Países Bajos.",
+     "importa": "Estocolmo lo justifica por las incursiones cada vez más frecuentes en el espacio aéreo aliado.",
+     "fuentes": [
+      {
+       "t": "Euronews (7 oct)",
+       "u": "https://es.euronews.com/2026/10/07/suecia-enviara-misiles-patriot-polonia-para-defender-centro-logistico-ayuda-militar-ucrani"
+      }
+     ]
+    }
+   ],
+   "corto": "Geopolítica"
+  },
+  {
+   "id": "espana",
+   "titulo": "España: Gobierno y política",
+   "items": [
+    {
+     "code": "E1",
+     "conf": "confirmado",
+     "titulo": "España vota el 29 de noviembre",
+     "hecho": "Pedro Sánchez anunció el lunes 5 la disolución de las Cortes y elecciones generales para el domingo 29 de noviembre, después de que el Congreso tumbara sus dos decretos de vivienda. La campaña irá del 12 al 26 de noviembre. Con la disolución decaen las leyes que estaban en tramitación; entre otras, quedan en el aire normas de tráfico como la rebaja de la tasa de alcohol al volante.",
+     "importa": "Ya mueve la agenda. Feijóo ha nombrado a Miguel Tellado director de campaña y, a la izquierda del PSOE, Más Madrid impulsa a Ada Colau como candidata del Frente Amplio, con el apoyo de IU, según EFE. Los mercados también lo miran: Euronews vincula la debilidad del euro a la incertidumbre política en Francia y España (ver I1).",
+     "vigilar": "La convalidación de los decretos de vivienda en la Diputación Permanente (V1) y la proclamación de candidaturas, el 1 de noviembre.",
+     "fuentes": [
+      {
+       "t": "Forbes España (calendario)",
+       "u": "https://forbes.es/actualidad/1036531/elecciones-generales-2026-sanchez-29-noviembre/"
+      },
+      {
+       "t": "Diario de Avisos",
+       "u": "https://diariodeavisos.elespanol.com/2026/10/pedro-sanchez-convoca-elecciones-generales/"
+      },
+      {
+       "t": "OKDIARIO",
+       "u": "https://okdiario.com/espana/sanchez-convoca-elecciones-proximo-29-noviembre-como-adelanto-okdiario-20482815"
+      },
+      {
+       "t": "EFE vía Infobae",
+       "u": "https://www.infobae.com/espana/agencias/2026/10/07/temas-del-dia-de-efe-espana-del-jueves-8-de-octubre-de-2026/"
+      }
+     ]
+    },
+    {
+     "code": "E2",
+     "conf": "agenda",
+     "titulo": "Caso Leire: declara hoy la jueza que investigó al hermano de Sánchez",
+     "hecho": "La magistrada Beatriz Biedma, que instruyó la causa contra David Sánchez y propuso juzgarlo, declara hoy en la Audiencia Nacional como perjudicada en el llamado caso Leire, sobre un presunto intento de boicotear causas judiciales que afectaban al PSOE y al Gobierno.",
+     "importa": "En plena precampaña, cualquier novedad judicial tendrá lectura política.",
+     "vigilar": "El contenido de la declaración, que no se conocía al cerrar esta edición.",
+     "fuentes": [
+      {
+       "t": "Temas del día de EFE vía Infobae",
+       "u": "https://www.infobae.com/espana/agencias/2026/10/07/temas-del-dia-de-efe-espana-del-jueves-8-de-octubre-de-2026/"
+      }
+     ]
+    },
+    {
+     "code": "E3",
+     "conf": "una-fuente",
+     "breve": true,
+     "titulo": "El otro 29-N: 305 iniciativas que mueren con la legislatura",
+     "hecho": "Con la disolución de las Cortes decaen 305 iniciativas parlamentarias, según el recuento de Civio citado por Euronews. Entre ellas, la reducción de la jornada a 37,5 horas, el estatuto del becario, la reforma de la ley de Secretos Oficiales y la nueva ley de enjuiciamiento criminal.",
+     "importa": "La nacionalidad para los saharauis y la prohibición de las terapias de conversión también quedan a medio camino en el Senado.",
+     "fuentes": [
+      {
+       "t": "Euronews (8 oct)",
+       "u": "https://es.euronews.com/2026/10/08/el-otro-29-n-las-leyes-y-promesas-del-gobierno-de-coalicion-que-decaen-con-la-convocatoria"
+      }
+     ]
+    }
+   ],
+   "corto": "España"
+  },
+  {
+   "id": "internacional",
+   "titulo": "Internacional",
+   "items": [
+    {
+     "code": "I1",
+     "conf": "confirmado",
+     "titulo": "Europa: la deuda francesa arrastra al euro",
+     "hecho": "El euro se mantiene cerca de su nivel más bajo desde junio de 2025, en torno a 1,12 $, lastrado por la preocupación por el endeudamiento de Francia. El bono francés a 10 años está en el 4,89 %, frente al 3,48 % del alemán. Euronews atribuyó el mínimo de 17 meses del euro, el día 5, a la incertidumbre política en Francia y España.",
+     "importa": "Un euro débil encarece la energía, que se paga en dólares, y complica la tarea del BCE. Para España, una prima de riesgo al alza en plena campaña encarecería la financiación pública.",
+     "vigilar": "La prima de riesgo española. No he podido verificar el dato de hoy; el 1 de octubre el bono español a 10 años rondaba el 4,17 %.",
+     "fuentes": [
+      {
+       "t": "Euronews/AP",
+       "u": "https://es.euronews.com/2026/10/08/el-precio-del-petroleo-sube-ante-el-temor-a-una-guerra-creciente-con-iran"
+      },
+      {
+       "t": "Investing (bono español)",
+       "u": "https://www.investing.com/rates-bonds/spain-10-year-bond-yield-historical-data"
+      }
+     ]
+    },
+    {
+     "code": "I2",
+     "conf": "en-desarrollo",
+     "titulo": "Peste en Siberia: una muerte, 200 personas vigiladas y poca transparencia",
+     "hecho": "Una técnica de laboratorio de 28 años del instituto antipeste de Irkutsk murió a principios de octubre tras una neumonía grave. Unas 200 personas quedaron bajo observación y varios hospitales en cuarentena. Las autoridades rusas no han confirmado oficialmente un diagnóstico de peste neumónica y piden no hacer caso a rumores. EE. UU. y la Comisión Europea, con el centro europeo de control de enfermedades (ECDC), siguen el caso, y Ucrania ha pedido hoy a Moscú toda la información.",
+     "importa": "La peste neumónica es la forma que puede transmitirse de persona a persona, de modo que un brote sin transparencia es un riesgo sanitario regional. Hasta el 4 de octubre no constaban casos secundarios.",
+     "vigilar": "Datos oficiales de las autoridades sanitarias rusas o de la OMS, y si aparecen contagios entre los contactos.",
+     "nota": "No hay confirmación oficial; buena parte de la información procede de fuentes extraoficiales.",
+     "fuentes": [
+      {
+       "t": "El Financiero / EFE",
+       "u": "https://www.elfinanciero.com.mx/mundo/2026/10/05/eu-lanza-alerta-por-presunto-brote-de-peste-pulmonar-y-rusia-responde-no-hagan-caso-a-los-rumores/"
+      },
+      {
+       "t": "El Estímulo",
+       "u": "https://elestimulo.com/internacionales/2026-10-05/peste-neumonica-en-rusia-esto-es-lo-que-se-sabe/"
+      },
+      {
+       "t": "Wikipedia (cronología con fuentes)",
+       "u": "https://es.wikipedia.org/wiki/Incidente_de_peste_en_Irkutsk_de_2026"
+      },
+      {
+       "t": "Ukrinform: Sybiha pide transparencia a Rusia",
+       "u": "https://www.ukrinform.es/rubric-society/4172309-el-secretismo-representa-una-amenaza-para-todos-sybiha-insta-a-rusia-a-revelar-toda-la-informacion-sobre-un-posible-brote-de-peste.html"
+      }
+     ]
+    },
+    {
+     "code": "I3",
+     "conf": "confirmado",
+     "breve": true,
+     "titulo": "Italia aprueba la reforma electoral de Meloni",
+     "hecho": "La Cámara de Diputados aprobó el jueves de forma definitiva la reforma, por 227 votos a favor y 164 en contra: la coalición que supere el 42 % recibirá una prima fija de 70 escaños en la Cámara y 35 en el Senado. Si nadie llega a ese umbral, no hay prima.",
+     "importa": "La oposición la considera inconstitucional y la ha apodado «Melonellum»; Meloni la defiende como una garantía de estabilidad.",
+     "nota": "Otra fuente, El Congresista, cifra los votos a favor en 226.",
+     "fuentes": [
+      {
+       "t": "The Objective (8 oct)",
+       "u": "https://theobjective.com/internacional/2026-10-08/italia-reforma-electoral-meloni-coalicion-ganadora/"
+      },
+      {
+       "t": "Euronews: la oposición, en contra (8 oct)",
+       "u": "https://es.euronews.com/2026/10/08/la-oposicion-italiana-se-lanza-en-tromba-contra-la-reforma-de-la-ley-electoral"
+      }
+     ]
+    },
+    {
+     "code": "I4",
+     "conf": "una-fuente",
+     "breve": true,
+     "titulo": "Francia: la revuelta educativa pierde fuelle y el Gobierno promete medidas",
+     "hecho": "En una nueva jornada de huelga y protestas estudiantiles, el 94 % de los 3.700 institutos franceses abrió total o parcialmente, según el Ministerio de Educación, y los centros afectados bajaron un 30 % respecto al miércoles. El primer ministro, Sébastien Lecornu, admitió que el malestar juvenil «no surge de la nada» y presentará medidas a finales de octubre.",
+     "fuentes": [
+      {
+       "t": "EFE vía Infobae (8 oct)",
+       "u": "https://www.infobae.com/america/agencias/2026/10/08/el-94-de-institutos-de-francia-abiertos-total-o-parcialmente-en-nuevo-dia-de-protestas/"
+      }
+     ]
+    }
+   ],
+   "corto": "Internacional"
+  },
+  {
+   "id": "vivienda",
+   "titulo": "Vivienda y empleo",
+   "items": [
+    {
+     "code": "V1",
+     "conf": "confirmado",
+     "titulo": "Decretos de vivienda: vuelven al BOE, pero en Madrid apenas tocan el alquiler por ahora",
+     "hecho": "Tras su derrota en el Congreso, el Gobierno aprobó de nuevo el día 6 dos decretos-ley que mantienen lo esencial: el RDL 28/2026, sobre estabilidad de los contratos de alquiler, y el RDL 29/2026, sobre la función social de la vivienda y la oferta asequible, publicados en el BOE del 7. Incluyen préstamos «Tu Casa» de hasta 50.000 € para comprar la primera vivienda (el Gobierno habla de 10.000 millones), la cesión de inmuebles públicos a la entidad estatal Casa 47, la obligación de indicar el índice de referencia del alquiler en los anuncios de zonas tensionadas y un tope al alquiler por habitaciones: la suma no puede superar la renta del piso completo.",
+     "importa": "Muchas medidas solo se aplican en zonas de mercado residencial tensionado y, según El Periódico de Ceuta, la Comunidad de Madrid no tiene municipios declarados como tales (sí Cataluña, País Vasco, Navarra, Asturias y Galicia). En Madrid, lo más directo serían los préstamos para comprar y los cambios fiscales. Con las Cortes disueltas, la Constitución exige convalidar los decretos en un plazo de 30 días desde su promulgación, y esa votación corresponde a la Diputación Permanente.",
+     "vigilar": "La votación de convalidación, a más tardar a principios de noviembre; la entrada en vigor del RDL 28/2026 el 15 de noviembre, según idealista; y qué harían los partidos con estas normas después del 29-N.",
+     "nota": "Discrepancia entre fuentes: RTVC cifra el recargo del IBI a pisos turísticos en zonas tensionadas en hasta un 50 %; Civio, sobre la versión anterior de los decretos, hablaba de hasta un 150 %. Conviene comprobarlo en el texto del BOE.",
+     "fuentes": [
+      {
+       "t": "BOE · RDL 28/2026",
+       "u": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20822"
+      },
+      {
+       "t": "BOE · RDL 29/2026",
+       "u": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823"
+      },
+      {
+       "t": "idealista/news",
+       "u": "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/06/917683-el-gobierno-vuelve-a-aprobar-los-dos-decretos-de-vivienda-con-matices-y-anuncia-10"
+      },
+      {
+       "t": "The Objective",
+       "u": "https://theobjective.com/espana/2026-10-07/boe-decretos-vivienda-gobierno/"
+      },
+      {
+       "t": "RTVC",
+       "u": "https://rtvc.es/el-boe-publica-los-decretos-de-vivienda-estas-son-las-principales-medidas-7-octubre-2026/"
+      },
+      {
+       "t": "El Periódico de Ceuta",
+       "u": "https://www.elperiodicodeceuta.es/el-boe-publica-nuevos-decretos-de-vivienda-con-medidas-para-zonas-tensionadas/"
+      },
+      {
+       "t": "Civio",
+       "u": "https://civio.es/el-boe-nuestro-de-cada-dia/2026/09/30/decretos-ley-vivienda/"
+      }
+     ]
+    },
+    {
+     "code": "V2",
+     "conf": "confirmado",
+     "titulo": "Airbus España: se acaba la huelga",
+     "hecho": "La plantilla de Airbus en España aceptó el 1 de octubre, con el 76,76 % de los votos, la última oferta de la empresa y puso fin a unos tres meses de paros. El acuerdo recupera un 8,19 % de poder adquisitivo en cuatro años. Votaron 13.560 de los cerca de 14.000 empleados del grupo en España.",
+     "importa": "Normaliza la actividad de un fabricante clave para la industria aeronáutica y de defensa española. Además, desde el 1 de octubre Amparo Moraleda preside el consejo de administración de Airbus.",
+     "vigilar": "El pago de las mejoras salariales, previsto para octubre, que podría retrasarse porque el referéndum se aplazó por unas medidas cautelares ya levantadas.",
+     "fuentes": [
+      {
+       "t": "Telemadrid",
+       "u": "https://www.telemadrid.es/noticias/economia/La-plantilla-de-Airbus-Espana-acepta-por-mayoria-poner-fin-a-la-huelga-0-2930706934--20261001081004.html"
+      },
+      {
+       "t": "Industry Talks",
+       "u": "https://industrytalks.es/fin-al-conflicto-laboral-en-airbus-los-empleados-aceptan-la-ultima-propuesta-y-zanjan-tres-meses-de-paros/"
+      },
+      {
+       "t": "Actualidad Aeroespacial",
+       "u": "https://actualidadaeroespacial.com/los-trabajadores-de-airbus-en-espana-votaron-por-mayoria-a-favor-de-la-propuesta-y-ponen-fin-a-la-huelga/"
+      }
+     ]
+    },
+    {
+     "code": "V3",
+     "conf": "una-fuente",
+     "breve": true,
+     "titulo": "Muere Maricarmen, la vecina de 87 años que se convirtió en símbolo de la lucha por la vivienda",
+     "hecho": "Maricarmen Abascal, vecina del distrito de Retiro (Madrid) que sufrió cuatro intentos de desahucio en una década, murió en el hospital Gregorio Marañón, donde llevaba unas dos semanas ingresada.",
+     "importa": "Euronews le atribuye un papel en la ola de protestas que precedió al adelanto electoral, y RTVC sitúa su caso entre los detonantes de la nueva aprobación de los decretos.",
+     "fuentes": [
+      {
+       "t": "Euronews (7 oct)",
+       "u": "https://es.euronews.com/2026/10/07/fallece-maricarmen-simbolo-de-las-protestas-por-la-vivienda-en-espana"
+      },
+      {
+       "t": "RTVC (7 oct)",
+       "u": "https://rtvc.es/el-boe-publica-los-decretos-de-vivienda-estas-son-las-principales-medidas-7-octubre-2026/"
+      }
+     ]
+    }
+   ],
+   "corto": "Vivienda y empleo"
+  },
+  {
+   "id": "naturaleza",
+   "titulo": "Naturaleza y clima",
+   "items": [
+    {
+     "code": "N1",
+     "conf": "confirmado",
+     "titulo": "Llega el frío: lluvias, bajada de temperaturas y primeras heladas",
+     "hecho": "Hoy predominan las lluvias, el descenso de las temperaturas y las primeras heladas en el interior, según Ecoticias. Octubre arrancó con un aviso especial de Aemet por lluvias muy fuertes en el tercio oriental y Baleares, con una posible DANA de trayectoria incierta.",
+     "importa": "Donde ha habido incendios forestales, las lluvias intensas pueden arrastrar cenizas a ríos y embalses, un riesgo que analiza elDiario.es.",
+     "vigilar": "Los avisos de Aemet para tu zona antes de salir al campo o al mar.",
+     "fuentes": [
+      {
+       "t": "Ecoticias: el tiempo del jueves 8",
+       "u": "https://www.ecoticias.com/medio-ambiente/el-tiempo-hoy-jueves-8-de-octubre-en-espana"
+      },
+      {
+       "t": "Artículo14: aviso especial de Aemet",
+       "u": "https://www.articulo14.es/sociedad/aemet-alerta-de-lluvias-torrenciales-desde-este-jueves-pueden-caer-mas-de-150-litros-en-seis-horas-20261001.html"
+      },
+      {
+       "t": "elDiario.es: lluvia y cenizas",
+       "u": "https://www.eldiario.es/sociedad/lluvia-cenizas-bomba-diferido-incendios-forestales_1_13566196.html"
+      }
+     ]
+    },
+    {
+     "code": "N2",
+     "conf": "seguimiento",
+     "titulo": "COP31 en Antalya, a un mes vista",
+     "hecho": "La cumbre del clima de la ONU se celebrará del 9 al 20 de noviembre en Antalya (Turquía) con un reparto inédito de papeles: Turquía preside y acoge la cumbre, y Australia, con su ministro Chris Bowen, dirige las negociaciones.",
+     "importa": "Previsiblemente llegará marcada por la crisis energética de Ormuz, que tensiona los compromisos de abandonar los combustibles fósiles.",
+     "vigilar": "Los nuevos planes nacionales de reducción de emisiones que se presenten antes de la cumbre.",
+     "fuentes": [
+      {
+       "t": "Energías Renovables / EFEverde",
+       "u": "https://www.energias-renovables.com/panorama/la-cop-del-futuro-avanzar--en-20260415"
+      }
+     ]
+    },
+    {
+     "code": "N3",
+     "conf": "una-fuente",
+     "breve": true,
+     "titulo": "La polilla del boj ya afecta a más de 200.000 hectáreas en Cataluña",
+     "hecho": "Esta especie invasora llegada de Asia, detectada en España en 2014 en Besalú (Girona), afecta ya a unas 214.000 hectáreas de boj en Cataluña y está presente en al menos 26 comarcas, según los Agentes Rurales. Las orugas devoran las hojas y roen los troncos hasta matar la planta.",
+     "importa": "Los investigadores consideran inviable erradicarla a escala de bosque; las sequías y olas de calor agravan el daño.",
+     "fuentes": [
+      {
+       "t": "elDiario.es (30 sep)",
+       "u": "https://www.eldiario.es/catalunya/polilla-invasora-arrasa-arbustos-boj-catalunya-sotobosque-bufe-libre_1_13542887.html"
+      }
+     ]
+    }
+   ],
+   "corto": "Naturaleza"
+  }
+ ],
+ "radar": [
+  {
+   "t": "Kosovo elige presidenta a Justina Shiroka Pula tras 19 meses de bloqueo político.",
+   "f": "Euronews",
+   "u": "https://es.euronews.com/2026/10/08/kosovo-elige-justina-shiroka-pula-nueva-presidenta-bloqueo-politico"
+  },
+  {
+   "t": "Los hutíes afirman haber lanzado misiles contra el aeropuerto de Riad y bases saudíes en Adén.",
+   "f": "Europa Press vía Infobae",
+   "u": "https://www.infobae.com/america/agencias/2026/10/07/huties-afirman-haber-lanzado-misiles-contra-el-aeropuerto-de-riad-y-bases-saudies-en-aden/"
+  },
+  {
+   "t": "Rubio pide a Europa que «despierte» mientras el jefe de comercio de la UE viaja a China.",
+   "f": "Euronews",
+   "u": "https://es.euronews.com/2026/10/08/europe-today-rubio-pide-que-europa-despierte-y-el-jefe-de-comercio-de-la-ue-viaja-a-china"
+  },
+  {
+   "t": "Rusia condena a seis años a un ciudadano que cruzó a nado el río Niemen para pedir asilo en Lituania.",
+   "f": "Euronews",
+   "u": "https://es.euronews.com/2026/10/08/condenan-6-anos-trabajos-forzados-ruso-nado-kaliningrado-lituania-asilo"
+  }
+ ],
+ "agenda": [
+  {
+   "d": "Hoy",
+   "a": "Economía · Justicia",
+   "t": "Eurogrupo en Luxemburgo sobre precios de la energía; declaración de la jueza Biedma en la Audiencia Nacional."
+  },
+  {
+   "d": "14 oct",
+   "a": "Economía",
+   "t": "Dato definitivo de inflación de septiembre, según DailyForex clave para anticipar al BCE."
+  },
+  {
+   "d": "1 nov",
+   "a": "Elecciones 29-N",
+   "t": "Proclamación de las candidaturas."
+  },
+  {
+   "d": "3 nov",
+   "a": "EE. UU.",
+   "t": "Elecciones de mitad de mandato. Según The Atlantic, la Casa Blanca estudia atacar Irán antes de esa fecha."
+  },
+  {
+   "d": "≈5 nov",
+   "a": "Vivienda",
+   "t": "Fin del plazo de 30 días para convalidar los decretos de vivienda en la Diputación Permanente."
+  },
+  {
+   "d": "9–20 nov",
+   "a": "Clima",
+   "t": "COP31 en Antalya (Turquía)."
+  },
+  {
+   "d": "12 nov",
+   "a": "Elecciones 29-N",
+   "t": "Arranca la campaña electoral."
+  },
+  {
+   "d": "15 nov",
+   "a": "Vivienda",
+   "t": "Entra en vigor el RDL 28/2026 sobre estabilidad del alquiler."
+  },
+  {
+   "d": "29 nov",
+   "a": "Elecciones 29-N",
+   "t": "Elecciones generales en España."
+  }
+ ],
+ "metodo": [
+  "Edición de prueba elaborada el jueves 8 de octubre entre las 13:15 y las 17:30, a partir de unas 55 búsquedas y lecturas.",
+  "Las cifras de mercado proceden de prensa económica y llevan su hora: son orientativas, no cotizaciones en tiempo real.",
+  "Indico cuándo una noticia descansa en una sola fuente o en una fuente de parte, como un gobierno o su agencia oficial, y señalo las discrepancias entre medios.",
+  "Nada de lo que aparece aquí es asesoramiento financiero ni recomendación de inversión.",
+  "Para ampliar una noticia, pulsa «Profundizar», pega el texto en el chat de esta edición y te preparo un informe con más fuentes."
+ ],
+ "fx": {
+  "eurusd": 1.1183,
+  "s": "≈12:00 · Estrategias de Inversión"
+ }
+}
+</script>
+
+<script>
+(function(){
+  var LATEST;
+  try { LATEST = JSON.parse(document.getElementById('edition').textContent); }
+  catch(e){ document.getElementById('edfecha').textContent = 'No se pudo cargar la edición'; return; }
+
+  /* The whole page body is rebuilt from this template whenever another edition is opened */
+  var wrap = document.querySelector('.wrap');
+  var TEMPLATE = wrap.innerHTML;
+  var ARCHIVE_START = '2026-10';           /* first month with archived editions */
+  var MESES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  var api = {}, io = null, shown = LATEST.fechaISO, booted = false;
+
+  var CONF = {
+    'confirmado':'confirmada por varias fuentes o por fuente oficial','una-fuente':'una sola fuente','en-desarrollo':'en desarrollo, puede cambiar',
+    'seguimiento':'seguimiento de una noticia anterior','agenda':'previsto hoy, sin resultado conocido'
+  };
+
+  function el(tag, cls, text){
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function link(t, u, cls){
+    var a = el('a', cls || null, t); a.href = u; a.target = '_blank'; a.rel = 'noopener'; return a;
+  }
+  function pad(n){ return (n < 10 ? '0' : '') + n; }
+
+  function render(data){
+    if (booted) wrap.innerHTML = TEMPLATE;
+    booted = true;
+    if (io) { io.disconnect(); io = null; }
+    var words = 0;
+    function count(s){ if (s) words += String(s).trim().split(/\s+/).length; }
+
+    /* Masthead */
+    var brandName = (document.title || '').trim();
+    if (brandName) document.getElementById('brand').textContent = brandName;
+    document.getElementById('edfecha').textContent = data.fechaTexto;
+    document.getElementById('edlede').textContent = data.lede || '';
+    var note = document.getElementById('arch-note');
+    if (data.fechaISO !== LATEST.fechaISO){
+      note.hidden = false;
+      document.getElementById('arch-back').addEventListener('click', function(){ openEdition(LATEST.fechaISO); });
+    }
+
+    /* Keys */
+    var secOf = {};
+    data.secciones.forEach(function(sec){ sec.items.forEach(function(it){ secOf[it.code] = sec.corto || sec.titulo; }); });
+    var keys = document.getElementById('keys');
+    data.claves.forEach(function(k, i){
+      count(k.t);
+      var li = el('li');
+      li.appendChild(el('span','n', String(i+1).padStart(2,'0')));
+      var p = el('p', null, k.t + ' ');
+      if (k.ref){
+        var ra = el('a', 'ref', '→ ' + (secOf[k.ref] ? secOf[k.ref] + ' (' + k.ref + ')' : k.ref));
+        ra.href = '#' + k.ref; p.appendChild(ra);
+      }
+      li.appendChild(p);
+      keys.appendChild(li);
+    });
+
+    /* Markets: tap a price to switch $/€, tap a change to switch % / figure */
+    function fmtNum(x, dec){
+      var neg = x < 0, s = Math.abs(x).toFixed(dec), parts = s.split('.');
+      var int = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+      return (neg ? '−' : '') + int + (parts[1] ? ',' + parts[1] : '');
+    }
+    function signed(x, dec){ return (x > 0 ? '+' : '') + fmtNum(x, dec); }
+    function arrow(x){ return x > 0 ? '▲ ' : (x < 0 ? '▼ ' : ''); }
+
+    var fx = (data.fx && data.fx.eurusd) || null;
+    var state = {cur:'USD', chg:'pct'};
+    try {
+      var sc = localStorage.getItem('parte.cur'), sg = localStorage.getItem('parte.chg');
+      if (sc === 'EUR' && fx) state.cur = 'EUR';
+      if (sg === 'abs') state.chg = 'abs';
+    } catch(e){}
+
+    var panel = document.getElementById('panel');
+    var rows = [];
+    (data.mercados || []).forEach(function(m){
+      var row = el('div','mk');
+      var name = el('span','name', m.n);
+      var sub = el('span','sub'); var unit = el('span'); sub.appendChild(unit);
+      sub.appendChild(document.createTextNode(' · '));
+      if (m.u) sub.appendChild(link(m.s, m.u)); else sub.appendChild(document.createTextNode(m.s));
+      name.appendChild(sub);
+      row.appendChild(name);
+      var canCur = fx && (m.tipo === 'usd' || m.tipo === 'divisa');
+      var val = el(canCur ? 'button' : 'span', 'val');
+      if (canCur){ val.type = 'button'; val.addEventListener('click', function(){ setCur(state.cur === 'USD' ? 'EUR' : 'USD'); }); }
+      row.appendChild(val);
+      var canChg = m.c != null;
+      var chg = el(canChg ? 'button' : 'span', 'chg');
+      if (canChg){ chg.type = 'button'; chg.addEventListener('click', function(){ setChg(state.chg === 'pct' ? 'abs' : 'pct'); }); }
+      row.appendChild(chg);
+      panel.appendChild(row);
+      rows.push({m:m, unit:unit, val:val, chg:chg});
+    });
+
+    function renderMarkets(){
+      rows.forEach(function(r){
+        var m = r.m, eur = state.cur === 'EUR' && fx;
+        var v = m.v, prev = null, approx = false, curSym = '', unitTxt = '';
+        if (m.c != null){
+          if (m.prev != null) prev = m.prev; else { prev = m.v / (1 + m.c / 100); approx = true; }
+        }
+        if (m.tipo === 'indice'){ unitTxt = 'puntos'; curSym = ' pts'; }
+        else if (m.tipo === 'rent'){ unitTxt = 'rentab. anual'; curSym = ' %'; }
+        else if (m.tipo === 'usd'){
+          if (eur){ v = m.v / fx; if (prev != null) prev = prev / fx; curSym = ' €'; unitTxt = '€' + (m.por ? '/' + m.por : '') + ' (conv.)'; }
+          else { curSym = ' $'; unitTxt = '$' + (m.por ? '/' + m.por : ''); }
+        }
+        else if (m.tipo === 'divisa'){
+          if (eur){ v = 1 / m.v; if (prev != null) prev = 1 / prev; curSym = ' €'; unitTxt = '€ por 1 $'; }
+          else { curSym = ' $'; unitTxt = '$ por 1 €'; }
+        }
+        r.unit.textContent = unitTxt;
+        r.val.textContent = fmtNum(v, m.tipo === 'divisa' ? 4 : m.dec) + curSym;
+        if (r.val.tagName === 'BUTTON') r.val.setAttribute('aria-label', m.n + ': ' + r.val.textContent + '. Toca para ver en ' + (eur ? 'dólares' : 'euros'));
+        /* An inverted exchange rate moves the other way, so recompute its % */
+        var pct = m.c;
+        if (m.c != null && m.tipo === 'divisa' && eur) pct = (v / prev - 1) * 100;
+        r.chg.className = 'chg ' + (pct == null ? 'flat' : (pct > 0 ? 'up' : (pct < 0 ? 'down' : 'flat')));
+        if (m.c == null){ r.chg.textContent = '—'; return; }
+        if (state.chg === 'abs'){
+          var diff = v - prev;
+          var dd = m.tipo === 'divisa' ? 4 : m.dec;
+          r.chg.textContent = arrow(diff) + (approx ? '≈' : '') + signed(diff, dd) + curSym;
+        } else {
+          r.chg.textContent = arrow(pct) + signed(pct, 2) + ' %';
+        }
+        r.chg.setAttribute('aria-label', 'Variación ' + r.chg.textContent + '. Toca para ver ' + (state.chg === 'abs' ? 'en porcentaje' : 'en cifra'));
+      });
+      document.getElementById('cur-usd').setAttribute('aria-pressed', String(state.cur === 'USD'));
+      document.getElementById('cur-eur').setAttribute('aria-pressed', String(state.cur === 'EUR'));
+      document.getElementById('chg-pct').setAttribute('aria-pressed', String(state.chg === 'pct'));
+      document.getElementById('chg-abs').setAttribute('aria-pressed', String(state.chg === 'abs'));
+    }
+    function setCur(c){ if (c === 'EUR' && !fx) return; state.cur = c; try { localStorage.setItem('parte.cur', c); } catch(e){} renderMarkets(); }
+    function setChg(c){ state.chg = c; try { localStorage.setItem('parte.chg', c); } catch(e){} renderMarkets(); }
+    document.getElementById('cur-usd').addEventListener('click', function(){ setCur('USD'); });
+    document.getElementById('cur-eur').addEventListener('click', function(){ setCur('EUR'); });
+    document.getElementById('chg-pct').addEventListener('click', function(){ setChg('pct'); });
+    document.getElementById('chg-abs').addEventListener('click', function(){ setChg('abs'); });
+    if (!fx) document.getElementById('cur-eur').disabled = true;
+    renderMarkets();
+    document.getElementById('mkcount').textContent = 'toca las cifras para cambiar';
+    document.getElementById('panelnote').textContent = data.mercadosNota || '';
+
+    /* Section index */
+    var nav = document.getElementById('secnav');
+    function navItem(id, t){ var li = el('li'); var a = el('a', null, t); a.href = '#' + id; li.appendChild(a); nav.appendChild(li); }
+    navItem('claves','Claves');
+
+    /* Sections */
+    var host = document.getElementById('sections');
+    var nItems = 0;
+    data.secciones.forEach(function(sec){
+      navItem(sec.id, sec.corto || sec.titulo.split(':')[0]);
+      var s = el('section', sec.tipo === 'inversion' ? 'k-green' : null); s.id = sec.id; s.setAttribute('aria-labelledby','h-' + sec.id);
+      var head = el('div','sec-head');
+      var h2 = el('h2', null, sec.titulo); h2.id = 'h-' + sec.id;
+      head.appendChild(h2);
+      head.appendChild(el('span','count', sec.items.length ? sec.items.length + (sec.items.length === 1 ? ' noticia' : ' noticias') : 'sin novedades'));
+      s.appendChild(head);
+      if (sec.nota) s.appendChild(el('p','sec-note', sec.nota));
+
+      sec.items.forEach(function(it){
+        nItems++;
+        [it.titulo, it.hecho, it.importa, it.vigilar, it.nota].forEach(count);
+        var art = el('article','item'); art.id = it.code;
+        var h3 = el('h3');
+        h3.appendChild(el('span','code', it.code));
+        h3.appendChild(document.createTextNode(it.titulo));
+        art.appendChild(h3);
+        if (it.breve){
+          art.classList.add('breve');
+          var bd = el('div','blk'); bd.appendChild(el('p', null, [it.hecho, it.importa, it.vigilar].filter(Boolean).join(' '))); art.appendChild(bd);
+        } else {
+          [['Qué ha pasado', it.hecho], ['Por qué importa', it.importa], ['Qué vigilar', it.vigilar]].forEach(function(b){
+            if (!b[1]) return;
+            var d = el('div','blk'); d.appendChild(el('span','lbl', b[0])); d.appendChild(el('p', null, b[1])); art.appendChild(d);
+          });
+        }
+        if (it.nota) art.appendChild(el('p','contrast', it.nota));
+        var foot = el('div','foot');
+        var srcs = el('div','srcs'); srcs.appendChild(document.createTextNode('Fuentes: '));
+        (it.fuentes || []).forEach(function(f, i){
+          if (i) srcs.appendChild(document.createTextNode(' · '));
+          srcs.appendChild(link(f.t, f.u));
+        });
+        if (it.conf) srcs.appendChild(el('span','status', 'Verificación: ' + (CONF[it.conf] || it.conf)));
+        foot.appendChild(srcs);
+        var btn = el('button','deep','Profundizar'); btn.type = 'button';
+        btn.setAttribute('aria-label','Copiar petición para profundizar en ' + it.code);
+        btn.addEventListener('click', function(){ deepen(it, art, btn); });
+        foot.appendChild(btn);
+        art.appendChild(foot);
+        s.appendChild(art);
+      });
+      host.appendChild(s);
+    });
+    navItem('radar','Radar'); navItem('agenda','Agenda');
+
+    /* Radar */
+    var radar = document.getElementById('radarlist');
+    (data.radar || []).forEach(function(r){
+      count(r.t);
+      var li = el('li', null, r.t);
+      var who = el('span','who'); who.appendChild(link(r.f, r.u)); li.appendChild(who);
+      radar.appendChild(li);
+    });
+
+    /* Agenda */
+    var ag = document.getElementById('agendalist');
+    (data.agenda || []).forEach(function(a){
+      count(a.t);
+      var li = el('li'); li.appendChild(el('span','d', a.d));
+      var body = el('span');
+      if (a.a) body.appendChild(el('span','area', a.a));
+      body.appendChild(document.createTextNode(a.t));
+      li.appendChild(body); ag.appendChild(li);
+    });
+
+    /* Method */
+    var me = document.getElementById('method');
+    (data.metodo || []).forEach(function(m){ me.appendChild(el('li', null, m)); });
+
+    var mkSec = document.getElementById('mercados');
+    if (mkSec) mkSec.appendChild(document.getElementById('datos'));
+    else document.getElementById('datos').hidden = true;
+
+    var ICONS = {"claves": "<circle cx=\"8\" cy=\"15\" r=\"4\"/><path d=\"M11 12l9-9M17 6l3 3M14.5 8.5l2 2\"/>", "mercados": "<path d=\"M3 20h18M6 16v-4M11 16V8M16 16v-6M21 4l-5 4-5-3-5 4\"/>", "inversion": "<path d=\"M3 17l6-6 4 4 8-8\"/><path d=\"M15 7h6v6\"/>", "geopolitica": "<path d=\"M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z\"/><path d=\"M9 12l2 2 4-4\"/>", "espana": "<path d=\"M3 10l9-6 9 6M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18\"/>", "internacional": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18\"/>", "vivienda": "<path d=\"M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6\"/>", "naturaleza": "<path d=\"M5 20c0-9 6-15 15-15 0 9-6 15-15 15zM5 20l9-9\"/>", "radar": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><circle cx=\"12\" cy=\"12\" r=\"5\"/><circle cx=\"12\" cy=\"12\" r=\"1\"/><path d=\"M12 12l6-6\"/>", "agenda": "<rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M3 10h18M8 3v4M16 3v4M8 14h3\"/>"};
+    /* Foldable blocks: tap a block header to open or close it; remembered per edition */
+    var STORE = 'parte.cerrados.' + (data.fechaISO || '');
+    var closed = {};
+    try { (JSON.parse(localStorage.getItem(STORE) || '[]')).forEach(function(id){ closed[id] = true; }); } catch(e){}
+    var toggles = {};
+    function saveClosed(){ try { localStorage.setItem(STORE, JSON.stringify(Object.keys(closed).filter(function(k){ return closed[k]; }))); } catch(e){} }
+    function setOpen(id, open, save){
+      var t = toggles[id]; if (!t) return;
+      t.btn.setAttribute('aria-expanded', String(open));
+      t.body.hidden = !open;
+      closed[id] = !open;
+      if (open) layoutBody(t.body);
+      if (save) saveClosed();
+    }
+    Array.prototype.forEach.call(document.querySelectorAll('section[id]'), function(sec){
+      var head = sec.querySelector(':scope > .sec-head'); if (!head) return;
+      var h2 = head.querySelector('h2'), cnt = head.querySelector('.count');
+      var body = el('div','sec-body'); body.id = 'cuerpo-' + sec.id;
+      while (head.nextSibling) body.appendChild(head.nextSibling);
+      sec.appendChild(body);
+      body._items = Array.prototype.slice.call(body.querySelectorAll(':scope > .item'));
+      var btn = el('button','sec-btn'); btn.type = 'button';
+      btn.setAttribute('aria-controls', body.id);
+      var lab = el('span');
+      if (ICONS[sec.id]){ var ic = el('span','sec-ico'); ic.setAttribute('aria-hidden','true'); ic.innerHTML = '<svg viewBox="0 0 24 24">' + ICONS[sec.id] + '</svg>'; lab.appendChild(ic); }
+      lab.appendChild(el('span', null, h2.textContent));
+      btn.appendChild(lab);
+      var right = el('span','count', cnt ? cnt.textContent : '');
+      var chev = el('span','chev'); chev.setAttribute('aria-hidden','true'); right.appendChild(chev);
+      btn.appendChild(right);
+      h2.textContent = ''; h2.appendChild(btn);
+      if (cnt) cnt.remove();
+      if (body.querySelector('.item')) body.classList.add('has-items');
+      toggles[sec.id] = {btn: btn, body: body};
+      btn.addEventListener('click', function(){ setOpen(sec.id, btn.getAttribute('aria-expanded') !== 'true', true); });
+      setOpen(sec.id, !closed[sec.id], false);
+    });
+    var foldable = Object.keys(toggles).filter(function(id){ return id !== 'claves' && id !== 'datos'; });
+    document.getElementById('open-all').addEventListener('click', function(){ foldable.forEach(function(id){ setOpen(id, true, false); }); saveClosed(); });
+    document.getElementById('close-all').addEventListener('click', function(){ foldable.forEach(function(id){ setOpen(id, false, false); }); saveClosed(); });
+
+    /* Wide screens: lead story top-left, the rest wherever the two columns end up most even
+       (measured heights; ties keep the reading order). Narrow screens: one column, original order. */
+    api.layoutAll = function(){ Object.keys(toggles).forEach(function(id){ layoutBody(toggles[id].body); }); };
+    api.layoutAll();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ api.layoutAll(); });
+
+    /* A jump to a closed block (index chip, "→ M1" link) opens it first */
+    api.openFor = function(hash){
+      var t = hash && /^#[A-Za-z][\w-]*$/.test(hash) && document.getElementById(hash.slice(1));
+      var sec = t && (t.matches('section[id]') ? t : t.closest('section[id]'));
+      if (sec && toggles[sec.id] && toggles[sec.id].body.hidden) setOpen(sec.id, true, true);
+    };
+
+    /* Index chip follows the block you are reading */
+    var navLinks = {};
+    Array.prototype.forEach.call(nav.querySelectorAll('a'), function(a){ navLinks[a.getAttribute('href').slice(1)] = a; });
+    if ('IntersectionObserver' in window){
+      var current = null;
+      io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if (!en.isIntersecting) return;
+          var a = navLinks[en.target.id]; if (!a || a === current) return;
+          if (current) current.classList.remove('on');
+          a.classList.add('on'); current = a;
+          nav.scrollLeft = Math.max(0, a.offsetLeft - 16);
+        });
+      }, {rootMargin: '-90px 0px -65% 0px'});
+      Array.prototype.forEach.call(document.querySelectorAll('section[id]'), function(s){ if (navLinks[s.id]) io.observe(s); });
+    }
+
+    /* Meta line */
+    var mins = Math.max(1, Math.round(words / 220));
+    var meta = document.getElementById('edmeta');
+    meta.textContent = '';
+    if (data.tipo) meta.appendChild(document.createTextNode(data.tipo + ' · '));
+    [[data.tipo ? 'cierre de datos ' : 'Cierre de datos ', data.cierre], [' · lectura ≈ ', mins + ' min'], [' · ', nItems + ' noticias']].forEach(function(p){
+      meta.appendChild(document.createTextNode(p[0])); meta.appendChild(el('b', null, p[1]));
+    });
+
+    /* Deep-dive request */
+    function deepen(it, art, btn){
+      var text = 'Profundiza en la noticia ' + it.code + ' de ' + (document.title || 'The Daily Iván') + ' del ' + data.fechaTexto.toLowerCase() + ': «' + it.titulo + '». ' +
+        'Busca fuentes actualizadas (primarias cuando existan), contrasta versiones, separa hechos de interpretaciones y dame un informe ampliado con todas las fuentes enlazadas.';
+      function done(){
+        btn.textContent = 'Copiado: pégalo en el chat'; btn.setAttribute('data-done','');
+        setTimeout(function(){ btn.textContent = 'Profundizar'; btn.removeAttribute('data-done'); }, 4000);
+      }
+      function fallback(){
+        var ta = art.querySelector('textarea.fallback');
+        if (!ta){ ta = el('textarea','fallback'); ta.readOnly = true; ta.id = 'fb-' + it.code; ta.setAttribute('aria-label','Texto para copiar'); art.appendChild(ta); }
+        ta.value = text; ta.focus(); ta.select();
+        btn.textContent = 'Copia el texto de abajo';
+      }
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(done, fallback); }
+        else fallback();
+      } catch(e){ fallback(); }
+    }
+
+    /* Calendar button lives in the masthead, so wire it after every render */
+    document.getElementById('cal-btn').addEventListener('click', function(){ calToggle(); });
+  }
+
+  /* Balanced two-column layout of a block's dispatches */
+  var WIDE = window.matchMedia ? window.matchMedia('(min-width:980px)') : {matches:false};
+  function bestSplit(hs){
+    var best = null, n = hs.length;
+    for (var mask = 0; mask < (1 << (n - 1)); mask++){
+      var left = [0], right = [];
+      for (var i = 1; i < n; i++) ((mask >> (i - 1)) & 1 ? right : left).push(i);
+      if (!right.length) continue;
+      var order = left.concat(right), inv = 0;
+      for (var a = 0; a < order.length; a++) for (var b = a + 1; b < order.length; b++) if (order[a] > order[b]) inv++;
+      var sum = function(arr){ return arr.reduce(function(acc, k){ return acc + hs[k]; }, 0); };
+      var score = Math.max(sum(left), sum(right)) + 30 * inv;
+      if (!best || score < best.score) best = {score: score, left: left, right: right};
+    }
+    return best;
+  }
+  function layoutBody(body){
+    var items = body && body._items;
+    if (!items || items.length < 2) return;
+    var cols = body.querySelector(':scope > .cols');
+    if (!WIDE.matches){
+      if (cols){ items.forEach(function(it){ body.insertBefore(it, cols); }); cols.remove(); }
+      return;
+    }
+    if (body.hidden) return;   /* measured when the block is opened */
+    if (!cols){ cols = el('div','cols'); body.insertBefore(cols, items[0]); }
+    cols.textContent = '';
+    var L = el('div','col'), R = el('div','col');
+    cols.appendChild(L); cols.appendChild(R);
+    items.forEach(function(it){ L.appendChild(it); });
+    var hs = items.map(function(it){ return it.getBoundingClientRect().height; });
+    var best = bestSplit(hs);
+    best.left.forEach(function(i){ L.appendChild(items[i]); });
+    best.right.forEach(function(i){ R.appendChild(items[i]); });
+  }
+  var resizeTimer = null;
+  window.addEventListener('resize', function(){
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function(){ if (api.layoutAll) api.layoutAll(); }, 150);
+  });
+
+  /* ---------- Archive of past editions ----------
+     archivo/AAAA-MM-dias.json  → {"dias": ["AAAA-MM-DD", …]}  (which days exist; small)
+     archivo/AAAA-MM.json       → {"AAAA-MM-DD": {edición}, …}  (fetched only when a day is opened) */
+  var monthDays = {}, monthData = {};
+  function getJSON(path){
+    return fetch(path, {cache:'no-store'}).then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); });
+  }
+  function daysOf(ym){
+    if (!monthDays[ym]) monthDays[ym] = getJSON('archivo/' + ym + '-dias.json')
+      .then(function(j){ return (j && j.dias) || []; }, function(){ return []; });
+    return monthDays[ym].then(function(list){
+      var out = list.slice();
+      if (LATEST.fechaISO.slice(0,7) === ym && out.indexOf(LATEST.fechaISO) < 0) out.push(LATEST.fechaISO);
+      return out;
+    });
+  }
+  function editionOf(iso){
+    if (iso === LATEST.fechaISO) return Promise.resolve(LATEST);
+    var ym = iso.slice(0,7);
+    if (!monthData[ym]) monthData[ym] = getJSON('archivo/' + ym + '.json').catch(function(e){ delete monthData[ym]; throw e; });
+    return monthData[ym].then(function(j){ if (!j || !j[iso]) throw new Error('missing'); return j[iso]; });
+  }
+  function openEdition(iso, quiet){
+    calClose();
+    if (iso === shown && !quiet) return Promise.resolve();
+    return editionOf(iso).then(function(d){
+      shown = iso;
+      render(d);
+      try { history.replaceState(null, '', iso === LATEST.fechaISO ? location.pathname + location.search : '#ed=' + iso); } catch(e){}
+      window.scrollTo(0, 0);
+    }, function(){
+      if (!quiet) { calOpen(); var f = document.querySelector('.cal-foot'); if (f) f.textContent = 'No se ha podido cargar esa edición. Inténtalo de nuevo en un momento.'; }
+    });
+  }
+
+  var view = null;   /* month shown in the calendar: {y, m} */
+  function calOpen(){
+    var pop = document.getElementById('cal-pop'), btn = document.getElementById('cal-btn');
+    if (!pop) return;
+    if (!view) view = {y: +shown.slice(0,4), m: +shown.slice(5,7) - 1};
+    pop.hidden = false; btn.setAttribute('aria-expanded', 'true');
+    calDraw();
+  }
+  function calClose(){
+    var pop = document.getElementById('cal-pop'), btn = document.getElementById('cal-btn');
+    if (pop && !pop.hidden){ pop.hidden = true; btn.setAttribute('aria-expanded', 'false'); }
+  }
+  function calToggle(){ var pop = document.getElementById('cal-pop'); if (pop && pop.hidden) calOpen(); else calClose(); }
+  function calDraw(){
+    var pop = document.getElementById('cal-pop'); if (!pop) return;
+    var ym = view.y + '-' + pad(view.m + 1);
+    var first = ARCHIVE_START, last = LATEST.fechaISO.slice(0,7);
+    pop.textContent = '';
+    var head = el('div','cal-head');
+    var prev = el('button','cal-nav','‹'); prev.type = 'button'; prev.setAttribute('aria-label','Mes anterior');
+    var next = el('button','cal-nav','›'); next.type = 'button'; next.setAttribute('aria-label','Mes siguiente');
+    prev.disabled = ym <= first; next.disabled = ym >= last;
+    prev.addEventListener('click', function(){ view.m--; if (view.m < 0){ view.m = 11; view.y--; } calDraw(); });
+    next.addEventListener('click', function(){ view.m++; if (view.m > 11){ view.m = 0; view.y++; } calDraw(); });
+    head.appendChild(prev); head.appendChild(el('span','cal-title', MESES[view.m] + ' ' + view.y)); head.appendChild(next);
+    pop.appendChild(head);
+    var grid = el('div','cal-grid');
+    ['L','M','X','J','V','S','D'].forEach(function(w){ grid.appendChild(el('span','cal-wd', w)); });
+    var off = (new Date(view.y, view.m, 1).getDay() + 6) % 7;
+    for (var i = 0; i < off; i++) grid.appendChild(el('span','cal-pad'));
+    var nd = new Date(view.y, view.m + 1, 0).getDate(), cells = {};
+    for (var d = 1; d <= nd; d++){ var c = el('span','cal-day off', String(d)); cells[d] = c; grid.appendChild(c); }
+    pop.appendChild(grid);
+    var foot = el('p','cal-foot','Cargando…');
+    pop.appendChild(foot);
+    var drawn = ym;
+    daysOf(ym).then(function(list){
+      if (drawn !== view.y + '-' + pad(view.m + 1) || pop.hidden) return;
+      list.forEach(function(iso){
+        var day = +iso.slice(8,10), old = cells[day]; if (!old) return;
+        var b = el('button','cal-day', String(day)); b.type = 'button';
+        b.setAttribute('aria-label', 'Edición del ' + day + ' de ' + MESES[view.m] + ' de ' + view.y);
+        if (iso === shown){ b.classList.add('sel'); b.setAttribute('aria-current','date'); }
+        b.addEventListener('click', function(){ openEdition(iso); });
+        grid.replaceChild(b, old); cells[day] = b;
+      });
+      foot.textContent = list.length ? (list.length === 1 ? '1 edición este mes.' : list.length + ' ediciones este mes.') + ' Toca un día para abrirla.' : 'No hay ediciones archivadas este mes.';
+      var sel = grid.querySelector('.sel') || grid.querySelector('button.cal-day');
+      if (sel && document.activeElement && document.activeElement.closest && document.activeElement.closest('#cal-pop')) sel.focus();
+    });
+  }
+
+  /* Global listeners (added once): jumps to closed blocks, closing the calendar */
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (a && api.openFor) api.openFor(a.getAttribute('href'));
+    var pop = document.getElementById('cal-pop'), btn = document.getElementById('cal-btn');
+    var path = e.composedPath ? e.composedPath() : [];
+    if (pop && !pop.hidden && path.indexOf(pop) < 0 && path.indexOf(btn) < 0) calClose();
+  });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') calClose(); });
+
+  render(LATEST);
+  var h = location.hash;
+  var m = /^#ed=(\d{4}-\d{2}-\d{2})$/.exec(h);
+  if (m && m[1] !== LATEST.fechaISO) openEdition(m[1], true);
+  else if (h === '#archivo') calOpen();
+  else if (h && api.openFor) { api.openFor(h); var tgt = /^#[A-Za-z][\w-]*$/.test(h) && document.getElementById(h.slice(1)); if (tgt) tgt.scrollIntoView(); }
+})();
+</script>
+
+</body>
+</html>
