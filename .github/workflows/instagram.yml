@@ -1,0 +1,52 @@
+# Publica en Instagram, una a una y a su hora, las publicaciones que la tarea diaria deja en instagram/<fecha>/cola.json.
+# Mientras la variable del repositorio IG_ACTIVO no valga «si», solo simula (comprueba token e imágenes, no publica).
+# Pausa: Actions → Instagram → «Disable workflow», o cambia IG_ACTIVO a «no».
+name: Instagram
+
+on:
+  schedule:
+    - cron: "7,22,37,52 10-22 * * *"
+      timezone: "Europe/Madrid"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: instagram
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Descargar el repositorio
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: git clone --depth 50 "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" repo
+
+      - name: Publicar la siguiente pendiente
+        working-directory: repo
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_CLAVE: ${{ secrets.IG_CLAVE }}
+          IG_ACTIVO: ${{ vars.IG_ACTIVO }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/ig_publicar.py
+
+      - name: Guardar el estado
+        if: always()
+        working-directory: repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add instagram
+          if git diff --cached --quiet; then echo "Sin cambios que guardar"; exit 0; fi
+          git commit -q -m "Instagram: estado $(TZ=Europe/Madrid date '+%Y-%m-%d %H:%M')"
+          for i in 1 2 3 4; do
+            if git pull -q --rebase origin main && git push -q origin HEAD:main; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "No se ha podido guardar el estado"; exit 1
