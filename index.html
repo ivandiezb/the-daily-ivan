@@ -25,6 +25,7 @@
   --sand-band:#F3E4CC; --sand-ink:#5E3A10; --sand-ink2:#86602F; --sand-lbl:#8A5A1E;
   --green-band:#DCEDE2; --green-ink:#174A2C; --green-ink2:#47705A; --green-lbl:#2E7149;
   --up:#16703D; --down:#B3261E; --warn:#9A5800; --neutral:#5B6673;
+  --bar:#3A659F;
   --f-display:"Archivo","Arial Narrow","Helvetica Neue",Arial,sans-serif;
   --f-body:"Source Serif 4",Georgia,"Times New Roman",serif;
   --f-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
@@ -39,6 +40,7 @@
     --sand-band:#3A2C19; --sand-ink:#F4DDB8; --sand-ink2:#CDB08A; --sand-lbl:#DDB57E;
     --green-band:#18301F; --green-ink:#CFEBD8; --green-ink2:#93BFA2; --green-lbl:#86C79C;
     --up:#55C98F; --down:#F2867C; --warn:#E6AE55; --neutral:#9DA9B6;
+    --bar:#5B8DEF;
     color-scheme:dark;
   }
 }
@@ -51,6 +53,7 @@
   --sand-band:#3A2C19; --sand-ink:#F4DDB8; --sand-ink2:#CDB08A; --sand-lbl:#DDB57E;
   --green-band:#18301F; --green-ink:#CFEBD8; --green-ink2:#93BFA2; --green-lbl:#86C79C;
   --up:#55C98F; --down:#F2867C; --warn:#E6AE55; --neutral:#9DA9B6;
+  --bar:#5B8DEF;
   color-scheme:dark;
 }
 *{box-sizing:border-box}
@@ -197,7 +200,32 @@ section[id]{scroll-margin-top:56px}
 .deep{font-family:var(--f-display);font-weight:650;font-stretch:88%;font-size:13px;color:var(--accent);background:var(--accent-soft);border:1px solid transparent;border-radius:5px;padding:7px 12px;cursor:pointer}
 .deep:hover{border-color:var(--accent)}
 .deep[data-done]{color:var(--up);background:transparent;border-color:var(--up)}
+.ask{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.open-in{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-2);white-space:nowrap}
+.open-in a{color:var(--accent);text-underline-offset:2px}
+@media (max-width:560px){.ask{align-items:flex-start}}
 .fallback{width:100%;margin-top:8px;font-family:var(--f-mono);font-size:12.5px;color:var(--ink);background:var(--sheet);border:1px solid var(--rule);border-radius:5px;padding:8px;min-height:90px}
+
+/* Society trends: what people search and read (single-series bars, values always shown as text) */
+.tr-com{margin:10px 0 0;font-size:15.5px}
+.tr-dest{margin:10px 0 0;padding:8px 12px;border-left:3px solid var(--warn);background:var(--sheet);border-radius:0 6px 6px 0;font-size:14.5px}
+.tr-dest b{font-family:var(--f-display);font-stretch:88%;color:var(--warn)}
+.tr-bar{display:flex;align-items:center;gap:10px;margin:14px 0 4px;flex-wrap:wrap}
+.tr-grid{display:grid;gap:18px;margin-top:8px}
+.tr-h{font-size:14px;font-weight:700;font-stretch:88%;text-transform:uppercase;letter-spacing:.07em;color:var(--lbl);margin:0}
+.tr-sub{margin:2px 0 6px;font-family:var(--f-mono);font-size:11.5px;color:var(--ink-2)}
+.tr-list{list-style:none;margin:0;padding:0}
+.tr-list li{padding:6px 0 7px;border-bottom:1px solid var(--rule)}
+.tr-list li:last-child{border-bottom:0}
+.tr-row{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.tr-t{font-family:var(--f-display);font-weight:600;font-stretch:90%;font-size:14.5px;line-height:1.25;color:var(--ink);text-decoration:none;min-width:0;overflow-wrap:anywhere}
+a.tr-t:hover{color:var(--accent);text-decoration:underline}
+.tr-c{font-family:var(--f-mono);font-size:11px;color:var(--ink-2);margin-left:6px;white-space:nowrap}
+.tr-v{font-family:var(--f-mono);font-size:12px;color:var(--ink-2);white-space:nowrap;font-variant-numeric:tabular-nums}
+.tr-b{height:8px;margin-top:5px}
+.tr-b span{display:block;height:8px;min-width:4px;background:var(--bar);border-radius:0 4px 4px 0}
+.tr-note{margin:12px 0 0;font-size:12.5px;font-style:italic;color:var(--ink-2)}
+@media (min-width:980px){.tr-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:44px}}
 
 /* Radar & agenda */
 .radar,.agenda{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:0}
@@ -278,6 +306,18 @@ section[id]{scroll-margin-top:56px}
   <section id="agenda" class="k-sand" aria-labelledby="h-agenda">
     <div class="sec-head"><h2 id="h-agenda">Agenda: lo que viene</h2><span class="count">fechas a vigilar</span></div>
     <ul class="agenda" id="agendalist"></ul>
+  </section>
+
+  <section id="tendencias" class="k-gray" aria-labelledby="h-tendencias" hidden>
+    <div class="sec-head"><h2 id="h-tendencias">Tendencias de la sociedad</h2><span class="count">lo que interesa</span></div>
+    <p class="tr-com" id="tr-com"></p>
+    <p class="tr-dest" id="tr-dest" hidden></p>
+    <div class="tr-bar"><span class="seg" role="group" aria-label="Ámbito de las tendencias"><button type="button" id="tr-es" aria-pressed="true">España</button><button type="button" id="tr-int" aria-pressed="false">Internacional</button></span></div>
+    <div class="tr-grid">
+      <div><h3 class="tr-h">Búsquedas en auge en Google</h3><p class="tr-sub" id="tr-gsub"></p><ol class="tr-list" id="tr-google"></ol></div>
+      <div><h3 class="tr-h">Lo más leído en Wikipedia</h3><p class="tr-sub" id="tr-wsub"></p><ol class="tr-list" id="tr-wiki"></ol></div>
+    </div>
+    <p class="tr-note" id="tr-note"></p>
   </section>
 
   <aside class="method" aria-labelledby="h-method">
@@ -1145,11 +1185,330 @@ section[id]{scroll-margin-top:56px}
   "Las cifras de mercado proceden de prensa económica y llevan su hora: son orientativas, no cotizaciones en tiempo real.",
   "Indico cuándo una noticia descansa en una sola fuente o en una fuente de parte, como un gobierno o su agencia oficial, y señalo las discrepancias entre medios.",
   "Nada de lo que aparece aquí es asesoramiento financiero ni recomendación de inversión.",
-  "Para ampliar una noticia, pulsa «Profundizar», pega el texto en el chat de esta edición y te preparo un informe con más fuentes."
+  "Para ampliar una noticia, pulsa «Profundizar»: copia un encargo de investigación detallado para pegarlo en cualquier IA. O usa «Abrir en Claude · ChatGPT · Perplexity», que lo abre ya escrito.",
+  "«Tendencias de la sociedad» resume las búsquedas en auge en Google (España y otros 11 países) y lo más leído en Wikipedia; los volúmenes son aproximados y reflejan curiosidad, no importancia."
  ],
  "fx": {
   "eurusd": 1.1227,
   "s": "≈7:00 9 oct · Investing"
+ },
+ "tendencias": {
+  "fecha": "2026-10-09",
+  "hora": "13:00",
+  "es": {
+   "google": [
+    {
+     "t": "novak djokovic",
+     "n": 2000,
+     "trafico": "2.000+",
+     "u": "https://www.tennisworldusa.org/tennis/news/Novak_Djokovic/170387/former-world-no1-defends-novak-djokovic-after-his-triumph-in-beijing/",
+     "fuente": "Tennis World USA",
+     "noticia": "Former World No.1 defends Novak Djokovic after his triumph in Beijing"
+    },
+    {
+     "t": "imputación",
+     "n": 2000,
+     "trafico": "2.000+",
+     "u": "https://www.elmundo.es/espana/2026/10/09/6ac8af6efdddffc46e8b45c2.html",
+     "fuente": "El Mundo",
+     "noticia": "El juez Pedraz rechaza imputar al PSOE \"en este momento\" en el 'caso Cloacas'"
+    },
+    {
+     "t": "diario de navarra",
+     "n": 2000,
+     "trafico": "2.000+",
+     "u": "https://www.google.com/search?q=diario%20de%20navarra",
+     "fuente": "",
+     "noticia": ""
+    },
+    {
+     "t": "navi pillay",
+     "n": 1000,
+     "trafico": "1.000+",
+     "u": "https://www.cnn.com/2026/10/09/world/live-news/nobel-peace-prize-2026-winner-intl",
+     "fuente": "CNN",
+     "noticia": "Nobel Peace Prize goes to South African human rights pioneer Navi Pillay"
+    },
+    {
+     "t": "encuestas elecciones generales 2026",
+     "n": 500,
+     "trafico": "500+",
+     "u": "https://elpais.com/espana/2026-10-09/el-pp-y-vox-mantienen-la-mayoria-absoluta-tras-el-adelanto-electoral.html",
+     "fuente": "EL PAÍS",
+     "noticia": "El PP y Vox mantienen la mayoría absoluta tras el adelanto electoral"
+    },
+    {
+     "t": "bienestar de los animales",
+     "n": 500,
+     "trafico": "500+",
+     "u": "https://okdiario.com/mascotas/oficial-ley-bienestar-animal-prohibe-duenos-perros-gatos-usar-cualquier-utensilio-que-limite-movilidad-contemplan-multas-20493131",
+     "fuente": "OkDiario",
+     "noticia": "Confirmado por la Ley de Bienestar Animal: se prohíbe a los dueños de perros y gatos usar cualquier utensil..."
+    },
+    {
+     "t": "plaza de toros de valencia",
+     "n": 500,
+     "trafico": "500+",
+     "u": "https://www.abc.es/espana/comunidad-valenciana/toros-morante-puebla-roca-rey-tomas-rufo-20261009051500-nt.html",
+     "fuente": "ABC",
+     "noticia": "Toros con Morante de la Puebla, Roca Rey y Tomás Rufo: horario y dónde ver gratis en televisión y online la corrida en Valencia hoy"
+    },
+    {
+     "t": "verónica barbero",
+     "n": 500,
+     "trafico": "500+",
+     "u": "https://www.elmundo.es/elecciones/elecciones-generales/2026/10/09/6ac8a89ffdddfff45b8b4583.html",
+     "fuente": "El Mundo",
+     "noticia": "Sube la tensión y el malestar en el Frente Amplio por la batalla de las listas electorales: Madrid es un polvorín"
+    },
+    {
+     "t": "sarampión",
+     "n": 200,
+     "trafico": "200+",
+     "u": "https://www.abc.es/salud/banglades-presenta-mayor-brote-activo-sarampion-mundo-20261008152754-nt.html",
+     "fuente": "ABC",
+     "noticia": "Bangladés presenta el mayor brote activo de sarampión del mundo"
+    },
+    {
+     "t": "boeing f-47",
+     "n": 200,
+     "trafico": "200+",
+     "u": "https://www.twz.com/air/how-the-groundwork-for-f-47-flight-testing-is-being-laid",
+     "fuente": "TWZ",
+     "noticia": "How The Groundwork For F-47 Flight Testing Is Being Laid"
+    }
+   ],
+   "wiki": [
+    {
+     "t": "Piero",
+     "v": 87091,
+     "u": "https://es.wikipedia.org/wiki/Piero"
+    },
+    {
+     "t": "Anne Carson",
+     "v": 51259,
+     "u": "https://es.wikipedia.org/wiki/Anne_Carson"
+    },
+    {
+     "t": "Grupo Sancor Seguros",
+     "v": 37941,
+     "u": "https://es.wikipedia.org/wiki/Grupo_Sancor_Seguros"
+    },
+    {
+     "t": "Xosé Manuel Beiras",
+     "v": 27249,
+     "u": "https://es.wikipedia.org/wiki/Xosé_Manuel_Beiras"
+    },
+    {
+     "t": "Christa Pike",
+     "v": 21706,
+     "u": "https://es.wikipedia.org/wiki/Christa_Pike"
+    },
+    {
+     "t": "Beatriz Talegón",
+     "v": 16679,
+     "u": "https://es.wikipedia.org/wiki/Beatriz_Talegón"
+    },
+    {
+     "t": "Lizzie Borden",
+     "v": 16630,
+     "u": "https://es.wikipedia.org/wiki/Lizzie_Borden"
+    },
+    {
+     "t": "India Martínez",
+     "v": 15428,
+     "u": "https://es.wikipedia.org/wiki/India_Martínez"
+    }
+   ],
+   "wiki_dia": "2026-10-08",
+   "wiki_lengua": "español"
+  },
+  "int": {
+   "google": [
+    {
+     "t": "novak djokovic",
+     "n": 16000,
+     "trafico": "16.000+",
+     "paises": [
+      "US",
+      "GB",
+      "FR",
+      "DE",
+      "IT",
+      "AR",
+      "BR",
+      "IN"
+     ],
+     "u": "https://www.gazzetta.it/Tennis/ATP/09-10-2026/tennis-racchette-piu-piccole-per-ridurre-gli-infortuni-l-idea-di-toni-nadal.shtml",
+     "fuente": "La Gazzetta dello Sport",
+     "noticia": "L'idea di Toni Nadal: davvero racchette più piccole aiuterebbero i big a non infortunarsi? Cosa cambierebbe"
+    },
+    {
+     "t": "hubert hurkacz",
+     "n": 1300,
+     "trafico": "1.300+",
+     "paises": [
+      "US",
+      "GB",
+      "FR",
+      "DE",
+      "IN"
+     ],
+     "u": "https://przegladsportowy.onet.pl/tenis/na-zywo-hubert-hurkacz-novak-djokovic-w-pekinie-relacja-i-wynik-live/7976e16",
+     "fuente": "Przegląd Sportowy",
+     "noticia": "NA ŻYWO: Hubert Hurkacz — Novak Djoković w Pekinie. Relacja i wynik live"
+    },
+    {
+     "t": "navi pillay",
+     "n": 6000,
+     "trafico": "6.000+",
+     "paises": [
+      "GB",
+      "PT"
+     ],
+     "u": "https://www.bbc.co.uk/news/live/ck5yng9zz8pyt",
+     "fuente": "BBC",
+     "noticia": "Nobel Peace Prize live: Navi Pillay wins for 'efforts to promote peace and international law'"
+    },
+    {
+     "t": "shanghai open",
+     "n": 700,
+     "trafico": "700+",
+     "paises": [
+      "AR",
+      "BR"
+     ],
+     "u": "https://www.afp.com/en/zverev-churns-out-win-shanghai-masters-opener",
+     "fuente": "AFP.com",
+     "noticia": "Zverev churns out win in Shanghai Masters opener"
+    },
+    {
+     "t": "seleção saudita de futebol",
+     "n": 20000,
+     "trafico": "20.000+",
+     "paises": [
+      "PT"
+     ],
+     "u": "https://www.jn.pt/desporto/artigo/martinez-tinha-acordo-com-arabia-saudita-mas-conquista-da-taca-do-golfo-pode-ter-trocado-as-voltas/18134798",
+     "fuente": "Jornal de Notícias",
+     "noticia": "Martínez tinha acordo com Arábia Saudita mas conquista da Taça do Golfo pode ter trocado as voltas"
+    },
+    {
+     "t": "jorge jesus",
+     "n": 10000,
+     "trafico": "10.000+",
+     "paises": [
+      "PT"
+     ],
+     "u": "https://www.cmjornal.pt/desporto/futebol/detalhe/jesus-arrisca-ser-alvo-de-processo-disciplinar-no-conflito-com-cristiano-ronaldo",
+     "fuente": "Correio da Manhã",
+     "noticia": "Jorge Jesus arrisca ser alvo de processo disciplinar no conflito com Cristiano Ronaldo"
+    },
+    {
+     "t": "clima huracan simon",
+     "n": 10000,
+     "trafico": "10.000+",
+     "paises": [
+      "MX"
+     ],
+     "u": "https://www.meteored.mx/noticias/prediccion/simon-ya-como-huracan-categoria-1-en-el-pacifico-mexicano-esta-generando-lluvias-torrenciales-y-oleaje-alto-en-mexico.html",
+     "fuente": "Meteored México",
+     "noticia": "\"Simon\" ya como huracán categoría 1 en el Pacifico mexicano, esta generando lluvias torrenciales y oleaje alto en México"
+    },
+    {
+     "t": "jubilación",
+     "n": 10000,
+     "trafico": "10.000+",
+     "paises": [
+      "AR"
+     ],
+     "u": "https://www.infobae.com/economia/2026/10/09/anses-cuando-cobro-en-octubre-2026-si-mi-dni-termina-en-9/",
+     "fuente": "Infobae",
+     "noticia": "ANSES: cuándo cobro en octubre 2026 si mi DNI termina en 9"
+    },
+    {
+     "t": "enzo maresca",
+     "n": 5000,
+     "trafico": "5.000+",
+     "paises": [
+      "GB"
+     ],
+     "u": "https://www.bbc.co.uk/sport/football/live/ck4g1pj57qz0t",
+     "fuente": "BBC",
+     "noticia": "Maresca to speak at Man City news conference for first time since charges"
+    },
+    {
+     "t": "ticketmaster",
+     "n": 5000,
+     "trafico": "5.000+",
+     "paises": [
+      "GB"
+     ],
+     "u": "https://www.skysports.com/boxing/news/13596275/tyson-fury-vs-anthony-joshua-cardiff-council-asked-to-approve-1am-ringwalk-at-principality-stadium",
+     "fuente": "Sky Sports",
+     "noticia": "Tyson Fury vs Anthony Joshua: Cardiff Council asked to approve 1am ringwalk at Principality Stadium"
+    }
+   ],
+   "wiki": [
+    {
+     "t": "Nana Patekar",
+     "v": 1665865,
+     "u": "https://en.wikipedia.org/wiki/Nana_Patekar"
+    },
+    {
+     "t": "Christa Pike",
+     "v": 422519,
+     "u": "https://en.wikipedia.org/wiki/Christa_Pike"
+    },
+    {
+     "t": "Anne Carson",
+     "v": 278792,
+     "u": "https://en.wikipedia.org/wiki/Anne_Carson"
+    },
+    {
+     "t": "Nidal Hasan",
+     "v": 207351,
+     "u": "https://en.wikipedia.org/wiki/Nidal_Hasan"
+    },
+    {
+     "t": "Carrie (miniseries)",
+     "v": 170343,
+     "u": "https://en.wikipedia.org/wiki/Carrie_(miniseries)"
+    },
+    {
+     "t": "Margaret Hamilton (software engineer)",
+     "v": 162739,
+     "u": "https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)"
+    },
+    {
+     "t": "Nana Patekar filmography",
+     "v": 158079,
+     "u": "https://en.wikipedia.org/wiki/Nana_Patekar_filmography"
+    },
+    {
+     "t": "Deaths in 2026",
+     "v": 139050,
+     "u": "https://en.wikipedia.org/wiki/Deaths_in_2026"
+    }
+   ],
+   "wiki_dia": "2026-10-08",
+   "wiki_lengua": "inglés",
+   "paises": [
+    "US",
+    "GB",
+    "FR",
+    "DE",
+    "IT",
+    "PT",
+    "MX",
+    "AR",
+    "BR",
+    "IN",
+    "JP"
+   ]
+  },
+  "comentario": "En España sube la búsqueda de «imputación», tras la decisión del juez Pedraz de no imputar por ahora al PSOE en el caso Leire; también se buscan las encuestas del 29-N y a Navi Pillay, Nobel de la Paz anunciado esta mañana. Fuera de España, lo que aparece en más países es el tenis (Djokovic, en 8 de los 11 consultados). Datos recogidos a las 13:00, después del cierre de esta edición.",
+  "destacado": "varias búsquedas de energía a la vez: «rohöl» (crudo) en Alemania, «électricité» en Francia y «combustível» en Brasil. Encaja con la tensión del petróleo por Irán (interpretación propia; los volúmenes son aproximados)."
  }
 }
 </script>
@@ -1190,6 +1549,18 @@ section[id]{scroll-margin-top:56px}
     'confirmado':'confirmada por varias fuentes o por fuente oficial','una-fuente':'una sola fuente','en-desarrollo':'en desarrollo, puede cambiar',
     'seguimiento':'seguimiento de una noticia anterior','agenda':'previsto hoy, sin resultado conocido'
   };
+
+  /* Deep-dive prompt: extra instruction per block, and the public web address */
+    var EXTRA = {
+      mercados: 'Aporta las cifras de mercado relevantes con fecha, hora y fuente, y compáralas con su evolución reciente.',
+      inversion: 'Analiza valoración, riesgos, consenso de analistas y alternativas, como análisis y no como recomendación de inversión.',
+      geopolitica: 'Expón la posición de cada actor implicado con sus propias declaraciones y documentos.',
+      espana: 'Expón la posición de cada partido o institución implicada, con documentos oficiales (BOE, Congreso, tribunales) cuando existan.',
+      internacional: 'Incluye fuentes del país o la región implicados, además de las internacionales.',
+      vivienda: 'Incluye datos oficiales (INE, ministerios, comunidades autónomas, ayuntamientos) y el efecto concreto en Madrid.',
+      naturaleza: 'Incluye datos de organismos científicos y oficiales (AEMET, Copernicus, NOAA, IPCC…).'
+    };
+    var WEB = 'https://ivandiezb.github.io/the-daily-ivan/';
 
   function el(tag, cls, text){
     var n = document.createElement(tag);
@@ -1369,17 +1740,35 @@ section[id]{scroll-margin-top:56px}
           srcs.appendChild(link(f.t, f.u));
         });
         if (it.conf) srcs.appendChild(el('span','status', 'Verificación: ' + (CONF[it.conf] || it.conf)));
+        if (it.cobertura && it.cobertura.n){
+          var cv = el('span','status', 'Cobertura: en ' + it.cobertura.n + ' de ' + (it.cobertura.de || '?') + ' medios consultados');
+          if (it.cobertura.medios && it.cobertura.medios.length) cv.title = it.cobertura.medios.join(', ');
+          srcs.appendChild(cv);
+        }
         foot.appendChild(srcs);
+        var ask = el('div','ask');
         var btn = el('button','deep','Profundizar'); btn.type = 'button';
-        btn.setAttribute('aria-label','Copiar petición para profundizar en ' + it.code);
-        btn.addEventListener('click', function(){ deepen(it, art, btn); });
-        foot.appendChild(btn);
+        btn.setAttribute('aria-label','Copiar un encargo de investigación sobre ' + it.code);
+        btn.title = 'Copia un encargo detallado para pegarlo en tu IA';
+        btn.addEventListener('click', function(){ deepen(it, sec.id, art, btn); });
+        ask.appendChild(btn);
+        var oi = el('span','open-in', 'Abrir en ');
+        var links = openLinks(it, sec.id);
+        links.forEach(function(l, i){
+          if (i) oi.appendChild(document.createTextNode(' · '));
+          var a = link(l[0], l[1]); a.setAttribute('aria-label', 'Investigar ' + it.code + ' en ' + l[0]); oi.appendChild(a);
+        });
+        ask.appendChild(oi);
+        foot.appendChild(ask);
         art.appendChild(foot);
         s.appendChild(art);
       });
       host.appendChild(s);
     });
     navItem('radar','Radar'); navItem('agenda','Agenda');
+    var tr = data.tendencias;
+    var trSec = document.getElementById('tendencias');
+    if (tr && tr.es && trSec){ trSec.hidden = false; navItem('tendencias','Tendencias'); renderTrends(tr); }
 
     /* Radar */
     var radar = document.getElementById('radarlist');
@@ -1409,7 +1798,7 @@ section[id]{scroll-margin-top:56px}
     if (mkSec) mkSec.appendChild(document.getElementById('datos'));
     else document.getElementById('datos').hidden = true;
 
-    var ICONS = {"claves": "<circle cx=\"8\" cy=\"15\" r=\"4\"/><path d=\"M11 12l9-9M17 6l3 3M14.5 8.5l2 2\"/>", "mercados": "<path d=\"M3 20h18M6 16v-4M11 16V8M16 16v-6M21 4l-5 4-5-3-5 4\"/>", "inversion": "<path d=\"M3 17l6-6 4 4 8-8\"/><path d=\"M15 7h6v6\"/>", "geopolitica": "<path d=\"M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z\"/><path d=\"M9 12l2 2 4-4\"/>", "espana": "<path d=\"M3 10l9-6 9 6M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18\"/>", "internacional": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18\"/>", "vivienda": "<path d=\"M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6\"/>", "naturaleza": "<path d=\"M5 20c0-9 6-15 15-15 0 9-6 15-15 15zM5 20l9-9\"/>", "radar": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><circle cx=\"12\" cy=\"12\" r=\"5\"/><circle cx=\"12\" cy=\"12\" r=\"1\"/><path d=\"M12 12l6-6\"/>", "agenda": "<rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M3 10h18M8 3v4M16 3v4M8 14h3\"/>"};
+    var ICONS = {"claves": "<circle cx=\"8\" cy=\"15\" r=\"4\"/><path d=\"M11 12l9-9M17 6l3 3M14.5 8.5l2 2\"/>", "mercados": "<path d=\"M3 20h18M6 16v-4M11 16V8M16 16v-6M21 4l-5 4-5-3-5 4\"/>", "inversion": "<path d=\"M3 17l6-6 4 4 8-8\"/><path d=\"M15 7h6v6\"/>", "geopolitica": "<path d=\"M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z\"/><path d=\"M9 12l2 2 4-4\"/>", "espana": "<path d=\"M3 10l9-6 9 6M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18\"/>", "internacional": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18\"/>", "vivienda": "<path d=\"M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6\"/>", "naturaleza": "<path d=\"M5 20c0-9 6-15 15-15 0 9-6 15-15 15zM5 20l9-9\"/>", "radar": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><circle cx=\"12\" cy=\"12\" r=\"5\"/><circle cx=\"12\" cy=\"12\" r=\"1\"/><path d=\"M12 12l6-6\"/>", "agenda": "<rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M3 10h18M8 3v4M16 3v4M8 14h3\"/>", "tendencias": "<path d=\"M3 12h4l3-7 4 14 3-7h4\"/>"};
     /* Foldable blocks: tap a block header to open or close it; remembered per edition */
     var STORE = 'parte.cerrados.' + (data.fechaISO || '');
     var closed = {};
@@ -1490,10 +1879,9 @@ section[id]{scroll-margin-top:56px}
       meta.appendChild(document.createTextNode(p[0])); meta.appendChild(el('b', null, p[1]));
     });
 
-    /* Deep-dive request */
-    function deepen(it, art, btn){
-      var text = 'Profundiza en la noticia ' + it.code + ' de ' + (document.title || 'The Daily Iván') + ' del ' + data.fechaTexto.toLowerCase() + ': «' + it.titulo + '». ' +
-        'Busca fuentes actualizadas (primarias cuando existan), contrasta versiones, separa hechos de interpretaciones y dame un informe ampliado con todas las fuentes enlazadas.';
+    /* Deep-dive request: copy it, or open it already written in an AI assistant */
+    function deepen(it, secId, art, btn){
+      var text = promptFor(it, secId, false);
       function done(){
         btn.textContent = 'Copiado: pégalo en el chat'; btn.setAttribute('data-done','');
         setTimeout(function(){ btn.textContent = 'Profundizar'; btn.removeAttribute('data-done'); }, 4000);
@@ -1508,6 +1896,96 @@ section[id]{scroll-margin-top:56px}
         if (navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(done, fallback); }
         else fallback();
       } catch(e){ fallback(); }
+    }
+
+    function sentences(t){
+      t = String(t || '').replace(/\s+/g, ' ').trim();
+      var out = [], start = 0, re = /[.!?…]["»”)]?\s+(?=[A-ZÁÉÍÓÚÑ¿¡«"“0-9])/g, m;
+      while ((m = re.exec(t))){
+        var prev = t.slice(start, m.index + 1).trim();
+        if (/(?:^|\s)(?:EE|UU|Sr|Sra|Dr|Dra|núm|art|pág|aprox|vs|etc|[A-ZÁÉÍÓÚÑ])\.$/.test(prev)) continue;
+        out.push(t.slice(start, m.index + m[0].length).trim()); start = m.index + m[0].length;
+      }
+      if (start < t.length) out.push(t.slice(start).trim());
+      return out;
+    }
+    function upTo(t, max){
+      var out = '';
+      sentences(t).some(function(f){ if (out && (out + ' ' + f).length > max) return true; out = out ? out + ' ' + f : f; return false; });
+      return out.length > max * 1.6 ? out.slice(0, max) + '…' : out;
+    }
+    function promptFor(it, secId, compact){
+      var brand = (document.title || 'The Daily Iván').trim();
+      var fuentes = (it.fuentes || []).slice(0, compact ? 3 : 5).map(function(f){ return f.t.replace(/\s*\([^)]*\)/g, '').trim(); });
+      var L = [
+        'Actúa como analista de noticias riguroso. Investiga a fondo esta noticia publicada el ' + data.fechaTexto.toLowerCase() + ' en ' + brand + ' (' + WEB + '):',
+        '«' + it.titulo + '»',
+        'Resumen: ' + upTo(it.hecho, compact ? 200 : 330)
+      ];
+      if (fuentes.length) L.push('Fuentes de partida: ' + fuentes.join(', ') + '.');
+      L.push('');
+      L.push('1. Busca información actualizada (puede haber novedades posteriores) en al menos 8 fuentes independientes: primarias (gobiernos, organismos y documentos oficiales), agencias (Reuters, AP, EFE, AFP) y medios de distintas líneas editoriales y países.');
+      L.push('2. Reconstruye la cronología con fechas.');
+      L.push('3. Separa hechos comprobados, declaraciones, interpretaciones y especulación, con el grado de confianza de cada punto.');
+      L.push('4. Señala las discrepancias entre fuentes y qué versión está mejor respaldada.');
+      L.push('5. Explica el contexto, a quién beneficia o perjudica y las consecuencias, también para España y Europa.');
+      L.push('6. ' + (EXTRA[secId] || 'Expón la posición de cada parte implicada.'));
+      L.push('7. Plantea 2 o 3 escenarios con las señales que permitirían distinguirlos, y di qué no se sabe todavía.');
+      L.push('Formato: resumen de 5 líneas, desarrollo por apartados y lista final de fuentes con enlace y fecha. No inventes datos ni enlaces; si algo no puedes verificarlo, dilo.');
+      return L.join('\n');
+    }
+    function openLinks(it, secId){
+      var q = encodeURIComponent(promptFor(it, secId, false));
+      if (q.length > 3800) q = encodeURIComponent(promptFor(it, secId, true));
+      return [['Claude', 'https://claude.ai/new?q=' + q], ['ChatGPT', 'https://chatgpt.com/?q=' + q], ['Perplexity', 'https://www.perplexity.ai/?q=' + q]];
+    }
+
+    /* Society trends */
+    function renderTrends(tr){
+      var PAIS = {US:'EE. UU.', GB:'Reino Unido', FR:'Francia', DE:'Alemania', IT:'Italia', PT:'Portugal', MX:'México', AR:'Argentina', BR:'Brasil', IN:'India', JP:'Japón', ES:'España'};
+      function miles(n){ return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.'); }
+      function fdia(iso){ if (!iso) return ''; var p = iso.split('-'); return +p[2] + ' de ' + MESES[+p[1] - 1]; }
+      document.getElementById('tr-com').textContent = tr.comentario || '';
+      document.getElementById('tr-com').hidden = !tr.comentario;
+      if (tr.destacado){
+        var dst = document.getElementById('tr-dest'); dst.hidden = false; dst.textContent = '';
+        dst.appendChild(el('b', null, 'Señal a vigilar: ')); dst.appendChild(document.createTextNode(tr.destacado));
+      }
+      document.getElementById('tr-note').textContent = 'Fuentes: Google Trends (búsquedas en auge en las últimas horas; volumen aproximado y solo de Google) y Wikimedia (páginas vistas el día anterior, sin el tráfico automático). Datos recogidos el ' + fdia(tr.fecha) + ' a las ' + (tr.hora || '') + '.';
+      var scope = 'es';
+      try { if (localStorage.getItem('parte.tr') === 'int' && tr.int) scope = 'int'; } catch(e){}
+      function bars(ol, items, valueOf, labelOf, extra){
+        ol.textContent = '';
+        var max = 0; items.forEach(function(x){ max = Math.max(max, valueOf(x)); });
+        items.forEach(function(x){
+          var li = el('li'); var row = el('div','tr-row');
+          var name = el('span');
+          var a = link(x.t, x.u, 'tr-t'); name.appendChild(a);
+          if (extra) { var c = extra(x); if (c) name.appendChild(el('span','tr-c', c)); }
+          row.appendChild(name); row.appendChild(el('span','tr-v', labelOf(x)));
+          li.appendChild(row);
+          var b = el('div','tr-b'); b.setAttribute('aria-hidden','true'); var f = el('span');
+          f.style.width = (max ? Math.max(1.5, 100 * valueOf(x) / max) : 0).toFixed(1) + '%'; b.appendChild(f); li.appendChild(b);
+          if (x.noticia) li.title = (x.fuente ? x.fuente + ': ' : '') + x.noticia;
+          ol.appendChild(li);
+        });
+      }
+      function draw(){
+        var d = tr[scope] || {};
+        document.getElementById('tr-es').setAttribute('aria-pressed', String(scope === 'es'));
+        document.getElementById('tr-int').setAttribute('aria-pressed', String(scope === 'int'));
+        var gs = d.google || [], ws = d.wiki || [];
+        document.getElementById('tr-gsub').textContent = scope === 'es' ? 'España · volumen aproximado de búsquedas'
+          : 'Varios países (' + (d.paises || []).map(function(p){ return PAIS[p] || p; }).join(', ') + ') · primero lo que se busca en más países';
+        document.getElementById('tr-wsub').textContent = 'Wikipedia en ' + (d.wiki_lengua || '') + ' · visitas del ' + fdia(d.wiki_dia);
+        bars(document.getElementById('tr-google'), gs, function(x){ return x.n || 0; }, function(x){ return x.trafico || miles(x.n || 0); },
+             scope === 'int' ? function(x){ return (x.paises || []).join(' · '); } : null);
+        bars(document.getElementById('tr-wiki'), ws, function(x){ return x.v || 0; }, function(x){ return miles(x.v || 0); }, null);
+      }
+      document.getElementById('tr-es').addEventListener('click', function(){ scope = 'es'; try { localStorage.setItem('parte.tr','es'); } catch(e){} draw(); });
+      document.getElementById('tr-int').addEventListener('click', function(){ if (!tr.int) return; scope = 'int'; try { localStorage.setItem('parte.tr','int'); } catch(e){} draw(); });
+      if (!tr.int) document.getElementById('tr-int').disabled = true;
+      draw();
     }
 
     /* Calendar button lives in the masthead, so wire it after every render */
