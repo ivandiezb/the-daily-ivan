@@ -181,6 +181,8 @@ def main():
             err(f"mercados/{m.get('n')}: falta el valor numérico «v»")
         if m.get("u") and portada(m["u"]):
             aviso(f"mercados/{m.get('n')}: la URL parece una portada: {m['u']}")
+        elif m.get("u") and clasificar_dominio(m["u"]) in ("otro", "excluido"):
+            aviso(f"mercados/{m.get('n')}: {dominio_de(m['u'])} no es un medio de referencia ni una fuente oficial")
         if isinstance(m.get("v"), (int, float)) and isinstance(m.get("prev"), (int, float)) and isinstance(m.get("c"), (int, float)) and m["prev"]:
             calc = (m["v"] / m["prev"] - 1) * 100
             if abs(calc - m["c"]) > 0.06:
