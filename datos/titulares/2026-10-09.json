@@ -1,8 +1,8 @@
 {
 "fecha": "2026-10-09",
-"hora": "12:52",
-"fuentes_ok": 31,
-"fuentes_total": 38,
+"hora": "12:58",
+"fuentes_ok": 33,
+"fuentes_total": 37,
 "fuentes": [
 {
 "id": "elpais",
@@ -269,10 +269,140 @@
 "nombre": "Público",
 "grupo": "espana",
 "linea": "izquierda",
-"url": "https://www.publico.es/rss/",
+"url": "https://www.publico.es/rss",
 "ok": false,
 "items": [],
-"error": "HTTPError: HTTP Error 404: Not Found"
+"error": "HTTPError: HTTP Error 404: Not Found | HTTPError: HTTP Error 404: Not Found | HTTPError: HTTP Error 404: Not Found"
+},
+{
+"id": "infolibre",
+"nombre": "infoLibre",
+"grupo": "espana",
+"linea": "izquierda",
+"url": "https://www.infolibre.es/rss",
+"ok": true,
+"items": [
+{
+"t": "La ‘vía Colau’ pasa por Podemos, pero las heridas de la izquierda no lo ponen fácil",
+"u": "https://www.infolibre.es/politica/via-colau-pasa-heridas-izquierda-no-ponen-facil_1_2237718.html",
+"fecha": "2026-10-08T20:23+02:00",
+"resumen": "Ada Colau “está dispuesta” a ser la candidata del Frente Amplio , pero pone condiciones para ello. La exalcaldesa de Barcelona quiere construir una candidatura amplia, con una única papeleta a la izquierda del PSOE —en l"
+},
+{
+"t": "El falso pucherazo que alientan Vox y el Supremo con la 'ley de nietos' no afectaría ni al 0,1% de votos",
+"u": "https://www.infolibre.es/politica/falso-pucherazo-alientan-vox-supremo-ley-nietos-no-afectaria-0-1-votos_1_2237659.html",
+"fecha": "2026-10-08T20:22+02:00",
+"resumen": "El Tribunal Supremo se basó en un supuesto incremento de 402.262 personas en el Censo Electoral de Residentes Ausentes (CERA, el correspondiente a españoles residentes en el extranjero) para ordenar la suspensión provisi"
+},
+{
+"t": "La muerte de Maricarmen hace fracasar la estrategia de distracción del PP para enterrar la vivienda",
+"u": "https://www.infolibre.es/politica/muerte-maricarmen-fracasar-estrategia-distraccion-pp-enterrar-vivienda_1_2237725.html",
+"fecha": "2026-10-09T06:01+02:00",
+"resumen": "La operación es sencilla de entender y difícil de desmontar: cuando la vivienda amenaza con monopolizar el debate público, el PP introduce temas que generan mucho ruido —la sospecha sobre el voto por correo , el choque c"
+},
+{
+"t": "El juez Pedraz rechaza imputar, en este momento, al PSOE por el ‘caso Leire’",
+"u": "https://www.infolibre.es/politica/juez-pedraz-rechaza-imputar-psoe-caso-leire_1_2237754.html",
+"fecha": "2026-10-09T11:07+02:00",
+"resumen": "El juez Santiago Pedraz ha rechazado imputar \"en este momento\" al PSOE en el caso Leire, como pedía el PP, al considerar que aún faltan diligencias por practicar para esclarecer si hay una \"conexión objetiva\" entre los h"
+},
+{
+"t": "De frenar ocho desahucios a un decreto para inquilinos: los resortes legales que activó el caso de Maricarmen",
+"u": "https://www.infolibre.es/economia/frenar-ocho-desahucios-decreto-inquilinos-resortes-legales-activo-caso-maricarmen_1_2237677.html",
+"fecha": "2026-10-08T20:23+02:00",
+"resumen": "Una movilización social sin precedentes, una acampada de protesta por la vivienda que ya dura 15 días, dos decretos con medidas contra la crisis inmobiliaria, unas elecciones anticipadas y una huelga general. Esta cadena"
+},
+{
+"t": "Madrid marcha por Maricarmen desde la acampada de Sol hasta su casa: “La lucha sigue”",
+"u": "https://www.infolibre.es/politica/madrid-marcha-maricarmen-acampada-sol-casa-lucha-sigue_1_2237733.html",
+"fecha": "2026-10-08T21:12+02:00",
+"resumen": "Miles de personas, 20.000 según Delegación del Gobierno, han recorrido este jueves las calles de Madrid con velas encendidas en recuerdo de Maricarmen Abascal . La marcha ha partido de la acampada de la Puerta del Sol y "
+},
+{
+"t": "Anne Carson, una Nobel que hace dialogar la literatura clásica con el presente: \"Te cambia la visión del mundo\"",
+"u": "https://www.infolibre.es/cultura/anne-carson-nobel-dialogar-literatura-clasica-presente-cambia-vision-mundo_1_2237700.html",
+"fecha": "2026-10-08T20:23+02:00",
+"resumen": "\"Merece la pena leer a Anne Carson porque te cambia la visión del mundo , que es lo que hacen las grandes obras de literatura\". Así de rotundo es el impacto que la obra de la escritora canadiense ha provocado en María Fu"
+},
+{
+"t": "La democracia también se construyó en el campo (y no se mantendrá sin él)",
+"u": "https://www.infolibre.es/la-memoria-que-somos/la-democracia-ilustrada/democracia-construyo-campo-no-mantendra_1_2236728.html",
+"fecha": "2026-10-09T09:32+02:00",
+"resumen": "En un lugar de la Mancha, de cuyo nombre no quiero acordarme… Cervantes se equivocaría. Seguramente sería en Madrid, Barcelona, puede que Bilbao, incluso Sevilla. Una ciudad seguro. Al fin y al cabo, allí es donde sucede"
+},
+{
+"t": "Beiras y la nación soñada",
+"u": "https://www.infolibre.es/opinion/plaza-publica/beiras-nacion-sonada_129_2237708.html",
+"fecha": "2026-10-08T20:24+02:00",
+"resumen": "En este tiempo de ruido y de furia, Beiras es el ejemplo de que la política puede ser algo grande , una forma de rebeldía, de lucha, de compromiso y de amor por tu País y por su gente: Galiza y el pueblo gallego. Beiras "
+},
+{
+"t": "Un gallego inobjetable e inconformista",
+"u": "https://www.infolibre.es/opinion/plaza-publica/gallego-inobjetable-e-inconformista_129_2237691.html",
+"fecha": "2026-10-09T06:01+02:00",
+"resumen": "Conocí a Xosé Manuel Beiras poco después de la muerte de Franco . Con otros compañeros de una organización nacionalista de izquierda que se llamaba ERGA (Estudantes Revolucionarios Galegos) decidimos traer al por entonce"
+},
+{
+"t": "Las líneas rojas",
+"u": "https://www.infolibre.es/opinion/ideas-propias/lineas-rojas_129_2237642.html",
+"fecha": "2026-10-08T20:26+02:00",
+"resumen": "Hace 15 años, en abril de 2011, cuando presenciaba la manifestación de Juventud Sin Futuro que anticipaba el 15M, tenía muchas cosas claras. Esas certezas que llamamos líneas rojas, que te permiten acotar el bien y el ma"
+},
+{
+"t": "Demasiado odio",
+"u": "https://www.infolibre.es/opinion/columnas/a-la-escucha/odio_1_2237667.html",
+"fecha": "2026-10-09T06:01+02:00",
+"resumen": "Estoy desfondada. Lo confieso. Es agotador tener que aguantar cada vez que alguien se te acerca para darte un mitin . Hasta el miércoles a última hora de la tarde era sobre las elecciones, desde ayer es sobre Maricarmen."
+},
+{
+"t": "Nadie es clase media a final de mes",
+"u": "https://www.infolibre.es/politica/politica-sociedad-clase-media-clase-trabajadora_129_2237437.html",
+"fecha": "2026-10-09T06:01+02:00",
+"resumen": "Hay derrotas que no ocurren en las urnas, sino en el diccionario. Antes de perder un gobierno, una fuerza política pierde las palabras con las que la gente piensa su propia vida . Y la izquierda española lleva demasiado "
+},
+{
+"t": "Inteligencia artificial, ¿nadie al volante?",
+"u": "https://www.infolibre.es/opinion/blogs/foro-milicia-democracia/inteligencia-artificial-nadie-volante_132_2237385.html",
+"fecha": "2026-10-09T06:01+02:00",
+"resumen": "“Debemos ralentizar el ritmo al que mejoramos las capacidades de los modelos de IA”. Son las palabras de Dario Amodei, cofundador y director general de Anthropic, empresa responsable de Claude, en su ensayo “We must Pace"
+},
+{
+"t": "Elecciones: la izquierda del PSOE… ¿Y ahora qué?",
+"u": "https://www.infolibre.es/opinion/plaza-publica/elecciones-izquierda-psoe-ahora_129_2237476.html",
+"fecha": "2026-10-09T06:01+02:00",
+"resumen": "Ya hemos llegado al punto que muchos nos temíamos que, antes o después, iba a venir: elecciones anticipadas. Nos encontramos con un PSOE al borde de la UVI y cuya única salida ahora, a la desesperada, ha sido convocar el"
+},
+{
+"t": "Las universidades francesas echan el cierre para sofocar una revuelta estudiantil que no deja de crecer",
+"u": "https://www.infolibre.es/mediapart/universidades-francesas-echan-cierre-sofocar-revuelta-estudiantil-no-deja-crecer_1_2237662.html",
+"fecha": "2026-10-09T06:01+02:00",
+"resumen": "Miércoles, 7 de octubre, 11:00 horas. Cae un chaparrón sobre París. Algo habitual a principios de octubre pero un fastidio para el centenar de estudiantes reunidos en asamblea general frente al campus Nation de la Univer"
+},
+{
+"t": "Xosé Manuel Beiras, seis décadas de historia y encrucijadas de la política gallega",
+"u": "https://www.infolibre.es/politica/beiras-seis-decadas-encrucijadas-explicar-historia-politica-galicia_1_2237620.html",
+"fecha": "2026-10-08T11:18+02:00",
+"resumen": "A través de la vida de Xosé Manuel Beiras, fallecido este 8 de octubre de 2026 a los 90 años , podemos recorrer la historia —sobre todo la historia política— de Galicia en la segunda mitad del siglo XX e incluso adentrar"
+},
+{
+"t": "\"Institutos abandonados, juventud sacrificada\": la protesta estudiantil sacude Francia",
+"u": "https://www.infolibre.es/mediapart/institutos-abandonados-juventud-sacrificada-protesta-estudiantil-sacude-francia_1_2237560.html",
+"fecha": "2026-10-07T21:42+02:00",
+"resumen": "Bajo el radiante cielo azul de París, la estatua de la República fue cubierta con una túnica en la que se leía, en letras mayúsculas negras y rojas: “Institutos abandonados, juventud sacrificada” . Fue precisamente esta "
+},
+{
+"t": "La Policía llega al origen de la red del inspector jefe que escondía 20 millones de euros en casa",
+"u": "https://www.infolibre.es/narcotrafico/policia-llega-origen-red-inspector-jefe-escondia-20-millones-euros-casa_1_2237692.html",
+"fecha": "2026-10-08T17:23+02:00",
+"resumen": "Thanos es el nombre clave en Dubái. Se le atribuye el liderazgo de una gran red criminal internacional que conectaba Ecuador, donde se acaba de producir la última fase de la investigación, con España. Es el caso del insp"
+},
+{
+"t": "El parásito",
+"u": "https://www.infolibre.es/opinion/vinetas/javirroyo/parasito_131_2237492.html",
+"fecha": "2026-10-06T20:09+02:00",
+"resumen": ""
+}
+]
 },
 {
 "id": "elmundo",
@@ -542,7 +672,137 @@
 "url": "https://www.larazon.es/rss/portada.xml",
 "ok": false,
 "items": [],
-"error": "HTTPError: HTTP Error 503: Service Unavailable"
+"error": "HTTPError: HTTP Error 503: Service Unavailable | HTTPError: HTTP Error 403: Forbidden"
+},
+{
+"id": "okdiario",
+"nombre": "OKDiario",
+"grupo": "espana",
+"linea": "derecha",
+"url": "https://okdiario.com/feed",
+"ok": true,
+"items": [
+{
+"t": "Muerte de Maricarmen y las elecciones del 29-N, en directo | Última hora de la acampada de Sol y situación por la vivienda hoy",
+"u": "https://okdiario.com/espana/maricarmen-elecciones-del-29-n-directo-ultima-hora-acampada-sol-vivienda-20517423",
+"fecha": "2026-10-09T12:55+02:00",
+"resumen": "El Sindicato de Inquilinas prepara una querella contra Urbagestión, la empresa propietaria de la vivienda de Maricarmen Abascal, por homicidio imprudente tras el fallecimiento de la anciana, según ha podido saber OKDIARI"
+},
+{
+"t": "Prisión incondicional para el hijo del jeque del Málaga CF por irregularidades en la gestión del club",
+"u": "https://okdiario.com/deportes/prision-incondicional-hijo-del-jeque-del-malaga-cf-irregularidades-gestion-del-club-20519753",
+"fecha": "2026-10-09T12:53+02:00",
+"resumen": "El Málaga se encuentra en una situación compleja fuera de los terrenos de juego. Un juzgado de la ciudad ha acordado mantener la medida de prisión incondicional para uno de los hijos del jeque Abdullah Al-Thani, Rakan, d"
+},
+{
+"t": "Simeone no se moja: «¿Messi o Maradona? No voy a elegir a uno, le doy las gracias a Messi por todo lo que nos enseñó»",
+"u": "https://okdiario.com/deportes/simeone-no-moja-messi-o-maradona-no-voy-elegir-uno-doy-gracias-messi-todo-lo-que-nos-enseno-20517011",
+"fecha": "2026-10-09T12:50+02:00",
+"resumen": "Después de 21 días de selecciones, Simeone en particular y el Atlético en general pueden respirar. De hecho, lo hacen como no lo habían podido hacer esta temporada, con los pulmones a plena capacidad. El Cholo tiene a to"
+},
+{
+"t": "‘Tequila Sunrise’, una exposición individual de pinturas y esculturas del artista alemán Anselm Reyle",
+"u": "https://okdiario.com/cultura/tequila-sunrise-exposicion-individual-pinturas-esculturas-del-artista-aleman-anselm-reyle-20519939",
+"fecha": "2026-10-09T12:39+02:00",
+"resumen": "‘Tequila Sunrise’, una exposición individual de pinturas y esculturas del artista alemán Anselm Reyle. En conjunto, la selección ofrece una visión amplia de un creador cuya práctica ha desafiado constantemente las c"
+},
+{
+"t": "‘Equipo de investigación’ emite hoy el reportaje sobre un supuesto timo de 10 millones de euros",
+"u": "https://okdiario.com/happyfm/equipo-investigacion-billetes-dorados-timo-10-millones-20519564",
+"fecha": "2026-10-09T12:32+02:00",
+"resumen": "Hace una semana, Equipo de investigación dedicó su reportaje a los grandes tenedores de viviendas, un tema que llegó al programa por el caso de la fallecida Maricarmen Abascal. Aquella noche, el espacio de laSexta repasó"
+},
+{
+"t": "Los electricistas profesionales advierten: «Los timos por urgencias, desplazamientos y manos de obra son la estafa más frecuente del sector»",
+"u": "https://okdiario.com/curiosidades/electricistas-profesionales-advierten-timos-urgencias-desplazamientos-manos-obra-son-estafa-mas-frecuente-del-sector-20444204",
+"fecha": "2026-10-09T12:30+02:00",
+"resumen": "La desconfianza hacia el sector eléctrico ha crecido por el intrusismo, la falta de preparación de muchos falsos profesionales y los timos que sufren los usuarios que buscan solucionar una avería en casa. La estafa más f"
+},
+{
+"t": "Letizia se aferra a sus básicos en el Día de la Salud Mental: rescata un traje de 2022 y repite sus bailarinas fetiche, ahora rebajadas",
+"u": "https://okdiario.com/cool/casa-real/letizia-aferra-sus-basicos-dia-salud-mental-rescata-traje-2022-repite-sus-bailarinas-fetiche-ahora-rebajadas-20519243",
+"fecha": "2026-10-09T12:30+02:00",
+"resumen": "La Reina Letizia ha retomado su agenda oficial en Madrid después de su viaje de Estado a Finlandia y lo ha hecho con una cita especialmente significativa para ella. La mujer de Felipe VI ha presidido este viernes, 9 de o"
+},
+{
+"t": "Vicente Vallés, sobre el futuro de Pedro Sánchez: «Si no pude gobernar, un buen resultado del PSOE podría frenar el debate sucesorio del partido»",
+"u": "https://okdiario.com/espana/vicente-valles-sobre-futuro-pedro-sanchez-si-no-pude-gobernar-buen-resultado-del-psoe-podria-frenar-debate-sucesorio-del-partido-20518596",
+"fecha": "2026-10-09T12:28+02:00",
+"resumen": "La campaña electoral para las próximas elecciones generales del 29 de noviembre ya ha comenzado y con ella el debate sobre cuál será el futuro político de España. El periodista y presentador de los informativos de Antena"
+},
+{
+"t": "David Soria confía en el fichaje de Carvajal por el Getafe: «Creo que se va a dar, estaríamos encantados»",
+"u": "https://okdiario.com/deportes/david-soria-confia-fichaje-carvajal-getafe-creo-que-va-dar-estariamos-encantados-20519484",
+"fecha": "2026-10-09T12:26+02:00",
+"resumen": "Una voz autorizada en el vestuario del Getafe, como es la de su capitán, ha valorado positivamente el posible fichaje de Dani Carvajal por el equipo azulón. David Soria se ha mostrado confiado en que la operación llegue "
+},
+{
+"t": "Javier Gutiérrez, actor, sobre la crisis de la vivienda en Madrid: “Es insostenible, vivo en una finca de 90 vecinos y más de la mitad son apartamentos vacacionales”",
+"u": "https://okdiario.com/economia/javier-gutierrez-actor-sobre-crisis-vivienda-madrid-insostenible-vivo-finca-90-vecinos-mas-mitad-son-apartamentos-vacacionales-20519125",
+"fecha": "2026-10-09T12:25+02:00",
+"resumen": "El actor Javier Gutiérrez también ha tenido tiempo para alzar la voz en contra de los alquileres turísticos. «Vivo en una finca de 90 vecinos y más de la mitad ya son apartamentos vacacionales». A sus 55 años, el ganador"
+},
+{
+"t": "El truco de limpiadores para que el parqué parezca recién lijado: unas gotas de este ingrediente en agua le devuelven su brillo",
+"u": "https://okdiario.com/curiosidades/truco-limpiadores-que-parque-parezca-recien-lijado-unas-gotas-este-ingrediente-agua-devuelven-brillo-20519070",
+"fecha": "2026-10-09T12:19+02:00",
+"resumen": "El suelo de parqué es uno de los más comunes en los hogares españoles. Su limpieza a veces es compleja, debido a que cuando se pasa la fregona, parece aparentemente limpio, pero a los minutos las manchas borrosas notadas"
+},
+{
+"t": "El Ibex 35 repunta un 1,15% a mediodía y recupera los 19.100 punto con el crudo en 103 dólares",
+"u": "https://okdiario.com/economia/ibex-35-bolsa-9-octubre-2026-20517709",
+"fecha": "2026-10-09T12:15+02:00",
+"resumen": "El Ibex 35 de la Bolsa de Madrid cotizaba en la media sesión de este viernes, la última de la semana, con un avance del 1,15% que le ha llevado a recuperar los 19.100 enteros, después de que ayer perdiera, tras casi cuat"
+},
+{
+"t": "Lidl rompe el mercado con unas zapatillas tipo Skechers: cuestan 10 euros y son perfectas para andar y entrenar",
+"u": "https://okdiario.com/deportes/lidl-rompe-mercado-unas-zapatillas-tipo-skechers-cuestan-10-euros-son-perfectas-andar-entrenar-20519481",
+"fecha": "2026-10-09T12:06+02:00",
+"resumen": "Encontrar unas zapatillas deportivas cómodas, ligeras y a buen precio no siempre es sencillo, especialmente cuando se busca un calzado que sirva tanto para caminar a diario como para realizar algunos entrenamientos. Sin "
+},
+{
+"t": "Virgilio, el hombre que se propuso reconstruir una cabaña en Asturias y lleva ya 6 años: «No había hecho una mezcla de cemento en mi vida cuando empecé con esto»",
+"u": "https://okdiario.com/curiosidades/virgilio-hombre-que-propuso-reconstruir-cabana-asturias-lleva-ya-6-anos-no-habia-hecho-mezcla-cemento-vida-cuando-empece-esto-20518050",
+"fecha": "2026-10-09T12:03+02:00",
+"resumen": "La España vaciada deja casos de localidades realmente sorprendentes. En Asturias, esta problemática se acentúa especialmente con pueblos que se resisten a desaparecer con tan solo un habitante en la actualidad. Estas per"
+},
+{
+"t": "Un ex jugador del Barcelona revela el secreto del éxito de Flick: «Acababa los entrenamientos mareado»",
+"u": "https://okdiario.com/deportes/ex-jugador-del-barcelona-revela-secreto-del-exito-flick-acababa-entrenamientos-mareado-20518966",
+"fecha": "2026-10-09T12:03+02:00",
+"resumen": "El éxito de Hansi Flick en el FC Barcelona se entiende desde la intensidad física que imprime el equipo culé desde su llegada. Una receta que obliga a un trabajo diario muy exigente en los entrenamientos. Así lo ha confi"
+},
+{
+"t": "‘¡De Viernes!’ anuncia sus invitados para hoy, viernes 9 de octubre",
+"u": "https://okdiario.com/happyfm/viernes-anuncia-sus-invitados-hoy-viernes-9-octubre-20518209",
+"fecha": "2026-10-09T12:01+02:00",
+"resumen": "¡De Viernes! vuelve esta noche a Telecinco y lo hace con la mirada puesta, una vez más, en la polémica que rodea a Belén Esteban. El programa presentado por Bea Archidona y Santi Acosta ha encontrado en la histórica cola"
+},
+{
+"t": "Se suele pasar por alto pero existe una adaptación de ‘El Señor de los Anillos’ más fiel que las películas de Peter Jackson y dura 13 horas",
+"u": "https://okdiario.com/cool/television/suele-pasar-alto-pero-existe-adaptacion-senor-anillos-mas-fiel-que-peliculas-peter-jackson-dura-13-horas-20518490",
+"fecha": "2026-10-09T12:00+02:00",
+"resumen": "La novela fantástica El Señor de los Anillos de J.R.R. Tolkien se publicó por primera vez en el Reino Unido entre 1954 y 1955 en tres volúmenes. Con el tiempo se ha convertido en una de las más populares y ha sido adapta"
+},
+{
+"t": "Doce monumentos obligatorios que debes visitar por el Dia de la Hispanidad en Sevilla",
+"u": "https://okdiario.com/andalucia/doce-monumentos-obligatorios-que-debes-visitar-dia-hispanidad-sevilla-20505291",
+"fecha": "2026-10-09T12:00+02:00",
+"resumen": "Se celebra el 12 de octubre el Día de la Fiesta Nacional. Un día festivo que además este año nos deja un puente de tres días que podemos aprovechara para viajar, hacer una escapada o también como no, empaparnos de histor"
+},
+{
+"t": "Raphinha sigue al margen del grupo y no jugará ante el Getafe",
+"u": "https://okdiario.com/deportes/raphinha-sigue-margen-del-grupo-no-jugara-getafe-20516785",
+"fecha": "2026-10-09T12:00+02:00",
+"resumen": "Raphinha se ha entrenado este viernes en solitario y al margen del grupo en la Ciudad Deportiva Joan Gamper y no jugará ante el Getafe este sábado en la jornada 8 de la Liga en el Camp Nou. El brasileño todavía no se ha "
+},
+{
+"t": "La subasta del anillo de la princesa Firyal de Jordania destapa un presunto robo y señala a su ama de llaves",
+"u": "https://okdiario.com/cool/moda/anillo-compromiso-firyal-jordania-ama-llaves-robo-subasta-20518911",
+"fecha": "2026-10-09T12:00+02:00",
+"resumen": "El anillo de compromiso de la princesa Firyal de Jordania, una joya creada especialmente para ella por una de las firmas de alta joyería más exclusivas del mundo, se convirtió en la pista que permitió descubrir la desapa"
+}
+]
 },
 {
 "id": "elespanol",
@@ -795,7 +1055,7 @@
 "resumen": "En la Moncloa y Ferraz son receptivos a la fórmula, con el objetivo prioritario puesto en Madrid, pese a las dificultades para el entendimiento entre los grupos y la premura de la convocatoria electoral del 29-N"
 },
 {
-"t": "Feijóo propone un cara a cara con Sánchez el 16 de noviembre en Mediaset",
+"t": "Feijóo acepta un cara a cara con Sánchez el 16 de noviembre en Mediaset",
 "u": "https://www.lavanguardia.com/politica/20261009/11654951/feijoo-propone-cara-cara-sanchez-16-noviembre-mediaset.html",
 "fecha": "2026-10-09T09:37+02:00",
 "resumen": "El líder del PP también acepta dos debates más para confrontar modelos con la izquierda y pone condiciones para una entrevista en RTVE por su “innegable parcialidad”"
@@ -885,10 +1145,10 @@
 "resumen": "Se venden como ‘producto natural’ pero contienen sildenafilo, principio activo de la Viagra"
 },
 {
-"t": "Un juez investiga a tres educadoras de un colegio concertado de Alcalá por maltrato a bebés",
-"u": "https://www.lavanguardia.com/local/madrid/20261009/11654907/juez-investiga-tres-educadoras-colegio-concertado-alcala-maltrato-bebes.html",
-"fecha": "2026-10-09T08:49+02:00",
-"resumen": "Se trata del colegio Alborada gestionado por el Opus Dei"
+"t": "Barcelona pierde ante Ginebra la sede del congreso mundial aeroespacial en 2029",
+"u": "https://www.lavanguardia.com/local/barcelona/20261009/11655098/barcelona-pierde-ginebra-sede-congreso-mundial-aeroespacial-2029.html",
+"fecha": "2026-10-09T12:38+02:00",
+"resumen": "Además de las candidaturas catalana y de la ciudad suiza también Houston optaba a albergar el encuentro de referencia de este sector"
 },
 {
 "t": "Las máquinas y equipos que están revolucionando el sector de la construcción",
@@ -897,22 +1157,12 @@
 "resumen": ""
 },
 {
-"t": "La fiebre del huevo: entre la obsesión por la proteína y las recomendaciones de salud",
-"u": "https://www.lavanguardia.com/vivo/tendencias/20261009/11654101/fiebre-huevo-obsesion-proteina-recomendaciones-salud.html",
-"fecha": "2026-10-09T08:21+02:00",
-"resumen": ""
+"t": "Juergen Boos, director de la mayor feria del libro: “La falta de comprensión lectora me aterra”",
+"u": "https://www.lavanguardia.com/cultura/20261009/11655160/juergen-boos-entrevista-director-feria-libro-frankfurt-jubilacion-inteligencia-artificial.html",
+"fecha": "2026-10-09T12:35+02:00",
+"resumen": "El editor, que se jubilará este domingo, deja paso al empresario Joachim Kaufmann para que se ponga al frente de Frankfurt"
 }
 ]
-},
-{
-"id": "elperiodico",
-"nombre": "El Periódico",
-"grupo": "espana",
-"linea": "centroizquierda",
-"url": "https://www.elperiodico.com/es/rss/rss_portada.xml",
-"ok": false,
-"items": [],
-"error": "HTTPError: HTTP Error 406: WAF Forbidden"
 },
 {
 "id": "20minutos",
@@ -1252,7 +1502,7 @@
 "url": "https://www.libertaddigital.com/rss/",
 "ok": false,
 "items": [],
-"error": "ParseError: not well-formed (invalid token): line 73, column 83"
+"error": "ParseError: not well-formed (invalid token): line 73, column 139"
 },
 {
 "id": "newtral",
@@ -1329,10 +1579,10 @@
 "nombre": "Telemadrid",
 "grupo": "espana",
 "linea": "publico",
-"url": "https://www.telemadrid.es/rss/",
+"url": "https://www.telemadrid.es/rss/portada.xml",
 "ok": false,
 "items": [],
-"error": "HTTPError: HTTP Error 404: Not Found"
+"error": "HTTPError: HTTP Error 404: Not Found | HTTPError: HTTP Error 404: Not Found"
 },
 {
 "id": "expansion",
@@ -1593,16 +1843,6 @@
 "resumen": "La iniciativa da un nuevo impulso a un compromiso con el sector primario y consolida 15 años de colaboración con la Universidad de Santiago de Compostela para poner conocimiento, experiencia y talento al servicio de una "
 }
 ]
-},
-{
-"id": "eleconomista",
-"nombre": "elEconomista",
-"grupo": "economia",
-"linea": "economica",
-"url": "https://www.eleconomista.es/rss/rss-portada.php",
-"ok": false,
-"items": [],
-"error": "HTTPError: HTTP Error 403: Forbidden"
 },
 {
 "id": "cnbc",
@@ -2017,7 +2257,7 @@
 {
 "t": "La jurista sudafricana Navi Pillay, quien \"ha hecho rendir cuentas a los Estados y ha llevado esperanza a las víctimas\", gana el premio Nobel de la Paz 2026",
 "u": "https://www.bbc.com/mundo/articles/cm78pw5qwy38o?at_medium=RSS&at_campaign=rss",
-"fecha": "2026-10-09T12:50+02:00",
+"fecha": "2026-10-09T12:52+02:00",
 "resumen": "El Comité Noruego del Nobel ha otorgado el premio Nobel de la Paz 2026 a la ex alta comisionada de derechos humanos de la ONU."
 },
 {
@@ -2265,7 +2505,7 @@
 {
 "t": "Live Updates: Human Rights Lawyer Navi Pillay Is Awarded Nobel Peace Prize",
 "u": "https://www.nytimes.com/live/2026/10/09/world/nobel-peace-prize-winner-2026",
-"fecha": "2026-10-09T12:45+02:00",
+"fecha": "2026-10-09T12:53+02:00",
 "resumen": "Ms. Pillay has served as a judge in her native South Africa and on international courts investigating war crimes. She led a U.N. panel that determined that Israel had committed genocide against Palestinians in Gaza, a fi"
 },
 {
@@ -2289,7 +2529,7 @@
 {
 "t": "A Rural Village Voted to Leave the U.K., Stirring Britain’s Migration Debate",
 "u": "https://www.nytimes.com/2026/10/09/world/europe/piddington-village-uk-independence.html",
-"fecha": "2026-10-09T06:01+02:00",
+"fecha": "2026-10-09T12:52+02:00",
 "resumen": "A plan to house 1,250 asylum seekers on the outskirts of Piddington prompted a symbolic independence vote, highlighting a growing dilemma for the government."
 },
 {
@@ -2379,7 +2619,7 @@
 {
 "t": "Here’s the latest.",
 "u": "https://www.nytimes.com/live/2026/10/09/world/nobel-peace-prize-winner-2026/heres-the-latest",
-"fecha": "2026-10-09T12:44+02:00",
+"fecha": "2026-10-09T12:53+02:00",
 "resumen": ""
 }
 ]
@@ -2459,18 +2699,6 @@
 "resumen": "Le jugement du tribunal est conforme aux réquisitions du parquet, qui avait évoqué la toxicité « résiduelle » de l’huile en cause et le fait que la preuve d’un impact environnemental n’était « pas rapportée »."
 },
 {
-"t": "« Uniqlo est en route pour battre à plate couture le suédois H&M »",
-"u": "https://www.lemonde.fr/economie/article/2026/10/09/uniqlo-est-en-route-pour-battre-a-plate-couture-le-suedois-h-m_6790539_3234.html",
-"fecha": "2026-10-09T11:00+02:00",
-"resumen": "Les ventes de Fast Retailing, la multinationale japonaise derrière l’enseigne, ont grimpé de près de 17 % en un an. Un succès à contre-courant de la fast-fashion et qui devrait lui permettre de passer numéro deux mondial"
-},
-{
-"t": "Aux Etats-Unis, la mise à mort d’un condamné par peloton d’exécution militaire sera diffusée en direct ; l’ONU dénonce une forme de « torture »",
-"u": "https://www.lemonde.fr/international/article/2026/10/09/aux-etats-unis-la-mise-a-mort-d-un-condamne-par-peloton-d-execution-militaire-sera-diffusee-en-direct-l-onu-denonce-une-forme-de-torture_6790389_3211.html",
-"fecha": "2026-10-09T11:16+02:00",
-"resumen": "Nidal Hasan, qui a tué 13 personnes en 2009 sur une base militaire du Texas, « sera fusillé par des soldats, comme il se doit, et nous veillerons à ce que le public puisse y assister », a déclaré le chef du Pentagone, Pe"
-},
-{
 "t": "Elon Musk reçoit de Donald Trump une médaille scientifique, confirmant son retour en grâce auprès du président américain",
 "u": "https://www.lemonde.fr/international/article/2026/10/09/elon-musk-recoit-de-donald-trump-une-medaille-scientifique-confirmant-son-retour-en-grace-aupres-du-president-americain_6790488_3210.html",
 "fecha": "2026-10-09T03:51+02:00",
@@ -2481,6 +2709,18 @@
 "u": "https://www.lemonde.fr/une-balle-dans-le-pied/article/2026/10/09/cristiano-ronaldo-ou-la-difficulte-de-deboulonner-les-statuts_6790532_6606027.html",
 "fecha": "2026-10-09T09:49+02:00",
 "resumen": "Cristiano Ronaldo, Lionel Messi ou Kylian Mbappé sont des « joueurs à statut », ce qui leur vaut des privilèges… qui renforcent ce statut. Mais le football reste un sport collectif."
+},
+{
+"t": "Aux Etats-Unis, la mise à mort d’un condamné par peloton d’exécution militaire sera diffusée en direct ; l’ONU dénonce une forme de « torture »",
+"u": "https://www.lemonde.fr/international/article/2026/10/09/aux-etats-unis-la-mise-a-mort-d-un-condamne-par-peloton-d-execution-militaire-sera-diffusee-en-direct-l-onu-denonce-une-forme-de-torture_6790389_3211.html",
+"fecha": "2026-10-09T11:16+02:00",
+"resumen": "Nidal Hasan, qui a tué 13 personnes en 2009 sur une base militaire du Texas, « sera fusillé par des soldats, comme il se doit, et nous veillerons à ce que le public puisse y assister », a déclaré le chef du Pentagone, Pe"
+},
+{
+"t": "« Uniqlo est en route pour battre à plate couture le suédois H&M »",
+"u": "https://www.lemonde.fr/economie/article/2026/10/09/uniqlo-est-en-route-pour-battre-a-plate-couture-le-suedois-h-m_6790539_3234.html",
+"fecha": "2026-10-09T11:00+02:00",
+"resumen": "Les ventes de Fast Retailing, la multinationale japonaise derrière l’enseigne, ont grimpé de près de 17 % en un an. Un succès à contre-courant de la fast-fashion et qui devrait lui permettre de passer numéro deux mondial"
 },
 {
 "t": "« Oui, on va perdre certains contrats » : à Montréal, le marché de l’emploi des jeunes diplômés bouleversé par l’IA",
@@ -2777,10 +3017,10 @@
 "resumen": "La ejecución de Nidal Hasan, autor del tiroteo en la base militar, tendrá lugar el 3 de diciembre en Fort Hood, donde perpetró el ataque. Será la primera ejecución militar estadounidense por pelotón de fusilamiento desde"
 },
 {
-"t": "Ataques con misiles hutíes en el aeropuerto de Riad dejan 3 muertos, entre ellos un capitán de avión",
-"u": "https://es.euronews.com/2026/10/09/ataques-con-misiles-huties-en-el-aeropuerto-de-riad-dejan-3-muertos-entre-ellos-un-capitan",
+"t": "Ataques con misiles de los hutíes en el aeropuerto de Riad matan a 3, incluido un capitán de avión",
+"u": "https://es.euronews.com/2026/10/09/ataques-con-misiles-de-los-huties-en-el-aeropuerto-de-riad-matan-a-3-incluido-un-capitan-d",
 "fecha": "2026-10-09T12:20+02:00",
-"resumen": "Dos misiles alcanzaron el aeropuerto internacional Rey Khalid, obligando a diplomáticos a refugiarse y retrasando vuelos. El gobierno yemení aseguró avances en su contraofensiva en el mar Rojo, mientras los hutíes afirma"
+"resumen": "Dos ataques con misiles contra el aeropuerto internacional Rey Khalid obligaron a los diplomáticos a refugiarse y paralizaron vuelos, mientras el gobierno yemení aseguró avances en su contraofensiva en el mar Rojo y los "
 },
 {
 "t": "Últimas noticias | 09 octubre 2026 - Mediodía",
@@ -2889,6 +3129,18 @@
 "ok": true,
 "items": [
 {
+"t": "Is Trump signalling a return to war with Iran after the midterms?",
+"u": "https://www.aljazeera.com/news/2026/10/9/is-trump-signalling-a-return-to-war-with-iran-after-the-midterms?traffic_source=rss",
+"fecha": "2026-10-09T12:40+02:00",
+"resumen": "US media reports suggest he may be weighing strikes before the vote, but the president has ruled that out."
+},
+{
+"t": "Ex-OpenAI staff say they were fired for raising safety concerns",
+"u": "https://www.aljazeera.com/economy/2026/10/9/ex-openai-staff-say-they-were-fired-for-raising-safety-concerns?traffic_source=rss",
+"fecha": "2026-10-09T12:39+02:00",
+"resumen": "Three former researchers pen open letter warning of 'chilling' effect on company culture."
+},
+{
 "t": "The girls in the Gaza school photograph",
 "u": "https://www.aljazeera.com/features/longform/2026/10/9/the-girls-in-the-gaza-school-photograph?traffic_source=rss",
 "fecha": "2026-10-09T12:23+02:00",
@@ -2995,18 +3247,6 @@
 "u": "https://www.aljazeera.com/economy/2026/10/9/from-aden-to-sanaa-yemenis-struggle-to-deal-with-soaring-living-costs?traffic_source=rss",
 "fecha": "2026-10-09T07:53+02:00",
 "resumen": "As fighting intensifies, Yemenis face a deepening economic crisis, with unpaid salaries and rising prices."
-},
-{
-"t": "How October 7 changed Lebanon and Hezbollah’s political reality",
-"u": "https://www.aljazeera.com/news-analysis/2026/10/9/how-october-7-changed-lebanon-and-hezbollahs-political-reality?traffic_source=rss",
-"fecha": "2026-10-09T07:52+02:00",
-"resumen": "Analysts say Hezbollah's decision on October 8 to join a 'war of support' for Gaza changed Lebanon's political reality."
-},
-{
-"t": "Photos: Gaza before and after – a city transformed by war",
-"u": "https://www.aljazeera.com/gallery/2026/10/9/gaza-before-and-after-a-city-transformed-by-war?traffic_source=rss",
-"fecha": "2026-10-09T07:22+02:00",
-"resumen": "Archive and recent photos show how three years of war left Gaza's streets, landmarks and public spaces unrecognisable."
 }
 ]
 },
@@ -3543,16 +3783,6 @@
 "resumen": "Illa da Toxa (Pontevedra), jueves 1 de octubre de 2026 Pedro Sánchez ha pedido a los grupos parlamentarios \"altura de miras\" para convalidar mañana los decretos sobre vivienda en el Congreso y ha destacado la prolongació"
 }
 ]
-},
-{
-"id": "cnmv",
-"nombre": "CNMV (novedades)",
-"grupo": "oficial",
-"linea": "oficial",
-"url": "https://www.cnmv.es/portal/RSS/RSS.aspx",
-"ok": false,
-"items": [],
-"error": "HTTPError: HTTP Error 403: Forbidden"
 },
 {
 "id": "boe",

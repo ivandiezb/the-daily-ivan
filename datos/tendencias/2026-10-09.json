@@ -1,6 +1,6 @@
 {
 "fecha": "2026-10-09",
-"hora": "12:52",
+"hora": "12:58",
 "google": {
 "ES": {
 "geo": "ES",
@@ -156,14 +156,14 @@
 "s": "El Mundo"
 },
 {
-"t": "El PSOE \"puso a disposición de la organización criminal de Leire su estructura y finanzas\", dice la Fiscalía",
-"u": "https://www.elespanol.com/espana/tribunales/20261009/psoe-puso-disposicion-organizacion-criminal-leire-estructura-finanzas-dice-fiscalia/1003744414822_0.html",
-"s": "El Español"
-},
-{
 "t": "El juez Pedraz descarta citar como investigado al PSOE en el 'caso Leire' o citar en campaña a Santos Cerdán",
 "u": "https://cadenaser.com/nacional/2026/10/09/el-juez-pedraz-descarta-citar-como-investigado-al-psoe-en-el-caso-leire-o-citar-en-campana-a-santos-cerdan-cadena-ser/",
 "s": "Cadena SER"
+},
+{
+"t": "El PSOE \"puso a disposición de la organización criminal de Leire su estructura y finanzas\", dice la Fiscalía",
+"u": "https://www.elespanol.com/espana/tribunales/20261009/psoe-puso-disposicion-organizacion-criminal-leire-estructura-finanzas-dice-fiscalia/1003744414822_0.html",
+"s": "El Español"
 }
 ],
 "n": 2000
@@ -179,9 +179,9 @@
 "s": "El Mundo"
 },
 {
-"t": "Movimiento Sumar elige a Verónica Barbero como su candidata dentro del Frente Amplio para las elecciones del 29-N",
-"u": "https://www.lavanguardia.com/politica/20261009/11654986/movimiento-sumar-elige-veronica-barbero-candidata-frente-amplio-elecciones-29-n.html",
-"s": "La Vanguardia"
+"t": "Movimiento Sumar elige a Verónica Barbero como su candidata dentro del Frente Amplio",
+"u": "https://www.elconfidencial.com/espana/2026-10-09/movimiento-sumar-veronica-barbero-frente-amplio-1tps_4441842/",
+"s": "El Confidencial"
 },
 {
 "t": "Atasco en el Frente Amplio: las exigencias cruzadas tuercen las negociaciones",
@@ -239,14 +239,14 @@
 "s": "WBAL-TV"
 },
 {
-"t": "North Carolina prepares for impact of Hurricane Isaias",
-"u": "https://www.wral.com/news/local/north-carolina-prepares-for-hurricane-isaias-october-2026/",
-"s": "WRAL"
+"t": "Ending the week on a pleasant note, rain from Isaias arrives Sunday",
+"u": "https://www.abc27.com/weather/ending-the-week-on-a-pleasant-note-rain-from-isaias-arrives-sunday/",
+"s": "ABC27"
 },
 {
-"t": "DC Forecast | Sunshine returns in time for the weekend",
-"u": "https://www.wusa9.com/article/weather/forecast/dc-area-forecast-for-oct-8-2026/65-2575336c-35f2-42fe-8941-ce20da35ac44",
-"s": "WUSA9"
+"t": "More sunshine ahead of Isaias impacts in Maryland this weekend",
+"u": "https://foxbaltimore.com/news/local/more-sunshine-ahead-of-isaias-impacts-in-maryland-this-weekend",
+"s": "WBFF"
 }
 ],
 "n": 200
@@ -275,29 +275,6 @@
 "n": 1000
 },
 {
-"t": "susan collins troy jackson debate",
-"trafico": "100+",
-"fecha": "2026-10-09T12:30+02:00",
-"noticias": [
-{
-"t": "Three takeaways from the second — more substantive — Susan Collins and Troy Jackson Maine Senate debate",
-"u": "https://www.bostonglobe.com/2026/10/09/nation/susan-collins-troy-jackson-maine-debate/",
-"s": "The Boston Globe"
-},
-{
-"t": "Poll: Democrat Troy Jackson narrowly leads Susan Collins in Maine Senate race",
-"u": "https://www.washingtonpost.com/politics/2026/10/09/poll-democrat-troy-jackson-narrowly-leads-susan-collins-maine-senate-race/",
-"s": "The Washington Post"
-},
-{
-"t": "In Maine Senate debate, Collins says she's \"not exactly\" Trump's \"favorite senator\"",
-"u": "https://www.cbsnews.com/news/maine-senate-debate-collins-jackson-trump/",
-"s": "CBS News"
-}
-],
-"n": 100
-},
-{
 "t": "star trek: enterprise",
 "trafico": "2000+",
 "fecha": "2026-10-09T12:30+02:00",
@@ -319,6 +296,29 @@
 }
 ],
 "n": 2000
+},
+{
+"t": "susan collins troy jackson debate",
+"trafico": "100+",
+"fecha": "2026-10-09T12:30+02:00",
+"noticias": [
+{
+"t": "5 Key Moments From a Testy Maine Senate Debate: ‘You Owe Me an Apology’",
+"u": "https://www.nytimes.com/2026/10/08/us/maine-senate-debate-key-moments.html",
+"s": "The New York Times"
+},
+{
+"t": "Poll: Democrat Troy Jackson narrowly leads Susan Collins in Maine Senate race",
+"u": "https://www.washingtonpost.com/politics/2026/10/09/poll-democrat-troy-jackson-narrowly-leads-susan-collins-maine-senate-race/",
+"s": "The Washington Post"
+},
+{
+"t": "In Maine Senate debate, Collins says she's \"not exactly\" Trump's \"favorite senator\"",
+"u": "https://www.cbsnews.com/news/maine-senate-debate-collins-jackson-trump/",
+"s": "CBS News"
+}
+],
+"n": 100
 },
 {
 "t": "orlando weather",
@@ -362,6 +362,29 @@
 "t": "Community mourns student, adult killed in school bus accident",
 "u": "https://www.fox35orlando.com/news/my-heart-sank-winter-haven-officers-honor-16-year-old-killed-bus-crash",
 "s": "FOX 35 Orlando"
+}
+],
+"n": 100
+},
+{
+"t": "unc basketball",
+"trafico": "100+",
+"fecha": "2026-10-09T12:20+02:00",
+"noticias": [
+{
+"t": "The moment at UNC's basketball reunion that caught Michael Malone off guard",
+"u": "https://sports.yahoo.com/articles/moment-uncs-basketball-reunion-caught-163247722.html",
+"s": "Yahoo Sports"
+},
+{
+"t": "Men’s Basketball Wraps Up ACC Tipoff Appearance",
+"u": "https://goheels.com/news/2026/10/7/mens-basketball-mens-basketball-wraps-up-acc-tipoff",
+"s": "University of North Carolina Athletics"
+},
+{
+"t": "Daily Drop: A New Era! Michael Malone & UNC Take Center Stage At ACC Tipoff",
+"u": "https://247sports.com/college/north-carolina/article/unc-michael-malone-acc-tipoff-daily-drop-podcast-290979348/",
+"s": "247Sports"
 }
 ],
 "n": 100
@@ -434,29 +457,6 @@
 }
 ],
 "n": 200
-},
-{
-"t": "alexander bublik",
-"trafico": "100+",
-"fecha": "2026-10-09T12:10+02:00",
-"noticias": [
-{
-"t": "Alexander Bublik - Tomas Machac",
-"u": "https://www.flashscore.co.uk/match/tennis/bublik-alexander-t0WN9vR6/machac-tomas-S44E7UYr/?mid=hr6BwfJN",
-"s": "Flashscore UK"
-},
-{
-"t": "Alexander Bublik vs Tomas Machac Prediction & Picks - ATP Shanghai Masters",
-"u": "https://www.sportytrader.com/us/picks/alexander-bublik-tomas-machac-377938/",
-"s": "SportyTrader"
-},
-{
-"t": "Sports News, Transfers, Scores | Watch Live Sport",
-"u": "https://www.skysports.com/tennis/watch/8244297859274918112/rolex-shanghai-masters-2026",
-"s": "Sky Sports"
-}
-],
-"n": 100
 }
 ]
 },
@@ -465,6 +465,52 @@
 "url": "https://trends.google.com/trending/rss?geo=GB",
 "ok": true,
 "items": [
+{
+"t": "novak djokovic",
+"trafico": "1000+",
+"fecha": "2026-10-09T12:40+02:00",
+"noticias": [
+{
+"t": "Hurkacz fires 19 aces to set Djokovic clash, Tsitsipas wins in Shanghai",
+"u": "https://www.atptour.com/en/news/hurkacz-duckworth-shanghai-2026-thursday",
+"s": "ATP Tour"
+},
+{
+"t": "Shanghai Masters 2026 Day Two Recap",
+"u": "https://www.perfect-tennis.com/shanghai-masters-2026-day-two-recap/",
+"s": "Perfect Tennis"
+},
+{
+"t": "What Novak Djokovic needs to do to qualify for the ATP Finals after China Open win",
+"u": "https://sports.yahoo.com/articles/novak-djokovic-needs-qualify-atp-180000356.html",
+"s": "Yahoo Sports"
+}
+],
+"n": 1000
+},
+{
+"t": "hubert hurkacz",
+"trafico": "200+",
+"fecha": "2026-10-09T12:40+02:00",
+"noticias": [
+{
+"t": "NA ŻYWO: Hubert Hurkacz — Novak Djoković w Pekinie. Relacja i wynik live",
+"u": "https://przegladsportowy.onet.pl/tenis/na-zywo-hubert-hurkacz-novak-djokovic-w-pekinie-relacja-i-wynik-live/7976e16",
+"s": "Przegląd Sportowy"
+},
+{
+"t": "Głośno po meczu Hurkacza. Wszyscy piszą o jednym",
+"u": "https://sportowefakty.wp.pl/tenis/1278103/glosno-po-meczu-hurkacza-wszyscy-pisza-o-jednym",
+"s": "SportoweFakty"
+},
+{
+"t": "Novak Djoković - Hubert Hurkacz w 2. rundzie ATP w Szanghaju. Relacja na żywo",
+"u": "https://sport.interia.pl/tenis/na-zywo-novak-djokovic-hubert-hurkacz-w-2-rundzie-atp-w-szanghaju-re,nzId,9278",
+"s": "Interia Sport"
+}
+],
+"n": 200
+},
 {
 "t": "edward enninful",
 "trafico": "200+",
@@ -490,7 +536,7 @@
 },
 {
 "t": "enzo maresca",
-"trafico": "2000+",
+"trafico": "5000+",
 "fecha": "2026-10-09T12:00+02:00",
 "noticias": [
 {
@@ -509,11 +555,11 @@
 "s": "The Guardian"
 }
 ],
-"n": 2000
+"n": 5000
 },
 {
 "t": "death notice",
-"trafico": "500+",
+"trafico": "1000+",
 "fecha": "2026-10-09T11:40+02:00",
 "noticias": [
 {
@@ -532,11 +578,11 @@
 "s": "Evesham Journal"
 }
 ],
-"n": 500
+"n": 1000
 },
 {
 "t": "world space week 2026 theme",
-"trafico": "200+",
+"trafico": "500+",
 "fecha": "2026-10-09T11:40+02:00",
 "noticias": [
 {
@@ -555,7 +601,7 @@
 "s": "Space"
 }
 ],
-"n": 200
+"n": 500
 },
 {
 "t": "hugh bonneville",
@@ -619,9 +665,9 @@
 "s": "The Guardian"
 },
 {
-"t": "Riyadh: Saudia Airlines pilot, two others killed in Houthi attack on airport Thursday",
-"u": "https://www.timesofisrael.com/liveblog-oct-9-2026/",
-"s": "The Times of Israel"
+"t": "Nobel Peace Prize awarded to former International Criminal Court judge Navanethem Pillay",
+"u": "https://www.cnbc.com/2026/10/09/nobel-peace-prize-navanethem-navi-pillay-winner.html",
+"s": "CNBC"
 }
 ],
 "n": 5000
@@ -648,52 +694,6 @@
 }
 ],
 "n": 5000
-},
-{
-"t": "alison hammond panic attack",
-"trafico": "1000+",
-"fecha": "2026-10-09T11:00+02:00",
-"noticias": [
-{
-"t": "Alison Hammond says she’s ‘struggling’ after suffering panic attack on-air: ‘It’s a vulnerable place to be’",
-"u": "https://www.independent.co.uk/arts-entertainment/tv/news/alison-hammond-panic-attack-this-morning-b3063950.html",
-"s": "The Independent"
-},
-{
-"t": "Alison Hammond returns home from hospital after rushing off This Morning",
-"u": "https://www.bbc.co.uk/news/articles/cr20w7j8jd21o",
-"s": "BBC"
-},
-{
-"t": "Alison Hammond has heart check-up in hospital after rushing off This Morning while on air",
-"u": "https://www.bbc.com/news/articles/c60rlwgx9n9go",
-"s": "BBC"
-}
-],
-"n": 1000
-},
-{
-"t": "arthur fery",
-"trafico": "1000+",
-"fecha": "2026-10-09T11:00+02:00",
-"noticias": [
-{
-"t": "Highlights: Fery sinks Cilic on Shanghai 2026 debut",
-"u": "https://www.atptour.com/en/video/highlights-fery-sinks-cilic-on-shanghai-2026-debut",
-"s": "ATP Tour"
-},
-{
-"t": "ATP Shanghai Day 1 Predictions Including Arthur Fery vs Marin Cilic",
-"u": "https://lastwordonsports.com/tennis/2026/10/06/atp-shanghai-day-1-predictions-fery-cilic/",
-"s": "Last Word On Sports"
-},
-{
-"t": "Arthur Fery beats former US Open champion to earn first ATP Tour win in two months",
-"u": "https://www.independent.co.uk/bulletin/sport/arthur-fery-marin-cilic-shanghai-masters-result-b3062847.html",
-"s": "The Independent"
-}
-],
-"n": 1000
 }
 ]
 },
@@ -940,6 +940,29 @@
 "ok": true,
 "items": [
 {
+"t": "rückrufaktion",
+"trafico": "1000+",
+"fecha": "2026-10-09T12:40+02:00",
+"noticias": [
+{
+"t": "Lenkung kann ausfallen: Skoda startet XXL-Rückruf – 370.000 Autos in Deutschland betroffen",
+"u": "https://www.chip.de/news/rueckrufe/lenkung-kann-ausfallen-skoda-startet-xxl-rueckruf-in-deutschland-sind-370-000-autos-betroffen_71e40e61-fade-421d-8cb1-b97b70a44785.html",
+"s": "CHIP"
+},
+{
+"t": "VW-Rückruf ausgeweitet: Viele müssen zweimal in die Werkstatt",
+"u": "https://www.br.de/nachrichten/wirtschaft/vw-rueckruf-ausgeweitet-viele-muessen-zweimal-in-die-werkstatt,VXLgl7y",
+"s": "BR"
+},
+{
+"t": "KBA-Infos: VW-Tochter Skoda ruft mehr als eine Million Fahrzeuge zurück",
+"u": "https://www.volksstimme.de/deutschland-und-welt/wirtschaft/vw-tochter-skoda-ruft-mehr-als-eine-million-fahrzeuge-zuruck-4332224",
+"s": "Volksstimme"
+}
+],
+"n": 1000
+},
+{
 "t": "die 3-millionen-euro-woche (1)",
 "trafico": "2000+",
 "fecha": "2026-10-09T12:40+02:00",
@@ -950,17 +973,40 @@
 "s": "STERN.de"
 },
 {
-"t": "\"Wer wird Millionär?\" \"Ich rede ja viel, aber ...\" Rentnerin sorgt bei Günther Jauch für Empörung",
-"u": "https://www.gala.de/lifestyle/-wer-wird-millionaer-----ich-rede-ja-viel--aber------rentnerin-sorgt-bei-guenther-jauch-fuer-empoerung-24692396.html",
-"s": "GALA.de"
-},
-{
 "t": "\"Wer wird Millionär?\": Kandidat kann Chance auf 3 Millionen nicht nutzen",
 "u": "https://www.t-online.de/unterhaltung/tv/wer-wird-millionaer/id_101471572/-wer-wird-millionaer-bei-rtl-fragen-antworten-der-aktuellsten-sendung-.html",
 "s": "T-Online"
+},
+{
+"t": "\"WWM\": Fulminanter Abschluss für 3-Millionen-Euro-Woche",
+"u": "https://www.dwdl.de/zahlenzentrale/108130/wwm_fulminanter_abschluss_fuer_3millioneneurowoche/",
+"s": "DWDL"
 }
 ],
 "n": 2000
+},
+{
+"t": "angelo stiller",
+"trafico": "200+",
+"fecha": "2026-10-09T12:40+02:00",
+"noticias": [
+{
+"t": "Stiller vor VfB-Abschied",
+"u": "https://www.n-tv.de/sport/mediathek/videos/sport/Angelo-Stiller-wird-den-VfB-Stuttgart-aller-Voraussicht-nach-im-Sommer-verlassen-Alle-Infos-im-Video-id31398033.html",
+"s": "n-tv.de"
+},
+{
+"t": "Flut an auslaufenden Verträgen: Hier muss Stuttgart ganz genau hinschauen",
+"u": "https://www.fussballdaten.de/news/flut-auslaufenden-vertraegen-hier-muss-stuttgart-ganz-genau-hinschauen/",
+"s": "fussballdaten.de"
+},
+{
+"t": "VfB Stuttgart: Abschied? Das ist der Stand bei Stiller",
+"u": "https://www.sport.de/news/ne17225283/vfb-stuttgart-abschied-das-ist-der-stand-bei-stiller/",
+"s": "sport.de"
+}
+],
+"n": 200
 },
 {
 "t": "novak djokovic",
@@ -996,14 +1042,14 @@
 "s": "Wallstreet Online"
 },
 {
+"t": "Öl-Menge auf Vorkriegsniveau, aber Preise explodieren? Was jetzt die Spritpreise explodieren lässt",
+"u": "https://www.giessener-allgemeine.de/politik/donald-trump-erklaert-oel-sei-auf-vorkriegsniveau-was-die-zahlen-zeigen-zr-94532940.html",
+"s": "Gießener Allgemeine"
+},
+{
 "t": "Bericht: Angriff auf Schiff mitten im Persischen Golf - boerse.de",
 "u": "https://www.boerse.de/nachrichten/Bericht-Angriff-auf-Schiff-mitten-im-Persischen-Golf/38658555",
 "s": "boerse.de"
-},
-{
-"t": "Straße von Hormus: Durchfahrt mit Super-Tanker kostet bis zu 40 Millionen Dollar",
-"u": "https://www.bild.de/politik/ausland-und-internationales/oelverkehr-immer-teurer-25-000-dollar-boni-40-mio-pro-hormus-fahrt-6ac3be8d0a14891ddd2b35d1",
-"s": "BILD"
 }
 ],
 "n": 2000
@@ -1102,7 +1148,7 @@
 },
 {
 "t": "hubert hurkacz",
-"trafico": "200+",
+"trafico": "500+",
 "fecha": "2026-10-09T12:20+02:00",
 "noticias": [
 {
@@ -1119,52 +1165,6 @@
 "t": "Djoković przemówił przed meczem z Hurkaczem",
 "u": "https://www.sport.pl/tenis/7,64987,33067893,djokovic-przemowil-przed-meczem-z-hurkaczem.html",
 "s": "Sport.pl"
-}
-],
-"n": 200
-},
-{
-"t": "marbella",
-"trafico": "500+",
-"fecha": "2026-10-09T12:10+02:00",
-"noticias": [
-{
-"t": "Spanien: Deutscher Schönheitschirurg in Marbella erschossen – 18-Jähriger festgenommen",
-"u": "https://www.spiegel.de/panorama/justiz/marbella-deutscher-schoenheitschirurg-erschossen-18-jaehriger-schwede-festgenommen-a-e0649aed-4777-4acc-b728-6ee454e7ada0",
-"s": "Spiegel"
-},
-{
-"t": "Marbella: Deutscher Schönheitschirurg in eigener Klinik erschossen",
-"u": "https://www.bild.de/news/ausland/marbella-deutscher-schoenheitschirurg-in-eigener-klinik-erschossen-6ac72711e51bfb79beba62d0",
-"s": "BILD"
-},
-{
-"t": "Maskierter Angreifer tötet Arzt während Sprechstunde",
-"u": "https://www.t-online.de/nachrichten/panorama/kriminalitaet/id_101472018/spanien-arzt-waehrend-sprechstunde-in-marbella-erschossen.html",
-"s": "T-Online"
-}
-],
-"n": 500
-},
-{
-"t": "dazn",
-"trafico": "500+",
-"fecha": "2026-10-09T12:00+02:00",
-"noticias": [
-{
-"t": "Gratis-Premiere bei DAZN zur Champions League",
-"u": "https://www.bild.de/sport/fussball/gratis-premiere-bei-dazn-zur-champions-league-6ac4a8e873cfe42b5b0254cb",
-"s": "BILD"
-},
-{
-"t": "ZDFsportstudio Champions League - Ligaphase, 2. Spieltag vom 14. Oktober",
-"u": "https://www.zdf.de/video/kurzfassungen/uefa-champions-league-saison-2026-27-live-highlights-livestreams-100/zdfsportstudio-uefa-champions-league-ligaphase-2-spieltag-14-oktober-bayern-dortmund-leipzig-stuttgart-100",
-"s": "ZDF"
-},
-{
-"t": "RB Leipzig - PSV Eindhoven live ► Die Übertragung auf DAZN ✅",
-"u": "https://www.dazn.com/de-DE/news/fussball/rb-leipzig-psv-eindhoven-live-champions-league-die-uebertragung-auf-dazn/12g4x6rw6ftf21vbmhb4dfo2h3",
-"s": "DAZN"
 }
 ],
 "n": 500
@@ -1238,9 +1238,9 @@
 "s": "Corriere Bergamo"
 },
 {
-"t": "A 62 anni muore schiacciato da mini escavatore nel Bergamasco",
-"u": "https://www.ansa.it/sito/notizie/cronaca/2026/10/09/a-62-anni-muore-schiacciato-da-mini-escavatore-nel-bergamasco_926ea031-4821-4265-9a78-e98ce899e378.html",
-"s": "ANSA"
+"t": "Bergamo, imprenditore edile muore schiacciato da un mini escavatore",
+"u": "https://www.tgcom24.mediaset.it/cronaca/bergamo-imprenditore-edile-morto-schiacciato_117450728-202602k.shtml",
+"s": "Tgcom24"
 }
 ],
 "n": 500
@@ -1475,9 +1475,9 @@
 "s": "Diário de Notícias"
 },
 {
-"t": "Dois feridos ligeiros em colisão entre duas composições do Metro em Almada",
-"u": "https://www.publico.pt/2026/10/09/local/noticia/dois-feridos-ligeiros-colisao-duas-composicoes-metro-almada-2190779",
-"s": "Público"
+"t": "Linhas 1 e 3 do Metro Sul do Tejo condicionadas após acidente em Almada",
+"u": "https://www.rtp.pt/noticias/economia/linhas-1-e-3-do-metro-sul-do-tejo-condicionadas-apos-acidente-em-almada_n1770603",
+"s": "RTP"
 }
 ],
 "n": 500
@@ -1539,8 +1539,8 @@
 "s": "Rádio Comercial"
 },
 {
-"t": "Mariza canta canções de amor em concerto no festival Às Vezes o Amor em 2027",
-"u": "https://sapo.pt/artigo/mariza-canta-cancoes-de-amor-em-concerto-no-festival-as-vezes-o-amor-em-2027-6ac757749c1f5d4157717bcd",
+"t": "Mariza canta canções de amor em concerto no festival Montepio Às Vezes o Amor em 2027",
+"u": "https://sapo.pt/artigo/mariza-canta-cancoes-de-amor-em-concerto-no-festival-montepio-as-vezes-o-amor-em-2027-6ac757749c1f5d4157717bcd",
 "s": "SAPO"
 },
 {
@@ -1771,19 +1771,19 @@
 "fecha": "2026-10-09T10:10+02:00",
 "noticias": [
 {
-"t": "Premier League: 10 things to look out for this weekend",
-"u": "https://www.theguardian.com/football/2026/oct/09/premier-league-10-things-to-look-out-for-this-weekend",
-"s": "The Guardian"
+"t": "Man City charges: Enzo Maresca says 'feeling is fantastic' among Man City squad",
+"u": "https://www.bbc.com/sport/football/articles/c6n4ex2lgg2ko",
+"s": "BBC"
 },
 {
-"t": "Ten KEY questions for Matchweek 6's fixtures",
-"u": "https://www.premierleague.com/en/news/4730161/ten-key-questions-for-matchweek-6s-fixtures",
-"s": "Premier League"
+"t": "Haaland: We have to stick together, enjoy the ride and smile!",
+"u": "https://www.mancity.com/news/mens/erling-haaland-liverpool-psg-preview-message-to-fans-63927065",
+"s": "Manchester City FC"
 },
 {
-"t": "Ladbrokes' football acca - Liverpool & City to draw in Premier League headliner",
-"u": "https://www.ladbrokes.com/en/news/premier-league-football-weekend-acca-2026-10-10/",
-"s": "Ladbrokes"
+"t": "Haaland on Man City: ‘I care a lot about the fans because I’m a fan myself’",
+"u": "https://www.vavel.com/en/football/2026/10/09/manchester-city/1274473-haaland-on-man-city-i-care-a-lot-about-the-fans-because-i-m-a-fan-myself.html",
+"s": "VAVEL.com"
 }
 ],
 "n": 100
@@ -1889,7 +1889,7 @@
 "items": [
 {
 "t": "novak djokovic",
-"trafico": "500+",
+"trafico": "1000+",
 "fecha": "2026-10-09T12:20+02:00",
 "noticias": [
 {
@@ -1908,11 +1908,11 @@
 "s": "Perfect Tennis"
 }
 ],
-"n": 500
+"n": 1000
 },
 {
 "t": "shanghai open",
-"trafico": "100+",
+"trafico": "200+",
 "fecha": "2026-10-09T12:10+02:00",
 "noticias": [
 {
@@ -1931,7 +1931,7 @@
 "s": "The Sunday Guardian"
 }
 ],
-"n": 100
+"n": 200
 },
 {
 "t": "clima mendoza",
@@ -1944,40 +1944,17 @@
 "s": "Clarin.com"
 },
 {
+"t": "Mendoza tendrá un viernes frío y con nubes: ¿seguirá lloviendo?",
+"u": "https://www.mdzol.com/sociedad/2026/10/9/mendoza-tendra-un-viernes-frio-y-con-nubes-pero-sin-lluvias-1986759.html",
+"s": "MDZ Online"
+},
+{
 "t": "Pronóstico para este viernes: parcialmente nublado con poco cambio de la temperatura",
 "u": "https://www.elcucodigital.com/pronostico-para-este-viernes-parcialmente-nublado-con-poco-cambio-de-la-temperatura-2/",
 "s": "El Cuco Digital"
-},
-{
-"t": "Mendoza tendrá un viernes frío y con nubes, pero sin lluvias",
-"u": "https://www.mdzol.com/sociedad/2026/10/9/mendoza-tendra-un-viernes-frio-y-con-nubes-pero-sin-lluvias-1986759.html",
-"s": "MDZ Online"
 }
 ],
 "n": 100
-},
-{
-"t": "horarios f1",
-"trafico": "500+",
-"fecha": "2026-10-09T12:00+02:00",
-"noticias": [
-{
-"t": "Franco Colapinto culminó 19° en la única práctica antes de la clasificación de la Sprint del GP de Singapur de la F1",
-"u": "https://www.infobae.com/deportes/2026/10/09/franco-colapinto-afronta-la-unica-practica-antes-de-la-clasificacion-de-la-sprint-del-gp-de-singapur-de-la-f1/",
-"s": "Infobae"
-},
-{
-"t": "Flojo arranque de Colapinto en el GP de Singapur: terminó 19º con una extraña estrategia",
-"u": "https://www.eldia.com/deportes/flojo-arranque-de-colapinto-en-el-gp-de-singapur-termino-19-con-una-extrana-estrategia-deportes_1791541920",
-"s": "Diario El Día de La Plata"
-},
-{
-"t": "F1: Colapinto quedó 19.° en la única práctica del GP de Singapur",
-"u": "https://campeones.com.ar/f1-colapinto-quedo-19-en-la-unica-practica-del-gp-de-singapur/",
-"s": "Campeones"
-}
-],
-"n": 500
 },
 {
 "t": "huevo",
@@ -2001,6 +1978,29 @@
 }
 ],
 "n": 200
+},
+{
+"t": "horarios f1",
+"trafico": "500+",
+"fecha": "2026-10-09T12:00+02:00",
+"noticias": [
+{
+"t": "Franco Colapinto culminó 19° en la única práctica antes de la clasificación de la Sprint del GP de Singapur de la F1",
+"u": "https://www.infobae.com/deportes/2026/10/09/franco-colapinto-afronta-la-unica-practica-antes-de-la-clasificacion-de-la-sprint-del-gp-de-singapur-de-la-f1/",
+"s": "Infobae"
+},
+{
+"t": "Flojo arranque de Colapinto en el GP de Singapur: terminó 19º con una extraña estrategia",
+"u": "https://www.eldia.com/deportes/flojo-arranque-de-colapinto-en-el-gp-de-singapur-termino-19-con-una-extrana-estrategia-deportes_1791541920",
+"s": "Diario El Día de La Plata"
+},
+{
+"t": "F1: Colapinto quedó 19.° en la única práctica del GP de Singapur",
+"u": "https://campeones.com.ar/f1-colapinto-quedo-19-en-la-unica-practica-del-gp-de-singapur/",
+"s": "Campeones"
+}
+],
+"n": 500
 },
 {
 "t": "pronostico cordoba",
@@ -2041,8 +2041,8 @@
 "s": "La Capital"
 },
 {
-"t": "Viernes fresco e inestable en Rosario: se esperan chaparrones durante la jornada",
-"u": "https://www.cadena3.com/noticia/sociedad/viernes-fresco-e-inestable-en-rosario-se-esperan-chaparrones-durante-la-jornada_601914",
+"t": "Clima en Rosario: cómo estará el tiempo este viernes 9 de octubre",
+"u": "https://www.cadena3.com/noticia/clima/clima-en-rosario-como-estara-el-tiempo-este-viernes-9-de-octubre_601892",
 "s": "Cadena 3 Argentina"
 }
 ],
@@ -2050,7 +2050,7 @@
 },
 {
 "t": "vuelo",
-"trafico": "200+",
+"trafico": "500+",
 "fecha": "2026-10-09T11:40+02:00",
 "noticias": [
 {
@@ -2069,7 +2069,7 @@
 "s": "Infobae"
 }
 ],
-"n": 200
+"n": 500
 },
 {
 "t": "jubilación",
@@ -2124,6 +2124,29 @@
 "url": "https://trends.google.com/trending/rss?geo=BR",
 "ok": true,
 "items": [
+{
+"t": "ronaldinho gaúcho",
+"trafico": "100+",
+"fecha": "2026-10-09T12:40+02:00",
+"noticias": [
+{
+"t": "Entenda por que a Argentina não pode aposentar a camisa 10 de Messi",
+"u": "https://ge.globo.com/futebol/futebol-internacional/noticia/2026/10/09/entenda-por-que-a-argentina-nao-pode-aposentar-a-camisa-10-de-messi.ghtml",
+"s": "ge"
+},
+{
+"t": "Hotel sem água quente e falta de cachê: africanos denunciam precaridade em despedida de Messi",
+"u": "https://www.estadao.com.br/esportes/futebol/hotel-sem-agua-quente-e-falta-de-cache-africanos-denunciam-precaridade-em-despedida-de-messi/",
+"s": "Estadão"
+},
+{
+"t": "Não deram nem uma foto com Messi, reclama técnico do Benim após amistoso",
+"u": "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/10/08/tecnico-do-benin-diz-que-jogadores-nao-conseguiram-trocar-camisa-com-messi.ghtm",
+"s": "UOL"
+}
+],
+"n": 100
+},
 {
 "t": "br-135",
 "trafico": "100+",
@@ -2195,33 +2218,33 @@
 },
 {
 "t": "árbitro",
-"trafico": "500+",
+"trafico": "1000+",
 "fecha": "2026-10-09T12:20+02:00",
 "noticias": [
 {
-"t": "Boca tiene árbitro designado con O´Higgins: cómo es el balance de los partidos previos",
-"u": "https://yoxeneize.com/boca-ohiggins-arbitro-matonte-sudamericana/",
-"s": "yoxeneize.com"
+"t": "Luto en la lucha libre de México: un peleador le hizo una llave al árbitro, lo mató y quedó detenido",
+"u": "https://www.clarin.com/internacional/luto-lucha-libre-mexico-peleador-hizo-llave-arbitro-mato-quedo-detenido_0_SfLap6nxde.html",
+"s": "Clarin.com"
 },
 {
-"t": "Salta crimen a la cancha y a liga de futbol",
-"u": "https://www.reforma.com/salta-crimen-a-la-cancha-y-a-liga-de-futbol/ar3289726",
-"s": "Reforma"
+"t": "¿Por qué el martinete está prohibido en México? La peligrosa llave que habría sido usada por el Hijo de Fishman",
+"u": "https://es-us.noticias.yahoo.com/martinete-prohibido-m%C3%A9xico-peligrosa-llave-174137792.html",
+"s": "Yahoo"
 },
 {
-"t": "¿Qué pasa con César Ramos? El árbitro sinaloense sigue sin ser programado",
-"u": "https://oem.com.mx/elsoldesinaloa/deportes/que-pasa-con-cesar-ramos-el-arbitro-sinaloense-sigue-sin-ser-programado-32504197",
-"s": "El Sol de México"
+"t": "Latin Lover defiende al Hijo de Fishman y afirma que la muerte del réferi fue “un accidente”",
+"u": "https://www.infobae.com/mexico/2026/10/08/latin-lover-defiende-al-hijo-de-fishman-y-afirma-que-la-muerte-del-referi-fue-un-accidente/",
+"s": "Infobae"
 }
 ],
-"n": 500
+"n": 1000
 },
 {
 "t": "combustível",
-"trafico": "200+",
+"trafico": "500+",
 "fecha": "2026-10-09T12:20+02:00",
 "noticias": [],
-"n": 200
+"n": 500
 },
 {
 "t": "prótese",
@@ -2248,7 +2271,7 @@
 },
 {
 "t": "novak djokovic",
-"trafico": "1000+",
+"trafico": "2000+",
 "fecha": "2026-10-09T12:10+02:00",
 "noticias": [
 {
@@ -2267,53 +2290,30 @@
 "s": "The Lufkin Daily News"
 }
 ],
-"n": 1000
+"n": 2000
 },
 {
 "t": "shanghai open",
-"trafico": "100+",
+"trafico": "500+",
 "fecha": "2026-10-09T12:10+02:00",
 "noticias": [
 {
-"t": "Shelton breezes to straight-sets win to advance in Shanghai",
-"u": "https://africa.espn.com/tennis/story/_/id/50138247/shelton-breezes-straight-sets-win-advance-shanghai",
-"s": "ESPN"
+"t": "Zverev churns out win in Shanghai Masters opener",
+"u": "https://www.afp.com/en/zverev-churns-out-win-shanghai-masters-opener",
+"s": "AFP.com"
 },
 {
-"t": "Shanghai 2026 Nitto ATP Finals Qualification Scenarios | Nitto ATP Finals | Tennis",
-"u": "https://www.nittoatpfinals.com/en/news/shanghai-2026-nitto-atp-finals-qualification-scenarios",
-"s": "Nitto ATP Finals"
+"t": "Highlights: Zverev kick-starts Shanghai 2026 title bid",
+"u": "https://www.atptour.com/en/video/highlights-zverev-kick-starts-shanghai-2026-title-bid",
+"s": "ATP Tour"
 },
 {
-"t": "Ben Shelton reveals 2026 end goal after massive setbacks, Toyko Open withdrawal",
-"u": "https://jang.com.pk/en/74356-ben-shelton-reveals-2026-end-goal-after-massive-setbacks-toyko-open-withdrawal-news",
-"s": "Jang"
+"t": "Follow the Shanghai Masters and Beijing Open LIVE",
+"u": "https://www.flashscore.com/news/tennis-tracker-shanghai-masters-beijing-open-live-scores-updates-zverev-djokovic-shelton-cobolli-zheng-svitolina-mertens-swiatek/0WA0cUIP/",
+"s": "Flashscore.com"
 }
 ],
-"n": 100
-},
-{
-"t": "qualidade do ar manaus",
-"trafico": "100+",
-"fecha": "2026-10-09T12:00+02:00",
-"noticias": [
-{
-"t": "Controle de chamas em lixão de Manaus só deve ser concluído nesta quinta-feira, diz comandante dos bombeiros",
-"u": "https://oglobo.globo.com/brasil/noticia/2026/10/07/controle-de-chamas-em-lixao-de-manaus-so-deve-ser-concluido-nesta-quinta-feira-diz-comandante-dos-bombeiros.ghtml",
-"s": "O GLOBO"
-},
-{
-"t": "Com ar poluído por queimadas, Manaus tem aulas canceladas na Ufam e no Ifam",
-"u": "https://noticias.uol.com.br/cotidiano/ultimas-noticias/2026/10/08/suspensao-aulas-amazonas-qualidade-ar-ruim.ghtm",
-"s": "UOL Notícias"
-},
-{
-"t": "Manaus amanhece encoberta por fumaça após incêndio",
-"u": "https://sbtnews.sbt.com.br/noticia/brasil/manaus-amanhece-encoberta-por-fumaca-apos-incendio",
-"s": "SBT News"
-}
-],
-"n": 100
+"n": 500
 },
 {
 "t": "game",
@@ -2326,14 +2326,14 @@
 "s": "ESPN"
 },
 {
-"t": "Guardians force winner-take-all Game 5 in Cleveland",
-"u": "https://www.axios.com/local/cleveland/2026/10/09/guardians-force-game-5-white-sox",
-"s": "Axios"
+"t": "Not done yet! Guardians storm back to force Game 5 in Cleveland",
+"u": "https://www.mlb.com/news/guardians-win-alds-game-4-2026",
+"s": "MLB.com"
 },
 {
-"t": "Suddenly powerful, Guardians pound away at White Sox to force winner-take-all Game 5",
-"u": "https://www.nytimes.com/athletic/7670196/2026/10/08/white-sox-guardians-game-4-score-results-takeaways-mlb-alds-2026/",
-"s": "The New York Times"
+"t": "Guardians erupt in sixth inning to stun White Sox in Game 4 of ALDS, force deciding Game 5",
+"u": "https://www.cbssports.com/mlb/news/guardians-white-sox-alds-game-4-mlb-playoffs/",
+"s": "CBS Sports"
 }
 ],
 "n": 100
@@ -2345,6 +2345,75 @@
 "url": "https://trends.google.com/trending/rss?geo=IN",
 "ok": true,
 "items": [
+{
+"t": "hubert hurkacz",
+"trafico": "200+",
+"fecha": "2026-10-09T12:40+02:00",
+"noticias": [
+{
+"t": "Shanghai Masters: Dzień rywalizacji dla najlepszych kandydatów do mistrzostwa.",
+"u": "https://www.vietnam.vn/pl/thuong-hai-masters-ngay-thi-dau-cua-cac-ung-cu-vien-hang-dau-cho-chuc-vo-dich",
+"s": "Vietnam.vn"
+},
+{
+"t": "Hurkacz - Djoković i Świątek - Mertens. Znamy godziny hitowych meczów",
+"u": "https://newsmaxpolska.pl/sport/aktualnosci/74451/o-ktorej-godzinie-jutro-gra-iga-swiatek-kiedy-mecz-hurkacza-z-djokoviciem/news",
+"s": "Newsmax Polska"
+},
+{
+"t": "Djoković zagra z Hurkaczem. Serb zdradził swój plan na Szanghaj",
+"u": "https://polskieradio24.pl/sport/djokovic-ma-plan-na-szanghaj-hurkacz-bedzie-chcial-go-pokrzyzowac",
+"s": "Polskie Radio 24"
+}
+],
+"n": 200
+},
+{
+"t": "oppo coloros 17 launch date",
+"trafico": "200+",
+"fecha": "2026-10-09T12:40+02:00",
+"noticias": [
+{
+"t": "OPPO Find X10 Series to Launch Globally on October 21 with Next-Generation True-to-Life Imaging",
+"u": "https://www.oppo.com/en/newsroom/press/oppo-findx10series-upcoming-launch/",
+"s": "OPPO"
+},
+{
+"t": "Oppo Find X10 and Pro Max unboxing and hands-on - GSMArena.com news",
+"u": "https://www.gsmarena.com/oppo_find_x10_and_pro_max_unboxing_and_handson-news-74959.php",
+"s": "GSMArena.com"
+},
+{
+"t": "ColorOS 17 to debut with OPPO Find X10 series in India; Open Beta programme goes live for OnePlus 13, 15 series",
+"u": "https://www.91mobiles.com/hub/coloros-17-debut-oppo-find-x10-series-india/",
+"s": "91Mobiles"
+}
+],
+"n": 200
+},
+{
+"t": "శ్రీధర్ వెంబు",
+"trafico": "500+",
+"fecha": "2026-10-09T12:40+02:00",
+"noticias": [
+{
+"t": "India slammed JD Vance: అనవసరంగా మాట్లాడారు.. జేడీ వాన్స్ వ్యాఖ్యలపై భారత్ ఆక్షేపణ",
+"u": "https://www.eenadu.net/telugu-news/india/india-has-slammed-us-vice-president-jd-vances-comments/0701/126183236",
+"s": "Eenadu"
+},
+{
+"t": "అందుకే.. అమెరికా విడిచి వచ్చేయండి!",
+"u": "https://www.sakshi.com/telugu-news/business/sridhar-vembu-urges-indian-techies-after-us-green-card-freeze-2927292",
+"s": "Sakshi"
+},
+{
+"t": "JD Vance: భారత టెక్కీలను 'వెట్టిచాకిరీ బానిసలు' అన్న అమెరికా ఉపాధ్యక్షుడు జేడీ వాన్స్‌.. భారత్ తీవ్ర ఆగ్రహం!",
+"u": "https://telugu.news18.com/news/national-international/india-hits-back-at-us-vp-jd-vance-over-indentured-servants-slur-mea-calls-remarks-deeply-offensive-arv-3243225.html",
+"s": "News18 Telugu"
+}
+],
+"n": 500
+},
 {
 "t": "novak djokovic",
 "trafico": "2000+",
@@ -2438,6 +2507,29 @@
 "n": 200
 },
 {
+"t": "జె డి వాన్స్",
+"trafico": "200+",
+"fecha": "2026-10-09T12:30+02:00",
+"noticias": [
+{
+"t": "సత్య నాదెళ్లకు ట్రంప్‌ సన్మానం",
+"u": "https://www.eenadu.net/telugu-news/world/general/0899/126183175",
+"s": "Eenadu"
+},
+{
+"t": "Donald Trump honours Satya Nadella: సత్య నాదెళ్ల, ఎలాన్ మస్క్‌కు ట్రంప్ అరుదైన గౌరవం.. ఆరుగురు టెక్ దిగ్గజాలకు అవార్డులు",
+"u": "https://ntvtelugu.com/international-news/trump-honours-satya-nadella-elon-musk-and-4-tech-leaders-with-top-us-awards-1024063.html",
+"s": "NTV Telugu"
+},
+{
+"t": "మస్క్‌కు యూఎస్ సైన్స్ మెడల్ ప్రదానం.. ట్రంప్ కితాబు",
+"u": "https://www.andhrajyothy.com/2026/international/trump-honours-elon-musk-with-science-medal-calls-him-modern-day-thomas-edison-1565706.html",
+"s": "Andhrajyothy"
+}
+],
+"n": 200
+},
+{
 "t": "இஸ்ரேல்",
 "trafico": "200+",
 "fecha": "2026-10-09T12:30+02:00",
@@ -2461,119 +2553,27 @@
 "n": 200
 },
 {
-"t": "പെട്രോള്",
-"trafico": "2000+",
-"fecha": "2026-10-09T12:20+02:00",
-"noticias": [
-{
-"t": "2031-ന് ശേഷം പെട്രോൾ/ഡീസൽ വാഹനങ്ങൾ രജിസ്റ്റർ ചെയ്യില്ല; മലിനീകരണം തടയാൻ നിർദേശവുമായി വിദഗ്ധ സമിതി",
-"u": "https://www.mathrubhumi.com/auto/news/petrol-diesel-vehicle-registration-ban-2031-panel-report-fw6whcwz",
-"s": "Mathrubhumi"
-},
-{
-"t": "ഡൽഹിയിൽ വീണ്ടും പുകമഞ്ഞ് കാലം; പുതിയ മലിനീകരണ നിയന്ത്രണങ്ങൾ ഫലം കാണുമോ? | Madhyamam",
-"u": "https://www.madhyamam.com/environment/delhi-enters-another-smog-season-1560754",
-"s": "Madhyamam"
-},
-{
-"t": "ഡൽഹിയിൽ ഗ്രാപ് നിയന്ത്രണങ്ങൾ: നിങ്ങളുടെ കാറിന് വിലക്കുണ്ടോ? പിഴ ഒഴിവാക്കാൻ അറിയേണ്ട പ്രധാന കാര്യങ്ങൾ",
-"u": "https://malayalam.drivespark.com/four-wheelers/2026/delhi-grap-restrictions-2026-essential-vehicle-rules-fines-ncr-011-57409.html",
-"s": "Drivespark Malayalam"
-}
-],
-"n": 2000
-},
-{
-"t": "एकनाथ शिंदे",
-"trafico": "500+",
-"fecha": "2026-10-09T12:20+02:00",
-"noticias": [
-{
-"t": "Shivsena Symbol Hearing : शिंदे गटाने मांडली विधानसभा अध्यक्षांची स्ट्राँग बाजू, उद्धव ठाकरेंना मोठा...",
-"u": "https://www.tv9marathi.com/national/shivsena-symbol-hearing-shinde-factions-strong-sc-case-for-speaker-powers-thackeray-hit-1774278.html",
-"s": "TV9 Marathi"
-},
-{
-"t": "Video: जर चोरी केली नसती तर ज्ञानेश कुमार लगेच मला भेटले असते, राहुल गांधी यांचा हल्लाबोल",
-"u": "https://news18marathi.com/videos/national/rahul-gandhi-gyanesh-kumar-india-alliance-protest-march-marathi-1798916.html",
-"s": "News18 Marathi"
-},
-{
-"t": "Video | Shinde Vs Thackeray । शिंदेंच्या वकिलांनी पक्ष आणि चिन्हाबाबत कोर्टात मांडला 'हा' महत्त्वाचा मुद्दा",
-"u": "https://marathi.ndtv.com/videos/shinde-s-lawyers-present-key-issue-on-party-and-symbol-in-court-against-thackeray-1170003",
-"s": "NDTV Marathi"
-}
-],
-"n": 500
-},
-{
-"t": "उमर खालिद",
+"t": "തനുശ്രീ ദത്ത",
 "trafico": "200+",
-"fecha": "2026-10-09T12:20+02:00",
+"fecha": "2026-10-09T12:30+02:00",
 "noticias": [
 {
-"t": "Activist Umar Khalid wins international human rights defender award",
-"u": "https://scroll.in/latest/1096263/activist-umar-khalid-wins-international-human-rights-defender-award",
-"s": "Scroll.in"
+"t": "നാനാ പടേക്കറെക്കുറിച്ചുള്ള 'ഈവിൾ ഡെഡ്' പരാമർശത്തിൽ ഉറച്ച് നടി തനുശ്രീ ദത്ത; വ്യാപക വിമർശനം",
+"u": "https://malayalam.news18.com/news/film/tanushree-dutta-defends-controversial-evil-dead-remark-on-late-nana-patekar-after-2018-metoo-allegations-rv-791583.html",
+"s": "News18 Malayalam"
 },
 {
-"t": "Umar Khalid",
-"u": "https://www.frontlinedefenders.org/en/profile/umar-khalid",
-"s": "Front Line Defenders"
+"t": "'സ്വയം ചാകാഞ്ഞത് കൊണ്ട് ദൈവം അയാളുടെ ജീവനെടുത്തു; അത് കഴിഞ്ഞു'! നാനാ പടേക്കറുടെ മരണത്തില്‍ തനുശ്രീ ദത്ത",
+"u": "https://www.manoramanews.com/entertainment/latest/2026/10/09/god-took-his-life-tanushree-duttas-strong-reaction-to-nana-patekars-death.html",
+"s": "Manorama News"
 },
 {
-"t": "'Prisoner No. 626710 Is Present': The Umar Khalid Behind the Symbol of Dissent",
-"u": "https://www.thequint.com/opinion/umar-khalid-documentary-arrest-struggles-tihar-jail",
-"s": "The Quint"
+"t": "നാനാ പടേക്കറുടെ മരണത്തിന് പിന്നാലെ തനുശ്രീ ദത്തയുടെ പരാമർശം വിവാദത്തിൽ; വിമർശനവുമായി സിനിമാ സംഘടന | Tanushree Dutta Nana Patekar controversy",
+"u": "https://timeskerala.com/entertainment/tanushree-dutta-nana-patekar-controversy/",
+"s": "Times Kerala"
 }
 ],
 "n": 200
-},
-{
-"t": "కత్రినా కైఫ్",
-"trafico": "500+",
-"fecha": "2026-10-09T12:20+02:00",
-"noticias": [
-{
-"t": "Katrina Kaif: ఒక్కోసారి అలాంటి సందర్భాలూ ఎదురవుతాయి: కత్రినా కైఫ్‌",
-"u": "https://www.eenadu.net/telugu-news/movies/katrina-kaif-seemingly-breaks-silence-amid-postpartum-trolling/0201/126183230",
-"s": "Eenadu"
-},
-{
-"t": "తన శరీరాకృతిపై బాడీ షేమింగ్.. స్పందించిన హీరోయిన్",
-"u": "https://www.sakshi.com/telugu-news/movies/katrina-kaif-reacts-trolling-her-body-latest-2927260",
-"s": "Sakshi"
-},
-{
-"t": "భయపడితే ముందుకు వెళ్లలేం… కత్రినా కైఫ్ కామెంట్స్ వైరల్!",
-"u": "https://www.bigtvlive.com/movies/we-can-not-forward-ift-we-fear-katrina-kaif-strong-counter-to-social-media-trolls-know-details.html",
-"s": "BigTvLive"
-}
-],
-"n": 500
-},
-{
-"t": "september 2026 car sales growth",
-"trafico": "500+",
-"fecha": "2026-10-09T12:10+02:00",
-"noticias": [
-{
-"t": "India Car Sales September 2026: Dispatches Rise 21% to 4.58 Lakh Units; Maruti Suzuki Leads, Tata and Mahindra Follow",
-"u": "https://www.autopunditz.com/post/india-car-sales-september-2026-oem-wise-dispatches",
-"s": "Autopunditz"
-},
-{
-"t": "Car Sales Sep 2026, Q3 26 - Maruti, Tata, Mahindra, Hyundai, Kia, Toyota, MG, Skoda, Honda",
-"u": "https://www.rushlane.com/car-sales-sep-2026-q3-26-maruti-tata-mahindra-hyundai-kia-12557932.html",
-"s": "RushLane"
-},
-{
-"t": "Monthly Auto Sales - September 2026 by ARETE Securities Ltd",
-"u": "https://investmentguruindia.com/newsdetail/monthly-auto-sales---september-2026-by-arete-securities-ltd517579",
-"s": "Investment Guru India"
-}
-],
-"n": 500
 }
 ]
 },
@@ -2599,8 +2599,8 @@
 },
 {
 "t": "相馬新監督「少しでも上を」 Ｊリーグ",
-"u": "https://kofu.keizai.biz/gpnews/1772241/",
-"s": "甲府経済新聞"
+"u": "https://omihachiman.keizai.biz/gpnews/1772241/",
+"s": "近江八幡経済新聞"
 }
 ],
 "n": 1000
@@ -2616,9 +2616,9 @@
 "s": "Yahoo!ニュース"
 },
 {
-"t": "布団に包まれひもで縛られた遺体…地下の物置で発見 死後数か月前後 住人の息子・娘と連絡取れず 小樽",
-"u": "https://www.htb.co.jp/news/archives_39910.html",
-"s": "HTB 北海道テレビ"
+"t": "【“ひも”で縛られた男性遺体】施錠された地下物置で発見…遺体は『布団のような物に包まれ、ひも状の物で縛られた状態』目立った外傷なく死因不明 死後数か月か…警察が身元特定急ぐ＜北海道小樽市",
+"u": "https://www.fnn.jp/articles/-/1130197",
+"s": "FNNプライムオンライン"
 },
 {
 "t": "住宅から腐敗遺体“ひも”で縛られた状態 北海道",
@@ -2644,9 +2644,9 @@
 "s": "オリコンニュース"
 },
 {
-"t": "マクドナルド、次回「ほんのハッピーセット」2作発表 ノンスタ石田のオリジナル作＆「最強王図鑑」",
-"u": "https://topics.smt.docomo.ne.jp/article/oricon/entertainment/oricon-2485425",
-"s": "ｄメニューニュース"
+"t": "10月16日(金)より、ハッピーセット(R)にユニバーサル・スタジオ・ジャパンのパークの仲間たちが大集合",
+"u": "https://www.afpbb.com/articles/-/3656862",
+"s": "AFPBB News"
 }
 ],
 "n": 500
@@ -2821,133 +2821,160 @@
 "ok": true,
 "items": [
 {
-"t": "Piero",
-"v": 87091,
-"u": "https://es.wikipedia.org/wiki/Piero"
-},
-{
-"t": "Anne Carson",
-"v": 51259,
-"u": "https://es.wikipedia.org/wiki/Anne_Carson"
-},
-{
 "t": "Grupo Sancor Seguros",
-"v": 37941,
+"v": 84682,
+"movil": 0.71,
 "u": "https://es.wikipedia.org/wiki/Grupo_Sancor_Seguros"
 },
 {
-"t": "Xosé Manuel Beiras",
-"v": 27249,
-"u": "https://es.wikipedia.org/wiki/Xosé_Manuel_Beiras"
-},
-{
-"t": "Christa Pike",
-"v": 21706,
-"u": "https://es.wikipedia.org/wiki/Christa_Pike"
-},
-{
-"t": "Beatriz Talegón",
-"v": 16679,
-"u": "https://es.wikipedia.org/wiki/Beatriz_Talegón"
-},
-{
-"t": "Lizzie Borden",
-"v": 16630,
-"u": "https://es.wikipedia.org/wiki/Lizzie_Borden"
-},
-{
-"t": "India Martínez",
-"v": 15428,
-"u": "https://es.wikipedia.org/wiki/India_Martínez"
-},
-{
-"t": "Evento:Mes de América Latina 2026",
-"v": 15371,
-"u": "https://es.wikipedia.org/wiki/Evento:Mes_de_América_Latina_2026"
-},
-{
-"t": "La bola negra (película)",
-"v": 12927,
-"u": "https://es.wikipedia.org/wiki/La_bola_negra_(película)"
-},
-{
-"t": "Desahucio de Maricarmen Abascal",
-"v": 12013,
-"u": "https://es.wikipedia.org/wiki/Desahucio_de_Maricarmen_Abascal"
-},
-{
-"t": "Gabriel Rufián",
-"v": 10806,
-"u": "https://es.wikipedia.org/wiki/Gabriel_Rufián"
-},
-{
-"t": "Luis Zahera",
-"v": 10612,
-"u": "https://es.wikipedia.org/wiki/Luis_Zahera"
-},
-{
-"t": "Lionel Messi",
-"v": 10467,
-"u": "https://es.wikipedia.org/wiki/Lionel_Messi"
-},
-{
-"t": "Frente Amplio (España)",
-"v": 10381,
-"u": "https://es.wikipedia.org/wiki/Frente_Amplio_(España)"
-},
-{
-"t": "Judeline",
-"v": 9653,
-"u": "https://es.wikipedia.org/wiki/Judeline"
-},
-{
-"t": "Shakira",
-"v": 9194,
-"u": "https://es.wikipedia.org/wiki/Shakira"
-},
-{
-"t": "Arroba (símbolo)",
-"v": 9180,
-"u": "https://es.wikipedia.org/wiki/Arroba_(símbolo)"
-},
-{
-"t": "Radio AM 750",
-"v": 8962,
-"u": "https://es.wikipedia.org/wiki/Radio_AM_750"
-},
-{
-"t": "Ada Colau",
-"v": 8914,
-"u": "https://es.wikipedia.org/wiki/Ada_Colau"
-},
-{
-"t": "Margaret Hamilton (científica)",
-"v": 8434,
-"u": "https://es.wikipedia.org/wiki/Margaret_Hamilton_(científica)"
+"t": "Piero",
+"v": 59408,
+"movil": 0.89,
+"u": "https://es.wikipedia.org/wiki/Piero"
 },
 {
 "t": "Nico Paz",
-"v": 8245,
+"v": 53167,
+"movil": 0.92,
 "u": "https://es.wikipedia.org/wiki/Nico_Paz"
 },
 {
-"t": "Tabla periódica de los elementos",
-"v": 8124,
-"u": "https://es.wikipedia.org/wiki/Tabla_periódica_de_los_elementos"
+"t": "Benín",
+"v": 36153,
+"movil": 0.84,
+"u": "https://es.wikipedia.org/wiki/Benín"
+},
+{
+"t": "Lionel Messi",
+"v": 36065,
+"movil": 0.84,
+"u": "https://es.wikipedia.org/wiki/Lionel_Messi"
+},
+{
+"t": "Christa Pike",
+"v": 31194,
+"movil": 0.87,
+"u": "https://es.wikipedia.org/wiki/Christa_Pike"
+},
+{
+"t": "Agustín Giay",
+"v": 28287,
+"movil": 0.92,
+"u": "https://es.wikipedia.org/wiki/Agustín_Giay"
+},
+{
+"t": "Judeline",
+"v": 27313,
+"movil": 0.9,
+"u": "https://es.wikipedia.org/wiki/Judeline"
+},
+{
+"t": "Lizzie Borden",
+"v": 18196,
+"movil": 0.92,
+"u": "https://es.wikipedia.org/wiki/Lizzie_Borden"
+},
+{
+"t": "La bola negra (película)",
+"v": 17139,
+"movil": 0.81,
+"u": "https://es.wikipedia.org/wiki/La_bola_negra_(película)"
+},
+{
+"t": "Álex Padilla",
+"v": 16363,
+"movil": 0.95,
+"u": "https://es.wikipedia.org/wiki/Álex_Padilla"
+},
+{
+"t": "Pablo Paz",
+"v": 15490,
+"movil": 0.91,
+"u": "https://es.wikipedia.org/wiki/Pablo_Paz"
+},
+{
+"t": "Eva Marie Saint",
+"v": 15060,
+"movil": 0.74,
+"u": "https://es.wikipedia.org/wiki/Eva_Marie_Saint"
+},
+{
+"t": "Maximiliano Gutiérrez",
+"v": 15026,
+"movil": 0.84,
+"u": "https://es.wikipedia.org/wiki/Maximiliano_Gutiérrez"
+},
+{
+"t": "Pedro (futbolista)",
+"v": 13214,
+"movil": 0.79,
+"u": "https://es.wikipedia.org/wiki/Pedro_(futbolista)"
+},
+{
+"t": "Frente Amplio (España)",
+"v": 12628,
+"movil": 0.78,
+"u": "https://es.wikipedia.org/wiki/Frente_Amplio_(España)"
+},
+{
+"t": "Samuel Velásquez",
+"v": 11954,
+"movil": 0.9,
+"u": "https://es.wikipedia.org/wiki/Samuel_Velásquez"
+},
+{
+"t": "Virgen del Rosario",
+"v": 11523,
+"movil": 0.85,
+"u": "https://es.wikipedia.org/wiki/Virgen_del_Rosario"
+},
+{
+"t": "Gabriel Rufián",
+"v": 11074,
+"movil": 0.91,
+"u": "https://es.wikipedia.org/wiki/Gabriel_Rufián"
+},
+{
+"t": "Daniel Arcila",
+"v": 11022,
+"movil": 0.91,
+"u": "https://es.wikipedia.org/wiki/Daniel_Arcila"
+},
+{
+"t": "Evento:Mes de América Latina 2026",
+"v": 10920,
+"movil": 0.8,
+"u": "https://es.wikipedia.org/wiki/Evento:Mes_de_América_Latina_2026"
+},
+{
+"t": "Desahucio de Maricarmen Abascal",
+"v": 10859,
+"movil": 0.78,
+"u": "https://es.wikipedia.org/wiki/Desahucio_de_Maricarmen_Abascal"
+},
+{
+"t": "Selección de fútbol de Benín",
+"v": 10705,
+"movil": 0.89,
+"u": "https://es.wikipedia.org/wiki/Selección_de_fútbol_de_Benín"
 },
 {
 "t": "Guitarricadelafuente",
-"v": 8086,
+"v": 9577,
+"movil": 0.88,
 "u": "https://es.wikipedia.org/wiki/Guitarricadelafuente"
 },
 {
-"t": "Tomás Gómez Franco",
-"v": 7689,
-"u": "https://es.wikipedia.org/wiki/Tomás_Gómez_Franco"
+"t": "Tabla periódica de los elementos",
+"v": 9090,
+"movil": 0.45,
+"u": "https://es.wikipedia.org/wiki/Tabla_periódica_de_los_elementos"
 }
 ],
-"dia": "2026-10-08",
-"url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/es.wikipedia/all-access/2026/10/08"
+"error": "2026-10-08: HTTPError: HTTP Error 404: Not Found",
+"descartados_bots": [],
+"dia": "2026-10-07",
+"url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/es.wikipedia/all-access/2026/10/07"
 },
 "en": {
 "lang": "en",
@@ -2956,128 +2983,157 @@
 {
 "t": "Nana Patekar",
 "v": 1665865,
+"movil": 0.91,
 "u": "https://en.wikipedia.org/wiki/Nana_Patekar"
 },
 {
 "t": "Christa Pike",
 "v": 422519,
+"movil": 0.81,
 "u": "https://en.wikipedia.org/wiki/Christa_Pike"
 },
 {
 "t": "Anne Carson",
 "v": 278792,
+"movil": 0.61,
 "u": "https://en.wikipedia.org/wiki/Anne_Carson"
 },
 {
 "t": "Nidal Hasan",
 "v": 207351,
+"movil": 0.77,
 "u": "https://en.wikipedia.org/wiki/Nidal_Hasan"
 },
 {
 "t": "Carrie (miniseries)",
 "v": 170343,
+"movil": 0.72,
 "u": "https://en.wikipedia.org/wiki/Carrie_(miniseries)"
 },
 {
 "t": "Margaret Hamilton (software engineer)",
 "v": 162739,
+"movil": 0.45,
 "u": "https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)"
 },
 {
 "t": "Nana Patekar filmography",
 "v": 158079,
+"movil": 0.87,
 "u": "https://en.wikipedia.org/wiki/Nana_Patekar_filmography"
 },
 {
 "t": "Deaths in 2026",
 "v": 139050,
+"movil": 0.45,
 "u": "https://en.wikipedia.org/wiki/Deaths_in_2026"
 },
 {
 "t": "Digger (2026 film)",
 "v": 121179,
+"movil": 0.66,
 "u": "https://en.wikipedia.org/wiki/Digger_(2026_film)"
-},
-{
-"t": "Iraq",
-"v": 119250,
-"u": "https://en.wikipedia.org/wiki/Iraq"
 },
 {
 "t": "East of Eden (novel)",
 "v": 114472,
+"movil": 0.78,
 "u": "https://en.wikipedia.org/wiki/East_of_Eden_(novel)"
 },
 {
 "t": "East of Eden (2026 miniseries)",
 "v": 113152,
+"movil": 0.81,
 "u": "https://en.wikipedia.org/wiki/East_of_Eden_(2026_miniseries)"
 },
 {
 "t": "Michael Dell",
 "v": 112442,
+"movil": 0.77,
 "u": "https://en.wikipedia.org/wiki/Michael_Dell"
 },
 {
 "t": "Kimberly Guilfoyle",
 "v": 103437,
+"movil": 0.69,
 "u": "https://en.wikipedia.org/wiki/Kimberly_Guilfoyle"
 },
 {
 "t": "Drishyam: The Conclusion",
 "v": 103252,
+"movil": 0.88,
 "u": "https://en.wikipedia.org/wiki/Drishyam:_The_Conclusion"
 },
 {
 "t": "Tanushree Dutta",
 "v": 93134,
+"movil": 0.89,
 "u": "https://en.wikipedia.org/wiki/Tanushree_Dutta"
 },
 {
 "t": "Myha'la",
 "v": 91985,
+"movil": 0.91,
 "u": "https://en.wikipedia.org/wiki/Myha'la"
 },
 {
 "t": "Lizzie Borden",
 "v": 91557,
+"movil": 0.87,
 "u": "https://en.wikipedia.org/wiki/Lizzie_Borden"
 },
 {
 "t": "Below (miniseries)",
 "v": 91539,
+"movil": 0.73,
 "u": "https://en.wikipedia.org/wiki/Below_(miniseries)"
 },
 {
 "t": "Bella Ramsey",
 "v": 87554,
+"movil": 0.91,
 "u": "https://en.wikipedia.org/wiki/Bella_Ramsey"
 },
 {
 "t": "T24 Festival",
 "v": 83103,
+"movil": 0.44,
 "u": "https://en.wikipedia.org/wiki/T24_Festival"
 },
 {
 "t": "Shooting of Abby Zwerner",
 "v": 82298,
+"movil": 0.85,
 "u": "https://en.wikipedia.org/wiki/Shooting_of_Abby_Zwerner"
 },
 {
 "t": "World Space Week",
 "v": 80892,
+"movil": 0.83,
 "u": "https://en.wikipedia.org/wiki/World_Space_Week"
 },
 {
 "t": "Other Mommy",
 "v": 74408,
+"movil": 0.72,
 "u": "https://en.wikipedia.org/wiki/Other_Mommy"
 },
 {
-"t": "Neatsville, Kentucky",
-"v": 74269,
-"u": "https://en.wikipedia.org/wiki/Neatsville,_Kentucky"
+"t": "Ayesha Jhulka",
+"v": 74053,
+"movil": 0.9,
+"u": "https://en.wikipedia.org/wiki/Ayesha_Jhulka"
+},
+{
+"t": "Eva Marie Saint",
+"v": 73457,
+"movil": 0.57,
+"u": "https://en.wikipedia.org/wiki/Eva_Marie_Saint"
 }
+],
+"descartados_bots": [
+"Iraq",
+"Neatsville, Kentucky"
 ],
 "dia": "2026-10-08",
 "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/2026/10/08"
