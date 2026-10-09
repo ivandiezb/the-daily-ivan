@@ -36,6 +36,14 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 scripts/ig_publicar.py
 
+      - name: Borrar ramas de prueba
+        if: always()
+        working-directory: repo
+        run: |
+          for r in $(git ls-remote --heads origin | awk '{print $2}' | sed 's#refs/heads/##' | grep -E '^(diagnostico|prueba-)' || true); do
+            git push -q origin --delete "$r" && echo "Borrada la rama $r" || true
+          done
+
       - name: Guardar el estado
         if: always()
         working-directory: repo

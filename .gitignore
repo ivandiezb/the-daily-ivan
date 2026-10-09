@@ -1,2 +1,13 @@
 __pycache__/
 *.pyc
+# archivos de trabajo de la tarea diaria (nunca se publican)
+/page.html
+/page_prev.html
+/build_email.py
+/archivar.py
+/publicar_web.py
+/ig.json
+/out/
+/ig_media/
+/igm/
+/trabajo/
