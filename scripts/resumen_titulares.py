@@ -5,12 +5,13 @@ Uso: python3 scripts/resumen_titulares.py datos/titulares/AAAA-MM-DD.json [--por
 
 Imprime:
   1. las fuentes leídas, por grupo y línea editorial;
-  2. los TEMAS CON MÁS COBERTURA: titulares de medios distintos que comparten palabras poco comunes, agrupados
-     y ordenados por número de medios (ayuda a medir la importancia; revisa siempre a mano lo que agrupa);
+  2. los TEMAS CON MÁS COBERTURA: titulares de medios distintos que cuentan la misma noticia (por parecido de sus
+     palabras, también entre español, inglés y francés), ordenados por número de medios. Ayuda a medir la
+     importancia; revisa siempre a mano lo que agrupa;
   3. los titulares de cada medio y las fuentes oficiales (BOE, Banco de España, BCE, Fed, Moncloa).
 Con --json guarda también los temas en un archivo, con los medios de cada uno.
 """
-import argparse, json, re, sys, unicodedata
+import argparse, heapq, json, math, re, sys, unicodedata
 from collections import Counter, defaultdict
 
 STOP = set("""
@@ -29,51 +30,147 @@ def norm(s):
     return "".join(c for c in s if unicodedata.category(c) != "Mn")
 
 
-def fichas(titulo):
-    toks = re.findall(r"[a-z0-9ñ]+", norm(titulo))
-    return {t for t in toks if (len(t) >= 4 or (t.isdigit() and len(t) >= 2)) and t not in STOP}
+# Palabras de titular que no identifican una noticia (cifras, formatos, verbos comodín): no sirven para agrupar.
+GENERICAS = set("""
+millones millon miles euros dolares libras directo ultima ultimas ultimo hora horas minuto minutos noticias noticia video
+videos fotos imagenes claves datos parte caso casos primer primera primero segunda segundo semana semanas meses junto contra
+dice dicen pide piden sigue siguen deja dejan sale salen llega llegan podria quiere quieren ahora hasta todo toda
+live latest update updates news watch photos week weeks first year years people could would should just
+estados unidos united states reino unido kingdom generales
+""".split())
+RAIZ = 7          # se comparan los primeros 7 caracteres: «ejecución» y «ejecuciones» cuentan como la misma palabra
+UMBRAL = 0.25     # parecido medio mínimo (coseno TF-IDF) para unir dos grupos de titulares
+UNIR_IDIOMA = (0.45, 0.30)  # 2.ª pasada: parecido mínimo entre grupos del mismo idioma / de idiomas distintos
+DESCOLGADO = 0.2  # un titular que se parece menos que esto al resto de su grupo se saca de él
+PALABRAS_IDIOMA = {
+    "es": set("de la el en los las del por con para una que se su al".split()),
+    "en": set("the of to in for and on is with as after at by from an".split()),
+    "fr": set("le la les des du et pour une sur dans au aux est".split()),
+}
 
 
-def agrupar(items, umbral=2):
-    """items: [(medio, titulo, url)]. Une titulares de medios distintos que comparten >= umbral palabras poco comunes."""
-    toks = [fichas(t) for _, t, _ in items]
-    df = Counter(x for ts in toks for x in ts)
-    limite = max(6, int(len(items) * 0.03))  # palabras demasiado frecuentes no sirven para agrupar
-    raras = [{x for x in ts if df[x] <= limite} for ts in toks]
-    padre = list(range(len(items)))
+def tokens(titulo):
+    return [t for t in re.findall(r"[a-z0-9ñ]+", norm(titulo))
+            if len(t) >= 4 and not t.isdigit() and t not in STOP and t not in GENERICAS]
 
-    def raiz(i):
-        while padre[i] != i:
-            padre[i] = padre[padre[i]]
-            i = padre[i]
-        return i
-    por_ficha = defaultdict(list)
-    for i, ts in enumerate(raras):
-        for x in ts:
-            por_ficha[x].append(i)
-    vecinos = defaultdict(Counter)
-    for x, idx in por_ficha.items():
+
+def idioma_de_medios(items):
+    """Idioma predominante de cada medio, contando palabras vacías en todos sus titulares."""
+    cuenta = defaultdict(Counter)
+    for medio, t, _ in items:
+        pal = re.findall(r"[a-z]+", norm(t))
+        for lengua, vacias in PALABRAS_IDIOMA.items():
+            cuenta[medio][lengua] += sum(p in vacias for p in pal)
+    return {m: c.most_common(1)[0][0] for m, c in cuenta.items()}
+
+
+def agrupar(items):
+    """items: [(medio, titulo, url)]. Agrupa los titulares que cuentan la misma noticia.
+
+    1.ª pasada: agrupamiento jerárquico por parecido medio (average linkage) entre titulares, con vectores TF-IDF de
+       las palabras (recortadas a RAIZ letras). Al exigir parecido con el grupo entero, y no con un solo titular,
+       evita las cadenas «A se parece a B, B a C» que juntan noticias distintas.
+    2.ª pasada: une grupos cuyo vector medio se parece; con menos exigencia si son de idiomas distintos (la misma
+       noticia en español e inglés solo comparte nombres propios).
+    """
+    n = len(items)
+    palabras = [tokens(t) for _, t, _ in items]
+    raices = [{p[:RAIZ] for p in ps} for ps in palabras]
+    df = Counter(x for rs in raices for x in rs)
+    vec = []
+    for rs in raices:
+        w = {x: math.log(n / df[x]) for x in sorted(rs) if df[x] >= 2}  # orden fijo: mismo resultado en cada ejecución
+        nr = math.sqrt(sum(v * v for v in w.values())) or 1
+        vec.append({x: v / nr for x, v in w.items()})
+    indice = defaultdict(list)
+    for i, v in enumerate(vec):
+        for x in v:
+            indice[x].append(i)
+    suma = defaultdict(dict)  # suma de parecidos entre los miembros de dos grupos
+    compartidas = Counter()
+    for x, idx in indice.items():
         for a in idx:
             for b in idx:
-                if a < b and items[a][0] != items[b][0]:
-                    vecinos[a][b] += 1
-    for a, cs in vecinos.items():
-        for b, n in cs.items():
-            if n >= umbral:
-                padre[raiz(a)] = raiz(b)
-    grupos = defaultdict(list)
-    for i in range(len(items)):
-        grupos[raiz(i)].append(i)
+                if a < b:
+                    suma[a][b] = suma[a].get(b, 0) + vec[a][x] * vec[b][x]
+                    compartidas[a, b] += 1
+    # una sola palabra en común («precio», «guerra») no hace la misma noticia; y dos titulares del mismo medio no se
+    # unen directamente (suelen ser ángulos distintos de un tema y no suman cobertura)
+    pares = [(a, b, s) for a in suma for b, s in suma[a].items()
+             if compartidas[a, b] >= 2 and items[a][0] != items[b][0]]
+    suma = defaultdict(dict)
+    for a, b, s in pares:
+        suma[a][b] = suma[b][a] = s
+    miembros = {i: [i] for i in range(n)}
+    cola = [(-s, a, b) for a in suma for b, s in suma[a].items() if a < b and s >= UMBRAL]
+    heapq.heapify(cola)
+    nuevo = n
+    while cola:
+        _, a, b = heapq.heappop(cola)
+        if a not in miembros or b not in miembros:
+            continue
+        c, nuevo = nuevo, nuevo + 1
+        miembros[c] = miembros.pop(a) + miembros.pop(b)
+        for k in sorted((set(suma[a]) | set(suma[b])) & miembros.keys()):
+            if k == c:
+                continue
+            s = suma[a].get(k, 0) + suma[b].get(k, 0)
+            suma[c][k] = suma[k][c] = s
+            if s / (len(miembros[c]) * len(miembros[k])) >= UMBRAL:
+                heapq.heappush(cola, (-s / (len(miembros[c]) * len(miembros[k])), min(c, k), max(c, k)))
+
+    lengua = idioma_de_medios(items)
+
+    def centro(idx):
+        c = Counter()
+        for i in idx:
+            for x, v in vec[i].items():
+                c[x] += v
+        nr = math.sqrt(sum(v * v for v in c.values())) or 1
+        return {x: v / nr for x, v in c.items()}
+
+    def idioma(idx):
+        return Counter(lengua[items[i][0]] for i in idx).most_common(1)[0][0]
+
+    grupos = [g for g in miembros.values() if len(g) >= 2]
+    while True:
+        cs, ls = [centro(g) for g in grupos], [idioma(g) for g in grupos]
+        mejor = (0, None, None)
+        for a in range(len(grupos)):
+            for b in range(a + 1, len(grupos)):
+                s = sum(v * cs[b].get(x, 0) for x, v in cs[a].items())
+                if s >= UNIR_IDIOMA[ls[a] != ls[b]] and s > mejor[0]:
+                    mejor = (s, a, b)
+        if mejor[1] is None:
+            break
+        _, a, b = mejor
+        grupos[a] += grupos.pop(b)
+
+    def parecido_al_resto(i, idx):
+        c = Counter()
+        for j in idx:
+            if j != i:
+                for x, v in vec[j].items():
+                    c[x] += v
+        nr = math.sqrt(sum(v * v for v in c.values())) or 1
+        return sum(v * c.get(x, 0) for x, v in vec[i].items()) / nr
+
     temas = []
-    for idx in grupos.values():
+    for idx in grupos:
+        if len(idx) >= 3:  # fuera los titulares que apenas se parecen al resto del grupo
+            idx = [i for i in idx if parecido_al_resto(i, idx) >= DESCOLGADO]
         medios = sorted({items[i][0] for i in idx})
         if len(medios) < 2:
             continue
-        if len(idx) > 40 and umbral < 4:  # grupo demasiado grande: repartir con más exigencia
-            temas += agrupar([items[i] for i in idx], umbral + 1)
-            continue
-        comunes = Counter(x for i in idx for x in raras[i])
-        temas.append({"medios": medios, "n": len(medios), "claves": [w for w, _ in comunes.most_common(5)],
+        # claves legibles: la raíz más repetida, mostrada con la palabra completa más frecuente
+        completas = defaultdict(Counter)
+        for i in idx:
+            for p in palabras[i]:
+                completas[p[:RAIZ]][p] += 1
+        comunes = Counter(x for i in idx for x in vec[i])
+        idx.sort(key=lambda i: -sum(vec[i].get(x, 0) for x, _ in comunes.most_common(5)))
+        temas.append({"medios": medios, "n": len(medios),
+                      "claves": [completas[x].most_common(1)[0][0] for x, _ in comunes.most_common(5)],
                       "titulares": [{"medio": items[i][0], "t": items[i][1], "u": items[i][2]} for i in idx]})
     return sorted(temas, key=lambda t: (-t["n"], -len(t["titulares"])))
 
@@ -98,12 +195,14 @@ def main():
 
     items = [(f["nombre"], it["t"], it["u"]) for f in prensa for it in f["items"]]
     temas = agrupar(items)
-    print(f"\nTEMAS CON MÁS COBERTURA (agrupación automática por palabras compartidas; {len(prensa)} medios leídos)")
+    print(f"\nTEMAS CON MÁS COBERTURA (agrupación automática por parecido de los titulares; {len(prensa)} medios leídos;"
+          " compruébala: puede juntar o separar noticias)")
     for t in temas[:30]:
         if t["n"] < 3:
             break
         print(f"- {t['n']} medios · claves: {', '.join(t['claves'])} · {', '.join(t['medios'])}")
-        for h in t["titulares"][:3]:
+        vistos = set()
+        for h in [h for h in t["titulares"] if not (h["medio"] in vistos or vistos.add(h["medio"]))][:4]:
             print(f"    · [{h['medio']}] {h['t'][:150]}")
 
     print(f"\nTITULARES POR MEDIO (los {a.por_medio} primeros de cada uno)")

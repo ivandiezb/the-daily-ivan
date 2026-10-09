@@ -93,10 +93,11 @@ def resumen(b):
     print(f"TENDENCIAS recogidas el {b['fecha']} a las {b['hora']}")
     print("\nGOOGLE · ESPAÑA (búsquedas en auge, volumen aproximado)")
     for i in b["es"]["google"]:
-        print(f"  - {i['t']} · {i['trafico']} · {i['fuente']}: {i['noticia'][:110]}")
+        print(f"  - {i['t']} · {i['trafico']}" + (f" · {i['fuente']}: {i['noticia'][:110]}" if i["noticia"] else " · (sin noticia asociada)"))
     print(f"\nGOOGLE · INTERNACIONAL ({', '.join(b['int']['paises'])}; ordenado por nº de países y volumen)")
     for i in b["int"]["google"]:
-        print(f"  - {i['t']} · {i['trafico']} · en {len(i['paises'])} país(es): {', '.join(i['paises'])} · {i['noticia'][:90]}")
+        print(f"  - {i['t']} · {i['trafico']} · en {len(i['paises'])} país(es): {', '.join(i['paises'])}"
+              + (f" · {i['noticia'][:90]}" if i["noticia"] else ""))
     print("\nTODAS LAS BÚSQUEDAS EN AUGE POR PAÍS (busca señales fuera de lo habitual: materias primas, crisis, salud…)")
     for geo, items in b.get("_por_pais", {}).items():
         print(f"  {NOMBRES.get(geo, geo)}: " + "; ".join(f"{i['t']} ({i.get('trafico', '')})" for i in items))
