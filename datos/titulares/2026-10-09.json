@@ -1,8 +1,8 @@
 {
 "fecha": "2026-10-09",
-"hora": "12:58",
+"hora": "13:00",
 "fuentes_ok": 33,
-"fuentes_total": 37,
+"fuentes_total": 33,
 "fuentes": [
 {
 "id": "elpais",
@@ -263,16 +263,6 @@
 "resumen": "El Gobierno especifica que a la vivienda asequible no se le pueden sumar gastos anejos y además blinda el derecho a compra que la gestora Avalon negó a los inquilinos Los nuevos decretos de vivienda, al detalle: del veto"
 }
 ]
-},
-{
-"id": "publico",
-"nombre": "Público",
-"grupo": "espana",
-"linea": "izquierda",
-"url": "https://www.publico.es/rss",
-"ok": false,
-"items": [],
-"error": "HTTPError: HTTP Error 404: Not Found | HTTPError: HTTP Error 404: Not Found | HTTPError: HTTP Error 404: Not Found"
 },
 {
 "id": "infolibre",
@@ -665,16 +655,6 @@
 ]
 },
 {
-"id": "larazon",
-"nombre": "La Razón",
-"grupo": "espana",
-"linea": "derecha",
-"url": "https://www.larazon.es/rss/portada.xml",
-"ok": false,
-"items": [],
-"error": "HTTPError: HTTP Error 503: Service Unavailable | HTTPError: HTTP Error 403: Forbidden"
-},
-{
 "id": "okdiario",
 "nombre": "OKDiario",
 "grupo": "espana",
@@ -855,10 +835,10 @@
 "resumen": "IU registra su propio proceso de primarias para elegir a su candidato al Frente Amplio, que le disputaría el sitio a Ada Colau. Más información: La negociación entre Junqueras y Rufián por las listas de ERC, \"muy cerca d"
 },
 {
-"t": "El Frente Amplio quiere ir a la guerra mientras se estrecha en favor de Sánchez",
-"u": "https://www.elespanol.com/opinion/editoriales/20261009/frente-amplio-quiere-ir-guerra-estrecha-favor-sanchez/1003744414328_14.html",
-"fecha": "2026-10-09T02:24+02:00",
-"resumen": "Quien tema a la derecha no tiene, a la izquierda del PSOE, una lista alternativa a Sánchez."
+"t": "El PSOE estudia candidaturas conjuntas de izquierdas al Senado en, al menos, Baleares y Navarra",
+"u": "https://www.elespanol.com/espana/politica/20261009/psoe-estudia-candidaturas-conjuntas-izquierdas-senado-baleares-navarra/1003744414998_0.html",
+"fecha": "2026-10-09T12:48+02:00",
+"resumen": "A falta de que se defina el Frente Amplio, en estas comunidades estudian candidaturas con otros partidos de izquierdas soberanistas. Más información: Qué implica tener mayoría absoluta en el Senado: así influiría el PP e"
 },
 {
 "t": "Las mafias de Ceuta suben la tarifa a la Península: 15.000€ por migrante, nadando los últimos metros hasta la costa",
@@ -1287,7 +1267,7 @@
 "resumen": "El médico de cabecera del exfutbolista argentino es el principal acusado."
 },
 {
-"t": "Teresa Perales: \"Cuando vaya cinco días seguidos a la piscina y me pregunte '¿Qué hago aquí?', ese va a ser el momento de retirarme\"",
+"t": "Teresa Perales: \"Cuando vaya cinco días seguidos a la piscina y me pregunte '¿Qué hago aquí?', será el momento de retirarme\"",
 "u": "https://www.20minutos.es/deportes/teresa-perales-cuando-vaya-cinco-dias-seguidos-piscina-me-pregunte-que-hago-aqui-sera-momento-retirarme_7046511_0.html",
 "fecha": "2026-10-09T06:25+02:00",
 "resumen": "La nadadora paralímpica Teresa Perales, galardonada con el Premio a Toda una Vida Profesional de Fundación Mapfre, ha atendido a 20minutos para hablar sobre este reconocimiento y el momento de su carrera."
@@ -1495,16 +1475,6 @@
 ]
 },
 {
-"id": "libertad",
-"nombre": "Libertad Digital",
-"grupo": "espana",
-"linea": "derecha",
-"url": "https://www.libertaddigital.com/rss/",
-"ok": false,
-"items": [],
-"error": "ParseError: not well-formed (invalid token): line 73, column 139"
-},
-{
 "id": "newtral",
 "nombre": "Newtral",
 "grupo": "espana",
@@ -1512,6 +1482,12 @@
 "url": "https://www.newtral.es/feed/",
 "ok": true,
 "items": [
+{
+"t": "Estas señales en árabe en una carretera española no se han colocado tras la crisis migratoria en Ceuta",
+"u": "https://www.newtral.es/senales-arabe-carreteras-espanolas/20261009/",
+"fecha": "2026-10-09T12:51+02:00",
+"resumen": "Forman parte de la Operación Paso del Estrecho, que se realiza desde 1986, y aparecen en Google Maps desde, al menos, 2012."
+},
 {
 "t": "Este vídeo de manifestantes volcando un remolque no tiene relación con las protestas estudiantiles en Francia",
 "u": "https://www.newtral.es/protestas-estudiantiles-francia-remolque/20261009/",
@@ -1565,24 +1541,8 @@
 "u": "https://www.newtral.es/fraude-electoral-telegram/20261008/",
 "fecha": "2026-10-08T16:19+02:00",
 "resumen": "Las conclusiones proceden de un informe del experto en redes sociales Marcelino Madrigal que ha analizado más de 18.000 canales en Telegram entre 2015 y 2026."
-},
-{
-"t": "El PSOE se abstuvo en la propuesta de Sumar de “prohibir comprar viviendas a fondos buitre”, no “votó en contra”",
-"u": "https://www.newtral.es/propuesta-sumar-vivienda-urtasun-factcheck/20261008/",
-"fecha": "2026-10-08T15:47+02:00",
-"resumen": "Aunque hubiesen contado con los síes de los socialistas, la medida tampoco habría salido adelante pese a lo que dice Urtasun."
 }
 ]
-},
-{
-"id": "telemadrid",
-"nombre": "Telemadrid",
-"grupo": "espana",
-"linea": "publico",
-"url": "https://www.telemadrid.es/rss/portada.xml",
-"ok": false,
-"items": [],
-"error": "HTTPError: HTTP Error 404: Not Found | HTTPError: HTTP Error 404: Not Found"
 },
 {
 "id": "expansion",
@@ -3017,10 +2977,10 @@
 "resumen": "La ejecución de Nidal Hasan, autor del tiroteo en la base militar, tendrá lugar el 3 de diciembre en Fort Hood, donde perpetró el ataque. Será la primera ejecución militar estadounidense por pelotón de fusilamiento desde"
 },
 {
-"t": "Ataques con misiles de los hutíes en el aeropuerto de Riad matan a 3, incluido un capitán de avión",
-"u": "https://es.euronews.com/2026/10/09/ataques-con-misiles-de-los-huties-en-el-aeropuerto-de-riad-matan-a-3-incluido-un-capitan-d",
+"t": "Ataques con misiles hutíes en el aeropuerto de Riad dejan 3 muertos, entre ellos un capitán de avión",
+"u": "https://es.euronews.com/2026/10/09/ataques-con-misiles-huties-en-el-aeropuerto-de-riad-dejan-3-muertos-entre-ellos-un-capitan",
 "fecha": "2026-10-09T12:20+02:00",
-"resumen": "Dos ataques con misiles contra el aeropuerto internacional Rey Khalid obligaron a los diplomáticos a refugiarse y paralizaron vuelos, mientras el gobierno yemení aseguró avances en su contraofensiva en el mar Rojo y los "
+"resumen": "Dos misiles alcanzaron el aeropuerto internacional Rey Khalid, obligando a diplomáticos a refugiarse y retrasando vuelos. El gobierno yemení aseguró avances en su contraofensiva en el mar Rojo, mientras los hutíes afirma"
 },
 {
 "t": "Últimas noticias | 09 octubre 2026 - Mediodía",
