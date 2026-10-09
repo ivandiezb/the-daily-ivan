@@ -25,25 +25,25 @@ FUENTES = [
     # España: generalistas de distintas líneas editoriales, agencias y servicio público
     ("elpais", "El País", "espana", "centroizquierda", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada"),
     ("eldiario", "elDiario.es", "espana", "izquierda", "https://www.eldiario.es/rss/"),
-    ("publico", "Público", "espana", "izquierda", "https://www.publico.es/rss/"),
+    ("publico", "Público", "espana", "izquierda", ["https://www.publico.es/rss", "https://www.publico.es/feed/", "https://www.publico.es/rss/portada"]),
+    ("infolibre", "infoLibre", "espana", "izquierda", ["https://www.infolibre.es/rss", "https://www.infolibre.es/rss/"]),
     ("elmundo", "El Mundo", "espana", "centroderecha", "https://e00-elmundo.uecdn.es/rss/portada.xml"),
     ("abc", "ABC", "espana", "derecha", "https://www.abc.es/rss/2.0/portada/"),
-    ("larazon", "La Razón", "espana", "derecha", "https://www.larazon.es/rss/portada.xml"),
+    ("larazon", "La Razón", "espana", "derecha", ["https://www.larazon.es/rss/portada.xml", "https://www.larazon.es/arc/outboundfeeds/rss/?outputType=xml"]),
+    ("okdiario", "OKDiario", "espana", "derecha", ["https://okdiario.com/feed", "https://okdiario.com/feed/"]),
     ("elespanol", "El Español", "espana", "centroderecha", "https://www.elespanol.com/rss/"),
     ("elconfidencial", "El Confidencial", "espana", "centro", "https://rss.elconfidencial.com/espana/"),
     ("lavanguardia", "La Vanguardia", "espana", "centro", "https://www.lavanguardia.com/rss/home.xml"),
-    ("elperiodico", "El Periódico", "espana", "centroizquierda", "https://www.elperiodico.com/es/rss/rss_portada.xml"),
-    ("20minutos", "20minutos", "espana", "centro", "https://www.20minutos.es/rss/"),
+        ("20minutos", "20minutos", "espana", "centro", "https://www.20minutos.es/rss/"),
     ("rtve", "RTVE", "espana", "publico", "https://api2.rtve.es/rss/temas_noticias.xml"),
     ("europapress", "Europa Press", "espana", "agencia", "https://www.europapress.es/rss/rss.aspx"),
     ("libertad", "Libertad Digital", "espana", "derecha", "https://www.libertaddigital.com/rss/"),
     ("newtral", "Newtral", "espana", "verificacion", "https://www.newtral.es/feed/"),
-    ("telemadrid", "Telemadrid", "espana", "publico", "https://www.telemadrid.es/rss/"),
+    ("telemadrid", "Telemadrid", "espana", "publico", ["https://www.telemadrid.es/rss/portada.xml", "https://www.telemadrid.es/feed/"]),
     # Economía y mercados
     ("expansion", "Expansión", "economia", "economica", "https://e00-expansion.uecdn.es/rss/portada.xml"),
     ("cincodias", "Cinco Días", "economia", "economica", "https://feeds.elpais.com/mrss-s/pages/ep/site/cincodias.elpais.com/portada"),
-    ("eleconomista", "elEconomista", "economia", "economica", "https://www.eleconomista.es/rss/rss-portada.php"),
-    ("cnbc", "CNBC", "economia", "economica", "https://www.cnbc.com/id/100003114/device/rss/rss.html"),
+        ("cnbc", "CNBC", "economia", "economica", "https://www.cnbc.com/id/100003114/device/rss/rss.html"),
     ("wsj", "Wall Street Journal (mundo)", "economia", "economica", "https://feeds.a.dj.com/rss/RSSWorldNews.xml"),
     # Internacional
     ("bbc", "BBC News (mundo)", "internacional", "publico", "https://feeds.bbci.co.uk/news/world/rss.xml"),
@@ -62,7 +62,6 @@ FUENTES = [
     ("bce", "Banco Central Europeo (prensa)", "oficial", "oficial", "https://www.ecb.europa.eu/rss/press.html"),
     ("fed", "Reserva Federal (prensa)", "oficial", "oficial", "https://www.federalreserve.gov/feeds/press_all.xml"),
     ("moncloa", "La Moncloa (notas de prensa)", "oficial", "oficial", "https://www.lamoncloa.gob.es/Paginas/rss.aspx"),
-    ("cnmv", "CNMV (novedades)", "oficial", "oficial", "https://www.cnmv.es/portal/RSS/RSS.aspx"),
 ]
 PAISES_TENDENCIAS = ["ES", "US", "GB", "FR", "DE", "IT", "PT", "MX", "AR", "BR", "IN", "JP"]
 WIKIS = ["es", "en"]
@@ -114,11 +113,34 @@ def fecha_iso(s):
     return s[:25]
 
 
-def leer_feed(fuente):
-    fid, nombre, grupo, linea, url = fuente
-    out = {"id": fid, "nombre": nombre, "grupo": grupo, "linea": linea, "url": url, "ok": False, "items": []}
+def parsear(datos):
     try:
-        raiz = ET.fromstring(get(url, "application/rss+xml, application/atom+xml, application/xml, text/xml"))
+        return ET.fromstring(datos)
+    except ET.ParseError:
+        # canales mal formados: «&» sueltos y caracteres de control
+        t = datos.decode("utf-8", "replace")
+        t = re.sub(r"&(?!#?\w+;)", "&amp;", t)
+        t = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", "", t)
+        t = re.sub(r"^<\?xml[^>]*\?>", "", t.lstrip())
+        return ET.fromstring(t)
+
+
+def leer_feed(fuente):
+    fid, nombre, grupo, linea, urls = fuente
+    urls = urls if isinstance(urls, list) else [urls]
+    out = {"id": fid, "nombre": nombre, "grupo": grupo, "linea": linea, "url": urls[0], "ok": False, "items": []}
+    errores = []
+    for url in urls:
+        try:
+            raiz = parsear(get(url, "application/rss+xml, application/atom+xml, application/xml, text/xml"))
+            out["url"] = url
+            break
+        except Exception as ex:
+            errores.append(f"{type(ex).__name__}: {ex}"[:120])
+    else:
+        out["error"] = " | ".join(errores)[:300]
+        return out
+    try:
         entradas = [e for e in raiz.iter() if local(e.tag) in ("item", "entry")]
         for e in entradas[:POR_FUENTE]:
             t = texto(hijo(e, "title"))
@@ -199,22 +221,31 @@ def leer_trends(geo):
 
 
 def leer_wiki(lang, hoy):
+    """Lo más visto en Wikipedia el día anterior. Descarta lo que casi no se ve desde el móvil: suele ser
+    tráfico automático (bots), no interés real de lectores."""
     out = {"lang": lang, "ok": False, "items": []}
+    base = "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/{lang}.wikipedia/{acc}/{dia:%Y/%m/%d}"
     for atras in (1, 2):
         dia = hoy - timedelta(days=atras)
-        url = f"https://wikimedia.org/api/rest_v1/metrics/pageviews/top/{lang}.wikipedia/all-access/{dia:%Y/%m/%d}"
+        url = base.format(lang=lang, acc="all-access", dia=dia)
         try:
-            d = json.loads(get(url, "application/json"))
-            arts = d["items"][0]["articles"]
-            items = []
+            arts = json.loads(get(url, "application/json"))["items"][0]["articles"]
+            movil = {a["article"]: a["views"] for a in
+                     json.loads(get(base.format(lang=lang, acc="mobile-web", dia=dia), "application/json"))["items"][0]["articles"]}
+            items, descartados = [], []
             for a in arts:
                 t = a["article"]
                 if EXCLUIR_WIKI.search(t):
                     continue
-                items.append({"t": t.replace("_", " "), "v": a["views"],
+                cuota = movil.get(t, 0) / a["views"] if a["views"] else 0
+                if cuota < 0.15:
+                    descartados.append(t.replace("_", " "))
+                    continue
+                items.append({"t": t.replace("_", " "), "v": a["views"], "movil": round(cuota, 2),
                               "u": f"https://{lang}.wikipedia.org/wiki/{t}"})
                 if len(items) >= 25:
                     break
+            out["descartados_bots"] = descartados[:15]
             out.update(ok=bool(items), dia=dia.isoformat(), url=url, items=items)
             return out
         except Exception as ex:
