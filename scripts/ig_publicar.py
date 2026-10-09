@@ -211,12 +211,57 @@ def avisar(titulo, cuerpo):
         log(f"Aviso: no se ha podido abrir el aviso en GitHub ({ex}).")
 
 
+USUARIO = "allyouneedisnews"  # cuenta esperada si no hay cola del día
+
+
+def comprobar_conexion(activo, esperado):
+    """Ejecución manual («Run workflow»): revisa la configuración y dice qué falta. Devuelve True si todo está bien."""
+    ok = True
+    log("Comprobación de la conexión con Instagram")
+    if os.environ.get("IG_CLAVE"):
+        log("✅ Secreto IG_CLAVE configurado.")
+    else:
+        log("❌ Falta el secreto IG_CLAVE (una contraseña larga cualquiera): sin él no se puede renovar el token.")
+        ok = False
+    token, info = obtener_token()
+    if not token:
+        log("❌ Falta el secreto IG_TOKEN (el token que genera Meta).")
+        return False
+    try:
+        ig_id, usuario = cuenta(token)
+    except ApiError as ex:
+        log(f"❌ Instagram no acepta el token: {ex}. Genera uno nuevo en Meta y sustituye el secreto IG_TOKEN.")
+        return False
+    if usuario.lower() == esperado.lower():
+        log(f"✅ Token válido para @{usuario}.")
+    else:
+        log(f"❌ El token es de @{usuario}, pero se espera @{esperado}.")
+        ok = False
+    try:
+        r = api("GET", f"/{ig_id}/content_publishing_limit", token, {"fields": "quota_usage,config"})
+        d = (r.get("data") or [{}])[0]
+        total = (d.get("config") or {}).get("quota_total", "?")
+        log(f"✅ Permiso para publicar: sí (usadas {d.get('quota_usage', 0)} de {total} publicaciones en 24 h).")
+    except ApiError as ex:
+        log(f"❌ Al token le falta el permiso de publicar (instagram_business_content_publish): {ex}")
+        ok = False
+    log("✅ IG_ACTIVO = si: publicará de verdad a sus horas." if activo else
+        "ℹ️ IG_ACTIVO no vale «si»: de momento solo simula. Cuando quieras empezar, crea la variable IG_ACTIVO = si.")
+    log("RESULTADO: todo listo." if ok else "RESULTADO: falta algo (mira las líneas con ❌).")
+    return ok
+
+
 # ---------- principal ----------
 def main():
     now = ahora()
     hoy = now.date().isoformat()
     cola_p, estado_p = os.path.join(DIR, hoy, "cola.json"), os.path.join(DIR, hoy, "estado.json")
     activo = os.environ.get("IG_ACTIVO", "").strip().lower() in ("si", "sí", "true", "1")
+    if os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch" or os.environ.get("IG_COMPROBAR"):
+        esperado = json.load(open(cola_p, encoding="utf-8")).get("usuario", USUARIO) if os.path.exists(cola_p) else USUARIO
+        if not comprobar_conexion(activo, esperado):
+            return 1
+        log("")
     if not os.path.exists(cola_p):
         log(f"{now:%H:%M} · No hay cola para {hoy}; nada que hacer.")
         return 0
