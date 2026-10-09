@@ -226,10 +226,15 @@ def main(page, url, out):
             if it.get("fuentes"):
                 links = " · ".join(f'<a href="{e(f["u"])}" style="color:{INK2}">{e(f["t"])}</a>' for f in it["fuentes"])
                 status = f'<br>Verificación: {e(CONF.get(it.get("conf"), it.get("conf","")))}' if it.get("conf") else ""
+                cob = it.get("cobertura") or {}
+                if cob.get("n"):
+                    status += f'<br>Cobertura: en {cob["n"]} de {cob.get("de", "?")} medios consultados'
                 P.append(f'<p style="color:{INK2};margin:8px 0 0;font-size:13px;font-style:italic">Fuentes: {links}{status}</p>')
                 T.append("Fuentes: " + " · ".join(f"{f['t']} <{f['u']}>" for f in it["fuentes"]))
                 if it.get("conf"):
                     T.append("Verificación: " + CONF.get(it["conf"], it["conf"]))
+                if (it.get("cobertura") or {}).get("n"):
+                    T.append(f"Cobertura: en {it['cobertura']['n']} de {it['cobertura'].get('de', '?')} medios consultados")
             blocks.append("\n".join(P))
         H.append(columns(blocks, sec["items"]))
         if sec["id"] == "mercados":
@@ -256,12 +261,35 @@ def main(page, url, out):
             T.append(f"- {a['d']}" + (f" [{a['a']}]" if a.get("a") else "") + f": {a['t']}")
         H.append('<table width="100%" cellpadding="0" cellspacing="0">' + "".join(rows) + "</table>")
 
+    tr = d.get("tendencias") or {}
+    if tr.get("es"):
+        h2("Tendencias de la sociedad", "gray")
+        if tr.get("comentario"):
+            H.append(f'<p style="margin:8px 0 0">{e(tr["comentario"])}</p>')
+            T.append(tr["comentario"])
+        if tr.get("destacado"):
+            H.append(f'<p style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #9A5800;background-color:{PAPER}">'
+                     f'<b style="color:#9A5800;font-family:{SANS}">Señal a vigilar:</b> {e(tr["destacado"])}</p>')
+            T.append("Señal a vigilar: " + tr["destacado"])
+
+        def lista(items, valor):
+            return " · ".join(f'{e(x["t"])} <span style="color:{INK2};font:12px {MONO}">{e(valor(x))}</span>' for x in items[:6])
+        filas = [("Lo más buscado en España", tr["es"].get("google", []), lambda x: x.get("trafico", "")),
+                 ("Lo que se busca en más países", (tr.get("int") or {}).get("google", []), lambda x: f'{len(x.get("paises", []))} ' + ("país" if len(x.get("paises", [])) == 1 else "países")),
+                 ("Lo más leído en Wikipedia en español", tr["es"].get("wiki", []), lambda x: f'{x.get("v", 0):,}'.replace(",", "."))]
+        for tit, items, valor in filas:
+            if items:
+                H.append(f'<p style="margin:10px 0 0;font-size:14px"><b style="color:{INK2};font:bold 10px {SANS};letter-spacing:1px">{tit.upper()}</b><br>{lista(items, valor)}</p>')
+                T.append(f"{tit}: " + " · ".join(x["t"] for x in items[:6]))
+        H.append(f'<p style="margin:10px 0 0;font:13px {SANS}"><a href="{e(url)}#tendencias" style="color:{ACC}">Ver el gráfico en la edición completa</a></p>')
+
     H.append(f'<div style="background-color:{PAPER};color:{INK2};margin-top:24px;padding:12px 14px;font-size:13.5px;border-radius:5px">'
-             f'<b style="color:{INK}">Para profundizar:</b> abre en Claude la ejecución de hoy de la tarea «{e(brand)}» y escribe, por ejemplo, '
-             f'«amplía G1». También puedes pulsar «Profundizar» en la <a href="{e(url)}" style="color:{ACC}">edición completa</a> y pegar el texto en el chat.'
+             f'<b style="color:{INK}">Para profundizar:</b> en la <a href="{e(url)}" style="color:{ACC}">edición completa</a>, cada noticia tiene un botón '
+             f'«Profundizar», que copia un encargo de investigación detallado, y los enlaces «Abrir en Claude · ChatGPT · Perplexity», que lo abren ya escrito. '
+             f'También puedes abrir en Claude la ejecución de hoy de la tarea «{e(brand)}» y escribir, por ejemplo, «amplía G1».'
              f'<br><br>Las cifras de mercado son orientativas y llevan su hora y fuente.</div>')
     H.append("</td></tr></table></td></tr></table>")
-    T += ["", f"Para profundizar: abre en Claude la ejecución de hoy de la tarea «{brand}» y escribe, por ejemplo, «amplía G1».",
+    T += ["", f"Para profundizar: en la edición completa ({url}) cada noticia tiene «Profundizar» y enlaces para abrirla en Claude, ChatGPT o Perplexity.",
           "Las cifras de mercado son orientativas y llevan su hora y fuente."]
 
     os.makedirs(out, exist_ok=True)

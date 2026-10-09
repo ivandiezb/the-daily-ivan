@@ -46,7 +46,7 @@ def google_es(d):
     out = []
     for it in sorted(g.get("items", []), key=lambda x: -x.get("n", 0))[:N_GOOGLE]:
         u, s, nt = enlace(it)
-        out.append({"t": it["t"], "n": it.get("n", 0), "trafico": it.get("trafico", ""), "u": u, "fuente": s, "noticia": nt})
+        out.append({"t": it["t"], "n": it.get("n", 0), "trafico": (fmt(it["n"]) + "+") if it.get("n") else it.get("trafico", ""), "u": u, "fuente": s, "noticia": nt})
     return out
 
 

@@ -25,11 +25,9 @@ FUENTES = [
     # España: generalistas de distintas líneas editoriales, agencias y servicio público
     ("elpais", "El País", "espana", "centroizquierda", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada"),
     ("eldiario", "elDiario.es", "espana", "izquierda", "https://www.eldiario.es/rss/"),
-    ("publico", "Público", "espana", "izquierda", ["https://www.publico.es/rss", "https://www.publico.es/feed/", "https://www.publico.es/rss/portada"]),
     ("infolibre", "infoLibre", "espana", "izquierda", ["https://www.infolibre.es/rss", "https://www.infolibre.es/rss/"]),
     ("elmundo", "El Mundo", "espana", "centroderecha", "https://e00-elmundo.uecdn.es/rss/portada.xml"),
     ("abc", "ABC", "espana", "derecha", "https://www.abc.es/rss/2.0/portada/"),
-    ("larazon", "La Razón", "espana", "derecha", ["https://www.larazon.es/rss/portada.xml", "https://www.larazon.es/arc/outboundfeeds/rss/?outputType=xml"]),
     ("okdiario", "OKDiario", "espana", "derecha", ["https://okdiario.com/feed", "https://okdiario.com/feed/"]),
     ("elespanol", "El Español", "espana", "centroderecha", "https://www.elespanol.com/rss/"),
     ("elconfidencial", "El Confidencial", "espana", "centro", "https://rss.elconfidencial.com/espana/"),
@@ -37,9 +35,7 @@ FUENTES = [
         ("20minutos", "20minutos", "espana", "centro", "https://www.20minutos.es/rss/"),
     ("rtve", "RTVE", "espana", "publico", "https://api2.rtve.es/rss/temas_noticias.xml"),
     ("europapress", "Europa Press", "espana", "agencia", "https://www.europapress.es/rss/rss.aspx"),
-    ("libertad", "Libertad Digital", "espana", "derecha", "https://www.libertaddigital.com/rss/"),
     ("newtral", "Newtral", "espana", "verificacion", "https://www.newtral.es/feed/"),
-    ("telemadrid", "Telemadrid", "espana", "publico", ["https://www.telemadrid.es/rss/portada.xml", "https://www.telemadrid.es/feed/"]),
     # Economía y mercados
     ("expansion", "Expansión", "economia", "economica", "https://e00-expansion.uecdn.es/rss/portada.xml"),
     ("cincodias", "Cinco Días", "economia", "economica", "https://feeds.elpais.com/mrss-s/pages/ep/site/cincodias.elpais.com/portada"),
@@ -230,18 +226,22 @@ def leer_wiki(lang, hoy):
         url = base.format(lang=lang, acc="all-access", dia=dia)
         try:
             arts = json.loads(get(url, "application/json"))["items"][0]["articles"]
-            movil = {a["article"]: a["views"] for a in
-                     json.loads(get(base.format(lang=lang, acc="mobile-web", dia=dia), "application/json"))["items"][0]["articles"]}
+            try:
+                movil = {a["article"]: a["views"] for a in
+                         json.loads(get(base.format(lang=lang, acc="mobile-web", dia=dia), "application/json", 3))["items"][0]["articles"]}
+            except Exception as ex:  # sin datos de móvil no se puede filtrar: se usa la lista tal cual y se avisa
+                movil = None
+                out["aviso"] = f"sin filtro de bots ({type(ex).__name__})"
             items, descartados = [], []
             for a in arts:
                 t = a["article"]
                 if EXCLUIR_WIKI.search(t):
                     continue
-                cuota = movil.get(t, 0) / a["views"] if a["views"] else 0
-                if cuota < 0.15:
+                cuota = (movil.get(t, 0) / a["views"] if a["views"] else 0) if movil is not None else None
+                if cuota is not None and cuota < 0.15:
                     descartados.append(t.replace("_", " "))
                     continue
-                items.append({"t": t.replace("_", " "), "v": a["views"], "movil": round(cuota, 2),
+                items.append({"t": t.replace("_", " "), "v": a["views"], "movil": None if cuota is None else round(cuota, 2),
                               "u": f"https://{lang}.wikipedia.org/wiki/{t}"})
                 if len(items) >= 25:
                     break
