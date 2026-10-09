@@ -23,6 +23,9 @@ bloquea), y opcionalmente horas (ventana de antigüedad) y max (titulares que se
 
 TIPOS: generalista y agencia (cuentan en «Cobertura» como generalistas), especializado y analisis (cuentan aparte
 como especializados), verificador, oficial y radar.
+
+USO: python3 scripts/fuentes_catalogo.py [bloque] imprime los dominios de referencia (del bloque o todos), para
+restringir las búsquedas web a medios del catálogo.
 """
 
 BLOQUES = ["mercados", "inversion", "geopolitica", "espana", "internacional", "vivienda", "naturaleza"]
