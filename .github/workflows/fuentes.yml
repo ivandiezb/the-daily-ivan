@@ -1,5 +1,6 @@
-# Recoge cada mañana titulares de muchos medios, fuentes oficiales y tendencias de búsqueda,
-# y los guarda en datos/ para que la tarea diaria de The Daily Iván los use.
+# Recoge cada mañana los titulares de las fuentes del catálogo, el radar amplio y las tendencias de búsqueda,
+# y los guarda en la rama «datos» (no se publica en la web y no engorda el historial de main: se reescribe en cada
+# ejecución con los últimos 15 días). La tarea diaria de The Daily Iván los lee de ahí.
 name: Fuentes
 
 on:
@@ -11,6 +12,7 @@ on:
     branches: [main]
     paths:
       - scripts/recoger_fuentes.py
+      - scripts/fuentes_catalogo.py
       - .github/workflows/fuentes.yml
 
 permissions:
@@ -23,28 +25,38 @@ concurrency:
 jobs:
   recoger:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
-      - name: Descargar el repositorio
+      - name: Descargar el código y los datos anteriores
         env:
           GH_TOKEN: ${{ github.token }}
-        run: git clone --depth 50 "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" repo
+        run: |
+          URL="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git clone -q --depth 1 "$URL" repo
+          if git clone -q --depth 1 -b datos "$URL" almacen 2>/dev/null; then
+            echo "Rama datos encontrada"
+          else
+            mkdir almacen && git -C almacen init -q && git -C almacen remote add origin "$URL"
+            # primera vez: se llevan los datos que hubiera en main
+            if [ -d repo/datos ]; then cp -r repo/datos almacen/; fi
+          fi
 
       - name: Recoger titulares y tendencias
-        working-directory: repo
-        run: python3 scripts/recoger_fuentes.py
+        env:
+          DATOS_DIR: ${{ github.workspace }}/almacen/datos
+        run: python3 repo/scripts/recoger_fuentes.py
 
-      - name: Guardar
+      - name: Guardar en la rama datos
         if: always()
-        working-directory: repo
+        working-directory: almacen
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add datos
-          if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
+          git checkout -q --orphan nuevo 2>/dev/null || git symbolic-ref HEAD refs/heads/nuevo
+          git add -A datos
           git commit -q -m "Fuentes: titulares y tendencias $(TZ=Europe/Madrid date '+%Y-%m-%d %H:%M')"
-          for i in 1 2 3 4; do
-            if git pull -q --rebase origin main && git push -q origin HEAD:main; then exit 0; fi
+          for i in 1 2 3; do
+            if git push -q -f origin nuevo:datos; then exit 0; fi
             sleep $((i * 5))
           done
           echo "No se ha podido guardar"; exit 1

@@ -7,15 +7,18 @@ Imprime ERRORES (impiden publicar: corrígelos) y AVISOS (revísalos; pueden est
 código 1 si hay algún error. Comprueba las reglas editoriales del encargo diario que se pueden comprobar de forma
 mecánica; no sustituye a leer la edición.
 """
-import argparse, json, re, sys
+import argparse, json, os, re, sys
 from urllib.parse import urlparse
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from fuentes_catalogo import EXCLUIDOS, clasificar_dominio, dominio_de  # noqa: E402
 
 CONF = {"confirmado", "una-fuente", "en-desarrollo", "seguimiento", "agenda"}
 TIPOS_MERCADO = {"indice", "usd", "divisa", "rent"}
 SECCIONES = set("""index home portada inicio noticias news ultima-hora ultimas-noticias economia mercados bolsa internacional
 mundo world espana politica sociedad opinion deportes cultura tecnologia ciencia salud vivienda empleo europa
 """.split())
-LINEAS_METODO = ("«Cobertura» indica", "pulsa «Profundizar»", "«Tendencias de la sociedad» resume")
+LINEAS_METODO = ("«Cobertura» indica", "«Profundizar · copiar prompt»", "«Tendencias de la sociedad» resume")
 
 errores, avisos = [], []
 
@@ -71,7 +74,8 @@ def main():
     leidos = None
     if a.temas:
         try:
-            leidos = json.load(open(a.temas, encoding="utf-8")).get("medios_leidos")
+            t = json.load(open(a.temas, encoding="utf-8"))
+            leidos = t.get("generalistas_leidos", t.get("medios_leidos"))
         except (OSError, json.JSONDecodeError) as e:
             aviso(f"no he podido leer {a.temas} ({e}); no compruebo el total de medios de la cobertura")
 
@@ -140,16 +144,27 @@ def main():
                     err(f"{donde}: una fuente no tiene nombre («t»)")
                 if not u or portada(u):
                     err(f"{donde}: URL que no parece un artículo concreto: {u!r}")
+                elif "news.google.com" in u:
+                    err(f"{donde}: enlace de Google News; usa la URL original del artículo: {u[:80]}")
+                else:
+                    tipo = clasificar_dominio(u)
+                    if tipo == "excluido":
+                        err(f"{donde}: {dominio_de(u)} está excluido del catálogo ({EXCLUIDOS.get(dominio_de(u), '')[:60]}…)")
+                    elif tipo == "otro":
+                        aviso(f"{donde}: {dominio_de(u)} no está en el catálogo de referencia ni es oficial. Sustitúyela "
+                              "por un medio de referencia, la agencia original o la fuente primaria; déjala solo si es "
+                              "la fuente primaria (p. ej., la propia empresa u organismo) o el único origen serio")
                 hosts.add(urlparse(u).netloc.removeprefix("www."))
             if len(fs) >= 2 and len(hosts) < 2:
                 aviso(f"{donde}: todas las fuentes son del mismo sitio ({', '.join(hosts)})")
             cob = it.get("cobertura")
             if cob is not None:
-                n, de, medios = cob.get("n"), cob.get("de"), cob.get("medios") or []
-                if not isinstance(n, int) or not isinstance(de, int) or n < 1 or n > de:
-                    err(f"{donde}: cobertura incoherente (n={n}, de={de})")
-                if medios and len(set(medios)) != n:
-                    err(f"{donde}: cobertura n={n} pero lista {len(set(medios))} medios distintos")
+                n, de, esp, medios = cob.get("n"), cob.get("de"), cob.get("esp", 0), cob.get("medios") or []
+                if not isinstance(n, int) or not isinstance(de, int) or not isinstance(esp, int) or n < 0 or n > de \
+                        or n + esp < 1:
+                    err(f"{donde}: cobertura incoherente (n={n}, de={de}, esp={esp})")
+                elif medios and len(set(medios)) != n + esp:
+                    err(f"{donde}: cobertura n={n} + esp={esp} pero lista {len(set(medios))} medios distintos")
                 if leidos and de != leidos:
                     err(f"{donde}: cobertura de={de}, pero los medios leídos hoy son {leidos}")
     claves = ed.get("claves") or []
@@ -178,6 +193,10 @@ def main():
     for r in ed.get("radar") or []:
         if r.get("u") and portada(r["u"]):
             err(f"radar: URL que no parece un artículo: {r['u']}")
+        elif r.get("u") and clasificar_dominio(r["u"]) == "excluido":
+            err(f"radar: {dominio_de(r['u'])} está excluido del catálogo")
+        elif r.get("u") and clasificar_dominio(r["u"]) == "otro":
+            aviso(f"radar: {dominio_de(r['u'])} no está en el catálogo de referencia ni es oficial")
 
     metodo = " ".join(ed.get("metodo") or [])
     for frag in LINEAS_METODO:

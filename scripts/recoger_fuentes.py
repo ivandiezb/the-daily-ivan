@@ -1,64 +1,37 @@
 #!/usr/bin/env python3
-"""Recoge cada mañana los titulares de muchos medios, fuentes oficiales y tendencias de búsqueda.
+"""Recoge cada mañana los titulares de las fuentes del catálogo, el radar amplio y las tendencias de búsqueda.
 
-Lo ejecuta GitHub Actions (.github/workflows/fuentes.yml), que sí tiene acceso libre a internet.
-Escribe, con la fecha de Madrid:
-  datos/titulares/AAAA-MM-DD.json   titulares recientes de cada medio y fuente oficial
-  datos/tendencias/AAAA-MM-DD.json  búsquedas en auge de Google por país y lo más leído en Wikipedia
+Lo ejecuta GitHub Actions (.github/workflows/fuentes.yml), que sí tiene acceso libre a internet. Las fuentes, sus
+tipos y los criterios de selección están en fuentes_catalogo.py. Escribe, con la fecha de Madrid, en DATOS_DIR
+(por defecto datos/; en GitHub, la rama «datos», que no se publica en la web):
+  titulares/AAAA-MM-DD.json   titulares recientes de cada fuente del catálogo y del radar de Google News
+  tendencias/AAAA-MM-DD.json  búsquedas en auge de Google por país y lo más leído en Wikipedia
 y borra los archivos de más de DIAS_GUARDAR días. Solo usa la biblioteca estándar de Python.
 """
-import html, json, os, re, sys, time, urllib.request
+import html, json, math, os, re, sys, threading, time, urllib.request
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
+from urllib.parse import quote
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from zoneinfo import ZoneInfo
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from fuentes_catalogo import BOE, FUENTES, RADAR  # noqa: E402
+
 MADRID = ZoneInfo("Europe/Madrid")
 UA = "TheDailyIvan/1.0 (+https://ivandiezb.github.io/the-daily-ivan/; resumen de prensa personal)"
-POR_FUENTE = 20
+POR_FUENTE = 20       # titulares que se guardan por fuente (salvo «max» en el catálogo)
+HORAS = 36            # antigüedad máxima por defecto (salvo «horas» en el catálogo)
+POR_RADAR = 40
 DIAS_GUARDAR = 15
-
-# grupo: espana | economia | internacional | oficial · linea: orientación editorial habitual (solo para equilibrar)
-FUENTES = [
-    # España: generalistas de distintas líneas editoriales, agencias y servicio público
-    ("elpais", "El País", "espana", "centroizquierda", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada"),
-    ("eldiario", "elDiario.es", "espana", "izquierda", "https://www.eldiario.es/rss/"),
-    ("infolibre", "infoLibre", "espana", "izquierda", ["https://www.infolibre.es/rss", "https://www.infolibre.es/rss/"]),
-    ("elmundo", "El Mundo", "espana", "centroderecha", "https://e00-elmundo.uecdn.es/rss/portada.xml"),
-    ("abc", "ABC", "espana", "derecha", "https://www.abc.es/rss/2.0/portada/"),
-    ("okdiario", "OKDiario", "espana", "derecha", ["https://okdiario.com/feed", "https://okdiario.com/feed/"]),
-    ("elespanol", "El Español", "espana", "centroderecha", "https://www.elespanol.com/rss/"),
-    ("elconfidencial", "El Confidencial", "espana", "centro", "https://rss.elconfidencial.com/espana/"),
-    ("lavanguardia", "La Vanguardia", "espana", "centro", "https://www.lavanguardia.com/rss/home.xml"),
-        ("20minutos", "20minutos", "espana", "centro", "https://www.20minutos.es/rss/"),
-    ("rtve", "RTVE", "espana", "publico", "https://api2.rtve.es/rss/temas_noticias.xml"),
-    ("europapress", "Europa Press", "espana", "agencia", "https://www.europapress.es/rss/rss.aspx"),
-    ("newtral", "Newtral", "espana", "verificacion", "https://www.newtral.es/feed/"),
-    # Economía y mercados
-    ("expansion", "Expansión", "economia", "economica", "https://e00-expansion.uecdn.es/rss/portada.xml"),
-    ("cincodias", "Cinco Días", "economia", "economica", "https://feeds.elpais.com/mrss-s/pages/ep/site/cincodias.elpais.com/portada"),
-        ("cnbc", "CNBC", "economia", "economica", "https://www.cnbc.com/id/100003114/device/rss/rss.html"),
-    ("wsj", "Wall Street Journal (mundo)", "economia", "economica", "https://feeds.a.dj.com/rss/RSSWorldNews.xml"),
-    # Internacional
-    ("bbc", "BBC News (mundo)", "internacional", "publico", "https://feeds.bbci.co.uk/news/world/rss.xml"),
-    ("bbcmundo", "BBC Mundo", "internacional", "publico", "https://feeds.bbci.co.uk/mundo/rss.xml"),
-    ("guardian", "The Guardian (mundo)", "internacional", "centroizquierda", "https://www.theguardian.com/world/rss"),
-    ("nyt", "The New York Times (mundo)", "internacional", "centroizquierda", "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"),
-    ("lemonde", "Le Monde", "internacional", "centroizquierda", "https://www.lemonde.fr/rss/une.xml"),
-    ("dw", "DW en español", "internacional", "publico", "https://rss.dw.com/xml/rss-sp-all"),
-    ("france24", "France 24 en español", "internacional", "publico", "https://www.france24.com/es/rss"),
-    ("euronews", "Euronews en español", "internacional", "centro", "https://es.euronews.com/rss"),
-    ("aljazeera", "Al Jazeera", "internacional", "centro", "https://www.aljazeera.com/xml/rss/all.xml"),
-    ("politico", "Politico Europe", "internacional", "centro", "https://www.politico.eu/feed/"),
-    ("npr", "NPR (mundo)", "internacional", "publico", "https://feeds.npr.org/1004/rss.xml"),
-    # Fuentes oficiales y primarias
-    ("bde", "Banco de España (noticias)", "oficial", "oficial", "https://www.bde.es/wbe/es/inicio/rss/rss-noticias/"),
-    ("bce", "Banco Central Europeo (prensa)", "oficial", "oficial", "https://www.ecb.europa.eu/rss/press.html"),
-    ("fed", "Reserva Federal (prensa)", "oficial", "oficial", "https://www.federalreserve.gov/feeds/press_all.xml"),
-    ("moncloa", "La Moncloa (notas de prensa)", "oficial", "oficial", "https://www.lamoncloa.gob.es/Paginas/rss.aspx"),
-]
+DATOS = os.environ.get("DATOS_DIR") or os.path.join(RAIZ, "datos")
+GOOGLE = threading.Semaphore(3)  # pocas peticiones a la vez a Google News
+GN_IDIOMA = {"es": ("es", "ES"), "en": ("en-US", "US"), "fr": ("fr", "FR"), "de": ("de", "DE"), "it": ("it", "IT"),
+             "pt": ("pt-BR", "BR")}
+BASURA = re.compile(r"^(untitled|welcome to|observación:|hoy y últimos días|predicción|oposiciones|auxiliares de|"
+                    r"\d+ (casas|pisos|chalets)|página no encontrada|404)", re.I)
 PAISES_TENDENCIAS = ["ES", "US", "GB", "FR", "DE", "IT", "PT", "MX", "AR", "BR", "IN", "JP"]
 WIKIS = ["es", "en"]
 EXCLUIR_WIKI = re.compile(r"^(Main_Page|Portada|Wikipedia:|Especial:|Special:|Archivo:|File:|Ayuda:|Help:|Portal:|"
@@ -71,6 +44,12 @@ def get(url, accept=None, tries=2):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": accept or "*/*",
                                                        "Accept-Language": "es-ES,es;q=0.9,en;q=0.6"})
+            if "news.google.com" in url:
+                with GOOGLE:
+                    with urllib.request.urlopen(req, timeout=25) as r:
+                        datos = r.read()
+                    time.sleep(0.5)
+                return datos
             with urllib.request.urlopen(req, timeout=25) as r:
                 return r.read()
         except Exception as ex:
@@ -121,31 +100,85 @@ def parsear(datos):
         return ET.fromstring(t)
 
 
-def leer_feed(fuente):
-    fid, nombre, grupo, linea, urls = fuente
-    urls = urls if isinstance(urls, list) else [urls]
-    out = {"id": fid, "nombre": nombre, "grupo": grupo, "linea": linea, "url": urls[0], "ok": False, "items": []}
-    errores = []
-    for url in urls:
+def url_google(site, idioma, horas):
+    hl, gl = GN_IDIOMA.get(idioma, ("es", "ES"))
+    q = quote(f"site:{site} when:{max(1, math.ceil(horas / 24))}d")
+    return f"https://news.google.com/rss/search?q={q}&hl={hl}&gl={gl}&ceid={gl}:{hl.split('-')[0]}"
+
+
+def entradas(raiz):
+    """Entradas de un RSS/Atom: título, enlace, fecha, medio (en Google News) y el XML de la descripción."""
+    out = []
+    for e in [x for x in raiz.iter() if local(x.tag) in ("item", "entry")]:
+        t = texto(hijo(e, "title"))
+        link_el = hijo(e, "link")
+        link = (link_el.get("href") or texto(link_el)) if link_el is not None else ""
+        src = hijo(e, "source")
+        medio = texto(src) if src is not None else ""
+        if medio and t.endswith(" - " + medio):
+            t = t[: -len(medio) - 3].strip()
+        desc = hijo(e, "description", "summary")
+        out.append({"t": t, "u": link, "fecha": fecha_iso(texto(hijo(e, "pubdate", "published", "updated", "date"))),
+                    "medio": medio, "web": (src.get("url") or "") if src is not None else "",
+                    "_desc": (desc.text or "") if desc is not None else ""})
+    return out
+
+
+def recientes(items, horas, ahora, maximo):
+    """Quita títulos vacíos o de relleno y lo antiguo; ordena del más reciente al más antiguo."""
+    limite = ahora - timedelta(hours=horas)
+    vistos, out = set(), []
+    for it in items:
+        if not it["t"] or BASURA.search(it["t"]) or it["t"].lower() in vistos:
+            continue
         try:
-            raiz = parsear(get(url, "application/rss+xml, application/atom+xml, application/xml, text/xml"))
-            out["url"] = url
-            break
+            if it["fecha"] and datetime.fromisoformat(it["fecha"]) < limite:
+                continue
+        except ValueError:
+            pass
+        vistos.add(it["t"].lower())
+        out.append(it)
+    out.sort(key=lambda i: i["fecha"] or "", reverse=True)
+    return out[:maximo]
+
+
+def leer_feed(fuente, ahora):
+    horas = fuente.get("horas") or HORAS
+    urls = list(fuente["url"]) if isinstance(fuente.get("url"), list) else ([fuente["url"]] if fuente.get("url") else [])
+    if fuente.get("site"):
+        urls.append(url_google(fuente["site"], fuente.get("idioma", "es"), horas))
+    out = {k: fuente.get(k) for k in ("id", "nombre", "medio", "tipo", "bloques", "linea", "dominio", "idioma")}
+    out.update(url=urls[0], via="", ok=False, items=[])
+    errores = []
+    for url in urls:  # el RSS propio primero; si falla o no trae nada reciente, la búsqueda de Google News
+        try:
+            brutos = entradas(parsear(get(url, "application/rss+xml, application/atom+xml, application/xml, text/xml")))
         except Exception as ex:
             errores.append(f"{type(ex).__name__}: {ex}"[:120])
-    else:
-        out["error"] = " | ".join(errores)[:300]
-        return out
+            continue
+        items = recientes(brutos, horas, ahora, fuente.get("max") or POR_FUENTE)
+        if items:
+            out.update(url=url, via="google-news" if "news.google.com" in url else "rss", ok=True,
+                       items=[{"t": i["t"], "u": i["u"], "fecha": i["fecha"]} for i in items])
+            return out
+        errores.append("sin entradas recientes" if brutos else "sin entradas")
+    out["error"] = " | ".join(errores)[:300]
+    return out
+
+
+RELACIONADA = re.compile(r'<a [^>]*href="([^"]+)"[^>]*>(.*?)</a>(?:&nbsp;|\s)*<font[^>]*>(.*?)</font>', re.S)
+
+
+def leer_radar(r, ahora):
+    """Portadas de Google News: cada historia trae varios medios que la cuentan (la agrupación es de Google)."""
+    out = {"id": r["id"], "nombre": r["nombre"], "url": r["url"], "ok": False, "items": []}
     try:
-        entradas = [e for e in raiz.iter() if local(e.tag) in ("item", "entry")]
-        for e in entradas[:POR_FUENTE]:
-            t = texto(hijo(e, "title"))
-            link_el = hijo(e, "link")
-            link = (link_el.get("href") or texto(link_el)) if link_el is not None else ""
-            fecha = fecha_iso(texto(hijo(e, "pubdate", "published", "updated", "date")))
-            resumen = texto(hijo(e, "description", "summary"))[:220]
-            if t:
-                out["items"].append({"t": t, "u": link, "fecha": fecha, "resumen": resumen})
+        brutos = entradas(parsear(get(r["url"], "application/rss+xml, application/xml")))
+        for i in recientes(brutos, 48, ahora, POR_RADAR):
+            rel = [{"t": html.unescape(re.sub(r"<[^>]+>", "", t)).strip(), "medio": html.unescape(m).strip()}
+                   for _, t, m in RELACIONADA.findall(i["_desc"])]
+            out["items"].append({"t": i["t"], "medio": i["medio"], "web": i["web"], "fecha": i["fecha"],
+                                 "relacionadas": rel[:8]})
         out["ok"] = bool(out["items"])
         if not out["ok"]:
             out["error"] = "sin entradas"
@@ -155,8 +188,7 @@ def leer_feed(fuente):
 
 
 def leer_boe(hoy):
-    out = {"id": "boe", "nombre": "BOE (sumario del día)", "grupo": "oficial", "linea": "oficial",
-           "url": f"https://www.boe.es/datosabiertos/api/boe/sumario/{hoy:%Y%m%d}", "ok": False, "items": []}
+    out = dict(BOE, url=f"https://www.boe.es/datosabiertos/api/boe/sumario/{hoy:%Y%m%d}", via="api", ok=False, items=[])
     try:
         d = json.loads(get(out["url"], "application/json"))
         sumario = d.get("data", {}).get("sumario", {})
@@ -265,26 +297,30 @@ def limpiar(carpeta, hoy):
 def main():
     ahora = datetime.now(MADRID)
     hoy = ahora.date()
-    with ThreadPoolExecutor(max_workers=10) as ex:
-        feeds = list(ex.map(leer_feed, FUENTES))
+    with ThreadPoolExecutor(max_workers=12) as ex:
+        feeds = list(ex.map(lambda f: leer_feed(f, ahora), FUENTES))
+        radar = list(ex.map(lambda r: leer_radar(r, ahora), RADAR))
         trends = list(ex.map(leer_trends, PAISES_TENDENCIAS))
         wikis = list(ex.map(lambda l: leer_wiki(l, hoy), WIKIS))
     feeds.append(leer_boe(hoy))
 
-    titulares = {"fecha": hoy.isoformat(), "hora": f"{ahora:%H:%M}",
-                 "fuentes_ok": sum(1 for f in feeds if f["ok"]), "fuentes_total": len(feeds), "fuentes": feeds}
+    titulares = {"fecha": hoy.isoformat(), "hora": f"{ahora:%H:%M}", "version": 2,
+                 "fuentes_ok": sum(1 for f in feeds if f["ok"]), "fuentes_total": len(feeds), "fuentes": feeds,
+                 "radar": radar}
     tendencias = {"fecha": hoy.isoformat(), "hora": f"{ahora:%H:%M}",
                   "google": {t["geo"]: t for t in trends}, "wikipedia": {w["lang"]: w for w in wikis}}
     for carpeta, datos in (("titulares", titulares), ("tendencias", tendencias)):
-        d = os.path.join(RAIZ, "datos", carpeta)
+        d = os.path.join(DATOS, carpeta)
         os.makedirs(d, exist_ok=True)
         with open(os.path.join(d, f"{hoy.isoformat()}.json"), "w", encoding="utf-8") as f:
             json.dump(datos, f, ensure_ascii=False, indent=0)
         limpiar(d, hoy)
 
+    fallan = [f for f in feeds if not f["ok"]]
     print(f"Titulares: {titulares['fuentes_ok']}/{titulares['fuentes_total']} fuentes con datos")
     for f in feeds:
-        print(f"  {'OK ' if f['ok'] else 'ERR'} {f['nombre']}: {len(f['items'])} {f.get('error', '')}")
+        print(f"  {'OK ' if f['ok'] else 'ERR'} [{f['tipo']}] {f['nombre']}: {len(f['items'])} {f.get('error', '')}")
+    print("Radar: " + ", ".join(f"{r['nombre']} {len(r['items'])}" + ("" if r["ok"] else f" ({r.get('error')})") for r in radar))
     print("Tendencias Google: " + ", ".join(f"{t['geo']} {len(t['items'])}" + ("" if t["ok"] else f" ({t.get('error')})") for t in trends))
     print("Wikipedia: " + ", ".join(f"{w['lang']} {len(w['items'])} ({w.get('dia', w.get('error'))})" for w in wikis))
     resumen = os.environ.get("GITHUB_STEP_SUMMARY")
@@ -292,10 +328,11 @@ def main():
         with open(resumen, "a", encoding="utf-8") as f:
             f.write(f"### Fuentes {hoy} {ahora:%H:%M}\n\n")
             f.write(f"- Titulares: {titulares['fuentes_ok']} de {titulares['fuentes_total']} fuentes\n")
-            f.write("- Sin datos: " + (", ".join(x["nombre"] for x in feeds if not x["ok"]) or "ninguna") + "\n")
+            f.write("- Sin datos: " + (", ".join(f"{x['nombre']} ({x.get('error', '')[:60]})" for x in fallan) or "ninguna") + "\n")
+            f.write("- Radar: " + ", ".join(f"{r['nombre']} {len(r['items'])}" for r in radar) + "\n")
             f.write("- Google Trends: " + ", ".join(f"{t['geo']} {len(t['items'])}" for t in trends) + "\n")
     # falla (en rojo) solo si casi nada ha funcionado
-    return 0 if titulares["fuentes_ok"] >= 8 else 1
+    return 0 if titulares["fuentes_ok"] >= 40 else 1
 
 
 if __name__ == "__main__":

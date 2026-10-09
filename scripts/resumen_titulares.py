@@ -11,8 +11,11 @@ Imprime:
   3. los titulares de cada medio y las fuentes oficiales (BOE, Banco de España, BCE, Fed, Moncloa).
 Con --json guarda también los temas en un archivo, con los medios de cada uno.
 """
-import argparse, heapq, json, math, re, sys, unicodedata
+import argparse, heapq, json, math, os, re, sys, unicodedata
 from collections import Counter, defaultdict
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from fuentes_catalogo import BLOQUES, ESPECIALIZADOS, EXCLUIDOS, FUENTES, GENERALISTAS, clasificar_dominio  # noqa: E402
 
 STOP = set("""
 a al algo ante antes aqui asi aun aunque bajo bien cada como con contra cual cuando de del desde donde dos el ella ellas
@@ -49,8 +52,29 @@ PALABRAS_IDIOMA = {
 }
 
 
+# La misma palabra en español, inglés y francés (sobre todo lugares y personas que se escriben distinto), para que
+# la misma noticia contada en varios idiomas se agrupe junta.
+EQUIV = {}
+for _canon, _variantes in {
+    "riyadh": "riad riyad", "kyiv": "kiev kiew", "beijing": "pekin", "moscow": "moscu moscou", "london": "londres",
+    "iran": "irani iranian iranians iranies", "israel": "israeli israelis israelies israelien", "ukraine": "ucrania ukrainian ucraniano ucranianos ukrainians",
+    "russia": "rusia russian ruso rusos russians russie russe", "china": "chinese chino chinos chine", "saudi": "saudies saudita sauditas saudis saoudite",
+    "houthi": "huties hutis houthis", "pentagon": "pentagono", "execution": "ejecucion executed ejecutado ejecutar executions",
+    "hurricane": "huracan ouragan", "earthquake": "terremoto seisme", "airport": "aeropuerto aeroport", "nato": "otan",
+    "germany": "alemania allemagne german aleman alemanes", "france": "francia french frances", "italy": "italia italian", "japan": "japon japanese japones",
+    "brazil": "brasil bresil", "syria": "siria syrie", "lebanon": "libano liban", "turkey": "turquia turquie",
+    "korea": "corea coree", "greenland": "groenlandia", "zelensky": "zelenski zelenskyy", "putin": "poutine",
+    "khamenei": "jamenei", "hezbollah": "hezbola", "election": "elecciones elections electoral comicios midterms",
+    "president": "presidente presidential presidencial", "petroleo": "petrole crude crudo", "gold": "oro", "tariffs": "aranceles tariff arancel",
+    "inflation": "inflacion", "attack": "ataque ataques attacks attaque", "strike": "strikes", "missile": "misil misiles missiles",
+    "drone": "dron drones", "ceasefire": "alto", "nobel": "nobels", "peace": "paix", "prize": "premio prix",
+}.items():
+    for _v in _variantes.split():
+        EQUIV[_v] = _canon
+
+
 def tokens(titulo):
-    return [t for t in re.findall(r"[a-z0-9ñ]+", norm(titulo))
+    return [EQUIV.get(t, t) for t in re.findall(r"[a-z0-9ñ]+", norm(titulo))
             if len(t) >= 4 and not t.isdigit() and t not in STOP and t not in GENERICAS]
 
 
@@ -175,49 +199,147 @@ def agrupar(items):
     return sorted(temas, key=lambda t: (-t["n"], -len(t["titulares"])))
 
 
+def normalizar(d):
+    """Completa cada fuente con su cabecera («medio») y su tipo según el catálogo (también para datos antiguos)."""
+    cat = {f["id"]: f for f in FUENTES}
+    antiguo = {"espana": "generalista", "internacional": "generalista", "economia": "especializado", "oficial": "oficial"}
+    for f in d["fuentes"]:
+        c = cat.get(f["id"], {})
+        f["tipo"] = c.get("tipo") or f.get("tipo") or antiguo.get(f.get("grupo"), "generalista")
+        f["medio"] = c.get("medio") or f.get("medio") or f["nombre"]
+        f["bloques"] = c.get("bloques") or f.get("bloques") or []
+        f["linea"] = c.get("linea", f.get("linea", ""))
+        f["dominio"] = c.get("dominio") or f.get("dominio") or ""
+    return d
+
+
+def clase(tipo):
+    return "gen" if tipo in GENERALISTAS else "esp" if tipo in ESPECIALIZADOS else None
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("archivo")
-    ap.add_argument("--por-medio", type=int, default=10)
+    ap.add_argument("--por-medio", type=int, default=8)
     ap.add_argument("--json")
     a = ap.parse_args()
-    d = json.load(open(a.archivo, encoding="utf-8"))
+    d = normalizar(json.load(open(a.archivo, encoding="utf-8")))
     ok = [f for f in d["fuentes"] if f["ok"]]
-    prensa = [f for f in ok if f["grupo"] != "oficial"]
-    print(f"TITULARES RECOGIDOS el {d['fecha']} a las {d['hora']}: {len(ok)} de {d['fuentes_total']} fuentes con datos "
-          f"({len(prensa)} medios de comunicación).")
-    for g in ("espana", "economia", "internacional", "oficial"):
-        fs = [f"{f['nombre']} [{f['linea']}]" for f in ok if f["grupo"] == g]
-        print(f"  {g}: " + "; ".join(fs))
-    fallan = [f["nombre"] for f in d["fuentes"] if not f["ok"]]
-    if fallan:
-        print("  sin datos hoy: " + ", ".join(fallan))
+    # tipo de cada cabecera: generalista si alguna de sus fuentes lo es
+    tipo_medio = {}
+    for f in ok:
+        c = clase(f["tipo"])
+        if c and tipo_medio.get(f["medio"]) != "gen":
+            tipo_medio[f["medio"]] = c
+    gen = sorted(m for m, c in tipo_medio.items() if c == "gen")
+    esp = sorted(m for m, c in tipo_medio.items() if c == "esp")
+    oficiales = [f for f in ok if f["tipo"] == "oficial"]
 
-    items = [(f["nombre"], it["t"], it["u"]) for f in prensa for it in f["items"]]
+    print(f"FUENTES LEÍDAS el {d['fecha']} a las {d['hora']}: {len(ok)} de {d['fuentes_total']} con titulares recientes.")
+    print(f"  Medios generalistas y agencias ({len(gen)}; son los que cuentan en «Cobertura»):")
+    lineas = defaultdict(list)
+    for f in ok:
+        if clase(f["tipo"]) == "gen" and f["medio"] not in lineas[f["linea"] or "—"]:
+            lineas[f["linea"] or "—"].append(f["medio"])
+    for l, ms in sorted(lineas.items()):
+        print(f"    {l}: {', '.join(ms)}")
+    print(f"  Especializados y análisis ({len(esp)}; cuentan aparte): " + ", ".join(esp))
+    print("  Verificadores: " + ", ".join(f["nombre"] for f in ok if f["tipo"] == "verificador"))
+    print(f"  Oficiales ({len(oficiales)}): " + ", ".join(f["nombre"] for f in oficiales))
+    fallan = [f"{f['nombre']} ({f.get('error', '')[:40]})" for f in d["fuentes"] if not f["ok"]]
+    if fallan:
+        print("  Sin titulares recientes hoy: " + "; ".join(fallan))
+    print("  Excluidos del catálogo (no se leen ni se citan): " + "; ".join(f"{k}: {v}" for k, v in EXCLUIDOS.items()))
+
+    prensa = [f for f in ok if clase(f["tipo"])]
+    items = [(f["medio"], it["t"], it["u"]) for f in prensa for it in f["items"]]
     temas = agrupar(items)
-    print(f"\nTEMAS CON MÁS COBERTURA (agrupación automática por parecido de los titulares; {len(prensa)} medios leídos;"
-          " compruébala: puede juntar o separar noticias)")
-    for t in temas[:30]:
-        if t["n"] < 3:
-            break
-        print(f"- {t['n']} medios · claves: {', '.join(t['claves'])} · {', '.join(t['medios'])}")
+    for t in temas:
+        t["medios_gen"] = [m for m in t["medios"] if tipo_medio.get(m) == "gen"]
+        t["medios_esp"] = [m for m in t["medios"] if tipo_medio.get(m) == "esp"]
+        t["n"], t["esp"] = len(t["medios_gen"]), len(t["medios_esp"])
+    temas.sort(key=lambda t: (-(t["n"] + t["esp"]), -t["n"], -len(t["titulares"])))
+    print(f"\nTEMAS CON MÁS COBERTURA (agrupación automática por parecido de los titulares, también entre idiomas; "
+          f"de {len(gen)} generalistas y {len(esp)} especializados leídos. Compruébala: puede juntar o separar noticias)")
+    for t in [t for t in temas if t["n"] + t["esp"] >= 3][:35]:
+        print(f"- {t['n']} generalista{'s' if t['n'] != 1 else ''} + {t['esp']} especializado{'s' if t['esp'] != 1 else ''}"
+              f" · claves: {', '.join(t['claves'])}")
+        print(f"    generalistas: {', '.join(t['medios_gen']) or '—'} | especializados: {', '.join(t['medios_esp']) or '—'}")
         vistos = set()
         for h in [h for h in t["titulares"] if not (h["medio"] in vistos or vistos.add(h["medio"]))][:4]:
             print(f"    · [{h['medio']}] {h['t'][:150]}")
 
-    print(f"\nTITULARES POR MEDIO (los {a.por_medio} primeros de cada uno)")
-    for f in prensa:
+    radar = [r for r in d.get("radar", []) if r.get("ok")]
+    if radar:
+        print("\nRADAR AMPLIO (portadas de Google News, que agregan miles de medios). Solo para detectar qué se está contando "
+              "y si se nos escapa algo: nunca se cita y no cuenta en «Cobertura». Solo aparecen historias que cuentan al "
+              "menos dos medios del catálogo (en el radar local, uno o una institución).")
+        def clave(x):
+            x = re.sub(r"^www\.|\.(com|es|org|net|co\.uk|fr|de|it)\b.*$", "", norm(x).strip())
+            return re.sub(r"[^a-z0-9ñ]", "", x)
+        cat = {}
+        for f in d["fuentes"]:
+            for n in (f["medio"], f["nombre"], f["dominio"]):
+                if n and len(clave(n)) > 2:
+                    cat[clave(n)] = f["medio"]
+
+        def del_catalogo(nombre):
+            k = clave(nombre)
+            if k in cat:
+                return cat[k]
+            for c, m in cat.items():  # «RTVE.es», «EL PAÍS», «Euronews.com»…
+                if len(c) > 4 and (k.startswith(c) or c.startswith(k)) and abs(len(k) - len(c)) <= 12:
+                    return m
+            return None
+        vistos = set()
+        for r in radar:
+            local = r["id"] == "gn_local"
+            filas = []
+            for it in r["items"]:
+                if norm(it["t"]) in vistos:
+                    continue
+                medios = list(dict.fromkeys(m for m in [it["medio"]] + [x["medio"] for x in it.get("relacionadas", [])] if m))
+                de_cat = list(dict.fromkeys(filter(None, (del_catalogo(m) for m in medios))))
+                inst = clasificar_dominio(it.get("web") or "") == "oficial"
+                if len(de_cat) >= 2 or (local and (de_cat or inst)):
+                    vistos.add(norm(it["t"]))
+                    filas.append(f"  - {it['t'][:150]} ({it['medio']}) · del catálogo: {', '.join(de_cat) or '—'}")
+            if filas:
+                print(f"## {r['nombre']}")
+                print("\n".join(filas[:8]))
+
+    print("\nPOR BLOQUE: ESPECIALIZADOS Y ANÁLISIS (titulares más recientes de cada uno)")
+    for b in BLOQUES:
+        fs = [f for f in ok if clase(f["tipo"]) == "esp" and b in f["bloques"]]
+        if not fs:
+            continue
+        print(f"### {b}")
+        for f in fs:
+            print(f"## {f['nombre']}")
+            for it in f["items"][:5]:
+                print(f"  - {it['t'][:170]}")
+
+    print(f"\nTITULARES DE LOS GENERALISTAS (los {a.por_medio} más recientes de cada medio español y "
+          f"{max(3, a.por_medio // 2)} de cada internacional)")
+    for f in [f for f in ok if clase(f["tipo"]) == "gen"]:
         print(f"## {f['nombre']} [{f['linea']}]")
-        for it in f["items"][:a.por_medio]:
+        for it in f["items"][:a.por_medio if "espana" in f["bloques"] else max(3, a.por_medio // 2)]:
             print(f"  - {it['t'][:170]}")
-    print("\nFUENTES OFICIALES")
-    for f in [f for f in ok if f["grupo"] == "oficial"]:
+    print("\nVERIFICADORES (bulos desmentidos y comprobaciones)")
+    for f in [f for f in ok if f["tipo"] == "verificador"]:
         print(f"## {f['nombre']}")
-        for it in f["items"][:25 if f["id"] == "boe" else 8]:
-            print(f"  - {it['t'][:220]}  {it['u']}")
+        for it in f["items"][:5]:
+            print(f"  - {it['t'][:170]}")
+    print("\nFUENTES OFICIALES Y PRIMARIAS (enlázalas directamente cuando la noticia dependa de ellas)")
+    for f in sorted(oficiales, key=lambda f: (BLOQUES.index(f["bloques"][0]) if f["bloques"] and f["bloques"][0] in BLOQUES else 9)):
+        print(f"## {f['nombre']} · {', '.join(f['bloques'])}")
+        for it in f["items"][:25 if f["id"] == "boe" else 5]:
+            print(f"  - {it['t'][:220]}  {it['u'] if 'news.google.com' not in it['u'] else ''}".rstrip())
     if a.json:
         with open(a.json, "w", encoding="utf-8") as fh:
-            json.dump({"fecha": d["fecha"], "medios_leidos": len(prensa), "temas": temas}, fh, ensure_ascii=False, indent=1)
+            json.dump({"fecha": d["fecha"], "medios_leidos": len(gen), "generalistas_leidos": len(gen),
+                       "especializados_leidos": len(esp), "generalistas": gen, "especializados": esp, "temas": temas},
+                      fh, ensure_ascii=False, indent=1)
 
 
 if __name__ == "__main__":

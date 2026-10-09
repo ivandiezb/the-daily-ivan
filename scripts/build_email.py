@@ -31,6 +31,16 @@ WEB_LABEL = "ivandiezb.github.io/the-daily-ivan"
 LINK = "#2F5F9E"  # mid blue: visible but quieter than the main button
 
 
+
+def cobertura_texto(c):
+    """«Cobertura: en N de M medios generalistas consultados y en K especializados» (o el formato antiguo sin «esp»)."""
+    if not c or not (c.get("n") or c.get("esp")):
+        return ""
+    t = f"Cobertura: en {c.get('n', 0)} de {c.get('de', '?')} medios {'generalistas ' if 'esp' in c else ''}consultados"
+    if c.get("esp"):
+        t += f" y en {c['esp']} especializado{'s' if c['esp'] > 1 else ''}"
+    return t
+
 def e(s):
     return html.escape(str(s or ""), quote=True)
 
@@ -226,15 +236,14 @@ def main(page, url, out):
             if it.get("fuentes"):
                 links = " · ".join(f'<a href="{e(f["u"])}" style="color:{INK2}">{e(f["t"])}</a>' for f in it["fuentes"])
                 status = f'<br>Verificación: {e(CONF.get(it.get("conf"), it.get("conf","")))}' if it.get("conf") else ""
-                cob = it.get("cobertura") or {}
-                if cob.get("n"):
-                    status += f'<br>Cobertura: en {cob["n"]} de {cob.get("de", "?")} medios consultados'
+                if cobertura_texto(it.get("cobertura")):
+                    status += f'<br>{e(cobertura_texto(it["cobertura"]))}'
                 P.append(f'<p style="color:{INK2};margin:8px 0 0;font-size:13px;font-style:italic">Fuentes: {links}{status}</p>')
                 T.append("Fuentes: " + " · ".join(f"{f['t']} <{f['u']}>" for f in it["fuentes"]))
                 if it.get("conf"):
                     T.append("Verificación: " + CONF.get(it["conf"], it["conf"]))
-                if (it.get("cobertura") or {}).get("n"):
-                    T.append(f"Cobertura: en {it['cobertura']['n']} de {it['cobertura'].get('de', '?')} medios consultados")
+                if cobertura_texto(it.get("cobertura")):
+                    T.append(cobertura_texto(it["cobertura"]))
             blocks.append("\n".join(P))
         H.append(columns(blocks, sec["items"]))
         if sec["id"] == "mercados":
@@ -285,11 +294,11 @@ def main(page, url, out):
 
     H.append(f'<div style="background-color:{PAPER};color:{INK2};margin-top:24px;padding:12px 14px;font-size:13.5px;border-radius:5px">'
              f'<b style="color:{INK}">Para profundizar:</b> en la <a href="{e(url)}" style="color:{ACC}">edición completa</a>, cada noticia tiene un botón '
-             f'«Profundizar», que copia un encargo de investigación detallado, y los enlaces «Abrir en Claude · ChatGPT · Perplexity», que lo abren ya escrito. '
+             f'«Profundizar · copiar prompt», que copia un encargo de investigación detallado para pegarlo en Claude, ChatGPT o cualquier otra IA. '
              f'También puedes abrir en Claude la ejecución de hoy de la tarea «{e(brand)}» y escribir, por ejemplo, «amplía G1».'
              f'<br><br>Las cifras de mercado son orientativas y llevan su hora y fuente.</div>')
     H.append("</td></tr></table></td></tr></table>")
-    T += ["", f"Para profundizar: en la edición completa ({url}) cada noticia tiene «Profundizar» y enlaces para abrirla en Claude, ChatGPT o Perplexity.",
+    T += ["", f"Para profundizar: en la edición completa ({url}) cada noticia tiene «Profundizar · copiar prompt», que copia un encargo de investigación para pegarlo en cualquier IA.",
           "Las cifras de mercado son orientativas y llevan su hora y fuente."]
 
     os.makedirs(out, exist_ok=True)
