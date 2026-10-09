@@ -200,10 +200,6 @@ section[id]{scroll-margin-top:56px}
 .deep{font-family:var(--f-display);font-weight:650;font-stretch:88%;font-size:13px;color:var(--accent);background:var(--accent-soft);border:1px solid transparent;border-radius:5px;padding:7px 12px;cursor:pointer}
 .deep:hover{border-color:var(--accent)}
 .deep[data-done]{color:var(--up);background:transparent;border-color:var(--up)}
-.ask{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
-.open-in{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-2);white-space:nowrap}
-.open-in a{color:var(--accent);text-underline-offset:2px}
-@media (max-width:560px){.ask{align-items:flex-start}}
 .fallback{width:100%;margin-top:8px;font-family:var(--f-mono);font-size:12.5px;color:var(--ink);background:var(--sheet);border:1px solid var(--rule);border-radius:5px;padding:8px;min-height:90px}
 
 /* Society trends: what people search and read (single-series bars, values always shown as text) */
@@ -1185,7 +1181,7 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
   "Las cifras de mercado proceden de prensa económica y llevan su hora: son orientativas, no cotizaciones en tiempo real.",
   "Indico cuándo una noticia descansa en una sola fuente o en una fuente de parte, como un gobierno o su agencia oficial, y señalo las discrepancias entre medios.",
   "Nada de lo que aparece aquí es asesoramiento financiero ni recomendación de inversión.",
-  "Para ampliar una noticia, pulsa «Profundizar»: copia un encargo de investigación detallado para pegarlo en cualquier IA. O usa «Abrir en Claude · ChatGPT · Perplexity», que lo abre ya escrito.",
+  "Para ampliar una noticia, pulsa «Profundizar · copiar prompt»: copia un encargo de investigación detallado para pegarlo en Claude, ChatGPT o cualquier otra IA.",
   "«Tendencias de la sociedad» resume las búsquedas en auge en Google (España y otros 11 países) y lo más leído en Wikipedia; los volúmenes son aproximados y reflejan curiosidad, no importancia."
  ],
  "fx": {
@@ -1551,6 +1547,7 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
   };
 
   /* Deep-dive prompt: extra instruction per block, and the public web address */
+    var DEEP_LABEL = 'Profundizar · copiar prompt';
     var EXTRA = {
       mercados: 'Aporta las cifras de mercado relevantes con fecha, hora y fuente, y compáralas con su evolución reciente.',
       inversion: 'Analiza valoración, riesgos, consenso de analistas y alternativas, como análisis y no como recomendación de inversión.',
@@ -1740,26 +1737,17 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
           srcs.appendChild(link(f.t, f.u));
         });
         if (it.conf) srcs.appendChild(el('span','status', 'Verificación: ' + (CONF[it.conf] || it.conf)));
-        if (it.cobertura && it.cobertura.n){
-          var cv = el('span','status', 'Cobertura: en ' + it.cobertura.n + ' de ' + (it.cobertura.de || '?') + ' medios consultados');
+        if (it.cobertura && (it.cobertura.n || it.cobertura.esp)){
+          var cv = el('span','status', coberturaTexto(it.cobertura));
           if (it.cobertura.medios && it.cobertura.medios.length) cv.title = it.cobertura.medios.join(', ');
           srcs.appendChild(cv);
         }
         foot.appendChild(srcs);
-        var ask = el('div','ask');
-        var btn = el('button','deep','Profundizar'); btn.type = 'button';
-        btn.setAttribute('aria-label','Copiar un encargo de investigación sobre ' + it.code);
-        btn.title = 'Copia un encargo detallado para pegarlo en tu IA';
+        var btn = el('button','deep', DEEP_LABEL); btn.type = 'button';
+        btn.setAttribute('aria-label','Profundizar en ' + it.code + ': copiar un prompt de investigación');
+        btn.title = 'Copia un prompt de investigación detallado para pegarlo en Claude, ChatGPT u otra IA';
         btn.addEventListener('click', function(){ deepen(it, sec.id, art, btn); });
-        ask.appendChild(btn);
-        var oi = el('span','open-in', 'Abrir en ');
-        var links = openLinks(it, sec.id);
-        links.forEach(function(l, i){
-          if (i) oi.appendChild(document.createTextNode(' · '));
-          var a = link(l[0], l[1]); a.setAttribute('aria-label', 'Investigar ' + it.code + ' en ' + l[0]); oi.appendChild(a);
-        });
-        ask.appendChild(oi);
-        foot.appendChild(ask);
+        foot.appendChild(btn);
         art.appendChild(foot);
         s.appendChild(art);
       });
@@ -1879,12 +1867,17 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
       meta.appendChild(document.createTextNode(p[0])); meta.appendChild(el('b', null, p[1]));
     });
 
-    /* Deep-dive request: copy it, or open it already written in an AI assistant */
+    /* Deep-dive request: copy a research prompt to paste into any AI assistant */
+    function coberturaTexto(c){
+      var t = 'Cobertura: en ' + (c.n || 0) + ' de ' + (c.de || '?') + ' medios ' + (c.esp != null ? 'generalistas ' : '') + 'consultados';
+      if (c.esp) t += ' y en ' + c.esp + ' especializado' + (c.esp > 1 ? 's' : '');
+      return t;
+    }
     function deepen(it, secId, art, btn){
       var text = promptFor(it, secId, false);
       function done(){
-        btn.textContent = 'Copiado: pégalo en el chat'; btn.setAttribute('data-done','');
-        setTimeout(function(){ btn.textContent = 'Profundizar'; btn.removeAttribute('data-done'); }, 4000);
+        btn.textContent = 'Prompt copiado: pégalo en tu IA'; btn.setAttribute('data-done','');
+        setTimeout(function(){ btn.textContent = DEEP_LABEL; btn.removeAttribute('data-done'); }, 4000);
       }
       function fallback(){
         var ta = art.querySelector('textarea.fallback');
@@ -1934,12 +1927,6 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
       L.push('Formato: resumen de 5 líneas, desarrollo por apartados y lista final de fuentes con enlace y fecha. No inventes datos ni enlaces; si algo no puedes verificarlo, dilo.');
       return L.join('\n');
     }
-    function openLinks(it, secId){
-      var q = encodeURIComponent(promptFor(it, secId, false));
-      if (q.length > 3800) q = encodeURIComponent(promptFor(it, secId, true));
-      return [['Claude', 'https://claude.ai/new?q=' + q], ['ChatGPT', 'https://chatgpt.com/?q=' + q], ['Perplexity', 'https://www.perplexity.ai/?q=' + q]];
-    }
-
     /* Society trends */
     function renderTrends(tr){
       var PAIS = {US:'EE. UU.', GB:'Reino Unido', FR:'Francia', DE:'Alemania', IT:'Italia', PT:'Portugal', MX:'México', AR:'Argentina', BR:'Brasil', IN:'India', JP:'Japón', ES:'España'};
