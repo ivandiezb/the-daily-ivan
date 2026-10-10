@@ -151,11 +151,13 @@ def main(page, url, out):
     if lede:
         H.append(f'<p style="color:{INK2};margin:10px 0 0">{e(lede)}</p>')
     # Public web address under the summary: small, mid-blue, chain-link emoji (Gmail drops SVG and data-URI images).
-    H.append(f'<p style="margin:8px 0 0;font:13px/1.4 {SANS}"><a href="{e(WEB)}" style="color:{LINK};text-decoration:none">'
-             f'&#128279;&nbsp;{e(WEB_LABEL)}</a></p>')
+    # el enlace bajo el resumen lleva a la web pública; si hoy no se pudo subir, a la edición que sí está al día
+    web, web_label = (WEB, WEB_LABEL) if url.rstrip("/") == WEB.rstrip("/") else (url, "Edición completa de hoy")
+    H.append(f'<p style="margin:8px 0 0;font:13px/1.4 {SANS}"><a href="{e(web)}" style="color:{LINK};text-decoration:none">'
+             f'&#128279;&nbsp;{e(web_label)}</a></p>')
     H.append(f'<p style="margin:16px 0 4px"><a href="{e(url)}" style="background-color:{ACC};color:#FFFFFF;text-decoration:none;font:bold 14px {SANS};padding:9px 14px;border-radius:5px;display:inline-block">Abrir la edición completa</a>'
              f'&nbsp;&nbsp; <a href="{e(url)}#archivo" style="color:{ACC};font:bold 14px {SANS}">Ediciones anteriores</a></p>')
-    T += [f"{brand.upper()} · {d['fechaTexto']}", slogan, meta, "", lede, "", f"Web: {WEB}", "", f"Edición completa: {url}",
+    T += [f"{brand.upper()} · {d['fechaTexto']}", slogan, meta, "", lede, "", f"Web: {web}", "", f"Edición completa: {url}",
           f"Ediciones anteriores: {url}#archivo", ""]
 
     def h2(t, kind):

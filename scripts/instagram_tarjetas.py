@@ -20,7 +20,9 @@ from datetime import datetime, timezone
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 FUENTES = os.path.join(AQUI, "fuentes")
-REPO_RAW = "https://raw.githubusercontent.com/ivandiezb/the-daily-ivan/instagram-media"
+# Las imágenes de cada día van en su propia rama, instagram-media-AAAA-MM-DD (una rama nueva se sube sin forzar;
+# GitHub Actions borra las de más de dos días).
+REPO_RAW = "https://raw.githubusercontent.com/ivandiezb/the-daily-ivan/instagram-media-{fecha}"
 ORDEN = ["claves", "espana", "mercados", "internacional", "geopolitica", "vivienda", "inversion", "naturaleza"]
 HORAS = ["10:30", "12:00", "13:30", "15:00", "16:30", "18:00", "19:30", "21:00"]
 MARCA = "#TheDailyIvan"
@@ -209,7 +211,8 @@ def main():
     ap.add_argument("--cola", required=True)
     ap.add_argument("--extra", help="JSON con el objeto 'instagram' si no viene dentro de la edición")
     ap.add_argument("--usuario", default="allyouneedisnews")
-    ap.add_argument("--base-url", default=REPO_RAW, help="URL pública bajo la que quedarán <AAAA-MM-DD>/<archivo>.jpg")
+    ap.add_argument("--base-url", default=REPO_RAW,
+                    help="URL pública bajo la que quedarán <AAAA-MM-DD>/<archivo>.jpg ({fecha} se sustituye por la fecha)")
     ap.add_argument("--horas", default=",".join(HORAS))
     a = ap.parse_args()
 
@@ -348,7 +351,7 @@ def main():
         if len(texto) > 2200:
             raise SystemExit(f"{bid}: el texto supera los 2.200 caracteres de Instagram ({len(texto)})")
         posts.append({"id": f"{fecha}-{bid}", "bloque": bid, "hora": hora, "texto": texto, "hashtags": tags,
-                      "imagenes": [f"{a.base_url.rstrip('/')}/{fecha}/{f}" for f in files], "archivos": files})
+                      "imagenes": [f"{a.base_url.format(fecha=fecha).rstrip('/')}/{fecha}/{f}" for f in files], "archivos": files})
 
     for p in posts:
         if not 2 <= len(p["imagenes"]) <= 10:

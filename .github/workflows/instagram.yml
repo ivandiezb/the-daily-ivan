@@ -43,6 +43,14 @@ jobs:
           for r in $(git ls-remote --heads origin | awk '{print $2}' | sed 's#refs/heads/##' | grep -E '^(diagnostico|prueba-)' || true); do
             git push -q origin --delete "$r" && echo "Borrada la rama $r" || true
           done
+          # ramas diarias de imágenes de Instagram: se conservan las de hoy y ayer
+          limite=$(TZ=Europe/Madrid date -d '2 days ago' +%F)
+          for r in $(git ls-remote --heads origin | awk '{print $2}' | sed 's#refs/heads/##' | grep -E '^instagram-media-[0-9]{4}-[0-9]{2}-[0-9]{2}' || true); do
+            f=$(echo "$r" | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}')
+            if [[ "$f" < "$limite" || "$f" == "$limite" ]]; then
+              git push -q origin --delete "$r" && echo "Borrada la rama $r" || true
+            fi
+          done
 
       - name: Guardar el estado
         if: always()
