@@ -201,12 +201,19 @@ def cmd_edicion(a):
     except Exception as e:
         log(f"Aviso: no se pudo leer main ({e}).")
     vias = []
-    if len(ed_b64) + len(ig_b64) <= MAX_CARGA:
+    if a.via in ("rama",):
+        pass
+    elif len(ed_b64) + len(ig_b64) <= MAX_CARGA:
         vias += [("workflow_dispatch", lambda: via_workflow_dispatch(a.fecha, ed_b64, ig_b64)),
                  ("repository_dispatch", lambda: via_repository_dispatch(a.fecha, ed_b64, ig_b64))]
     else:
         log("La carga supera el límite de un dispatch: se usa directamente la rama.")
-    vias.append(("rama publicar-*", lambda: via_rama(a.fecha, texto_ed, texto_ig, mensaje)))
+    if a.via == "workflow":
+        vias = vias[:1]
+    elif a.via == "repository":
+        vias = vias[1:2]
+    if a.via in ("todas", "rama"):
+        vias.append(("rama publicar-*", lambda: via_rama(a.fecha, texto_ed, texto_ig, mensaje)))
     for nombre, fn in vias:
         try:
             r = fn()
@@ -312,6 +319,8 @@ def main():
     e.add_argument("--ig")
     e.add_argument("--mensaje")
     e.add_argument("--esperar", type=int, default=360)
+    e.add_argument("--via", choices=["todas", "workflow", "repository", "rama"], default="todas",
+                   help="solo para pruebas: fuerza una vía de envío")
     c = sub.add_parser("comprobar")
     c.add_argument("--fecha", required=True)
     dz = sub.add_parser("desempaquetar")
