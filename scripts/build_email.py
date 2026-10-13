@@ -120,6 +120,10 @@ def balance(items):
 
 
 def main(page, url, out, respaldo=None):
+    # Los enlaces principales del correo van siempre a la web pública. Si alguien pasa la página de Claude como
+    # enlace principal, pasa a ser solo el enlace de respaldo.
+    if "claude.ai" in (url or ""):
+        respaldo, url = respaldo or url, WEB
     src = open(page, encoding="utf-8").read()
     m = re.search(r'<script type="application/json" id="edition">(.*?)</script>', src, re.S)
     d = json.loads(m.group(1))
