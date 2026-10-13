@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build the daily briefing e-mail (HTML + plain text) from the edition JSON embedded in the page.
 
-Usage: python3 build_email.py <page.html> <artifact_url> <out_dir>
+Usage: python3 build_email.py <page.html> <url_de_la_web> <out_dir> [--respaldo <url_del_artifact>]
 Writes <out_dir>/email.html and <out_dir>/email.txt and prints the subject line.
 
 Gmail-safe by design (checked against what the Gmail connector actually stores, 8 Oct 2026):
@@ -119,7 +119,7 @@ def balance(items):
     return best[1], best[2]
 
 
-def main(page, url, out):
+def main(page, url, out, respaldo=None):
     src = open(page, encoding="utf-8").read()
     m = re.search(r'<script type="application/json" id="edition">(.*?)</script>', src, re.S)
     d = json.loads(m.group(1))
@@ -151,14 +151,18 @@ def main(page, url, out):
     if lede:
         H.append(f'<p style="color:{INK2};margin:10px 0 0">{e(lede)}</p>')
     # Public web address under the summary: small, mid-blue, chain-link emoji (Gmail drops SVG and data-URI images).
-    # el enlace bajo el resumen lleva a la web pública; si hoy no se pudo subir, a la edición que sí está al día
-    web, web_label = (WEB, WEB_LABEL) if url.rstrip("/") == WEB.rstrip("/") else (url, "Edición completa de hoy")
+    # el enlace bajo el resumen lleva siempre a la web pública; si hoy no se pudo comprobar que esté al día, se añade
+    # debajo un enlace de respaldo a la página de la edición
+    web, web_label = WEB, WEB_LABEL
     H.append(f'<p style="margin:8px 0 0;font:13px/1.4 {SANS}"><a href="{e(web)}" style="color:{LINK};text-decoration:none">'
              f'&#128279;&nbsp;{e(web_label)}</a></p>')
     H.append(f'<p style="margin:16px 0 4px"><a href="{e(url)}" style="background-color:{ACC};color:#FFFFFF;text-decoration:none;font:bold 14px {SANS};padding:9px 14px;border-radius:5px;display:inline-block">Abrir la edición completa</a>'
              f'&nbsp;&nbsp; <a href="{e(url)}#archivo" style="color:{ACC};font:bold 14px {SANS}">Ediciones anteriores</a></p>')
+    if respaldo:
+        H.append(f'<p style="margin:4px 0 0;color:{INK2};font:12px/1.4 {SANS}">Si la web todavía no muestra la edición de hoy, '
+                 f'<a href="{e(respaldo)}" style="color:{LINK}">ábrela aquí</a>.</p>')
     T += [f"{brand.upper()} · {d['fechaTexto']}", slogan, meta, "", lede, "", f"Web: {web}", "", f"Edición completa: {url}",
-          f"Ediciones anteriores: {url}#archivo", ""]
+          f"Ediciones anteriores: {url}#archivo", ""] + ([f"Si la web todavía no muestra la edición de hoy: {respaldo}", ""] if respaldo else [])
 
     def h2(t, kind):
         bg, ink, rule = BANDS[kind]
@@ -314,4 +318,10 @@ def main(page, url, out):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2], sys.argv[3])
+    args = sys.argv[1:]
+    respaldo = None
+    if "--respaldo" in args:
+        i = args.index("--respaldo")
+        respaldo = args[i + 1]
+        del args[i:i + 2]
+    main(args[0], args[1], args[2], respaldo)

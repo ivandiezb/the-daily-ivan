@@ -1,0 +1,69 @@
+# Lleva a main la edición del día que la tarea diaria sube a una rama «publicar-…» (scripts/publicar_github.py),
+# pide a GitHub Pages que reconstruya la web y borra la rama. Así la tarea no necesita empujar a main, que su modo
+# automático puede bloquear.
+name: Publicar edición
+
+on:
+  push:
+    branches: ["publicar-*"]
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: publicar-main
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Descargar el repositorio
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: git clone -q --filter=blob:none "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" repo
+
+      - name: Llevar la edición a main
+        working-directory: repo
+        env:
+          RAMA: ${{ github.ref_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch -q origin "$RAMA"
+          BASE=$(git merge-base origin/main "origin/$RAMA" || true)
+          if [ -n "$BASE" ]; then
+            mapfile -t ARCHIVOS < <(git diff --name-only --diff-filter=AMR "$BASE" "origin/$RAMA" -- index.html .nojekyll archivo instagram)
+          else
+            mapfile -t ARCHIVOS < <(git ls-tree -r --name-only "origin/$RAMA" -- index.html .nojekyll archivo instagram)
+          fi
+          if [ ${#ARCHIVOS[@]} -eq 0 ]; then echo "La rama no trae archivos de la edición"; exit 1; fi
+          printf 'Archivos de la edición:\n'; printf '  %s\n' "${ARCHIVOS[@]}"
+          MENSAJE=$(git log -1 --format=%B "origin/$RAMA")
+          for i in 1 2 3 4 5; do
+            git fetch -q origin main
+            git checkout -q -B main origin/main
+            git checkout "origin/$RAMA" -- "${ARCHIVOS[@]}"
+            if git diff --cached --quiet; then echo "main ya tenía esta edición"; break; fi
+            git commit -q -m "$MENSAJE"
+            if git push -q origin HEAD:main; then echo "Publicada en main: $(git rev-parse --short HEAD)"; break; fi
+            if [ "$i" -eq 5 ]; then echo "No se ha podido actualizar main"; exit 1; fi
+            sleep $((i * 5))
+          done
+          echo "### Edición publicada desde $RAMA" >> "$GITHUB_STEP_SUMMARY"
+          grep -o '"fechaTexto": *"[^"]*"' index.html | head -1 >> "$GITHUB_STEP_SUMMARY" || true
+
+      - name: Reconstruir GitHub Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" --jq '.status' || echo "Aviso: no se pudo pedir la reconstrucción; Pages la hará con el push"
+
+      - name: Borrar la rama de publicación
+        if: success()
+        working-directory: repo
+        env:
+          RAMA: ${{ github.ref_name }}
+        run: git push -q origin --delete "$RAMA" || true

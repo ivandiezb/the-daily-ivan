@@ -1,0 +1,37 @@
+# Red de seguridad: a media mañana comprueba que la web pública tiene la edición de hoy. Si no la tiene, abre (o
+# comenta) un aviso en GitHub, que llega por correo al dueño del repositorio.
+name: Vigilar la web
+
+on:
+  schedule:
+    - cron: "40 11 * * *"
+      timezone: "Europe/Madrid"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  vigilar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Comprobar la edición publicada
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          HOY=$(TZ=Europe/Madrid date +%F)
+          PUBLICADA=$(gh api "repos/${GITHUB_REPOSITORY}/contents/index.html?ref=main" -H "Accept: application/vnd.github.raw" \
+                      | grep -oE '"fechaISO": *"[0-9-]+"' | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' | head -1)
+          echo "Hoy: $HOY · publicada: ${PUBLICADA:-ninguna}"
+          if [ "$PUBLICADA" = "$HOY" ]; then echo "Web al día"; exit 0; fi
+          gh label create web --color D93F0B --description "Avisos de la web pública" -R "$GITHUB_REPOSITORY" 2>/dev/null || true
+          NUM=$(gh issue list -R "$GITHUB_REPOSITORY" --label web --state open --json number --jq '.[0].number')
+          TEXTO="La web pública no tiene la edición de hoy ($HOY); la última publicada es la del ${PUBLICADA:-?}. Revisa la ejecución de la tarea diaria y el flujo «Publicar edición»."
+          if [ -n "$NUM" ]; then
+            gh issue comment "$NUM" -R "$GITHUB_REPOSITORY" --body "$TEXTO"
+          else
+            gh issue create -R "$GITHUB_REPOSITORY" --label web --title "La web no tiene la edición de hoy" --body "$TEXTO"
+          fi
+          exit 1
