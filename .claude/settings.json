@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/publicar_github.py edicion:*)",
+      "Bash(python3 scripts/publicar_github.py comprobar:*)",
+      "Bash(python3 /home/claude/the-daily-ivan/scripts/publicar_github.py edicion:*)",
+      "Bash(python3 /home/claude/the-daily-ivan/scripts/publicar_github.py comprobar:*)",
+      "Bash(git -C /home/claude/the-daily-ivan fetch:*)",
+      "Bash(git fetch:*)"
+    ]
+  }
+}

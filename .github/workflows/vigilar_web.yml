@@ -25,9 +25,13 @@ jobs:
           PUBLICADA=$(gh api "repos/${GITHUB_REPOSITORY}/contents/index.html?ref=main" -H "Accept: application/vnd.github.raw" \
                       | grep -oE '"fechaISO": *"[0-9-]+"' | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' | head -1)
           echo "Hoy: $HOY · publicada: ${PUBLICADA:-ninguna}"
-          if [ "$PUBLICADA" = "$HOY" ]; then echo "Web al día"; exit 0; fi
+          NUM=$(gh issue list -R "$GITHUB_REPOSITORY" --label web --state open --json number --jq '.[0].number' 2>/dev/null || true)
+          if [ "$PUBLICADA" = "$HOY" ]; then
+            echo "Web al día"
+            if [ -n "$NUM" ]; then gh issue close "$NUM" -R "$GITHUB_REPOSITORY" --comment "Resuelto: la web tiene la edición de hoy ($HOY)." || true; fi
+            exit 0
+          fi
           gh label create web --color D93F0B --description "Avisos de la web pública" -R "$GITHUB_REPOSITORY" 2>/dev/null || true
-          NUM=$(gh issue list -R "$GITHUB_REPOSITORY" --label web --state open --json number --jq '.[0].number')
           TEXTO="La web pública no tiene la edición de hoy ($HOY); la última publicada es la del ${PUBLICADA:-?}. Revisa la ejecución de la tarea diaria y el flujo «Publicar edición»."
           if [ -n "$NUM" ]; then
             gh issue comment "$NUM" -R "$GITHUB_REPOSITORY" --body "$TEXTO"
