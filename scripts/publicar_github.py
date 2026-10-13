@@ -14,7 +14,8 @@ Uso en la tarea diaria (desde R = el repositorio):
   python3 scripts/publicar_github.py edicion --fecha AAAA-MM-DD --pagina trabajo/page.html [--ig trabajo/ig.json]
       Vías, por orden, hasta que una funcione: 1) workflow_dispatch; 2) repository_dispatch; 3) git push de una
       rama NUEVA «publicar-AAAA-MM-DD-HHMMSS» (nunca main, nunca forzado) con la edición en entrada/.
-      Después espera (--esperar, 600 s) a que main tenga la edición de esa fecha y a que GitHub Pages la construya.
+      Después espera (--esperar, 360 s; lo normal es 1–2 minutos) a que main tenga la edición de esa fecha y a que
+      GitHub Pages la despliegue. Lánzalo con un tiempo límite de la herramienta de al menos 600000 ms.
       Última línea: «WEB_OK» o «WEB_FALLO: <motivo literal>». Código 0 solo si WEB_OK. Si falla, deja además un
       aviso (issue) en el repositorio con el registro completo.
   python3 scripts/publicar_github.py comprobar --fecha AAAA-MM-DD
@@ -95,10 +96,17 @@ def main_tiene(fecha):
     return actual == fecha, actual or "desconocida", sha
 
 
-def pages_construida(sha):
+def pages_construida(fecha):
+    """¿Ha desplegado GitHub Pages una versión de main que ya trae la edición de esa fecha? (El proxy no deja leer
+    /pages/builds, así que se mira la última ejecución correcta de «pages build and deployment».)"""
     try:
-        b = llamar("GET", "/pages/builds/latest")
-        return b.get("status") == "built" and b.get("commit") == sha, f"{b.get('status')} ({(b.get('commit') or '')[:7]})"
+        runs = llamar("GET", "/actions/runs?event=dynamic&status=success&per_page=5").get("workflow_runs", [])
+        runs = [r for r in runs if r.get("name") == "pages build and deployment"]
+        if not runs:
+            return False, "sin despliegues recientes"
+        sha = runs[0]["head_sha"]
+        f = fecha_de_index(llamar("GET", f"/contents/index.html?ref={sha}", crudo=True))
+        return f == fecha, f"último despliegue {sha[:7]} con la edición del {f}"
     except Exception as e:
         return False, f"no consultable ({e})"
 
@@ -226,13 +234,13 @@ def cmd_edicion(a):
             en_main = True
             log(f"main ya tiene la edición del {a.fecha} ({sha[:7]}).")
         if ok:
-            listo, estado = pages_construida(sha)
+            listo, estado = pages_construida(a.fecha)
             if listo:
-                log("GitHub Pages construida con esta edición.")
+                log(f"GitHub Pages desplegada con esta edición ({estado}).")
                 print("WEB_OK")
                 return 0
     if en_main:
-        log(f"GitHub Pages aún no confirma la construcción ({pages_construida(sha)[1]}); la web se actualizará sola.")
+        log(f"GitHub Pages aún no confirma el despliegue ({pages_construida(a.fecha)[1]}); se actualizará sola.")
         print("WEB_OK")
         return 0
     motivo = (f"tras {a.esperar} s main sigue con la edición del {actual}. Enviada por {enviada}. "
@@ -303,7 +311,7 @@ def main():
     e.add_argument("--pagina", required=True)
     e.add_argument("--ig")
     e.add_argument("--mensaje")
-    e.add_argument("--esperar", type=int, default=600)
+    e.add_argument("--esperar", type=int, default=360)
     c = sub.add_parser("comprobar")
     c.add_argument("--fecha", required=True)
     dz = sub.add_parser("desempaquetar")
