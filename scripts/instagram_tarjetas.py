@@ -10,10 +10,15 @@ una portada y una imagen por noticia; Mercados añade el panel de cotizaciones. 
   <imagenes>/<AAAA-MM-DD>/<bloque>-<n>.jpg
   <cola>/<AAAA-MM-DD>/cola.json   (hora, texto, hashtags y URL pública de cada imagen)
 
-Textos: si la edición trae un objeto "instagram" (o se pasa con --extra), se usa tal cual:
+Diseño: cada sección tiene su color (SECCION). Cada noticia es una imagen con titular (con una frase resaltada en
+amarillo), un texto explicativo de dos párrafos y «La clave» (una línea fina con el color claro de la sección).
+
+Textos: se pasan con --extra (ig.json) o dentro de la edición como objeto "instagram":
   {"bloques": {"<id>": {"gancho": "...", "copy": "...", "hashtags": ["#..."]}},
-   "items":   {"M1": {"titulo": "...", "hecho": "...", "importa": "...", "vigilar": "..."}}}
-Si falta, se condensa a partir de la propia edición (frases completas, sin referencias personales).
+   "items":   {"M1": {"titular": "...", "destacado": "...", "texto": "párrafo 1\n\npárrafo 2", "clave": "..."}}}
+  titular ≤ 80 caracteres; destacado = trozo literal del titular que se resalta (opcional); texto de 450 a 700
+  caracteres en dos párrafos (qué ha pasado, con datos; y contexto); clave = una o dos frases (≤ 190) con la lectura
+  de fondo o lo que viene. Si faltan, se condensan de la propia edición (frases completas, sin referencias personales).
 """
 import argparse, html, json, os, re, sys, tempfile
 from datetime import datetime, timezone
@@ -34,9 +39,10 @@ ETIQUETAS = {  # respaldo si la edición no propone hashtags (máximo 5 por publ
 CONF = {"confirmado": "confirmada por varias fuentes o por fuente oficial", "una-fuente": "una sola fuente",
         "en-desarrollo": "en desarrollo, puede cambiar", "seguimiento": "seguimiento de una noticia anterior",
         "agenda": "previsto hoy, sin resultado conocido"}
-COLORES = {  # fondo de banda, tinta, filete/etiqueta (los mismos de la web y el correo)
-    "blue": ("#DCE5F2", "#14325F", "#3A659F"), "gray": ("#E2E5E9", "#262D36", "#5A6470"),
-    "green": ("#DCEDE2", "#174A2C", "#2E7149")}
+SECCION = {  # color de fondo de cada sección y su tono claro (número, etiqueta y línea de «La clave»)
+    "claves": ("#141B23", "#FFE45C"), "espana": ("#1E3A66", "#9DBDF2"), "mercados": ("#0D5A60", "#86DCD4"),
+    "internacional": ("#4B2A7B", "#CDB1F5"), "geopolitica": ("#7A1F1A", "#F4A9A1"), "vivienda": ("#8A4510", "#F7C48C"),
+    "inversion": ("#73204F", "#F2ACD0"), "naturaleza": ("#24563A", "#A3DCB4")}
 # Frases que solo tienen sentido para el lector privado (Iván) y no deben salir en público.
 PRIVADO = re.compile(r"mencionabas|pide el informe|informe ampliado|Profundizar|amplía [A-Z]\d|"
                      r"si estás valorando|tu cartera|te interesa|como pediste|me pediste", re.I)
@@ -73,10 +79,13 @@ def oraciones(t):
     return frases
 
 
+REF_INTERNA = re.compile(r"\s*\((?:véase |ver )?[A-Z]\d{1,2}(?: del \d{1,2}| de ayer)?\)")
+
+
 def condensa(t, maxc):
     """Frases completas hasta ~maxc caracteres, descartando las de uso privado."""
     out, n = [], 0
-    t = (t or "").replace("(interpretación mía)", "(interpretación propia)")
+    t = REF_INTERNA.sub("", (t or "").replace("(interpretación mía)", "(interpretación propia)"))
     for f in oraciones(t):
         if PRIVADO.search(f):
             # «Es el tipo de escalada que mencionabas: la escasez…» → se conserva lo que va tras los dos puntos
@@ -122,79 +131,100 @@ CSS = """
 @font-face{font-family:"JetBrains Mono";font-weight:500;src:url("F/jetbrains-mono-latin-500-normal.woff2")}
 @font-face{font-family:"JetBrains Mono";font-weight:700;src:url("F/jetbrains-mono-latin-700-normal.woff2")}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:#777;font-family:Archivo,Arial,sans-serif;color:#141B23}
-.slide{width:540px;height:675px;background:#EEF1F4;padding:18px;display:flex;margin:0 0 10px;overflow:hidden}
-.card{flex:1;min-width:0;background:#fff;border:1px solid #D5DCE4;border-radius:14px;padding:22px 26px 16px;display:flex;flex-direction:column}
-.top{display:flex;justify-content:space-between;align-items:center}
-.brand{font:800 10.5px/1 Archivo;letter-spacing:2.2px;text-transform:uppercase;background:#FFEFA0;color:#3D3400;padding:6px 9px 5px;border-radius:5px}
-.date{font:500 10.5px/1 "JetBrains Mono";color:#4B5765;letter-spacing:.3px;text-transform:uppercase}
-.band{margin-top:14px;background:var(--bg);color:var(--ink);border-left:5px solid var(--lbl);border-radius:6px;padding:8px 11px;font:800 15px/1.1 Archivo;display:flex;align-items:center;gap:8px}
-.band svg,.cover-ico svg{width:18px;height:18px;stroke:var(--lbl);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
-.band .n{margin-left:auto;font:500 11px/1 "JetBrains Mono";color:var(--lbl)}
-.body{--s:1;flex:1;min-height:0;overflow:hidden;margin-top:16px}
-.ttl{font:800 calc(24px*var(--s))/1.13 Archivo;letter-spacing:-.2px}
-.chip{display:inline-block;font:700 calc(11px*var(--s))/1 "JetBrains Mono";background:#5A6470;color:#fff;border-radius:4px;padding:4px 6px;vertical-align:calc(4px*var(--s));margin-right:7px}
-.lbl{font:700 calc(10.5px*var(--s))/1 Archivo;letter-spacing:1.4px;text-transform:uppercase;color:var(--lbl);margin:calc(15px*var(--s)) 0 calc(6px*var(--s))}
-.p{font:400 calc(16px*var(--s))/1.45 "Source Serif 4";color:#141B23}
-.big{font:700 calc(27px*var(--s))/1.22 Archivo;letter-spacing:-.2px;margin-top:6px}
-.ref{margin-top:calc(18px*var(--s));font:600 calc(13px*var(--s))/1.35 Archivo;color:#4B5765}
-.foot{border-top:1px solid #D5DCE4;padding-top:9px;margin-top:10px;font:italic 400 11.5px/1.35 "Source Serif 4";color:#4B5765}
-.foot .v{font-style:normal;font-family:Archivo;font-weight:600;font-size:10.5px;letter-spacing:.2px;margin-top:3px}
-.meta{display:flex;justify-content:space-between;margin-top:7px;font:600 10.5px/1 Archivo;color:#4B5765}
-.meta .ia{color:#5A6470}
-/* portada */
-.cover .card{background:var(--bg);border:0;border-left:12px solid var(--lbl);border-radius:14px}
-.cover .date{color:var(--ink)}
-.cover-ico{margin-top:30px;display:flex;align-items:center;gap:10px;font:800 15px/1 Archivo;letter-spacing:2px;text-transform:uppercase;color:var(--lbl)}
-.cover-ico svg{width:26px;height:26px;stroke-width:2.2}
-.hook{--s:1;margin-top:16px;font:800 calc(37px*var(--s))/1.08 Archivo;letter-spacing:-.6px;color:var(--ink)}
-.list{margin-top:auto;padding-top:18px;border-top:2px solid var(--lbl);list-style:none}
-.list li{display:flex;gap:8px;font:600 14px/1.3 Archivo;color:var(--ink);margin-top:9px}
-.list.small li{font-size:13px;margin-top:7px}
-.list .c{font:700 11px/1 "JetBrains Mono";background:var(--lbl);color:#fff;border-radius:4px;padding:4px 5px 3px;height:18px;flex:none;margin-top:0}
-.swipe{display:flex;justify-content:space-between;align-items:center;margin-top:20px;font:700 12px/1 Archivo;letter-spacing:1.6px;text-transform:uppercase;color:var(--lbl)}
-.swipe .h{letter-spacing:.2px;text-transform:none;color:var(--ink);font-weight:600}
+body{background:#777;font-family:Archivo,Arial,sans-serif}
+.slide{width:540px;height:675px;margin:0 0 10px;overflow:hidden;display:flex;flex-direction:column;
+  background:var(--sec);color:#fff;padding:28px 32px 20px}
+.top{display:flex;justify-content:space-between;align-items:center;flex:none}
+.brand{font:800 10.5px/1 Archivo;letter-spacing:2.4px;text-transform:uppercase;background:#FFE45C;color:#1d1a00;padding:6px 9px 5px;border-radius:4px}
+.date{font:500 10.5px/1 "JetBrains Mono";letter-spacing:.4px;text-transform:uppercase;opacity:.75}
+.lab{margin-top:18px;display:flex;align-items:center;gap:10px;flex:none}
+.lab .n{font:800 27px/1 Archivo;color:transparent;-webkit-text-stroke:1.2px var(--acc);letter-spacing:-.5px}
+.lab .s{font:800 11px/1.2 Archivo;letter-spacing:2.4px;text-transform:uppercase;color:var(--acc)}
+.lab .k{margin-left:auto;font:500 10.5px/1 "JetBrains Mono";opacity:.65}
+.body{--s:1;flex:1;min-height:0;overflow:hidden;display:flex;flex-direction:column;margin-top:12px}
+.ttl{font:800 calc(29px*var(--s))/1.08 Archivo;letter-spacing:-.5px;flex:none}
+mark{background:#FFE45C;color:var(--sec);padding:0 .12em;border-radius:3px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.txt{margin-top:calc(13px*var(--s));font:400 calc(17.5px*var(--s))/1.46 "Source Serif 4";color:rgba(255,255,255,.93);flex:none}
+.txt p+p{margin-top:calc(9px*var(--s))}
+.hueco{flex:1;min-height:calc(16px*var(--s))}
+.clave{flex:none;border-left:3px solid var(--acc);padding:calc(3px*var(--s)) 0 calc(3px*var(--s)) 14px}
+.clave .h{display:flex;align-items:center;gap:7px;font:800 calc(10px*var(--s))/1 Archivo;letter-spacing:2.2px;text-transform:uppercase;color:var(--acc);margin-bottom:calc(7px*var(--s))}
+.clave .h svg{width:14px;height:14px;fill:none;stroke:var(--acc);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:.75}
+.clave p{font:600 calc(15.5px*var(--s))/1.38 Archivo;color:rgba(255,255,255,.95)}
+.pie{margin-top:12px;display:flex;justify-content:space-between;gap:18px;font:500 10.5px/1.3 Archivo;opacity:.72;flex:none}
+.pie span:first-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pie span:last-child{white-space:nowrap}
+/* portadas */
+.hook{margin-top:calc(14px*var(--s));font:800 calc(40px*var(--s))/1.04 Archivo;letter-spacing:-.8px;flex:none}
+.lst{list-style:none;flex:none}
+.lst li{display:flex;gap:12px;align-items:baseline;font:600 calc(16px*var(--s))/1.3 Archivo;padding:calc(9px*var(--s)) 0;border-top:1px solid rgba(255,255,255,.2)}
+.lst li em{font:800 calc(14px*var(--s))/1.3 Archivo;font-style:normal;color:var(--acc);width:22px;flex:none}
+.big{margin-top:24px;font:800 210px/.8 Archivo;color:#FFE45C;letter-spacing:-8px;flex:none}
+.sub{margin-top:14px;font:800 calc(40px*var(--s))/1.03 Archivo;letter-spacing:-.8px;flex:none}
+/* las 5 claves */
+.ctx{margin-top:calc(14px*var(--s));font:400 calc(20px*var(--s))/1.45 "Source Serif 4";color:rgba(255,255,255,.93);flex:none}
+.mas{flex:none;display:flex;align-items:center;gap:8px;font:600 calc(14px*var(--s))/1.35 Archivo;color:var(--acc)}
 /* mercados */
-.mk{width:100%;border-collapse:collapse;font:500 calc(14px*var(--s))/1.2 Archivo}
-.mk td{padding:calc(6.5px*var(--s)) 0;border-bottom:1px solid #E3E8EE}
+.mk{width:100%;border-collapse:collapse;font:600 calc(15px*var(--s))/1.2 Archivo;flex:none;margin-top:4px}
+.mk td{padding:calc(7.5px*var(--s)) 0;border-bottom:1px solid rgba(255,255,255,.16)}
 .mk tr:last-child td{border-bottom:0}
-.mk .v,.mk .c{text-align:right;font-family:"JetBrains Mono";font-size:calc(12.5px*var(--s));white-space:nowrap}
-.mk .c{width:86px}
-.mk .u{font:500 calc(10px*var(--s)) Archivo;color:#4B5765}
-.up{color:#16703D}.down{color:#B3261E}.flat{color:#4B5765}
+.mk .v,.mk .c{text-align:right;font-family:"JetBrains Mono";font-weight:500;font-size:calc(13.5px*var(--s));white-space:nowrap}
+.mk .c{width:92px}
+.mk .u{font:500 calc(10.5px*var(--s)) Archivo;opacity:.65}
+.up{color:#8EE6A8}.down{color:#FF9C94}.flat{opacity:.7}
+.nota{flex:none;font:400 calc(13.5px*var(--s))/1.4 "Source Serif 4";color:rgba(255,255,255,.8)}
 """
 
 FIT_JS = r"""
 () => {
   const over = el => el.scrollHeight > el.clientHeight + 1;
-  const shrink = (el, min) => { let s = parseFloat(el.dataset.grow || 1); el.style.setProperty('--s', s);
-    while (over(el) && s > min) { s = Math.round((s - 0.025) * 1000) / 1000; el.style.setProperty('--s', s); } return s; };
   const report = [];
   for (const slide of document.querySelectorAll('.slide')) {
-    const hook = slide.querySelector('.hook');
-    if (hook) { // la portada: el gancho se reduce si deja sin sitio a la lista
-      const card = slide.querySelector('.card'); let s = 1.15; hook.style.setProperty('--s', s);
-      while (card.scrollHeight > card.clientHeight + 1 && s > 0.62) { s -= 0.02; hook.style.setProperty('--s', s); }
-    }
-    const body = slide.querySelector('.body'); let dropped = 0, trimmed = 0, s = 1;
+    const body = slide.querySelector('.body'); let s = 1, trimmed = 0;
     if (body) {
-      s = shrink(body, 0.84);
-      for (const el of [...body.querySelectorAll('[data-opt]')].reverse()) {
-        if (!over(body)) break; el.remove(); dropped++; s = shrink(body, 0.84);
-      }
-      while (over(body)) { // última opción: quitar la última frase del párrafo más largo
-        const ps = [...body.querySelectorAll('.p')].filter(p => p.querySelectorAll('.f').length > 1)
+      const fit = () => { s = parseFloat(body.dataset.grow || 1.12); body.style.setProperty('--s', s);
+        while (over(body) && s > 0.8) { s = Math.round((s - 0.02) * 1000) / 1000; body.style.setProperty('--s', s); } };
+      fit();
+      while (over(body)) { // si ni así cabe, se quita la última frase del texto más largo
+        const ps = [...body.querySelectorAll('.txt p, .ctx')].filter(p => p.querySelectorAll('.f').length > 1)
           .sort((a, b) => b.textContent.length - a.textContent.length);
-        if (!ps.length) { s = shrink(body, 0.7); break; }
-        const fs = ps[0].querySelectorAll('.f'); fs[fs.length - 1].remove(); trimmed++; s = shrink(body, 0.84);
+        if (!ps.length) break;
+        const fs = ps[0].querySelectorAll('.f'); fs[fs.length - 1].remove(); trimmed++; fit();
       }
     }
-    const card = slide.querySelector('.card');
-    report.push({id: slide.id, s, dropped, trimmed, overflow: (body && over(body)) || card.scrollHeight > card.clientHeight + 1});
+    report.push({id: slide.id, s, dropped: 0, trimmed, overflow: (body && over(body)) || over(slide)});
   }
   return report;
 }
 """
+
+LLAVE = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.7 12.3 20 3"/><path d="M16 7l3 3"/><path d="M13.5 9.5l2 2"/></svg>'
+
+
+NOWRAP = re.compile(r"(?<![\w-])([\w.]{1,6}-[\w.]{1,6})(?![\w-])")
+
+
+def titular_html(t, destacado=""):
+    """Titular escapado, con la frase destacada (si aparece tal cual) resaltada en amarillo."""
+    esc = e(t)
+    if destacado and e(destacado) in esc:
+        esc = esc.replace(e(destacado), "\x00" + e(destacado) + "\x01", 1)
+    esc = NOWRAP.sub(r'<span style="white-space:nowrap">\1</span>', esc)
+    return esc.replace("\x00", "<mark>").replace("\x01", "</mark>")
+
+
+def frases_html(frases):
+    return " ".join(f'<span class="f">{nb(f)}</span>' for f in frases)
+
+
+def medios_de(it, maximo=3):
+    """Nombres de los medios citados («Europa Press · El Mundo · Infodefensa»), sin el titular de cada enlace."""
+    nombres = []
+    for f in it.get("fuentes", []):
+        n = (f.get("t") or "").split(":")[0].strip()
+        if n and n not in nombres:
+            nombres.append(n)
+    return " · ".join(nombres[:maximo])
 
 
 def parrafo(frases, opt=False):
@@ -227,11 +257,32 @@ def main():
     fcorta = fecha_corta(fecha)
     handle = "@" + a.usuario.lstrip("@")
     sec_de = {it["code"]: s for s in d["secciones"] for it in s["items"]}
+    item_de = {it["code"]: it for s in d["secciones"] for it in s["items"]}
 
-    bloques = [{"id": "claves", "titulo": "Las 5 claves", "kind": "gray", "claves": d.get("claves", [])}]
+    def publico(t):
+        t = (t or "").replace("(interpretación mía)", "(interpretación propia)").replace("interpretación mía", "interpretación propia")
+        return REF_INTERNA.sub("", t)
+
+    def texto_item(code):
+        """Titular, frase destacada, párrafos y clave de una noticia: los de ig.json o, si faltan, condensados de la edición."""
+        it, ov = item_de[code], igi.get(code, {})
+        if ov.get("texto"):
+            parrafos = [publico(x) for x in re.split(r"\n\s*\n", ov["texto"])]
+        elif ov.get("hecho") or ov.get("importa"):
+            parrafos = [publico(ov.get("hecho")), publico(ov.get("importa"))]
+        else:
+            parrafos = [" ".join(condensa(it.get("hecho"), 420)), " ".join(condensa(it.get("importa"), 260))]
+        if ov.get("clave"):
+            clave, etiqueta = publico(ov["clave"]), "La clave"
+        else:  # sin clave escrita, se usa lo que hay que vigilar, con su nombre
+            clave, etiqueta = publico(ov.get("vigilar")) or " ".join(condensa(it.get("vigilar"), 180)), "A vigilar"
+        return {"titular": ov.get("titular") or ov.get("titulo") or it["titulo"], "destacado": ov.get("destacado") or "",
+                "texto": [x for x in parrafos if x and x.strip()], "clave": clave, "etiqueta": etiqueta}
+
+
+    bloques = [{"id": "claves", "titulo": "Las 5 claves", "claves": d.get("claves", [])}]
     for s in d["secciones"]:
-        bloques.append({"id": s["id"], "titulo": s["titulo"], "kind": "green" if s.get("tipo") == "inversion" else "blue",
-                        "items": s["items"]})
+        bloques.append({"id": s["id"], "titulo": s["titulo"], "corto": s.get("corto"), "items": s["items"]})
     rango = {b: i for i, b in enumerate(ORDEN)}
     bloques.sort(key=lambda b: rango.get(b["id"], 99))
     horas = [h.strip() for h in a.horas.split(",") if h.strip()]
@@ -241,13 +292,14 @@ def main():
         bloques = bloques[:len(horas)]
 
     slides, posts = [], []
+    hora_de = {b["id"]: h for b, h in zip(bloques, horas)}
     for b, hora in zip(bloques, horas):
-        bid, (bg, ink, lbl) = b["id"], COLORES[b["kind"]]
-        style = f'style="--bg:{bg};--ink:{ink};--lbl:{lbl}"'
+        bid = b["id"]
+        sec_c, acc_c = SECCION.get(bid, SECCION["claves"])
+        style = f'style="--sec:{sec_c};--acc:{acc_c}"'
         o = igb.get(bid, {})
         top = (f'<div class="top"><span class="brand">The Daily Iván</span>'
                f'<span class="date">{e(fcorta)}</span></div>')
-        meta = (f'<div class="meta"><span>{e(handle)}</span><span class="ia">Resumen elaborado con IA</span></div>')
         files = []
 
         def add(html_slide):
@@ -256,44 +308,53 @@ def main():
             files.append(f"{sid}.jpg")
             slides.append(html_slide.replace("§ID§", sid))
 
-        if bid == "claves":
-            claves = b["claves"]
-            gancho = o.get("gancho") or "Lo que hay que saber hoy, en cinco claves."
-            tit_ref = {it["code"]: (igi.get(it["code"], {}).get("titulo") or it["titulo"]) for s in d["secciones"] for it in s["items"]}
-            lista = "".join(f'<li><span class="c">{e(k.get("ref", i + 1))}</span><span>{nb(tit_ref.get(k.get("ref"), k["t"]))}</span></li>'
-                            for i, k in enumerate(claves[:5]))
-            titulos = [k["t"] for k in claves]
-        else:
-            items = b["items"]
-            lead = items[0]
-            gancho = o.get("gancho") or igi.get(lead["code"], {}).get("titulo") or lead["titulo"]
-            lista = "".join(f'<li><span class="c">{e(it["code"])}</span><span>{nb(igi.get(it["code"], {}).get("titulo") or it["titulo"])}</span></li>'
-                            for it in items[:4])
-            titulos = [igi.get(it["code"], {}).get("titulo") or it["titulo"] for it in items]
-        add(f'<section class="slide cover" id="§ID§" {style}><div class="card">{top}'
-            f'<div class="cover-ico">{svg(ico.get(bid))}<span>{e(b["titulo"])}</span></div>'
-            f'<div class="hook">{nb(gancho)}</div><ul class="list{" small" if bid == "claves" else ""}">{lista}</ul>'
-            f'<div class="swipe"><span class="h">{e(handle)}</span><span>Desliza →</span></div></div></section>')
+        def pie(izq, der=None):
+            return f'<div class="pie"><span>{izq}</span><span>{der or e(handle)}</span></div>'
 
         if bid == "claves":
+            claves = b["claves"][:5]
+            gancho = o.get("gancho") or f"claves para entender el {DIAS[datetime.strptime(fecha, '%Y-%m-%d').weekday()]}"
+            lista = "".join(f'<li><em>{i + 1}</em><span>{nb(texto_item(k.get("ref"))["titular"] if k.get("ref") in item_de else k["t"])}</span></li>'
+                            for i, k in enumerate(claves))
+            titulos = [k["t"] for k in claves]
+            add(f'<section class="slide" id="§ID§" {style}>{top}<div class="big">{len(claves)}</div>'
+                f'<div class="body" data-grow="1"><div class="sub">{nb(gancho)}</div><div class="hueco"></div>'
+                f'<ul class="lst">{lista}</ul></div>{pie(e(handle), "Desliza →")}</section>')
             for i, k in enumerate(claves):
-                sec = sec_de.get(k.get("ref"))
-                ref = (f'<div class="ref"><span class="chip">{e(k["ref"])}</span>Detalle y fuentes en el carrusel de '
-                       f'{e(sec.get("corto") or sec["titulo"])}</div>') if sec else ""
-                add(f'<section class="slide" id="§ID§" {style}><div class="card">{top}'
-                    f'<div class="band">{svg(ico.get("claves"))}<span>Las 5 claves</span><span class="n">{i + 1}/{len(claves)}</span></div>'
-                    f'<div class="body" data-grow="1.3"><p class="big">{nb(k["t"])}</p>{ref}</div>'
-                    f'<div class="foot">Edición completa, con enlace a cada fuente: enlace en la bio.{meta}</div></div></section>')
+                ref = k.get("ref")
+                sec = sec_de.get(ref)
+                t = texto_item(ref) if ref in item_de else {"titular": k["t"], "destacado": ""}
+                corto = (sec.get("corto") or sec["titulo"]) if sec else "Las claves"
+                acc_k = SECCION.get(sec["id"], SECCION["claves"])[1] if sec else acc_c
+                mas = (f'<div class="mas">→ Más, en el carrusel de {e(corto)}'
+                       f'{(" (" + hora_de[sec["id"]] + ")") if sec and sec["id"] in hora_de else ""}</div>') if sec else ""
+                add(f'<section class="slide" id="§ID§" style="--sec:{sec_c};--acc:{acc_k}">{top}'
+                    f'<div class="lab"><span class="n">{i + 1:02d}</span><span class="s">{e(corto)}</span>'
+                    f'<span class="k">{i + 1}/{len(claves)}</span></div>'
+                    f'<div class="body" data-grow="1.35"><h2 class="ttl">{titular_html(t["titular"], t.get("destacado"))}</h2>'
+                    f'<div class="ctx">{frases_html(oraciones(k["t"]))}</div><div class="hueco"></div>{mas}</div>'
+                    f'{pie(e(handle), "")}</section>')
         else:
+            items = b["items"]
+            corto = b.get("corto") or b["titulo"]
+            lead = texto_item(items[0]["code"])
+            gancho = o.get("gancho") or lead["titular"]
+            titulos = [texto_item(it["code"])["titular"] for it in items]
+            lista = "".join(f'<li><em>{i + 1:02d}</em><span>{nb(t)}</span></li>' for i, t in enumerate(titulos[:4]))
+            add(f'<section class="slide" id="§ID§" {style}>{top}'
+                f'<div class="lab"><span class="s">{e(b["titulo"])}</span></div>'
+                f'<div class="body" data-grow="1.1"><div class="hook">{nb(gancho)}</div><div class="hueco"></div>'
+                f'<ul class="lst">{lista}</ul></div>{pie(e(handle), "Desliza →")}</section>')
+
             if bid == "mercados" and d.get("mercados"):
                 filas = []
                 for m in d["mercados"]:
-                    t, v, dec, c = m.get("tipo"), m["v"], m.get("dec", 2), m.get("c")
-                    if t == "indice":
+                    tp, v, dec, c = m.get("tipo"), m["v"], m.get("dec", 2), m.get("c")
+                    if tp == "indice":
                         val = f'{num(v, dec)} <span class="u">pts</span>'
-                    elif t == "rent":
+                    elif tp == "rent":
                         val = f'{num(v, dec)} <span class="u">%</span>'
-                    elif t == "divisa":
+                    elif tp == "divisa":
                         val = f'{num(v, 4)} <span class="u">$/€</span>'
                     else:
                         val = f'{num(v, dec)} <span class="u">${("/" + m["por"]) if m.get("por") else ""}</span>'
@@ -304,28 +365,26 @@ def main():
                         ch = f'<span class="{cls}">{"+" if c > 0 else ""}{num(c, 2)} %</span>'
                     filas.append(f'<tr><td>{e(m["n"])}</td><td class="v">{val}</td><td class="c">{ch}</td></tr>')
                 fx = d.get("fx") or {}
-                add(f'<section class="slide" id="§ID§" {style}><div class="card">{top}'
-                    f'<div class="band">{svg(ico.get("mercados"))}<span>Panel de mercados</span><span class="n">{e(fx.get("s", "").split("·")[0].strip())}</span></div>'
-                    f'<div class="body"><table class="mk">{"".join(filas)}</table></div>'
-                    f'<div class="foot">Cifras de prensa económica ({e(fx.get("s", ""))}), orientativas: no son cotizaciones en tiempo real. '
-                    f'Bonos en rentabilidad anual.{meta}</div></div></section>')
+                add(f'<section class="slide" id="§ID§" {style}>{top}'
+                    f'<div class="lab"><span class="s">Panel de mercados</span><span class="k">{e(fx.get("s", "").split("·")[0].strip())}</span></div>'
+                    f'<div class="body" data-grow="1.08"><table class="mk">{"".join(filas)}</table><div class="hueco"></div>'
+                    f'<p class="nota">Cifras de prensa económica, orientativas: no son cotizaciones en tiempo real. '
+                    f'Los bonos, en rentabilidad anual.</p></div>{pie(e(handle), "")}</section>')
+
             for i, it in enumerate(items):
-                ov = igi.get(it["code"], {})
-                breve = it.get("breve")
-                hecho = oraciones(ov["hecho"]) if ov.get("hecho") else condensa(it.get("hecho"), 360 if breve else 330)
-                importa = oraciones(ov["importa"]) if ov.get("importa") else condensa(it.get("importa"), 260)
-                vigilar = oraciones(ov["vigilar"]) if ov.get("vigilar") else condensa(it.get("vigilar"), 190)
-                cuerpo = (f'<h2 class="ttl"><span class="chip">{e(it["code"])}</span>{nb(ov.get("titulo") or it["titulo"])}</h2>'
-                          + (f'<div class="lbl">Qué ha pasado</div>{parrafo(hecho)}' if hecho else "")
-                          + (f'<div data-opt><div class="lbl">Por qué importa</div>{parrafo(importa)}</div>' if importa else "")
-                          + (f'<div data-opt><div class="lbl">Qué vigilar</div>{parrafo(vigilar)}</div>' if vigilar else ""))
-                fuentes = " · ".join(f["t"] for f in it.get("fuentes", [])[:4])
-                aviso = " Contenido informativo, no es una recomendación de inversión." if bid == "inversion" else ""
-                add(f'<section class="slide" id="§ID§" {style}><div class="card">{top}'
-                    f'<div class="band">{svg(ico.get(bid))}<span>{e(b["titulo"])}</span><span class="n">{i + 1}/{len(items)}</span></div>'
-                    f'<div class="body">{cuerpo}</div>'
-                    f'<div class="foot">{("Fuentes: " + e(fuentes) + ".") if fuentes else ""}{aviso}'
-                    f'<div class="v">Verificación: {e(CONF.get(it.get("conf"), it.get("conf", "")))}</div>{meta}</div></div></section>')
+                t = texto_item(it["code"])
+                clave = (f'<div class="clave"><div class="h">{LLAVE}<span>{e(t["etiqueta"])}</span></div>'
+                         f'<p>{frases_html(oraciones(t["clave"]))}</p></div>') if t["clave"] else ""
+                parrafos = "".join(f'<p>{frases_html(oraciones(p))}</p>' for p in t["texto"] if p.strip())
+                medios = medios_de(it)
+                aviso = "Contenido informativo, no es una recomendación de inversión" if bid == "inversion" else ""
+                izq = e(aviso) if aviso else (e("Fuentes: " + medios) if medios else "")
+                add(f'<section class="slide" id="§ID§" {style}>{top}'
+                    f'<div class="lab"><span class="n">{i + 1:02d}</span><span class="s">{e(corto)}</span>'
+                    f'<span class="k">{i + 1}/{len(items)}</span></div>'
+                    f'<div class="body" data-grow="1.22"><h2 class="ttl">{titular_html(t["titular"], t.get("destacado"))}</h2>'
+                    f'<div class="txt">{parrafos}</div><div class="hueco"></div>{clave}</div>'
+                    f'{pie(izq)}</section>')
 
         # texto de la publicación
         etiquetas = [MARCA] + [t if t.startswith("#") else "#" + t for t in (o.get("hashtags") or ETIQUETAS.get(bid, []))]
@@ -339,10 +398,10 @@ def main():
         if o.get("copy"):
             partes += ["", o["copy"]]
         if bid == "claves":
-            partes += ["", "Desliza: una clave por imagen, con el bloque donde está el detalle."]
+            partes += ["", "Desliza: una clave por imagen."]
         else:
             partes += ["", "En este carrusel:"] + [f"▸ {t}" for t in titulos]
-            partes += ["", "Desliza para ver qué ha pasado, por qué importa y las fuentes."]
+            partes += ["", "Desliza para leer cada noticia y su clave."]
         if bid == "inversion":
             partes += ["", "Contenido informativo; no es una recomendación de inversión."]
         partes += ["La edición completa del día, con enlace a cada fuente, está en el enlace de la bio.",
