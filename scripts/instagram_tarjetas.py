@@ -11,9 +11,9 @@ una portada y una imagen por noticia; Mercados añade el panel de cotizaciones. 
   <imagenes>/<AAAA-MM-DD>/<bloque>-<n>.jpg
   <cola>/<AAAA-MM-DD>/cola.json   (hora, texto, hashtags y URL pública de cada imagen)
 
-Diseño: cada sección tiene su color (SECCION), con luz y grano de papel, la marca «The Daily Iván» y un sello en las
-portadas. Titulares en Fraunces (o Bricolage Grotesque con --tipo). Cada noticia es una imagen con titular (con una
-frase resaltada en amarillo), un mapa de situación si la noticia trae países, una cifra protagonista si trae «dato»,
+Diseño: cada sección tiene su color (SECCION), con luz y grano de papel y la marca «The Daily Iván». Titulares en
+Bricolage Grotesque (o Fraunces con --tipo fraunces). Cada noticia es una imagen con titular (con una frase resaltada
+en amarillo), un mapa de situación si la noticia trae países, una cifra protagonista si trae «dato»,
 un texto explicativo de dos párrafos y «La clave» (una línea fina con el color claro de la sección). Mercados añade
 barras de subida y bajada. Los mapas salen de scripts/mapa (Natural Earth).
 
@@ -171,7 +171,7 @@ mark{background:#FFE45C;color:var(--sec);padding:0 .12em;border-radius:3px;-webk
 .pie{margin-top:12px;display:flex;justify-content:space-between;gap:18px;font:500 10.5px/1.3 Archivo;opacity:.72;flex:none}
 .pie span:first-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .pie span:last-child{white-space:nowrap}
-/* identidad: luz, grano, marca, sello, mapas, dato */
+/* identidad: luz, grano, marca, mapas, dato */
 .slide{position:relative;background:radial-gradient(130% 75% at 100% 0%,rgba(255,255,255,.11),rgba(255,255,255,0) 60%),var(--sec)}
 .slide::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.13;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
 .slide>*{position:relative;z-index:1}
@@ -184,8 +184,6 @@ mark{background:#FFE45C;color:var(--sec);padding:0 .12em;border-radius:3px;-webk
 .dato{display:flex;gap:14px;align-items:center;margin-top:calc(12px*var(--s));padding:calc(9px*var(--s)) 0;border-top:1px solid rgba(255,255,255,.22);border-bottom:1px solid rgba(255,255,255,.22);flex:none}
 .dato b{font:900 calc(44px*var(--s))/1 var(--disp);color:#FFE45C;letter-spacing:-1px;white-space:nowrap}
 .dato span{font:600 calc(14.5px*var(--s))/1.35 Archivo;opacity:.92}
-.sello{position:absolute !important;z-index:2 !important;right:20px;top:14px;width:86px;height:86px;transform:rotate(-12deg)}
-.portada .top .date{display:none}
 .mk .bar{width:74px;padding-left:12px}
 .barra{display:block;position:relative;height:8px;background:rgba(255,255,255,.09);border-radius:4px}
 .barra::before{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:rgba(255,255,255,.45)}
@@ -234,13 +232,6 @@ FIT_JS = r"""
 }
 """
 
-SELLO = ('<svg class="sello" viewBox="0 0 100 100" aria-hidden="true"><defs><path id="circ" d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"/></defs>'
-         '<circle cx="50" cy="50" r="47" fill="none" stroke="#FFE45C" stroke-width="1.6"/>'
-         '<circle cx="50" cy="50" r="27" fill="#FFE45C"/>'
-         '<text font-family="Archivo" font-weight="800" font-size="8.6" letter-spacing="1.9" fill="#FFE45C">'
-         '<textPath href="#circ">THE DAILY IVÁN · ALL YOU NEED IS NEWS ·</textPath></text>'
-         '<text x="50" y="58" text-anchor="middle" style="font-family:var(--disp)" font-weight="900" font-size="23" fill="#141B23">DI</text></svg>')
-
 LLAVE = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.7 12.3 20 3"/><path d="M16 7l3 3"/><path d="M13.5 9.5l2 2"/></svg>'
 
 
@@ -287,7 +278,7 @@ def main():
     ap.add_argument("--base-url", default=REPO_RAW,
                     help="URL pública bajo la que quedarán <AAAA-MM-DD>/<archivo>.jpg ({fecha} se sustituye por la fecha)")
     ap.add_argument("--horas", default=",".join(HORAS))
-    ap.add_argument("--tipo", default="fraunces", choices=["fraunces", "bricolage"], help="tipografía de los titulares")
+    ap.add_argument("--tipo", default="bricolage", choices=["fraunces", "bricolage"], help="tipografía de los titulares")
     a = ap.parse_args()
 
     src = open(a.page, encoding="utf-8").read()
@@ -363,9 +354,9 @@ def main():
             lista = "".join(f'<li><em>{i + 1}</em><span>{nb(texto_item(k.get("ref"))["titular"] if k.get("ref") in item_de else k["t"])}</span></li>'
                             for i, k in enumerate(claves))
             titulos = [k["t"] for k in claves]
-            add(f'<section class="slide portada" id="§ID§" {style}>{top}{SELLO}<div class="big">{len(claves)}</div>'
+            add(f'<section class="slide portada" id="§ID§" {style}>{top}<div class="big">{len(claves)}</div>'
                 f'<div class="body" data-grow="1"><div class="sub">{nb(gancho)}</div><div class="hueco"></div>'
-                f'<ul class="lst">{lista}</ul></div>{pie(e(handle) + " · " + e(fcorta), "Desliza →")}</section>')
+                f'<ul class="lst">{lista}</ul></div>{pie(e(handle), "Desliza →")}</section>')
             for i, k in enumerate(claves):
                 ref = k.get("ref")
                 sec = sec_de.get(ref)
@@ -389,11 +380,11 @@ def main():
             lista = "".join(f'<li><em>{i + 1:02d}</em><span>{nb(t)}</span></li>' for i, t in enumerate(titulos[:4]))
             con_pais = next((texto_item(it["code"])["paises"] for it in items if texto_item(it["code"])["paises"]), [])
             mapa = mapa_svg(con_pais, 476, 196, resalte=acc_c) if con_pais else ""
-            add(f'<section class="slide portada" id="§ID§" {style}>{top}{SELLO}'
+            add(f'<section class="slide portada" id="§ID§" {style}>{top}'
                 f'<div class="lab"><span class="s">{e(b["titulo"])}</span></div>'
                 f'<div class="body" data-grow="1.1">{('<div class="mapa-portada">' + mapa + '</div>') if mapa else ""}'
                 f'<div class="hook">{nb(gancho)}</div><div class="hueco"></div>'
-                f'<ul class="lst">{lista}</ul></div>{pie(e(handle) + " · " + e(fcorta), "Desliza →")}</section>')
+                f'<ul class="lst">{lista}</ul></div>{pie(e(handle), "Desliza →")}</section>')
 
             if bid == "mercados" and d.get("mercados"):
                 filas = []
