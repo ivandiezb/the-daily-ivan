@@ -5,7 +5,7 @@ name: Instagram
 
 on:
   schedule:
-    - cron: "7,22,37,52 10-22 * * *"
+    - cron: "7,22,37,52 9-22 * * *"
       timezone: "Europe/Madrid"
   workflow_dispatch:
 

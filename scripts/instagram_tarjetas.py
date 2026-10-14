@@ -3,25 +3,34 @@
 
 Uso:
   python3 scripts/instagram_tarjetas.py <page.html> --imagenes DIR --cola DIR
-          [--extra ig.json] [--usuario allyouneedisnews] [--base-url URL] [--horas 10:30,12:00,...]
+          [--extra ig.json] [--usuario allyouneedisnews] [--base-url URL] [--horas 09:30,12:00,...]
+          [--tipo fraunces|bricolage]
 
 Por cada bloque (Las 5 claves y cada sección) crea un carrusel de imágenes JPEG de 1080×1350:
 una portada y una imagen por noticia; Mercados añade el panel de cotizaciones. Escribe:
   <imagenes>/<AAAA-MM-DD>/<bloque>-<n>.jpg
   <cola>/<AAAA-MM-DD>/cola.json   (hora, texto, hashtags y URL pública de cada imagen)
 
-Diseño: cada sección tiene su color (SECCION). Cada noticia es una imagen con titular (con una frase resaltada en
-amarillo), un texto explicativo de dos párrafos y «La clave» (una línea fina con el color claro de la sección).
+Diseño: cada sección tiene su color (SECCION), con luz y grano de papel, la marca «The Daily Iván» y un sello en las
+portadas. Titulares en Fraunces (o Bricolage Grotesque con --tipo). Cada noticia es una imagen con titular (con una
+frase resaltada en amarillo), un mapa de situación si la noticia trae países, una cifra protagonista si trae «dato»,
+un texto explicativo de dos párrafos y «La clave» (una línea fina con el color claro de la sección). Mercados añade
+barras de subida y bajada. Los mapas salen de scripts/mapa (Natural Earth).
 
 Textos: se pasan con --extra (ig.json) o dentro de la edición como objeto "instagram":
   {"bloques": {"<id>": {"gancho": "...", "copy": "...", "hashtags": ["#..."]}},
-   "items":   {"M1": {"titular": "...", "destacado": "...", "texto": "párrafo 1\n\npárrafo 2", "clave": "..."}}}
+   "items":   {"M1": {"titular": "...", "destacado": "...", "texto": "párrafo 1\n\npárrafo 2", "clave": "...",
+                      "paises": ["UKR", "RUS"], "dato": {"cifra": "19 años", "pie": "sin que …"}}}}
   titular ≤ 80 caracteres; destacado = trozo literal del titular que se resalta (opcional); texto de 450 a 700
   caracteres en dos párrafos (qué ha pasado, con datos; y contexto); clave = una o dos frases (≤ 190) con la lectura
-  de fondo o lo que viene. Si faltan, se condensan de la propia edición (frases completas, sin referencias personales).
+  de fondo o lo que viene; paises = códigos ISO alfa-3 (el primero es el foco del mapa); dato = cifra corta (≤ 10
+  caracteres) y su explicación (≤ 70). Si faltan, se condensan de la propia edición (frases completas, sin referencias personales).
 """
 import argparse, html, json, os, re, sys, tempfile
 from datetime import datetime, timezone
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from mapa import mapa_svg  # noqa: E402
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 FUENTES = os.path.join(AQUI, "fuentes")
@@ -29,7 +38,7 @@ FUENTES = os.path.join(AQUI, "fuentes")
 # GitHub Actions borra las de más de dos días).
 REPO_RAW = "https://raw.githubusercontent.com/ivandiezb/the-daily-ivan/instagram-media-{fecha}"
 ORDEN = ["claves", "espana", "mercados", "internacional", "geopolitica", "vivienda", "inversion", "naturaleza"]
-HORAS = ["10:30", "12:00", "13:30", "15:00", "16:30", "18:00", "19:30", "21:00"]
+HORAS = ["09:30", "12:00", "13:30", "15:00", "16:30", "18:00", "19:30", "21:00"]
 MARCA = "#TheDailyIvan"
 ETIQUETAS = {  # respaldo si la edición no propone hashtags (máximo 5 por publicación en total)
     "claves": ["#noticias", "#actualidad", "#España"], "mercados": ["#economía", "#bolsa", "#mercados"],
@@ -130,6 +139,14 @@ CSS = """
 @font-face{font-family:"Source Serif 4";font-weight:400;font-style:italic;src:url("F/source-serif-4-latin-400-italic.woff2")}
 @font-face{font-family:"JetBrains Mono";font-weight:500;src:url("F/jetbrains-mono-latin-500-normal.woff2")}
 @font-face{font-family:"JetBrains Mono";font-weight:700;src:url("F/jetbrains-mono-latin-700-normal.woff2")}
+@font-face{font-family:Fraunces;font-weight:600;src:url("F/fraunces-latin-600-normal.woff2")}
+@font-face{font-family:Fraunces;font-weight:800;src:url("F/fraunces-latin-800-normal.woff2")}
+@font-face{font-family:Fraunces;font-weight:900;src:url("F/fraunces-latin-900-normal.woff2")}
+@font-face{font-family:Bricolage;font-weight:500;src:url("F/bricolage-grotesque-latin-500-normal.woff2")}
+@font-face{font-family:Bricolage;font-weight:700;src:url("F/bricolage-grotesque-latin-700-normal.woff2")}
+@font-face{font-family:Bricolage;font-weight:800;src:url("F/bricolage-grotesque-latin-800-normal.woff2")}
+body.fraunces{--disp:Fraunces;--dw:800;--tt:30px;--ls:-.3px}
+body.bricolage{--disp:Bricolage;--dw:800;--tt:31px;--ls:-.7px}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#777;font-family:Archivo,Arial,sans-serif}
 .slide{width:540px;height:675px;margin:0 0 10px;overflow:hidden;display:flex;flex-direction:column;
@@ -154,13 +171,32 @@ mark{background:#FFE45C;color:var(--sec);padding:0 .12em;border-radius:3px;-webk
 .pie{margin-top:12px;display:flex;justify-content:space-between;gap:18px;font:500 10.5px/1.3 Archivo;opacity:.72;flex:none}
 .pie span:first-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .pie span:last-child{white-space:nowrap}
+/* identidad: luz, grano, marca, sello, mapas, dato */
+.slide{position:relative;background:radial-gradient(130% 75% at 100% 0%,rgba(255,255,255,.11),rgba(255,255,255,0) 60%),var(--sec)}
+.slide::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.13;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.slide>*{position:relative;z-index:1}
+.marca{display:flex;align-items:center;gap:9px;font:var(--dw) 16.5px/1 var(--disp);letter-spacing:-.2px}
+.marca i{width:9px;height:9px;background:#FFE45C;transform:rotate(45deg);flex:none}
+.ttl{font:var(--dw) calc(var(--tt)*var(--s))/1.07 var(--disp);letter-spacing:var(--ls)}
+.minimapa{float:right;width:136px;height:102px;margin:4px 0 8px 14px;border-radius:10px;overflow:hidden;background:rgba(0,0,0,.16);box-shadow:inset 0 0 0 1px rgba(255,255,255,.2)}
+.minimapa svg,.mapa-portada svg{display:block;width:100%;height:100%}
+.mapa-portada{flex:none;height:196px;margin-top:12px;border-radius:12px;overflow:hidden;background:rgba(0,0,0,.16);box-shadow:inset 0 0 0 1px rgba(255,255,255,.18)}
+.dato{display:flex;gap:14px;align-items:center;margin-top:calc(12px*var(--s));padding:calc(9px*var(--s)) 0;border-top:1px solid rgba(255,255,255,.22);border-bottom:1px solid rgba(255,255,255,.22);flex:none}
+.dato b{font:900 calc(44px*var(--s))/1 var(--disp);color:#FFE45C;letter-spacing:-1px;white-space:nowrap}
+.dato span{font:600 calc(14.5px*var(--s))/1.35 Archivo;opacity:.92}
+.sello{position:absolute !important;z-index:2 !important;right:20px;top:14px;width:86px;height:86px;transform:rotate(-12deg)}
+.portada .top .date{display:none}
+.mk .bar{width:74px;padding-left:12px}
+.barra{display:block;position:relative;height:8px;background:rgba(255,255,255,.09);border-radius:4px}
+.barra::before{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:rgba(255,255,255,.45)}
+.barra i{position:absolute;top:0;bottom:0;border-radius:4px}
 /* portadas */
-.hook{margin-top:calc(14px*var(--s));font:800 calc(40px*var(--s))/1.04 Archivo;letter-spacing:-.8px;flex:none}
+.hook{margin-top:calc(14px*var(--s));font:var(--dw) calc(40px*var(--s))/1.04 var(--disp);letter-spacing:var(--ls);flex:none}
 .lst{list-style:none;flex:none}
 .lst li{display:flex;gap:12px;align-items:baseline;font:600 calc(16px*var(--s))/1.3 Archivo;padding:calc(9px*var(--s)) 0;border-top:1px solid rgba(255,255,255,.2)}
 .lst li em{font:800 calc(14px*var(--s))/1.3 Archivo;font-style:normal;color:var(--acc);width:22px;flex:none}
-.big{margin-top:24px;font:800 210px/.8 Archivo;color:#FFE45C;letter-spacing:-8px;flex:none}
-.sub{margin-top:14px;font:800 calc(40px*var(--s))/1.03 Archivo;letter-spacing:-.8px;flex:none}
+.big{margin-top:24px;font:900 210px/.8 var(--disp);color:#FFE45C;letter-spacing:-8px;flex:none}
+.sub{margin-top:14px;font:var(--dw) calc(40px*var(--s))/1.03 var(--disp);letter-spacing:var(--ls);flex:none}
 /* las 5 claves */
 .ctx{margin-top:calc(14px*var(--s));font:400 calc(20px*var(--s))/1.45 "Source Serif 4";color:rgba(255,255,255,.93);flex:none}
 .mas{flex:none;display:flex;align-items:center;gap:8px;font:600 calc(14px*var(--s))/1.35 Archivo;color:var(--acc)}
@@ -169,7 +205,7 @@ mark{background:#FFE45C;color:var(--sec);padding:0 .12em;border-radius:3px;-webk
 .mk td{padding:calc(7.5px*var(--s)) 0;border-bottom:1px solid rgba(255,255,255,.16)}
 .mk tr:last-child td{border-bottom:0}
 .mk .v,.mk .c{text-align:right;font-family:"JetBrains Mono";font-weight:500;font-size:calc(13.5px*var(--s));white-space:nowrap}
-.mk .c{width:92px}
+.mk .c{width:84px}
 .mk .u{font:500 calc(10.5px*var(--s)) Archivo;opacity:.65}
 .up{color:#8EE6A8}.down{color:#FF9C94}.flat{opacity:.7}
 .nota{flex:none;font:400 calc(13.5px*var(--s))/1.4 "Source Serif 4";color:rgba(255,255,255,.8)}
@@ -197,6 +233,13 @@ FIT_JS = r"""
   return report;
 }
 """
+
+SELLO = ('<svg class="sello" viewBox="0 0 100 100" aria-hidden="true"><defs><path id="circ" d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"/></defs>'
+         '<circle cx="50" cy="50" r="47" fill="none" stroke="#FFE45C" stroke-width="1.6"/>'
+         '<circle cx="50" cy="50" r="27" fill="#FFE45C"/>'
+         '<text font-family="Archivo" font-weight="800" font-size="8.6" letter-spacing="1.9" fill="#FFE45C">'
+         '<textPath href="#circ">THE DAILY IVÁN · ALL YOU NEED IS NEWS ·</textPath></text>'
+         '<text x="50" y="58" text-anchor="middle" style="font-family:var(--disp)" font-weight="900" font-size="23" fill="#141B23">DI</text></svg>')
 
 LLAVE = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.7 12.3 20 3"/><path d="M16 7l3 3"/><path d="M13.5 9.5l2 2"/></svg>'
 
@@ -244,6 +287,7 @@ def main():
     ap.add_argument("--base-url", default=REPO_RAW,
                     help="URL pública bajo la que quedarán <AAAA-MM-DD>/<archivo>.jpg ({fecha} se sustituye por la fecha)")
     ap.add_argument("--horas", default=",".join(HORAS))
+    ap.add_argument("--tipo", default="fraunces", choices=["fraunces", "bricolage"], help="tipografía de los titulares")
     a = ap.parse_args()
 
     src = open(a.page, encoding="utf-8").read()
@@ -276,8 +320,10 @@ def main():
             clave, etiqueta = publico(ov["clave"]), "La clave"
         else:  # sin clave escrita, se usa lo que hay que vigilar, con su nombre
             clave, etiqueta = publico(ov.get("vigilar")) or " ".join(condensa(it.get("vigilar"), 180)), "A vigilar"
+        dato = ov.get("dato") if isinstance(ov.get("dato"), dict) and ov["dato"].get("cifra") else None
         return {"titular": ov.get("titular") or ov.get("titulo") or it["titulo"], "destacado": ov.get("destacado") or "",
-                "texto": [x for x in parrafos if x and x.strip()], "clave": clave, "etiqueta": etiqueta}
+                "texto": [x for x in parrafos if x and x.strip()], "clave": clave, "etiqueta": etiqueta,
+                "paises": [p for p in (ov.get("paises") or []) if isinstance(p, str)], "dato": dato}
 
 
     bloques = [{"id": "claves", "titulo": "Las 5 claves", "claves": d.get("claves", [])}]
@@ -298,7 +344,7 @@ def main():
         sec_c, acc_c = SECCION.get(bid, SECCION["claves"])
         style = f'style="--sec:{sec_c};--acc:{acc_c}"'
         o = igb.get(bid, {})
-        top = (f'<div class="top"><span class="brand">The Daily Iván</span>'
+        top = (f'<div class="top"><span class="marca"><i></i>The Daily Iván</span>'
                f'<span class="date">{e(fcorta)}</span></div>')
         files = []
 
@@ -317,9 +363,9 @@ def main():
             lista = "".join(f'<li><em>{i + 1}</em><span>{nb(texto_item(k.get("ref"))["titular"] if k.get("ref") in item_de else k["t"])}</span></li>'
                             for i, k in enumerate(claves))
             titulos = [k["t"] for k in claves]
-            add(f'<section class="slide" id="§ID§" {style}>{top}<div class="big">{len(claves)}</div>'
+            add(f'<section class="slide portada" id="§ID§" {style}>{top}{SELLO}<div class="big">{len(claves)}</div>'
                 f'<div class="body" data-grow="1"><div class="sub">{nb(gancho)}</div><div class="hueco"></div>'
-                f'<ul class="lst">{lista}</ul></div>{pie(e(handle), "Desliza →")}</section>')
+                f'<ul class="lst">{lista}</ul></div>{pie(e(handle) + " · " + e(fcorta), "Desliza →")}</section>')
             for i, k in enumerate(claves):
                 ref = k.get("ref")
                 sec = sec_de.get(ref)
@@ -341,13 +387,17 @@ def main():
             gancho = o.get("gancho") or lead["titular"]
             titulos = [texto_item(it["code"])["titular"] for it in items]
             lista = "".join(f'<li><em>{i + 1:02d}</em><span>{nb(t)}</span></li>' for i, t in enumerate(titulos[:4]))
-            add(f'<section class="slide" id="§ID§" {style}>{top}'
+            con_pais = next((texto_item(it["code"])["paises"] for it in items if texto_item(it["code"])["paises"]), [])
+            mapa = mapa_svg(con_pais, 476, 196, resalte=acc_c) if con_pais else ""
+            add(f'<section class="slide portada" id="§ID§" {style}>{top}{SELLO}'
                 f'<div class="lab"><span class="s">{e(b["titulo"])}</span></div>'
-                f'<div class="body" data-grow="1.1"><div class="hook">{nb(gancho)}</div><div class="hueco"></div>'
-                f'<ul class="lst">{lista}</ul></div>{pie(e(handle), "Desliza →")}</section>')
+                f'<div class="body" data-grow="1.1">{('<div class="mapa-portada">' + mapa + '</div>') if mapa else ""}'
+                f'<div class="hook">{nb(gancho)}</div><div class="hueco"></div>'
+                f'<ul class="lst">{lista}</ul></div>{pie(e(handle) + " · " + e(fcorta), "Desliza →")}</section>')
 
             if bid == "mercados" and d.get("mercados"):
                 filas = []
+                maxc = max([abs(m["c"]) for m in d["mercados"] if m.get("c") is not None] or [1]) or 1
                 for m in d["mercados"]:
                     tp, v, dec, c = m.get("tipo"), m["v"], m.get("dec", 2), m.get("c")
                     if tp == "indice":
@@ -363,7 +413,13 @@ def main():
                     else:
                         cls = "up" if c > 0 else "down" if c < 0 else "flat"
                         ch = f'<span class="{cls}">{"+" if c > 0 else ""}{num(c, 2)} %</span>'
-                    filas.append(f'<tr><td>{e(m["n"])}</td><td class="v">{val}</td><td class="c">{ch}</td></tr>')
+                    if c:
+                        ancho = min(50, abs(c) / maxc * 50)
+                        lado = f"left:50%;width:{ancho:.1f}%" if c > 0 else f"left:{50 - ancho:.1f}%;width:{ancho:.1f}%"
+                        barra = f'<span class="barra"><i style="{lado};background:{"#8EE6A8" if c > 0 else "#FF9C94"}"></i></span>'
+                    else:
+                        barra = '<span class="barra"></span>'
+                    filas.append(f'<tr><td>{e(m["n"])}</td><td class="v">{val}</td><td class="c">{ch}</td><td class="bar">{barra}</td></tr>')
                 fx = d.get("fx") or {}
                 add(f'<section class="slide" id="§ID§" {style}>{top}'
                     f'<div class="lab"><span class="s">Panel de mercados</span><span class="k">{e(fx.get("s", "").split("·")[0].strip())}</span></div>'
@@ -379,11 +435,15 @@ def main():
                 medios = medios_de(it)
                 aviso = "Contenido informativo, no es una recomendación de inversión" if bid == "inversion" else ""
                 izq = e(aviso) if aviso else (e("Fuentes: " + medios) if medios else "")
+                mini = mapa_svg(t["paises"], 136, 102, resalte=acc_c, span_min=10.0, margen=0.45) if t["paises"] else ""
+                mini = f'<div class="minimapa">{mini}</div>' if mini else ""
+                dato = (f'<div class="dato"><b>{nb(t["dato"]["cifra"])}</b><span>{nb(t["dato"].get("pie", ""))}</span></div>'
+                        if t["dato"] else "")
                 add(f'<section class="slide" id="§ID§" {style}>{top}'
                     f'<div class="lab"><span class="n">{i + 1:02d}</span><span class="s">{e(corto)}</span>'
                     f'<span class="k">{i + 1}/{len(items)}</span></div>'
-                    f'<div class="body" data-grow="1.22"><h2 class="ttl">{titular_html(t["titular"], t.get("destacado"))}</h2>'
-                    f'<div class="txt">{parrafos}</div><div class="hueco"></div>{clave}</div>'
+                    f'<div class="body" data-grow="1.22"><div>{mini}<h2 class="ttl">{titular_html(t["titular"], t.get("destacado"))}</h2></div>'
+                    f'{dato}<div class="txt">{parrafos}</div><div class="hueco"></div>{clave}</div>'
                     f'{pie(izq)}</section>')
 
         # texto de la publicación
@@ -420,7 +480,7 @@ def main():
     out_img = os.path.join(a.imagenes, fecha)
     os.makedirs(out_img, exist_ok=True)
     css = CSS.replace('url("F/', 'url("file://' + FUENTES + "/")
-    doc = f'<!doctype html><html lang="es"><head><meta charset="utf-8"><style>{css}</style></head><body>{"".join(slides)}</body></html>'
+    doc = f'<!doctype html><html lang="es"><head><meta charset="utf-8"><style>{css}</style></head><body class="{a.tipo}">{"".join(slides)}</body></html>'
     from playwright.sync_api import sync_playwright
     with tempfile.TemporaryDirectory() as tmp:
         path = os.path.join(tmp, "tarjetas.html")
