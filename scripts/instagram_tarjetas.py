@@ -39,12 +39,16 @@ FUENTES = os.path.join(AQUI, "fuentes")
 REPO_RAW = "https://raw.githubusercontent.com/ivandiezb/the-daily-ivan/instagram-media-{fecha}"
 ORDEN = ["claves", "espana", "mercados", "internacional", "geopolitica", "vivienda", "inversion", "naturaleza"]
 HORAS = ["09:30", "12:00", "13:30", "15:00", "16:30", "18:00", "19:30", "21:00"]
-MARCA = "#TheDailyIvan"
-ETIQUETAS = {  # respaldo si la edición no propone hashtags (máximo 5 por publicación en total)
-    "claves": ["#noticias", "#actualidad", "#España"], "mercados": ["#economía", "#bolsa", "#mercados"],
-    "inversion": ["#inversión", "#bolsa", "#mercados"], "geopolitica": ["#geopolítica", "#internacional"],
-    "espana": ["#España", "#política"], "internacional": ["#internacional", "#Europa"],
-    "vivienda": ["#vivienda", "#empleo"], "naturaleza": ["#clima", "#medioambiente"]}
+ETIQUETAS = {  # etiquetas de fondo de cada sección, por orden de preferencia (Instagram admite 5 por publicación)
+    "claves": ["#noticias", "#actualidad", "#news", "#noticiasdehoy", "#España"],
+    "espana": ["#España", "#política", "#Spain", "#noticias", "#actualidad"],
+    "mercados": ["#bolsa", "#economía", "#stockmarket", "#mercados", "#finanzas"],
+    "inversion": ["#inversión", "#bolsa", "#investing", "#finanzas", "#stocks"],
+    "geopolitica": ["#geopolítica", "#internacional", "#worldnews", "#geopolitics", "#noticias"],
+    "internacional": ["#internacional", "#noticias", "#worldnews", "#news", "#actualidad"],
+    "vivienda": ["#Madrid", "#vivienda", "#empleo", "#noticias", "#actualidad"],
+    "naturaleza": ["#clima", "#medioambiente", "#climatechange", "#naturaleza", "#noticias"]}
+NO_ETIQUETAS = {"#thedailyivan", "#thedailyiván", "#dailyivan"}
 CONF = {"confirmado": "confirmada por varias fuentes o por fuente oficial", "una-fuente": "una sola fuente",
         "en-desarrollo": "en desarrollo, puede cambiar", "seguimiento": "seguimiento de una noticia anterior",
         "agenda": "previsto hoy, sin resultado conocido"}
@@ -261,6 +265,41 @@ def medios_de(it, maximo=3):
     return " · ".join(nombres[:maximo])
 
 
+def etiquetas_de(bid, propuestas, maximo=5):
+    """Hasta 2 etiquetas del tema del día (las propone la tarea diaria) y el resto, las de fondo de la sección."""
+    fondo = ETIQUETAS.get(bid, ETIQUETAS["claves"])
+    base = {t.lower() for t in fondo}
+    tema = []
+    for t in propuestas or []:
+        t = re.sub(r"\s+", "", t if t.startswith("#") else "#" + t)
+        if len(t) > 1 and t.lower() not in NO_ETIQUETAS and t.lower() not in base and t.lower() not in {x.lower() for x in tema}:
+            tema.append(t)
+    out = tema[:2]
+    for t in fondo:
+        if len(out) >= maximo:
+            break
+        if t.lower() not in {x.lower() for x in out}:
+            out.append(t)
+    return out
+
+
+def texto_publicacion(bid, gancho, copy, titulares, etiquetas):
+    partes = [gancho.strip()]
+    if copy and copy.strip():
+        partes += ["", copy.strip()]
+    partes += ["", "Las cinco claves:" if bid == "claves" else "En este carrusel:"]
+    partes += [f"{i + 1}. {t}" for i, t in enumerate(titulares)]
+    partes += ["", "Desliza para leer cada noticia y su clave."]
+    if bid == "inversion":
+        partes += ["Contenido informativo; no es una recomendación de inversión."]
+    partes += ["", "Resumen elaborado a partir de las fuentes citadas. La edición completa, con el enlace a cada fuente, "
+               "está en el enlace de la bio.", "", " ".join(etiquetas)]
+    texto = "\n".join(partes)
+    if len(texto) > 2200:
+        raise SystemExit(f"{bid}: el texto supera los 2.200 caracteres de Instagram ({len(texto)})")
+    return texto
+
+
 def parrafo(frases, opt=False):
     if not frases:
         return ""
@@ -353,7 +392,7 @@ def main():
             gancho = o.get("gancho") or f"claves para entender el {DIAS[datetime.strptime(fecha, '%Y-%m-%d').weekday()]}"
             lista = "".join(f'<li><em>{i + 1}</em><span>{nb(texto_item(k.get("ref"))["titular"] if k.get("ref") in item_de else k["t"])}</span></li>'
                             for i, k in enumerate(claves))
-            titulos = [k["t"] for k in claves]
+            titulos = [texto_item(k["ref"])["titular"] if k.get("ref") in item_de else k["t"] for k in claves]
             add(f'<section class="slide portada" id="§ID§" {style}>{top}<div class="big">{len(claves)}</div>'
                 f'<div class="body" data-grow="1"><div class="sub">{nb(gancho)}</div><div class="hueco"></div>'
                 f'<ul class="lst">{lista}</ul></div>{pie(e(handle), "Desliza →")}</section>')
@@ -438,28 +477,8 @@ def main():
                     f'{pie(izq)}</section>')
 
         # texto de la publicación
-        etiquetas = [MARCA] + [t if t.startswith("#") else "#" + t for t in (o.get("hashtags") or ETIQUETAS.get(bid, []))]
-        vistos, tags = set(), []
-        for t in etiquetas:
-            t = re.sub(r"\s+", "", t)
-            if t.lower() not in vistos and len(tags) < 5:
-                vistos.add(t.lower())
-                tags.append(t)
-        partes = [gancho]
-        if o.get("copy"):
-            partes += ["", o["copy"]]
-        if bid == "claves":
-            partes += ["", "Desliza: una clave por imagen."]
-        else:
-            partes += ["", "En este carrusel:"] + [f"▸ {t}" for t in titulos]
-            partes += ["", "Desliza para leer cada noticia y su clave."]
-        if bid == "inversion":
-            partes += ["", "Contenido informativo; no es una recomendación de inversión."]
-        partes += ["La edición completa del día, con enlace a cada fuente, está en el enlace de la bio.",
-                   "", "ℹ️ Resumen elaborado con IA a partir de las fuentes citadas.", "", " ".join(tags)]
-        texto = "\n".join(partes)
-        if len(texto) > 2200:
-            raise SystemExit(f"{bid}: el texto supera los 2.200 caracteres de Instagram ({len(texto)})")
+        tags = etiquetas_de(bid, o.get("hashtags"))
+        texto = texto_publicacion(bid, gancho if bid != "claves" else f"{len(claves)} {gancho}", o.get("copy"), titulos, tags)
         posts.append({"id": f"{fecha}-{bid}", "bloque": bid, "hora": hora, "texto": texto, "hashtags": tags,
                       "imagenes": [f"{a.base_url.format(fecha=fecha).rstrip('/')}/{fecha}/{f}" for f in files], "archivos": files})
 
