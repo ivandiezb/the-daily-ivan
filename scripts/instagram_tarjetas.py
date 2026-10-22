@@ -360,7 +360,10 @@ def main():
     for s in d["secciones"]:
         bloques.append({"id": s["id"], "titulo": s["titulo"], "corto": s.get("corto"), "items": s["items"]})
     rango = {b: i for i, b in enumerate(ORDEN)}
-    bloques.sort(key=lambda b: rango.get(b["id"], 99))
+    fuera = [b["id"] for b in bloques if b["id"] not in rango]
+    if fuera:  # p. ej. «deportes»: está en la newsletter y en la web, pero no tiene carrusel propio
+        print(f"Sin carrusel en Instagram (no están en ORDEN): {', '.join(fuera)}", file=sys.stderr)
+    bloques = sorted((b for b in bloques if b["id"] in rango), key=lambda b: rango[b["id"]])
     horas = [h.strip() for h in a.horas.split(",") if h.strip()]
     if len(bloques) > len(horas):
         print(f"Aviso: {len(bloques)} bloques y {len(horas)} horas; se omiten: "
@@ -402,8 +405,8 @@ def main():
                 t = texto_item(ref) if ref in item_de else {"titular": k["t"], "destacado": ""}
                 corto = (sec.get("corto") or sec["titulo"]) if sec else "Las claves"
                 acc_k = SECCION.get(sec["id"], SECCION["claves"])[1] if sec else acc_c
-                mas = (f'<div class="mas">→ Más, en el carrusel de {e(corto)}'
-                       f'{(" (" + hora_de[sec["id"]] + ")") if sec and sec["id"] in hora_de else ""}</div>') if sec else ""
+                mas = (f'<div class="mas">→ Más, en el carrusel de {e(corto)} ({hora_de[sec["id"]]})</div>'
+                       if sec and sec["id"] in hora_de else "")
                 add(f'<section class="slide" id="§ID§" style="--sec:{sec_c};--acc:{acc_k}">{top}'
                     f'<div class="lab"><span class="n">{i + 1:02d}</span><span class="s">{e(corto)}</span>'
                     f'<span class="k">{i + 1}/{len(claves)}</span></div>'

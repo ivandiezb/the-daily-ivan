@@ -68,6 +68,11 @@ for _canon, _variantes in {
     "president": "presidente presidential presidencial", "petroleo": "petrole crude crudo", "gold": "oro", "tariffs": "aranceles tariff arancel",
     "inflation": "inflacion", "attack": "ataque ataques attacks attaque", "strike": "strikes", "missile": "misil misiles missiles",
     "drone": "dron drones", "ceasefire": "alto", "nobel": "nobels", "peace": "paix", "prize": "premio prix",
+    # deportes: apodos y nombres de clubes y competiciones en varios idiomas
+    "barcelona": "barca blaugrana azulgrana", "atletico": "atleti rojiblanco rojiblancos colchonero colchoneros",
+    "madridista": "madridistas merengue merengues", "champions": "campeones", "football": "futbol soccer calcio",
+    "world": "mundial mundiales mondial", "tennis": "tenis", "cycling": "ciclismo", "basketball": "baloncesto",
+    "spain": "espagne spagna", "england": "inglaterra",
 }.items():
     for _v in _variantes.split():
         EQUIV[_v] = _canon
@@ -213,6 +218,10 @@ def normalizar(d):
     return d
 
 
+def solo_deportes(f):
+    return f.get("bloques") == ["deportes"]
+
+
 def clase(tipo):
     return "gen" if tipo in GENERALISTAS else "esp" if tipo in ESPECIALIZADOS else None
 
@@ -251,23 +260,38 @@ def main():
         print("  Sin titulares recientes hoy: " + "; ".join(fallan))
     print("  Excluidos del catálogo (no se leen ni se citan): " + "; ".join(f"{k}: {v}" for k, v in EXCLUIDOS.items()))
 
-    prensa = [f for f in ok if clase(f["tipo"])]
-    items = [(f["medio"], it["t"], it["u"]) for f in prensa for it in f["items"]]
-    temas = agrupar(items)
-    for t in temas:
-        t["medios_gen"] = [m for m in t["medios"] if tipo_medio.get(m) == "gen"]
-        t["medios_esp"] = [m for m in t["medios"] if tipo_medio.get(m) == "esp"]
-        t["n"], t["esp"] = len(t["medios_gen"]), len(t["medios_esp"])
-    temas.sort(key=lambda t: (-(t["n"] + t["esp"]), -t["n"], -len(t["titulares"])))
+    # Los canales que solo son de deportes (diarios deportivos y secciones de deportes) se agrupan aparte, para que
+    # el deporte no desplace a las demás noticias en la lista general.
+    prensa = [f for f in ok if clase(f["tipo"]) and not solo_deportes(f)]
+    deporte = [f for f in ok if clase(f["tipo"]) and solo_deportes(f)]
+
+    def temas_de(fuentes):
+        ts = agrupar([(f["medio"], it["t"], it["u"]) for f in fuentes for it in f["items"]])
+        for t in ts:
+            t["medios_gen"] = [m for m in t["medios"] if tipo_medio.get(m) == "gen"]
+            t["medios_esp"] = [m for m in t["medios"] if tipo_medio.get(m) == "esp"]
+            t["n"], t["esp"] = len(t["medios_gen"]), len(t["medios_esp"])
+        ts.sort(key=lambda t: (-(t["n"] + t["esp"]), -t["n"], -len(t["titulares"])))
+        return ts
+
+    def imprimir_temas(ts, minimo, maximo):
+        for t in [t for t in ts if t["n"] + t["esp"] >= minimo][:maximo]:
+            print(f"- {t['n']} generalista{'s' if t['n'] != 1 else ''} + {t['esp']} especializado{'s' if t['esp'] != 1 else ''}"
+                  f" · claves: {', '.join(t['claves'])}")
+            print(f"    generalistas: {', '.join(t['medios_gen']) or '—'} | especializados: {', '.join(t['medios_esp']) or '—'}")
+            vistos = set()
+            for h in [h for h in t["titulares"] if not (h["medio"] in vistos or vistos.add(h["medio"]))][:4]:
+                print(f"    · [{h['medio']}] {h['t'][:150]}")
+
+    temas = temas_de(prensa)
     print(f"\nTEMAS CON MÁS COBERTURA (agrupación automática por parecido de los titulares, también entre idiomas; "
           f"de {len(gen)} generalistas y {len(esp)} especializados leídos. Compruébala: puede juntar o separar noticias)")
-    for t in [t for t in temas if t["n"] + t["esp"] >= 3][:35]:
-        print(f"- {t['n']} generalista{'s' if t['n'] != 1 else ''} + {t['esp']} especializado{'s' if t['esp'] != 1 else ''}"
-              f" · claves: {', '.join(t['claves'])}")
-        print(f"    generalistas: {', '.join(t['medios_gen']) or '—'} | especializados: {', '.join(t['medios_esp']) or '—'}")
-        vistos = set()
-        for h in [h for h in t["titulares"] if not (h["medio"] in vistos or vistos.add(h["medio"]))][:4]:
-            print(f"    · [{h['medio']}] {h['t'][:150]}")
+    imprimir_temas(temas, 3, 35)
+    temas_dep = temas_de(deporte) if deporte else []
+    if temas_dep:
+        print(f"\nTEMAS DE DEPORTES CON MÁS COBERTURA (diarios deportivos y secciones de deportes de "
+              f"{len({f['medio'] for f in deporte})} cabeceras; misma agrupación automática, compruébala)")
+        imprimir_temas(temas_dep, 2, 20)
 
     radar = [r for r in d.get("radar", []) if r.get("ok")]
     if radar:
@@ -308,9 +332,10 @@ def main():
                 print(f"## {r['nombre']}")
                 print("\n".join(filas[:8]))
 
-    print("\nPOR BLOQUE: ESPECIALIZADOS Y ANÁLISIS (titulares más recientes de cada uno)")
+    print("\nPOR BLOQUE: ESPECIALIZADOS Y ANÁLISIS (titulares más recientes de cada uno; en deportes, también las "
+          "secciones de deportes de los generalistas y agencias)")
     for b in BLOQUES:
-        fs = [f for f in ok if clase(f["tipo"]) == "esp" and b in f["bloques"]]
+        fs = [f for f in ok if b in f["bloques"] and (clase(f["tipo"]) == "esp" or (b == "deportes" and solo_deportes(f)))]
         if not fs:
             continue
         print(f"### {b}")
@@ -321,7 +346,7 @@ def main():
 
     print(f"\nTITULARES DE LOS GENERALISTAS (los {a.por_medio} más recientes de cada medio español y "
           f"{max(3, a.por_medio // 2)} de cada internacional)")
-    for f in [f for f in ok if clase(f["tipo"]) == "gen"]:
+    for f in [f for f in ok if clase(f["tipo"]) == "gen" and not solo_deportes(f)]:
         print(f"## {f['nombre']} [{f['linea']}]")
         for it in f["items"][:a.por_medio if "espana" in f["bloques"] else max(3, a.por_medio // 2)]:
             print(f"  - {it['t'][:170]}")
@@ -338,7 +363,8 @@ def main():
     if a.json:
         with open(a.json, "w", encoding="utf-8") as fh:
             json.dump({"fecha": d["fecha"], "medios_leidos": len(gen), "generalistas_leidos": len(gen),
-                       "especializados_leidos": len(esp), "generalistas": gen, "especializados": esp, "temas": temas},
+                       "especializados_leidos": len(esp), "generalistas": gen, "especializados": esp, "temas": temas,
+                       "temas_deportes": temas_dep},
                       fh, ensure_ascii=False, indent=1)
 
 

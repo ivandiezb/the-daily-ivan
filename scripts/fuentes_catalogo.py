@@ -9,6 +9,9 @@ CRITERIOS DE ENTRADA (al menos uno, y siempre trayectoria y redacción identific
   · Agencias de noticias y servicios públicos de radiotelevisión.
   · Cabeceras de referencia internacional y de su sector (prensa económica, defensa, clima, vivienda), con
     redacción propia y largo recorrido.
+  · Prensa deportiva de largo recorrido (Marca, AS, Mundo Deportivo, Sport, L'Équipe, La Gazzetta dello Sport) y
+    las secciones de deportes de los generalistas y agencias del catálogo. Los diarios deportivos se leen sabiendo
+    su afinidad de club o de ciudad: en las polémicas se contrasta uno de cada lado y la fuente primaria.
   · Fuentes oficiales y primarias: boletines, bancos centrales, estadísticas, reguladores, tribunales, gobiernos y
     organismos internacionales. Son la fuente preferente siempre que existan.
 
@@ -28,7 +31,19 @@ USO: python3 scripts/fuentes_catalogo.py [bloque] imprime los dominios de refere
 restringir las búsquedas web a medios del catálogo.
 """
 
-BLOQUES = ["mercados", "inversion", "geopolitica", "espana", "internacional", "vivienda", "naturaleza"]
+BLOQUES = ["mercados", "inversion", "geopolitica", "espana", "internacional", "vivienda", "naturaleza", "deportes"]
+# Secciones de la edición, en su orden: id, título, título corto, tipo (solo «inversion» lo lleva) y prefijo de los
+# códigos de sus noticias. El validador exige exactamente estas.
+SECCIONES_EDICION = [
+    {"id": "mercados", "titulo": "Economía y mercados", "corto": "Mercados", "prefijo": "M"},
+    {"id": "inversion", "titulo": "Inversión y oportunidades", "corto": "Inversión", "tipo": "inversion", "prefijo": "B"},
+    {"id": "geopolitica", "titulo": "Geopolítica y defensa", "corto": "Geopolítica", "prefijo": "G"},
+    {"id": "espana", "titulo": "España: Gobierno y política", "corto": "España", "prefijo": "E"},
+    {"id": "internacional", "titulo": "Internacional", "corto": "Internacional", "prefijo": "I"},
+    {"id": "vivienda", "titulo": "Vivienda y empleo", "corto": "Vivienda y empleo", "prefijo": "V"},
+    {"id": "naturaleza", "titulo": "Naturaleza y clima", "corto": "Naturaleza", "prefijo": "N"},
+    {"id": "deportes", "titulo": "Deportes", "corto": "Deportes", "prefijo": "D"},
+]
 GENERALISTAS = {"generalista", "agencia"}
 ESPECIALIZADOS = {"especializado", "analisis"}
 
@@ -42,6 +57,7 @@ def F(id, nombre, tipo, bloques, dominio, url=None, site=None, linea="", horas=N
 ES_GEN = ["espana", "internacional"]
 INT_GEN = ["internacional", "geopolitica"]
 ECO = ["mercados", "inversion"]
+DEP = ["deportes"]
 
 FUENTES = [
     # ── España · generalistas (todas las líneas editoriales) ──────────────────────────────────────────────
@@ -138,6 +154,32 @@ FUENTES = [
     F("guardian_env", "The Guardian (medio ambiente)", "especializado", ["naturaleza"], "theguardian.com", "https://www.theguardian.com/environment/rss", idioma="en", medio="The Guardian"),
     F("insideclimate", "Inside Climate News", "especializado", ["naturaleza"], "insideclimatenews.org", "https://insideclimatenews.org/feed/", idioma="en", horas=72),
 
+    # ── Deportes ──────────────────────────────────────────────────────────────────────────────────────────────
+    # Diarios deportivos de largo recorrido. Cada uno tiene una afinidad de club o de ciudad conocida («linea»): en
+    # las polémicas entre clubes se contrasta uno de cada lado y, siempre que existan, las fuentes primarias
+    # (comunicados de clubes y federaciones, actas, comités de competición, partes médicos).
+    F("marca", "Marca", "especializado", DEP, "marca.com", "https://e00-marca.uecdn.es/rss/portada.xml", site="marca.com", linea="madrid"),
+    F("as", "AS", "especializado", DEP, "as.com", "https://feeds.as.com/mrss-s/pages/as/site/as.com/portada", site="as.com", linea="madrid"),
+    F("mundodeportivo", "Mundo Deportivo", "especializado", DEP, "mundodeportivo.com", "https://www.mundodeportivo.com/rss/home.xml", site="mundodeportivo.com", linea="barcelona"),
+    F("sport", "Sport", "especializado", DEP, "sport.es", site="sport.es", linea="barcelona"),
+    F("motorsport", "Motorsport.com", "especializado", DEP, "motorsport.com", site="es.motorsport.com", linea="motor"),
+    F("espn", "ESPN", "especializado", DEP, "espn.com", "https://www.espn.com/espn/rss/news", site="espn.com", idioma="en"),
+    F("athletic", "The Athletic", "especializado", DEP, "nytimes.com", site="nytimes.com/athletic", idioma="en"),
+    F("lequipe", "L'Équipe", "especializado", DEP, "lequipe.fr", "https://dwh.lequipe.fr/api/edito/rss?path=/", site="lequipe.fr", idioma="fr"),
+    F("gazzetta", "La Gazzetta dello Sport", "especializado", DEP, "gazzetta.it", "https://www.gazzetta.it/rss/home.xml", site="gazzetta.it", idioma="it"),
+    # Secciones de deportes de generalistas y agencias del catálogo: cuentan como su cabecera en «Cobertura»
+    F("elpais_dep", "El País (deportes)", "generalista", DEP, "elpais.com", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/deportes/portada", site="elpais.com/deportes", linea="centroizquierda", medio="El País"),
+    F("elmundo_dep", "El Mundo (deportes)", "generalista", DEP, "elmundo.es", "https://e00-elmundo.uecdn.es/rss/deportes.xml", site="elmundo.es/deportes", linea="centroderecha", medio="El Mundo"),
+    F("abc_dep", "ABC (deportes)", "generalista", DEP, "abc.es", "https://www.abc.es/rss/2.0/deportes/", site="abc.es/deportes", linea="derecha", medio="ABC"),
+    F("lavanguardia_dep", "La Vanguardia (deportes)", "generalista", DEP, "lavanguardia.com", "https://www.lavanguardia.com/rss/deportes.xml", site="lavanguardia.com/deportes", linea="centro", medio="La Vanguardia"),
+    F("rtve_dep", "RTVE (deportes)", "generalista", DEP, "rtve.es", site="rtve.es/deportes", linea="publico", medio="RTVE"),
+    F("cope_dep", "COPE (deportes)", "generalista", DEP, "cope.es", site="cope.es/deportes", linea="derecha", medio="COPE"),
+    F("efe_dep", "Agencia EFE (deportes)", "agencia", DEP, "efe.com", site="efe.com/deportes", linea="agencia", medio="Agencia EFE"),
+    F("europapress_dep", "Europa Press (deportes)", "agencia", DEP, "europapress.es", site="europapress.es/deportes", linea="agencia", medio="Europa Press"),
+    F("reuters_dep", "Reuters (deportes)", "agencia", DEP, "reuters.com", site="reuters.com/sports", linea="agencia", idioma="en", medio="Reuters"),
+    F("bbc_sport", "BBC Sport", "generalista", DEP, "bbc.com", "https://feeds.bbci.co.uk/sport/rss.xml", site="bbc.com/sport", linea="publico", idioma="en", medio="BBC"),
+    F("guardian_sport", "The Guardian (deportes)", "generalista", DEP, "theguardian.com", "https://www.theguardian.com/uk/sport/rss", linea="centroizquierda", idioma="en", medio="The Guardian"),
+
     # ── Fuentes oficiales y primarias ─────────────────────────────────────────────────────────────────────
     # España
     F("moncloa", "La Moncloa (notas de prensa)", "oficial", ["espana"], "lamoncloa.gob.es", "https://www.lamoncloa.gob.es/Paginas/rss.aspx", site="lamoncloa.gob.es", horas=48),
@@ -188,6 +230,7 @@ RADAR = [
     {"id": "gn_es_mundo", "nombre": "Google News España · internacional", "url": GN_TEMA.format(t="WORLD", hl="es", gl="ES", l="es")},
     {"id": "gn_es_ciencia", "nombre": "Google News España · ciencia", "url": GN_TEMA.format(t="SCIENCE", hl="es", gl="ES", l="es")},
     {"id": "gn_es_salud", "nombre": "Google News España · salud", "url": GN_TEMA.format(t="HEALTH", hl="es", gl="ES", l="es")},
+    {"id": "gn_es_deportes", "nombre": "Google News España · deportes", "url": GN_TEMA.format(t="SPORTS", hl="es", gl="ES", l="es")},
     {"id": "gn_us_mundo", "nombre": "Google News EE. UU. · mundo", "url": GN_TEMA.format(t="WORLD", hl="en-US", gl="US", l="en")},
     {"id": "gn_us_economia", "nombre": "Google News EE. UU. · economía", "url": GN_TEMA.format(t="BUSINESS", hl="en-US", gl="US", l="en")},
     {"id": "gn_gb_mundo", "nombre": "Google News Reino Unido · mundo", "url": GN_TEMA.format(t="WORLD", hl="en-GB", gl="GB", l="en")},
@@ -226,6 +269,16 @@ OTROS_DOMINIOS = {
     # agencias y prensa especializada de referencia (energía, transporte marítimo, Asia)
     "gcaptain.com", "lloydslist.com", "spglobal.com", "argusmedia.com", "asia.nikkei.com", "nikkei.com",
     "en.yna.co.kr", "english.kyodonews.net", "aemet.es", "meteofrance.com", "metoffice.gov.uk",
+    # deportes: competiciones, federaciones y clubes (fuentes primarias) y prensa deportiva especializada
+    "uefa.com", "fifa.com", "laliga.com", "rfef.es", "coe.es", "olympics.com", "premierleague.com", "atptour.com",
+    "wtatennis.com", "rfet.es", "rolandgarros.com", "wimbledon.com", "usopen.org", "ausopen.com", "daviscup.com",
+    "formula1.com", "fia.com", "motogp.com", "acb.com", "euroleaguebasketball.net", "nba.com", "feb.es", "fiba.basketball",
+    "uci.org", "letour.fr", "lavuelta.es", "worldathletics.org", "rfea.es", "tas-cas.org", "eurohandball.com",
+    "ihf.info", "rfebm.com", "pgatour.com", "dpworldtour.com", "rfegolf.es", "realmadrid.com", "fcbarcelona.es",
+    "fcbarcelona.com", "atleticodemadrid.com", "sevillafc.es", "realbetisbalompie.es", "athletic-club.eus",
+    "realsociedad.eus", "valenciacf.com", "villarrealcf.es", "skysports.com", "theathletic.com", "cyclingnews.com",
+    "puntodebreak.com", "soymotor.com", "autosport.com", "the-race.com", "theanalyst.com", "estadiodeportivo.com",
+    "superdeporte.es", "elcomerciodigital.com", "diariodenavarra.es", "eurosport.es", "eurosport.com",
 }
 
 

@@ -1841,7 +1841,8 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
       espana: 'Expón la posición de cada partido o institución implicada, con documentos oficiales (BOE, Congreso, tribunales) cuando existan.',
       internacional: 'Incluye fuentes del país o la región implicados, además de las internacionales.',
       vivienda: 'Incluye datos oficiales (INE, ministerios, comunidades autónomas, ayuntamientos) y el efecto concreto en Madrid.',
-      naturaleza: 'Incluye datos de organismos científicos y oficiales (AEMET, Copernicus, NOAA, IPCC…).'
+      naturaleza: 'Incluye datos de organismos científicos y oficiales (AEMET, Copernicus, NOAA, IPCC…).',
+      deportes: 'Aporta los datos oficiales (resultados, clasificaciones, actas, comunicados de clubes, federaciones y competiciones) y, si hay polémica, contrasta medios de distintas aficiones o ciudades.'
     };
     var WEB = 'https://ivandiezb.github.io/the-daily-ivan/';
 
@@ -2072,7 +2073,7 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
     if (mkSec) mkSec.appendChild(document.getElementById('datos'));
     else document.getElementById('datos').hidden = true;
 
-    var ICONS = {"claves": "<circle cx=\"8\" cy=\"15\" r=\"4\"/><path d=\"M11 12l9-9M17 6l3 3M14.5 8.5l2 2\"/>", "mercados": "<path d=\"M3 20h18M6 16v-4M11 16V8M16 16v-6M21 4l-5 4-5-3-5 4\"/>", "inversion": "<path d=\"M3 17l6-6 4 4 8-8\"/><path d=\"M15 7h6v6\"/>", "geopolitica": "<path d=\"M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z\"/><path d=\"M9 12l2 2 4-4\"/>", "espana": "<path d=\"M3 10l9-6 9 6M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18\"/>", "internacional": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18\"/>", "vivienda": "<path d=\"M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6\"/>", "naturaleza": "<path d=\"M5 20c0-9 6-15 15-15 0 9-6 15-15 15zM5 20l9-9\"/>", "radar": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><circle cx=\"12\" cy=\"12\" r=\"5\"/><circle cx=\"12\" cy=\"12\" r=\"1\"/><path d=\"M12 12l6-6\"/>", "agenda": "<rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M3 10h18M8 3v4M16 3v4M8 14h3\"/>", "tendencias": "<path d=\"M3 12h4l3-7 4 14 3-7h4\"/>"};
+    var ICONS = {"claves": "<circle cx=\"8\" cy=\"15\" r=\"4\"/><path d=\"M11 12l9-9M17 6l3 3M14.5 8.5l2 2\"/>", "mercados": "<path d=\"M3 20h18M6 16v-4M11 16V8M16 16v-6M21 4l-5 4-5-3-5 4\"/>", "inversion": "<path d=\"M3 17l6-6 4 4 8-8\"/><path d=\"M15 7h6v6\"/>", "geopolitica": "<path d=\"M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z\"/><path d=\"M9 12l2 2 4-4\"/>", "espana": "<path d=\"M3 10l9-6 9 6M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18\"/>", "internacional": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18\"/>", "vivienda": "<path d=\"M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6\"/>", "naturaleza": "<path d=\"M5 20c0-9 6-15 15-15 0 9-6 15-15 15zM5 20l9-9\"/>", "deportes": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4.3 3.1-1.6 5H9.3l-1.6-5z\"/><path d=\"M12 3v4.5M16.3 10.6l4.3-1.4M14.7 15.6l2.6 3.7M9.3 15.6l-2.6 3.7M7.7 10.6L3.4 9.2\"/>", "radar": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><circle cx=\"12\" cy=\"12\" r=\"5\"/><circle cx=\"12\" cy=\"12\" r=\"1\"/><path d=\"M12 12l6-6\"/>", "agenda": "<rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M3 10h18M8 3v4M16 3v4M8 14h3\"/>", "tendencias": "<path d=\"M3 12h4l3-7 4 14 3-7h4\"/>"};
     /* Foldable blocks: tap a block header to open or close it; remembered per edition */
     var STORE = 'parte.cerrados.' + (data.fechaISO || '');
     var closed = {};

@@ -11,7 +11,7 @@ import argparse, json, os, re, sys
 from urllib.parse import urlparse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from fuentes_catalogo import EXCLUIDOS, clasificar_dominio, dominio_de  # noqa: E402
+from fuentes_catalogo import EXCLUIDOS, SECCIONES_EDICION, clasificar_dominio, dominio_de  # noqa: E402
 
 CONF = {"confirmado", "una-fuente", "en-desarrollo", "seguimiento", "agenda"}
 TIPOS_MERCADO = {"indice", "usd", "divisa", "rent"}
@@ -93,15 +93,22 @@ def main():
 
     codigos = {}
     secciones = ed.get("secciones") or []
-    if prev:
-        esquema = lambda e: [(s.get("id"), s.get("titulo"), s.get("corto"), s.get("tipo")) for s in e.get("secciones", [])]
-        if esquema(ed) != esquema(prev):
-            err("las secciones (id, titulo, corto, tipo) no coinciden con las de la edición anterior")
-    prefijos_prev = {}
-    if prev:
-        for s in prev.get("secciones", []):
-            if s.get("items"):
-                prefijos_prev[s["id"]] = re.sub(r"\d+$", "", s["items"][0].get("code", ""))
+    esquema = lambda e: [(s.get("id"), s.get("titulo"), s.get("corto"), s.get("tipo")) for s in e.get("secciones", [])]
+    canon = esquema({"secciones": SECCIONES_EDICION})
+    if esquema(ed) != canon:
+        faltan = [c[0] for c in canon if c[0] not in {x[0] for x in esquema(ed)}]
+        sobran = [x[0] for x in esquema(ed) if x[0] not in {c[0] for c in canon}]
+        err("las secciones (id, titulo, corto, tipo y orden) no son las de la edición: "
+            + "; ".join(x for x in (f"faltan {', '.join(faltan)}" if faltan else "",
+                                    f"sobran {', '.join(sobran)}" if sobran else "") if x)
+            + ("" if faltan or sobran else "revisa títulos, títulos cortos, tipo y orden") + ". Deben ser, en este orden: "
+            + " · ".join(f"{c['id']} («{c['titulo']}», «{c['corto']}»{', tipo ' + c['tipo'] if c.get('tipo') else ''})"
+                         for c in SECCIONES_EDICION))
+    elif prev and esquema(prev) != canon:
+        nuevas = [c[0] for c in canon if c[0] not in {x[0] for x in esquema(prev)}]
+        if nuevas:
+            aviso(f"secciones nuevas respecto a la edición anterior: {', '.join(nuevas)} (correcto si se acaban de añadir)")
+    prefijos_prev = {c["id"]: c["prefijo"] for c in SECCIONES_EDICION}
     for s in secciones:
         its = s.get("items") or []
         if len(its) < 2 or len(its) > 4:
@@ -118,7 +125,7 @@ def main():
             codigos[c] = it
             pre = prefijos_prev.get(s.get("id"))
             if pre and c and not re.fullmatch(re.escape(pre) + r"\d+", c):
-                err(f"{donde}: el código debería empezar por {pre} como en la edición anterior")
+                err(f"{donde}: el código debería ser {pre}1, {pre}2… (prefijo de la sección {s.get('id')})")
             for k in ("titulo", "hecho", "importa"):
                 if not str(it.get(k, "")).strip():
                     err(f"{donde}: falta «{k}»")

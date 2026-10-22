@@ -19,12 +19,15 @@ import html, json, math, os, re, sys
 CONF = {"confirmado": "confirmada por varias fuentes o por fuente oficial", "una-fuente": "una sola fuente",
         "en-desarrollo": "en desarrollo, puede cambiar", "seguimiento": "seguimiento de una noticia anterior",
         "agenda": "previsto hoy, sin resultado conocido"}
+# en el correo, la verificación va en una línea corta (la web explica cada estado)
+CONF_CORTO = {"confirmado": "confirmada", "una-fuente": "una sola fuente", "en-desarrollo": "en desarrollo",
+              "seguimiento": "seguimiento", "agenda": "prevista hoy"}
 # block kind: (band background, band text, left rule / label colour)
 BANDS = {"blue": ("#D6E2F4", "#14325F", "#2F5F9E"), "gray": ("#E1E5EA", "#262D36", "#5A6470"),
          "sand": ("#F2E0C4", "#5E3A10", "#9A6524"), "green": ("#D5EBDD", "#174A2C", "#2E7149")}
 INK, INK2, RULE, ACC, PAPER, CHIP = "#141B23", "#4B5765", "#D5DCE4", "#1D4A93", "#EEF1F4", "#5A6470"
 UP, DOWN = "#16703D", "#B3261E"
-SANS, SERIF, MONO = "Arial,Helvetica,sans-serif", "Georgia,serif", "Menlo,Consolas,monospace"
+SANS, SERIF, MONO = "Arial,sans-serif", "Georgia,serif", "Menlo,Consolas,monospace"
 COL_BREAK = 620  # message width (px) from which dispatches sit in two columns
 WEB = "https://ivandiezb.github.io/the-daily-ivan/"  # public site, always shown under the summary
 WEB_LABEL = "ivandiezb.github.io/the-daily-ivan"
@@ -40,6 +43,23 @@ def cobertura_texto(c):
     if c.get("esp"):
         t += f" y en {c['esp']} especializado{'s' if c['esp'] > 1 else ''}"
     return t
+
+def medio(t):
+    """Nombre del medio de una fuente («El País: el Gobierno aprueba…» → «El País»): en el correo, el enlace lleva solo
+    el medio para que pese menos (Gmail recorta los mensajes de más de ~102 KB); el título completo está en la web."""
+    m = re.match(r"\s*([^:]{2,45}):\s", t or "")
+    return m.group(1).strip() if m else (t or "")
+
+
+def cobertura_corta(c):
+    """«Cobertura: 5 de 41 generalistas y 3 especializados» (versión corta para el correo)."""
+    if not c or not (c.get("n") or c.get("esp")):
+        return ""
+    t = f"Cobertura: {c.get('n', 0)} de {c.get('de', '?')} {'generalistas' if 'esp' in c else 'medios'}"
+    if c.get("esp"):
+        t += f" y {c['esp']} especializado{'s' if c['esp'] > 1 else ''}"
+    return t
+
 
 def e(s):
     return html.escape(str(s or ""), quote=True)
@@ -244,10 +264,10 @@ def main(page, url, out, respaldo=None):
                 P.append(f'<p style="color:{INK2};margin:8px 0 0;font-size:14px;font-style:italic">{e(it["nota"])}</p>')
                 T.append(f"({it['nota']})")
             if it.get("fuentes"):
-                links = " · ".join(f'<a href="{e(f["u"])}" style="color:{INK2}">{e(f["t"])}</a>' for f in it["fuentes"])
-                status = f'<br>Verificación: {e(CONF.get(it.get("conf"), it.get("conf","")))}' if it.get("conf") else ""
-                if cobertura_texto(it.get("cobertura")):
-                    status += f'<br>{e(cobertura_texto(it["cobertura"]))}'
+                links = " · ".join(f'<a href="{e(f["u"])}" style="color:{INK2}">{e(medio(f["t"]))}</a>' for f in it["fuentes"])
+                partes = ([f'Verificación: {CONF_CORTO.get(it["conf"], it["conf"])}'] if it.get("conf") else []) \
+                    + ([cobertura_corta(it["cobertura"])] if cobertura_corta(it.get("cobertura")) else [])
+                status = f'<br>{e(" · ".join(partes))}' if partes else ""
                 P.append(f'<p style="color:{INK2};margin:8px 0 0;font-size:13px;font-style:italic">Fuentes: {links}{status}</p>')
                 T.append("Fuentes: " + " · ".join(f"{f['t']} <{f['u']}>" for f in it["fuentes"]))
                 if it.get("conf"):
