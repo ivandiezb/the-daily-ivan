@@ -31,7 +31,9 @@ GOOGLE = threading.Semaphore(3)  # pocas peticiones a la vez a Google News
 GN_IDIOMA = {"es": ("es", "ES"), "en": ("en-US", "US"), "fr": ("fr", "FR"), "de": ("de", "DE"), "it": ("it", "IT"),
              "pt": ("pt-BR", "BR")}
 BASURA = re.compile(r"^(untitled|welcome to|observación:|hoy y últimos días|predicción|oposiciones|auxiliares de|"
-                    r"\d+ (casas|pisos|chalets)|página no encontrada|404)", re.I)
+                    r"\d+ (casas|pisos|chalets)|página no encontrada|404|"
+                    # restos de portadas o de páginas de sección que a veces devuelve Google News
+                    r"from [\w.-]+ - |(athletic )?- the new york times$|deportes\. últimas noticias|sin tema claro$)", re.I)
 PAISES_TENDENCIAS = ["ES", "US", "GB", "FR", "DE", "IT", "PT", "MX", "AR", "BR", "IN", "JP"]
 WIKIS = ["es", "en"]
 EXCLUIR_WIKI = re.compile(r"^(Main_Page|Portada|Wikipedia:|Especial:|Special:|Archivo:|File:|Ayuda:|Help:|Portal:|"
