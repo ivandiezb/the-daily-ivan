@@ -300,27 +300,7 @@ def main(page, url, out, respaldo=None):
             T.append(f"- {a['d']}" + (f" [{a['a']}]" if a.get("a") else "") + f": {a['t']}")
         H.append('<table width="100%" cellpadding="0" cellspacing="0">' + "".join(rows) + "</table>")
 
-    tr = d.get("tendencias") or {}
-    if tr.get("es"):
-        h2("Tendencias de la sociedad", "gray")
-        if tr.get("comentario"):
-            H.append(f'<p style="margin:8px 0 0">{e(tr["comentario"])}</p>')
-            T.append(tr["comentario"])
-        if tr.get("destacado"):
-            H.append(f'<p style="margin:10px 0 0;padding:8px 12px;border-left:3px solid #9A5800;background-color:{PAPER}">'
-                     f'<b style="color:#9A5800;font-family:{SANS}">Señal a vigilar:</b> {e(tr["destacado"])}</p>')
-            T.append("Señal a vigilar: " + tr["destacado"])
-
-        def lista(items, valor):
-            return " · ".join(f'{e(x["t"])} <span style="color:{INK2};font:12px {MONO}">{e(valor(x))}</span>' for x in items[:6])
-        filas = [("Lo más buscado en España", tr["es"].get("google", []), lambda x: x.get("trafico", "")),
-                 ("Lo que se busca en más países", (tr.get("int") or {}).get("google", []), lambda x: f'{len(x.get("paises", []))} ' + ("país" if len(x.get("paises", [])) == 1 else "países")),
-                 ("Lo más leído en Wikipedia en español", tr["es"].get("wiki", []), lambda x: f'{x.get("v", 0):,}'.replace(",", "."))]
-        for tit, items, valor in filas:
-            if items:
-                H.append(f'<p style="margin:10px 0 0;font-size:14px"><b style="color:{INK2};font:bold 10px {SANS};letter-spacing:1px">{tit.upper()}</b><br>{lista(items, valor)}</p>')
-                T.append(f"{tit}: " + " · ".join(x["t"] for x in items[:6]))
-        H.append(f'<p style="margin:10px 0 0;font:13px {SANS}"><a href="{e(url)}#tendencias" style="color:{ACC}">Ver el gráfico en la edición completa</a></p>')
+    # «Tendencias de la sociedad» ya no se incluye (22 oct 2026: Iván no la consulta y así el correo pesa menos)
 
     H.append(f'<div style="background-color:{PAPER};color:{INK2};margin-top:24px;padding:12px 14px;font-size:13.5px;border-radius:5px">'
              f'<b style="color:{INK}">Para profundizar:</b> en la <a href="{e(url)}" style="color:{ACC}">edición completa</a>, cada noticia tiene un botón '

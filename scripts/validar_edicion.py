@@ -18,7 +18,7 @@ TIPOS_MERCADO = {"indice", "usd", "divisa", "rent"}
 SECCIONES = set("""index home portada inicio noticias news ultima-hora ultimas-noticias economia mercados bolsa internacional
 mundo world espana politica sociedad opinion deportes cultura tecnologia ciencia salud vivienda empleo europa
 """.split())
-LINEAS_METODO = ("«Cobertura» indica", "«Profundizar · copiar prompt»", "«Tendencias de la sociedad» resume")
+LINEAS_METODO = ("«Cobertura» indica", "«Profundizar · copiar prompt»")
 
 errores, avisos = [], []
 
@@ -216,8 +216,11 @@ def main():
         if (ed.get("metodo") or [""])[0].find(f" {dia} de ") < 0:
             aviso("metodo: la primera línea no parece actualizada con el día de hoy")
 
+    if "«Tendencias de la sociedad»" in metodo:
+        aviso("metodo: quita la línea de «Tendencias de la sociedad» (la sección ya no se publica)")
     tr = ed.get("tendencias")
     if tr is not None:
+        aviso("la sección «Tendencias de la sociedad» ya no se publica: quita la clave \"tendencias\" del JSON")
         if not (tr.get("es") or {}).get("google") and not (tr.get("int") or {}).get("google"):
             err("tendencias: no tiene datos (ejecuta scripts/tendencias.py --pagina o quita la clave)")
         if not tr.get("comentario"):
