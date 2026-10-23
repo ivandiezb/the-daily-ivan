@@ -35,30 +35,11 @@ LINK = "#2F5F9E"  # mid blue: visible but quieter than the main button
 
 
 
-def cobertura_texto(c):
-    """«Cobertura: en N de M medios generalistas consultados y en K especializados» (o el formato antiguo sin «esp»)."""
-    if not c or not (c.get("n") or c.get("esp")):
-        return ""
-    t = f"Cobertura: en {c.get('n', 0)} de {c.get('de', '?')} medios {'generalistas ' if 'esp' in c else ''}consultados"
-    if c.get("esp"):
-        t += f" y en {c['esp']} especializado{'s' if c['esp'] > 1 else ''}"
-    return t
-
 def medio(t):
     """Nombre del medio de una fuente («El País: el Gobierno aprueba…» → «El País»): en el correo, el enlace lleva solo
     el medio para que pese menos (Gmail recorta los mensajes de más de ~102 KB); el título completo está en la web."""
     m = re.match(r"\s*([^:]{2,45}):\s", t or "")
     return m.group(1).strip() if m else (t or "")
-
-
-def cobertura_corta(c):
-    """«Cobertura: 5 de 41 generalistas y 3 especializados» (versión corta para el correo)."""
-    if not c or not (c.get("n") or c.get("esp")):
-        return ""
-    t = f"Cobertura: {c.get('n', 0)} de {c.get('de', '?')} {'generalistas' if 'esp' in c else 'medios'}"
-    if c.get("esp"):
-        t += f" y {c['esp']} especializado{'s' if c['esp'] > 1 else ''}"
-    return t
 
 
 def e(s):
@@ -265,15 +246,12 @@ def main(page, url, out, respaldo=None):
                 T.append(f"({it['nota']})")
             if it.get("fuentes"):
                 links = " · ".join(f'<a href="{e(f["u"])}" style="color:{INK2}">{e(medio(f["t"]))}</a>' for f in it["fuentes"])
-                partes = ([f'Verificación: {CONF_CORTO.get(it["conf"], it["conf"])}'] if it.get("conf") else []) \
-                    + ([cobertura_corta(it["cobertura"])] if cobertura_corta(it.get("cobertura")) else [])
-                status = f'<br>{e(" · ".join(partes))}' if partes else ""
+                # la «cobertura» solo sirve a la tarea para ordenar las noticias: no se muestra (23 oct 2026)
+                status = f'<br>Verificación: {e(CONF_CORTO.get(it["conf"], it["conf"]))}' if it.get("conf") else ""
                 P.append(f'<p style="color:{INK2};margin:8px 0 0;font-size:13px;font-style:italic">Fuentes: {links}{status}</p>')
                 T.append("Fuentes: " + " · ".join(f"{f['t']} <{f['u']}>" for f in it["fuentes"]))
                 if it.get("conf"):
                     T.append("Verificación: " + CONF.get(it["conf"], it["conf"]))
-                if cobertura_texto(it.get("cobertura")):
-                    T.append(cobertura_texto(it["cobertura"]))
             blocks.append("\n".join(P))
         H.append(columns(blocks, sec["items"]))
         if sec["id"] == "mercados":

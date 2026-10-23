@@ -1660,7 +1660,7 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
  "metodo": [
   "Edición elaborada automáticamente el viernes 23 de octubre entre las 07:50 y las 09:30, a partir de unas 140 búsquedas y lecturas (con un investigador en paralelo para deportes).",
   "Viernes tras la apertura: el panel combina la apertura del Ibex y las cotizaciones de primera hora (petróleo, oro, euro/dólar y bonos francés y estadounidense) con los cierres del jueves (Wall Street y bonos alemán y español).",
-  "Cada mañana se leen unas 130 fuentes de un catálogo de referencia: unos 40 medios generalistas y agencias de todas las líneas editoriales y de varios países, unos 40 medios especializados (economía, defensa, vivienda, clima y deportes), verificadores y unas 30 fuentes oficiales (BOE, Banco de España, BCE, Fed, INE, CNMV, tribunales, ministerios, OTAN, ONU…). Se excluyen los medios con peor credibilidad medida o con resoluciones judiciales por publicar informaciones sin base. «Cobertura» indica en cuántos de esos medios aparece cada noticia.",
+  "Cada mañana se leen unas 130 fuentes de un catálogo de referencia: unos 40 medios generalistas y agencias de todas las líneas editoriales y de varios países, unos 40 medios especializados (economía, defensa, vivienda, clima y deportes), verificadores y unas 30 fuentes oficiales (BOE, Banco de España, BCE, Fed, INE, CNMV, tribunales, ministerios, OTAN, ONU…). Se excluyen los medios con peor credibilidad medida o con resoluciones judiciales por publicar informaciones sin base.",
   "Las cifras de mercado proceden de prensa económica y llevan su hora: son orientativas, no cotizaciones en tiempo real.",
   "Indico cuándo una noticia descansa en una sola fuente o en una fuente de parte, como un gobierno o su agencia oficial, y señalo las discrepancias entre medios.",
   "Nada de lo que aparece aquí es asesoramiento financiero ni recomendación de inversión.",
@@ -1898,11 +1898,6 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
           srcs.appendChild(link(f.t, f.u));
         });
         if (it.conf) srcs.appendChild(el('span','status', 'Verificación: ' + (CONF[it.conf] || it.conf)));
-        if (it.cobertura && (it.cobertura.n || it.cobertura.esp)){
-          var cv = el('span','status', coberturaTexto(it.cobertura));
-          if (it.cobertura.medios && it.cobertura.medios.length) cv.title = it.cobertura.medios.join(', ');
-          srcs.appendChild(cv);
-        }
         foot.appendChild(srcs);
         var btn = el('button','deep', DEEP_LABEL); btn.type = 'button';
         btn.setAttribute('aria-label','Profundizar en ' + it.code + ': copiar un prompt de investigación');

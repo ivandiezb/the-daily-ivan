@@ -18,7 +18,7 @@ TIPOS_MERCADO = {"indice", "usd", "divisa", "rent"}
 SECCIONES = set("""index home portada inicio noticias news ultima-hora ultimas-noticias economia mercados bolsa internacional
 mundo world espana politica sociedad opinion deportes cultura tecnologia ciencia salud vivienda empleo europa
 """.split())
-LINEAS_METODO = ("«Cobertura» indica", "«Profundizar · copiar prompt»")
+LINEAS_METODO = ("Cada mañana se leen unas", "«Profundizar · copiar prompt»")
 
 errores, avisos = [], []
 
@@ -216,6 +216,8 @@ def main():
         if (ed.get("metodo") or [""])[0].find(f" {dia} de ") < 0:
             aviso("metodo: la primera línea no parece actualizada con el día de hoy")
 
+    if "«Cobertura» indica" in metodo:
+        aviso("metodo: quita la frase sobre «Cobertura» (la cobertura ya no se muestra al lector)")
     if "«Tendencias de la sociedad»" in metodo:
         aviso("metodo: quita la línea de «Tendencias de la sociedad» (la sección ya no se publica)")
     tr = ed.get("tendencias")
