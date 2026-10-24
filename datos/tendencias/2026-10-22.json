@@ -1,0 +1,3157 @@
+{
+"fecha": "2026-10-22",
+"hora": "16:19",
+"google": {
+"ES": {
+"geo": "ES",
+"url": "https://trends.google.com/trending/rss?geo=ES",
+"ok": true,
+"items": [
+{
+"t": "denuncia",
+"trafico": "10000+",
+"fecha": "2026-10-22T16:00+02:00",
+"noticias": [
+{
+"t": "El CSD denuncia a Tebas ante el TAD por las declaraciones sobre el Real Madrid",
+"u": "https://as.com/futbol/el-csd-actua-de-oficio-por-las-declaraciones-de-tebas-sobre-real-madrid-tv-f202610-n/",
+"s": "Diario AS"
+},
+{
+"t": "El CSD actúa de oficio y eleva al TAD las manifestaciones de Javier Tebas sobre el Real Madrid",
+"u": "https://elpais.com/deportes/futbol/2026-10-22/el-csd-actua-de-oficio-y-eleva-al-tad-las-manifestaciones-de-javier-tebas-sobre-el-real-madrid.html",
+"s": "EL PAÍS"
+},
+{
+"t": "El CSD abre expediente a Tebas por comparar al Real Madrid con el régimen nazi",
+"u": "https://www.abc.es/deportes/real-madrid/csd-abre-expediente-tebas-comparar-real-madrid-20261022153321-nt.html",
+"s": "ABC"
+}
+],
+"n": 10000
+},
+{
+"t": "matthew perry",
+"trafico": "200+",
+"fecha": "2026-10-22T16:00+02:00",
+"noticias": [
+{
+"t": "Matthew Perry’s sister remembers the ‘Friends’ wedding that mirrored what her brother wanted most",
+"u": "https://www.hola.com/us/celebrities/20261021930504/matthew-perry-sister-mia-perry-bowick-friends-wedding-chandler-monica/",
+"s": "HOLA"
+},
+{
+"t": "Matthew Perry: The friend who will forever be with us",
+"u": "https://www.uscannenbergmedia.com/2026/10/20/matthew-perry-the-friend-who-will-forever-be-with-us/",
+"s": "Annenberg Media"
+},
+{
+"t": "Matthew Perry’s Sister on the Bittersweet Truth Behind His ‘Friends’ Wedding (Exclusive)",
+"u": "https://people.com/matthew-perry-sister-reveals-heartbreaking-truth-friends-wedding-episode-new-doc-exclusive-12184859",
+"s": "People.com"
+}
+],
+"n": 200
+},
+{
+"t": "curis",
+"trafico": "200+",
+"fecha": "2026-10-22T16:00+02:00",
+"noticias": [
+{
+"t": "Varios institutos de Zaragoza denuncian el acoso a profesores y estudiantes a través de cuentas de Tik-Tok en las que los ridiculizan",
+"u": "https://www.heraldo.es/noticias/aragon/zaragoza/2026/10/21/varios-institutos-zaragoza-denuncian-acoso-profesores-estudiantes-traves-cuentas-tik-tok-las-que-los-ridiculizan-2061402.html",
+"s": "heraldo.es"
+},
+{
+"t": "¿Qué son los 'curi' o 'curimomos'? Entre la evolución del meme o una nueva forma de ciberacoso",
+"u": "https://www.lavanguardia.com/vida/20261022/11664525/que-son-curi-curimomos-evolucion-meme-nueva-forma-ciberacoso.html",
+"s": "La Vanguardia"
+},
+{
+"t": "Los psicólogos ante las 'curis': «Pueden convertirse en una herramienta sin control para fomentar el ciberacoso»",
+"u": "https://www.elnortedecastilla.es/valladolid/psicologos-ante-curis-pueden-convertirse-herramienta-control-20261022064614-nt.html",
+"s": "El Norte de Castilla"
+}
+],
+"n": 200
+},
+{
+"t": "airbnb",
+"trafico": "1000+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "Airbnb hosts can no longer make guests strip beds and wash dishes under new rules",
+"u": "https://www.bbc.com/news/articles/c6n049gg75r4o",
+"s": "BBC"
+},
+{
+"t": "Airbnb guests freed from chores involving ‘significant effort’ under new global rules",
+"u": "https://www.theguardian.com/australia-news/2026/oct/22/airbnb-guests-freed-from-chores-involving-significant-effort-under-new-global-rules",
+"s": "The Guardian"
+},
+{
+"t": "Airbnb bans check-out chores like taking bins out",
+"u": "https://www.euronews.com/2026/10/21/airbnb-bans-check-out-chores-like-stripping-the-bed-or-taking-the-bins-out",
+"s": "Euronews.com"
+}
+],
+"n": 1000
+},
+{
+"t": "anthropic",
+"trafico": "500+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "Anthropic unveils Claude Duet AI agent app",
+"u": "https://www.reuters.com/technology/anthropic-unveils-claude-duet-ai-agent-app-2026-10-21/",
+"s": "Reuters"
+},
+{
+"t": "Claude Duet app is Anthropic’s bet on agents",
+"u": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+"s": "TechCrunch"
+},
+{
+"t": "Anthropic announces preview of Claude Duet, a personal AI agent to take on Muse, Dots",
+"u": "https://www.cnbc.com/2026/10/21/anthropic-preview-of-claude-duet-personal-ai-agent-take-on-muse-dots.html",
+"s": "CNBC"
+}
+],
+"n": 500
+},
+{
+"t": "lodosa",
+"trafico": "200+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "Herido grave un trabajador tras caer dentro del depósito de una depuradora en Lodosa",
+"u": "https://www.noticiasdenavarra.com/sucesos/2026/10/22/herido-grave-trabajador-caer-deposito-11675935.html",
+"s": "Noticias de Navarra"
+},
+{
+"t": "Un trabajador de 41 años, herido grave tras caer cuatro metros dentro de una depuradora en Lodosa",
+"u": "https://navarra.okdiario.com/articulo/sucesos/grave-accidente-laboral-navarra-trabajador-cae-cuatro-metros-dentro-deposito-depuradora/20261022135029664846.html",
+"s": "Navarra.com"
+},
+{
+"t": "Herido un trabajador en Lodosa al caer dentro del depósito de una depuradora desde una altura de 4 metros",
+"u": "https://www.diariodenavarra.es/noticias/navarra/tierra-estella/2026/10/22/herido-trabajador-lodosa-caer-deposito-depuradora-altura-4-metros-839682-19.html",
+"s": "Diario de Navarra"
+}
+],
+"n": 200
+},
+{
+"t": "tocomocho",
+"trafico": "200+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "Tres detenidos por engañar a una anciana con el timo del 'tocomocho' y robarle las joyas en Alcorcón",
+"u": "https://www.abc.es/espana/madrid/tres-detenidos-enganar-anciana-timo-tocomocho-robarle-20261022112125-nt.html",
+"s": "ABC"
+},
+{
+"t": "Detenidas tres personas en Alcorcón por estafar a una octogenaria con el timo del tocomocho",
+"u": "https://www.telemadrid.es/noticias/madrid/Detenidas-tres-personas-en-Alcorcon-por-estafar-a-una-octogenaria-con-el-timo-del-tocomocho-0-2937006279--20261022114627.html",
+"s": "Telemadrid"
+},
+{
+"t": "Detenidos tras cambiar las joyas de una mujer mayor por un falso fajo que escondía un kilo de arroz",
+"u": "https://www.lanocion.es/comunidad-de-madrid/20261022/detenidos-tras-cambiar-las-joyas-de-una-mujer-mayo-f658d.html",
+"s": "La Noción"
+}
+],
+"n": 200
+},
+{
+"t": "aina vidal",
+"trafico": "100+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "Aina Vidal se queda fuera de la lista del Frente Amplio en Cataluña",
+"u": "https://elpais.com/espana/elecciones-generales/2026-10-22/aina-vidal-se-queda-fuera-de-la-lista-del-frente-amplio-en-cataluna.html",
+"s": "EL PAÍS"
+},
+{
+"t": "División en Comuns por la exclusión de Aina Vidal de las listas del 29-N del Frente Amplio",
+"u": "https://www.elmundo.es/cataluna/2026/10/22/6ad9fd71fdddff70698b4596.html",
+"s": "El Mundo"
+},
+{
+"t": "Aina Vidal no repetirá como diputada en el Congreso y su exclusión genera división en el seno de Comuns",
+"u": "https://www.lavanguardia.com/politica/elecciones/20261022/11665345/aina-vidal-repetira-diputada-congreso-exclusion-genera-division-seno-comuns.html",
+"s": "La Vanguardia"
+}
+],
+"n": 100
+},
+{
+"t": "ingreso",
+"trafico": "200+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "El ingreso mínimo vital en España se queda corto: no sirve para salir de la pobreza",
+"u": "https://www.elconfidencial.com/espana/2026-10-22/ingreso-minimo-vital-pobreza_4449912/",
+"s": "El Confidencial"
+},
+{
+"t": "Ballesteros, experta económica: \"La mitad de hogares con derecho a esta prestación no la pide; para un hogar con 2 adultos y 2 niños, el IMV puede superar en 200 euros el salario más frecuente\"",
+"u": "https://www.cope.es/actualidad/economia/noticias/ballesteros-experta-economica-mitad-hogares-derecho-prestacion-no-pide-hogar-2-adultos-4-ninos-imv-superar-200-euros-salario-frecuente-20261022_3460549.html",
+"s": "COPE"
+},
+{
+"t": "La factura del ingreso mínimo supera los 22.000 millones y no llega al 55% de los hogares necesitados",
+"u": "https://www.abc.es/economia/factura-imv-supera-22000-millones-llega-hogares-20261020012147-nt.html",
+"s": "ABC"
+}
+],
+"n": 200
+},
+{
+"t": "judi dench",
+"trafico": "200+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "Dame Judi Dench: I can't do a play, do a film, or read any more",
+"u": "https://www.bbc.com/news/articles/c6ly09v09lnjo",
+"s": "BBC"
+},
+{
+"t": "Judi Dench says sight loss means she can no longer perform but she is still ‘besotted by’ Shakespeare’s sonnets",
+"u": "https://www.theguardian.com/culture/2026/oct/22/judi-dench-sight-loss-macular-degeneration-shakespeares-sonnets",
+"s": "The Guardian"
+},
+{
+"t": "Judi Dench: I can't be on stage, I can't read anymore",
+"u": "https://www.rte.ie/entertainment/2026/1022/1596410-judi-dench-i-cant-be-on-stage-i-cant-read-anymore/",
+"s": "RTE.ie"
+}
+],
+"n": 200
+}
+]
+},
+"US": {
+"geo": "US",
+"url": "https://trends.google.com/trending/rss?geo=US",
+"ok": true,
+"items": [
+{
+"t": "louise lucas",
+"trafico": "1000+",
+"fecha": "2026-10-22T15:50+02:00",
+"noticias": [
+{
+"t": "Virginia state Sen. Louise Lucas indicted on drug and fraud charges",
+"u": "https://www.cnn.com/2026/10/22/politics/va-senator-louise-lucas-indictment",
+"s": "CNN"
+},
+{
+"t": "Virginia State Senator L. Louise Lucas charged in public corruption case",
+"u": "https://www.nbcnews.com/politics/justice-department/virginia-state-senator-l-louise-lucas-charged-public-corruption-case-d-rcna604870",
+"s": "NBC News"
+},
+{
+"t": "Feds charge L. Louise Lucas, Virginia state senator who led Democrats' redistricting push",
+"u": "https://www.cbsnews.com/news/l-louise-lucas-charged-indictment-arrested-virginia/",
+"s": "CBS News"
+}
+],
+"n": 1000
+},
+{
+"t": "boardwalk rock 2027",
+"trafico": "500+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "Iron Maiden, Korn and Bad Omens Lead Boardwalk Rock’s Heavy Metal Weekend",
+"u": "https://www.thatericalper.com/2026/10/20/iron-maiden-korn-and-bad-omens-lead-boardwalk-rocks-heavy-metal-weekend/",
+"s": "That Eric Alper"
+},
+{
+"t": "2027 Boardwalk Rock Fest Lineup Led by Iron Maiden, Korn, and Bad Omens",
+"u": "https://consequence.net/2026/10/2027-boardwalk-rock-fest-lineup-led-by-iron-maiden-korn-and-bad-omens/",
+"s": "Consequence of Sound"
+},
+{
+"t": "Rock Out Till You Clock Out! Win tickets to Boardwalk Rock Fest 2027!",
+"u": "https://www.98online.com/rock-out-till-you-clock-out-win-tickets-to-boardwalk-rock-fest-2027",
+"s": "98 Rock Baltimore"
+}
+],
+"n": 500
+},
+{
+"t": "jane leeves",
+"trafico": "1000+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "‘Frasier’ Star Jane Leeves Recalls Meeting ‘Devastatingly Sexy’ Costar David Hyde Pierce for the First Time",
+"u": "https://people.com/jane-leeves-recalls-meeting-sexy-frasier-costar-david-hyde-pierce-12163213",
+"s": "People.com"
+},
+{
+"t": "“Frasier” Stars Jane Leeves and David Hyde Pierce Reveal the One Storyline They Wish Writers ‘Handled Differently’",
+"u": "https://www.yahoo.com/entertainment/tv/articles/frasier-stars-jane-leeves-david-185900518.html",
+"s": "Yahoo"
+},
+{
+"t": "“Frasier” Star David Hyde Pierce Says Studio Audience ‘Lost Their Minds’ When He and Jane Leeves Kissed for the First Time",
+"u": "https://www.aol.com/articles/frasier-star-david-hyde-pierce-155900000.html",
+"s": "AOL.com"
+}
+],
+"n": 1000
+},
+{
+"t": "stephen graham",
+"trafico": "1000+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "'Animol' review: Ashley Walters' tense and tender feature debut shines light on young offenders",
+"u": "https://www.yahoo.com/entertainment/movies/articles/animol-review-ashley-walters-tense-111515345.html",
+"s": "Yahoo"
+},
+{
+"t": "Animol | 2026 London BFI Film Festival Review",
+"u": "https://www.ioncinema.com/reviews/ashley-walters-animol-movie-review",
+"s": "- IONCINEMA.com"
+},
+{
+"t": "'Animol' review: Ashley Walters' tense and tender feature debut shines light on young offenders",
+"u": "https://mashable.com/entertainment/animol-review",
+"s": "Mashable"
+}
+],
+"n": 1000
+},
+{
+"t": "nintendo switch 2",
+"trafico": "2000+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "Final Fantasy Resonance Review: On Its Own Wavelength",
+"u": "https://gameinformer.com/review/final-fantasy-resonance/on-its-own-wavelength",
+"s": "Game Informer"
+},
+{
+"t": "Final Fantasy dips back into the SNES golden era with Resonance",
+"u": "https://www.theverge.com/games/1013958/final-fantasy-resonance-review",
+"s": "The Verge"
+},
+{
+"t": "Chapter 1 Walkthrough - Tailing the Truth",
+"u": "https://www.ign.com/wikis/final-fantasy-resonance/Chapter_1_Walkthrough_-_Tailing_the_Truth",
+"s": "IGN"
+}
+],
+"n": 2000
+},
+{
+"t": "quinta brunson",
+"trafico": "200+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "Does Tyrese Maxey have a future in TV post-basketball? Abbott Elementary’s creator, Quinta Brunson, thinks so.",
+"u": "https://www.inquirer.com/sixers/quinta-brunson-abbott-elementary-sixers-tyrese-maxey-20261021.html",
+"s": "Inquirer.com"
+},
+{
+"t": "Quinta Brunson Teases Her Betty Boop Movie ‘Will Be Unlike Anything Anyone Expects’",
+"u": "https://people.com/quinta-brunson-betty-boop-movie-will-be-unlike-anything-anyone-expects-12184620",
+"s": "People.com"
+},
+{
+"t": "Quinta Brunson Shares Update On Betty Boop Film Development: \"The Story Will Be Unlike Anything Anyone Expects\"",
+"u": "https://deadline.com/2026/10/quinta-brunson-update-betty-boop-film-1237168312/",
+"s": "Deadline"
+}
+],
+"n": 200
+},
+{
+"t": "recusal",
+"trafico": "200+",
+"fecha": "2026-10-22T15:20+02:00",
+"noticias": [
+{
+"t": "Clashing Over 'Lee Jin-sook's Recusal': \"A Player Cannot Be a Referee\" vs. \"Apologize for Gagging\"",
+"u": "https://news.sbs.co.kr/english/article.do?news_id=N1008811019",
+"s": "SBS 뉴스"
+},
+{
+"t": "The ruling and opposition parties clashed again over the significance of the Constitutional Court's",
+"u": "https://www.mk.co.kr/en/politics/12182864",
+"s": "매일경제"
+},
+{
+"t": "[Parliamentary Audit Spotlight] Lee Jinsook, Revived Twice by the Constitutional Court, Raises Her Profile",
+"u": "https://www.asiae.co.kr/en/article/2026102209504960629",
+"s": "아시아경제"
+}
+],
+"n": 200
+},
+{
+"t": "sean hutton",
+"trafico": "200+",
+"fecha": "2026-10-22T15:20+02:00",
+"noticias": [
+{
+"t": "Former walk-on, recent scholarship recipient Sean Hutton taken to hospital after collapse in practice",
+"u": "https://www.oudaily.com/sports/oklahoma-sooners-football-hospitalized-player-sean-hutton/article_6878f56d-8712-4b54-a353-092d84758613.html",
+"s": "OU Daily"
+},
+{
+"t": "OU football player transported to hospital during practice Wednesday",
+"u": "https://kfor.com/news/ou-football-player-transported-to-hospital-during-practice-wednesday/",
+"s": "KFOR"
+},
+{
+"t": "OU football player taken to hospital after injury during practice, university officials confirm",
+"u": "https://www.koco.com/article/sports-ou-football-player-taken-to-hospital-after-practice-injury/74211181",
+"s": "KOCO"
+}
+],
+"n": 200
+},
+{
+"t": "u.s. state department china travel advisory",
+"trafico": "2000+",
+"fecha": "2026-10-22T15:10+02:00",
+"noticias": [
+{
+"t": "Americans could be detained for years in popular travel destination, officials warn",
+"u": "https://www.foxnews.com/travel/americans-could-detained-years-popular-travel-destination",
+"s": "Fox News"
+},
+{
+"t": "US adds wrongful detention warning to China travel advisory",
+"u": "https://www.voanews.com/a/us-adds-wrongful-detention-warning-to-china-travel-advisory/8213783.html",
+"s": "VOA - Voice of America English News"
+},
+{
+"t": "US warns its citizens of ‘wrongful detention’ risks when travelling to Eritrea, China and Russia",
+"u": "https://africa.businessinsider.com/local/lifestyle/us-warns-its-citizens-of-wrongful-detention-risks-when-travelling-to-eritrea-china/701nhf2",
+"s": "Business Insider Africa"
+}
+],
+"n": 2000
+},
+{
+"t": "tea leoni",
+"trafico": "2000+",
+"fecha": "2026-10-22T15:10+02:00",
+"noticias": [
+{
+"t": "TV Talk: Jamie Lee Curtis spices up NBC sitcom ‘Newlyweds’",
+"u": "https://triblive.com/aande/movies-tv/tv-talk-jamie-lee-curtis-spices-up-nbc-sitcom-newlyweds/",
+"s": "TribLIVE.com"
+},
+{
+"t": "Téa Leoni and Tim Daly on Playing Newlyweds on Screen",
+"u": "https://www.today.com/video/tea-leoni-and-tim-daly-on-playing-newlyweds-in-new-sitcom-272033349793",
+"s": "TODAY.com"
+},
+{
+"t": "'Newlyweds' Stars on Bringing Love & Laughter to Network TV",
+"u": "https://www.tvinsider.com/1298577/newlyweds-season-1-interview-tea-leoni-tim-daly-jamie-lee-curtis-comedy/",
+"s": "TV Insider"
+}
+],
+"n": 2000
+}
+]
+},
+"GB": {
+"geo": "GB",
+"url": "https://trends.google.com/trending/rss?geo=GB",
+"ok": true,
+"items": [
+{
+"t": "south africa vs australia",
+"trafico": "2000+",
+"fecha": "2026-10-22T15:50+02:00",
+"noticias": [
+{
+"t": "South Africa v Australia: second men’s cricket Test, day five – live",
+"u": "https://www.theguardian.com/sport/live/2026/oct/22/south-africa-v-australia-second-test-day-five-cricket-st-georges-park-gqeberha-live-updates?page=with:block-6ada160e8f089ee68cc1ac00",
+"s": "The Guardian"
+},
+{
+"t": "'Can't defend that' - Australia's batting deficiencies exposed",
+"u": "https://www.cricinfo.com/story/can-t-defend-that-australia-s-batting-deficiencies-exposed-1559374",
+"s": "Cricinfo"
+},
+{
+"t": "South Africa vs Australia: Baggy Greens skittled for 99 after sensational Proteas bowling performance on day four of second Test",
+"u": "https://www.skysports.com/cricket/news/13601859/south-africa-vs-australia-baggy-greens-skittled-for-99-after-sensational-proteas-bowling-performance-on-day-four-of-second-test",
+"s": "Sky Sports"
+}
+],
+"n": 2000
+},
+{
+"t": "charles iii",
+"trafico": "1000+",
+"fecha": "2026-10-22T15:50+02:00",
+"noticias": [
+{
+"t": "Aberfan disaster: Royal Family pay respects to 'most tragic of days imaginable'",
+"u": "https://www.bbc.co.uk/news/articles/crgj9d4zgj5yo",
+"s": "BBC"
+},
+{
+"t": "Aberfan: how the Guardian reported the disaster – archive, 1966",
+"u": "https://www.theguardian.com/uk-news/2026/oct/20/ababerfan-disaster-school-wales-how-guardian-reported-1966",
+"s": "The Guardian"
+},
+{
+"t": "Aberfan survivors' emotional memories 60 years on",
+"u": "https://www.bbc.com/news/videos/c6n4e0vj018qo",
+"s": "BBC"
+}
+],
+"n": 1000
+},
+{
+"t": "avishka fernando",
+"trafico": "100+",
+"fecha": "2026-10-22T15:50+02:00",
+"noticias": [
+{
+"t": "Brook and Jacks lead resurgent England into tri-series with World Cup in sight",
+"u": "https://www.theguardian.com/sport/2026/oct/18/brook-jacks-england-tri-series-cricket",
+"s": "The Guardian"
+},
+{
+"t": "Pakistan vs Sri Lanka LIVE: ODI tri-series, Rawalpindi - cricket score, radio commentary & updates",
+"u": "https://www.bbc.co.uk/sport/cricket/live/cwm23753e436t",
+"s": "BBC"
+},
+{
+"t": "Pakistan hero reveals reasons behind stunning form turnaround",
+"u": "https://www.icc-cricket.com/news/pakistan-hero-reveals-reasons-behind-stunning-form-turnaround",
+"s": "ICC"
+}
+],
+"n": 100
+},
+{
+"t": "david beckham",
+"trafico": "100+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "Cleaner becomes accidental heartthrob after Facebook post leaves women swooning",
+"u": "https://discover.swns.com/2026/10/cleaner-becomes-accidental-heartthrob-after-facebook-post-leaves-women-swooning/",
+"s": "Discover SWNS"
+},
+{
+"t": "'Tom Hardy' of handymen leaves women swooning after ring doorbell footage goes viral",
+"u": "https://www.ladbible.com/news/uk-news/tom-hardy-handymen-david-beckham-viral-ring-footage-634281-20261022",
+"s": "LADbible"
+},
+{
+"t": "Hunky cleaner becomes unexpected heart-throb thanks to social media ad",
+"u": "https://www.thesun.co.uk/fabulous/40750528/hunky-cleaner-social-media-advert/",
+"s": "The Sun"
+}
+],
+"n": 100
+},
+{
+"t": "petroleum",
+"trafico": "100+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "Our View: Govt finally realising it is at the mercy of large oil companies",
+"u": "https://cyprus-mail.com/2026/10/21/our-view-govt-finally-realising-it-is-at-the-mercy-of-large-oil-companies",
+"s": "Cyprus Mail"
+},
+{
+"t": "Petroleum Minister, Total Energies discuss fast tracking Cyprus gas link",
+"u": "https://www.egyptindependent.com/petroleum-minister-total-energies-discuss-fast-tracking-cyprus-gas-link/",
+"s": "Egypt Independent"
+},
+{
+"t": "International Energy Majors Highlight Egypt Investment Opportunities at MOC 2026",
+"u": "https://egyptoil-gas.com/news/apache-chevron-dragon-oil-petronas-slb-highlight-egypt-investment-opportunities-at-moc-2026/",
+"s": "Egypt Oil & Gas"
+}
+],
+"n": 100
+},
+{
+"t": "ufc 333",
+"trafico": "200+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "Pre-Fight Press Conference | UFC 333: Volkanovski vs Evloev",
+"u": "https://www.ufc.com/video/161248",
+"s": "UFC.com"
+},
+{
+"t": "Alexander Volkanovski: Movsar Evloev has ‘incredible wrestling’ but ‘it’s just not enough for me’",
+"u": "https://www.mmafighting.com/ufc/516853/alexander-volkanovski-movsar-evloev-has-incredible-wrestling-but-its-just-not-enough-for-me",
+"s": "MMA Fighting"
+},
+{
+"t": "UFC 333 open workout highlight: Evloev flips out, Merab slams cameraman",
+"u": "https://mmajunkie.usatoday.com/story/sports/ufc/2026/10/21/ufc-333-open-workout-highlight-movsar-evloev-flips-out-merab-dvalishvili-slams-cameraman/92362391007/",
+"s": "MMA Junkie"
+}
+],
+"n": 200
+},
+{
+"t": "sky news uk",
+"trafico": "1000+",
+"fecha": "2026-10-22T15:20+02:00",
+"noticias": [
+{
+"t": "Big spike in UK tax receipts - and it could tell us something about next week's budget | Money blog",
+"u": "https://news.sky.com/story/money-live-personal-finance-consumer-interest-rate-mortgages-savings-careers-jobs-tips-sky-news-latest-13040934",
+"s": "Sky News"
+},
+{
+"t": "Highway Code warning as UK drivers risk penalties over rule changes",
+"u": "https://www.oxfordmail.co.uk/news/national/uk-today/26661389.highway-code-warning-uk-drivers-risk-penalties-changes/",
+"s": "Oxford Mail"
+},
+{
+"t": "See who is responsible for repairing a damaged fence after a storm in the UK",
+"u": "https://www.oxfordmail.co.uk/news/national/uk-today/26661262.responsible-repairing-fence-uk-storm/",
+"s": "Oxford Mail"
+}
+],
+"n": 1000
+},
+{
+"t": "seabed",
+"trafico": "200+",
+"fecha": "2026-10-22T15:20+02:00",
+"noticias": [
+{
+"t": "US to sell off seabed as scientists check damage from mining tests",
+"u": "https://oceanographicmagazine.com/news/us-to-sell-off-seabed-as-scientists-check-damage-from-mining-tests/",
+"s": "Oceanographic Magazine"
+},
+{
+"t": "Trump is auctioning the seafloor. Who will it benefit?",
+"u": "https://www.centraloregondaily.com/news/nation-world/trump-is-auctioning-the-seafloor-who-will-it-benefit/article_7de810a5-a1a2-5040-80bc-85a156bd6891.html",
+"s": "Central Oregon Daily"
+},
+{
+"t": "Apatang seeks CNMI share in seabed mining, Guam wants lease sale halted",
+"u": "https://marianaspress.com/news/article/apatang-seeks-cnmi-share-in-seabed-mining-guam-wants-lease-sale-halted",
+"s": "Marianas Press"
+}
+],
+"n": 200
+},
+{
+"t": "rugby player",
+"trafico": "2000+",
+"fecha": "2026-10-22T15:10+02:00",
+"noticias": [
+{
+"t": "French teenage rugby player dies after on-field injury",
+"u": "https://www.bbc.co.uk/sport/rugby-union/articles/crly0lpgd659o",
+"s": "BBC"
+},
+{
+"t": "17-year-old women's rugby player dies after serious injury during match",
+"u": "https://www.walesonline.co.uk/sport/rugby/rugby-news/17-year-old-womens-rugby-34801263",
+"s": "Wales Online"
+},
+{
+"t": "Hyron Andrews: Former Sale second row died of natural causes - autopsy",
+"u": "https://www.bbc.co.uk/sport/rugby-union/articles/cmx234p2xwpzo",
+"s": "BBC"
+}
+],
+"n": 2000
+},
+{
+"t": "tim visser",
+"trafico": "500+",
+"fecha": "2026-10-22T15:10+02:00",
+"noticias": [
+{
+"t": "Former Scotland rugby international Tim Visser to go on trial charged with rape",
+"u": "https://www.bbc.co.uk/news/articles/cxvgd7z3y89po",
+"s": "BBC"
+},
+{
+"t": "Former Scotland Rugby International Tim Visser to Stand Trial on Rape and Abuse Charges",
+"u": "https://www.ruck.co.uk/rugby-news/former-scotland-rugby-international-tim-visser-to-stand-trial-on-rape-and-abuse-charges",
+"s": "Ruck.co.uk"
+},
+{
+"t": "Ex-Scotland rugby star accused of controlling, abusing and raping woman",
+"u": "https://www.thescottishsun.co.uk/sport/16973122/former-scotland-rugby-star-faces-trial-rape/",
+"s": "The Scottish Sun"
+}
+],
+"n": 500
+}
+]
+},
+"FR": {
+"geo": "FR",
+"url": "https://trends.google.com/trending/rss?geo=FR",
+"ok": true,
+"items": [
+{
+"t": "manifestation",
+"trafico": "10000+",
+"fecha": "2026-10-22T16:00+02:00",
+"noticias": [
+{
+"t": "EN DIRECT, manifestations du 17 octobre : la justice suspend l’interdiction de la manifestation prévue par l’Interfac à Paris ce jeudi ; dans la capitale, un cortège validé de Bastille à Nation samedi",
+"u": "https://www.lemonde.fr/societe/live/2026/10/22/en-direct-manifestations-du-17-octobre-la-justice-suspend-l-interdiction-de-la-manifestation-prevue-par-l-interfac-a-paris-ce-jeudi-dans-la-capitale-un-cortege-valide-de-bastille-a-nation-samedi_6795855_3224.html",
+"s": "Le Monde.fr"
+},
+{
+"t": "À Paris, la justice suspend l’interdiction de la manifestation étudiante prévue par l’Interfac ce jeudi",
+"u": "https://etudiant.lefigaro.fr/article/etudes/a-paris-la-justice-suspend-l-interdiction-de-la-manifestation-etudiante-prevue-par-l-interfac-ce-jeudi-20261022/",
+"s": "Le Figaro Etudiant"
+},
+{
+"t": "Ces propos de Macron sur « la légitimité » à manifester ont tout pour crisper",
+"u": "https://www.huffingtonpost.fr/politique/article/ces-propos-d-emmanuel-macron-sur-la-legitimite-a-manifester-ont-tout-pour-crisper_343343.html",
+"s": "Le HuffPost"
+}
+],
+"n": 10000
+},
+{
+"t": "jean-christophe lagarde",
+"trafico": "500+",
+"fecha": "2026-10-22T15:50+02:00",
+"noticias": [
+{
+"t": "Fausses accusations contre le couple Garrido-Corbière : trois personnes, dont Jean-Christophe Lagarde, jugées pour \"escroquerie en bande organisée\"",
+"u": "https://www.franceinfo.fr/faits-divers/justice-proces/fausses-accusations-contre-le-couple-garrido-corbiere-trois-personnes-dont-jean-christophe-lagarde-jugees-pour-escroquerie-en-bande-organisee_8248804.html",
+"s": "franceinfo"
+},
+{
+"t": "Affaire Garrido-Corbière : l’ex-chef de l’UDI Jean-Christophe Lagarde renvoyé devant le tribunal correctionnel pour escroquerie en bande organisée",
+"u": "https://www.humanite.fr/societe/alexis-corbiere/affaire-garrido-corbiere-lex-chef-de-ludi-jean-christophe-lagarde-renvoye-devant-le-tribunal-correctionnel-pour-escroquerie-en-bande-organisee",
+"s": "L'Humanité"
+},
+{
+"t": "Complot contre les Garrido - Corbière : Jean-Christophe Lagarde sera jugé pour « escroquerie en bande organisée",
+"u": "https://www.leparisien.fr/faits-divers/complot-contre-les-garrido-corbiere-jean-christophe-lagarde-sera-juge-pour-escroquerie-en-bande-organisee-21-10-2026-IY6NH5UHAFD4NCB3E36H7MUJJE.php",
+"s": "Le Parisien"
+}
+],
+"n": 500
+},
+{
+"t": "lisbonne",
+"trafico": "1000+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "Ils ont un accident de voiture en plein rapport sexuel : une femme meurt dans le choc près de Lisbonne, le conducteur prend la fuite",
+"u": "https://www.leparisien.fr/faits-divers/ils-ont-un-accident-de-voiture-en-plein-rapport-sexuel-une-femme-meurt-dans-le-choc-pres-de-lisbonne-le-conducteur-prend-la-fuite-22-10-2026-S6WW6DTHFFAOFI2LIO2CBJE46A.php",
+"s": "Le Parisien"
+},
+{
+"t": "Portugal : Un homme perd le contrôle de sa voiture pendant qu'il a des rapports sexuels, la femme tuée dans l'accident",
+"u": "https://fr.news.yahoo.com/portugal-homme-perd-controle-voiture-162353843.html",
+"s": "Yahoo Actualités"
+},
+{
+"t": "En pleins ébats au volant, deux amants font une sortie de route : la femme décède, l’homme prend la fuite",
+"u": "https://www.ouest-france.fr/faits-divers/accidents/en-pleins-ebats-au-volant-deux-amants-font-une-sortie-de-route-la-femme-decede-lhomme-prend-la-fuite-0b771bf2-cc5a-11f1-bf87-17eca79cb13c",
+"s": "Ouest-France"
+}
+],
+"n": 1000
+},
+{
+"t": "matveï safonov",
+"trafico": "200+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "Le débrief de Bixente Lizarazu après PSG-FC Barcelone : «C'est surtout sur le premier but que Safonov est quelque peu fautif»",
+"u": "https://www.lequipe.fr/Football/Article/Le-debrief-de-bixente-lizarazu-apres-psg-fc-barcelone-c-est-surtout-sur-le-premier-but-que-safonov-est-quelque-peu-fautif/1737387",
+"s": "L'Équipe"
+},
+{
+"t": "PSG-Barça: Matvey Safonov, la sanction tombe !",
+"u": "https://www.sports.fr/football/ligue-des-champions-football/1055827-1055827.html",
+"s": "Sports.fr"
+},
+{
+"t": "PSG : Lizarazu et le point faible de Safonov",
+"u": "https://news.maxifoot.fr/psg/lizarazu-et-le-point-faible-de-safonov-foot-466121.htm",
+"s": "Maxifoot"
+}
+],
+"n": 200
+},
+{
+"t": "caisse d'allocations familiales",
+"trafico": "1000+",
+"fecha": "2026-10-22T15:20+02:00",
+"noticias": [
+{
+"t": "RSA, APL, prime d’activité, allocations familiales : voici la date de versement de la CAF en octobre/novembre",
+"u": "https://www.larepubliquedespyrenees.fr/societe/vie-quotidienne/allocations-familiales/rsa-apl-prime-d-activite-allocations-familiales-voici-la-date-de-versement-de-la-caf-en-octobre-novembre-31167747.php",
+"s": "La République des Pyrénées"
+},
+{
+"t": "CAF : 1366€ euros versés le 5 novembre 2026, les Français concernés",
+"u": "https://www.nextplz.fr/societe/594684-caf-1366e-euros-verses-le-5-novembre-2026-les-francais-concernes",
+"s": "NextPlz"
+},
+{
+"t": "Paiements CAF : découvrez le calendrier des versements en 2026",
+"u": "https://www.larepubliquedespyrenees.fr/societe/vie-quotidienne/allocations-familiales/paiements-caf-decouvrez-le-calendrier-des-versements-en-2026-31138782.php",
+"s": "La République des Pyrénées"
+}
+],
+"n": 1000
+},
+{
+"t": "syndicat",
+"trafico": "200+",
+"fecha": "2026-10-22T15:20+02:00",
+"noticias": [
+{
+"t": "Antiracisme, écologie, féminisme : un nouveau syndicat pour représenter les agents des collectivités dans le Jura",
+"u": "https://actu.fr/bourgogne-franche-comte/saint-claude_39478/antiracisme-ecologie-feminisme-un-nouveau-syndicat-pour-representer-les-agents-des-collectivites-dans-le-jura_64959305.html",
+"s": "Actu.fr"
+},
+{
+"t": "Manifestations contre la vie chère, mouvement lycéen, actions violentes… Quelle est la situation dans les départements d'outre-mer, en pleine colère sociale",
+"u": "https://www.franceinfo.fr/france/outremer/manifestations-contre-la-vie-chere-mouvement-lyceen-actions-violentes-quelle-est-la-situation-dans-les-departements-d-outre-mer-en-pleine-colere-sociale_8247013.html",
+"s": "franceinfo"
+},
+{
+"t": "Manifestation d'octobre - Les jours d'après",
+"u": "https://www.france.tv/france-5/c-pas-si-loin/9000901-manifestation-d-octobre-les-jours-d-apres.html",
+"s": "France TV"
+}
+],
+"n": 200
+},
+{
+"t": "reynerie",
+"trafico": "200+",
+"fecha": "2026-10-22T15:20+02:00",
+"noticias": [
+{
+"t": "Balles d'armes de guerre, deux blessés, un pronostic vital engagé : nouvelle fusillade à la Reynerie à Toulouse",
+"u": "https://france3-regions.franceinfo.fr/occitanie/haute-garonne/toulouse/balles-de-guerre-deux-blesses-un-pronostic-vital-engage-nouvelle-fusillade-a-la-reynerie-a-toulouse-3437442.html",
+"s": "France 3 Régions"
+},
+{
+"t": "Cinq blessés dans des fusillades en 1h à Toulouse, dont un jeune entre la vie et la mort : la chronologie des événements",
+"u": "https://actu.fr/occitanie/toulouse_31555/cinq-blesses-en-une-heure-a-toulouse-cette-nuit-dont-un-jeune-entre-la-vie-et-la-mort-la-chronologie-des-evenements_64960283.html",
+"s": "Actu.fr"
+},
+{
+"t": "Plusieurs fusillades dans la nuit à Toulouse : cinq blessés par balle en moins d'une heure, dont un entre la vie et la mort",
+"u": "https://www.ladepeche.fr/2026/10/22/plusieurs-fusillades-dans-la-nuit-a-toulouse-trois-blesses-par-balle-en-moins-dune-heure-dont-un-entre-la-vie-et-la-mort-13614798.php",
+"s": "ladepeche.fr"
+}
+],
+"n": 200
+},
+{
+"t": "bfm marseille provence",
+"trafico": "200+",
+"fecha": "2026-10-22T15:20+02:00",
+"noticias": [
+{
+"t": "Marseille, le 17 octobre : autopsie d’un désastre",
+"u": "https://www.mediapart.fr/journal/france/211026/marseille-le-17-octobre-autopsie-d-un-desastre",
+"s": "Mediapart"
+},
+{
+"t": "\"Je veux aller au bout des choses\": le procureur de la République de Marseille veut des enquêtes \"de longue haleine\" après les violences du 17 octobre",
+"u": "https://www.bfmtv.com/marseille/je-veux-aller-au-bout-des-choses-le-procureur-de-la-republique-de-marseille-veut-des-enquetes-de-longue-haleine-apres-les-violences-du-17-octobre_AN-202610220291.html",
+"s": "BFM"
+},
+{
+"t": "38 véhicules volés, quatre personnes déférées... Ce que l'on sait du pillage d'une concession automobile à Marseille",
+"u": "https://www.laprovence.com/article/faits-divers-justice/1969551706626814/38-vehicules-voles-quatre-personnes-deferees-ce-que-lon-sait-du-pillage-dune-concession-automobile-a-marseille",
+"s": "La Provence"
+}
+],
+"n": 200
+},
+{
+"t": "pouvoir d'achat",
+"trafico": "200+",
+"fecha": "2026-10-22T15:20+02:00",
+"noticias": [
+{
+"t": "EXCLUSIF - Pouvoir d'achat : le gouvernement étudie une hausse anticipée du SMIC",
+"u": "https://www.lesechos.fr/economie-france/social/exclusif-pouvoir-dachat-le-gouvernement-etudie-une-hausse-anticipee-du-smic-2258412",
+"s": "Les Echos"
+},
+{
+"t": "Le gouvernement pourrait-il accorder une augmentation du Smic comme le réclament les syndicats?",
+"u": "https://rmc.bfmtv.com/actualites/economie/travail/le-gouvernement-pourrait-il-accorder-une-augmentation-du-smic-comme-le-reclament-les-syndicats_AN-202610220437.html",
+"s": "RMC"
+},
+{
+"t": "Le SMIC va-t-il passer à 1 700 euros net en 2027 ?",
+"u": "https://demarchesadministratives.fr/actualites/le-smic-va-t-il-passer-a-1-700-euros-net-en-2027",
+"s": "Démarches Administratives"
+}
+],
+"n": 200
+},
+{
+"t": "disney+",
+"trafico": "2000+",
+"fecha": "2026-10-22T15:10+02:00",
+"noticias": [
+{
+"t": "Lea Michele Returning for ‘Glee’ Reboot as Rachel Berry (EXCLUSIVE)",
+"u": "https://variety.com/2026/tv/news/lea-michele-glee-reboot-rachel-berry-1236918870/",
+"s": "Variety"
+},
+{
+"t": "Glee reboot: The US high school musical comedy-drama is to return on Hulu and Disney+",
+"u": "https://www.bbc.com/news/articles/c6x2vpn4xy0yo",
+"s": "BBC"
+},
+{
+"t": "‘Glee’ Reboot Lands Series Order At Disney+ & Hulu",
+"u": "https://deadline.com/2026/10/glee-reboot-series-order-disney-hulu-1237169231/",
+"s": "Deadline"
+}
+],
+"n": 2000
+}
+]
+},
+"DE": {
+"geo": "DE",
+"url": "https://trends.google.com/trending/rss?geo=DE",
+"ok": true,
+"items": [
+{
+"t": "oranienburg",
+"trafico": "200+",
+"fecha": "2026-10-22T16:00+02:00",
+"noticias": [
+{
+"t": "Herbst-Rummel Oranienburg 2026: Preise, Öffnungszeiten und Familientag",
+"u": "https://www.maz-online.de/lokales/oberhavel/oranienburg/herbst-rummel-oranienburg-2026-preise-oeffnungszeiten-und-familientag-I5VB4BO23ZCHBKRHWOTRTU37VA.html",
+"s": "Märkische Allgemeine Zeitung"
+},
+{
+"t": "Fast keine Modegeschäfte mehr: Wie Camp David in Oranienburg trotzdem überlebt",
+"u": "https://www.maz-online.de/lokales/oberhavel/oranienburg/fast-keine-modegeschaefte-mehr-wie-camp-david-in-oranienburg-trotzdem-ueberlebt-COCSVCR4URFIHGEC6XX3YI7CEM.html",
+"s": "Märkische Allgemeine Zeitung"
+},
+{
+"t": "Einkaufen im Oranienpark Oranienburg: Warum das Einkaufszentrum so beliebt ist",
+"u": "https://www.maz-online.de/lokales/oberhavel/oranienburg/einkaufen-im-oranienpark-oranienburg-warum-das-einkaufszentrum-so-beliebt-ist-VWPS63Z7AVGXFMD6R3Z4YHK4GQ.html",
+"s": "Märkische Allgemeine Zeitung"
+}
+],
+"n": 200
+},
+{
+"t": "καϊράτ εναντίον παναθηναϊκόσ",
+"trafico": "200+",
+"fecha": "2026-10-22T16:00+02:00",
+"noticias": [
+{
+"t": "Παναθηναϊκός: Η ενδεκάδα του τριφυλλιού για την αναμέτρηση με την Καϊράτ Αλμάτι",
+"u": "https://www.sport24.gr/football/panathinaikos-i-endekada-tou-trifilliou-gia-tin-anametrisi-me-tin-kairat-almati/",
+"s": "Sport24"
+},
+{
+"t": "Με έξι αλλαγές o Παναθηναϊκός κόντρα στην Καϊράτ",
+"u": "https://www.gazzetta.gr/football/europa-conference-league/2579631/kairat-almati-panathinaikos-me-exi-allages-kontra-stoys",
+"s": "Gazzetta.gr"
+},
+{
+"t": "Καϊράτ Αλμάτι-Παναθηναϊκός",
+"u": "https://www.sport-fm.gr/events/34310691",
+"s": "ΣΠΟΡ FM 94.6"
+}
+],
+"n": 200
+},
+{
+"t": "altın",
+"trafico": "100+",
+"fecha": "2026-10-22T16:00+02:00",
+"noticias": [
+{
+"t": "Altın fiyatları kritik seviyenin altında! Günlük kayıp yüzde 1,4'ü aştı",
+"u": "https://bigpara.hurriyet.com.tr/altin/haber/altin-fiyatlari-kritik-seviyenin-altinda-gunluk-kayip-yuzde-1i-asti_ID102274287/",
+"s": "Bigpara"
+},
+{
+"t": "Altın fiyatlarında sert düşüş: Gram, çeyrek ve Cumhuriyet altını bugün ne kadar oldu? Güncel altın fiyatları 22 Ekim 2026 Perşembe...",
+"u": "https://www.cumhuriyet.com.tr/ekonomi/altinda-fiyatlarinda-sert-dusus-gram-ceyrek-ve-cumhuriyet-altini-bugun-ne-kadar-oldu-guncel-altin-fiyatlari-22-ekim-2026-persembe-2549139",
+"s": "Cumhuriyet"
+},
+{
+"t": "22 Ekim 2026 öğleden sonra altın fiyatları: SJC, BTMC, BTMH ve DOJI altın şirketlerinin kapanış fiyatları.",
+"u": "https://www.vietnam.vn/tr/gia-vang-hom-nay-chieu-22-10-2026-chot-bang-gia-vang-sjc-btmc-btmh-doji",
+"s": "Vietnam.vn"
+}
+],
+"n": 100
+},
+{
+"t": "italien",
+"trafico": "10000+",
+"fecha": "2026-10-22T15:50+02:00",
+"noticias": [
+{
+"t": "Angela Merkel steht im Urlaub in Italien vor leeren Regalen – das ist der überraschende Grund",
+"u": "https://www.bild.de/politik/inland/angela-merkel-steht-im-urlaub-in-italien-vor-leeren-regalen-das-ist-der-ueberraschende-grund-6ad9c23b199dc15f1abdcc1d",
+"s": "BILD"
+},
+{
+"t": "Proteste gegen Dieselpreise Italiens Lkw-Fahrer und Landwirte erreichen mit ihren Blockaden ihr Ziel",
+"u": "https://www.tagesspiegel.de/internationales/dpa-italiens-lkw-fahrer-und-landwirte-erreichen-mit-ihren-blockaden-ihr-ziel-16188879.html",
+"s": "Tagesspiegel"
+},
+{
+"t": "Italien: Pasta-Krise droht – Produktion wegen Protesten von Lkw-Fahrern eingestellt",
+"u": "https://www.t-online.de/finanzen/aktuelles/wirtschaft/id_101491938/pasta-produktion-eingestellt-sueditalien-droht-knappheit-wegen-protesten.html",
+"s": "T-Online"
+}
+],
+"n": 10000
+},
+{
+"t": "hamburg hauptbahnhof",
+"trafico": "200+",
+"fecha": "2026-10-22T15:50+02:00",
+"noticias": [
+{
+"t": "Mit dem Zug von Bremen zum Hamburger Hbf? Das wird bald umständlich",
+"u": "https://www.butenunbinnen.de/nachrichten/metronom-bremen-hamburg-hauptbahnhof-bauarbeiten-harburg-zug-100.html",
+"s": "buten un binnen"
+},
+{
+"t": "Bahn-Bauarbeiten in Hamburg: Viele Züge aus dem Kreis Pinneberg fahren nur bis Altona",
+"u": "https://www.shz.de/lokales/pinneberg-schenefeld/artikel/bauarbeiten-nordbahn-zuege-aus-kreis-pinneberg-enden-in-altona-51624808",
+"s": "shz.de"
+},
+{
+"t": "DB InfraGO erneuert Weichen am Hamburger Hauptbahnhof",
+"u": "https://www.deutschebahn.com/de/presse/presse-regional/pr-hamburg-de/aktuell/presseinformationen-regional/DB-InfraGO-erneuert-Weichen-am-Hamburger-Hauptbahnhof-14071746",
+"s": "DB Konzern"
+}
+],
+"n": 200
+},
+{
+"t": "floyd mayweather jr.",
+"trafico": "200+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "Floyd Mayweather accuses Conor McGregor of stealing ‘my whole swag,’ leaves door open for rematch",
+"u": "https://www.mmafighting.com/boxing/516866/floyd-mayweather-accuses-conor-mcgregor-of-stealing-my-whole-swag-leaves-door-open-for-rematch",
+"s": "MMA Fighting"
+},
+{
+"t": "Floyd Mayweather teases potential boxing rematch with Conor McGregor",
+"u": "https://sports.yahoo.com/articles/floyd-mayweather-teases-potential-boxing-145106416.html",
+"s": "Yahoo Sports"
+},
+{
+"t": "Mayweather discloses staggering guaranteed purse for Pacquiao rematch",
+"u": "https://talksport.com/boxing/4658354/floyd-mayweather-guaranteed-purse-manny-pacquiao-rematch/",
+"s": "talkSPORT"
+}
+],
+"n": 200
+},
+{
+"t": "+48",
+"trafico": "100+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "Data drives policy for Nutt in House 48 race",
+"u": "https://www.wiscassetnewspaper.com/article/data-drives-policy-nutt-house-48-race/275693",
+"s": "Wiscasset Newspaper"
+},
+{
+"t": "Opinion | Canada Said No, Again",
+"u": "https://www.nytimes.com/2026/10/20/opinion/canada-alberta-referendum-trump.html",
+"s": "The New York Times"
+},
+{
+"t": "Alberta rejects secession referendum, chooses to remain part of Canada",
+"u": "https://www.cnn.com/2026/10/20/americas/alberta-rejects-independence-referendum-canada-intl-hnk",
+"s": "CNN"
+}
+],
+"n": 100
+},
+{
+"t": "luis diaz",
+"trafico": "2000+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "15:36 Bayern-Star Luis Diaz fällt vorerst aus",
+"u": "https://www.n-tv.de/sport/der_sport_tag/Der-Sport-Tag-am-Donnerstag-den-22-Oktober-2026-id31444795.html",
+"s": "n-tv.de"
+},
+{
+"t": "Bayern im Pech: Luis Diaz erleidet kleinen Muskelbündelriss",
+"u": "https://www.kicker.de/bayern-im-pech-luis-diaz-erleidet-kleinen-muskelbuendelriss-1264073/artikel",
+"s": "Kicker"
+},
+{
+"t": "FC Bayern: Verletzungs-Schock bei Luis Diaz – Muskelbündelriss!",
+"u": "https://www.bild.de/sport/fussball/fc-bayern-verletzungs-schock-bei-luis-diaz-muskelbuendelriss-6ada103f773b23ff64a394c0",
+"s": "BILD"
+}
+],
+"n": 2000
+},
+{
+"t": "plauen",
+"trafico": "200+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "Meine Stadt soll schöner werden!",
+"u": "https://www.plauen.de/Stadtentwicklung/Umwelt-Energie-und-Klimaschutz/Umweltprojekte/Meine-Stadt-soll-sch%C3%B6ner-werden",
+"s": "Stadt Plauen"
+},
+{
+"t": "Rettungseinsatz: Mopedauto kollidiert in Plauen mit Pkw",
+"u": "https://www.freiepresse.de/vogtland/plauen/rettungseinsatz-mopedauto-kollidiert-in-plauen-mit-pkw-artikel14454485",
+"s": "Freie Presse"
+},
+{
+"t": "Vier Leichtverletzte bei Zusammenstoß auf Hofer Straße in Plauen",
+"u": "https://www.diesachsen.de/blaulicht/vier-leichtverletzte-bei-zusammenstoss-auf-hofer-strasse-in-plauen-3193556",
+"s": "Die Sachsen News"
+}
+],
+"n": 200
+},
+{
+"t": "james franco",
+"trafico": "200+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "Ben Shapiro’s Star-Studded ‘Confession’ Film Includes James Franco, Rob Lowe And More",
+"u": "https://www.forbes.com/sites/conormurray/2026/10/13/the-daily-wire-taps-oscar-nominees-for-ben-shapiro-written-film-confession/",
+"s": "Forbes"
+},
+{
+"t": "Hollywood stars are lining up for MAGA podcaster’s movies. Do they know what they signed up for?",
+"u": "https://www.independent.co.uk/arts-entertainment/films/features/daily-wire-danny-trejo-james-franco-b3070203.html",
+"s": "The Independent"
+},
+{
+"t": "Hollywood A-Listers’ Secret MAGA Movie Project Exposed",
+"u": "https://www.yahoo.com/entertainment/movies/articles/hollywood-listers-secret-maga-movie-220846108.html",
+"s": "Yahoo"
+}
+],
+"n": 200
+}
+]
+},
+"IT": {
+"geo": "IT",
+"url": "https://trends.google.com/trending/rss?geo=IT",
+"ok": true,
+"items": [
+{
+"t": "pontecagnano faiano",
+"trafico": "200+",
+"fecha": "2026-10-22T16:00+02:00",
+"noticias": [
+{
+"t": "Protesta autotrasportatori, azienda di Pontecagnano regala insalata agli automobilisti - Salernonotizie.it",
+"u": "https://www.salernonotizie.it/2026/10/22/protesta-autotrasportatori-azienda-di-pontecagnano-regala-insalata-agli-automobilisti/",
+"s": "Salerno Notizie"
+},
+{
+"t": "CORTEO DA PONTECAGNANO, C’E’ ANCHE LANZARA",
+"u": "https://www.tvoggisalerno.it/corteo-da-pontecagnano-ce-anche-lanzara/",
+"s": "TVOGGI Salerno"
+},
+{
+"t": "Pontecagnano, negozi chiusi domani per protesta contro il caro carburante - Salernonotizie.it",
+"u": "https://www.salernonotizie.it/2026/10/21/pontecagnano-negozi-chiusi-domani-per-protesta-contro-il-caro-carburante/",
+"s": "Salerno Notizie"
+}
+],
+"n": 200
+},
+{
+"t": "softbank",
+"trafico": "100+",
+"fecha": "2026-10-22T16:00+02:00",
+"noticias": [
+{
+"t": "SoftBank Market Value Poised to Halve From Peak as AI Fears Grow",
+"u": "https://finance.yahoo.com/technology/ai/articles/softbank-market-value-poised-halve-054039247.html",
+"s": "Yahoo Finance"
+},
+{
+"t": "SoftBank Market Value Poised to Halve From Peak as AI Fears Grow",
+"u": "https://www.bloomberg.com/news/articles/2026-10-22/softbank-market-value-poised-to-halve-from-peak-as-ai-fears-grow",
+"s": "Bloomberg.com"
+},
+{
+"t": "SoftBank’s great gambler bets his reputation on OpenAI",
+"u": "https://observer.co.uk/news/business/article/softbanks-great-gambler-bets-his-reputation-on-openai",
+"s": "The Observer"
+}
+],
+"n": 100
+},
+{
+"t": "concordato preventivo",
+"trafico": "200+",
+"fecha": "2026-10-22T15:50+02:00",
+"noticias": [
+{
+"t": "Concordato preventivo biennale 2026-2027, ultimo check prima del 2 novembre: non basta guardare alla proposta",
+"u": "https://www.finanzaefisco.com/concordato-preventivo-biennale-2026-2027-ultimo-check/",
+"s": "Finanza & Fisco"
+},
+{
+"t": "CPB, ingresso di nuovi soci: in quali casi la modifica della compagine sociale non impedisce il rinnovo?",
+"u": "https://www.fiscal-focus.it/l-esperto/l-esperto/casi-fiscali/cpb-ingresso-di-nuovi-soci-in-quali-casi-la-modifica-della-compagine-sociale-non-impedisce-il-rinnovo,3,189144",
+"s": "Fiscal Focus"
+},
+{
+"t": "Ravvedimento speciale 2020-2023 per chi rinnova il CPB 2026-2027",
+"u": "https://ntplusfisco.ilsole24ore.com/art/AJaNE5pB",
+"s": "Il Sole 24 ORE"
+}
+],
+"n": 200
+},
+{
+"t": "judi dench",
+"trafico": "200+",
+"fecha": "2026-10-22T15:50+02:00",
+"noticias": [
+{
+"t": "Dame Judi Dench: I can't do a play, do a film, or read any more",
+"u": "https://www.bbc.com/news/articles/c6ly09v09lnjo",
+"s": "BBC"
+},
+{
+"t": "Judi Dench says sight loss means she can no longer perform but she is still ‘besotted by’ Shakespeare’s sonnets",
+"u": "https://www.theguardian.com/culture/2026/oct/22/judi-dench-sight-loss-macular-degeneration-shakespeares-sonnets",
+"s": "The Guardian"
+},
+{
+"t": "Good to know 📆",
+"u": "https://www.facebook.com/ManchesterEveningNews/posts/good-to-know-/1627404126088613/",
+"s": "Facebook"
+}
+],
+"n": 200
+},
+{
+"t": "sciopero treni 30 ottobre 2026",
+"trafico": "1000+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "I lavoratori portuali non lavorano per la guerra: 30 ottobre seconda Giornata internazionale di azione. 100 porti, 17 Paesi e 4 continenti",
+"u": "https://www.usb.it/leggi-notizia/i-lavoratori-portuali-non-lavorano-per-la-guerra-30-ottobre-seconda-giornata-internazionale-di-azione-100-porti-17-paesi-e-4-continenti-1802.html",
+"s": "Unione Sindacale di Base"
+},
+{
+"t": "Sciopero contro il carovita, Usb chiede salari più alti e stop al riarmo",
+"u": "https://www.padovaoggi.it/attualita/padova-sciopero-generale-usb-22-ottobre-2026.html",
+"s": "PadovaOggi"
+},
+{
+"t": "Studenti mobilitati, il rischio è di passare dalle occupazioni alle proteste in piazza",
+"u": "https://roma.corriere.it/notizie/cronaca/26_ottobre_22/studenti-mobilitati-il-rischio-e-di-passare-dalle-occupazioni-alle-proteste-in-piazza-3a9602e3-aab3-4bde-a5ae-acc99384axlk.shtml",
+"s": "Corriere Roma"
+}
+],
+"n": 1000
+},
+{
+"t": "oceano pacifico cambia colore",
+"trafico": "5000+",
+"fecha": "2026-10-22T15:20+02:00",
+"noticias": [
+{
+"t": "Gli oceani cambiano colore, il Pacifico diventa più blu. Allarme: Super El Niño senza precedenti",
+"u": "https://www.rainews.it/articoli/2026/10/gli-oceani-cambiano-colore-il-pacifico-diventa-piu-blu-allarme-super-el-nio-senza-precedenti-3aa5f2a4-910e-4b73-8071-a7ae2f17e74c.html",
+"s": "RaiNews"
+},
+{
+"t": "El Niño verso un'intensità senza precedenti: Pacifico tropicale fino a 3,8°C sopra la media, aumenta il rischio di siccità e alluvioni",
+"u": "https://www.corriere.it/pianeta2030/26_ottobre_22/el-nino-verso-un-intensita-senza-precedenti-pacifico-tropicale-fino-a-3-8-c-sopra-la-media-aumenta-il-rischio-di-siccita-e-e539a2cd-478a-4c1e-b2fe-0a9568074xlk.shtml",
+"s": "Corriere della Sera"
+},
+{
+"t": "El Niño, 5 modi in cui sta influenzando i fenomeni meteo e il maltempo nel mondo",
+"u": "https://tg24.sky.it/mondo/2026/10/21/el-nino-meteo",
+"s": "Sky TG24"
+}
+],
+"n": 5000
+},
+{
+"t": "epidemia",
+"trafico": "500+",
+"fecha": "2026-10-22T15:20+02:00",
+"noticias": [
+{
+"t": "La Nigeria ha segnalato il primo caso di ebola dopo 12 anni: è legato all'epidemia partita dalla Repubblica Democratica del Congo",
+"u": "https://www.ilpost.it/2026/10/20/nigeria-primo-caso-ebola-epidemia-repubblica-democratica-del-congo/",
+"s": "Il Post"
+},
+{
+"t": "Ebola, il virus si diffonde in Africa: oltre 9.600 contagi e 4.600 morti, primo caso in Nigeria dopo 12 anni",
+"u": "https://www.mondosanita.it/news/europa---mondo/112557/ebola-il-virus-si-diffonde-in-africa-oltre-9-600-contagi-e-4-600-morti-primo-caso-in-nigeria-dopo-12-anni.html",
+"s": "Mondosanità"
+},
+{
+"t": "Salgono a 9 i contagi da virus ebola in Kenya, un solo focolaio",
+"u": "https://www.ansa.it/canale_saluteebenessere/notizie/medicina/2026/10/20/salgono-a-9-i-contagi-da-virus-ebola-in-kenya-un-solo-focolaio_accf8caa-046d-4137-bb3d-d5156b8a0246.html",
+"s": "ANSA"
+}
+],
+"n": 500
+},
+{
+"t": "auditel ieri sera",
+"trafico": "200+",
+"fecha": "2026-10-22T15:20+02:00",
+"noticias": [
+{
+"t": "Ascolti TV ieri lunedì 19 ottobre, Teresa Battaglia ha vinto contro Gf Vip e Lo Stato delle Cose: dati Auditel",
+"u": "https://www.virgilio.it/notizie/ascolti-tv-ieri-lunedi-19-ottobre-teresa-battaglia-ha-vinto-contro-gf-vip-e-lo-stato-delle-cose-dati-auditel-1790473",
+"s": "Virgilio"
+},
+{
+"t": "Stasera in tv: i film da non perdere di lunedì 19 ottobre 2026",
+"u": "https://www.mymovies.it/cinemanews/2026/197280/",
+"s": "MYmovies"
+},
+{
+"t": "Ascolti tv 19 ottobre, Rai1 con 'Figlia della Cenere - I casi di Teresa Battaglia' vince il prime time con il 21% di share",
+"u": "https://www.cremonaoggi.it/2026/10/20/ascolti-tv-19-ottobre-rai1-con-figlia-della-cenere-i-casi-di-teresa-battaglia-vince-il-prime-time-con-il-21-di-share/",
+"s": "Cremonaoggi"
+}
+],
+"n": 200
+},
+{
+"t": "barclays",
+"trafico": "200+",
+"fecha": "2026-10-22T15:20+02:00",
+"noticias": [
+{
+"t": "Barclays cutting 5,000 jobs as it increases reliance on AI",
+"u": "https://www.bbc.com/news/articles/cm4g1p347qgxo",
+"s": "BBC"
+},
+{
+"t": "Barclays to cut 5,000 jobs as bank steps up AI adoption",
+"u": "https://www.ft.com/content/e83591cd-13d4-4358-aee9-c500930bfd36?syn-25a6b1a6=1",
+"s": "Financial Times"
+},
+{
+"t": "Barclays to slash 5,000 jobs in AI efficiency push",
+"u": "https://www.cnbc.com/2026/10/22/barclays-ai-jobs-cuts.html",
+"s": "CNBC"
+}
+],
+"n": 200
+},
+{
+"t": "assassino",
+"trafico": "200+",
+"fecha": "2026-10-22T15:10+02:00",
+"noticias": [
+{
+"t": "Omicidio di Imbersago: una lunga scia di crimini",
+"u": "https://www.laprovinciaunicatv.it/stories/lecco/merate-e-casatese/omicidio-di-imbersago-una-lunga-scia-di-crimini-o_3978141_11/",
+"s": "La Provincia Unica Tv"
+},
+{
+"t": "Omicidio a Imbersago, uomo di 34 anni ucciso a coltellate nella notte: viveva per strada, i residenti hanno sentito urla in arabo",
+"u": "https://milano.corriere.it/notizie/lombardia/26_ottobre_21/omicidio-a-imbersago-uomo-di-34-anni-ucciso-a-coltellate-nella-notte-viveva-per-strada-i-residenti-hanno-sentito-urla-in-arabo-077efdbb-84db-4712-8da1-ee84b36d6xlk.shtml",
+"s": "Corriere Milano"
+},
+{
+"t": "La paura dei residenti: \"Qui eravamo tranquilli. Poi la pace è finita\"",
+"u": "https://www.ilgiorno.it/lecco/cronaca/la-paura-dei-residenti-qui-17111934",
+"s": "Il Giorno"
+}
+],
+"n": 200
+}
+]
+},
+"PT": {
+"geo": "PT",
+"url": "https://trends.google.com/trending/rss?geo=PT",
+"ok": true,
+"items": [
+{
+"t": "noemia costa",
+"trafico": "1000+",
+"fecha": "2026-10-22T15:50+02:00",
+"noticias": [
+{
+"t": "Noémia Costa lamenta morte: \"Partiste cedo, muito cedo. Amo-te\"",
+"u": "https://selfie.iol.pt/famosos/noemia-costa/noemia-costa-lamenta-morte-partiste-cedo-muito-cedo-amo-te/20261021/6ad892ed0cf2e5e7f37ca745",
+"s": "SELFIE"
+},
+{
+"t": "Noémia Costa presta homenagem a pessoa especial mais de um ano após a morte: \"As saudades são imensas e duras\"",
+"u": "https://sic.pt/sic-caras/famosos/2026-10-21-noemia-costa-presta-homenagem-a-pessoa-especial-mais-de-um-ano-apos-a-morte-as-saudades-sao-imensas-e-duras-725a4b06",
+"s": "SIC"
+},
+{
+"t": "Noémia Costa recorda o irmão mais de um ano após a morte: “As saudades são imensas e duras”",
+"u": "https://onfm.pt/2026/10/21/noemia-costa-recorda-o-irmao-mais-de-um-ano-apos-a-morte-as-saudades-sao-imensas-e-duras/",
+"s": "On fm"
+}
+],
+"n": 1000
+},
+{
+"t": "ataque de tubarão",
+"trafico": "200+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "Mulher morre atacada por tubarão numa praia da África do Sul",
+"u": "https://www.dnoticias.pt/2026/10/20/509733-mulher-morre-atacada-por-tubarao-numa-praia-da-africa-do-sul/",
+"s": "dnoticias.pt"
+},
+{
+"t": "Nadadora morre em ataque de tubarão mesmo usando dispositivo repelente contra predadores",
+"u": "https://extra.globo.com/blogs/page-not-found/post/2026/10/nadadora-morre-em-ataque-de-tubarao-mesmo-usando-dispositivo-repelente-contra-predadores.ghtml",
+"s": "Extra online"
+},
+{
+"t": "Mulher morre atacada por tubarão em praia da África do Sul",
+"u": "https://cnnportugal.iol.pt/africa-do-sul/tubarao/mulher-morre-atacada-por-tubarao-em-praia-da-africa-do-sul/20261020/6ad75903d34e53c759c77345",
+"s": "CNN Portugal"
+}
+],
+"n": 200
+},
+{
+"t": "acidente de trabalho",
+"trafico": "200+",
+"fecha": "2026-10-22T15:20+02:00",
+"noticias": [
+{
+"t": "Acidente de trabalho na Rua Latino Coelho",
+"u": "https://www.dnoticias.pt/2026/10/22/509967-acidente-de-trabalho-na-rua-latino-coelho/",
+"s": "dnoticias.pt"
+},
+{
+"t": "Acidente de trabalho leva homem ao hospital",
+"u": "https://www.jm-madeira.pt/not%C3%ADcias/ocorr-ncias/30007628/acidente-de-trabalho-leva-homem-ao-hospital.html",
+"s": "JM Madeira"
+},
+{
+"t": "Sofia Rothes Barbosa alerta para a possibilidade de dupla indemnização em acidentes a caminho do trabalho",
+"u": "https://www.ecija.com/adcecija/sofia-rothes-barbosa-alerta-para-a-possibilidade-de-dupla-indemnizacao-em-acidentes-a-caminho-do-trabalho/",
+"s": "Antas da Cunha Ecija"
+}
+],
+"n": 200
+},
+{
+"t": "pagamento",
+"trafico": "2000+",
+"fecha": "2026-10-22T14:50+02:00",
+"noticias": [
+{
+"t": "Il Portogallo disciplina il pagamento per l'accesso dei cittadini stranieri non residenti ai servizi sanitari pubblici",
+"u": "https://www.theportugalnews.com/it/notizia/2026-10-22/il-portogallo-disciplina-il-pagamento-da-parte-degli-stranieri-non-residenti-per-laccesso-ai-servizi-sanitari-pubblici/1104348",
+"s": "The Portugal News"
+},
+{
+"t": "Datas de Pagamento das Prestações Sociais – Novembro 2026",
+"u": "https://economiafinancas.com/2026/datas-de-pagamento-das-prestacoes-sociais-novembro-2026/",
+"s": "Economia e Finanças"
+},
+{
+"t": "Novembro traz pagamentos da Segurança Social para os portugueses que reúnem estes requisitos",
+"u": "https://www.magazine-hd.com/apps/wp/novembro-pagamentos-seguranca-social-portugueses-requisitos/",
+"s": "Magazine.HD"
+}
+],
+"n": 2000
+},
+{
+"t": "fogo",
+"trafico": "200+",
+"fecha": "2026-10-22T14:50+02:00",
+"noticias": [
+{
+"t": "Ameaçou companheira com arma de fogo e ficou em prisão preventiva",
+"u": "https://www.jn.pt/justica/artigo/ameacou-companheira-com-arma-de-fogo-e-ficou-em-prisao-preventiva/18139807",
+"s": "Jornal de Notícias"
+},
+{
+"t": "Homem detido por tentar matar antigo familiar com tiro de caçadeira em Viseu",
+"u": "https://www.jn.pt/justica/artigo/homem-detido-por-tentar-matar-antigo-familiar-com-tiro-de-cacadeira-em-viseu/18139780",
+"s": "Jornal de Notícias"
+},
+{
+"t": "Homem fica em prisão preventiva por suspeita de tentativa de homicídio com caçadeira",
+"u": "https://sol.iol.pt/sociedade/noticias/homem-fica-em-prisao-preventiva-por-suspeita-de-tentativa-de-homicidio-com-cacadeira/20261022/6ada0c930cf23b0ed4fdf151",
+"s": "Jornal SOL"
+}
+],
+"n": 200
+},
+{
+"t": "destino maior",
+"trafico": "200+",
+"fecha": "2026-10-22T14:40+02:00",
+"noticias": [
+{
+"t": "Traição descoberta em \"Destino Maior\"",
+"u": "https://www.atelevisao.com/sic/traicao-descoberta-em-destino-maior/",
+"s": "A Televisão"
+},
+{
+"t": "“Destino Maior” não dá hipóteses ao Especial do “Big Brother: All Stars”",
+"u": "https://zapping-tv.com/destino-maior-nao-da-hipoteses-ao-especial-do-big-brother-all-stars/",
+"s": "Zapping-TV"
+},
+{
+"t": "Audiências: «The Brain» cai para mínimo da temporada e fica abaixo de «Big Brother All Stars»",
+"u": "https://infocul.pt/audiencias-the-brain-cai-para-minimo-da-temporada-e-fica-abaixo-de-big-brother-all-stars/",
+"s": "Infocul"
+}
+],
+"n": 200
+},
+{
+"t": "decreto-lei",
+"trafico": "2000+",
+"fecha": "2026-10-22T14:20+02:00",
+"noticias": [
+{
+"t": "Acampadas: decreto-lei de 1974 divide constitucionalistas, proporcionalidade limita ação policial",
+"u": "https://www.dn.pt/sociedade/acampadas-decreto-lei-de-1974-divide-constitucionalistas-proporcionalidade-limita-ao-policial",
+"s": "Diário de Notícias"
+},
+{
+"t": "As “acampadas” pela habitação são legais? E a actuação da polícia? Uma jurista responde",
+"u": "https://www.publico.pt/2026/10/22/video/as-acampadas-pela-habitacao-legais-actuacao-policia-jurista-responde-123205?ref=hp&cx=ultimas_1",
+"s": "Público"
+},
+{
+"t": "A Constituição não fecha à meia-noite e meia",
+"u": "https://expresso.pt/opiniao/2026-10-22-a-constituicao-nao-fecha-a-meia-noite-e-meia-8912eee1",
+"s": "Expresso"
+}
+],
+"n": 2000
+},
+{
+"t": "frente fria",
+"trafico": "2000+",
+"fecha": "2026-10-22T14:20+02:00",
+"noticias": [
+{
+"t": "Frente fria pode trazer chuva, ventos e raios ao Rio no domingo de eleição",
+"u": "https://g1.globo.com/rj/rio-de-janeiro/eleicoes/2026/noticia/2026/10/22/frente-fria-pode-trazer-chuva-ventos-e-raios-ao-rio-no-domingo-de-eleicao.ghtml",
+"s": "G1"
+},
+{
+"t": "Ciclone e calor: como fica o tempo no fim de semana de segundo turno",
+"u": "https://www.cnnbrasil.com.br/nacional/brasil/ciclone-e-calor-como-fica-o-tempo-no-fim-de-semana-de-segundo-turno/",
+"s": "CNN Brasil"
+},
+{
+"t": "Frente fria deve intensificar chuvas e agitação marítima em Ubatuba",
+"u": "https://www.ubatuba.sp.gov.br/destaques/frentefria22out/",
+"s": "Prefeitura Municipal de Ubatuba"
+}
+],
+"n": 2000
+},
+{
+"t": "petróleo",
+"trafico": "500+",
+"fecha": "2026-10-22T14:20+02:00",
+"noticias": [
+{
+"t": "🚨 Nasdaq cae 1,6% tras resultados de Meta que no convencen al mercado | PREMERCADO",
+"u": "https://www.xtb.com/cl/analisis-y-noticias/analisis-de-mercado/nasdaq-cae-1-6-tras-resultados-de-meta-que-no-convencen-al-mercado-premercado",
+"s": "XTB.com"
+},
+{
+"t": "Acciones caen por resultados de tecnológicas y alza del petróleo",
+"u": "https://www.bloomberg.com/news/articles/2026-10-22/acciones-caen-por-resultados-de-tecnologicas-y-alza-del-petroleo",
+"s": "Bloomberg.com"
+},
+{
+"t": "Las tensiones en Oriente Medio y el aumento de los precios del petróleo arrastran a la baja a los futuros de las acciones estadounidenses antes de la apertura del mercado.",
+"u": "https://es.finance.yahoo.com/noticias/tensiones-oriente-medio-aumento-precios-115958298.html",
+"s": "Yahoo"
+}
+],
+"n": 500
+},
+{
+"t": "england vs sri lanka",
+"trafico": "100+",
+"fecha": "2026-10-22T14:00+02:00",
+"noticias": [
+{
+"t": "Sri Lanka vs England LIVE: ODI tri-series, Rawalpindi - cricket score, radio commentary & updates",
+"u": "https://www.bbc.com/sport/cricket/live/c6wyzx7wlqryt",
+"s": "BBC"
+},
+{
+"t": "England v Sri Lanka: Brook makes history in men’s tri-series cricket ODI – live",
+"u": "https://www.theguardian.com/sport/live/2026/oct/22/sri-lanka-v-england-tri-series-cricket-one-day-international-live",
+"s": "The Guardian"
+},
+{
+"t": "SL vs ENG Tri-Series: Kusal Mendis Wins Toss And Opts To Bowl First In 3rd ODI At Rawalpindi Cricket Stadium",
+"u": "https://www.sportscapemagazine.com/blog/sl-vs-eng-tri-series-kusal-mendis-wins-toss-and-opts-to-bowl-first-in-3rd-odi-at-rawalpindi-cricket-stadium",
+"s": "Sportscape Magazine"
+}
+],
+"n": 100
+}
+]
+},
+"MX": {
+"geo": "MX",
+"url": "https://trends.google.com/trending/rss?geo=MX",
+"ok": true,
+"items": [
+{
+"t": "puente",
+"trafico": "100+",
+"fecha": "2026-10-22T16:00+02:00",
+"noticias": [
+{
+"t": "Óscar Puente admite que las elecciones pueden alterar el traspaso de la R1 de Rodalies a la Generalitat",
+"u": "https://elpais.com/espana/catalunya/2026-10-22/puente-admite-que-las-elecciones-pueden-alterar-el-traspaso-de-la-r1-de-rodalies-a-la-generalitat.html",
+"s": "EL PAÍS"
+},
+{
+"t": "La Generalitat sellará la semana que viene el contrato para que Renfe siga operando en Rodalies",
+"u": "https://www.lavanguardia.com/politica/20261022/11665360/generalitat-sellara-semana-viene-contrato-renfe-siga-operando-rodalies.html",
+"s": "La Vanguardia"
+},
+{
+"t": "Illa y Puente celebran que las inversiones en Rodalies han protegido la infraestructura de los temporales",
+"u": "https://cronicaglobal.elespanol.com/politica/20261022/illa-puente-inversiones-rodalies-protegido-infraestructura-temporales/1003742805093_0.html",
+"s": "Crónica Global"
+}
+],
+"n": 100
+},
+{
+"t": "judi dench",
+"trafico": "200+",
+"fecha": "2026-10-22T15:50+02:00",
+"noticias": [
+{
+"t": "Dame Judi Dench: I can't do a play, do a film, or read any more",
+"u": "https://www.bbc.com/news/articles/c6ly09v09lnjo",
+"s": "BBC"
+},
+{
+"t": "Good to know 📆",
+"u": "https://www.facebook.com/ManchesterEveningNews/posts/good-to-know-/1627404126088613/",
+"s": "Facebook"
+},
+{
+"t": "Amber Burnip turned her life around after illness",
+"u": "https://www.bbc.co.uk/news/videos/cqj9k78v323xo",
+"s": "BBC"
+}
+],
+"n": 200
+},
+{
+"t": "bbc news mundo",
+"trafico": "200+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "¿Murió Kim Jong Un? Esto Pasó Tras el Supuesto Reporte de Coma del Presidente de Corea del Norte",
+"u": "https://www.nmas.com.mx/internacional/murio-kim-jong-un-que-paso-estado-salud-coma-presidente-corea-del-norte/",
+"s": "N+"
+},
+{
+"t": "Kim Jong-un reaparece tras desatarse rumores de su muerte",
+"u": "https://www.informador.mx/internacional/kim-jong-un-reaparece-tras-desatarse-rumores-de-su-muerte-20261020-0154.html",
+"s": "El Informador"
+},
+{
+"t": "Corea del Norte comparte prueba de vida tras rumores de la muerte de Kim Jong-un",
+"u": "https://www.expreso.com.mx/noticias/mundo/foto-corea-del-norte-desmiente-muerte-de-lider-kim-jong-un/266778",
+"s": "Expreso"
+}
+],
+"n": 200
+},
+{
+"t": "playa miramar",
+"trafico": "100+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "Turista de CDMX murió ahogado en playa de Ciudad Madero, Tamaulipas",
+"u": "https://www.jornada.com.mx/noticia/2026/10/21/estados/turista-de-cdmx-murio-ahogado-en-playa-de-ciudad-madero-tamaulipas",
+"s": "La Jornada"
+},
+{
+"t": "Turista muere ahogado en playa Miramar; había bandera negra por alto oleaje",
+"u": "https://www.milenio.com/estados/turista-muere-ahogado-playa-miramar-ciudad-madero",
+"s": "Milenio"
+},
+{
+"t": "Fallece turista de la CDMX en playa Miramar: guardavidas efectuaron maniobras de reanimación",
+"u": "https://oem.com.mx/elsoldetampico/local/fallece-turista-de-la-cdmx-en-playa-miramar-guardavidas-efectuaron-maniobras-de-reanimacion-32724814",
+"s": "El Sol de México"
+}
+],
+"n": 100
+},
+{
+"t": "leonardo aguilar",
+"trafico": "200+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "Pepe Aguilar responde a las críticas por el concierto vacío de Leonardo Aguilar: “El apellido no canta”",
+"u": "https://www.infobae.com/mexico/2026/10/22/pepe-aguilar-responde-a-las-criticas-por-el-concierto-vacio-de-leonardo-aguilar-el-apellido-no-canta/",
+"s": "Infobae"
+},
+{
+"t": "Leonardo Aguilar habla de las consecuencias del escándalo Ángela-Nodal: \"Prefiero que hablen mal de mi\"",
+"u": "https://www.eluniversal.com.mx/espectaculos/leonardo-aguilar-habla-de-las-consecuencias-del-escandalo-angela-nodal-prefiero-que-hablen-mal-de-mi/",
+"s": "El Universal"
+},
+{
+"t": "¿Ya no vende boletos? Todos los conciertos de Leonardo Aguilar que se reportaron como \"vacíos\"",
+"u": "https://quintanaroo.heraldodemexico.com.mx/entretenimiento/2026/10/21/ya-no-vende-boletos-todos-los-conciertos-de-leonardo-aguilar-que-se-reportaron-como-vacios-17507.html",
+"s": "El Heraldo de México"
+}
+],
+"n": 200
+},
+{
+"t": "daniil medvédev",
+"trafico": "200+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "¡Sorpresa en Shanghái! Rafael Jódar deja fuera Medvedev y llega a su primera final de Masters",
+"u": "https://oem.com.mx/esto/tenis/rafael-jodar-elimina-a-daniil-medvedev-del-masters-1000-de-shanghai-y-llega-a-su-primera-final-32646737",
+"s": "El Sol de México"
+},
+{
+"t": "Alex Davidovich despacha a Jodar",
+"u": "https://pulsoslp.com.mx/meta/alex-davidovich-despacha-a-jodar/2097229",
+"s": "Pulso Diario San Luis"
+},
+{
+"t": "España completa corona histórica de Másters de tenis",
+"u": "https://www.eleconomista.com.mx/deportes/espana-completa-corona-historica-masters-tenis-20261018-839206.html",
+"s": "El Economista"
+}
+],
+"n": 200
+},
+{
+"t": "shamonda",
+"trafico": "200+",
+"fecha": "2026-10-22T15:20+02:00",
+"noticias": [
+{
+"t": "France reports first human case of livestock virus Shamonda after patient dies",
+"u": "https://www.reuters.com/business/healthcare-pharmaceuticals/france-reports-first-human-shamonda-virus-case-2026-10-22/",
+"s": "Reuters"
+},
+{
+"t": "France Finds First-Ever Case of Cattle Virus Shamonda in Human",
+"u": "https://www.bloomberg.com/news/articles/2026-10-22/france-finds-first-ever-case-of-cattle-virus-shamonda-in-human",
+"s": "Bloomberg.com"
+},
+{
+"t": "France confirms first Shamonda livestock virus infection in a human, say no danger to general population",
+"u": "https://www.dw.com/en/france-confirms-first-shamonda-virus-infection-in-a-human-death-of-severely-immunocompromised-individual/a-79731991",
+"s": "DW.com"
+}
+],
+"n": 200
+},
+{
+"t": "evacuación",
+"trafico": "1000+",
+"fecha": "2026-10-22T14:50+02:00",
+"noticias": [
+{
+"t": "Simulacro de evacuación por incendio en el Hospital de Guadalajara",
+"u": "https://www.cmmedia.es/noticias/castilla-la-mancha/guadalajara/simulacro-evacuacion-incendio-hospital-guadalajara.html",
+"s": "Castilla-La Mancha Media - CMM"
+},
+{
+"t": "El Hospital de Guadalajara lleva a cabo un simulacro de incendio y evacuación",
+"u": "https://eldecanodeguadalajara.com/index.php/news/20990/el-hospital-de-guadalajara-lleva-a-cabo-un-simulacro-de-incendio-y-evacuaci%C3%B3n/",
+"s": "EL DECANO DE GUADALAJARA"
+},
+{
+"t": "El Hospital de Guadalajara simula un incendio con víctimas y evacuación",
+"u": "https://nuevaalcarria.com/articulos/el-hospital-de-guadalajara-simula-un-incendio-con-victimas-y-evacuacion",
+"s": "Nueva Alcarria.com"
+}
+],
+"n": 1000
+},
+{
+"t": "mark zuckerberg",
+"trafico": "200+",
+"fecha": "2026-10-22T14:30+02:00",
+"noticias": [
+{
+"t": "Meta strikes deal with Zuckerberg to help him foot billionaire tax bill",
+"u": "https://www.theguardian.com/technology/2026/oct/22/meta-mark-zuckerberg-california-wealth-tax",
+"s": "The Guardian"
+},
+{
+"t": "Mark Zuckerberg Threatened to Leave California. Meta’s Board Cut Him a Deal.",
+"u": "https://www.wsj.com/business/mark-zuckerberg-discussed-leaving-california-over-wealth-tax-21b0b522",
+"s": "WSJ"
+},
+{
+"t": "How Mark Zuckerberg Pushed Meta to Shield Him From California’s Proposed Wealth Tax",
+"u": "https://www.nytimes.com/2026/10/21/technology/mark-zuckerberg-meta-california-wealth-tax.html",
+"s": "The New York Times"
+}
+],
+"n": 200
+},
+{
+"t": "elena rybakina",
+"trafico": "200+",
+"fecha": "2026-10-22T14:30+02:00",
+"noticias": [
+{
+"t": "Rybakina advances to face Kawa in Ningbo quarters after Polina Kudermetova retires",
+"u": "https://www.wtatennis.com/news/4597263/rybakina-advances-to-face-kawa-in-ningbo-quarters-after-polina-kudermetova-retires",
+"s": "WTA Tennis"
+},
+{
+"t": "Elena Rybakina starts 2026 Ningbo Open with victory",
+"u": "https://kz.kursiv.media/en/2026-10-22/engk-nknk-elena-rybakina-starts-2026-ningbo-open-with-victory/",
+"s": "Kursiv Media"
+},
+{
+"t": "Rybakina reconnects with the taste of victory",
+"u": "https://www.puntodebreak.com/en/2026/10/22/rybakina-reconnects-with-the-taste-of-victory",
+"s": "Puntodebreak"
+}
+],
+"n": 200
+}
+]
+},
+"AR": {
+"geo": "AR",
+"url": "https://trends.google.com/trending/rss?geo=AR",
+"ok": true,
+"items": [
+{
+"t": "crecimiento económico",
+"trafico": "200+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "Ranking de crecimiento económico: qué lugar ocupará la Argentina en 2026, según el FMI",
+"u": "https://www.infobae.com/economia/2026/10/22/ranking-de-crecimiento-economico-que-lugar-ocupara-la-argentina-en-2026-segun-el-fmi/",
+"s": "Infobae"
+},
+{
+"t": "El Fondo proyecta para el país una mejora en la inversión y el consumo",
+"u": "https://www.eldia.com/politica-y-economia/el-fondo-proyecta-para-el-pais-una-mejora-en-la-inversion-y-el-consumo-politica-y-economia_1792210803",
+"s": "Diario El Día de La Plata"
+},
+{
+"t": "El FMI respaldó el recorte de subsidios del gobierno de Milei",
+"u": "https://www.lanueva.com/nota/2026-10-16-10-0-0-el-fmi-respaldo-el-recorte-de-subsidios-del-gobierno-de-milei",
+"s": "La Nueva Provincia"
+}
+],
+"n": 200
+},
+{
+"t": "tenis",
+"trafico": "200+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "El curioso saque de la bielorrusa Aliaksandra Sasnovich y la mirada de un experto: “Es sólo una cuestión estética”",
+"u": "https://www.lanacion.com.ar/deportes/tenis/el-curioso-saque-de-la-bielorrusa-aliaksandra-sasnovich-y-la-mirada-de-un-experto-es-solo-una-nid21102026/",
+"s": "La Nación"
+},
+{
+"t": "El extraño método de saque de una figura del tenis que abrió el debate sobre sus movimientos: “Cumple con muchos requisitos excelentes”",
+"u": "https://www.infobae.com/deportes/2026/10/21/el-extrano-metodo-de-saque-de-una-figura-del-tenis-que-abrio-el-debate-sobre-sus-movimientos-cumple-con-muchos-requisitos-excelentes/",
+"s": "Infobae"
+},
+{
+"t": "Aliaksandra Sasnovich pule su saque sorpresivo en la WTA",
+"u": "https://www.excelsior.com.mx/deportes/aliaksandra-sasnovich-pule-saque-sorpresivo-wta",
+"s": "Excélsior"
+}
+],
+"n": 200
+},
+{
+"t": "mochila de emergencia",
+"trafico": "100+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "Glaciares, aluviones y sismos: especialistas de la UNSJ radiografiaron los riesgos de El Niño",
+"u": "https://www.diariodecuyo.com.ar/suplemento-verde/glaciares-aluviones-y-sismos-especialistas-la-unsj-radiografiaron-los-riesgos-el-nino-n6586370",
+"s": "Diario de Cuyo"
+},
+{
+"t": "El Niño aprieta en San Juan: alertan por crecidas y aluviones para noviembre y diciembre",
+"u": "https://delsurdiario.com/provinciales/el-nino-aprieta-en-san-juan-alertan-por-crecidas-y-aluviones-para-noviembre-y-diciembre",
+"s": "Del Sur Diario"
+},
+{
+"t": "El “Superniño” en San Juan: la nieve se acumula y demora en derretirse por la falta de olas de calor",
+"u": "https://www.canal13sanjuan.com/san-juan/el--supernino--en-san-juan--la-nieve-se-acumula-y-demora-en-derretirse-por-la-falta-de-olas-de-calor_a6ad9089fda877e356ce3659b",
+"s": "Diario 13 San Juan"
+}
+],
+"n": 100
+},
+{
+"t": "virus shamonda",
+"trafico": "100+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "Detectaron por primera vez en humanos una infección con el virus shamonda, que se expande entre el ganado en Europa",
+"u": "https://www.clarin.com/mundo/detectaron-primera-vez-humanos-infeccion-virus-shamonda-expande-ganado-europa_0_BIMxenF07m.html",
+"s": "Clarin.com"
+},
+{
+"t": "Murió en Francia la primera persona infectada por el virus Shamonda: qué es y cómo se contagia",
+"u": "https://tn.com.ar/salud/noticias/2026/10/22/murio-en-francia-la-primera-persona-infectada-por-el-virus-shamonda-que-es-y-como-se-contagia/",
+"s": "TN"
+},
+{
+"t": "Alerta sanitaria global por el virus Shamonda: qué es el patógeno ganadero y qué se sabe del primer caso humano fallecido en Francia",
+"u": "https://www.diariodecuyo.com.ar/salud/alerta-sanitaria-global-el-virus-shamonda-que-es-el-patogeno-ganadero-y-que-se-sabe-del-primer-caso-humano-fallecido-francia-n6586545",
+"s": "Diario de Cuyo"
+}
+],
+"n": 100
+},
+{
+"t": "virus",
+"trafico": "200+",
+"fecha": "2026-10-22T15:10+02:00",
+"noticias": [
+{
+"t": "Health authorities race to investigate first human death linked to rare cattle virus",
+"u": "https://www.telegraph.co.uk/global-health/science-and-disease/french-man-dies-first-human-to-contract-shamonda-virus/",
+"s": "The Telegraph"
+},
+{
+"t": "Patient Dies After Cow Virus Jumps to Human for First Time",
+"u": "https://www.thedailybeast.com/patient-dies-after-cow-virus-jumps-to-human-for-first-time",
+"s": "The Daily Beast"
+},
+{
+"t": "Deadly virus spread by biting insects claims first known human life",
+"u": "https://uk.news.yahoo.com/deadly-virus-spread-biting-insects-105632465.html",
+"s": "Yahoo News UK"
+}
+],
+"n": 200
+},
+{
+"t": "el hoyo",
+"trafico": "200+",
+"fecha": "2026-10-22T15:10+02:00",
+"noticias": [
+{
+"t": "Tristeza en El Hoyo por la muerte de una joven funcionaria",
+"u": "https://www.diariojornada.com.ar/425672/politica/tristeza_en_el_hoyo_por_la_muerte_de_una_joven_funcionaria",
+"s": "Diario Jornada"
+},
+{
+"t": "El Hoyo decretó asueto por la muerte de una trabajadora municipal",
+"u": "https://radio3cadenapatagonia.com.ar/el-hoyo-decreto-asueto-por-la-muerte-de-una-trabajadora-municipal/",
+"s": "Radio 3 Cadena Patagonia"
+},
+{
+"t": "Asueto por duelo y mensajes de despedida tras la muerte de una trabajadora municipal en El Hoyo",
+"u": "https://www.red43.com.ar/nota/2026-10-22-7-46-35-asueto-por-duelo-y-mensajes-de-despedida-tras-la-muerte-de-una-trabajadora-municipal-en-el-hoyo",
+"s": "Red43"
+}
+],
+"n": 200
+},
+{
+"t": "daniil medvédev",
+"trafico": "200+",
+"fecha": "2026-10-22T15:10+02:00",
+"noticias": [
+{
+"t": "Davidovich Fokina conquista Shanghái con el ajedrez como clave de su éxito",
+"u": "https://elecos.com.ar/alejandro-davidovich-fokina-conquista-el-masters-1000-de-shanghai-y-alcanza-su-mejor-ranking",
+"s": "Ecos Diarios Necochea"
+},
+{
+"t": "Rafa Jódar gana a Medvedev y habrá final española en Shanghái ante Davidovich",
+"u": "https://www.tycsports.com/tenis/rafa-jodar-gana-a-medvedev-y-habra-final-espanola-en-shanghai-ante-davidovich-id766945.html",
+"s": "TyC Sports"
+},
+{
+"t": "【LIVESTREAMS】FREE] Bears vs Falcons 2026 𝐋𝐈𝐕𝐄 𝐒𝐭𝐫𝐞𝐚𝐦𝐬 𝙵𝚛𝚎𝚎 𝖮𝗇𝗅𝗂𝗇𝖾 18 October 2026",
+"u": "https://www.uco.es/scai/visita_virtual/SCAI%20UCO.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2hhcHB5aHVicy5ubC92b3MvbmV3L2EueG1sIi8+PC9rcnBhbm8+&id=video-bears-vs-falcons-2026-liv-today-ushd_87",
+"s": "Universidad de Córdoba (UCO)"
+}
+],
+"n": 200
+},
+{
+"t": "sucesos",
+"trafico": "200+",
+"fecha": "2026-10-22T15:00+02:00",
+"noticias": [
+{
+"t": "Siniestro vial. Murió un motociclista en La Cumbre",
+"u": "https://www.lavoz.com.ar/sucesos/murio-motociclista-cumbre_0_tTq7pUlqwT.html",
+"s": "La Voz del Interior"
+},
+{
+"t": "Motociclista chocó contra un árbol en plena madrugada y murió en el acto",
+"u": "https://eldoce.tv/actualidad/2026/10/22/motociclista-choco-contra-un-arbol-en-plena-madrugada-y-murio-en-el-acto/",
+"s": "eldoce"
+},
+{
+"t": "Tragedia en La Cumbre: un motociclista de 48 años murió tras impactar contra un árbol",
+"u": "https://www.carlospazvivo.com/tragedia-en-la-cumbre-un-motociclista-de-48-anos-murio-tras-impactar-contra-un-arbol/",
+"s": "Carlos Paz Vivo"
+}
+],
+"n": 200
+},
+{
+"t": "u2",
+"trafico": "2000+",
+"fecha": "2026-10-22T14:50+02:00",
+"noticias": [
+{
+"t": "Furor por U2: agotó la preventa para sus shows en River en sólo dos horas y reunió a más de un millón de personas en la fila virtual",
+"u": "https://www.infobae.com/teleshow/2026/10/21/furor-por-u2-agoto-la-preventa-para-sus-shows-en-river-en-solo-dos-horas-y-reunio-a-mas-de-un-millon-de-personas-en-la-fila-virtual/",
+"s": "Infobae"
+},
+{
+"t": "U2 vuelve a la Argentina en 2027: cuándo salen a la venta las entradas y cuánto cuestan",
+"u": "https://www.filo.news/noticia/2026/10/21/u2-vuelve-a-la-argentina-en-2027-cuando-salen-a-la-venta-las-entradas-y-cuanto-cuestan",
+"s": "Filo News"
+},
+{
+"t": "U2, el 23 y 25 de marzo de 2027 en el Monumental - PREVENTA EXCLUSIVA para SOCIOS del Club",
+"u": "https://www.riverplate.com/noticias/institucional/u2-el-23-y-25-de-marzo-de-2027-en-el-monumental-preventa-exclusiva-para-socios-del-club",
+"s": "www.riverplate.com"
+}
+],
+"n": 2000
+},
+{
+"t": "cumpleaños de milei",
+"trafico": "100+",
+"fecha": "2026-10-22T14:50+02:00",
+"noticias": [
+{
+"t": "Saludos desde La Libertad Avanza a Javier Milei por su cumpleaños",
+"u": "https://www.infobae.com/video/politica/saludos-desde-la-libertad-avanza-a-javier-milei-por-su-cumpleanos/tzSOcRcL/",
+"s": "Infobae"
+},
+{
+"t": "\"Festejo en Casa Rosada: Javier Milei cumple 56 años y lo celebra en suelo argentino tras su gira por España",
+"u": "https://www.rionegro.com.ar/politica/festejo-en-casa-rosada-javier-milei-cumple-56-anos-y-lo-celebra-en-suelo-argentino-tras-su-gira-por-espana-4768004/",
+"s": "Diario Río Negro"
+},
+{
+"t": "Efemérides: un día como hoy de 1970 nace Javier Milei, actual Presidente de los argentinos",
+"u": "https://www.elcucodigital.com/efemerides-un-dia-como-hoy-de-1970-nace-javier-milei-actual-presidente-de-los-argentinos/",
+"s": "El Cuco Digital"
+}
+],
+"n": 100
+}
+]
+},
+"BR": {
+"geo": "BR",
+"url": "https://trends.google.com/trending/rss?geo=BR",
+"ok": true,
+"items": [
+{
+"t": "br-282",
+"trafico": "200+",
+"fecha": "2026-10-22T15:50+02:00",
+"noticias": [
+{
+"t": "Acidente em Santa Catarina deixa um morto e três feridos",
+"u": "https://record.r7.com/fala-brasil/video/acidente-em-santa-catarina-deixa-um-morto-e-tres-feridos-22102026/",
+"s": "R7"
+},
+{
+"t": "Câmera de carro flagra acidente entre três veículos que deixou uma pessoa morta na BR-282 em SC",
+"u": "https://ndmais.com.br/transito/camera-de-carro-flagra-acidente-entre-tres-veiculos-que-deixou-uma-pessoa-morta-na-br-282-em-sc/",
+"s": "ND Mais"
+},
+{
+"t": "Acidente na BR-282 deixa uma pessoa morta e duas em estado grave após batida entre três veículos em SC",
+"u": "https://www.nsctotal.com.br/transito/acidente-na-br-282-deixa-uma-pessoa-morta-e-duas-em-estado-grave-apos-batida-entre-tres-veiculos-em-sc",
+"s": "NSC Total"
+}
+],
+"n": 200
+},
+{
+"t": "cissa guimarães",
+"trafico": "200+",
+"fecha": "2026-10-22T15:50+02:00",
+"noticias": [
+{
+"t": "Filho de Cissa Guimarães aciona polícia após comentário que chama de ‘herói’ condenado pela morte do irmão",
+"u": "https://oglobo.globo.com/blogs/lauro-jardim/post/2026/10/filho-de-cissa-guimaraes-aciona-policia-apos-comentario-que-chama-de-heroi-condenado-pela-morte-do-irmao.ghtml",
+"s": "O GLOBO"
+},
+{
+"t": "NaTelinha reúne júri do Melhores do Ano 2026 em jantar de confraternização em SP",
+"u": "https://natelinha.uol.com.br/mercado/2026/10/20/natelinha-reune-juri-do-melhores-do-ano-2026-em-jantar-de-confraternizacao-em-sp-249315.php",
+"s": "NaTelinha"
+},
+{
+"t": "Programa Sem Censura é indicado ao Prêmio Melhores do Ano NaTelinha 2026",
+"u": "https://portalmakingof.com.br/programa-sem-censura-e-indicado-ao-premio-melhores-do-ano-natelinha-2026/",
+"s": "Portal Making Of"
+}
+],
+"n": 200
+},
+{
+"t": "festival",
+"trafico": "200+",
+"fecha": "2026-10-22T15:50+02:00",
+"noticias": [
+{
+"t": "3 Margens Festival Latino-Americano de Cinema seleciona 43 filmes para a 8ª edição",
+"u": "https://www.radioculturafoz.com.br/2026/10/22/3-margens-festival-latino-americano-de-cinema-seleciona-43-filmes-para-a-8a-edicao/",
+"s": "Rádio Cultura Foz"
+},
+{
+"t": "3 Margens 2026 :: Revelados os filmes selecionados para a 8ª edição do festival. Confira a lista! - Papo de",
+"u": "https://www.papodecinema.com.br/noticias/3-margens-2026-filmes/",
+"s": "Papo de Cinema"
+},
+{
+"t": "Festival 3 Margens seleciona 43 filmes de dez países para sessões gratuitas de 8 a 21 de novembro",
+"u": "https://100fronteiras.com/cultura/noticia/festival-3-margens-seleciona-43-filmes-de-dez-paises-para-sessoes-gratuitas-de-8-a-21-de-novembro/",
+"s": "100fronteiras.com"
+}
+],
+"n": 200
+},
+{
+"t": "renata sorrah",
+"trafico": "200+",
+"fecha": "2026-10-22T15:50+02:00",
+"noticias": [
+{
+"t": "Pérola salva a vida de Manoel e faz um pedido que Vanessa vai odiar em Por Você",
+"u": "https://noticiasdatv.uol.com.br/noticia/novelas/perola-salva-a-vida-de-manoel-e-faz-um-pedido-que-vanessa-vai-odiar-em-por-voce-158392",
+"s": "Notícias da TV"
+},
+{
+"t": "Por Você: Pérola faz convite e surpreende Manoel",
+"u": "https://gshow.globo.com/novelas/por-voce/vem-por-ai/noticia/por-voce-perola-faz-convite-e-surpreende-manoel.ghtml",
+"s": "Gshow"
+},
+{
+"t": "‘Por Você’: Personagem surpreende ao sair do armário: ‘Me apaixonei’",
+"u": "https://contigo.com.br/noticias/novelas/por-voce-personagem-surpreende-ao-sair-do-armario-me-apaixonei.phtml",
+"s": "contigo.com.br"
+}
+],
+"n": 200
+},
+{
+"t": "peter jackson",
+"trafico": "200+",
+"fecha": "2026-10-22T15:50+02:00",
+"noticias": [
+{
+"t": "Peter Jackson Bought a 600-Year-Old Egg That Could Help Bring an Extinct Bird Back to Life",
+"u": "https://www.vice.com/en/article/peter-jackson-bought-a-600-year-old-egg-that-could-help-bring-an-extinct-bird-back-to-life/",
+"s": "VICE"
+},
+{
+"t": "After 60 Years In A Private Collection, An Exceptionally Rare Giant Moa Egg Is Returning To New Zealand As Part Of Colossal’s De-extinction Plans",
+"u": "https://www.iflscience.com/after-60-years-in-a-private-collection-an-exceptionally-rare-giant-moa-egg-is-returning-to-new-zealand-as-part-of-colossals-de-extinction-plans-84993",
+"s": "IFLScience"
+},
+{
+"t": "Biotech Firm Colossal Set to Return Extinct Bird’s Egg to New Zealand",
+"u": "https://www.bloomberg.com/news/articles/2026-10-19/biotech-firm-colossal-set-to-return-extinct-bird-s-egg-to-new-zealand",
+"s": "Bloomberg.com"
+}
+],
+"n": 200
+},
+{
+"t": "revelando",
+"trafico": "200+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "Willer Tomaz move queixa-crime contra Fábio Porchat após vídeo no Revelando",
+"u": "https://www.metropoles.com/colunas/fabia-oliveira/willer-tomaz-move-queixa-crime-contra-fabio-porchat-apos-video-no-revelando",
+"s": "Metrópoles"
+},
+{
+"t": "Revelando: Fábio Porchat expõe rede de 'laranjas' ligada a Flávio Bolsonaro e Willer Tomaz",
+"u": "https://iclnoticias.com.br/revelando-fabio-porchat-expoe-rede-de-laranjas/",
+"s": "ICL Notícias"
+},
+{
+"t": "Humorista Fábio Porchat lança o filme 'Laranjas' e abala a campanha de Flávio Bolsonaro; assista",
+"u": "https://www.jb.com.br/brasil/politica/2026/10/1061291-humorista-fabio-porchat-lanca-o-filme-laranjas-e-abala-a-campanha-de-flavio-bolsonaro-assista.html",
+"s": "Jornal do Brasil"
+}
+],
+"n": 200
+},
+{
+"t": "georgi nemsadze",
+"trafico": "1000+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "Ex-capitão de seleção morre aos 54 anos e deixa o futebol de luto",
+"u": "https://noataque.com.br/noticia/2026/10/22/ex-capitao-selecao-morre-54-anos-deixa-futebol-luto/",
+"s": "No Ataque"
+},
+{
+"t": "Giorgi Nemsadze, ex-capitão da seleção da Geórgia, falece aos 54 anos",
+"u": "https://www.brasileirao.com.br/giorgi-nemsadze-ex-capitao-da-selecao-da-georgia-falece-aos-54-anos",
+"s": "www.brasileirao.com.br"
+},
+{
+"t": "Luto no futebol! Morreu antigo capitão da seleção da Geórgia aos 54 anos",
+"u": "https://www.dominiodebola.com/morreu-giorgi-nemsadze-antigo-capitao-georgia-54-anos/",
+"s": "dominiodebola"
+}
+],
+"n": 1000
+},
+{
+"t": "al hazm x al feiha",
+"trafico": "500+",
+"fecha": "2026-10-22T15:20+02:00",
+"noticias": [
+{
+"t": "Al Hazem – Al Fateh 2 - 3 | GOL – Mourad Batna",
+"u": "https://gauchazh.clicrbs.com.br/esportes/noticia/2026/10/al-hazem-al-fateh-2-3-gol-mourad-batna-cmv9tfeys01ja013qimcgdiym.html",
+"s": "GZH"
+},
+{
+"t": "Palpite para Al-Hazm x Al-Fayha: Ambas as equipes estão sedentas por vitória.",
+"u": "https://www.vietnam.vn/pt/nhan-dinh-al-hazm-vs-al-fayha-ca-hai-cung-khat-thang",
+"s": "Vietnam.vn"
+},
+{
+"t": "Al Hazem x Al Fayha palpite & odds | 22.10.2026",
+"u": "https://www.futbol24.com/pt/apostas-palpites/previa/22-10-2026-al-hazem-al-fayha-dica/",
+"s": "Futbol24"
+}
+],
+"n": 500
+},
+{
+"t": "rodovia dos tamoios",
+"trafico": "200+",
+"fecha": "2026-10-22T15:10+02:00",
+"noticias": [
+{
+"t": "Acidente entre moto e carro deixa dois mortos e três feridos na Rodovia dos Tamoios, em São Sebastião",
+"u": "https://g1.globo.com/sp/vale-do-paraiba-regiao/noticia/2026/10/22/acidente-entre-moto-e-carro-deixa-dois-mortos-e-tres-feridos-na-rodovia-dos-tamoios-em-caraguatatuba.ghtml",
+"s": "G1"
+},
+{
+"t": "Duas pessoas morrem em colisão entre carro e moto em São Sebastião",
+"u": "https://www.band.com.br/nacional/sp/vale-do-paraiba/duas-pessoas-morrem-em-colisao-entre-carro-e-moto-em-sao-sebastiao",
+"s": "Band"
+},
+{
+"t": "Batida frontal entre moto e carro deixa dois mortos e três feridos na Tamoios",
+"u": "https://costanorte.com.br/estradas/rodoviasdostamoios/batida-frontal-entre-moto-e-carro-deixa-dois-mortos-e-tres-feridos-na-tamoios.html",
+"s": "Costa Norte"
+}
+],
+"n": 200
+},
+{
+"t": "alcione",
+"trafico": "200+",
+"fecha": "2026-10-22T15:10+02:00",
+"noticias": [
+{
+"t": "Ferrugem grava ao vivo, em show no Rio, álbum com o repertório de Alcione",
+"u": "https://g1.globo.com/pop-arte/musica/blog/mauro-ferreira/post/2026/10/21/ferrugem-grava-ao-vivo-em-show-no-rio-album-com-o-repertorio-de-alcione.ghtml",
+"s": "G1"
+},
+{
+"t": "Ferrugem revela história com Alcione antes de homenagem",
+"u": "https://billboard.com.br/ferrugem-alcione-historia-homenagem-2026/",
+"s": "Billboard Brasil"
+},
+{
+"t": "Ferrugem anuncia “LEGADO: Ferrugem Canta Alcione”, projeto em homenagem a uma das maiores vozes da música brasileira",
+"u": "https://agitomax.com.br/musica-e-youtube/ferrugem-anuncia-legado-ferrugem-canta-alcione-projeto-em-homenagem-a-uma-das-maiores-vozes-da-musica-brasileira/",
+"s": "agitomax"
+}
+],
+"n": 200
+}
+]
+},
+"IN": {
+"geo": "IN",
+"url": "https://trends.google.com/trending/rss?geo=IN",
+"ok": true,
+"items": [
+{
+"t": "பிரான்ஸ்",
+"trafico": "200+",
+"fecha": "2026-10-22T15:50+02:00",
+"noticias": [
+{
+"t": "பிரான்ஸ் போராட்டங்கள்: டிரம்பின் கருத்துகளை 'முட்டாள்தனமானவை' என மக்ரோங் விமர்சித்தது ஏன்?",
+"u": "https://www.bbc.com/tamil/articles/c62e9m4w7vk7o",
+"s": "BBC"
+},
+{
+"t": "Tea Time News | ``ஓ.. இதுக்கு பேரு தான் கலவரத்தின் நடுவே காதலா?'' வறுத்தெடுக்கும் நெட்டிசன்கள்",
+"u": "https://www.thanthitv.com/tea-time-news/tea-time-news-oh-so-this-is-what-you-call-love-amidst-the-chaos-netizens-roast-the-situation",
+"s": "Thanthi TV"
+},
+{
+"t": "France Protests: தெருக்களில் தீப்பிழம்புகள் – திண்டாடும் 9 நாடுகள்... அலறும் ஐரோப்பா கண்டம்!",
+"u": "https://www.vikatan.com/government-and-politics/fires-on-the-streets-france-among-9-countries-facing-unrest?pfrom=small-card",
+"s": "Vikatan"
+}
+],
+"n": 200
+},
+{
+"t": "ஜெயிலர் 2",
+"trafico": "2000+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "சட்டைகூட கசங்காமல்... ஜெயிலர் - 2 திரைப்படத்தைப் பாராட்டிய அல்லு அர்ஜுன்!",
+"u": "https://www.dinamani.com/cinema/cinema-news/2026/Oct/22/allu-arjun-post-about-jailer-2",
+"s": "DinaMani"
+},
+{
+"t": "'ஜெயிலர் 2' ஆயிரம் கோடி வசூலிக்காதா..? தயாரிப்பு நிறுவனம் செய்த தவறு? ரசிகர்கள் ஏமாற்றம்!",
+"u": "https://www.puthiyathalaimurai.com/cinema/wont-jailer-2-gross-a-1000-crores-did-the-production-house-make-a-mistake",
+"s": "Puthiyathalaimurai"
+},
+{
+"t": "Jailer 2 | \"தலைவர் கேங்\" கேங்காக Vibe செய்த செஸ் ஜாம்பவான்கள்..``Frame-அ பாருங்க ஜி..''",
+"u": "https://www.thanthitv.com/news/tamilnadu/jailer-2-chess-legends-vibe-like-the-thalaivar-gang-just-look-at-this-frame",
+"s": "Thanthi TV"
+}
+],
+"n": 2000
+},
+{
+"t": "மின்னல்",
+"trafico": "50000+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "இந்த மாதம் 25ஆம் தேதி வரை பருவமழை தீவிரமாக இருக்கும்... அதன் பின் தீவிரம் குறையும் - சென்னை வானிலை ஆய்வு மையம் தகவல்",
+"u": "https://www.polimernews.com/tamilnadunews/tamil-nadu-northeast-monsoon-rain-alert-27-districts-chennai-12737841",
+"s": "Polimer News"
+},
+{
+"t": "Weather Update | \"புதிய காற்றழுத்த தாழ்வு பகுதி - நாளை தீவிரமடையும்..\" - அலர்ட் கொடுத்த வானிலை மையம்",
+"u": "https://www.thanthitv.com/news/breaking/new-low-pressure-area-to-intensify-tomorrow-warns-the-meteorological-centre",
+"s": "Thanthi TV"
+},
+{
+"t": "தமிழ்நாட்டை நோக்கி அடுத்து வருவது 'முரசு' புயல்: தமிழ் பெயரை சூட்டி இந்தியா கவுரவம்",
+"u": "https://www.dailythanthi.com/news/weather/murasu-cyclone-is-heading-towards-tamil-nadu-india-honors-the-storm-by-giving-it-a-tamil-name",
+"s": "Daily Thanthi"
+}
+],
+"n": 50000
+},
+{
+"t": "ક્રિકેટ",
+"trafico": "2000+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "ભારતીય ટીમે ઐતહાસિક જીત સાથે કરી ન્યુઝીલેન્ડ પ્રવાસની શરૂઆત, T20I પહેલીવાર ચેઝ કરો 210થી વધુનો ટાર્ગેટ",
+"u": "https://www.gstv.in/news/sports/team-india-won-1st-t20i-against-new-zealand-by-4-wickets",
+"s": "GSTV Gujarati news"
+},
+{
+"t": "ભારતે T20માં પોતાનો સૌથી મોટો રનચેઝ કર્યો: પહેલી મેચમાં ન્યૂઝીલેન્ડને 4 વિકેટથી હરાવ્યું; નમને 15 બોલમાં 42...",
+"u": "https://www.divyabhaskar.co.in/sports/cricket/news/abhishek-sharma-nz-vs-ind-1st-t20-live-score-updates-shreyas-iyer-bhuvneshwar-kumar-139443588.html",
+"s": "Divya Bhaskar"
+},
+{
+"t": "સેમસન અને નમન ધીરની વિસ્ફોટ બેટિંગ : ભારતે ન્યૂઝીલેન્ડ સામે 226 રનનો ટાર્ગેટ ચેઝ કરી રચ્યો ઇતિહાસ",
+"u": "https://www.gujaratsamachar.com/news/sports/samsons-storm-and-naman-dhirs-blast-india-created-history-by-chasing-a-target-of-226-runs-against-new-zealand-71533408894",
+"s": "Gujarat Samachar"
+}
+],
+"n": 2000
+},
+{
+"t": "sa vs aus live",
+"trafico": "500+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "Steyn's bold claim gains support as Jansen plots Aussies demise",
+"u": "https://www.icc-cricket.com/news/steyn-s-bold-claim-gains-support-as-jansen-plots-aussies-demise",
+"s": "ICC"
+},
+{
+"t": "South Africa v Australia: second men’s cricket Test, day five – live",
+"u": "https://www.theguardian.com/sport/live/2026/oct/22/south-africa-v-australia-second-test-day-five-cricket-st-georges-park-gqeberha-live-updates?page=with:block-6ada13358f0825e6fb0784f9",
+"s": "The Guardian"
+},
+{
+"t": "Chaos meets narrative at St George's Park",
+"u": "https://www.cricbuzz.com/cricket-news/140603/chaos-meets-narrative-at-st-georges-park-cricbuzzcom",
+"s": "Cricbuzz"
+}
+],
+"n": 500
+},
+{
+"t": "israel independence day",
+"trafico": "500+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "Netanyahu invites PM Modi to light Independence Day torch, hails decades-old ties",
+"u": "https://timesofindia.indiatimes.com/india/netanyahu-invites-pm-modi-to-light-independence-day-torch-hails-decades-old-ties/articleshow/135119815.cms",
+"s": "The Times of India"
+},
+{
+"t": "PM receives a telephone call from Prime Minister Netanyahu",
+"u": "https://www.pmindia.gov.in/en/news_updates/pm-receives-a-telephone-call-from-prime-minister-netanyahu/?comment=disable",
+"s": "PM India"
+},
+{
+"t": "PM Modi emphasises dialogue, diplomacy in call with Netanyahu over West Asia situation",
+"u": "https://www.thehindu.com/news/national/pm-modi-emphasises-dialogue-diplomacy-in-call-with-netanyahu-over-west-asia-situation/article71611957.ece",
+"s": "The Hindu"
+}
+],
+"n": 500
+},
+{
+"t": "manoj bajpayee",
+"trafico": "200+",
+"fecha": "2026-10-22T15:40+02:00",
+"noticias": [
+{
+"t": "Gun Misfired In Their Hotel. But Tiger Shroff's Shooters Didn't Get Caught",
+"u": "https://www.ndtv.com/india-news/tiger-shroff-lawrence-bishnoi-salman-khan-tiger-shroff-shooters-secret-hideout-the-mystery-of-room-no-201-12220136",
+"s": "NDTV"
+},
+{
+"t": "Tiger Shroff firing case: Team shares video of actor's injured arm",
+"u": "https://www.telegraphindia.com/entertainment/tiger-shroff-firing-case-team-shares-video-of-actors-injured-arm/cid/2185747",
+"s": "Telegraph India"
+},
+{
+"t": "Tiger Shroff firing: Accused practised shooting near Mumbai before attack, bullet hit bed during accident",
+"u": "https://timesofindia.indiatimes.com/city/mumbai/tiger-shroff-firing-accused-practised-shooting-near-mumbai-before-attack-bullet-hit-bed-during-accidental-discharge-in-andheri-hotel-room/articleshow/135109352.cms",
+"s": "The Times of India"
+}
+],
+"n": 200
+},
+{
+"t": "wiaan mulder",
+"trafico": "2000+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "Mitchell Starc breaks Glenn McGrath record with feat never seen before in Test cricket history",
+"u": "https://au.news.yahoo.com/mitchell-starc-breaks-glenn-mcgrath-record-with-feat-never-seen-before-in-test-cricket-history-021110667.html",
+"s": "Yahoo News Australia"
+},
+{
+"t": "Mitchell Starc Breaks Glenn McGrath's Record, Becomes Fastest Bowler To...",
+"u": "https://www.news18.com/cricket/mitchell-starc-becomes-1st-left-arm-bowler-to-take-450-wickets-in-tests-ws-l-10389879.html",
+"s": "News18"
+},
+{
+"t": "2nd Test: Mitchell Starc becomes second Australian pacer to complete 450 wickets",
+"u": "https://www.thehawk.in/news/sports/2nd-test-mitchell-starc-becomes-second-australian-pacer-to-complete-450-wickets",
+"s": "www.thehawk.in"
+}
+],
+"n": 2000
+},
+{
+"t": "court",
+"trafico": "1000+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "‘No permission needed to hoist national flag’: Neha Bora tells Delhi HC, challenges police notice",
+"u": "https://timesofindia.indiatimes.com/india/no-permission-needed-to-hoist-national-flag-neha-bora-tells-delhi-hc-challenges-police-notice/articleshow/135116928.cms",
+"s": "The Times of India"
+},
+{
+"t": "Delhi High Court Reserves Verdict On Neha Bora's Plea Against Peace Bond Notice Amid Anti-CEC Protests,...",
+"u": "https://www.livelaw.in/high-court/delhi-high-court/delhi-high-court-neha-boras-plea-against-notice-for-peace-bond-amid-anti-cec-protests-555630",
+"s": "Live Law"
+},
+{
+"t": "Netanyahu invites Modi to light torch on Israel's I-Day",
+"u": "https://www.rediff.com/news/commentary/2026/oct/22/liveupdates.htm",
+"s": "Rediff"
+}
+],
+"n": 1000
+},
+{
+"t": "মৃত্যুদণ্ড",
+"trafico": "500+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "সৌদিতে এ বছরের প্রথম ৬ মাসে ৫৯ বিদেশির মৃত্যুদণ্ড কার্যকর, আছে বাংলাদেশিও",
+"u": "https://www.prothomalo.com/world/middle-east/kro5ky3gzk",
+"s": "প্রথম আলো"
+},
+{
+"t": "শুধু চুমু নয়, মক্কায় আরও অনৈতিক কাজ! বাংলাদেশি যুগলের মৃত্যুদণ্ডে জড়াল ভারতীয় যুবকের নামও",
+"u": "https://www.sangbadpratidin.in/world/sinister-posts-spread-after-saudi-executes-bangladeshi-couple/pid/1394180/",
+"s": "Sangbad Pratidin"
+},
+{
+"t": "প্রবাসীকল্যাণ মন্ত্রণালয়ে পাঠানো চিঠিতে যা জানাল জেদ্দাস্থ বাংলাদেশ কনস্যুলেট",
+"u": "https://www.ittefaq.com.bd/816560/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%80%E0%A6%95%E0%A6%B2%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A3-%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%A3%E0%A6%BE%E0%A6%B2%E0%A7%9F%E0%A7%87-%E0%A6%AA%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%A8%E0%A7%8B-%E0%A6%9A%E0%A6%BF%E0%A6%A0%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%AF%E0%A6%BE-%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%B2",
+"s": "The Daily Ittefaq"
+}
+],
+"n": 500
+}
+]
+},
+"JP": {
+"geo": "JP",
+"url": "https://trends.google.com/trending/rss?geo=JP",
+"ok": true,
+"items": [
+{
+"t": "チームみらい",
+"trafico": "500+",
+"fecha": "2026-10-22T16:00+02:00",
+"noticias": [
+{
+"t": "経産省「ホワイトハッカー」のチーム立ち上げへ | NHKニュース | サイバー攻撃、ＡＩ・ネット・ＩＴ、経済産業省",
+"u": "https://news.web.nhk/newsweb/na/nd-20261022de63664",
+"s": "NHKニュース"
+},
+{
+"t": "みらい・安野党首、ＰＨＰ問題は「ＡＩも使いながら守らないと対処できなくなる」…消費税法案は反対の意向（読売新聞オンライン）",
+"u": "https://news.yahoo.co.jp/articles/03e728ce730c64d377148c2970118d14bd16f438",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "経産省 サイバーセキリティ専門チームの立ち上げを検討",
+"u": "https://newsdig.tbs.co.jp/articles/-/3032085",
+"s": "TBS NEWS DIG"
+}
+],
+"n": 500
+},
+{
+"t": "kddi モンゴル",
+"trafico": "2000+",
+"fecha": "2026-10-22T16:00+02:00",
+"noticias": [
+{
+"t": "モンゴル草原火災、KDDI「重く受け止め」 東京都2個分が焼失",
+"u": "https://mainichi.jp/articles/20261022/k00/00m/030/208000c",
+"s": "毎日新聞"
+},
+{
+"t": "《「アムールイトウ釣りが目的か」の質問に…》「東京都の2倍超」が焼失した大規模火災はなぜ起きたのかKDDIに取材「再発防止にモビコムと共に取り組んでいく」",
+"u": "https://www.news-postseven.com/archives/20261021_2137785.html?DETAIL",
+"s": "NEWSポストセブン"
+},
+{
+"t": "「国民の怒りは頂点に」日系企業の車から出火か…モンゴル自然保護区で大規模火災（テレ朝NEWS）",
+"u": "https://topics.smt.docomo.ne.jp/article/tvasahinews/world/tvasahinews-900202433?page=3",
+"s": "ｄメニューニュース"
+}
+],
+"n": 2000
+},
+{
+"t": "福田萌",
+"trafico": "200+",
+"fecha": "2026-10-22T15:50+02:00",
+"noticias": [
+{
+"t": "「ムカついてしょうがない」中田敦彦の復帰に大御所と旧ジャニファンが激怒、いまだ尾をひく「女性ホルモンを打つ」発言",
+"u": "https://news.yahoo.co.jp/articles/6b3e6d7cf39a6168ec707a5f091e4b714f2065d2",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "古舘伊知郎、中田敦彦に直言「ムカついてしょうがない」「テレビに背向けたくせに急に出始めた」",
+"u": "https://www.nikkansports.com/entertainment/news/202610200000032.html",
+"s": "日刊スポーツ"
+},
+{
+"t": "中田敦彦\"テレビ復帰ラッシュ\"に古舘伊知郎も苦言…帰国バブル後に問われる『テレビ向きではない』理由",
+"u": "https://topics.smt.docomo.ne.jp/article/nikkangendai/entertainment/nikkangendai-1257206",
+"s": "ｄメニューニュース"
+}
+],
+"n": 200
+},
+{
+"t": "金沢マラソン",
+"trafico": "100+",
+"fecha": "2026-10-22T15:50+02:00",
+"noticias": [
+{
+"t": "ランナー歓迎 準備着々 金沢マラソン 25日号砲 （北國新聞社）",
+"u": "https://news.yahoo.co.jp/articles/0a99113840d344d55c8a66d0f6e746e059692a4b",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "金沢マラソン 入賞者トロフィーの完成報告",
+"u": "https://topics.smt.docomo.ne.jp/article/hab/region/hab-20261020-00008728",
+"s": "ｄメニューニュース"
+},
+{
+"t": "浜辺美波さん「けがなく完走ファイト」 松井秀喜さん「美しいまち楽しんで」 金沢マラソン、メッセージ寄せる",
+"u": "https://www.hokkoku.co.jp/articles/-/2261808",
+"s": "北國新聞"
+}
+],
+"n": 100
+},
+{
+"t": "花田虎上",
+"trafico": "1000+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [],
+"n": 1000
+},
+{
+"t": "設備投資",
+"trafico": "200+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "テスラ、決算受け時間外で上昇 １株利益が予想上回る ＦＣＦが予想外の黒字 スペースＸとの合併発表されず＝米国株個別",
+"u": "https://kabutan.jp/news/marketnews/?b=n202610220101",
+"s": "株探"
+},
+{
+"t": "テスラ、好決算も時間外で下落＝米国株個別(株探ニュース)",
+"u": "https://finance.yahoo.co.jp/news/detail/40a4c574839ef3784e35586d3cb3a270d1338133",
+"s": "Yahoo!ファイナンス"
+},
+{
+"t": "テスラが43%の大幅減益 AI開発などへの先行投資で",
+"u": "https://news.web.nhk/newsweb/na/nd-20261022de63327",
+"s": "NHKニュース"
+}
+],
+"n": 200
+},
+{
+"t": "明日の気温",
+"trafico": "1000+",
+"fecha": "2026-10-22T15:30+02:00",
+"noticias": [
+{
+"t": "「猛烈な勢力」台風30号が“急カーブ”で列島直撃のおそれ 中心気圧は900hPa“スーパー台風”に…台風影響 157地点で“季節外れの真夏日”に【news23】（TBS NEWS DIG Powered by JNN）",
+"u": "https://news.yahoo.co.jp/articles/e299b95e4a7f0096d6593f6bc4a1933b61612ac1?page=2",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "大阪、東京で史上最も遅い真夏日 明日は気温が大幅に低下",
+"u": "https://weathernews.jp/news/202610/210181/",
+"s": "ウェザーニュース"
+},
+{
+"t": "上野公園で季節外れのサクラが開花「こんなに咲くのは初めて」 21日の東京は観測史上最遅の「真夏日」",
+"u": "https://s.mxtv.jp/tokyomxplus/mx/article/202610221010/detail/",
+"s": "TOKYO MX"
+}
+],
+"n": 1000
+},
+{
+"t": "変動金利",
+"trafico": "1000+",
+"fecha": "2026-10-22T15:20+02:00",
+"noticias": [
+{
+"t": "｢固定より変動｣が常識だったが…会計学博士が75%の変動派に警告する住宅ローン金利｢10%超え｣の最悪シナリオ",
+"u": "https://news.yahoo.co.jp/articles/6f50c6ee17751ef17ac8ca353f6744b44f22dc0a?page=3",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "｢金利のある時代｣に突入した今､果たして《家は買うべきか､借りるべきか》…ひろゆきの出した\"極めて常識的\"なアンサー",
+"u": "https://toyokeizai.net/articles/-/961101?page=4",
+"s": "東洋経済オンライン"
+},
+{
+"t": "金利上昇＆住宅価格高騰で“超長期ローン”増加 30代で50年ローン組む人も",
+"u": "https://s.mxtv.jp/tokyomxplus/mx/article/202610221000/detail/",
+"s": "TOKYO MX"
+}
+],
+"n": 1000
+},
+{
+"t": "フジテレビ",
+"trafico": "200+",
+"fecha": "2026-10-22T15:20+02:00",
+"noticias": [
+{
+"t": "フジ 番宣システムに不正アクセス",
+"u": "https://news.yahoo.co.jp/pickup/6599561",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "フジテレビ 番組宣伝システムに不正アクセス、メディア関係者の個人情報が最大７３０件が漏えいした可能性",
+"u": "https://www.yomiuri.co.jp/culture/hochi/20261021064-OHT1T51057/",
+"s": "読売新聞"
+},
+{
+"t": "フジテレビ、不正アクセス被害を発表 関係者最大730件の個人情報が漏えいした可能性",
+"u": "https://www.nikkansports.com/entertainment/news/202610200001400.html",
+"s": "日刊スポーツ"
+}
+],
+"n": 200
+},
+{
+"t": "=love",
+"trafico": "200+",
+"fecha": "2026-10-22T15:20+02:00",
+"noticias": [
+{
+"t": "Jordan Love dealing with sore back, but expects to play vs. Lions",
+"u": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jordan-love-dealing-with-sore-back-but-expects-to-play-vs-lions",
+"s": "NBC Sports"
+},
+{
+"t": "Packers injury report, Love, Golden, Watson added",
+"u": "https://fox11online.com/sports/packers-and-nfl/packers-injury-report-love-golden-added",
+"s": "WLUK"
+},
+{
+"t": "Packers first injury report of Week 7: Jordan Love, both top WRs listed",
+"u": "https://packerswire.usatoday.com/story/sports/nfl/packers/2026/10/21/packers-first-injury-report-of-week-7-jordan-love-both-top-wrs-listed/92369111007/",
+"s": "Packers Wire"
+}
+],
+"n": 200
+}
+]
+}
+},
+"wikipedia": {
+"es": {
+"lang": "es",
+"ok": true,
+"items": [
+{
+"t": "Yan Diomande",
+"v": 23044,
+"movil": 0.88,
+"u": "https://es.wikipedia.org/wiki/Yan_Diomande"
+},
+{
+"t": "Kim Jong-un",
+"v": 23020,
+"movil": 0.81,
+"u": "https://es.wikipedia.org/wiki/Kim_Jong-un"
+},
+{
+"t": "ChatGPT",
+"v": 22359,
+"movil": 0.22,
+"u": "https://es.wikipedia.org/wiki/ChatGPT"
+},
+{
+"t": "Nico Paz",
+"v": 18660,
+"movil": 0.82,
+"u": "https://es.wikipedia.org/wiki/Nico_Paz"
+},
+{
+"t": "Antonio Grimau",
+"v": 16442,
+"movil": 0.86,
+"u": "https://es.wikipedia.org/wiki/Antonio_Grimau"
+},
+{
+"t": "Club de Regatas Vasco da Gama",
+"v": 14611,
+"movil": 0.86,
+"u": "https://es.wikipedia.org/wiki/Club_de_Regatas_Vasco_da_Gama"
+},
+{
+"t": "Susanna Griso",
+"v": 12756,
+"movil": 0.95,
+"u": "https://es.wikipedia.org/wiki/Susanna_Griso"
+},
+{
+"t": "Facundo Herrera",
+"v": 12699,
+"movil": 0.9,
+"u": "https://es.wikipedia.org/wiki/Facundo_Herrera"
+},
+{
+"t": "Sergio Rico",
+"v": 12602,
+"movil": 0.93,
+"u": "https://es.wikipedia.org/wiki/Sergio_Rico"
+},
+{
+"t": "Como 1907",
+"v": 12584,
+"movil": 0.76,
+"u": "https://es.wikipedia.org/wiki/Como_1907"
+},
+{
+"t": "Liga de Campeones de la UEFA",
+"v": 12205,
+"movil": 0.38,
+"u": "https://es.wikipedia.org/wiki/Liga_de_Campeones_de_la_UEFA"
+},
+{
+"t": "Facebook",
+"v": 11715,
+"movil": 0.15,
+"u": "https://es.wikipedia.org/wiki/Facebook"
+},
+{
+"t": "Aday Mara",
+"v": 11288,
+"movil": 0.82,
+"u": "https://es.wikipedia.org/wiki/Aday_Mara"
+},
+{
+"t": "Javier Milei",
+"v": 10967,
+"movil": 0.85,
+"u": "https://es.wikipedia.org/wiki/Javier_Milei"
+},
+{
+"t": "Radio AM 750",
+"v": 10706,
+"movil": 0.99,
+"u": "https://es.wikipedia.org/wiki/Radio_AM_750"
+},
+{
+"t": "RasenBallsport Leipzig",
+"v": 10688,
+"movil": 0.88,
+"u": "https://es.wikipedia.org/wiki/RasenBallsport_Leipzig"
+},
+{
+"t": "Copa Sudamericana 2026",
+"v": 10518,
+"movil": 0.64,
+"u": "https://es.wikipedia.org/wiki/Copa_Sudamericana_2026"
+},
+{
+"t": "José Luis Rodríguez Bebanz",
+"v": 10206,
+"movil": 0.89,
+"u": "https://es.wikipedia.org/wiki/José_Luis_Rodríguez_Bebanz"
+},
+{
+"t": "Tabla periódica de los elementos",
+"v": 10178,
+"movil": 0.44,
+"u": "https://es.wikipedia.org/wiki/Tabla_periódica_de_los_elementos"
+},
+{
+"t": "Raphael (cantante)",
+"v": 10102,
+"movil": 0.93,
+"u": "https://es.wikipedia.org/wiki/Raphael_(cantante)"
+},
+{
+"t": "La bola negra (película)",
+"v": 9786,
+"movil": 0.77,
+"u": "https://es.wikipedia.org/wiki/La_bola_negra_(película)"
+},
+{
+"t": "XXX",
+"v": 9528,
+"movil": 0.97,
+"u": "https://es.wikipedia.org/wiki/XXX"
+},
+{
+"t": "Barbara Palvin",
+"v": 9133,
+"movil": 0.89,
+"u": "https://es.wikipedia.org/wiki/Barbara_Palvin"
+},
+{
+"t": "Martín Demichelis",
+"v": 9074,
+"movil": 0.9,
+"u": "https://es.wikipedia.org/wiki/Martín_Demichelis"
+},
+{
+"t": "Saúl Blanch",
+"v": 9047,
+"movil": 0.84,
+"u": "https://es.wikipedia.org/wiki/Saúl_Blanch"
+}
+],
+"descartados_bots": [
+"YouTube",
+"WhatsApp"
+],
+"dia": "2026-10-21",
+"url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/es.wikipedia/all-access/2026/10/21"
+},
+"en": {
+"lang": "en",
+"ok": true,
+"items": [
+{
+"t": "Jailer 2",
+"v": 278796,
+"movil": 0.88,
+"u": "https://en.wikipedia.org/wiki/Jailer_2"
+},
+{
+"t": "PHP2Shell",
+"v": 238212,
+"movil": 0.27,
+"u": "https://en.wikipedia.org/wiki/PHP2Shell"
+},
+{
+"t": "Elizabeth Holmes",
+"v": 208412,
+"movil": 0.75,
+"u": "https://en.wikipedia.org/wiki/Elizabeth_Holmes"
+},
+{
+"t": "Aberfan disaster",
+"v": 187692,
+"movil": 0.71,
+"u": "https://en.wikipedia.org/wiki/Aberfan_disaster"
+},
+{
+"t": "Heath Ledger",
+"v": 177482,
+"movil": 0.91,
+"u": "https://en.wikipedia.org/wiki/Heath_Ledger"
+},
+{
+"t": "BioWare",
+"v": 170992,
+"movil": 0.51,
+"u": "https://en.wikipedia.org/wiki/BioWare"
+},
+{
+"t": "You Can See Everything",
+"v": 170153,
+"movil": 0.67,
+"u": "https://en.wikipedia.org/wiki/You_Can_See_Everything"
+},
+{
+"t": "ChatGPT",
+"v": 163328,
+"movil": 0.2,
+"u": "https://en.wikipedia.org/wiki/ChatGPT"
+},
+{
+"t": "Amy Acton",
+"v": 158230,
+"movil": 0.7,
+"u": "https://en.wikipedia.org/wiki/Amy_Acton"
+},
+{
+"t": "Helen Haines",
+"v": 154476,
+"movil": 0.73,
+"u": "https://en.wikipedia.org/wiki/Helen_Haines"
+},
+{
+"t": "Dancing with the Stars (American TV series) season 35",
+"v": 151353,
+"movil": 0.75,
+"u": "https://en.wikipedia.org/wiki/Dancing_with_the_Stars_(American_TV_series)_season_35"
+},
+{
+"t": "Deaths in 2026",
+"v": 131170,
+"movil": 0.47,
+"u": "https://en.wikipedia.org/wiki/Deaths_in_2026"
+},
+{
+"t": "Vivek Ramaswamy",
+"v": 126859,
+"movil": 0.72,
+"u": "https://en.wikipedia.org/wiki/Vivek_Ramaswamy"
+},
+{
+"t": "VisionQuest",
+"v": 123339,
+"movil": 0.65,
+"u": "https://en.wikipedia.org/wiki/VisionQuest"
+},
+{
+"t": "Como 1907",
+"v": 113033,
+"movil": 0.76,
+"u": "https://en.wikipedia.org/wiki/Como_1907"
+},
+{
+"t": "Kim Jong Un",
+"v": 107182,
+"movil": 0.66,
+"u": "https://en.wikipedia.org/wiki/Kim_Jong_Un"
+},
+{
+"t": "Clayface (film)",
+"v": 105904,
+"movil": 0.7,
+"u": "https://en.wikipedia.org/wiki/Clayface_(film)"
+},
+{
+"t": "Julia Stiles",
+"v": 92740,
+"movil": 0.86,
+"u": "https://en.wikipedia.org/wiki/Julia_Stiles"
+},
+{
+"t": "Street Fighter (2026 film)",
+"v": 88932,
+"movil": 0.74,
+"u": "https://en.wikipedia.org/wiki/Street_Fighter_(2026_film)"
+},
+{
+"t": "PHP",
+"v": 87141,
+"movil": 0.42,
+"u": "https://en.wikipedia.org/wiki/PHP"
+},
+{
+"t": "Slow Horses",
+"v": 85813,
+"movil": 0.64,
+"u": "https://en.wikipedia.org/wiki/Slow_Horses"
+},
+{
+"t": "Nathan Fielder",
+"v": 81129,
+"movil": 0.7,
+"u": "https://en.wikipedia.org/wiki/Nathan_Fielder"
+},
+{
+"t": "Nico Paz",
+"v": 80478,
+"movil": 0.8,
+"u": "https://en.wikipedia.org/wiki/Nico_Paz"
+},
+{
+"t": "Ezra Frech",
+"v": 77845,
+"movil": 0.88,
+"u": "https://en.wikipedia.org/wiki/Ezra_Frech"
+},
+{
+"t": "Bahar Soomekh",
+"v": 76829,
+"movil": 0.89,
+"u": "https://en.wikipedia.org/wiki/Bahar_Soomekh"
+}
+],
+"descartados_bots": [],
+"dia": "2026-10-21",
+"url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/2026/10/21"
+}
+}
+}
