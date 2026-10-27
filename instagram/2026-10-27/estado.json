@@ -26,6 +26,12 @@
    "hora": "2026-10-27T16:49:52+01:00"
   }
  },
- "errores": {},
+ "errores": {
+  "2026-10-27-vivienda": {
+   "intentos": 1,
+   "ultimo": "HTTP 400: Media ID is not available",
+   "hora": "2026-10-27T18:21:02+01:00"
+  }
+ },
  "simuladas": {}
 }
