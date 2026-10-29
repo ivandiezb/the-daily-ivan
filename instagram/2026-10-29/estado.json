@@ -11,6 +11,12 @@
    "hora": "2026-10-29T12:18:16+01:00"
   }
  },
- "errores": {},
+ "errores": {
+  "2026-10-29-mercados": {
+   "intentos": 1,
+   "ultimo": "HTTP 400: Media ID is not available",
+   "hora": "2026-10-29T13:53:16+01:00"
+  }
+ },
  "simuladas": {}
 }
