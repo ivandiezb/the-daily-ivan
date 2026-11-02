@@ -31,6 +31,12 @@
    "hora": "2026-11-02T18:21:44+01:00"
   }
  },
- "errores": {},
+ "errores": {
+  "2026-11-02-inversion": {
+   "intentos": 1,
+   "ultimo": "HTTP 400: Only photo or video can be accepted as media type.",
+   "hora": "2026-11-02T20:16:47+01:00"
+  }
+ },
  "simuladas": {}
 }
