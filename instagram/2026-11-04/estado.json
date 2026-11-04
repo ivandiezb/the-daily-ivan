@@ -34,14 +34,13 @@
    "media_id": "18153897094519972",
    "permalink": "https://www.instagram.com/p/DfVOEpflIt5/",
    "hora": "2026-11-04T20:34:37+01:00"
-  }
- },
- "errores": {
+  },
   "2026-11-04-naturaleza": {
-   "intentos": 1,
-   "ultimo": "HTTP 400: Only photo or video can be accepted as media type.",
-   "hora": "2026-11-04T21:26:09+01:00"
+   "media_id": "18127853749909043",
+   "permalink": "https://www.instagram.com/p/DfVanK0jyde/",
+   "hora": "2026-11-04T22:24:06+01:00"
   }
  },
+ "errores": {},
  "simuladas": {}
 }
