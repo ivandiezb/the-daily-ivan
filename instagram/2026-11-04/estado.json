@@ -36,6 +36,12 @@
    "hora": "2026-11-04T20:34:37+01:00"
   }
  },
- "errores": {},
+ "errores": {
+  "2026-11-04-naturaleza": {
+   "intentos": 1,
+   "ultimo": "HTTP 400: Only photo or video can be accepted as media type.",
+   "hora": "2026-11-04T21:26:09+01:00"
+  }
+ },
  "simuladas": {}
 }
