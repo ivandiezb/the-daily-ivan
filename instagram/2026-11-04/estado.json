@@ -1,0 +1,11 @@
+{
+ "publicadas": {},
+ "errores": {
+  "2026-11-04-claves": {
+   "intentos": 1,
+   "ultimo": "HTTP 400: Media ID is not available",
+   "hora": "2026-11-04T09:56:22+01:00"
+  }
+ },
+ "simuladas": {}
+}
