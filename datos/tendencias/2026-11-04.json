@@ -1,0 +1,3118 @@
+{
+"fecha": "2026-11-04",
+"hora": "07:57",
+"google": {
+"ES": {
+"geo": "ES",
+"url": "https://trends.google.com/trending/rss?geo=ES",
+"ok": true,
+"items": [
+{
+"t": "el sayed",
+"trafico": "100+",
+"fecha": "2026-11-04T07:40+01:00",
+"noticias": [
+{
+"t": "Las 'midterms', y el futuro del Partido Demócrata, se deciden en Michigan",
+"u": "https://www.elconfidencial.com/mundo/2026-11-03/michigan-elecciones-senado-el-sayed-1hms_4457640/",
+"s": "El Confidencial"
+},
+{
+"t": "Islamofobia, sanidad gratuita y una puñalada final: la batalla por Míchigan marcará cuánto a la izquierda puede girar Estados Unidos",
+"u": "https://elpais.com/us/2026-11-03/islamofobia-sanidad-gratuita-y-una-punalada-final-la-batalla-por-michigan-marcara-cuanto-a-la-izquierda-puede-girar-estados-unidos.html",
+"s": "EL PAÍS"
+},
+{
+"t": "Míchigan y El Sayed ya miran a 2028: empujar a los demócratas al populismo de izquierdas",
+"u": "https://www.abc.es/internacional/michigan-sayed-miran-2028-empujar-democratas-populismo-20261103201341-nt.html",
+"s": "ABC"
+}
+],
+"n": 100
+},
+{
+"t": "santoral hoy",
+"trafico": "100+",
+"fecha": "2026-11-04T07:40+01:00",
+"noticias": [
+{
+"t": "¿Qué santo se celebra hoy? Consulta el santoral del miércoles 4 de noviembre",
+"u": "https://www.elmundo.es/como/2026/11/04/6ae8bb36e85ece7f3a8b4574.html",
+"s": "El Mundo"
+},
+{
+"t": "San Carlos Borromeo",
+"u": "https://www.cope.es/religion/vivir-la-fe/santoral/audios/san-carlos-borromeo-20261104_3467861.html",
+"s": "COPE"
+},
+{
+"t": "¿Qué santo se celebra hoy miércoles 4 de noviembre? Todo lo que debes saber del santoral de hoy",
+"u": "https://www.abc.es/sociedad/santo-hoy-miercoles-04-11-2026-santoral-nsv-20261104070008-nt.html",
+"s": "ABC"
+}
+],
+"n": 100
+},
+{
+"t": "eicma",
+"trafico": "100+",
+"fecha": "2026-11-04T07:40+01:00",
+"noticias": [
+{
+"t": "EICMA, INAUGURATA L’83ª EDIZIONE: LA PIÙ GRANDE DI SEMPRE",
+"u": "https://www.mxbars.net/2026/11/04/eicma-inaugurata-l83a-edizione-la-piu-grande-di-sempre/",
+"s": "MXBars"
+},
+{
+"t": "Piemonte e Liguria insieme a Eicma: 19 itinerari in moto dalle Alpi al mare",
+"u": "https://www.genova3000.it/notizie/29924-piemonte-e-liguria-insieme-a-eicma-19-itinerari-in-moto-dalle-alpi-al-mare.html",
+"s": "Genova3000"
+},
+{
+"t": "EICMA 2026, record di espositori per la fiera delle due ruote · Video",
+"u": "https://www.quotidiano.net/video/eicma-2026-record-di-espositori-per-la-fiera-delle-due-ruote-dfhrd8or",
+"s": "Quotidiano Nazionale"
+}
+],
+"n": 100
+},
+{
+"t": "anthropic",
+"trafico": "200+",
+"fecha": "2026-11-04T07:30+01:00",
+"noticias": [
+{
+"t": "Progress on provable inference for large language models",
+"u": "https://www.anthropic.com/research/provable-inference",
+"s": "Anthropic"
+},
+{
+"t": "Anthropic is working on a system to prove AI models’ identity",
+"u": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+"s": "TechCrunch"
+},
+{
+"t": "Anthropic Releases FlashProve: Cryptographic Proofs That a Reply Came From Committed Weights",
+"u": "https://www.marktechpost.com/2026/11/03/anthropic-flashprove-provable-inference-zksnark/",
+"s": "MarkTechPost"
+}
+],
+"n": 200
+},
+{
+"t": "eltiempo",
+"trafico": "100+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "Del gatillo al soborno: la desesperada maniobra de un presunto sicario que ofreció $ 5 millones a la Policía tras ser acorralado en El Cerrito, Valle",
+"u": "https://www.eltiempo.com/colombia/cali/del-gatillo-al-soborno-la-desesperada-maniobra-de-un-presunto-sicario-que-ofrecio-5-millones-a-la-policia-tras-ser-acorralado-en-el-cerrito-valle-3598284",
+"s": "El Tiempo"
+},
+{
+"t": "Sicario ofrece millonario soborno a Policía en El Cerrito, Valle",
+"u": "https://estrelladigital.com.co/nacional/sicario-soborno-policia-el-cerrito/",
+"s": "Estrella Digital Colombia"
+},
+{
+"t": "“Todas merecemos ser amadas y cuidadas”: la despedida de una amiga a la docente que fue encontrada muerta en Santa Fe",
+"u": "https://tn.com.ar/sociedad/2026/11/03/todas-merecemos-ser-amadas-y-cuidadas-la-despedida-de-una-amiga-a-la-docente-que-fue-encontrada-muerta-en-santa-fe/",
+"s": "TN"
+}
+],
+"n": 100
+},
+{
+"t": "tiempo en sevilla",
+"trafico": "500+",
+"fecha": "2026-11-04T07:00+01:00",
+"noticias": [
+{
+"t": "El tiempo da un vuelco en Sevilla: una borrasca europea amenaza con imponer el invierno con frío y lluvias",
+"u": "https://www.abc.es/sevilla/ciudad/tiempo-vuelco-sevilla-borrasca-europea-amenaza-imponer-20261103110633-nts.html",
+"s": "ABC"
+},
+{
+"t": "Así cambiará el tiempo en Sevilla la próxima semana: de temperaturas casi rozando los 30 grados a las lluvias",
+"u": "https://www.elespanol.com/sevilla/20261104/cambiara-tiempo-sevilla-proxima-semana-temperaturas-rozando-grados-lluvias/1003744444650_0.html",
+"s": "El Español"
+},
+{
+"t": "La AEMET anuncia cambios en Sevilla: aumenta la probabilidad de lluvia y llegan mínimas de 8 grados",
+"u": "https://www.elcorreoweb.es/sevilla/2026/11/02/aemet-anuncia-cambios-sevilla-aumenta-136003387.html",
+"s": "El Correo de Andalucía"
+}
+],
+"n": 500
+},
+{
+"t": "iñigo pérez",
+"trafico": "100+",
+"fecha": "2026-11-04T07:00+01:00",
+"noticias": [
+{
+"t": "Iñigo: “Estamos mal, estamos hundidos”",
+"u": "https://as.com/futbol/champions/inigo-estamos-mal-estamos-hundidos-f202611-n/",
+"s": "Diario AS"
+},
+{
+"t": "Iñigo Pérez: \"Hay dolor, pero toca centrarse en buscar soluciones\"",
+"u": "https://plazadeportiva.valenciaplaza.com/plazadeportiva/futbol/inigo-perez-hay-dolor-pero-toca-centrarse-en-buscar-soluciones",
+"s": "Plaza Deportiva"
+},
+{
+"t": "Moleiro pide perdón tras el 0-6 del PSG y admite que al Villarreal le faltó actitud",
+"u": "https://www.elperiodicomediterraneo.com/villarreal-cf/2026/11/03/moleiro-pide-perdon-0-6-villarreal-cf-psg-moleiro-champions-136059586.html",
+"s": "El Periódico Mediterráneo"
+}
+],
+"n": 100
+},
+{
+"t": "chris pappas",
+"trafico": "100+",
+"fecha": "2026-11-04T07:00+01:00",
+"noticias": [
+{
+"t": "New Hampshire Governor Election Live Results 2026",
+"u": "https://apnews.com/projects/elections-2026/new-hampshire-governor-results/",
+"s": "AP News"
+},
+{
+"t": "'I am ready to fight' - Senator-elect Chris Pappas celebrates New Hampshire win",
+"u": "https://www.bbc.com/news/videos/c6y4xz3ypenko",
+"s": "BBC"
+},
+{
+"t": "Representative Chris Pappas Will Become the Senate’s First Openly Gay Male Senator",
+"u": "https://www.nytimes.com/2026/11/03/us/politics/chris-pappas-first-openly-gay-male-senator.html",
+"s": "The New York Times"
+}
+],
+"n": 100
+},
+{
+"t": "tiempo en murcia",
+"trafico": "200+",
+"fecha": "2026-11-04T06:50+01:00",
+"noticias": [
+{
+"t": "Una nueva DANA trae lluvias al Mediterráneo que pueden ser intensas hasta el jueves",
+"u": "https://www.eltiempo.es/noticias/una-nueva-dana-trae-lluvias-al-mediterraneo-que-pueden-ser-intensas-hasta-el-jueves",
+"s": "Eltiempo.es"
+},
+{
+"t": "Los meteorólogos de España vigilantes: crecerá una borrasca atlántica con frentes de lluvia muy eficientes el viernes 6",
+"u": "https://www.tiempo.com/noticias/prediccion/los-meteorologos-de-espana-vigilantes-crecera-una-borrasca-atlantica-con-frentes-de-lluvia-muy-eficientes-el-viernes.html",
+"s": "Meteored España"
+},
+{
+"t": "Una nueva tanda de chubascos torrenciales obliga a activar avisos en el Mediterráneo ante la llegada de lluvias \"fuertes y persistentes\"",
+"u": "https://www.elperiodico.com/es/sociedad/20261102/avisos-chubascos-torrenciales-mediterraneo-aemet-135992278",
+"s": "El Periódico"
+}
+],
+"n": 200
+},
+{
+"t": "météo",
+"trafico": "1000+",
+"fecha": "2026-11-04T06:50+01:00",
+"noticias": [
+{
+"t": "De quoi parle-t-on vraiment avec le « vortex polaire » qu'on annonce perturbé ?",
+"u": "https://www.20minutes.fr/planete/4260071-20261103-temperatures-glaciales-rechauffement-stratospherique-quoi-parle-vraiment-vortex-polaire",
+"s": "20 Minutes"
+},
+{
+"t": "Climat - Vers un hiver très froid? Le vortex polaire fait parler de lui, voici ce qu'il faut vraiment retenir: \"Ce serait exceptionnellement précoce\"",
+"u": "https://www.dhnet.be/actu/belgique/2026/11/03/climat-vers-un-hiver-tres-froid-le-vortex-polaire-fait-parler-de-lui-voici-ce-quil-faut-vraiment-retenir-ce-serait-exceptionnellement-precoce-KXKANY24JZC7ZIDMWH6WN7A3AQ/",
+"s": "DHnet"
+},
+{
+"t": "Vortex polaire : un phénomène exceptionnel début novembre, quelles conséquences météo en France",
+"u": "https://actualite.lachainemeteo.com/actualite-meteo/2026-10-27/vortex-polaire-un-phenomene-exceptionnel-debut-novembre-quelles-consequences-meteo-en-france-93581",
+"s": "La Chaîne Météo"
+}
+],
+"n": 1000
+}
+]
+},
+"US": {
+"geo": "US",
+"url": "https://trends.google.com/trending/rss?geo=US",
+"ok": true,
+"items": [
+{
+"t": "ontario california election results",
+"trafico": "200+",
+"fecha": "2026-11-04T07:40+01:00",
+"noticias": [
+{
+"t": "Election results: Ontario voters decide city leadership amid FBI probe",
+"u": "https://www.dailybulletin.com/2026/11/03/election-results-ontario-voters-decide-city-leadership-amid-fbi-probe/",
+"s": "Daily Bulletin"
+},
+{
+"t": "KVCR Midday News: What to know about Ontario's Mayoral and City Council election races",
+"u": "https://www.kvcrnews.org/local-news/2026-11-02/kvcr-midday-news-what-to-know-about-ontarios-mayoral-and-city-council-election-races",
+"s": "KVCR News"
+},
+{
+"t": "Bazinet winds Goderich mayoral race in a landslide",
+"u": "https://www.ctvnews.ca/london/article/goderich-huron-and-bruce-county-election-results/",
+"s": "CTV News"
+}
+],
+"n": 200
+},
+{
+"t": "bill huizenga",
+"trafico": "200+",
+"fecha": "2026-11-04T07:30+01:00",
+"noticias": [
+{
+"t": "Michigan Fourth Congressional District 2026: Live Election Results, Huizenga vs. McCann",
+"u": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-michigan-us-house-4.html",
+"s": "The New York Times"
+},
+{
+"t": "'I'm honored to be your candidate': McCann thanks supporters at Kalamazoo gathering",
+"u": "https://wwmt.com/news/michigan-politics/sean-mccann-kalamazoo-election-night-gathering-bill-huizenga-race-fourth-district-house-politics-government-west-michigan",
+"s": "WWMT"
+},
+{
+"t": "Bill Huizenga’s GOP primary challenger endorses Sean McCann in U.S. House race",
+"u": "https://www.mlive.com/politics/2026/11/bill-huizengas-gop-primary-challenger-endorses-sean-mccann-in-us-house-race.html",
+"s": "MLive.com"
+}
+],
+"n": 200
+},
+{
+"t": "brenton awa",
+"trafico": "200+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "Wyoming At-Large Congressional District 2026: Live Election Results, Kinney vs. Gray",
+"u": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-wyoming-us-house-at-large.html",
+"s": "The New York Times"
+},
+{
+"t": "Ed Case and Jill Tokuda win re-election to the U.S. House",
+"u": "https://www.staradvertiser.com/2026/11/03/breaking-news/ed-case-and-jill-tokuda-win-re-election-to-the-u-s-house/",
+"s": "Honolulu Star-Advertiser"
+},
+{
+"t": "Case, Tokuda Win Easily, Add To Democrats’ Upcoming Majority In Congress/The House xx",
+"u": "https://www.civilbeat.org/2026/11/case-tokuda-win-easily-as-democrats-take-house-senate/",
+"s": "Honolulu Civil Beat"
+}
+],
+"n": 200
+},
+{
+"t": "provisional ballots",
+"trafico": "200+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "Judge extends voting hours at Beverly Elementary to allow for provisional ballots",
+"u": "https://www.wtol.com/article/news/local/vote/police-investigate-school-threat-in-lake-township-sweep-tps-polling-location/512-97755e13-a45e-4b5b-9d45-4fc9e015776e",
+"s": "WTOL"
+},
+{
+"t": "Polling location at Beverly Elementary temporarily evacuated due to bomb threat",
+"u": "https://www.13abc.com/2026/11/03/polling-location-beverly-elementary-evacuated-due-bomb-treat/",
+"s": "WTVG"
+},
+{
+"t": "Polling location at Ohio elementary school evacuated due to bomb threat",
+"u": "https://www.fox19.com/2026/11/03/polling-location-ohio-elementary-school-evacuated-due-bomb-threat/",
+"s": "FOX19 | Cincinnati"
+}
+],
+"n": 200
+},
+{
+"t": "street fighter film theater count drop",
+"trafico": "200+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "Jason Momoa’s Latest Flop Continues To Crash at Box Office",
+"u": "https://www.yahoo.com/entertainment/movies/articles/jason-momoa-latest-flop-continues-043305832.html",
+"s": "Yahoo"
+},
+{
+"t": "Capcom Still 'Firmly Committed' to Expanding IP After Street Fighter Movie's Worrying Theatrical Run",
+"u": "https://www.ign.com/articles/capcom-doubles-down-on-movie-strategy-after-street-fighter-films-box-office-debut",
+"s": "IGN"
+},
+{
+"t": "Removed From 750 Theaters, 'Street Fighter' Officially Passes Final Box-Office Milestone",
+"u": "https://collider.com/street-fighter-removed-from-750-theaters-box-office-milestone/",
+"s": "Collider"
+}
+],
+"n": 200
+},
+{
+"t": "alina charaeva",
+"trafico": "2000+",
+"fecha": "2026-11-04T07:10+01:00",
+"noticias": [
+{
+"t": "November 5, 2026: Elena Pridankina vs Alexandra Shubladze: Set 1 Winner Tennis Prediction Market",
+"u": "https://robinhood.com/us/en/prediction-markets/tennis/events/elena-pridankina-vs-alexandra-shubladze-set-1-winner-nov-05-2026/",
+"s": "Robinhood"
+},
+{
+"t": "November 4, 2026: Maya Joint vs Maria Sakkari: Set 1 Winner Tennis Prediction Market",
+"u": "https://robinhood.com/us/en/prediction-markets/tennis/events/maya-joint-vs-maria-sakkari-set-1-winner-nov-04-2026/",
+"s": "Robinhood"
+},
+{
+"t": "November 3, 2026: Nuno Borges vs Moise Kouame: Set 2 Winner Tennis Prediction Market",
+"u": "https://robinhood.com/us/en/prediction-markets/tennis/events/nuno-borges-vs-moise-kouame-set-2-winner-nov-03-2026/",
+"s": "Robinhood"
+}
+],
+"n": 2000
+},
+{
+"t": "katy tur",
+"trafico": "200+",
+"fecha": "2026-11-04T07:10+01:00",
+"noticias": [
+{
+"t": "Who Is Tony Dokoupil’s Wife? Meet Katy Tur, the Fellow News Anchor He’s Been Married to Since 2017",
+"u": "https://www.yahoo.com/entertainment/tv/articles/tony-dokoupil-wife-meet-katy-204806919.html",
+"s": "Yahoo"
+},
+{
+"t": "Who Is Tony Dokoupil’s Wife? Meet Katy Tur, the Fellow News Anchor He’s Been Married to Since 2017",
+"u": "https://www.imdb.com/news/ni66094109/?ref_=nwc_art_perm",
+"s": "IMDb"
+}
+],
+"n": 200
+},
+{
+"t": "mississippi senators",
+"trafico": "200+",
+"fecha": "2026-11-04T07:00+01:00",
+"noticias": [
+{
+"t": "The Protect College Sports Act Isn’t Enough",
+"u": "https://www.theatlantic.com/culture/2026/11/protect-college-sports-act/689235/",
+"s": "The Atlantic"
+},
+{
+"t": "Governing Games – Neal McCluskey",
+"u": "https://lawliberty.org/forum/governing-games/",
+"s": "Law & Liberty"
+},
+{
+"t": "NJ college athletic directors, Geo Baker on the Protect College Sports Act | Exclusive",
+"u": "https://www.app.com/story/sports/college/2026/11/02/nj-college-athletic-directors-geo-baker-protect-college-sports-act-rutgers-seton-hall-monmouth/92476854007/",
+"s": "Asbury Park Press"
+}
+],
+"n": 200
+},
+{
+"t": "runoff election",
+"trafico": "200+",
+"fecha": "2026-11-04T07:00+01:00",
+"noticias": [
+{
+"t": "RESULTS: College Station voters decide on city mayor, 3 council members",
+"u": "https://communityimpact.com/bryan-college-station/election/results-college-station-voters-decide-on-city-mayor-3-council-members/",
+"s": "Community Impact"
+},
+{
+"t": "Yancy wins College Station mayoral race after Cunha concedes",
+"u": "https://www.kbtx.com/2026/11/04/yancy-wins-college-station-mayoral-race-after-cunha-concedes/",
+"s": "KBTX News 3"
+},
+{
+"t": "Yancy elected College Station mayor; council races go to runoff",
+"u": "https://theeagle.com/news/local/government-politics/elections/article_a196ec05-2c11-4821-b6dc-00327a82cee2.html",
+"s": "Bryan College Station Eagle"
+}
+],
+"n": 200
+},
+{
+"t": "hawaii news now",
+"trafico": "5000+",
+"fecha": "2026-11-04T07:00+01:00",
+"noticias": [
+{
+"t": "Election Day on Oahu: Inside the final hours of in-person voting",
+"u": "https://www.hawaiinewsnow.com/2026/11/04/election-day-oahu-inside-final-hours-in-person-voting/",
+"s": "Hawaii News Now"
+},
+{
+"t": "Hawaii voters line up to cast their ballots on Election Day",
+"u": "https://www.staradvertiser.com/2026/11/03/breaking-news/hawaii-voters-line-up-to-cast-their-ballots-on-election-day/",
+"s": "Honolulu Star-Advertiser"
+},
+{
+"t": "Will Republicans make more gains in Hawaiʻi? 6 things to watch on Election Day",
+"u": "https://www.hawaiipublicradio.org/local-news/2026-11-02/6-things-to-watch-on-election-day-in-hawaii",
+"s": "Hawaii Public Radio"
+}
+],
+"n": 5000
+}
+]
+},
+"GB": {
+"geo": "GB",
+"url": "https://trends.google.com/trending/rss?geo=GB",
+"ok": true,
+"items": [
+{
+"t": "the mail",
+"trafico": "200+",
+"fecha": "2026-11-04T07:40+01:00",
+"noticias": [
+{
+"t": "Furness parents renew calls for change after 'horrific' deaths of their children",
+"u": "https://www.nwemail.co.uk/news/26688976.furness-parents-want-change-sudden-deaths-children/",
+"s": "NW Mail"
+},
+{
+"t": "Michelle Scrogham leads calls for national strategy after deaths of constituents",
+"u": "https://www.nwemail.co.uk/news/26693337.furness-deaths-see-barrow-mp-call-national-strategy/",
+"s": "NW Mail"
+},
+{
+"t": "Dog rescued from 'terrible' conditions needs a loving home",
+"u": "https://www.thewestmorlandgazette.co.uk/news/26694039.dog-rescued-terrible-conditions-needs-loving-home/",
+"s": "Westmorland Gazette"
+}
+],
+"n": 200
+},
+{
+"t": "bbc world news",
+"trafico": "100+",
+"fecha": "2026-11-04T07:40+01:00",
+"noticias": [
+{
+"t": "'I couldn't be silent': Iranian teen's mother seeking justice after daughter shot dead",
+"u": "https://www.bbc.co.uk/news/videos/cwjdmp25mem9o",
+"s": "BBC"
+},
+{
+"t": "Iran: The People’s Story – ‘They shot my 16-year-old daughter in the heart’",
+"u": "https://www.independent.co.uk/world/iran-protests-killed-execute-islamic-republic-b3076311.html",
+"s": "The Independent"
+},
+{
+"t": "Iran killed her teenage daughter - now she is facing up to the regime",
+"u": "https://www.bbc.com/news/articles/c3qjn8117kwjo",
+"s": "BBC"
+}
+],
+"n": 100
+},
+{
+"t": "connections hint",
+"trafico": "500+",
+"fecha": "2026-11-04T07:30+01:00",
+"noticias": [
+{
+"t": "NYT Connections Answers for November 3, 3036",
+"u": "https://www.nytimes.com/2026/11/02/crosswords/connections-companion-1241.html",
+"s": "The New York Times"
+},
+{
+"t": "NYT Connections hints today: Meanings for each word for Nov. 4, 2026",
+"u": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-4-2026",
+"s": "Mashable"
+},
+{
+"t": "NYT Connections Hints And Answers For Wednesday, November 4",
+"u": "https://www.forbes.com/sites/krisholt/2026/11/03/nyt-connections-hint-today-answer-wednesday-november-4-1242/",
+"s": "Forbes"
+}
+],
+"n": 500
+},
+{
+"t": "abdul",
+"trafico": "100+",
+"fecha": "2026-11-04T07:30+01:00",
+"noticias": [
+{
+"t": "Democrats – finally – embrace Abdul El-Sayed amid extreme attacks from Trump and allies",
+"u": "https://www.theguardian.com/us-news/2026/oct/30/abdul-el-sayed-michigan-senate-tump",
+"s": "The Guardian"
+},
+{
+"t": "Trump tells Muslim Senate candidate to ‘go back to where he came from’",
+"u": "https://www.telegraph.co.uk/world-news/2026/10/31/trump-muslim-senate-candidate-go-back-where-he-came-from/",
+"s": "The Telegraph"
+},
+{
+"t": "Trump leans into Islamophobia and conspiracy in last-ditch campaign rallies",
+"u": "https://www.aljazeera.com/news/2026/11/2/trump-leans-into-islamophobia-and-conspiracy-in-last-ditch-campaign-rallies",
+"s": "Al Jazeera"
+}
+],
+"n": 100
+},
+{
+"t": "michigan midterms",
+"trafico": "100+",
+"fecha": "2026-11-04T07:30+01:00",
+"noticias": [
+{
+"t": "Michigan 2026: Live Midterm Election Results",
+"u": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-michigan.html",
+"s": "The New York Times"
+},
+{
+"t": "'Trump ain't do nothing': Michigan voters have their say",
+"u": "https://news.sky.com/video/trump-aint-do-nothing-michigan-voters-have-their-say-13607721",
+"s": "Sky News"
+},
+{
+"t": "Michigan General Election Results 2026",
+"u": "https://www.michiganpublic.org/politics-government/2026-11-03/michigan-election-results-2026",
+"s": "Michigan Public"
+}
+],
+"n": 100
+},
+{
+"t": "mississippi senate race",
+"trafico": "200+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "Scott Colom releases ‘Sinners’-themed campaign ad as Mississippi Senate race heats up",
+"u": "https://thehill.com/homenews/campaign/6186475-scott-colom-releases-sinners-themed-campaign-ad-as-mississippi-senate-race-heats-up/",
+"s": "The Hill"
+},
+{
+"t": "Young, Black voters are fired up — but will the enthusiasm last?",
+"u": "https://msindy.org/p/young-black-voters-are-fired-up-but",
+"s": "the mississippi independent"
+},
+{
+"t": "Scott Colom makes campaign stop in Meridian ahead of Midterm Election",
+"u": "https://www.wtok.com/2026/11/03/scott-colom-makes-campaign-stop-meridian-ahead-midterm-election/",
+"s": "WTOK"
+}
+],
+"n": 200
+},
+{
+"t": "michigan elections 2026",
+"trafico": "100+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "Michigan Midterm Elections 2026: Live Results",
+"u": "https://www.nbcnews.com/politics/2026-elections/michigan-results",
+"s": "NBC News"
+},
+{
+"t": "Michigan 2026: Live Midterm Election Results",
+"u": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-michigan.html",
+"s": "The New York Times"
+},
+{
+"t": "'Trump ain't do nothing': Michigan voters have their say",
+"u": "https://news.sky.com/video/trump-aint-do-nothing-michigan-voters-have-their-say-13607721",
+"s": "Sky News"
+}
+],
+"n": 100
+},
+{
+"t": "man city charges",
+"trafico": "200+",
+"fecha": "2026-11-04T07:10+01:00",
+"noticias": [
+{
+"t": "Man City relegated from Premier League but win Champions League? How it could play out",
+"u": "https://www.espn.co.uk/football/story/_/id/50362560/man-city-relegated-premier-league-win-champions-league-how-play-out",
+"s": "ESPN"
+},
+{
+"t": "Man City could face further charges as Premier League confronted with ‘dilemma’",
+"u": "https://www.independent.co.uk/sport/football/man-city-new-charges-premier-league-financial-abu-dhabi-b3078495.html",
+"s": "The Independent"
+},
+{
+"t": "Man City handed 60-point deduction prediction as charges branded a 'disaster'",
+"u": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-city-charges-premier-league-34858268",
+"s": "Manchester Evening News"
+}
+],
+"n": 200
+},
+{
+"t": "poundland",
+"trafico": "500+",
+"fecha": "2026-11-04T07:10+01:00",
+"noticias": [
+{
+"t": "Poundland supplier 'angry' with owners over administration",
+"u": "https://www.bbc.co.uk/news/articles/ck240mm3e42do",
+"s": "BBC"
+},
+{
+"t": "MPs summon Poundland’s owner to select committee grilling",
+"u": "https://www.ft.com/content/aa57000f-bb9a-46ec-9eed-fc6857e2c432?syn-25a6b1a6=1",
+"s": "Financial Times"
+},
+{
+"t": "Protect Poundland from predatory capitalism, MPs tell government",
+"u": "https://www.theguardian.com/business/2026/nov/03/protect-poundland-mps-tell-government-retail",
+"s": "The Guardian"
+}
+],
+"n": 500
+},
+{
+"t": "reuters",
+"trafico": "200+",
+"fecha": "2026-11-04T07:10+01:00",
+"noticias": [
+{
+"t": "US midterms: Wall Street falls as results emerge - with broad implications possible",
+"u": "https://news.sky.com/story/us-midterms-markets-fall-on-wall-street-as-democrats-gain-early-momentum-13607737",
+"s": "Sky News"
+},
+{
+"t": "Stock futures fall as Democrats win big in midterms with traders betting they slow data center buildout: Live updates",
+"u": "https://www.cnbc.com/2026/11/03/stock-market-today-live-updates.html",
+"s": "CNBC"
+},
+{
+"t": "Market analysts react to US midterm election results",
+"u": "https://www.reuters.com/business/analysts-react-us-midterm-election-results-2026-11-04/",
+"s": "Reuters"
+}
+],
+"n": 200
+}
+]
+},
+"FR": {
+"geo": "FR",
+"url": "https://trends.google.com/trending/rss?geo=FR",
+"ok": true,
+"items": [
+{
+"t": "susan collins",
+"trafico": "500+",
+"fecha": "2026-11-04T07:40+01:00",
+"noticias": [
+{
+"t": "Republican Susan Collins loses seat to Democrat, ending nearly 30 years in the Senate",
+"u": "https://www.bbc.com/news/articles/cred3jj69jvqo",
+"s": "BBC"
+},
+{
+"t": "Democrat Troy Jackson unseats longtime Republican Senator Susan Collins",
+"u": "https://www.lemonde.fr/en/international/article/2026/11/04/democrat-troy-jackson-unseats-longtime-republican-senator-susan-collins_6771250_4.html",
+"s": "Le Monde.fr"
+},
+{
+"t": "Election 2026 live updates: Democrats unseat Sen. Susan Collins in Maine",
+"u": "https://www.nbcnews.com/politics/2026-election/live-blog/midterm-election-results-2026-news-trump-live-updates-rcna605763",
+"s": "NBC News"
+}
+],
+"n": 500
+},
+{
+"t": "facturation électronique",
+"trafico": "100+",
+"fecha": "2026-11-04T07:40+01:00",
+"noticias": [
+{
+"t": "« Je voudrais émettre des factures électroniques sans attendre septembre 2027 » : un régisseur d'immeubles dans les starting-blocks",
+"u": "https://entrepreneurs.lesechos.fr/gestion-entreprise/finance/je-voudrais-emettre-des-factures-electroniques-sans-attendre-septembre-2027-un-regisseur-dimmeubles-dans-les-starting-blocks-2260754",
+"s": "Les Echos"
+},
+{
+"t": "Facturation électronique : 2 mois après le lancement, voici les premiers bugs qui donnent du fil à retordre",
+"u": "https://www.lefigaro.fr/decideurs/facturation-electronique-2-mois-apres-le-lancement-voici-les-premiers-bugs-qui-donnent-du-fil-a-retordre-20261103",
+"s": "Le Figaro"
+},
+{
+"t": "Facture électronique : et si votre expert-comptable avait enfin le temps de vous conseiller ?",
+"u": "https://www.journaldunet.com/fintech/1557405-facture-electronique-et-si-votre-expert-comptable-avait-enfin-le-temps-de-vous-conseiller/",
+"s": "JDN"
+}
+],
+"n": 100
+},
+{
+"t": "abattoir",
+"trafico": "100+",
+"fecha": "2026-11-04T07:40+01:00",
+"noticias": [
+{
+"t": "Une chance d’échapper à l’abattoir : 600 poules pondeuses à adopter en un week-end en Maine-et-Loire",
+"u": "https://www.ouest-france.fr/societe/animaux/une-chance-dechapper-a-labattoir-600-poules-pondeuses-a-adopter-en-un-week-end-en-maine-et-loire-3f2253f6-d6e4-11f1-84f3-5611f158a658",
+"s": "Ouest-France"
+},
+{
+"t": "Des sauvetages de poules organisés par les Caquetteuses à La Selle-Craonnaise et à Château-Gontier",
+"u": "https://www.ouest-france.fr/pays-de-la-loire/chateau-gontier-sur-mayenne-53200/des-sauvetages-de-poules-organises-par-les-caquetteuses-a-la-selle-craonnaise-et-a-chateau-gontier-cbb0aada-d6de-11f1-84f3-5611f158a658",
+"s": "Ouest-France"
+},
+{
+"t": "Le Ploërmelais - Sauvetage d'animaux : voici comment adopter des poules pour les sauver de l'abattoir avant l'hiver",
+"u": "https://actu.fr/espace-debat/commentaires/65010367/",
+"s": "Actu.fr"
+}
+],
+"n": 100
+},
+{
+"t": "hakeem jeffries",
+"trafico": "100+",
+"fecha": "2026-11-04T07:30+01:00",
+"noticias": [
+{
+"t": "Hakeem Jeffries is on track to make House speaker history. But major challenges lay ahead",
+"u": "https://www.cnn.com/2026/11/03/politics/hakeem-jeffries-house-speaker-democrats",
+"s": "CNN"
+},
+{
+"t": "Trump willing to accept Democrat landslide result, but says would have won if his name was on ballot",
+"u": "https://www.arabnews.com/world/trump-willing-to-accept-democrat-landslide-result-but-says-would-have-won-if-his-name-was-on-ballot-3009700",
+"s": "Arab News"
+},
+{
+"t": "Licensable video: Democrats celebrate House takeover in United States midterms",
+"u": "https://www.reutersconnect.com/item/democrats-celebrate-house-takeover-in-united-states-midterms/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XRUZWQzU1MDIxODc5ODc1MDAx",
+"s": "Reuters Connect"
+}
+],
+"n": 100
+},
+{
+"t": "senat americain",
+"trafico": "100+",
+"fecha": "2026-11-04T07:30+01:00",
+"noticias": [
+{
+"t": "Midterms dans le Michigan: Abdul El-Sayed, premier sénateur américain musulman?",
+"u": "https://www.bfmtv.com/international/amerique-nord/etats-unis/video-midterms-dans-le-michigan-abdul-el-sayed-premier-senateur-americain-musulman_VN-202611031032.html",
+"s": "BFM"
+},
+{
+"t": "Midterms 2026 : au Michigan, Abdul El-Sayed en passe de l'emporter ?",
+"u": "https://www.france24.com/fr/vid%C3%A9o/20261104-midterms-2026-au-michigan-abdul-el-sayed-en-passe-de-l-emporter",
+"s": "France 24"
+},
+{
+"t": "Haley Stevens dévoile les (nombreuses) raisons de son soutien au candidat républicain dans le Michigan",
+"u": "https://www.huffingtonpost.fr/international/article/haley-stevens-devoile-les-nombreuses-raisons-de-son-soutien-au-candidat-republicain-dans-le-michigan_351124.html",
+"s": "Le HuffPost"
+}
+],
+"n": 100
+},
+{
+"t": "les sables-d'olonne",
+"trafico": "200+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "Abandon du 10 km, nouveau parcours, ouverture des inscriptions : le semi-marathon des Sables-d’Olonne 2027 se dévoile",
+"u": "https://actu.fr/pays-de-la-loire/les-sables-d-olonne_85194/abandon-du-10-km-nouveau-parcours-ouverture-des-inscriptions-le-semi-marathon-des-sables-dolonne-2027-se-devoile_65006627.html",
+"s": "Actu.fr"
+},
+{
+"t": "Marathon des Sables-d’Olonne : la file d’attente pour tenter d’obtenir un dossard a ouvert",
+"u": "https://www.ouest-france.fr/sport/running/marathon/marathon-des-sables-dolonne-la-file-dattente-pour-obtenir-les-derniers-dossards-a-ouvert-80139d38-d3a7-11f1-81f2-0d14b9f9c452",
+"s": "Ouest-France"
+},
+{
+"t": "marathon 4 avril 2027",
+"u": "https://my-angers.info/tag/marathon-4-avril-2027",
+"s": "Angers Info"
+}
+],
+"n": 200
+},
+{
+"t": "alstom coradia",
+"trafico": "200+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "LE POINT sur les changements de recommandations à Paris (actualisé)",
+"u": "https://www.boursorama.com/bourse/actualites/le-point-sur-les-changements-de-recommandations-a-paris-actualise-f7478ce2168fe283865b2f51eab17da9",
+"s": "Boursorama"
+},
+{
+"t": "Malgré un carnet de commandes de trains toujours plein, Alstom dévisse en Bourse",
+"u": "https://www.liberation.fr/economie/alstom-plonge-de-plus-de-30-en-bourse-apres-avoir-drastiquement-abaisse-ses-objectifs-annuels-20261102_XYECJKDYM5AT7FNCGKZV2H5EX4/",
+"s": "Libération"
+},
+{
+"t": "L'entreprise a même mis en place un commando pour comprendre ce qui pèche: comment les contrats en Allemagne empoisonnent Alstom, dont la rentabilité chute encore",
+"u": "https://www.bfmtv.com/economie/entreprises/industries/l-entreprise-a-meme-mis-en-place-un-commando-pour-comprendre-ce-qui-peche-comment-les-contrats-en-allemagne-empoisonnent-alstom-dont-la-rentabilite-chute-encore_AN-202611020500.html",
+"s": "BFM"
+}
+],
+"n": 200
+},
+{
+"t": "centre presse",
+"trafico": "200+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "\"C’est inédit pour la ville, aucune étude du genre n’avait été menée depuis 2007\" : à Rodez, la Ville entend mieux comprendre les flux de circulation avant de lancer ses projets",
+"u": "https://www.centrepresseaveyron.fr/2026/11/04/cest-inedit-pour-la-ville-aucune-etude-du-genre-navait-ete-menee-depuis-2007-a-rodez-la-ville-entend-mieux-comprendre-les-flux-de-circulation-avant-de-13634067.php",
+"s": "Centre Presse Aveyron"
+},
+{
+"t": "En portant assistance à une dame dans la rue et en la reconduisant à son domicile, trois pompiers hors service sauvent son mari victime en arrêt cardiaque",
+"u": "https://www.centrepresseaveyron.fr/2026/11/04/en-portant-assistance-a-une-dame-dans-la-rue-et-en-la-reconduisant-a-son-domicile-trois-pompiers-hors-service-sauvent-son-mari-victime-en-arret-13631879.php",
+"s": "Centre Presse Aveyron"
+},
+{
+"t": "Gard. Les pompiers raccompagnent chez elle une dame victime d'une chute... et sauvent son mari d'un arrêt cardiaque",
+"u": "https://www.leprogres.fr/faits-divers-justice/2026/11/04/les-pompiers-raccompagnent-chez-elle-une-dame-victime-d-une-chute-et-sauvent-son-mari-d-un-arret-cardiaque",
+"s": "Le Progrès"
+}
+],
+"n": 200
+},
+{
+"t": "etf",
+"trafico": "100+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "ETF-Test: Grün und erfolgreich in Wasserstoff investieren mit Xtrackers?",
+"u": "https://www.ecoreporter.de/artikel/etf-test-gr%C3%BCn-und-erfolgreich-investiert-mit-wasserstoff-und-xtrackers/",
+"s": "ECOreporter.de"
+},
+{
+"t": "L&G Emerging Markets Quality Dividends UCITS ETF | IE000BP0WGL6 | A42QBY",
+"u": "https://extraetf.com/de/etf-profile/IE000BP0WGL6",
+"s": "extraETF"
+},
+{
+"t": "Jeden Freitag Zahltag: Bringt dieser 7,95 % Dividenden-ETF den Traum von der Rente mit 40?",
+"u": "https://www.aktienwelt360.de/2026/10/28/jeden-freitag-zahltag-bringt-dieser-795-dividenden-etf-den-traum-von-der-rente-mit-40/",
+"s": "Aktienwelt360"
+}
+],
+"n": 100
+},
+{
+"t": "nadia santini",
+"trafico": "100+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "È morta Nadia Santini, chef tre stelle Michelin",
+"u": "https://www.ansa.it/canale_terraegusto/notizie/regioni/lombardia/2026/11/02/e-morta-nadia-santini-chef-tre-stelle-michelin-aveva-73-anni_7f59752d-0032-4379-8cde-b3a50b526d64.html",
+"s": "ANSA"
+},
+{
+"t": "Nadia Santini, l’anima bella che vedeva la cucina come atto di amore e umanità",
+"u": "https://www.repubblica.it/il-gusto/2026/11/03/news/nadia_santini_l_anima_bella_che_vedeva_la_cucina_come_atto_di_amore_e_umanita-425696659/",
+"s": "la Repubblica"
+},
+{
+"t": "Canneto sull’Oglio proclama il lutto cittadino per Nadia Santini",
+"u": "https://www.oglioponews.it/2026/11/03/canneto-sulloglio-proclama-il-lutto-cittadino-per-nadia-santini/",
+"s": "OglioPoNews"
+}
+],
+"n": 100
+}
+]
+},
+"DE": {
+"geo": "DE",
+"url": "https://trends.google.com/trending/rss?geo=DE",
+"ok": true,
+"items": [
+{
+"t": "brandon herrera",
+"trafico": "100+",
+"fecha": "2026-11-04T07:40+01:00",
+"noticias": [
+{
+"t": "Texas House District 23 Midterm Election 2026: Live Results",
+"u": "https://www.nbcnews.com/politics/2026-elections/texas-us-house-district-23-results",
+"s": "NBC News"
+},
+{
+"t": "Texas 23rd Congressional District 2026: Live Election Results, Padilla Stout vs. Herrera",
+"u": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-texas-us-house-23.html",
+"s": "The New York Times"
+},
+{
+"t": "Brandon Herrera to host town halls in El Paso County",
+"u": "https://kvia.com/your-voice-your-vote/2026/10/27/brandon-herrera-to-host-town-halls-in-el-paso-county/",
+"s": "KVIA"
+}
+],
+"n": 100
+},
+{
+"t": "deb haaland",
+"trafico": "200+",
+"fecha": "2026-11-04T07:30+01:00",
+"noticias": [
+{
+"t": "Deb Haaland Is First Native American Woman to Be Elected Governor After New Mexico Win",
+"u": "https://www.nytimes.com/2026/11/03/us/new-mexico-governor-haaland-hull.html",
+"s": "The New York Times"
+},
+{
+"t": "Decision 2026: Governor’s race",
+"u": "https://www.kob.com/politics-news/new-mexico-politics/decision-2026-governors-race/",
+"s": "KOB 4"
+},
+{
+"t": "Haaland Makes Closing Argument at Albuquerque Rally Ahead of Election Day",
+"u": "https://nativenewsonline.net/currents/haaland-makes-closing-argument-at-albuquerque-rally-ahead-of-election-day/",
+"s": "Native News Online"
+}
+],
+"n": 200
+},
+{
+"t": "cindy hyde-smith",
+"trafico": "200+",
+"fecha": "2026-11-04T07:30+01:00",
+"noticias": [
+{
+"t": "Mississippi U.S. Senate Midterm Election 2026: Live Results",
+"u": "https://www.nbcnews.com/politics/2026-elections/mississippi-senate-results",
+"s": "NBC News"
+},
+{
+"t": "Mississippi Senate election is too close to call Tuesday night",
+"u": "https://mississippitoday.org/2026/11/03/mississippi-senate-election-is-too-close-to-call-tuesday-night/",
+"s": "Mississippi Today"
+},
+{
+"t": "Ohio U.S. Senate Special 2026: Live Midterm Election Results, Husted vs. Brown",
+"u": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-ohio-us-senate-special.html",
+"s": "The New York Times"
+}
+],
+"n": 200
+},
+{
+"t": "brand krefeld",
+"trafico": "100+",
+"fecha": "2026-11-04T07:30+01:00",
+"noticias": [
+{
+"t": "Fotos vom Feuerwehr-Einsatz in Krefeld: Großbrand zerstört Schreinerei und Kfz-Werkstatt",
+"u": "https://rp-online.de/nrw/staedte/krefeld/krefeld-grossbrand-zerstoert-schreinerei-und-kfz-werkstatt_bid-157795535",
+"s": "RP Online"
+},
+{
+"t": "Gewerbekomplex in Krefeld-Inrath brennt | Video",
+"u": "https://www1.wdr.de/mediathek/video/nrw-video/krefeld-gewerbekomplex-brand-feuerwehr-rauch-100.html",
+"s": "WDR"
+},
+{
+"t": "Großbrand in Krefeld: Schreinerei an der Weyerhofstraße",
+"u": "https://www.welleniederrhein.de/artikel/grossbrand-in-krefeld-schreinerei-an-der-weyerhofstrasse-2797381",
+"s": "Welle Niederrhein"
+}
+],
+"n": 100
+},
+{
+"t": "scott colom",
+"trafico": "200+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "Scott Colom releases ‘Sinners’-themed campaign ad as Mississippi Senate race heats up",
+"u": "https://thehill.com/homenews/campaign/6186475-scott-colom-releases-sinners-themed-campaign-ad-as-mississippi-senate-race-heats-up/",
+"s": "The Hill"
+},
+{
+"t": "Young, Black voters are fired up — but will the enthusiasm last?",
+"u": "https://msindy.org/p/young-black-voters-are-fired-up-but",
+"s": "the mississippi independent"
+},
+{
+"t": "Scott Colom makes campaign stop in Meridian ahead of Midterm Election",
+"u": "https://www.wtok.com/2026/11/03/scott-colom-makes-campaign-stop-meridian-ahead-midterm-election/",
+"s": "WTOK"
+}
+],
+"n": 200
+},
+{
+"t": "mississippi",
+"trafico": "200+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "All of Mississippi’s U.S. House incumbents hold their seats",
+"u": "https://msindy.org/p/all-of-mississippis-us-house-incumbents",
+"s": "the mississippi independent"
+},
+{
+"t": "Incumbent Mississippi Congressmen win re-election",
+"u": "https://magnoliatribune.com/2026/11/03/incumbent-mississippi-congressmen-win-re-election/",
+"s": "Magnolia Tribune"
+},
+{
+"t": "Bennie Thompson cruises to easy US House win in MS District 2",
+"u": "https://www.clarionledger.com/story/news/politics/2026/11/03/bennie-thompson-wins-again-in-us-house-district-2-for-ms-beats-ron-eller/92232552007/",
+"s": "The Clarion-Ledger"
+}
+],
+"n": 200
+},
+{
+"t": "ilhan omar",
+"trafico": "200+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "Scandal-plagued Ilhan Omar easily secures 5th term in deep blue Minnesota despite immigration fraud probe",
+"u": "https://www.foxnews.com/politics/scandal-plagued-ilhan-omar-easily-secures-5th-term-deep-blue-minnesota-despite-immigration-fraud-probe",
+"s": "Fox News"
+},
+{
+"t": "US midterm election results LIVE: Democrats flip Congress; Abdul El-Sayed's Michigan Senate seat chase in focus | Hindustan Times",
+"u": "https://www.hindustantimes.com/world-news/us-midterm-election-results-2026-live-updates-senate-house-races-republicans-democrats-donald-trump-101793753326989.html",
+"s": "Hindustan Times"
+},
+{
+"t": "ELECTION RESULTS: Omar wins again",
+"u": "https://www.hometownsource.com/abc_newspapers/news/2026_election_abc_newspapers/election-results-omar-wins-again/article_79078798-2687-4234-b141-f4b325598dd9.html",
+"s": "hometownsource.com"
+}
+],
+"n": 200
+},
+{
+"t": "bill hill",
+"trafico": "200+",
+"fecha": "2026-11-04T07:10+01:00",
+"noticias": [
+{
+"t": "Alaska At-Large Congressional District 2026: Live Election Results, Begich vs. Hafner",
+"u": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-alaska-us-house-at-large.html",
+"s": "The New York Times"
+},
+{
+"t": "‘DON’T BE TRICKED!’ The Other Controversial Candidate on Alaska’s Ballot",
+"u": "https://www.wsj.com/livecoverage/midterm-election-news-2026/card/-don-t-be-tricked-the-other-controversial-candidate-on-alaska-s-ballot-68v0K1Qi0yN8uGbkq45J",
+"s": "WSJ"
+},
+{
+"t": "Independent Bill Hill runs \"race against time\" in bid to knock off GOP U.S. Rep. Begich",
+"u": "https://alaskabeacon.com/2026/10/31/independent-bill-hill-runs-race-against-time-in-bid-to-knock-off-gop-u-s-rep-begich/",
+"s": "Alaska Beacon"
+}
+],
+"n": 200
+},
+{
+"t": "linux",
+"trafico": "100+",
+"fecha": "2026-11-04T07:10+01:00",
+"noticias": [],
+"n": 100
+},
+{
+"t": "flughafen frankfurt",
+"trafico": "100+",
+"fecha": "2026-11-04T07:00+01:00",
+"noticias": [
+{
+"t": "Premium-Passagiere im Visier: Condor plant zwei eigene Lounges im Terminal 3 in Frankfurt",
+"u": "https://www.aerotelegraph.com/airlines/condor-plant-am-flughafen-frankfurt-zwei-eigene-lounges-im-terminal-3/492mx3s",
+"s": "aeroTELEGRAPH"
+},
+{
+"t": "Condor zieht ins neue Terminal 3 – zwei Lounges sollen das Frankfurt-Erlebnis ändern",
+"u": "https://frankfurt.t-online.de/region/frankfurt-am-main/id_101510366/condor-will-luxus-lounges-am-flughafen-frankfurt-das-ist-geplant.html",
+"s": "t-online – Frankfurt"
+},
+{
+"t": "Fraport erwartet 2027 effizienteren T1-Betrieb",
+"u": "https://www.aero.de/news-54004/Fraport-erwartet-2027-effizienteren-T1-Betrieb.html",
+"s": "aero.de"
+}
+],
+"n": 100
+}
+]
+},
+"IT": {
+"geo": "IT",
+"url": "https://trends.google.com/trending/rss?geo=IT",
+"ok": true,
+"items": [
+{
+"t": "electrolux",
+"trafico": "100+",
+"fecha": "2026-11-04T07:40+01:00",
+"noticias": [
+{
+"t": "Crisi Electrolux, c'è l'accordo: da 1.719 si scende a 918 esuberi. Tutte uscite incentivate",
+"u": "https://www.corriere.it/economia/finanza/26_novembre_04/crisi-electrolux-accordo-esuberi-d85380fc-9bdd-45f4-b499-a2c9b0124xlk.shtml",
+"s": "Corriere della Sera"
+},
+{
+"t": "Electrolux, l'accordo nella notte: dimezzati gli esuberi e la fabbrica di Cerreto non chiude",
+"u": "https://www.repubblica.it/economia/2026/11/04/news/electrolux_l_accordo_nella_notte_dimezzati_gli_esuberi_e_la_fabbrica_di_cerreto_non_chiude-425697721/",
+"s": "la Repubblica"
+},
+{
+"t": "Maratona di 30 ore al Mimit per Electrolux: scontro sugli incentivi alle uscite volontarie e nodo esuberi",
+"u": "https://www.ilnordest.it/economia/imprese/pordenone-porcia-electrolux-vertenza-mimit-urso-sartini-esuberi-susegana-x9889kmw",
+"s": "il Nord Est"
+}
+],
+"n": 100
+},
+{
+"t": "paolo montero",
+"trafico": "100+",
+"fecha": "2026-11-04T07:30+01:00",
+"noticias": [
+{
+"t": "Montero, lezione di Juve: \"Devi sudare, la palla è il piatto. Zhegrova, Yildiz e chi menava più di me\"",
+"u": "https://www.tuttosport.com/news/calcio/serie-a/juventus/2026/11/03-152351380/montero_lezione_di_juve_devi_sudare_la_palla_il_piatto_zhegrova_yildiz_e_chi_menava_pi_di_me",
+"s": "Tuttosport"
+},
+{
+"t": "\"Le lezioni di Pigna\": Paolo Montero a Tuttosport Live su Youtube",
+"u": "https://www.tuttosport.com/news/calcio/serie-a/juventus/2026/11/03-152346662/le_lezioni_di_pigna_paolo_montero_a_tuttosport_live_su_youtube",
+"s": "Tuttosport"
+},
+{
+"t": "Montero: \"Alla mia epoca era dura trovare attaccanti che avevano paura\"",
+"u": "https://www.tuttosport.com/video/calcio/serie-a/juventus/2026/11/03-152355975/montero_alla_mia_epoca_era_dura_trovare_attaccanti_che_avevano_paura",
+"s": "Tuttosport"
+}
+],
+"n": 100
+},
+{
+"t": "afghanistan",
+"trafico": "200+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "Afghanistan Faces $1.2 Billion Humanitarian Funding Gap, U.N.Says",
+"u": "https://thekabultribune.com/en/0011804",
+"s": "thekabultribune.com"
+},
+{
+"t": "UNICEF says 19.2 million Afghans face acute hunger this winter",
+"u": "https://amu.tv/255906/",
+"s": "Amu TV"
+},
+{
+"t": "OCHA: Funding Shortages Threaten Access to Healthcare Services",
+"u": "https://8am.media/eng/ocha-funding-shortages-threaten-access-to-healthcare-services/",
+"s": "8AM Media"
+}
+],
+"n": 200
+},
+{
+"t": "oroscopo ariete",
+"trafico": "100+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "Oroscopo Ariete Paolo Fox di oggi: le previsioni del 3 novembre",
+"u": "https://www.corriere.it/oroscopo/oggi-03-11-2026-ariete-di-paolo-fox/",
+"s": "Corriere della Sera"
+},
+{
+"t": "Ariete",
+"u": "https://www.quotidiano.net/oroscopo/oroscopo-di-oggi-venerdi-30-ac5a41e3-sck/2",
+"s": "Quotidiano Nazionale"
+},
+{
+"t": "Oroscopo Ariete della settimana a cura di Paolo Fox (02-08 novembre)",
+"u": "https://www.corriere.it/oroscopo/settimana-da-02-novembre-a-08-novembre-ariete-di-paolo-fox/",
+"s": "Corriere della Sera"
+}
+],
+"n": 100
+},
+{
+"t": "mary peltola",
+"trafico": "200+",
+"fecha": "2026-11-04T07:10+01:00",
+"noticias": [
+{
+"t": "Alaska U.S. Senate Election 2026 Live Results: Mary Peltola, Dan Sullivan and More",
+"u": "https://www.nbcnews.com/politics/2026-elections/alaska-senate-results",
+"s": "NBC News"
+},
+{
+"t": "Alaska U.S. Senate Election Live Results 2026",
+"u": "https://apnews.com/projects/elections-2026/alaska-us-senate-results/",
+"s": "AP News"
+},
+{
+"t": "Polls close in Alaska as ranked-choice vote counting begins in key U.S. Senate race",
+"u": "https://www.hpenews.com/news/national/polls-close-in-alaska-as-ranked-choice-vote-counting-begins-in-key-u-s-senate/article_ce239954-2435-582b-8a50-5f6269566e25.html",
+"s": "hpenews.com"
+}
+],
+"n": 200
+},
+{
+"t": "riscaldamento centralizzato",
+"trafico": "200+",
+"fecha": "2026-11-04T07:10+01:00",
+"noticias": [
+{
+"t": "Riscaldamento centralizzato: dal 2027 scatta l’obbligo di telelettura. Regole, costi e multe",
+"u": "https://www.laprovinciadicomo.it/stories/premium/como-citta/riscaldamento-centralizzato-dal-2027-scatta-lobbligo-di-telelettura-regole-c-o_3986740_11/",
+"s": "La Provincia di Como"
+},
+{
+"t": "Telelettura, il contabilizzatore sul termosifone va cambiato entro il 2027: multe per quelli non a norma",
+"u": "https://www.virgilio.it/notizie/telelettura-il-contabilizzatore-sul-termosifone-va-cambiato-entro-il-2027-multe-per-quelli-non-a-norma-1793509",
+"s": "Virgilio"
+},
+{
+"t": "Riscaldamenti centralizzati, obbligo di telelettura dal 2027 e multa fino a 2500 euro: chi deve adeguarsi",
+"u": "https://www.geopop.it/riscaldamenti-centralizzati-obbligo-di-telelettura-dal-2027-e-multa-fino-a-2500-euro-chi-deve-adeguarsi/",
+"s": "Geopop"
+}
+],
+"n": 200
+},
+{
+"t": "sole 24 ore",
+"trafico": "200+",
+"fecha": "2026-11-04T07:10+01:00",
+"noticias": [
+{
+"t": "Farmaci: in manovra meno payback, ma solo dal 2028. Le imprese: «Serve intervento subito»",
+"u": "https://www.ilsole24ore.com/art/farmaci-manovra-meno-payback-ma-solo-2028-imprese-serve-intervento-subito-AJxER62B",
+"s": "Il Sole 24 ORE"
+},
+{
+"t": "Conflavoro Pmi Sanità, CdS sospende payback 2015-18 su dispositivi medici",
+"u": "https://www.ansa.it/sito/notizie/economia/pmi/2026/11/03/conflavoro-pmi-sanita-cds-sospende-payback-2015-18-su-dispositivi-medici_4457b8bc-d419-45f4-a2f5-318a237f41cb.html",
+"s": "ANSA"
+},
+{
+"t": "Payback dispositivi medici. Confindustria DM: \"Conto da 12,5 miliardi per le imprese entro il 2029\"",
+"u": "https://www.quotidianosanita.it/scienza-e-farmaci/payback-dispositivi-medici-confindustria-dm-conto-da-125-miliardi-per-le-imprese-entro-il-2029/",
+"s": "Quotidiano Sanità"
+}
+],
+"n": 200
+},
+{
+"t": "impeachment",
+"trafico": "100+",
+"fecha": "2026-11-04T07:10+01:00",
+"noticias": [
+{
+"t": "Why Trump Might Avoid Another Impeachment Even If Democrats Win Midterms",
+"u": "https://www.forbes.com/sites/saradorn/2026/11/04/will-democrats-impeach-trump-after-winning-midterms-heres-why-appetite-may-be-limited/",
+"s": "Forbes"
+},
+{
+"t": "Goldberg: The good reasons and bad politics surrounding a third Trump impeachment",
+"u": "https://www.semissourian.com/opinion/goldberg-the-good-reasons-and-bad-politics-surrounding-a-third-trump-impeachment-23ce1227",
+"s": "seMissourian"
+},
+{
+"t": "Kamala Harris warns Dems against impeaching Trump if they retake Congress: 'Not a good idea'",
+"u": "https://nypost.com/2026/10/28/us-news/kamala-harris-warns-dems-against-impeaching-trump-if-they-retake-congress-not-a-good-idea/",
+"s": "New York Post"
+}
+],
+"n": 100
+},
+{
+"t": "come sono andate le elezioni in america",
+"trafico": "200+",
+"fecha": "2026-11-04T07:00+01:00",
+"noticias": [
+{
+"t": "L'onda blu dei Dem (avanti nei sondaggi) sfida il muro rosso dei Repubblicani",
+"u": "https://www.rainews.it/maratona/2026/11/midterm-usa-2026-democratici-repubblicani-risultati-voto-donald-trump-c28c044e-836e-49ee-987a-240d4ed4be95.html",
+"s": "RaiNews"
+},
+{
+"t": "In Florida le inondazioni costringono a spostare 18 seggi elettorali",
+"u": "https://www.ansa.it/sito/notizie/mondo/2026/11/03/in-florida-le-inondazioni-costringono-a-spostare-18-seggi-elettorali_e41223c5-7c01-44ff-9198-8085e4a13599.html",
+"s": "ANSA"
+},
+{
+"t": "Il maltempo ostacola il voto negli Stati del Sudovest",
+"u": "https://www.cdt.ch/news/mondo/il-maltempo-ostacola-il-voto-negli-stati-del-sudovest-443490",
+"s": "Corriere del Ticino"
+}
+],
+"n": 200
+},
+{
+"t": "massimo giletti",
+"trafico": "200+",
+"fecha": "2026-11-04T07:00+01:00",
+"noticias": [
+{
+"t": "La foto di Mussari mostrata da Giletti? È Luca Anselmi",
+"u": "https://www.ilfattoquotidiano.it/2026/11/03/mps-morte-di-david-rossi-la-foto-nel-vicolo-mostrata-da-giletti-non-e-mussari-e-infatti-il-vero-mister-x-si-fa-avanti-ero-arrivato-li-come-tutti-dopo-la-notizia-del-tragico-evento/8559432/",
+"s": "Il Fatto Quotidiano"
+},
+{
+"t": "Morte David Rossi, Massimo Giletti risponde alla querela di Giuseppe Mussari: \"Nessuna informazione secretata\"",
+"u": "https://www.virgilio.it/notizie/morte-david-rossi-massimo-giletti-risponde-alla-querela-di-giuseppe-mussari-nessuna-informazione-secretata-1793873",
+"s": "Virgilio"
+},
+{
+"t": "Mussari contro Vinci e Giletti: “Su David Rossi accuse folli, li querelo”",
+"u": "https://www.ilgiornale.it/news/cronaca-giudiziaria/mussari-contro-vinci-e-giletti-su-david-rossi-accuse-folli-li-querelo/",
+"s": "il Giornale"
+}
+],
+"n": 200
+}
+]
+},
+"PT": {
+"geo": "PT",
+"url": "https://trends.google.com/trending/rss?geo=PT",
+"ok": true,
+"items": [
+{
+"t": "bruno fernandes",
+"trafico": "200+",
+"fecha": "2026-11-04T07:40+01:00",
+"noticias": [
+{
+"t": "Man Utd 3-2 Roma: Bruno Fernandes on Michael Carrick future after comeback win",
+"u": "https://www.bbc.com/sport/football/articles/cqkg5dgvygr1o",
+"s": "BBC"
+},
+{
+"t": "\"Don’t need to save anyone’s job\": United do the unthinkable",
+"u": "https://www.sen.com.au/news/2026/11/03/manchester-united-result-michael-carrick-sacked-champions-league-results",
+"s": "SEN"
+},
+{
+"t": "‘I wasn’t performing’: Bruno Fernandes says Carrick was right to drop him after criticism",
+"u": "https://www.theguardian.com/football/2026/nov/03/bruno-fernandes-manchester-united-michael-carrick-roma-champions-league",
+"s": "The Guardian"
+}
+],
+"n": 200
+},
+{
+"t": "sporting clube de portugal",
+"trafico": "20000+",
+"fecha": "2026-11-04T07:10+01:00",
+"noticias": [
+{
+"t": "Sporting vence Shakhtar com golo de Doumbia",
+"u": "https://www.rtp.pt/noticias/desporto/sporting-vence-shakhtar-com-golo-de-doumbia_e1776605",
+"s": "RTP"
+},
+{
+"t": "Arda Turan critica arbitragem após derrota com o Sporting: «Deviam ter vergonha»",
+"u": "https://www.abola.pt/noticias/arda-turan-critica-arbitragem-apos-derrota-com-o-sporting-deviam-ter-vergonha-2026110321192029395",
+"s": "A Bola"
+},
+{
+"t": "Tiago Fernandes destaca vitória na Champions ao som de... Plutónio",
+"u": "https://cnnportugal.iol.pt/sporting/liga-dos-campeoes/tiago-fernandes-destaca-vitoria-na-champions-ao-som-de-plutonio",
+"s": "CNN Portugal"
+}
+],
+"n": 20000
+},
+{
+"t": "gasolina",
+"trafico": "1000+",
+"fecha": "2026-11-04T07:00+01:00",
+"noticias": [
+{
+"t": "Inflação e guerra no Irão: Trump enfrenta nas intercalares o preço de duas promessas falhadas",
+"u": "https://eco.sapo.pt/especiais/inflacao-e-guerra-no-irao-trump-enfrenta-nas-intercalares-o-preco-de-duas-promessas-falhadas/",
+"s": "ECO"
+},
+{
+"t": "Eleições nos EUA podem ter impacto no preço dos combustíveis",
+"u": "https://sicnoticias.pt/especiais/combustiveis/2026-10-28-video-eleicoes-nos-eua-podem-ter-impacto-no-preco-dos-combustiveis-f4c193dd",
+"s": "SIC Notícias"
+},
+{
+"t": "Donald Trump considera que aumento dos combustíveis é \"um preço muito pequeno a pagar\" pela segurança mundial",
+"u": "https://sol.iol.pt/internacional/noticias/donald-trump-considera-que-aumento-do-preco-dos-combustiveis-e-um-preco-muito-pequeno-a-pagar-pela-seguranca-mundial/20261102/6ae883b10cf2051820fb021e",
+"s": "Jornal SOL"
+}
+],
+"n": 1000
+},
+{
+"t": "cristiano ronaldo",
+"trafico": "20000+",
+"fecha": "2026-11-04T06:50+01:00",
+"noticias": [
+{
+"t": "O castigo que Owono pode ter de cumprir pela entrada que levou à morte de Jesús de Miguel",
+"u": "https://www.cmjornal.pt/desporto/futebol/detalhe/o-castigo-que-owono-pode-ter-de-cumprir-pela-entrada-que-levou-a-morte-de-jesus-de-miguel",
+"s": "Correio da Manhã"
+},
+{
+"t": "Guarda-redes que atingiu mortalmente adversário em Espanha pode sofrer consequências criminais?",
+"u": "https://sicnoticias.pt/desporto/futebol-internacional/2026-11-03-guarda-redes-que-atingiu-mortalmente-adversario-em-espanha-pode-sofrer-consequencias-criminais--f102c2ad",
+"s": "SIC Notícias"
+},
+{
+"t": "Morte de Jesús de Miguel é \"momento duro e impactante\", diz Mourinho",
+"u": "https://www.jn.pt/desporto/artigo/morte-de-jesus-de-miguel-e-momento-duro-e-impactante-diz-mourinho/18144223",
+"s": "Jornal de Notícias"
+}
+],
+"n": 20000
+},
+{
+"t": "iptv",
+"trafico": "100+",
+"fecha": "2026-11-04T06:40+01:00",
+"noticias": [
+{
+"t": "Koo Kyo-hwan film Reawaken Man: The Red debuts on IPTV and VOD in Korea",
+"u": "https://biz.chosun.com/en/en-entertainment/2026/11/04/QWV7TJBEFVEDLCYGLFJALGEWRA/",
+"s": "Chosunbiz"
+},
+{
+"t": "'Reawaken Man: The Red' Comes to Home Screens Starting Today (the 4th) as VOD Service Launches",
+"u": "https://www.sportschosun.com/en/movie/2026-11-04/202611040100026480002567",
+"s": "스포츠조선"
+},
+{
+"t": "Reawaken Man: The Red Expands to Home Theaters, IPTV, VOD",
+"u": "https://www.chosun.com/english/kpop-culture-en/2026/11/04/V26HV5CBYVF5LNFHJD2FTMSQTU/",
+"s": "조선일보"
+}
+],
+"n": 100
+},
+{
+"t": "ruben amorim",
+"trafico": "500+",
+"fecha": "2026-11-04T06:30+01:00",
+"noticias": [
+{
+"t": "«Ruben Amorim continua a deixar-me louco»",
+"u": "https://www.abola.pt/noticias/ruben-amorim-continua-a-deixar-me-louco-2026110315090184174",
+"s": "A Bola"
+},
+{
+"t": "\"Amorim está a fazer o que não lhe deixaram fazer no Manchester United\"",
+"u": "https://www.noticiasaominuto.com/desporto/3076997/amorim-esta-a-fazer-o-que-nao-lhe-deixaram-fazer-no-manchester-united",
+"s": "Notícias ao Minuto"
+},
+{
+"t": "Dono do Milan desfaz-se em elogios a Rúben Amorim, com referências ao \"Amorim Ball\" e ao \"Top Gun\"",
+"u": "https://www.ojogo.pt/internacional/artigo/dono-do-milan-desfaz-se-em-elogios-a-ruben-amorim-com-referencias-ao-amorim-ball-e-ao-top-gun/18142655",
+"s": "O Jogo"
+}
+],
+"n": 500
+},
+{
+"t": "habitação",
+"trafico": "1000+",
+"fecha": "2026-11-04T06:20+01:00",
+"noticias": [
+{
+"t": "Montenegro convoca Ventura e Carneiro para reuniões em São Bento sobre Habitação. PM mantém lei do arrendamento mas quer \"concertação\"",
+"u": "https://expresso.pt/governo/2026-11-03-montenegro-convoca-ventura-e-carneiro-para-reunioes-em-sao-bento-sobre-habitacao.-pm-mantem-lei-do-arrendamento-mas-quer-concertacao-02bacfc7",
+"s": "Expresso"
+},
+{
+"t": "Montenegro vai reunir-se com Carneiro e Ventura sobre habitação e considera que críticas sobre silêncio são \"injustas\"",
+"u": "https://sicnoticias.pt/pais/politica/2026-11-03-video-a-declaracao-do-primeiro-ministro-luis-montenegro-ao-pais-b4e99e11",
+"s": "SIC Notícias"
+},
+{
+"t": "Montenegro anuncia reuniões com Chega e PS na quinta-feira sobre habitação",
+"u": "https://www.dn.pt/pol%C3%ADtica/montenegro-anuncia-reunies-com-chega-e-ps-na-quinta-feira-sobre-habitao",
+"s": "Diário de Notícias"
+}
+],
+"n": 1000
+},
+{
+"t": "action",
+"trafico": "200+",
+"fecha": "2026-11-04T06:00+01:00",
+"noticias": [
+{
+"t": "U.K. Supreme Court to Hear Challenge to Ban on Palestine Action: What to Know",
+"u": "https://www.nytimes.com/2026/11/04/world/europe/palestine-action-ban-uk-supreme-court.html",
+"s": "The New York Times"
+},
+{
+"t": "London police arrest 139 as hundreds protest Palestine Action ban",
+"u": "https://www.aljazeera.com/news/2026/10/31/london-police-arrest-48-as-hundreds-protest-palestine-action-ban",
+"s": "Al Jazeera"
+},
+{
+"t": "More than 300 arrests at Palestine Action support protest outside US embassy",
+"u": "https://www.bbc.com/news/articles/c98rz23ed781o",
+"s": "BBC"
+}
+],
+"n": 200
+},
+{
+"t": "ambulância",
+"trafico": "500+",
+"fecha": "2026-11-04T05:50+01:00",
+"noticias": [
+{
+"t": "Bebé nasce na estrada a bordo da ambulância dos Bombeiros de Oliveira do Hospital",
+"u": "https://www.cmjornal.pt/sociedade/detalhe/bebe-nasce-na-estrada-a-bordo-da-ambulancia-dos-bombeiros-de-oliveira-do-hospital",
+"s": "Correio da Manhã"
+},
+{
+"t": "“É sempre uma sensação única porque é uma vida que está ali”, dizem os bombeiros que ajudaram bebé a nascer",
+"u": "https://sapo.pt/artigo/e-sempre-uma-sensacao-unica-porque-e-uma-vida-que-esta-ali-dizem-os-bombeiros-que-ajudaram-bebe-a-nascer-6aea074b31ea1893455b68ae",
+"s": "SAPO"
+},
+{
+"t": "Pequena surpresa! Bebé nasce a bordo de ambulância dos Bombeiros de Oliveira do Hospital",
+"u": "https://www.noticiasdecoimbra.pt/pequena-surpresa-bebe-nasce-a-bordo-de-ambulancia-dos-bombeiros-de-oliveira-do-hospital/",
+"s": "Notícias de Coimbra"
+}
+],
+"n": 500
+},
+{
+"t": "abastecimento público de água",
+"trafico": "200+",
+"fecha": "2026-11-04T05:30+01:00",
+"noticias": [],
+"n": 200
+}
+]
+},
+"MX": {
+"geo": "MX",
+"url": "https://trends.google.com/trending/rss?geo=MX",
+"ok": true,
+"items": [
+{
+"t": "cindy hyde-smith",
+"trafico": "100+",
+"fecha": "2026-11-04T07:40+01:00",
+"noticias": [
+{
+"t": "Mississippi U.S. Senate Midterm Election 2026: Live Results",
+"u": "https://www.nbcnews.com/politics/2026-elections/mississippi-senate-results",
+"s": "NBC News"
+},
+{
+"t": "Mississippi U.S. Senate 2026: Live Midterm Election Results, Hyde-Smith vs. Colom",
+"u": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-mississippi-us-senate.html",
+"s": "The New York Times"
+},
+{
+"t": "Olive Branch Voters Face Long Lines After Machine Trouble",
+"u": "https://desotocountynews.com/mississippi-news/olive-branch-voters-long-lines/",
+"s": "DeSoto County News"
+}
+],
+"n": 100
+},
+{
+"t": "scott colom",
+"trafico": "200+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "Scott Colom releases ‘Sinners’-themed campaign ad as Mississippi Senate race heats up",
+"u": "https://thehill.com/homenews/campaign/6186475-scott-colom-releases-sinners-themed-campaign-ad-as-mississippi-senate-race-heats-up/",
+"s": "The Hill"
+},
+{
+"t": "Young, Black voters are fired up — but will the enthusiasm last?",
+"u": "https://msindy.org/p/young-black-voters-are-fired-up-but",
+"s": "the mississippi independent"
+},
+{
+"t": "Scott Colom makes campaign stop in Meridian ahead of Midterm Election",
+"u": "https://www.wtok.com/2026/11/03/scott-colom-makes-campaign-stop-meridian-ahead-midterm-election/",
+"s": "WTOK"
+}
+],
+"n": 200
+},
+{
+"t": "niurka",
+"trafico": "500+",
+"fecha": "2026-11-04T06:50+01:00",
+"noticias": [
+{
+"t": "Manelyk rechaza a Niurka en La Granja VIP y se niega a hacer alianzas tras fuertes peleas: “Solo la usaron” (VIDEO)",
+"u": "https://www.tvazteca.com/aztecauno/la-granja-vip/manelyk-rechaza-a-niurka-en-la-granja-vip-se-niega-a-hacer-alianzas-tras-fuertes-peleas-video/",
+"s": "TV Azteca"
+},
+{
+"t": "Manelyk revela que se iba de antro con Niurka ¡en la prepa! “Ya tenemos mucha confianza” l VIDEO",
+"u": "https://www.tvnotas.com.mx/espectaculos-mexico/manelyk-revela-que-se-iba-de-antro-con-niurka-en-la-prepa-ya-tenemos-mucha-confianza-l-video",
+"s": "TVNotas"
+},
+{
+"t": "Niurka se une a Manelyk para eliminar al eslabón más débil de La Granja VIP: “Tú y yo sabemos de este negocio”",
+"u": "https://www.tvazteca.com/aztecauno/la-granja-vip/niurka-se-une-a-manelyk-para-eliminar-al-eslabon-mas-debil-de-la-granja-vip/",
+"s": "TV Azteca"
+}
+],
+"n": 500
+},
+{
+"t": "michigan",
+"trafico": "100+",
+"fecha": "2026-11-04T06:30+01:00",
+"noticias": [
+{
+"t": "Michigan Governor Election 2026 Live Results: Jocelyn Benson Wins",
+"u": "https://www.nbcnews.com/politics/2026-elections/michigan-governor-results",
+"s": "NBC News"
+},
+{
+"t": "Michigan Governor Election Live Results 2026",
+"u": "https://apnews.com/projects/elections-2026/michigan-governor-results/",
+"s": "AP News"
+},
+{
+"t": "Licensable picture: Congressman (MI-10) and Republican gubernatorial candidate John James looks over his ballot, while his sons, John (11), Hudson",
+"u": "https://www.reutersconnect.com/item/congressman-mi-10-and-republican-gubernatorial-candidate-john-james-looks-over-his-ballot-while-his-sons-john-11-hudson/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAyNjgzMjg",
+"s": "Reuters Connect"
+}
+],
+"n": 100
+},
+{
+"t": "el sayed",
+"trafico": "200+",
+"fecha": "2026-11-04T06:00+01:00",
+"noticias": [
+{
+"t": "\"Él la azuzaba\": estalla indignación de los demócratas con el prometido de Haley Stevens tras su cambio de postura",
+"u": "https://cnnespanol.cnn.com/2026/11/03/eeuu/indignacion-democratas-prometido-haley-stevens-trax",
+"s": "CNN en Español"
+},
+{
+"t": "El candidato musulmán que busca hacer historia en el Senado y los otros hitos que pueden marcar las elecciones en EE.UU.",
+"u": "https://es-us.noticias.yahoo.com/candidato-musulm%C3%A1n-busca-historia-senado-024619124.html",
+"s": "Yahoo"
+},
+{
+"t": "Elecciones hoy en Míchigan: El voto hispano y la división demócrata, claves en la contienda por el Senado",
+"u": "https://www.univision.com/shows/noticiero-univision/elecciones-hoy-en-michigan-el-voto-hispano-y-la-division-democrata-claves-en-la-contienda-por-el-senado-video",
+"s": "Univision"
+}
+],
+"n": 200
+},
+{
+"t": "tercera edad",
+"trafico": "10000+",
+"fecha": "2026-11-04T05:50+01:00",
+"noticias": [
+{
+"t": "Aguinaldo para adultos mayores con Inapam: Requisitos y cuánto dinero les toca",
+"u": "https://www.informador.mx/economia/aguinaldo-para-adultos-mayores-con-inapam-requisitos-y-cuanto-dinero-les-toca-20261102-0113.html",
+"s": "El Informador"
+},
+{
+"t": "Mientras el INAPAM promueve empleos formales para mayores de 60 años, también ofrece una actividad sin salario fijo en supermercados",
+"u": "https://www.merca20.com/mientras-el-inapam-promueve-empleos-formales-para-mayores-de-60-anos-tambien-ofrece-una-actividad-sin-salario-fijo-en-supermercados/",
+"s": "Revista Merca2.0"
+},
+{
+"t": "Adultos con INAPAM reciben $9,582.47 al mes por orden de Claudia Sheinbaum: de qué se trata en noviembre 2026",
+"u": "https://www.ambito.com/mexico/economia/adultos-inapam-reciben-958247-al-mes-orden-claudia-sheinbaum-que-se-trata-noviembre-2026-n6340873",
+"s": "Ambito"
+}
+],
+"n": 10000
+},
+{
+"t": "gobernador de california",
+"trafico": "200+",
+"fecha": "2026-11-04T05:50+01:00",
+"noticias": [
+{
+"t": "México ‘reconquista’ California: ¿Quién es Xavier Becerra, hijo de inmigrantes y gobernador electo?",
+"u": "https://www.elfinanciero.com.mx/mundo/2026/11/03/mexico-reconquista-california-quien-es-xavier-becerra-hijo-de-mexicanos-que-se-perfila-a-gobernador/",
+"s": "El Financiero"
+},
+{
+"t": "Xavier Becerra hace historia como el primer gobernador latino electo de California",
+"u": "https://www.telemundo.com/noticias/noticias-telemundo/elecciones-estados-unidos-2026/xavier-becerra-hace-historia-como-el-primer-gobernador-latino-electo-d-rcna607360",
+"s": "Telemundo"
+},
+{
+"t": "Xavier Becerra, candidato de raíces mexicanas a gobernador de California, apela a familias trabajadoras",
+"u": "https://www.jornada.com.mx/noticia/2026/11/03/mundo/xavier-becerra-hijo-de-migrantes-mexicanos-apela-a-familias-trabajadoras-en-jornada-electoral-en-california",
+"s": "La Jornada"
+}
+],
+"n": 200
+},
+{
+"t": "adam hamilton",
+"trafico": "100+",
+"fecha": "2026-11-04T05:50+01:00",
+"noticias": [
+{
+"t": "Kansas U.S. Senate Midterm Election 2026: Live Results",
+"u": "https://www.nbcnews.com/politics/2026-elections/kansas-senate-results",
+"s": "NBC News"
+},
+{
+"t": "Adam Hamilton wins in Kansas to become state’s first Democrat in Senate since 1932 | US midterm elections 2026",
+"u": "https://www.theguardian.com/us-news/2026/nov/03/adam-hamilton-roger-marshall-kansas-senate",
+"s": "The Guardian"
+},
+{
+"t": "Kansas Democrats hope Adam Hamilton can harness Trump fatigue to oust Republican Sen. Roger Marshall",
+"u": "https://apnews.com/article/senate-kansas-election-roger-marshall-adam-hamilton-7f09e5cc69e0ac8e618376e60ef311d8",
+"s": "AP News"
+}
+],
+"n": 100
+},
+{
+"t": "josh turek",
+"trafico": "100+",
+"fecha": "2026-11-04T05:50+01:00",
+"noticias": [
+{
+"t": "Iowa U.S. Senate Election Live Results 2026",
+"u": "https://apnews.com/projects/elections-2026/iowa-us-senate-results/",
+"s": "AP News"
+},
+{
+"t": "Josh Turek flips Iowa Senate seat, giving Democrats a boost in the fight for the majority",
+"u": "https://www.nbcnews.com/politics/2026-election/josh-turek-democrats-iowa-senate-flip-democrats-majority-boost-hinson-rcna603305",
+"s": "NBC News"
+},
+{
+"t": "Iowa election results: Race for open US Senate seat",
+"u": "https://www.kcci.com/article/iowa-election-results-2026-us-senate-hinson-turek-laehn/74277020",
+"s": "KCCI"
+}
+],
+"n": 100
+},
+{
+"t": "rob sand",
+"trafico": "100+",
+"fecha": "2026-11-04T05:50+01:00",
+"noticias": [
+{
+"t": "Iowa Governor Midterm Election 2026: Live Results",
+"u": "https://www.nbcnews.com/politics/2026-elections/iowa-governor-results",
+"s": "NBC News"
+},
+{
+"t": "Rob Sand turns Iowa's top seat blue",
+"u": "https://www.axios.com/2026/11/04/iowa-governor-results-rob-sand-zach-lahn",
+"s": "Axios"
+},
+{
+"t": "Democrats Flip Deep Red State in Stunning Blow to Trump",
+"u": "https://www.thedailybeast.com/democrats-flip-deep-red-state-in-stunning-blow-to-trump",
+"s": "The Daily Beast"
+}
+],
+"n": 100
+}
+]
+},
+"AR": {
+"geo": "AR",
+"url": "https://trends.google.com/trending/rss?geo=AR",
+"ok": true,
+"items": [
+{
+"t": "67",
+"trafico": "100+",
+"fecha": "2026-11-04T05:20+01:00",
+"noticias": [
+{
+"t": "Eberly defeats Brown, flips House District 67",
+"u": "https://arktimes.com/arkansas-blog/2026/11/03/eberly-defeats-brown-flips-house-district-67",
+"s": "Arkansas Times"
+},
+{
+"t": "Republicans’ three-fourths supermajority in Arkansas House faces test with Pulaski County races",
+"u": "https://www.arkansasonline.com/news/2026/oct/31/arkansas-republicans-supermajority-house-faces-test/",
+"s": "The Arkansas Democrat-Gazette"
+},
+{
+"t": "Brown vs. Eberly Rematch in Arkansas House District 67",
+"u": "https://hoodline.com/2026/11/jacksonville-sherwood-rematch-could-test-arkansas-house-gop-supermajority/",
+"s": "Hoodline"
+}
+],
+"n": 100
+},
+{
+"t": "fin de semana",
+"trafico": "500+",
+"fecha": "2026-11-04T05:10+01:00",
+"noticias": [
+{
+"t": "Trenes Argentinos dispondrá un esquema extraordinario con servicios nocturnos y refuerzos especiales por la visita del papa León XIV",
+"u": "https://www.argentina.gob.ar/noticias/trenes-argentinos-dispondra-un-esquema-extraordinario-con-servicios-nocturnos-y-refuerzos",
+"s": "Argentina.gob.ar"
+},
+{
+"t": "Visita del Papa León XIV: cuáles serán los cortes de tránsito en Córdoba",
+"u": "https://cordoba.gob.ar/visita-del-papa-leon-xiv-cuales-seran-los-cortes-de-transito-en-cordoba/",
+"s": "Municipalidad de Córdoba."
+},
+{
+"t": "La disputa entre los obispos y el Gobierno por la palabra de León XIV",
+"u": "https://www.pagina12.com.ar/2026/11/03/la-disputa-entre-los-obispos-y-el-gobierno-por-la-palabra-de-leon-xiv/",
+"s": "Página|12"
+}
+],
+"n": 500
+},
+{
+"t": "f1 franco colapinto",
+"trafico": "200+",
+"fecha": "2026-11-04T04:20+01:00",
+"noticias": [
+{
+"t": "La última bala que prepara Alpine para revertir la sanción a Franco Colapinto en México",
+"u": "https://www.tycsports.com/automovilismo/ultima-bala-que-prepara-alpine-para-revertir-sancion-franco-colapinto-mexico-id770245.html",
+"s": "TyC Sports"
+},
+{
+"t": "La reacción de Flavio Briatore tras la doble sanción contra Colapinto y Gasly que impactó a Alpine en el GP de México de F1",
+"u": "https://www.infobae.com/deportes/2026/11/02/la-reaccion-de-flavio-briatore-tras-la-doble-sancion-contra-colapinto-y-gasly-que-impacto-a-alpine-en-el-gp-de-mexico-de-f1/",
+"s": "Infobae"
+},
+{
+"t": "Video: por esto sancionaron a Franco Colapinto en el GP de México",
+"u": "https://www.ole.com.ar/autos/francocolapinto-granpremiodemexico-formula1-fia-alpine-banderaamarilla-telemetria_0_WEkcQwKcKh.html",
+"s": "Olé"
+}
+],
+"n": 200
+},
+{
+"t": "texas",
+"trafico": "200+",
+"fecha": "2026-11-04T03:50+01:00",
+"noticias": [
+{
+"t": "Texas 2026: Live Midterm Election Results",
+"u": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-texas.html",
+"s": "The New York Times"
+},
+{
+"t": "Live Texas election results: 2026 midterm races",
+"u": "https://apps.texastribune.org/features/2026/texas-general-election-live-results-2026/",
+"s": "The Texas Tribune"
+},
+{
+"t": "State Dems win seats, Orange stays MAGA red",
+"u": "https://www.therecordlive.com/story/2026/11/04/news/state-dems-win-seats-orange-stays-maga-red/38955.html",
+"s": "The Record Newspapers"
+}
+],
+"n": 200
+},
+{
+"t": "gina hinojosa",
+"trafico": "500+",
+"fecha": "2026-11-04T03:30+01:00",
+"noticias": [
+{
+"t": "Por qué (ahora sí) los demócratas pueden lograr en Texas un triunfo trascendental tras décadas de derrotas",
+"u": "https://www.bbc.com/mundo/articles/cr2ke7qdk71eo",
+"s": "BBC"
+},
+{
+"t": "James Talarico pone fin a décadas de hegemonía republicana en Texas con su victoria en el Senado",
+"u": "https://elpais.com/us/2026-11-04/james-talarico-pone-fin-a-decadas-de-hegemonia-republicana-en-texas-con-su-victoria-en-el-senado.html",
+"s": "EL PAÍS"
+},
+{
+"t": "\"Vamos a liderar con una política de valentía\": Gina Hinojosa celebra histórica victoria a la gobernación en Texas",
+"u": "https://cnnespanol.cnn.com/2026/11/04/eeuu/video/gina-hinojosa-texas-gobernadora-democrata",
+"s": "CNN en Español"
+}
+],
+"n": 500
+},
+{
+"t": "ricardo la volpe",
+"trafico": "200+",
+"fecha": "2026-11-04T03:30+01:00",
+"noticias": [
+{
+"t": "Muerte de Carlos Albert: José Ramón Fernández, Faitelson, Antonio Moreno, Rosique y más se despiden del periodista deportivo",
+"u": "https://www.infobae.com/mexico/deportes/2026/11/04/muerte-de-carlos-albert-jose-ramon-fernandez-faitelson-antonio-moreno-rosique-y-mas-se-despiden-del-periodista-deportivo/",
+"s": "Infobae"
+},
+{
+"t": "De qué murió Carlos Albert Llorente, el futbolista y reconocido periodista deportivo",
+"u": "https://www.ambito.com/mexico/deportes/de-que-murio-carlos-albert-llorente-el-futbolista-y-reconocido-periodista-deportivo-n6341274",
+"s": "Ambito"
+},
+{
+"t": "¿Quién era Carlos Albert Llorente?: Exfutbolista y periodista deportivo",
+"u": "https://bolavip.com/mx/ligamx/quien-era-carlos-albert-llorente-exfutbolista-y-periodista-deportivo",
+"s": "Bolavip México"
+}
+],
+"n": 200
+},
+{
+"t": "internacional vs. coritiba",
+"trafico": "200+",
+"fecha": "2026-11-04T03:30+01:00",
+"noticias": [
+{
+"t": "Entrevista coletiva | Internacional x Coritiba | 03/11/2026",
+"u": "https://internacional.com.br/videos/c/entrevista-coletiva-internacional-x-coritiba-03-11-2026",
+"s": "Sport Club Internacional"
+},
+{
+"t": "Análise: Inter vence na camisa e na arquibancada para sobreviver na luta contra o Z-4",
+"u": "https://ge.globo.com/rs/futebol/times/internacional/noticia/2026/11/04/analise-inter-vence-na-camisa-e-na-arquibancada-para-sobreviver-na-luta-contra-o-z-4.ghtml",
+"s": "ge"
+},
+{
+"t": "Eduardo Baptista destaca vitória na base da ‘alma’",
+"u": "https://www.correiodopovo.com.br/esportes/inter/eduardo-baptista-destaca-vitoria-na-base-da-alma-1.1761578",
+"s": "Correio do Povo"
+}
+],
+"n": 200
+},
+{
+"t": "diego ramos",
+"trafico": "2000+",
+"fecha": "2026-11-04T03:20+01:00",
+"noticias": [
+{
+"t": "MasterChef Celebrity: quién fue eliminado, este martes 3 de noviembre",
+"u": "https://www.clarin.com/fama/masterchef-celebrity-eliminado-martes-3-noviembre_0_qRmOVdxCOn.html",
+"s": "Clarin.com"
+},
+{
+"t": "MasterChef Celebrity tuvo su quinto eliminado: quién abandonó el reality tras un desafío con ñoquis",
+"u": "https://www.infobae.com/teleshow/2026/11/04/masterchef-celebrity-tuvo-su-quinto-eliminado-quien-abandono-el-reality-tras-un-desafio-con-noquis/",
+"s": "Infobae"
+},
+{
+"t": "Así anunciaron al participante eliminado este martes 3 de noviembre en \"MasterChef Celebrity\"",
+"u": "https://tn.com.ar/videos/show/television/2026/11/04/quien-fue-eliminado-de-masterchef-celebrity-este-martes-3-de-noviembre/",
+"s": "TN"
+}
+],
+"n": 2000
+},
+{
+"t": "byron donalds",
+"trafico": "200+",
+"fecha": "2026-11-04T03:20+01:00",
+"noticias": [
+{
+"t": "GOP Rep. Byron Donalds wins Florida governor’s race, will succeed Ron DeSantis",
+"u": "https://www.washingtonpost.com/elections/results/2026/11/03/florida-governor-donalds-jolly-live-updates/",
+"s": "The Washington Post"
+},
+{
+"t": "Trump-backed Byron Donalds to make history as Florida’s first Black governor",
+"u": "https://www.foxnews.com/politics/trump-backed-byron-donalds-make-history-floridas-first-black-governor",
+"s": "Fox News"
+},
+{
+"t": "Licensable picture: Florida Gubernatorial Election Race: US Congressional Representative Byron Donalds Wins His Race To Be The Next Governor Of Florida",
+"u": "https://www.reutersconnect.com/item/florida-gubernatorial-election-race-us-congressional-representative-byron-donalds-wins-his-race-to-be-the-next-governor-of-florida/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBNMzk2Sko",
+"s": "Reuters Connect"
+}
+],
+"n": 200
+},
+{
+"t": "dan osborn",
+"trafico": "500+",
+"fecha": "2026-11-04T03:10+01:00",
+"noticias": [
+{
+"t": "Nebraska U.S. Senate 2026: Live Midterm Election Results, Ricketts vs. Osborn",
+"u": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-nebraska-us-senate.html",
+"s": "The New York Times"
+},
+{
+"t": "Flood, Spellberg and Ricketts Campaign Event",
+"u": "https://journalstar.com/image_12c04728-0587-4710-9c75-1aace6f70d0a.html",
+"s": "Lincoln Journal Star"
+},
+{
+"t": "Nebraska Republican leaders rally Norfolk voters ahead of Election Day",
+"u": "https://norfolkdailynews.com/news/nebraska-republican-leaders-rally-norfolk-voters-ahead-of-election-day/article_c17c536f-66ce-4b60-87c0-e42170ca4842.html",
+"s": "The Norfolk Daily News"
+}
+],
+"n": 500
+}
+]
+},
+"BR": {
+"geo": "BR",
+"url": "https://trends.google.com/trending/rss?geo=BR",
+"ok": true,
+"items": [
+{
+"t": "scott colom",
+"trafico": "200+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "Mississippi U.S. Senate Midterm Election 2026: Live Results",
+"u": "https://www.nbcnews.com/politics/2026-elections/mississippi-senate-results",
+"s": "NBC News"
+},
+{
+"t": "Mississippi U.S. Senate 2026: Live Midterm Election Results, Hyde-Smith vs. Colom",
+"u": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-mississippi-us-senate.html",
+"s": "The New York Times"
+},
+{
+"t": "Mississippi U.S. Senate Election Live Results 2026",
+"u": "https://apnews.com/projects/elections-2026/mississippi-us-senate-results/",
+"s": "AP News"
+}
+],
+"n": 200
+},
+{
+"t": "mary peltola",
+"trafico": "2000+",
+"fecha": "2026-11-04T06:00+01:00",
+"noticias": [
+{
+"t": "U.S. Governor Midterm Elections 2026: Live Results",
+"u": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-governor.html",
+"s": "The New York Times"
+},
+{
+"t": "Iowa U.S. Senate 2026: Live Midterm Election Results, Turek vs. Hinson",
+"u": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-iowa-us-senate.html",
+"s": "The New York Times"
+},
+{
+"t": "Vermont U.S. Rep. Becca Balint wins reelection",
+"u": "https://www.oceanstatemedia.org/new-england-news-collaborative/2026-11-03/u-s-rep-becca-balint-wins-reelection",
+"s": "Ocean State Media"
+}
+],
+"n": 2000
+},
+{
+"t": "josh turek",
+"trafico": "100+",
+"fecha": "2026-11-04T06:00+01:00",
+"noticias": [
+{
+"t": "Democrata Josh Turek, bicampeão paralímpico, é eleito senador por Iowa, indica projeção",
+"u": "https://oglobo.globo.com/mundo/noticia/2026/11/04/democrata-josh-turek-bicampeao-paralimpico-e-eleito-senador-por-iowa-indica-projecao.ghtml",
+"s": "O GLOBO"
+},
+{
+"t": "Candidato democrata ao Senado de Iowa diz que votou em republicanos",
+"u": "https://www.ocafezinho.com/2026-11-03/candidato-democrata-ao-senado-de-iowa-diz-que-votou-em-republicanos/",
+"s": "O Cafezinho"
+},
+{
+"t": "Josh Turek vira Iowa e fortalece democratas no Senado",
+"u": "https://www.spacemoney.com.br/economia/exterior/josh-turek-vitoria-iowa-senado/",
+"s": "SpaceMoney"
+}
+],
+"n": 100
+},
+{
+"t": "adam hamilton",
+"trafico": "100+",
+"fecha": "2026-11-04T05:50+01:00",
+"noticias": [
+{
+"t": "Kansas U.S. Senate Midterm Election 2026: Live Results",
+"u": "https://www.nbcnews.com/politics/2026-elections/kansas-senate-results",
+"s": "NBC News"
+},
+{
+"t": "Adam Hamilton wins Kansas Senate race, becoming first Democrat elected to seat in nearly a century",
+"u": "https://www.washingtonpost.com/elections/results/2026/11/03/kansas-senate-hamilton-marshall-live-updates/",
+"s": "The Washington Post"
+},
+{
+"t": "Marshall-Hamilton showdown becomes most expensive election in Kansas history",
+"u": "https://kansasreflector.com/2026/10/29/marshall-hamilton-showdown-spurs-most-expensive-election-in-kansas-history/",
+"s": "Kansas Reflector"
+}
+],
+"n": 100
+},
+{
+"t": "xavier becerra",
+"trafico": "100+",
+"fecha": "2026-11-04T05:40+01:00",
+"noticias": [
+{
+"t": "Becerra wins California governor, Democrats flip historically Republican seats to control Senate",
+"u": "https://www.latimes.com/california/live/live-updates-november-general-election-2026",
+"s": "Los Angeles Times"
+},
+{
+"t": "Xavier Becerra Becomes California’s First Latino Elected as Governor, Defeating Steve Hilton",
+"u": "https://www.nytimes.com/2026/11/03/us/california-governor-becerra-hilton.html",
+"s": "The New York Times"
+},
+{
+"t": "California Governor’s Race",
+"u": "https://pepperdine-graphic.com/california-governors-race/",
+"s": "Pepperdine Graphic"
+}
+],
+"n": 100
+},
+{
+"t": "michele tafoya",
+"trafico": "100+",
+"fecha": "2026-11-04T05:40+01:00",
+"noticias": [
+{
+"t": "Minnesota U.S. Senate Election Live Results 2026",
+"u": "https://apnews.com/projects/elections-2026/minnesota-us-senate-results/",
+"s": "AP News"
+},
+{
+"t": "Election night rally for the primary election in Minneapolis",
+"u": "https://lufkindailynews.com/news_reuters/national/election-night-rally-for-the-primary-election-in-minneapolis/image_8a002c78-e789-5879-8a2e-665551aecb4b.html",
+"s": "The Lufkin Daily News"
+},
+{
+"t": "Michele Tafoya Loses Senate Race Amid Nationwide Democratic Rout",
+"u": "https://sports.yahoo.com/articles/michele-tafoya-loses-senate-race-053336070.html",
+"s": "Yahoo Sports"
+}
+],
+"n": 100
+},
+{
+"t": "pipoco",
+"trafico": "100+",
+"fecha": "2026-11-04T05:30+01:00",
+"noticias": [
+{
+"t": "Justiça derruba vitória de Ana Castela em ação por uso de cavalo em clipe",
+"u": "https://www.uol.com.br/splash/noticias/2026/11/03/justica-ana-castela-cavalo-pipoco.ghtm",
+"s": "UOL"
+},
+{
+"t": "Justiça anula vitória de Ana Castela em processo por uso de cavalo em clipe",
+"u": "https://www.metropoles.com/brasil/justica-anula-vitoria-de-ana-castela-em-processo-por-uso-de-cavalo-em-clipe",
+"s": "Metrópoles"
+},
+{
+"t": "Justiça determina reabertura de processo envolvendo Ana Castela por uso de cavalo em videoclipe",
+"u": "https://imirante.com/entretenimento/sao-luis/2026/11/03/tjpr-ordena-reabertura-processo-contra-ana-castela",
+"s": "Imirante.com"
+}
+],
+"n": 100
+},
+{
+"t": "julia letlow",
+"trafico": "100+",
+"fecha": "2026-11-04T05:30+01:00",
+"noticias": [
+{
+"t": "Louisiana U.S. Senate Election Live Results 2026",
+"u": "https://apnews.com/projects/elections-2026/louisiana-us-senate-results/",
+"s": "AP News"
+},
+{
+"t": "2026 U.S. Elections: Trump Personally Campaigned for the Republican Candidate in Louisiana — CNN",
+"u": "https://ua.news/en/world/vibori-u-ssha-2026-tramp-osobisto-agituvav-za-kandidaturu-respublikantsiv-u-luyiziani-cnn",
+"s": "UA.NEWS"
+},
+{
+"t": "Julia Letlow addresses supporters following projected Senate win",
+"u": "https://www.acadiananewsfirst.com/video/2026/11/04/julia-letlow-addresses-supporters-following-projected-senate-win/",
+"s": "KATC"
+}
+],
+"n": 100
+},
+{
+"t": "nbc",
+"trafico": "100+",
+"fecha": "2026-11-04T05:30+01:00",
+"noticias": [
+{
+"t": "Election 2026 live updates: Democrats unseat Sen. Susan Collins in Maine",
+"u": "https://www.nbcnews.com/politics/2026-election/live-blog/midterm-election-results-2026-news-trump-live-updates-rcna605763",
+"s": "NBC News"
+},
+{
+"t": "Maine U.S. Senate 2026: Live Midterm Election Results, Collins vs. Jackson",
+"u": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-maine-us-senate.html",
+"s": "The New York Times"
+},
+{
+"t": "Troy Jackson 'proud' after senate win in Maine",
+"u": "https://www.bbc.com/news/videos/ckly0j4qw0y9o",
+"s": "BBC"
+}
+],
+"n": 100
+},
+{
+"t": "edital pppe",
+"trafico": "100+",
+"fecha": "2026-11-04T05:10+01:00",
+"noticias": [
+{
+"t": "Concursos e seleções em PE têm mais de 3 mil vagas e salários de até R$ 13 mil; saiba como se inscrever",
+"u": "https://g1.globo.com/pe/pernambuco/noticia/2026/11/01/concursos-e-selecoes-em-pe-tem-mais-de-3-mil-vagas-e-salarios-de-ate-r-13-mil-saiba-como-se-inscrever.ghtml",
+"s": "G1"
+},
+{
+"t": "Concurso Penal PE: Lyra confirma edital nesta quarta-feira, dia 4",
+"u": "https://folha.qconcursos.com/n/concurso-penal-pe-2026-edital",
+"s": "Qconcursos Folha Dirigida"
+},
+{
+"t": "Com 700 vagas, governo de Pernambuco lança edital do concurso público da Polícia Penal",
+"u": "https://www.folhape.com.br/colunistas/blogdosconcursos/com-700-vagas-governo-de-pernambuco-lanca-edital-do-concurso-publico-da-policia-penal/60803/",
+"s": "Folha PE"
+}
+],
+"n": 100
+}
+]
+},
+"IN": {
+"geo": "IN",
+"url": "https://trends.google.com/trending/rss?geo=IN",
+"ok": true,
+"items": [
+{
+"t": "asteroid",
+"trafico": "200+",
+"fecha": "2026-11-04T07:40+01:00",
+"noticias": [
+{
+"t": "Sandia National Laboratories publishes study on deflecting irregular asteroids",
+"u": "https://www.aol.com/articles/sandia-national-laboratories-publishes-study-034658000.html",
+"s": "AOL.com"
+},
+{
+"t": "Sandia model makes asteroid-deflection simulations more than 1,600 times faster",
+"u": "https://mezha.net/eng/news/mezha-2c19e054b3f507873521dc7b_sandia_model_makes/",
+"s": "Mezha.net"
+},
+{
+"t": "Improved asteroid deflection model runs faster, reveals more doomsday worries",
+"u": "https://www.theregister.com/science/2026/11/03/improved-asteroid-deflection-model-runs-faster-reveals-more-doomsday-worries/5307317",
+"s": "The Register"
+}
+],
+"n": 200
+},
+{
+"t": "ಕಬ್ಬು",
+"trafico": "500+",
+"fecha": "2026-11-04T07:10+01:00",
+"noticias": [
+{
+"t": "ಕಬ್ಬಿಗೆ ₹5500 ಪಟ್ಟು: ರೈತರ ಬಗ್ಗೆ ಭಾಷಣ ಬೇಡ, ದರ ಘೋಷಿಸಿ, ಭುಗಿಲೆದ್ದ ಅನ್ನದಾತರ ಆಕ್ರೋಶ!",
+"u": "https://kannada.asianetnews.com/karnataka-districts/no-more-speeches-announce-the-price-farmers-stand-firm-demanding-rs-5-500-per-tonne-of-sugarcane-rav/articleshow-kgkxdp5",
+"s": "Asianet News Kannada"
+},
+{
+"t": "'ಡಿ.ಕೆ ಶಿವಕುಮಾರ್ ರೋಡ್ ಗೆ ಬರಲೇ ಬೇಕು' ಎಂದು ಕೂಗು: ಕಬ್ಬು ಬೆಳೆಗಾರರ ಹೋರಾಟ ತೀವ್ರ; ರಾಜ್ಯಾದ್ಯಂತ ಬಂದ್‌ಗೆ ಕರೆ; Video",
+"u": "https://www.kannadaprabha.com/karnataka/2026/Oct/31/sugarcane-farmers-intensify-agitation-over-pricing-demands-call-for-statewide-bandh",
+"s": "Kannada Prabha Online"
+},
+{
+"t": "ಕಬ್ಬು ಬೆಳೆಗಾರರ ರಕ್ಷಣೆಗೆ ಪ್ರತ್ಯೇಕ ವಿಮೆ, ನ್ಯಾಯಯುತ ಬೆಲೆ ಸೇರಿದಂತೆ 12 ಬೇಡಿಕೆ",
+"u": "https://eedina.com/bengaluru/12-demands-including-separate-insurance-for-the-protection-of-sugarcane-growers-and-a-fair-price/2026-10-30/",
+"s": "ಈ ದಿನ.ಕಾಮ್"
+}
+],
+"n": 500
+},
+{
+"t": "mary peltola",
+"trafico": "200+",
+"fecha": "2026-11-04T07:10+01:00",
+"noticias": [
+{
+"t": "Alaska U.S. Senate Election 2026 Live Results: Mary Peltola, Dan Sullivan and More",
+"u": "https://www.nbcnews.com/politics/2026-elections/alaska-senate-results",
+"s": "NBC News"
+},
+{
+"t": "Alaska U.S. Senate Election Live Results 2026",
+"u": "https://apnews.com/projects/elections-2026/alaska-us-senate-results/",
+"s": "AP News"
+},
+{
+"t": "Sen. Dan Sullivan (R-AK) Casts Vote and Speaks to Reporters in Anchorage, AK",
+"u": "https://www.c-span.org/event/campaign-2026/sen-dan-sullivan-r-ak-casts-vote-and-speaks-to-reporters-in-anchorage-ak/449115",
+"s": "C-SPAN"
+}
+],
+"n": 200
+},
+{
+"t": "uidai aadhaar",
+"trafico": "200+",
+"fecha": "2026-11-04T06:50+01:00",
+"noticias": [
+{
+"t": "NUCFDC, UIDAI hold Aadhaar Workshop for UCBs",
+"u": "https://www.indiancooperative.com/co-op-news-snippets/nucfdc-uidai-hold-aadhaar-workshop-for-ucbs/",
+"s": "Indian Cooperative"
+},
+{
+"t": "‘Aadhaar App’ credentials valid ID proof: Nagaland Government",
+"u": "https://www.morungexpress.com/aadhaar-app-credentials-valid-id-proof-nagaland-government",
+"s": "MorungExpress"
+},
+{
+"t": "Nagaland directs depts to accept digital Aadhaar credentials as valid ID proof",
+"u": "https://mokokchungtimes.com/nagaland-directs-depts-to-accept-digital-aadhaar-credentials-as-valid-id-proof/",
+"s": "MokokchungTimes.com"
+}
+],
+"n": 200
+},
+{
+"t": "इज़राइल",
+"trafico": "2000+",
+"fecha": "2026-11-04T06:40+01:00",
+"noticias": [
+{
+"t": "इजरायल को अब नहीं मिलेगी अमेरिकी मदद? ट्रंप ने 4 अरब डॉलर की सालाना सहायता बंद करने का किया ऐलान",
+"u": "https://www.aajtak.in/world/story/trump-announces-end-of-us-economic-aid-to-israel-midterm-elections-impact-ntc-acwi-dskc-2687690-2026-11-04",
+"s": "AajTak"
+},
+{
+"t": "ट्रम्प की आपत्ति के बाद इजराइल को मिलने वाली अमेरिकी सहायता क्यों खतरे में है? 4 अरब डॉलर के सालाना पैकेज के पीछे की पूरी कहानी समझें!",
+"u": "https://www.prabhatkhabar.com/world/trump-israel-military-aid-2027",
+"s": "Prabhat Khabar"
+},
+{
+"t": "मिडटर्म चुनाव के दिन ट्रंप का बड़ा धमाका, अब इजरायल को सालाना 4 अरब डॉलर नहीं देगा अमेरिका",
+"u": "https://www.jagran.com/world/america-trump-will-halt-the-four-billion-dollars-in-aid-given-to-israel-40426719.html",
+"s": "Jagran"
+}
+],
+"n": 2000
+},
+{
+"t": "elder scrolls vi",
+"trafico": "500+",
+"fecha": "2026-11-04T06:40+01:00",
+"noticias": [
+{
+"t": "The Elder Scrolls VI officially has a name: Sentinel",
+"u": "https://www.theverge.com/news/1025273/the-elder-scrolls-vi-sentinel-name-announcement",
+"s": "The Verge"
+},
+{
+"t": "The Elder Scrolls VI is officially called Sentinel — and its title confirms Skyrim sequel's setting",
+"u": "https://www.empireonline.com/movies/news/the-elder-scrolls-vi-sentinel-title-confirmed-as-bethesda-celebrates-40th-anniversary/",
+"s": "Empire"
+},
+{
+"t": "Elder Scrolls 6 Gets Its First New Teaser Trailer In Over 8 Years, But Still No Release Date",
+"u": "https://kotaku.com/elder-scrolls-6-gets-a-new-teaser-confirming-its-name-but-still-no-release-date-2000752777",
+"s": "Kotaku"
+}
+],
+"n": 500
+},
+{
+"t": "susan collins",
+"trafico": "200+",
+"fecha": "2026-11-04T06:40+01:00",
+"noticias": [
+{
+"t": "Election 2026 live updates: Democrats unseat Sen. Susan Collins in Maine",
+"u": "https://www.nbcnews.com/politics/2026-election/live-blog/midterm-election-results-2026-news-trump-live-updates-rcna605763",
+"s": "NBC News"
+},
+{
+"t": "Republican Susan Collins loses seat to Democrat, ending nearly 30 years in the Senate",
+"u": "https://www.bbc.com/news/articles/cred3jj69jvqo",
+"s": "BBC"
+},
+{
+"t": "Democrat Troy Jackson defeats Susan Collins to win Maine US Senate seat in blow to Republicans",
+"u": "https://www.theguardian.com/us-news/2026/nov/03/maine-senate-midterm-results",
+"s": "The Guardian"
+}
+],
+"n": 200
+},
+{
+"t": "icc cwc league 2",
+"trafico": "1000+",
+"fecha": "2026-11-04T06:30+01:00",
+"noticias": [
+{
+"t": "CWC League 2 top-four race reaches tense finish",
+"u": "https://www.icc-cricket.com/tournaments/icc-cricket-world-cup-league-2/news/cwc-league-2-top-four-race-reaches-tense-finish",
+"s": "ICC"
+},
+{
+"t": "UAE vs OMAN, 145th Match, ICC Cricket World Cup League Two 2023-27 - Commentary",
+"u": "https://www.cricbuzz.com/live-cricket-scores/176375/uae-vs-oman-145th-match-icc-cricket-world-cup-league-two-2023-27",
+"s": "Cricbuzz"
+},
+{
+"t": "United Arab Emirates vs Oman Match 145 ODI - ICC CWC League 2, 2023-27 Live Scorecard",
+"u": "https://www.indiatoday.in/live-score/cricket/united-arab-emirates-oman-live-cricket-scorecard-275772",
+"s": "India Today"
+}
+],
+"n": 1000
+},
+{
+"t": "sparsh",
+"trafico": "1000+",
+"fecha": "2026-11-04T06:30+01:00",
+"noticias": [
+{
+"t": "Sparsh CCTV Helping Partners Move Up the Surveillance Value Chain",
+"u": "https://www.varindia.com/news/sparsh-cctv-helping-partners-move-up-the-surveillance-value-chain",
+"s": "varindia"
+},
+{
+"t": "Special Jeevan Pramaan 5.0 campaign to be held at five places in Mysuru Railway division",
+"u": "https://www.thehindu.com/news/national/karnataka/special-jeevan-pramaan-50-campaign-to-be-held-at-five-places-in-mysuru-railway-division/article71660741.ece",
+"s": "The Hindu"
+},
+{
+"t": "Pensioners Urged to Opt for Digital Life Certificate",
+"u": "https://kashmirobserver.net/2026/11/03/pensioners-urged-to-opt-for-digital-life-certificate/",
+"s": "Kashmir Observer"
+}
+],
+"n": 1000
+},
+{
+"t": "vk sreeraman",
+"trafico": "500+",
+"fecha": "2026-11-04T06:30+01:00",
+"noticias": [
+{
+"t": "Mammootty की 40 साल पुरानी Contessa Car का किस्सा, V.K. Sreeraman ने Ooty का चौंकाने वाला Experience किया शेयर",
+"u": "https://cinematalk.in/mammootty-contessa-car-40-year-old-ooty-story/",
+"s": "cinematalk.in"
+},
+{
+"t": "മമ്മൂട്ടി ഓടിച്ച കോണ്ടസ പത്തുവയസ്സുകാരനെ ഇടിച്ച് തെറിപ്പിക്കുന്നു, പിന്നെ നടന്നത്, കുറിപ്പുമായി വികെ ശ്രീരാമൻ",
+"u": "https://malayalam.oneindia.com/movie-news/the-contessa-car-driven-by-mammootty-hits-a-ten-year-old-boy-and-throws-him-off-what-happened-nex-603101.html",
+"s": "Oneindia Malayalam"
+},
+{
+"t": "'മമ്മൂട്ടി ഓടിച്ച കോണ്ടസ കാർ പത്ത് വയസുകാരനെ ഇടിച്ച് തെറിപ്പിച്ചു, കാനയിലേക്ക് വീണ കുട്ടിയുമായി ഒരാൾക്കൂട്ടം'",
+"u": "https://malayalam.filmibeat.com/features/mammootty-s-contessa-car-hit-10-year-old-boy-vk-sreeraman-recalls-shocking-incident-146039.html",
+"s": "Filmibeat Malayalam"
+}
+],
+"n": 500
+}
+]
+},
+"JP": {
+"geo": "JP",
+"url": "https://trends.google.com/trending/rss?geo=JP",
+"ok": true,
+"items": [
+{
+"t": "byd",
+"trafico": "200+",
+"fecha": "2026-11-04T07:40+01:00",
+"noticias": [
+{
+"t": "「トヨタはすごい」は幻想に…EV補助金縮小であらわになる中国BYDと性能差 頼みの綱は高市政権による“嫌中”作戦だけになる 古賀茂明（AERA DIGITAL）",
+"u": "https://news.yahoo.co.jp/articles/5da9de58d03404c516f8d8210e14eba13227c560",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "BYDが日本市場に投じる一石 ラッコは軽EVの殻を割れるか",
+"u": "https://tver.jp/episodes/epxuxbciwo",
+"s": "TVer"
+},
+{
+"t": "BYD、コジマ14店舗で軽EV「ラッコ」など展示するキャラバン開催",
+"u": "https://car.watch.impress.co.jp/docs/news/2153400.html",
+"s": "Car Watch"
+}
+],
+"n": 200
+},
+{
+"t": "android セキュリティ",
+"trafico": "500+",
+"fecha": "2026-11-04T07:30+01:00",
+"noticias": [
+{
+"t": "GoogleがAndroid TVボックス130万台を乗っ取ったボットネット「XCPE」を無力化、メーカー自身が仕込んでいたとして認定取り消し（テクノエッジ）",
+"u": "https://news.yahoo.co.jp/articles/2bb1e9e206efafe40418f8d270639aaa506569db",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "あなたのAndroid TV端末が「詐欺広告の道具」に？ 中国メーカーが不正ソフトを仕込んで販売 Googleが取引停止",
+"u": "https://japan.cnet.com/article/35254298/",
+"s": "CNET Japan"
+},
+{
+"t": "グーグル、130万台のAndroid TVボックスにバックドア発覚でVideostrongとの関係を断絶",
+"u": "https://finance.biggo.jp/news/05a20070-f3fc-4ba7-b766-76186083314c",
+"s": "BigGo ファイナンス"
+}
+],
+"n": 500
+},
+{
+"t": "サッカーアルゼンチン代表",
+"trafico": "200+",
+"fecha": "2026-11-04T07:30+01:00",
+"noticias": [
+{
+"t": "メッシ代表引退で“新時代”へ！ アルゼンチン代表がメンバー発表…21歳チェルシーDFが初選出（サッカーキング）",
+"u": "https://news.yahoo.co.jp/articles/c3e442137619ed00712343ee47b03ab7cb5612d0",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "メッシ引退後初のアルゼンチン代表メンバー発表！ チェルシーの21歳アンセルミーノが初招集 フリアン・アルバレス、ニコ・パスらも順当に選出",
+"u": "https://topics.smt.docomo.ne.jp/article/theworldmagazine/sports/theworldmagazine-512359",
+"s": "ｄメニューニュース"
+},
+{
+"t": "メッシ引退後初のアルゼンチン代表メンバー発表！ チェルシーの21歳アンセルミーノが初招集 フリアン・アルバレス、ニコ・パスらも順当に選出",
+"u": "https://news.livedoor.com/article/detail/32725909/",
+"s": "ライブドアニュース"
+}
+],
+"n": 200
+},
+{
+"t": "vaundy 僕らの事にさせて (prod. vaundy)",
+"trafico": "100+",
+"fecha": "2026-11-04T07:30+01:00",
+"noticias": [
+{
+"t": "Jeremy Quartus、Vaundyプロデュース＆n-bunaギター参加の新曲「僕らの事にさせて」MV公開（音楽ナタリー）",
+"u": "https://news.yahoo.co.jp/articles/4ef5fa75c78c56a7eecf3ea49ed7e99f1bfa2a5f",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "Jeremy Quartus、n-bunaとVaundyを迎えた新曲「僕らの事にさせて」——11月4日に配信リリース",
+"u": "https://mag.digle.tokyo/news/289371",
+"s": "DIGLE MAGAZINE"
+}
+],
+"n": 100
+},
+{
+"t": "加藤清史郎",
+"trafico": "1000+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [],
+"n": 1000
+},
+{
+"t": "ファラロン・キャピタル・マネジメント",
+"trafico": "100+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "話題株ピックアップ【昼刊】：ヤマトＨＤ、スズデン、キオクシア",
+"u": "https://kabutan.jp/news/marketnews/?b=n202611040670",
+"s": "株探"
+},
+{
+"t": "ヤマトHD会長の退任要求 米ファンド、経営改革主張（共同通信）",
+"u": "https://news.yahoo.co.jp/articles/7b9cd4a67b6aa32aa6fec49ed6be0e8c37e6a5b6",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "ヤマトHDの株価、高値接近 米ファラロンが5%超保有",
+"u": "https://www.nikkei.com/article/DGXZQOFL0420D0U6A101C2000000/",
+"s": "日本経済新聞"
+}
+],
+"n": 100
+},
+{
+"t": "ティアフォー",
+"trafico": "100+",
+"fecha": "2026-11-04T07:20+01:00",
+"noticias": [
+{
+"t": "ティアフォーの株価続伸 「ハンドル無し自動運転車、国交省が一律認定」報道",
+"u": "https://www.nikkei.com/article/DGXZQOFL0417B0U6A101C2000000/",
+"s": "日本経済新聞"
+},
+{
+"t": "【注目】ハンドル無し自動運転車を一律認定へ 12月から【神戸市北区】兵庫県議会議員 大塚公彦",
+"u": "https://go2senkyo.com/seijika/186641/posts/1567899",
+"s": "選挙ドットコム"
+},
+{
+"t": "国交省、ボールを警察に投げた。年内にハンドル無しの自動運転車を認可へ。残るは守れない道交法",
+"u": "https://kunisawa.net/car/car_latest-information/%E5%9B%BD%E4%BA%A4%E7%9C%81%E3%80%81%E3%83%9C%E3%83%BC%E3%83%AB%E3%82%92%E8%AD%A6%E5%AF%9F%E3%81%AB%E6%8A%95%E3%81%92%E3%81%9F%E3%80%82%E5%B9%B4%E5%86%85%E3%81%AB%E3%83%8F%E3%83%B3%E3%83%89%E3%83%AB/",
+"s": "自動車評論家 国沢光宏"
+}
+],
+"n": 100
+},
+{
+"t": "susan collins",
+"trafico": "100+",
+"fecha": "2026-11-04T07:10+01:00",
+"noticias": [
+{
+"t": "Election 2026 live updates: Democrats unseat Sen. Susan Collins in Maine",
+"u": "https://www.nbcnews.com/politics/2026-election/live-blog/midterm-election-results-2026-news-trump-live-updates-rcna605763",
+"s": "NBC News"
+},
+{
+"t": "Troy Jackson defeats Susan Collins to flip Maine Senate seat for Dems",
+"u": "https://www.yahoo.com/news/politics/articles/troy-jackson-defeats-susan-collins-053609262.html",
+"s": "Yahoo"
+},
+{
+"t": "Maine U.S. Senate 2026: Live Midterm Election Results, Collins vs. Jackson",
+"u": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-maine-us-senate.html",
+"s": "The New York Times"
+}
+],
+"n": 100
+},
+{
+"t": "トヨタ・カローラスポーツ",
+"trafico": "100+",
+"fecha": "2026-11-04T07:10+01:00",
+"noticias": [
+{
+"t": "トヨタ『カローラ』次期型、「スポーツ」と「ツーリング」はどうなる？ セダンとハッチバックを統合か（レスポンス）",
+"u": "https://news.yahoo.co.jp/articles/997d2ced30103572f713991ecc6d0829d99c0e38",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "小さく、とにかく小さく。トヨタが発表した次世代ハイブリッドは1.5L専用エンジンを新設計。",
+"u": "https://motor-fan.jp/article/1667460/",
+"s": "Motor Fan"
+},
+{
+"t": "斬新なデザインの秘密は新エンジン!? トヨタ「カローラコンセプト」の“低いノーズ”と燃費15％超改善を目指す“新世代ハイブリッドユニット”の関係とは？",
+"u": "https://vague.style/post/470720",
+"s": "VAGUE(ヴァーグ)"
+}
+],
+"n": 100
+},
+{
+"t": "仙台市長",
+"trafico": "500+",
+"fecha": "2026-11-04T06:50+01:00",
+"noticias": [
+{
+"t": "ポケモンGOイベントが東北大入試と日程重複 郡和子仙台市長「宿泊に空き、一定の確保された」（tbc東北放送）",
+"u": "https://news.yahoo.co.jp/articles/430b790cfd2b36691a8d211e0440b4c01ac922ba",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "今日から新しい街の冒険へ出かけましょう！仙台・東北とメキシコのメキシコシティで、すべてのトレーナーが『Pokémon GO』で新しい「GOスタンプラリー」に参加できます。",
+"u": "https://pokemongolive.com/ja/news/forever-stamp-rally-go-wild-area-2026",
+"s": "Pokémon GO"
+},
+{
+"t": "東北3県の応援ポケモンをモチーフにしたコラボメニューを提供 仙台で「ラプラスカフェ」",
+"u": "https://sendai.keizai.biz/photoflash/10786/",
+"s": "仙台経済新聞"
+}
+],
+"n": 500
+}
+]
+}
+},
+"wikipedia": {
+"es": {
+"lang": "es",
+"ok": true,
+"items": [
+{
+"t": "Jesús de Miguel Alameda",
+"v": 367049,
+"movil": 0.86,
+"u": "https://es.wikipedia.org/wiki/Jesús_de_Miguel_Alameda"
+},
+{
+"t": "Jesús Owono",
+"v": 161880,
+"movil": 0.8,
+"u": "https://es.wikipedia.org/wiki/Jesús_Owono"
+},
+{
+"t": "Óscar Puente",
+"v": 48148,
+"movil": 0.88,
+"u": "https://es.wikipedia.org/wiki/Óscar_Puente"
+},
+{
+"t": "Almudena Ariza",
+"v": 21384,
+"movil": 0.95,
+"u": "https://es.wikipedia.org/wiki/Almudena_Ariza"
+},
+{
+"t": "Donald Trump",
+"v": 20156,
+"movil": 0.87,
+"u": "https://es.wikipedia.org/wiki/Donald_Trump"
+},
+{
+"t": "Elecciones intermedias en los Estados Unidos",
+"v": 18620,
+"movil": 0.78,
+"u": "https://es.wikipedia.org/wiki/Elecciones_intermedias_en_los_Estados_Unidos"
+},
+{
+"t": "Brian Fariñas Pérez",
+"v": 18324,
+"movil": 0.93,
+"u": "https://es.wikipedia.org/wiki/Brian_Fariñas_Pérez"
+},
+{
+"t": "Elecciones a la Cámara de Representantes de los Estados Unidos de 2026",
+"v": 18103,
+"movil": 0.78,
+"u": "https://es.wikipedia.org/wiki/Elecciones_a_la_Cámara_de_Representantes_de_los_Estados_Unidos_de_2026"
+},
+{
+"t": "ChatGPT",
+"v": 14335,
+"movil": 0.33,
+"u": "https://es.wikipedia.org/wiki/ChatGPT"
+},
+{
+"t": "Partido Demócrata (Estados Unidos)",
+"v": 13340,
+"movil": 0.87,
+"u": "https://es.wikipedia.org/wiki/Partido_Demócrata_(Estados_Unidos)"
+},
+{
+"t": "Martín de Porres",
+"v": 12745,
+"movil": 0.84,
+"u": "https://es.wikipedia.org/wiki/Martín_de_Porres"
+},
+{
+"t": "Club Deportivo Tenerife",
+"v": 12181,
+"movil": 0.77,
+"u": "https://es.wikipedia.org/wiki/Club_Deportivo_Tenerife"
+},
+{
+"t": "Antonio Navarro Wolff",
+"v": 11705,
+"movil": 0.81,
+"u": "https://es.wikipedia.org/wiki/Antonio_Navarro_Wolff"
+},
+{
+"t": "Inés Gómez Mont",
+"v": 11549,
+"movil": 0.86,
+"u": "https://es.wikipedia.org/wiki/Inés_Gómez_Mont"
+},
+{
+"t": "Aston Villa Football Club",
+"v": 11536,
+"movil": 0.88,
+"u": "https://es.wikipedia.org/wiki/Aston_Villa_Football_Club"
+},
+{
+"t": "Partido Republicano (Estados Unidos)",
+"v": 11166,
+"movil": 0.85,
+"u": "https://es.wikipedia.org/wiki/Partido_Republicano_(Estados_Unidos)"
+},
+{
+"t": "Romina Ricci",
+"v": 10822,
+"movil": 0.94,
+"u": "https://es.wikipedia.org/wiki/Romina_Ricci"
+},
+{
+"t": "Futbol Club Andorra",
+"v": 10483,
+"movil": 0.79,
+"u": "https://es.wikipedia.org/wiki/Futbol_Club_Andorra"
+},
+{
+"t": "Accidente ferroviario de Santiago de Compostela",
+"v": 10078,
+"movil": 0.83,
+"u": "https://es.wikipedia.org/wiki/Accidente_ferroviario_de_Santiago_de_Compostela"
+},
+{
+"t": "Miguel de Unamuno",
+"v": 10052,
+"movil": 0.93,
+"u": "https://es.wikipedia.org/wiki/Miguel_de_Unamuno"
+},
+{
+"t": "Andrea Kimi Antonelli",
+"v": 9796,
+"movil": 0.8,
+"u": "https://es.wikipedia.org/wiki/Andrea_Kimi_Antonelli"
+},
+{
+"t": "Tabla periódica de los elementos",
+"v": 9496,
+"movil": 0.45,
+"u": "https://es.wikipedia.org/wiki/Tabla_periódica_de_los_elementos"
+},
+{
+"t": "The Legend of Zelda: Ocarina of Time",
+"v": 8848,
+"movil": 0.81,
+"u": "https://es.wikipedia.org/wiki/The_Legend_of_Zelda:_Ocarina_of_Time"
+},
+{
+"t": "Día de Muertos",
+"v": 8725,
+"movil": 0.66,
+"u": "https://es.wikipedia.org/wiki/Día_de_Muertos"
+},
+{
+"t": "Zion Suzuki",
+"v": 8636,
+"movil": 0.92,
+"u": "https://es.wikipedia.org/wiki/Zion_Suzuki"
+}
+],
+"descartados_bots": [
+"WhatsApp",
+"Arroba (símbolo)",
+"Gmail"
+],
+"dia": "2026-11-03",
+"url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/es.wikipedia/all-access/2026/11/03"
+},
+"en": {
+"lang": "en",
+"ok": true,
+"items": [
+{
+"t": "Jesús de Miguel",
+"v": 585060,
+"movil": 0.79,
+"u": "https://en.wikipedia.org/wiki/Jesús_de_Miguel"
+},
+{
+"t": "2026 United States elections",
+"v": 455194,
+"movil": 0.63,
+"u": "https://en.wikipedia.org/wiki/2026_United_States_elections"
+},
+{
+"t": "Jesús Owono",
+"v": 297789,
+"movil": 0.74,
+"u": "https://en.wikipedia.org/wiki/Jesús_Owono"
+},
+{
+"t": "Abdul El-Sayed",
+"v": 271285,
+"movil": 0.75,
+"u": "https://en.wikipedia.org/wiki/Abdul_El-Sayed"
+},
+{
+"t": ".xxx",
+"v": 255014,
+"movil": 0.98,
+"u": "https://en.wikipedia.org/wiki/.xxx"
+},
+{
+"t": "United States midterm election",
+"v": 244478,
+"movil": 0.7,
+"u": "https://en.wikipedia.org/wiki/United_States_midterm_election"
+},
+{
+"t": "Haley Stevens",
+"v": 208194,
+"movil": 0.68,
+"u": "https://en.wikipedia.org/wiki/Haley_Stevens"
+},
+{
+"t": "Deaths in 2026",
+"v": 140654,
+"movil": 0.47,
+"u": "https://en.wikipedia.org/wiki/Deaths_in_2026"
+},
+{
+"t": "Dancing with the Stars (American TV series) season 35",
+"v": 135810,
+"movil": 0.74,
+"u": "https://en.wikipedia.org/wiki/Dancing_with_the_Stars_(American_TV_series)_season_35"
+},
+{
+"t": "Karl Bushby",
+"v": 135687,
+"movil": 0.76,
+"u": "https://en.wikipedia.org/wiki/Karl_Bushby"
+},
+{
+"t": "2026 Palm Beach County Learjet 60 crash",
+"v": 132447,
+"movil": 0.55,
+"u": "https://en.wikipedia.org/wiki/2026_Palm_Beach_County_Learjet_60_crash"
+},
+{
+"t": "Learjet 60",
+"v": 121648,
+"movil": 0.59,
+"u": "https://en.wikipedia.org/wiki/Learjet_60"
+},
+{
+"t": "ChatGPT",
+"v": 117118,
+"movil": 0.22,
+"u": "https://en.wikipedia.org/wiki/ChatGPT"
+},
+{
+"t": "Jeffery Simmons",
+"v": 111232,
+"movil": 0.85,
+"u": "https://en.wikipedia.org/wiki/Jeffery_Simmons"
+},
+{
+"t": "David Walliams",
+"v": 110365,
+"movil": 0.76,
+"u": "https://en.wikipedia.org/wiki/David_Walliams"
+},
+{
+"t": "James Talarico",
+"v": 105766,
+"movil": 0.73,
+"u": "https://en.wikipedia.org/wiki/James_Talarico"
+},
+{
+"t": "Jailer 2",
+"v": 96128,
+"movil": 0.88,
+"u": "https://en.wikipedia.org/wiki/Jailer_2"
+},
+{
+"t": "XNXX",
+"v": 92646,
+"movil": 0.98,
+"u": "https://en.wikipedia.org/wiki/XNXX"
+},
+{
+"t": "2026 United States Senate elections",
+"v": 90787,
+"movil": 0.52,
+"u": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections"
+},
+{
+"t": "Ansel Adams",
+"v": 87663,
+"movil": 0.88,
+"u": "https://en.wikipedia.org/wiki/Ansel_Adams"
+},
+{
+"t": "Elizabeth Holmes",
+"v": 87659,
+"movil": 0.76,
+"u": "https://en.wikipedia.org/wiki/Elizabeth_Holmes"
+},
+{
+"t": "Archive of Our Own",
+"v": 85012,
+"movil": 0.8,
+"u": "https://en.wikipedia.org/wiki/Archive_of_Our_Own"
+},
+{
+"t": "Patrick Stewart",
+"v": 82458,
+"movil": 0.63,
+"u": "https://en.wikipedia.org/wiki/Patrick_Stewart"
+},
+{
+"t": "Donald Trump",
+"v": 75990,
+"movil": 0.69,
+"u": "https://en.wikipedia.org/wiki/Donald_Trump"
+},
+{
+"t": "Ramayana: Part 1",
+"v": 72890,
+"movil": 0.8,
+"u": "https://en.wikipedia.org/wiki/Ramayana:_Part_1"
+}
+],
+"descartados_bots": [
+".xyz"
+],
+"dia": "2026-11-03",
+"url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/2026/11/03"
+}
+}
+}
