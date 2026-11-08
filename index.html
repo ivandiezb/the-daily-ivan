@@ -2319,15 +2319,18 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
     st.textContent = '';
     var txt = statusMsg;
     if (!txt && estado){
+      // «terminada» y «sin_cambios» solo se refieren a la edición que se está viendo (no a la de ayer)
+      var deHoy = estado.fecha === LATEST.fechaISO;
       if (estado.estado === 'en_curso' && enMarcha()) txt = 'Actualizando desde las ' + hhmm(estado.inicio) + '… suele tardar unos 20–30 minutos.';
       else if (estado.estado === 'pedida' && enMarcha()) txt = 'Actualización pedida a las ' + hhmm(estado.pedida) + '; empezará en unos minutos.';
+      else if (!deHoy && estado.estado !== 'error') txt = '';
       else if (estado.estado === 'terminada' && estado.fin && minutosDesde(estado.fin) < 720){
         var nueva = estado.fecha === LATEST.fechaISO && estado.hora && (!LATEST.actualizacion || LATEST.actualizacion.hora !== estado.hora);
         txt = nueva ? 'Hay una versión más reciente (' + estado.hora + '): vuelve a abrir la página para verla.'
                     : 'Última actualización: ' + (estado.hora || hhmm(estado.fin)) + (estado.resumen ? ' · ' + estado.resumen : '');
       }
       else if (estado.estado === 'sin_cambios' && minutosDesde(estado.fin) < 720) txt = 'Revisada a las ' + hhmm(estado.fin) + ': sin novedades que cambien la edición.';
-      else if (estado.estado === 'error' && minutosDesde(estado.fin) < 720) txt = 'La última actualización no pudo terminar (' + hhmm(estado.fin) + ')' + (estado.motivo ? ': ' + estado.motivo : '') + '.';
+      else if (estado.estado === 'error' && minutosDesde(estado.fin) < (deHoy ? 720 : 180)) txt = 'La última actualización no pudo terminar (' + hhmm(estado.fin) + ')' + (estado.motivo ? ': ' + estado.motivo : '') + '.';
     }
     if (confirmando){
       st.appendChild(document.createTextNode('¿Actualizar ahora? Se vuelven a buscar y contrastar las noticias (unos 20–30 min) y después se publican la web y esta página.'));
