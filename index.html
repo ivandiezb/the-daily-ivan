@@ -1782,7 +1782,7 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
       pagina: 'https://claude.ai/artifact/G4hzzzYjGs3kNiDiqoBc7z',
       tarea: 'trig_01UySCSxbyL1ZEgtJytrZ7jn',
       prueba: '',
-      correo: 'ivandiezberjano@gmail.com'
+      correo: ['ivandiezberjano', 'gmail.com']  // se une al votar: así la dirección no aparece entera en el código de la web
     };
 
   function el(tag, cls, text){
@@ -2239,7 +2239,7 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
   function mailtoVoto(it, fecha, v){
     var asunto = '[TDI] ' + (v > 0 ? 'Me interesa' : 'No me interesa') + ' ' + it.code + ' ' + fecha;
     var cuerpo = '«' + it.titulo + '»\n\n(Opcional) Por qué:\n';
-    return 'mailto:' + CFG.correo + '?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(cuerpo);
+    return 'mailto:' + [].concat(CFG.correo).join('@') + '?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(cuerpo);
   }
   function voteGroup(it, secId, data){
     var g = el('div','vote'); g.setAttribute('role','group'); g.setAttribute('aria-label','¿Te interesa esta noticia?');
