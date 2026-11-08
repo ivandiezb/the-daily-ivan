@@ -245,6 +245,11 @@ def main():
         if (ed.get("metodo") or [""])[0].find(f" {dia} de ") < 0:
             aviso("metodo: la primera línea no parece actualizada con el día de hoy")
 
+    lineas_act = [l for l in (ed.get("metodo") or []) if str(l).startswith("Actualizada el")]
+    if not a.actualizacion and lineas_act:
+        err("metodo: quita la línea «Actualizada el …» (es de una actualización de la edición anterior)")
+    elif a.actualizacion and not lineas_act:
+        aviso("metodo: falta la línea «Actualizada el <día> a las HH:MM a partir de unas N búsquedas y lecturas.»")
     if "«Cobertura» indica" in metodo:
         aviso("metodo: quita la frase sobre «Cobertura» (la cobertura ya no se muestra al lector)")
     if "«Tendencias de la sociedad»" in metodo:
