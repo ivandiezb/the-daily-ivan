@@ -163,11 +163,15 @@ def main(page, url, out, respaldo=None):
              f'&#128279;&nbsp;{e(web_label)}</a></p>')
     H.append(f'<p style="margin:16px 0 4px"><a href="{e(url)}" style="background-color:{ACC};color:#FFFFFF;text-decoration:none;font:bold 14px {SANS};padding:9px 14px;border-radius:5px;display:inline-block">Abrir la edición completa</a>'
              f'&nbsp;&nbsp; <a href="{e(url)}#archivo" style="color:{ACC};font:bold 14px {SANS}">Ediciones anteriores</a></p>')
+    # Votos: un solo enlace (cada pulgar por noticia costaría unos 8 KB y el correo pasaría del límite de Gmail).
+    # En la web cada noticia tiene sus botones «¿Te interesa?».
+    H.append(f'<p style="margin:6px 0 0;color:{INK2};font:13px/1.4 {SANS}">&#128077;&#128078; ¿Qué noticias te interesan? '
+             f'<a href="{e(url)}#mercados" style="color:{LINK}">Valóralas en la web</a> y se afinará la selección.</p>')
     if respaldo:
         H.append(f'<p style="margin:4px 0 0;color:{INK2};font:12px/1.4 {SANS}">Si la web todavía no muestra la edición de hoy, '
                  f'<a href="{e(respaldo)}" style="color:{LINK}">ábrela aquí</a>.</p>')
     T += [f"{brand.upper()} · {d['fechaTexto']}", slogan, meta, "", lede, "", f"Web: {web}", "", f"Edición completa: {url}",
-          f"Ediciones anteriores: {url}#archivo", ""] + ([f"Si la web todavía no muestra la edición de hoy: {respaldo}", ""] if respaldo else [])
+          f"Ediciones anteriores: {url}#archivo", f"Valora las noticias (me interesa / no me interesa): {url}#mercados", ""] + ([f"Si la web todavía no muestra la edición de hoy: {respaldo}", ""] if respaldo else [])
 
     def h2(t, kind):
         bg, ink, rule = BANDS[kind]
