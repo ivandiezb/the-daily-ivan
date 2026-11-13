@@ -2,6 +2,7 @@
 """Valida el JSON de una edición de «The Daily Iván» antes de publicarla.
 
 Uso: python3 scripts/validar_edicion.py trabajo/page.html [--anterior trabajo/page_prev.html] [--temas trabajo/temas.json]
+     [--actualizacion]   (actualización de media jornada: --anterior es la versión de la mañana del mismo día)
 
 Imprime ERRORES (impiden publicar: corrígelos) y AVISOS (revísalos; pueden estar justificados) y termina con
 código 1 si hay algún error. Comprueba las reglas editoriales del encargo diario que se pueden comprobar de forma
@@ -68,6 +69,8 @@ def main():
     ap.add_argument("pagina")
     ap.add_argument("--anterior")
     ap.add_argument("--temas")
+    ap.add_argument("--actualizacion", action="store_true",
+                    help="valida una actualización: --anterior es la versión anterior del mismo día")
     a = ap.parse_args()
     ed = leer(a.pagina)
     prev = leer(a.anterior) if a.anterior else None
@@ -88,8 +91,27 @@ def main():
         err(f"fechaISO con formato raro: {ed['fechaISO']}")
     if ed.get("cierre") and not re.fullmatch(r"\d{2}:\d{2}", ed["cierre"]):
         err(f"cierre debe ser HH:MM: {ed['cierre']}")
-    if prev and ed.get("fechaISO") and ed["fechaISO"] == prev.get("fechaISO"):
-        aviso(f"la fecha ({ed['fechaISO']}) es la misma que la de la edición anterior")
+    if a.actualizacion:
+        if prev and ed.get("fechaISO") != prev.get("fechaISO"):
+            err(f"una actualización no cambia la fecha: es la edición del {prev.get('fechaISO')}, no del {ed.get('fechaISO')}")
+        up = ed.get("actualizacion")
+        if not isinstance(up, dict) or not re.fullmatch(r"\d{2}:\d{2}", str(up.get("hora", ""))):
+            err("falta «actualizacion»: {\"hora\": \"HH:MM\", \"resumen\": \"...\", \"cambios\": [...]}")
+        else:
+            if not str(up.get("resumen", "")).strip():
+                aviso("actualizacion: falta el resumen de una línea")
+            cam = up.get("cambios")
+            if not isinstance(cam, list) or not all(isinstance(x, str) and x.strip() for x in cam):
+                err("actualizacion.cambios debe ser una lista de frases")
+            elif len(cam) > 8:
+                aviso(f"actualizacion: {len(cam)} cambios; resume en 8 como mucho")
+            if prev and isinstance(prev.get("actualizacion"), dict) and str(prev["actualizacion"].get("hora", "")) >= up["hora"]:
+                err(f"actualizacion.hora ({up['hora']}) no es posterior a la de la versión anterior ({prev['actualizacion'].get('hora')})")
+    else:
+        if prev and ed.get("fechaISO") and ed["fechaISO"] == prev.get("fechaISO"):
+            aviso(f"la fecha ({ed['fechaISO']}) es la misma que la de la edición anterior")
+        if "actualizacion" in ed:
+            err("quita «actualizacion»: es de la edición anterior (solo la llevan las actualizaciones del día)")
 
     codigos = {}
     secciones = ed.get("secciones") or []
@@ -129,6 +151,13 @@ def main():
             for k in ("titulo", "hecho", "importa"):
                 if not str(it.get(k, "")).strip():
                     err(f"{donde}: falta «{k}»")
+            if "actualizado" in it:
+                if not a.actualizacion:
+                    err(f"{donde}: quita «actualizado» (es de la edición anterior)")
+                elif not re.fullmatch(r"\d{2}:\d{2}", str(it["actualizado"])):
+                    err(f"{donde}: «actualizado» debe ser HH:MM")
+                elif isinstance(ed.get("actualizacion"), dict) and str(it["actualizado"]) > str(ed["actualizacion"].get("hora", "99:99")):
+                    err(f"{donde}: «actualizado» ({it['actualizado']}) es posterior a la hora de la actualización")
             if j == 0:
                 if it.get("breve"):
                     err(f"{donde}: la noticia principal no puede ser breve")
@@ -149,6 +178,9 @@ def main():
                 u = f.get("u", "")
                 if not f.get("t"):
                     err(f"{donde}: una fuente no tiene nombre («t»)")
+                elif not re.match(r"\s*[^:]{2,45}:\s", f["t"]):
+                    # la página y el correo muestran solo el medio (lo que va antes de los dos puntos), enlazado al artículo
+                    err(f"{donde}: la fuente «{f['t'][:60]}» no empieza por «Medio: »; escribe «Medio: título del artículo»")
                 if not u or portada(u):
                     err(f"{donde}: URL que no parece un artículo concreto: {u!r}")
                 elif "news.google.com" in u:
@@ -216,6 +248,11 @@ def main():
         if (ed.get("metodo") or [""])[0].find(f" {dia} de ") < 0:
             aviso("metodo: la primera línea no parece actualizada con el día de hoy")
 
+    lineas_act = [l for l in (ed.get("metodo") or []) if str(l).startswith("Actualizada el")]
+    if not a.actualizacion and lineas_act:
+        err("metodo: quita la línea «Actualizada el …» (es de una actualización de la edición anterior)")
+    elif a.actualizacion and not lineas_act:
+        aviso("metodo: falta la línea «Actualizada el <día> a las HH:MM a partir de unas N búsquedas y lecturas.»")
     if "«Cobertura» indica" in metodo:
         aviso("metodo: quita la frase sobre «Cobertura» (la cobertura ya no se muestra al lector)")
     if "«Tendencias de la sociedad»" in metodo:
@@ -230,7 +267,7 @@ def main():
         if tr.get("fecha") and ed.get("fechaISO") and tr["fecha"] < ed["fechaISO"]:
             aviso(f"tendencias: los datos son del {tr['fecha']}, no de hoy")
 
-    if prev:
+    if prev and not a.actualizacion:
         ant = {it.get("titulo"): it for s in prev.get("secciones", []) for it in s.get("items", [])}
         for c, it in codigos.items():
             if it.get("titulo") in ant and it.get("conf") != "seguimiento":

@@ -24,6 +24,7 @@ Uso en la tarea diaria (desde R = el repositorio):
 Uso dentro de GitHub Actions (no lo ejecuta la tarea diaria):
   desempaquetar --salida DIR      lee EDICION / IG / FECHA del entorno y escribe DIR/edicion.json y DIR/ig.json
   montar --entrada DIR [--repo .] escribe index.html (plantilla actual + edición nueva) y actualiza archivo/
+  fuentes [--esperar 420]         vuelve a recoger los titulares (flujo «Fuentes») y espera a la rama «datos»
 
 Solo biblioteca estándar. Credenciales: GH_TOKEN o GITHUB_TOKEN si existen (en las sesiones de Claude el proxy las
 añade él solo).
@@ -89,14 +90,25 @@ def fecha_de_index(html_texto):
     return m.group(1) if m else None
 
 
-def main_tiene(fecha):
-    """(True/False, fecha que hay en main, sha de main)."""
+def hora_de_index(html_texto):
+    """Hora de la última actualización del día («actualizacion.hora»), o None si es la edición de la mañana."""
+    m = re.search(r'"actualizacion"\s*:\s*\{[^{}]*?"hora"\s*:\s*"(\d{2}:\d{2})"', html_texto or "")
+    return m.group(1) if m else None
+
+
+def describe(fecha, hora):
+    return f"{fecha or 'desconocida'}" + (f" (actualizada a las {hora})" if hora else "")
+
+
+def main_tiene(fecha, hora=None):
+    """(True/False, edición que hay en main, sha de main). Con «hora», exige además esa actualización del día."""
     sha = llamar("GET", "/git/ref/heads/main")["object"]["sha"]
-    actual = fecha_de_index(llamar("GET", f"/contents/index.html?ref={sha}", crudo=True))
-    return actual == fecha, actual or "desconocida", sha
+    texto = llamar("GET", f"/contents/index.html?ref={sha}", crudo=True)
+    actual, h = fecha_de_index(texto), hora_de_index(texto)
+    return actual == fecha and (hora is None or h == hora), describe(actual, h), sha
 
 
-def pages_construida(fecha):
+def pages_construida(fecha, hora=None):
     """¿Ha desplegado GitHub Pages una versión de main que ya trae la edición de esa fecha? (El proxy no deja leer
     /pages/builds, así que se mira la última ejecución correcta de «pages build and deployment».)"""
     try:
@@ -105,8 +117,9 @@ def pages_construida(fecha):
         if not runs:
             return False, "sin despliegues recientes"
         sha = runs[0]["head_sha"]
-        f = fecha_de_index(llamar("GET", f"/contents/index.html?ref={sha}", crudo=True))
-        return f == fecha, f"último despliegue {sha[:7]} con la edición del {f}"
+        texto = llamar("GET", f"/contents/index.html?ref={sha}", crudo=True)
+        f, h = fecha_de_index(texto), hora_de_index(texto)
+        return f == fecha and (hora is None or h == hora), f"último despliegue {sha[:7]} con la edición del {describe(f, h)}"
     except Exception as e:
         return False, f"no consultable ({e})"
 
@@ -190,7 +203,8 @@ def cmd_edicion(a):
     if a.ig and os.path.isfile(a.ig):
         texto_ig = open(a.ig, encoding="utf-8").read()
         json.loads(texto_ig)
-    mensaje = a.mensaje or f"Edición del {d.get('fechaTexto', a.fecha)}"
+    hora = (d.get("actualizacion") or {}).get("hora") or None
+    mensaje = a.mensaje or (f"Edición del {d.get('fechaTexto', a.fecha)}" + (f", actualizada a las {hora}" if hora else ""))
     ed_b64 = empaquetar(texto_ed.encode())
     ig_b64 = empaquetar(texto_ig.encode()) if texto_ig else ""
     log(f"Edición {a.fecha}: JSON {len(texto_ed)} caracteres → {len(ed_b64)} comprimido; Instagram {len(ig_b64)}.")
@@ -233,21 +247,21 @@ def cmd_edicion(a):
     while time.time() < limite:
         time.sleep(15)
         try:
-            ok, actual, sha = main_tiene(a.fecha)
+            ok, actual, sha = main_tiene(a.fecha, hora)
         except Exception as e:
             log(f"(consulta fallida: {e})")
             continue
         if ok and not en_main:
             en_main = True
-            log(f"main ya tiene la edición del {a.fecha} ({sha[:7]}).")
+            log(f"main ya tiene la edición del {describe(a.fecha, hora)} ({sha[:7]}).")
         if ok:
-            listo, estado = pages_construida(a.fecha)
+            listo, estado = pages_construida(a.fecha, hora)
             if listo:
                 log(f"GitHub Pages desplegada con esta edición ({estado}).")
                 print("WEB_OK")
                 return 0
     if en_main:
-        log(f"GitHub Pages aún no confirma el despliegue ({pages_construida(a.fecha)[1]}); se actualizará sola.")
+        log(f"GitHub Pages aún no confirma el despliegue ({pages_construida(a.fecha, hora)[1]}); se actualizará sola.")
         print("WEB_OK")
         return 0
     motivo = (f"tras {a.esperar} s main sigue con la edición del {actual}. Enviada por {enviada}. "
@@ -258,9 +272,37 @@ def cmd_edicion(a):
 
 
 def cmd_comprobar(a):
-    ok, actual, sha = main_tiene(a.fecha)
+    ok, actual, sha = main_tiene(a.fecha, a.hora)
     print("WEB_OK" if ok else f"WEB_FALLO: main tiene la edición del {actual}")
     return 0 if ok else 1
+
+
+def cmd_fuentes(a):
+    """Vuelve a recoger los titulares (flujo «Fuentes») y espera a que la rama «datos» cambie. Lo usan las
+    actualizaciones de media jornada: los titulares de la mañana se quedan viejos."""
+    def sha_datos():
+        try:
+            return llamar("GET", "/git/ref/heads/datos")["object"]["sha"]
+        except Exception:
+            return None
+    antes = sha_datos()
+    try:
+        llamar("POST", "/actions/workflows/fuentes.yml/dispatches", {"ref": "main"}, intentos=2)
+    except Exception as e:
+        print(f"FUENTES_FALLO: no se pudo lanzar la recogida ({e})")
+        return 1
+    log(f"Recogida de titulares lanzada; esperando a la rama «datos» (antes en {str(antes)[:7]}).")
+    limite = time.time() + a.esperar
+    while time.time() < limite:
+        time.sleep(20)
+        ahora = sha_datos()
+        if ahora and ahora != antes:
+            log(f"Titulares nuevos en «datos» ({ahora[:7]}).")
+            print("FUENTES_OK")
+            return 0
+    print(f"FUENTES_FALLO: tras {a.esperar} s la rama «datos» no ha cambiado (sigue en {str(antes)[:7]}); "
+          "usa los titulares de la mañana y búsquedas propias")
+    return 1
 
 
 # ---------------------------------------------------------------- dentro de GitHub Actions
@@ -323,6 +365,9 @@ def main():
                    help="solo para pruebas: fuerza una vía de envío")
     c = sub.add_parser("comprobar")
     c.add_argument("--fecha", required=True)
+    c.add_argument("--hora", help="exige además esta actualización del día (HH:MM)")
+    fu = sub.add_parser("fuentes")
+    fu.add_argument("--esperar", type=int, default=420)
     dz = sub.add_parser("desempaquetar")
     dz.add_argument("--salida", required=True)
     mo = sub.add_parser("montar")
@@ -330,7 +375,7 @@ def main():
     mo.add_argument("--repo", default=".")
     a = ap.parse_args()
     return {"edicion": cmd_edicion, "comprobar": cmd_comprobar, "desempaquetar": cmd_desempaquetar,
-            "montar": cmd_montar}[a.orden](a)
+            "montar": cmd_montar, "fuentes": cmd_fuentes}[a.orden](a)
 
 
 if __name__ == "__main__":

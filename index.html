@@ -259,17 +259,40 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
   .radar li:nth-last-child(2):nth-child(odd),.agenda li:nth-last-child(2):nth-child(odd){border-bottom:0}
 }
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+/* Votes, on-demand update and update notes */
+.foot-act{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.vote{display:inline-flex;align-items:center;gap:5px}
+.vote-lbl{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-2);margin-right:2px}
+.vote a{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:999px;border:1px solid var(--rule);background:var(--sheet);color:var(--ink-2);text-decoration:none;cursor:pointer}
+.vote a:hover{border-color:var(--accent);color:var(--accent)}
+.vote a svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.vote a.v-up[aria-pressed="true"]{background:var(--up);border-color:var(--up);color:var(--sheet)}
+.vote a.v-down[aria-pressed="true"]{background:var(--down);border-color:var(--down);color:var(--sheet)}
+.conf-tag{display:inline-block;font-family:var(--f-mono);font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--warn);border:1px solid currentColor;border-radius:3px;padding:0 5px;margin-right:8px;position:relative;top:-2px}
+.upd-tag{display:inline-block;font-family:var(--f-mono);font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--hl-ink);background:var(--hl);border-radius:3px;padding:1px 6px;margin-right:8px;position:relative;top:-2px}
+.upd-note{margin:4px 0 0;padding:8px 12px;border-radius:6px;background:var(--accent-soft);color:var(--ink);font-size:14px}
+.upd-note b{font-family:var(--f-display);font-weight:700;font-stretch:88%}
+.upd-note ul{margin:4px 0 0;padding-left:18px}
+.upd-status{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin:4px 0 0;font-family:var(--f-mono);font-size:12px;color:var(--ink-2)}
+.upd-status button{font:inherit;color:var(--accent);background:var(--accent-soft);border:1px solid transparent;border-radius:5px;padding:5px 10px;cursor:pointer}
+.upd-status button:hover{border-color:var(--accent)}
+#upd-btn[data-busy] svg{animation:tdi-spin 1.2s linear infinite}
+@keyframes tdi-spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){#upd-btn[data-busy] svg{animation:none}}
+.method-votos{margin:6px 2px 10px;font-size:13px}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="mast" id="top">
-    <div class="mast-top"><span class="brand" id="brand">The Daily Iván</span><span class="mast-tools"><button type="button" class="icon-btn" id="theme-btn" aria-label="Cambiar a tema oscuro" title="Tema claro / oscuro"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button><button type="button" class="cal-btn" id="cal-btn" aria-expanded="false" aria-controls="cal-pop" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Ediciones</span><span class="chev" aria-hidden="true"></span></button></span><div class="cal-pop" id="cal-pop" role="dialog" aria-label="Ediciones anteriores" hidden></div></div>
+    <div class="mast-top"><span class="brand" id="brand">The Daily Iván</span><span class="mast-tools"><button type="button" class="icon-btn" id="upd-btn" aria-label="Actualizar la edición" title="Actualizar la edición"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v5h-5"/></svg></button><button type="button" class="icon-btn" id="theme-btn" aria-label="Cambiar a tema oscuro" title="Tema claro / oscuro"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button><button type="button" class="cal-btn" id="cal-btn" aria-expanded="false" aria-controls="cal-pop" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Ediciones</span><span class="chev" aria-hidden="true"></span></button></span><div class="cal-pop" id="cal-pop" role="dialog" aria-label="Ediciones anteriores" hidden></div></div>
     <p class="slogan" id="slogan">Ahí van las noticias: lo que pasa en el mundo, contrastado y con fuentes.</p>
     <h1 id="edfecha"></h1>
     <p class="meta" id="edmeta"></p>
+    <p class="upd-status" id="upd-status" role="status" hidden></p>
     <p class="arch-note" id="arch-note" hidden>Estás leyendo una edición anterior.<button type="button" id="arch-back">Volver a la última</button></p>
     <p class="lede" id="edlede"></p>
+    <div class="upd-note" id="ed-upd" hidden></div>
   </header>
 
   <section id="claves" class="k-gray" aria-labelledby="h-claves">
@@ -319,6 +342,7 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
   <aside class="method" aria-labelledby="h-method">
     <h2 id="h-method">Cómo se ha hecho</h2>
     <ul id="method"></ul>
+    <p class="method-votos" id="method-votos">Los botones de pulgar de cada noticia («¿Te interesa?») sirven para afinar la selección de las próximas ediciones. En la versión de claude.ai el voto se guarda con un toque; en la web abren un correo ya escrito que solo hay que enviar.</p>
   </aside>
 </div>
 
@@ -1700,10 +1724,6 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
   }
   if (DARKQ.addEventListener) DARKQ.addEventListener('change', paintThemeBtn);
 
-  var CONF = {
-    'confirmado':'confirmada por varias fuentes o por fuente oficial','una-fuente':'una sola fuente','en-desarrollo':'en desarrollo, puede cambiar',
-    'seguimiento':'seguimiento de una noticia anterior','agenda':'previsto hoy, sin resultado conocido'
-  };
 
   /* Deep-dive prompt: extra instruction per block, and the public web address */
     var DEEP_LABEL = 'Profundizar · copiar prompt';
@@ -1718,6 +1738,13 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
       deportes: 'Aporta los datos oficiales (resultados, clasificaciones, actas, comunicados de clubes, federaciones y competiciones) y, si hay polémica, contrasta medios de distintas aficiones o ciudades.'
     };
     var WEB = 'https://ivandiezb.github.io/the-daily-ivan/';
+    /* claude.ai version of the edition (one-tap votes, update button) and the scheduled task that updates it */
+    var CFG = {
+      pagina: 'https://claude.ai/artifact/G4hzzzYjGs3kNiDiqoBc7z',
+      tarea: 'trig_01UySCSxbyL1ZEgtJytrZ7jn',
+      prueba: '',
+      correo: ['ivandiezberjano', 'gmail.com']  // se une al votar: así la dirección no aparece entera en el código de la web
+    };
 
   function el(tag, cls, text){
     var n = document.createElement(tag);
@@ -1725,6 +1752,15 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
     if (text != null) n.textContent = text;
     return n;
   }
+  /* Sources show only the outlet («El País: el Gobierno aprueba…» → «El País»; «AP (vía BNN Bloomberg): …» → «AP»),
+     linked to the article; the full title appears on hover. */
+  function medio(t){
+    var m = /^\s*([^:]{2,45}):\s/.exec(t || '');
+    var n = m ? m[1] : (t || '');
+    return n.replace(/\s*\([^)]*\)/g, '').trim() || n.trim();
+  }
+  /* Verification is no longer shown (every story meets the sourcing rules); only the exceptions get a short tag */
+  var AVISO_CONF = {'en-desarrollo': 'En desarrollo', 'una-fuente': 'Una sola fuente'};
   function link(t, u, cls){
     var a = el('a', cls || null, t); a.href = u; a.target = '_blank'; a.rel = 'noopener'; return a;
   }
@@ -1878,6 +1914,8 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
         var art = el('article','item'); art.id = it.code;
         var h3 = el('h3');
         h3.appendChild(el('span','code', it.code));
+        if (it.actualizado) h3.appendChild(el('span','upd-tag', 'Actualizado ' + it.actualizado));
+        if (AVISO_CONF[it.conf]) h3.appendChild(el('span','conf-tag', AVISO_CONF[it.conf]));
         h3.appendChild(document.createTextNode(it.titulo));
         art.appendChild(h3);
         if (it.breve){
@@ -1892,17 +1930,22 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
         if (it.nota) art.appendChild(el('p','contrast', it.nota));
         var foot = el('div','foot');
         var srcs = el('div','srcs'); srcs.appendChild(document.createTextNode('Fuentes: '));
+        var vistos = {};
         (it.fuentes || []).forEach(function(f, i){
           if (i) srcs.appendChild(document.createTextNode(' · '));
-          srcs.appendChild(link(f.t, f.u));
+          var m = medio(f.t); vistos[m] = (vistos[m] || 0) + 1;
+          var a = link(m + (vistos[m] > 1 ? ' (' + vistos[m] + ')' : ''), f.u); a.title = f.t;
+          srcs.appendChild(a);
         });
-        if (it.conf) srcs.appendChild(el('span','status', 'Verificación: ' + (CONF[it.conf] || it.conf)));
         foot.appendChild(srcs);
         var btn = el('button','deep', DEEP_LABEL); btn.type = 'button';
         btn.setAttribute('aria-label','Profundizar en ' + it.code + ': copiar un prompt de investigación');
         btn.title = 'Copia un prompt de investigación detallado para pegarlo en Claude, ChatGPT u otra IA';
         btn.addEventListener('click', function(){ deepen(it, sec.id, art, btn); });
-        foot.appendChild(btn);
+        var act = el('div','foot-act');
+        act.appendChild(voteGroup(it, sec.id, data));
+        act.appendChild(btn);
+        foot.appendChild(act);
         art.appendChild(foot);
         s.appendChild(art);
       });
@@ -2018,9 +2061,22 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
     var meta = document.getElementById('edmeta');
     meta.textContent = '';
     if (data.tipo) meta.appendChild(document.createTextNode(data.tipo + ' · '));
-    [[data.tipo ? 'cierre de datos ' : 'Cierre de datos ', data.cierre], [' · lectura ≈ ', mins + ' min'], [' · ', nItems + ' noticias']].forEach(function(p){
+    var upd = data.actualizacion && data.actualizacion.hora ? data.actualizacion : null;
+    [[data.tipo ? 'cierre de datos ' : 'Cierre de datos ', data.cierre]].concat(upd ? [[' · actualizada ', upd.hora]] : [],
+      [[' · lectura ≈ ', mins + ' min'], [' · ', nItems + ' noticias']]).forEach(function(p){
       meta.appendChild(document.createTextNode(p[0])); meta.appendChild(el('b', null, p[1]));
     });
+    var updEl = document.getElementById('ed-upd');
+    if (upd && updEl){
+      updEl.hidden = false;
+      updEl.appendChild(el('b', null, 'Actualizada a las ' + upd.hora + '. '));
+      if (upd.resumen) updEl.appendChild(document.createTextNode(upd.resumen));
+      if (upd.cambios && upd.cambios.length){
+        var ul = el('ul');
+        upd.cambios.forEach(function(c){ ul.appendChild(el('li', null, c)); });
+        updEl.appendChild(ul);
+      }
+    }
 
     /* Deep-dive request: copy a research prompt to paste into any AI assistant */
     function coberturaTexto(c){
@@ -2134,6 +2190,184 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
     document.getElementById('cal-btn').addEventListener('click', function(){ calToggle(); });
     document.getElementById('theme-btn').addEventListener('click', toggleTheme);
     paintThemeBtn();
+    document.getElementById('upd-btn').addEventListener('click', updClick);
+    subscribeVotes(data.fechaISO);
+    paintVotes();
+    paintUpdate();
+  }
+
+  /* ---------- Votes («¿Te interesa?») and the on-demand update ----------
+     On claude.ai (the db and mcp capabilities answer): a vote is saved with one tap in the artifact's database
+     (collection «votos», one document per edition and story) and the owner can launch the update task (Claude Code
+     Remote → fire_trigger); the task reports back in «estado/actualizacion». Anywhere else (the public web): a vote
+     opens an email ready to send, which the daily task reads, and the update button opens the claude.ai version. */
+  var ICON_UP = '<path d="M7 11v9H4v-9zM7 11l4-7c1.5 0 2.6 1.1 2.3 2.7L12.7 10H19a2 2 0 0 1 2 2.3l-1.2 6a2 2 0 0 1-2 1.7H7"/>';
+  var ICON_DOWN = '<g transform="rotate(180 12 12)">' + ICON_UP + '</g>';
+  var CAPS = {db: null, mcp: null, owner: false, ready: false};
+  var votes = {}, votesUnsub = null, votesFecha = null;
+  var estado = null, estadoUnsub = null, confirmando = false, statusMsg = '';
+  try { votes = JSON.parse(localStorage.getItem('tdi.votos') || '{}') || {}; } catch(e){ votes = {}; }
+  function saveLocalVotes(){ try { localStorage.setItem('tdi.votos', JSON.stringify(votes)); } catch(e){} }
+
+  function mailtoVoto(it, fecha, v){
+    var asunto = '[TDI] ' + (v > 0 ? 'Me interesa' : 'No me interesa') + ' ' + it.code + ' ' + fecha;
+    var cuerpo = '«' + it.titulo + '»\n\n(Opcional) Por qué:\n';
+    return 'mailto:' + [].concat(CFG.correo).join('@') + '?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(cuerpo);
+  }
+  function voteGroup(it, secId, data){
+    var g = el('div','vote'); g.setAttribute('role','group'); g.setAttribute('aria-label','¿Te interesa esta noticia?');
+    g.appendChild(el('span','vote-lbl','¿Te interesa?'));
+    [[1, 'v-up', 'Me interesa', ICON_UP], [-1, 'v-down', 'No me interesa', ICON_DOWN]].forEach(function(o){
+      var a = el('a', o[1]); a.href = mailtoVoto(it, data.fechaISO, o[0]);
+      a.setAttribute('role','button'); a.setAttribute('aria-label', o[2] + ': ' + it.code); a.title = o[2];
+      a.setAttribute('aria-pressed','false');
+      a.setAttribute('data-key', data.fechaISO + '_' + it.code); a.setAttribute('data-v', String(o[0]));
+      a.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true">' + o[3] + '</svg>';
+      a.addEventListener('click', function(e){ voteClick(e, a, it, secId, data); });
+      g.appendChild(a);
+    });
+    return g;
+  }
+  function paintVotes(){
+    Array.prototype.forEach.call(document.querySelectorAll('.vote a[data-key]'), function(a){
+      a.setAttribute('aria-pressed', String(votes[a.getAttribute('data-key')] === +a.getAttribute('data-v')));
+    });
+  }
+  function voteClick(e, a, it, secId, data){
+    var key = a.getAttribute('data-key'), v = +a.getAttribute('data-v');
+    var nuevo = votes[key] === v ? 0 : v, antes = votes[key];
+    if (CAPS.db){
+      e.preventDefault();
+      if (nuevo) votes[key] = nuevo; else delete votes[key];
+      paintVotes();
+      var ref = CAPS.db.doc('votos/' + key);
+      (nuevo ? ref.set({fecha: data.fechaISO, code: it.code, seccion: secId, titulo: it.titulo, voto: nuevo,
+                        ts: new Date().toISOString(), via: 'claude.ai'}) : ref.delete())
+        .catch(function(){ if (antes) votes[key] = antes; else delete votes[key]; paintVotes(); });
+      return;
+    }
+    if (!nuevo){ e.preventDefault(); delete votes[key]; }   /* a second tap only clears the mark on this device */
+    else votes[key] = nuevo;                               /* the email opens; remember the choice here */
+    saveLocalVotes(); paintVotes();
+  }
+  function subscribeVotes(fecha){
+    if (!CAPS.db || !fecha || votesFecha === fecha) return;
+    if (votesUnsub){ votesUnsub(); votesUnsub = null; }
+    votesFecha = fecha;
+    try {
+      votesUnsub = CAPS.db.collection('votos').where('fecha', '==', fecha).onSnapshot(function(snap){
+        Object.keys(votes).forEach(function(k){ if (k.indexOf(fecha + '_') === 0) delete votes[k]; });
+        snap.docs.forEach(function(d){ var x = d.data(); if (x && x.code && (x.voto === 1 || x.voto === -1)) votes[fecha + '_' + x.code] = x.voto; });
+        paintVotes();
+      }, function(){ votesFecha = null; });
+    } catch(e){ votesFecha = null; }
+  }
+
+  function hhmm(iso){
+    var d = iso ? new Date(iso) : null;
+    if (!d || isNaN(d)) return '';
+    try { return d.toLocaleTimeString('es-ES', {hour:'2-digit', minute:'2-digit', timeZone:'Europe/Madrid'}); }
+    catch(e){ return pad(d.getHours()) + ':' + pad(d.getMinutes()); }
+  }
+  function minutosDesde(iso){ var t = Date.parse(iso || ''); return isNaN(t) ? 1e9 : (Date.now() - t) / 60000; }
+  function enMarcha(){
+    if (!estado) return false;
+    if (estado.estado === 'en_curso') return minutosDesde(estado.inicio) < 60;
+    if (estado.estado === 'pedida') return minutosDesde(estado.pedida) < 30;
+    return false;
+  }
+  function interactivo(){ return CAPS.ready && !!CAPS.mcp && CAPS.owner && /^trig_\w+$/.test(CFG.tarea) && CFG.tarea !== 'trig_PENDIENTE'; }
+  function enClaude(){ return !!(window.claude && typeof window.claude.use === 'function'); }
+  function paintUpdate(){
+    var b = document.getElementById('upd-btn'), st = document.getElementById('upd-status');
+    if (!b || !st) return;
+    if (enClaude()){
+      b.hidden = !interactivo();
+      b.title = 'Actualizar la edición ahora';
+    } else {
+      b.hidden = false;
+      b.title = 'Actualizar la edición (se abre la versión de claude.ai)';
+    }
+    if (enMarcha()) b.setAttribute('data-busy', ''); else b.removeAttribute('data-busy');
+    st.textContent = '';
+    var txt = statusMsg;
+    if (!txt && estado){
+      // «terminada» y «sin_cambios» solo se refieren a la edición que se está viendo (no a la de ayer)
+      var deHoy = estado.fecha === LATEST.fechaISO;
+      if (estado.estado === 'en_curso' && enMarcha()) txt = 'Actualizando desde las ' + hhmm(estado.inicio) + '… suele tardar unos 20–30 minutos.';
+      else if (estado.estado === 'pedida' && enMarcha()) txt = 'Actualización pedida a las ' + hhmm(estado.pedida) + '; empezará en unos minutos.';
+      else if (!deHoy && estado.estado !== 'error') txt = '';
+      else if (estado.estado === 'terminada' && estado.fin && minutosDesde(estado.fin) < 720){
+        var nueva = estado.fecha === LATEST.fechaISO && estado.hora && (!LATEST.actualizacion || LATEST.actualizacion.hora !== estado.hora);
+        txt = nueva ? 'Hay una versión más reciente (' + estado.hora + '): vuelve a abrir la página para verla.'
+                    : 'Última actualización: ' + (estado.hora || hhmm(estado.fin)) + (estado.resumen ? ' · ' + estado.resumen : '');
+      }
+      else if (estado.estado === 'sin_cambios' && minutosDesde(estado.fin) < 720) txt = 'Revisada a las ' + hhmm(estado.fin) + ': sin novedades que cambien la edición.';
+      else if (estado.estado === 'error' && minutosDesde(estado.fin) < (deHoy ? 720 : 180)) txt = 'La última actualización no pudo terminar (' + hhmm(estado.fin) + ')' + (estado.motivo ? ': ' + estado.motivo : '') + '.';
+    }
+    if (confirmando){
+      st.appendChild(document.createTextNode('¿Actualizar ahora? Se vuelven a buscar y contrastar las noticias (unos 20–30 min) y después se publican la web y esta página.'));
+      var si = el('button', null, 'Sí, actualizar'); si.type = 'button'; si.addEventListener('click', lanzarActualizacion);
+      var no = el('button', null, 'Cancelar'); no.type = 'button'; no.addEventListener('click', function(){ confirmando = false; paintUpdate(); });
+      st.appendChild(si); st.appendChild(no);
+    } else if (txt) st.appendChild(document.createTextNode(txt));
+    st.hidden = !st.firstChild;
+  }
+  function updClick(){
+    if (!enClaude()){ window.open(CFG.pagina, '_blank', 'noopener'); return; }
+    if (!interactivo()) return;
+    statusMsg = '';
+    if (enMarcha()){ paintUpdate(); return; }
+    confirmando = true; paintUpdate();
+  }
+  function errorTexto(err){
+    var c = err && err.code;
+    if (c === 'server_not_connected') return 'No está conectado «Claude Code Remote» en tu cuenta (Ajustes → Conectores).';
+    if (c === 'needs_reauth') return 'Hay que volver a conectar «Claude Code Remote» en Ajustes → Conectores.';
+    if (c === 'not_in_manifest' || c === 'approval_required' || c === 'consent_required') return 'La página necesita tu permiso para lanzar la tarea: vuelve a pulsar y acepta el aviso de claude.ai.';
+    if (c === 'blocked_by_policy') return 'Tu organización no permite lanzar tareas desde una página.';
+    if (c === 'tool_error') return 'La tarea no se ha podido lanzar: ' + ((err.message || '').slice(0, 160) || 'error desconocido') + '.';
+    if (c === 'server_unavailable' || c === 'upstream_error') return 'No hay respuesta ahora mismo; puede que la tarea sí se haya lanzado. Mira el estado en unos minutos antes de volver a pulsar.';
+    return 'No se ha podido lanzar la actualización (' + (c || 'error') + ').';
+  }
+  function lanzarActualizacion(){
+    confirmando = false;
+    var b = document.getElementById('upd-btn'); if (b) b.setAttribute('data-busy', '');
+    statusMsg = 'Lanzando la actualización…'; paintUpdate();
+    var input = {trigger_id: CFG.tarea};
+    if (CFG.prueba) input.text = CFG.prueba;
+    CAPS.mcp.callTool('Claude Code Remote', 'fire_trigger', input).then(function(){
+      statusMsg = '';
+      var ahora = new Date().toISOString();
+      estado = Object.assign({}, estado || {}, {estado: 'pedida', pedida: ahora});
+      paintUpdate();
+      if (CAPS.db) CAPS.db.doc('estado/actualizacion').set(estado).catch(function(){});
+    }, function(err){
+      statusMsg = errorTexto(err);
+      if (b) b.removeAttribute('data-busy');
+      paintUpdate();
+    });
+  }
+  function subscribeEstado(){
+    if (!CAPS.db || estadoUnsub) return;
+    try {
+      estadoUnsub = CAPS.db.doc('estado/actualizacion').onSnapshot(function(d){
+        estado = d.exists ? d.data() : null;
+        paintUpdate();
+      }, function(){ estadoUnsub = null; });
+    } catch(e){}
+  }
+  function capsInit(){
+    if (!enClaude()) return;
+    var guard = function(p){ return Promise.resolve(p).catch(function(){ return null; }); };
+    Promise.all([guard(window.claude.use('db')), guard(window.claude.use('user')), guard(window.claude.use('mcp'))]).then(function(r){
+      CAPS.db = r[0]; CAPS.mcp = r[2];
+      return r[1] ? guard(r[1].isOwner()) : false;
+    }).then(function(owner){
+      CAPS.owner = !!owner; CAPS.ready = true;
+      if (CAPS.db){ subscribeVotes(shown); subscribeEstado(); }
+      paintUpdate();
+    });
   }
 
   /* Balanced two-column layout of a block's dispatches */
@@ -2316,6 +2550,7 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
   window.addEventListener('resize', paintJump);
 
   render(LATEST);
+  capsInit();
   paintJump();
   var h = location.hash;
   var m = /^#ed=(\d{4}-\d{2}-\d{2})$/.exec(h);
