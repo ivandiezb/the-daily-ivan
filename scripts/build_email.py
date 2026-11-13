@@ -16,12 +16,9 @@ Gmail-safe by design (checked against what the Gmail connector actually stores, 
 """
 import html, json, math, os, re, sys
 
-CONF = {"confirmado": "confirmada por varias fuentes o por fuente oficial", "una-fuente": "una sola fuente",
-        "en-desarrollo": "en desarrollo, puede cambiar", "seguimiento": "seguimiento de una noticia anterior",
-        "agenda": "previsto hoy, sin resultado conocido"}
-# en el correo, la verificación va en una línea corta (la web explica cada estado)
-CONF_CORTO = {"confirmado": "confirmada", "una-fuente": "una sola fuente", "en-desarrollo": "en desarrollo",
-              "seguimiento": "seguimiento", "agenda": "prevista hoy"}
+# La verificación ya no se muestra (todas las noticias cumplen las reglas de fuentes; 13 nov 2026): solo las excepciones
+# llevan una etiqueta corta junto al código, igual que en la web.
+AVISO_CONF = {"en-desarrollo": "En desarrollo", "una-fuente": "Una sola fuente"}
 # block kind: (band background, band text, left rule / label colour)
 BANDS = {"blue": ("#D6E2F4", "#14325F", "#2F5F9E"), "gray": ("#E1E5EA", "#262D36", "#5A6470"),
          "sand": ("#F2E0C4", "#5E3A10", "#9A6524"), "green": ("#D5EBDD", "#174A2C", "#2E7149")}
@@ -39,7 +36,18 @@ def medio(t):
     """Nombre del medio de una fuente («El País: el Gobierno aprueba…» → «El País»): en el correo, el enlace lleva solo
     el medio para que pese menos (Gmail recorta los mensajes de más de ~102 KB); el título completo está en la web."""
     m = re.match(r"\s*([^:]{2,45}):\s", t or "")
-    return m.group(1).strip() if m else (t or "")
+    n = m.group(1) if m else (t or "")
+    return re.sub(r"\s*\([^)]*\)", "", n).strip() or n.strip()  # «AP (vía BNN Bloomberg)» → «AP»
+
+
+def nombres(fuentes):
+    """Nombres de los medios de una noticia, con (2), (3)… cuando un medio se repite."""
+    vistos, out = {}, []
+    for f in fuentes:
+        m = medio(f["t"])
+        vistos[m] = vistos.get(m, 0) + 1
+        out.append(m + (f" ({vistos[m]})" if vistos[m] > 1 else ""))
+    return out
 
 
 def e(s):
@@ -97,7 +105,7 @@ def est_height(it):
     if it.get("nota"):
         h += 8 + ln(it["nota"], 66, 21)
     if it.get("fuentes"):
-        h += 8 + ln(" · ".join(f["t"] for f in it["fuentes"]) + "Fuentes: ", 78, 19.5) + (19.5 if it.get("conf") else 0)
+        h += 8 + ln(" · ".join(nombres(it["fuentes"])) + "Fuentes: ", 78, 19.5)
     return h
 
 
@@ -234,8 +242,10 @@ def main(page, url, out, respaldo=None):
         for it in sec["items"]:
             P = []
             size = "16px" if it.get("breve") else "18px"
-            P.append(f'<div style="font:bold {size}/1.3 {SANS};margin:2px 0 4px"><span style="background-color:{CHIP};color:#FFFFFF;font:bold 12px {MONO};padding:1px 6px;border-radius:3px;vertical-align:2px">{e(it["code"])}</span>&nbsp; {e(it["titulo"])}</div>')
-            T += ["", f"[{it['code']}] {it['titulo']}"]
+            aviso = (f'<span style="color:#9A5800;border:1px solid #9A5800;font:bold 11px {MONO};padding:0 4px;border-radius:3px;'
+                     f'vertical-align:2px">{e(AVISO_CONF[it["conf"]])}</span>&nbsp; ') if it.get("conf") in AVISO_CONF else ""
+            P.append(f'<div style="font:bold {size}/1.3 {SANS};margin:2px 0 4px"><span style="background-color:{CHIP};color:#FFFFFF;font:bold 12px {MONO};padding:1px 6px;border-radius:3px;vertical-align:2px">{e(it["code"])}</span>&nbsp; {aviso}{e(it["titulo"])}</div>')
+            T += ["", f"[{it['code']}] " + (f"({AVISO_CONF[it['conf']]}) " if it.get("conf") in AVISO_CONF else "") + it["titulo"]]
             if it.get("breve"):
                 body = " ".join(it[k] for k in ("hecho", "importa", "vigilar") if it.get(k))
                 P.append(f'<p style="margin:6px 0 0">{e(body)}</p>')
@@ -249,13 +259,11 @@ def main(page, url, out, respaldo=None):
                 P.append(f'<p style="color:{INK2};margin:8px 0 0;font-size:14px;font-style:italic">{e(it["nota"])}</p>')
                 T.append(f"({it['nota']})")
             if it.get("fuentes"):
-                links = " · ".join(f'<a href="{e(f["u"])}" style="color:{INK2}">{e(medio(f["t"]))}</a>' for f in it["fuentes"])
+                links = " · ".join(f'<a href="{e(f["u"])}" style="color:{INK2}">{e(n)}</a>'
+                                   for f, n in zip(it["fuentes"], nombres(it["fuentes"])))
                 # la «cobertura» solo sirve a la tarea para ordenar las noticias: no se muestra (23 oct 2026)
-                status = f'<br>Verificación: {e(CONF_CORTO.get(it["conf"], it["conf"]))}' if it.get("conf") else ""
-                P.append(f'<p style="color:{INK2};margin:8px 0 0;font-size:13px;font-style:italic">Fuentes: {links}{status}</p>')
-                T.append("Fuentes: " + " · ".join(f"{f['t']} <{f['u']}>" for f in it["fuentes"]))
-                if it.get("conf"):
-                    T.append("Verificación: " + CONF.get(it["conf"], it["conf"]))
+                P.append(f'<p style="color:{INK2};margin:8px 0 0;font-size:13px;font-style:italic">Fuentes: {links}</p>')
+                T.append("Fuentes: " + " · ".join(f"{n} <{f['u']}>" for f, n in zip(it["fuentes"], nombres(it["fuentes"]))))
             blocks.append("\n".join(P))
         H.append(columns(blocks, sec["items"]))
         if sec["id"] == "mercados":
