@@ -178,6 +178,9 @@ def main():
                 u = f.get("u", "")
                 if not f.get("t"):
                     err(f"{donde}: una fuente no tiene nombre («t»)")
+                elif not re.match(r"\s*[^:]{2,45}:\s", f["t"]):
+                    # la página y el correo muestran solo el medio (lo que va antes de los dos puntos), enlazado al artículo
+                    err(f"{donde}: la fuente «{f['t'][:60]}» no empieza por «Medio: »; escribe «Medio: título del artículo»")
                 if not u or portada(u):
                     err(f"{donde}: URL que no parece un artículo concreto: {u!r}")
                 elif "news.google.com" in u:
