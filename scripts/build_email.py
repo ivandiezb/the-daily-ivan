@@ -23,14 +23,14 @@ AVISO_CONF = {"en-desarrollo": "En desarrollo", "una-fuente": "Una sola fuente"}
 BANDS = {"blue": ("#D6E2F4", "#14325F", "#2F5F9E"), "gray": ("#E1E5EA", "#262D36", "#5A6470"),
          "sand": ("#F2E0C4", "#5E3A10", "#9A6524"), "green": ("#D5EBDD", "#174A2C", "#2E7149"),
          # un color pastel propio por sección, el mismo que en la web (13 nov 2026)
-         "mercados": ("#DEE7F2", "#142F52", "#325B8F"),
-         "inversion": ("#E1EFE8", "#145231", "#266D48"),
-         "geopolitica": ("#F2E0DE", "#521B14", "#973F35"),
-         "espana": ("#F5EBDB", "#523B14", "#795C2A"),
-         "internacional": ("#DFF0F1", "#144E52", "#26696D"),
-         "vivienda": ("#E7E1EF", "#2F1452", "#64389F"),
-         "naturaleza": ("#EBF0E0", "#3D5214", "#536A25"),
-         "deportes": ("#EFE1E8", "#521433", "#973566")}
+         "mercados": ("#E6ECF4", "#142F52", "#325B8F"),
+         "inversion": ("#E8F2ED", "#145231", "#266D48"),
+         "geopolitica": ("#F4E7E6", "#521B14", "#973F35"),
+         "espana": ("#F6F0E4", "#523B14", "#795C2A"),
+         "internacional": ("#E7F2F3", "#144E52", "#26696D"),
+         "vivienda": ("#EDE8F2", "#2F1452", "#64389F"),
+         "naturaleza": ("#EFF3E8", "#3D5214", "#536A25"),
+         "deportes": ("#F2E8ED", "#521433", "#973566")}
 INK, INK2, RULE, ACC, PAPER, CHIP = "#141B23", "#4B5765", "#D5DCE4", "#1D4A93", "#EEF1F4", "#5A6470"
 UP, DOWN = "#16703D", "#B3261E"
 SANS, SERIF, MONO = "Arial,sans-serif", "Georgia,serif", "Menlo,Consolas,monospace"
