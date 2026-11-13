@@ -148,7 +148,7 @@ section{--band:var(--blue-band);--band-ink:var(--blue-ink);--band-ink-2:var(--bl
 .sec-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:6px}
 .sec-head h2{font-size:24px;font-weight:780;font-stretch:84%;letter-spacing:.003em;line-height:1.15;width:100%}
 .sec-head .count{font-family:var(--f-mono);font-size:12px;color:var(--ink-2);white-space:nowrap}
-.sec-btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;background:var(--band);color:var(--band-ink);border:0;border-radius:6px;padding:12px 14px;cursor:pointer;font:inherit}
+.sec-btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;background:var(--band);color:var(--band-ink);border:0;border-left:4px solid var(--lbl);border-radius:6px;padding:12px 14px 12px 12px;cursor:pointer;font:inherit}
 .sec-btn:hover{filter:brightness(.98)}
 .sec-btn .count{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-mono);font-weight:400;font-stretch:100%;font-size:12px;color:var(--band-ink-2);white-space:nowrap}
 .chev{display:inline-block;width:9px;height:9px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg)}
@@ -290,7 +290,7 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
 /* Votes, on-demand update and update notes */
 .foot-act{display:flex;align-items:center;justify-content:space-between;gap:8px 14px;flex-wrap:wrap;width:100%}
 .vote{display:inline-flex;align-items:center;gap:4px}
-.vote-lbl{font-family:var(--f-mono);font-size:10.5px;color:var(--ink-2);margin-right:2px}
+.vote-lbl{font-family:var(--f-mono);font-size:10.5px;line-height:1;color:var(--ink-2);margin-right:3px;position:relative;top:1px}
 .vote a{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:999px;border:1.2px solid currentColor;background:var(--sheet);text-decoration:none;cursor:pointer}
 .vote a.v-up{color:var(--up)}
 .vote a.v-down{color:var(--down)}
