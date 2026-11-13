@@ -21,7 +21,16 @@ import html, json, math, os, re, sys
 AVISO_CONF = {"en-desarrollo": "En desarrollo", "una-fuente": "Una sola fuente"}
 # block kind: (band background, band text, left rule / label colour)
 BANDS = {"blue": ("#D6E2F4", "#14325F", "#2F5F9E"), "gray": ("#E1E5EA", "#262D36", "#5A6470"),
-         "sand": ("#F2E0C4", "#5E3A10", "#9A6524"), "green": ("#D5EBDD", "#174A2C", "#2E7149")}
+         "sand": ("#F2E0C4", "#5E3A10", "#9A6524"), "green": ("#D5EBDD", "#174A2C", "#2E7149"),
+         # un color pastel propio por sección, el mismo que en la web (13 nov 2026)
+         "mercados": ("#DEE7F2", "#142F52", "#325B8F"),
+         "inversion": ("#E1EFE8", "#145231", "#266D48"),
+         "geopolitica": ("#F2E0DE", "#521B14", "#973F35"),
+         "espana": ("#F5EBDB", "#523B14", "#795C2A"),
+         "internacional": ("#DFF0F1", "#144E52", "#26696D"),
+         "vivienda": ("#E7E1EF", "#2F1452", "#64389F"),
+         "naturaleza": ("#EBF0E0", "#3D5214", "#536A25"),
+         "deportes": ("#EFE1E8", "#521433", "#973566")}
 INK, INK2, RULE, ACC, PAPER, CHIP = "#141B23", "#4B5765", "#D5DCE4", "#1D4A93", "#EEF1F4", "#5A6470"
 UP, DOWN = "#16703D", "#B3261E"
 SANS, SERIF, MONO = "Arial,sans-serif", "Georgia,serif", "Menlo,Consolas,monospace"
@@ -232,7 +241,7 @@ def main(page, url, out, respaldo=None):
         return (f'<div><div style="{col}"><div style="padding:0 22px 0 0">{stack([blocks[i] for i in left])}</div></div>'
                 f'<div style="{col}">{stack([blocks[i] for i in right])}</div></div>')
     for sec in d["secciones"]:
-        kind = "green" if sec.get("tipo") == "inversion" else "blue"
+        kind = sec["id"] if sec.get("id") in BANDS else ("green" if sec.get("tipo") == "inversion" else "blue")
         h2(sec["titulo"], kind)
         lbl = BANDS[kind][2]
         if sec.get("nota"):
@@ -279,13 +288,13 @@ def main(page, url, out, respaldo=None):
             T.append(f"- {r['t']} ({r['f']}: {r['u']})")
         H.append('<table width="100%" cellpadding="0" cellspacing="0">' + "".join(rows) + "</table>")
     if d.get("agenda"):
-        h2("Agenda: lo que viene", "sand")
+        h2("Agenda: lo que viene", "gray")
         rows = []
         for i, a in enumerate(d["agenda"]):
             top = f"border-top:1px solid {RULE};" if i else ""
             area = f'<span style="color:{INK2};font:bold 11px {SANS};letter-spacing:.5px">{e(a["a"]).upper()}</span><br>' if a.get("a") else ""
             rows.append(f'<tr><td width="92" valign="top" style="{top}padding:10px 8px 10px 0;white-space:nowrap">'
-                        f'<span style="border-left:3px solid {BANDS["sand"][2]};padding-left:8px;color:{ACC};font:bold 14px {MONO}">{e(a["d"])}</span></td>'
+                        f'<span style="border-left:3px solid {BANDS["gray"][2]};padding-left:8px;color:{ACC};font:bold 14px {MONO}">{e(a["d"])}</span></td>'
                         f'<td valign="top" style="{top}padding:10px 0">{area}{e(a["t"])}</td></tr>')
             T.append(f"- {a['d']}" + (f" [{a['a']}]" if a.get("a") else "") + f": {a['t']}")
         H.append('<table width="100%" cellpadding="0" cellspacing="0">' + "".join(rows) + "</table>")
