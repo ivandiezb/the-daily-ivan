@@ -35,11 +35,14 @@ from datetime import datetime, timezone
 REPO = os.environ.get("REPO_GITHUB", "ivandiezb/the-daily-ivan")
 API = f"https://api.github.com/repos/{REPO}"
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-AUTOR = ("Iván Díez", "ivandiezberjano@gmail.com")
+AUTOR = ("Iván Díez", "ivandiezb@users.noreply.github.com")
 FLUJO = "publicar.yml"
 EVENTO = "publicar-edicion"
 EDICION_RE = re.compile(r'(<script type="application/json" id="edition">)(.*?)(</script>)', re.S)
 MAX_CARGA = 60000  # límite práctico de GitHub para los datos de un dispatch (unos 64 KB)
+MAX_COMPRIMIDO = 120000  # una edición comprimida nunca debería acercarse a este tamaño
+MAX_DESCOMPRIMIDO = 2000000  # tope al descomprimir: evita bombas de descompresión
+URL_PELIGROSA = re.compile(r"^\s*(?:javascript|data|vbscript|file|blob):", re.I)
 
 registro = []
 
@@ -82,7 +85,34 @@ def empaquetar(b):
 
 
 def desempaquetar_texto(s):
-    return lzma.decompress(base64.b64decode(s)).decode("utf-8")
+    """Descomprime la edición con topes de tamaño: ni la entrada ni la salida pueden ser enormes."""
+    s = "".join((s or "").split())
+    if not s or len(s) > MAX_COMPRIMIDO:
+        raise SystemExit("La edición comprimida está vacía o es demasiado grande")
+    try:
+        datos = base64.b64decode(s)
+    except Exception as ex:
+        raise SystemExit(f"La edición comprimida no es base64 válido: {ex}")
+    d = lzma.LZMADecompressor()
+    try:
+        salida = d.decompress(datos, max_length=MAX_DESCOMPRIMIDO + 1)
+    except lzma.LZMAError as ex:
+        raise SystemExit(f"La edición comprimida no es válida: {ex}")
+    if len(salida) > MAX_DESCOMPRIMIDO or not d.eof or d.unused_data:
+        raise SystemExit("La edición comprimida supera el límite o lleva datos sobrantes")
+    return salida.decode("utf-8")
+
+
+def comprobar_urls(o, ruta="edición"):
+    """Rechaza esquemas ejecutables en cualquier campo de URL de la edición."""
+    if isinstance(o, dict):
+        for k, v in o.items():
+            if k in ("u", "url") and isinstance(v, str) and URL_PELIGROSA.match(v):
+                raise SystemExit(f"URL no permitida en {ruta}.{k}: {v[:80]}")
+            comprobar_urls(v, f"{ruta}.{k}")
+    elif isinstance(o, list):
+        for i, v in enumerate(o):
+            comprobar_urls(v, f"{ruta}[{i}]")
 
 
 def fecha_de_index(html_texto):
@@ -196,6 +226,7 @@ def cmd_edicion(a):
         return 1
     texto_ed = m.group(2)
     d = json.loads(texto_ed)
+    comprobar_urls(d)
     if d.get("fechaISO") != a.fecha:
         print(f"WEB_FALLO: la página es la edición del {d.get('fechaISO')}, no la del {a.fecha}")
         return 1
@@ -310,6 +341,7 @@ def cmd_desempaquetar(a):
     os.makedirs(a.salida, exist_ok=True)
     texto_ed = desempaquetar_texto(os.environ["EDICION"])
     d = json.loads(texto_ed)
+    comprobar_urls(d)
     fecha = os.environ.get("FECHA") or d.get("fechaISO")
     if d.get("fechaISO") != fecha:
         raise SystemExit(f"La edición recibida es del {d.get('fechaISO')}, no del {fecha}")
@@ -325,6 +357,7 @@ def cmd_desempaquetar(a):
 def cmd_montar(a):
     texto_ed = open(os.path.join(a.entrada, "edicion.json"), encoding="utf-8").read()
     d = json.loads(texto_ed)
+    comprobar_urls(d)
     if "</script" in texto_ed.lower():
         raise SystemExit("El JSON de la edición contiene «</script»: no se puede incrustar")
     ruta = os.path.join(a.repo, "index.html")

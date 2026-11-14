@@ -148,6 +148,9 @@ def escribir_json(path, data):
 
 def comprobar_imagenes(urls):
     for u in urls:
+        p = urllib.parse.urlparse(u)
+        if p.scheme not in ("http", "https") or not p.netloc:
+            raise RuntimeError(f"URL de imagen no válida: {u!r}")
         req = urllib.request.Request(u, method="GET")
         with urllib.request.urlopen(req, timeout=30) as r:
             tipo = r.headers.get("Content-Type", "")

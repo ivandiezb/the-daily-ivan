@@ -44,7 +44,7 @@ jobs:
     timeout-minutes: 25
     steps:
       - name: Preparar Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0  # v7.1.0
         with:
           python-version: "3.12"
 
@@ -106,7 +106,7 @@ jobs:
         working-directory: repo
         run: |
           if [ ! -s /tmp/entrada/ig.json ]; then echo "Sin textos de Instagram: hoy no se programan publicaciones"; exit 0; fi
-          python3 -m pip install -q playwright==1.56.0
+          python3 -m pip install -q --require-hashes -r scripts/requirements.txt
           python3 -m playwright install --with-deps chromium > /tmp/playwright.log 2>&1 || { tail -20 /tmp/playwright.log; exit 1; }
           python3 scripts/instagram_tarjetas.py index.html --imagenes /tmp/ig_media --cola instagram --extra /tmp/entrada/ig.json
           RAMA_IMG="instagram-media-$FECHA"
