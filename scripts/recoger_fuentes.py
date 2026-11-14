@@ -26,6 +26,7 @@ POR_FUENTE = 20       # titulares que se guardan por fuente (salvo «max» en el
 HORAS = 36            # antigüedad máxima por defecto (salvo «horas» en el catálogo)
 POR_RADAR = 40
 DIAS_GUARDAR = 15
+MAX_BYTES = 8_000_000  # ninguna respuesta legítima de un feed se acerca a este tamaño
 DATOS = os.environ.get("DATOS_DIR") or os.path.join(RAIZ, "datos")
 GOOGLE = threading.Semaphore(3)  # pocas peticiones a la vez a Google News
 GN_IDIOMA = {"es": ("es", "ES"), "en": ("en-US", "US"), "fr": ("fr", "FR"), "de": ("de", "DE"), "it": ("it", "IT"),
@@ -40,6 +41,20 @@ EXCLUIR_WIKI = re.compile(r"^(Main_Page|Portada|Wikipedia:|Especial:|Special:|Ar
                           r"Categoría:|Category:|Usuario:|User:|Anexo:Portada$|-$)", re.I)
 
 
+def leer_respuesta(r):
+    """Lee como mucho MAX_BYTES: un feed enorme no debe agotar la memoria del ejecutor."""
+    try:
+        largo = int(r.headers.get("Content-Length") or 0)
+    except ValueError:
+        largo = 0
+    if largo > MAX_BYTES:
+        raise ValueError(f"respuesta demasiado grande ({largo} bytes)")
+    datos = r.read(MAX_BYTES + 1)
+    if len(datos) > MAX_BYTES:
+        raise ValueError(f"respuesta demasiado grande (> {MAX_BYTES} bytes)")
+    return datos
+
+
 def get(url, accept=None, tries=2):
     last = None
     for i in range(tries):
@@ -49,11 +64,11 @@ def get(url, accept=None, tries=2):
             if "news.google.com" in url:
                 with GOOGLE:
                     with urllib.request.urlopen(req, timeout=25) as r:
-                        datos = r.read()
+                        datos = leer_respuesta(r)
                     time.sleep(0.5)
                 return datos
             with urllib.request.urlopen(req, timeout=25) as r:
-                return r.read()
+                return leer_respuesta(r)
         except Exception as ex:
             last = ex
             time.sleep(2 * (i + 1))
@@ -91,6 +106,9 @@ def fecha_iso(s):
 
 
 def parsear(datos):
+    # Sin declaraciones de entidades: evita expansiones tipo «billion laughs» en feeds de terceros.
+    if re.search(rb"<!ENTITY", datos or b"", re.I):
+        raise ValueError("XML con entidades declaradas: se descarta")
     try:
         return ET.fromstring(datos)
     except ET.ParseError:
@@ -231,7 +249,7 @@ def leer_trends(geo):
     url = f"https://trends.google.com/trending/rss?geo={geo}"
     out = {"geo": geo, "url": url, "ok": False, "items": []}
     try:
-        raiz = ET.fromstring(get(url, "application/rss+xml, application/xml"))
+        raiz = parsear(get(url, "application/rss+xml, application/xml"))
         for e in [x for x in raiz.iter() if local(x.tag) == "item"]:
             item = {"t": texto(hijo(e, "title")), "trafico": texto(hijo(e, "approx_traffic")),
                     "fecha": fecha_iso(texto(hijo(e, "pubdate"))), "noticias": []}
