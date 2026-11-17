@@ -135,7 +135,7 @@ def flujos_recientes():
 # ---------------------------------------------------------------- vías de envío (tarea diaria)
 def via_workflow_dispatch(fecha, ed, ig):
     llamar("POST", f"/actions/workflows/{FLUJO}/dispatches",
-           {"ref": "main", "inputs": {"fecha": fecha, "edicion": ed, "ig": ig, "origen": "tarea diaria"}}, intentos=2)
+           {"ref": "main", "inputs": {"fecha": fecha, "edicion": ed, "ig": ig, "origen": "tarea diaria"}}, intentos=3)
 
 
 def via_repository_dispatch(fecha, ed, ig):
@@ -228,14 +228,20 @@ def cmd_edicion(a):
         vias = vias[1:2]
     if a.via in ("todas", "rama"):
         vias.append(("rama publicar-*", lambda: via_rama(a.fecha, texto_ed, texto_ig, mensaje)))
-    for nombre, fn in vias:
-        try:
-            r = fn()
-            enviada = nombre + (f" ({r})" if r else "")
-            log(f"Enviada por {enviada}.")
+    # dos rondas por todas las vías, con un minuto entre ellas: los cortes de la API o del proxy suelen ser breves
+    for ronda in range(2):
+        for nombre, fn in vias:
+            try:
+                r = fn()
+                enviada = nombre + (f" ({r})" if r else "")
+                log(f"Enviada por {enviada}.")
+                break
+            except Exception as e:
+                log(f"Vía {nombre} no disponible: {e}")
+        if enviada or not vias:
             break
-        except Exception as e:
-            log(f"Vía {nombre} no disponible: {e}")
+        log("Ninguna vía ha funcionado; se reintenta dentro de un minuto.")
+        time.sleep(60)
     if not enviada:
         motivo = "ninguna vía de envío ha funcionado (detalle arriba)"
         log(f"WEB_FALLO: {motivo}")
@@ -278,8 +284,8 @@ def cmd_comprobar(a):
 
 
 def cmd_fuentes(a):
-    """Vuelve a recoger los titulares (flujo «Fuentes») y espera a que la rama «datos» cambie. Lo usan las
-    actualizaciones de media jornada: los titulares de la mañana se quedan viejos."""
+    """Vuelve a recoger los titulares (flujo «Fuentes») y espera a que la rama «datos» cambie. Lo usan la edición de
+    la mañana (GitHub retrasa varias horas las recogidas programadas) y las actualizaciones de media tarde."""
     def sha_datos():
         try:
             return llamar("GET", "/git/ref/heads/datos")["object"]["sha"]
@@ -287,7 +293,7 @@ def cmd_fuentes(a):
             return None
     antes = sha_datos()
     try:
-        llamar("POST", "/actions/workflows/fuentes.yml/dispatches", {"ref": "main"}, intentos=2)
+        llamar("POST", "/actions/workflows/fuentes.yml/dispatches", {"ref": "main"}, intentos=4)
     except Exception as e:
         print(f"FUENTES_FALLO: no se pudo lanzar la recogida ({e})")
         return 1
