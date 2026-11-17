@@ -10,11 +10,13 @@ Los votos llegan por dos vías:
 
 Uso:
   python3 scripts/preferencias.py --archivo trabajo/archivo [--db trabajo/votos_db] [--correo trabajo/votos_correo.json]
-                                  [--dias 60] [--json trabajo/preferencias.json] [--yo ivandiezberjano@gmail.com]
+                                  [--dias 60] [--json trabajo/preferencias.json] [--yo DIRECCION]
 
 Imprime un resumen para leer (secciones y temas con más y menos interés, y las noticias votadas) y, con --json, lo
 guarda también en ese archivo. Los votos de Iván (los de claude.ai y los que manda desde su correo) pesan 1; los de
-otros lectores, 0,5. Los votos pierden la mitad de su peso cada 30 días. Solo biblioteca estándar.
+otros lectores, 0,5. Los votos por correo de Iván se reconocen porque los envía él mismo desde su cuenta (Gmail los
+marca con la etiqueta SENT); --yo (o la variable TDI_YO) permite indicar además su dirección. El script no guarda
+ninguna dirección de correo. Los votos pierden la mitad de su peso cada 30 días. Solo biblioteca estándar.
 """
 import argparse, glob, json, math, os, re, sys, unicodedata
 from collections import defaultdict
@@ -110,8 +112,10 @@ def votos_correo(ruta, yo):
         if clave in vistos:
             continue
         vistos.add(clave)
+        etiquetas = m.get("labelIds") or m.get("labels") or []
+        es_ivan = "SENT" in etiquetas or bool(dir_ and yo and dir_.lower() == yo.lower())
         out.append({"fecha": g.group(3), "code": g.group(2).upper(), "voto": -1 if g.group(1).lower().startswith("no") else 1,
-                    "quien": "ivan" if dir_ and yo and dir_.lower() == yo.lower() else (dir_ or "lector").lower(),
+                    "quien": "ivan" if es_ivan else (dir_ or "lector").lower(),
                     "ts": cuando(m.get("date") or m.get("fecha")), "via": "correo"})
     return out
 
@@ -160,7 +164,8 @@ def main():
     ap.add_argument("--db", help="carpeta (o JSON) con los votos de la base de datos de claude.ai")
     ap.add_argument("--correo", help="JSON con el resultado de la búsqueda de Gmail")
     ap.add_argument("--dias", type=int, default=60)
-    ap.add_argument("--yo", default="ivandiezberjano@gmail.com")
+    ap.add_argument("--yo", default=os.environ.get("TDI_YO"),
+                    help="dirección de Iván (opcional; sin ella cuentan como suyos los votos enviados desde su cuenta)")
     ap.add_argument("--json")
     a = ap.parse_args()
 

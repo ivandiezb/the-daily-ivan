@@ -35,7 +35,7 @@ from datetime import datetime, timezone
 REPO = os.environ.get("REPO_GITHUB", "ivandiezb/the-daily-ivan")
 API = f"https://api.github.com/repos/{REPO}"
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-AUTOR = ("Iván Díez", "ivandiezberjano@gmail.com")
+AUTOR = ("Iván Díez", "ivandiezb@users.noreply.github.com")  # sin correo personal en un repositorio público
 FLUJO = "publicar.yml"
 EVENTO = "publicar-edicion"
 EDICION_RE = re.compile(r'(<script type="application/json" id="edition">)(.*?)(</script>)', re.S)
