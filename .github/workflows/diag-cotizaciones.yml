@@ -1,0 +1,18 @@
+# Temporal: comprueba qué dan las cotizaciones de CNBC antes de la apertura (Tokio, Hong Kong, Sídney). Se borrará.
+name: Diag cotizaciones
+on: workflow_dispatch
+jobs:
+  probar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - run: |
+          python3 - <<'PY'
+          import urllib.request, json
+          UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          syms = ".N225|7203-JP|6758-JP|.HSI|0700-HK|.AXJO|BHP-AU|.SPX|NVDA|.IBEX|TEF-ES|SAP-DE"
+          u = "https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=" + urllib.request.quote(syms, safe="|.") + "&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json&events=1"
+          j = json.loads(urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": UA}), timeout=20).read())
+          for q in j["FormattedQuoteResult"]["FormattedQuote"]:
+              print("Q", {k: q.get(k) for k in ("symbol","last","change","change_pct","previous_day_closing","last_time","curmktstatus","open","high","low")})
+          PY
