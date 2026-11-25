@@ -22,8 +22,8 @@ import re
 import sys
 import time
 import urllib.parse
+import urllib.error
 import urllib.request
-from concurrent.futures import ThreadPoolExecutor
 from html.parser import HTMLParser
 from zoneinfo import ZoneInfo
 
@@ -208,34 +208,128 @@ def universo():
 
 
 # ---------------------------------------------------------------- cotizaciones (Yahoo Finance)
-def serie_chart(tk):
-    """Sesión más reciente de un símbolo: precio, cierre anterior, bolsa y evolución en el día."""
-    url = ("https://query1.finance.yahoo.com/v8/finance/chart/" + urllib.parse.quote(tk) +
-           "?range=1d&interval=5m&includePrePost=false")
-    j = json.loads(leer(url, intentos=2, tiempo=15))
-    res = (j.get("chart") or {}).get("result") or []
-    if not res:
-        raise RuntimeError((j.get("chart") or {}).get("error") or "sin datos")
-    r = res[0]
+class Yahoo:
+    """Cliente mínimo: cookie + «crumb» como la web de Yahoo, peticiones en serie y esperas ante el 429."""
+    BASE = "https://query1.finance.yahoo.com"
+
+    def __init__(self):
+        import http.cookiejar
+        self.op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+        self.op.addheaders = [("User-Agent", UA), ("Accept", "application/json,text/plain,*/*"),
+                              ("Accept-Language", "es-ES,es;q=0.9,en;q=0.8")]
+        self.crumb = None
+        try:
+            try:
+                self.op.open("https://fc.yahoo.com", timeout=15).read()
+            except urllib.error.HTTPError:
+                pass                      # responde 404, pero deja la cookie
+            c = self.op.open(self.BASE + "/v1/test/getcrumb", timeout=15).read().decode().strip()
+            self.crumb = c if c and "<" not in c and len(c) < 40 else None
+        except Exception as e:  # noqa: BLE001
+            log("Yahoo: sin crumb:", e)
+        log("Yahoo: crumb", "conseguido" if self.crumb else "NO conseguido")
+
+    def get(self, ruta, params):
+        if self.crumb:
+            params = dict(params, crumb=self.crumb)
+        url = self.BASE + ruta + "?" + urllib.parse.urlencode(params, safe=",^")
+        for i in range(4):
+            try:
+                return json.loads(self.op.open(url, timeout=25).read().decode("utf-8", "replace"))
+            except urllib.error.HTTPError as e:
+                if e.code in (429, 500, 502, 503) and i < 3:
+                    time.sleep(3 * 2 ** i)
+                    continue
+                raise
+            except Exception:  # noqa: BLE001
+                if i < 3:
+                    time.sleep(2)
+                    continue
+                raise
+
+    def cotizaciones(self, simbolos, lote=40):
+        out = {}
+        for i in range(0, len(simbolos), lote):
+            parte = simbolos[i:i + lote]
+            try:
+                j = self.get("/v7/finance/quote", {"symbols": ",".join(parte), "lang": "es-ES", "region": "ES"})
+            except Exception as e:  # noqa: BLE001
+                log(f"Yahoo quote: lote {i // lote + 1} sin datos: {e}")
+                continue
+            for q in (j.get("quoteResponse") or {}).get("result") or []:
+                d = _de_quote(q)
+                if d:
+                    out[q["symbol"]] = d
+            time.sleep(0.7)
+        return out
+
+    def spark(self, simbolos, lote=20):
+        """Respaldo: evolución en el día de varios símbolos por petición (sirve para elegir y para la gráfica)."""
+        out = {}
+        for i in range(0, len(simbolos), lote):
+            parte = simbolos[i:i + lote]
+            try:
+                j = self.get("/v8/finance/spark", {"symbols": ",".join(parte), "range": "1d", "interval": "5m"})
+            except Exception as e:  # noqa: BLE001
+                log(f"Yahoo spark: lote {i // lote + 1} sin datos: {e}")
+                continue
+            items = j.items() if isinstance(j, dict) and "spark" not in j else \
+                [(r.get("symbol"), (r.get("response") or [{}])[0]) for r in (j.get("spark") or {}).get("result") or []]
+            for tk, r in items:
+                try:
+                    d = _de_serie(r)
+                    if d:
+                        out[tk] = d
+                except Exception as e:  # noqa: BLE001
+                    log("spark", tk, e)
+            time.sleep(0.7)
+        return out
+
+    def grafica(self, tk):
+        j = self.get("/v8/finance/chart/" + urllib.parse.quote(tk),
+                     {"range": "1d", "interval": "5m", "includePrePost": "false"})
+        res = (j.get("chart") or {}).get("result") or []
+        if not res:
+            raise RuntimeError((j.get("chart") or {}).get("error") or "sin datos")
+        return _de_serie(res[0])
+
+
+def _fecha(ts, tzname):
+    if not ts:
+        return None, None
+    tz = ZoneInfo(tzname or "UTC")
+    return (dt.datetime.fromtimestamp(ts, tz).date().isoformat(),
+            dt.datetime.fromtimestamp(ts, MADRID).strftime("%H:%M"))
+
+
+def _de_quote(q):
+    precio, prev = q.get("regularMarketPrice"), q.get("regularMarketPreviousClose")
+    if not precio or not prev:
+        return None
+    ses, hora = _fecha(q.get("regularMarketTime"), q.get("exchangeTimezoneName"))
+    return {"precio": precio, "prev": prev, "c": round((precio / prev - 1) * 100, 2), "bolsa": q.get("exchange") or "",
+            "moneda": q.get("currency") or "", "sesion": ses, "hora_madrid": hora,
+            "abierta": q.get("marketState") == "REGULAR", "g": None}
+
+
+def _de_serie(r):
+    """Respuesta de chart/spark (formato completo o simplificado) → precio, cierre anterior y serie en %."""
     m = r.get("meta") or {}
-    q = ((r.get("indicators") or {}).get("quote") or [{}])[0]
-    ts, cl = r.get("timestamp") or [], q.get("close") or []
+    if "indicators" in r:
+        ts, cl = r.get("timestamp") or [], (((r.get("indicators") or {}).get("quote") or [{}])[0].get("close") or [])
+    else:
+        ts, cl = r.get("timestamp") or [], r.get("close") or []
     pares = [(t, c) for t, c in zip(ts, cl) if c is not None]
-    prev = m.get("chartPreviousClose") or m.get("previousClose")
+    prev = m.get("chartPreviousClose") or m.get("previousClose") or r.get("chartPreviousClose") or r.get("previousClose")
     precio = m.get("regularMarketPrice") or (pares[-1][1] if pares else None)
     if not prev or not precio:
-        raise RuntimeError("sin precio o sin cierre anterior")
-    hora = m.get("regularMarketTime") or (pares[-1][0] if pares else None)
-    tz = ZoneInfo(m.get("exchangeTimezoneName") or "UTC")
-    return {
-        "precio": precio, "prev": prev, "c": round((precio / prev - 1) * 100, 2),
-        "bolsa": m.get("exchangeName") or "", "moneda": m.get("currency") or "",
-        "nombre_yahoo": m.get("shortName") or m.get("longName") or "",
-        "sesion": dt.datetime.fromtimestamp(hora, tz).date().isoformat() if hora else None,
-        "hora_madrid": dt.datetime.fromtimestamp(hora, MADRID).strftime("%H:%M") if hora else None,
-        "abierta": _abierta(m),
-        "g": _reducir([round((c / prev - 1) * 100, 2) for _, c in pares]),
-    }
+        return None
+    ses, hora = _fecha(m.get("regularMarketTime") or (pares[-1][0] if pares else None),
+                       m.get("exchangeTimezoneName") or r.get("exchangeTimezoneName"))
+    return {"precio": precio, "prev": prev, "c": round((precio / prev - 1) * 100, 2),
+            "bolsa": m.get("exchangeName") or "", "moneda": m.get("currency") or "", "sesion": ses,
+            "hora_madrid": hora, "abierta": _abierta(m),
+            "g": _reducir([round((c / prev - 1) * 100, 2) for _, c in pares]) or None}
 
 
 def _abierta(m):
@@ -249,24 +343,6 @@ def _reducir(g):
         return g
     paso = (len(g) - 1) / (PUNTOS - 1)
     return [g[round(i * paso)] for i in range(PUNTOS)]
-
-
-def cotizar(simbolos):
-    datos, fallos = {}, {}
-
-    def uno(tk):
-        try:
-            return tk, serie_chart(tk), None
-        except Exception as e:  # noqa: BLE001
-            return tk, None, str(e)[:160]
-
-    with ThreadPoolExecutor(max_workers=6) as ex:
-        for tk, d, err in ex.map(uno, simbolos):
-            if d:
-                datos[tk] = d
-            else:
-                fallos[tk] = err
-    return datos, fallos
 
 
 # ---------------------------------------------------------------- selección
@@ -316,10 +392,17 @@ def main():
             miembros.setdefault(x["tk"], dict(x))
     log(f"Universo: {sum(len(uni.get(k, [])) for k in ('ibex', 'eurostoxx', 'sp500'))} valores "
         f"({len(miembros)} símbolos distintos)")
-    cot, fallos = cotizar(list(miembros) + list(INDICES))
-    log(f"Cotizaciones: {len(cot)} con datos, {len(fallos)} sin datos")
+    yahoo = Yahoo()
+    simbolos = list(miembros) + list(INDICES)
+    cot = yahoo.cotizaciones(simbolos)
+    log(f"Cotizaciones (quote): {len(cot)} de {len(simbolos)}")
+    if len(cot) < 0.6 * len(simbolos):
+        faltan = [t for t in simbolos if t not in cot]
+        cot.update(yahoo.spark(faltan))
+        log(f"Cotizaciones tras el respaldo (spark): {len(cot)} de {len(simbolos)}")
+    fallos = {t: "sin datos" for t in simbolos if t not in cot}
     if fallos:
-        log("Sin datos:", json.dumps(dict(list(fallos.items())[:25]), ensure_ascii=False))
+        log("Sin datos:", ", ".join(list(fallos)[:40]))
 
     # Sesión de referencia de cada bolsa: la más reciente que aparece entre sus valores (descarta los parados)
     ultima = {}
@@ -329,7 +412,7 @@ def main():
     filas = []
     for tk, x in miembros.items():
         d = cot.get(tk)
-        if not d or not d["g"] or d["sesion"] != ultima.get(d["bolsa"]):
+        if not d or d["sesion"] != ultima.get(d["bolsa"]):
             continue
         if abs(d["c"]) > 60:            # dato anómalo (desdoblamiento, error de la fuente)
             avisos.append(f"{tk}: variación anómala {d['c']} %, descartado")
@@ -344,6 +427,15 @@ def main():
     suben, bajan = columna(ibex, inter, True), columna(ibex, inter, False)
     for f in suben + bajan:
         f.pop("grupo", None)
+        if not f["g"]:
+            try:
+                d = yahoo.grafica(f["tk"])
+                f["g"] = d["g"] if d else None
+                if d and abs(d["c"] - f["c"]) > 0.3:
+                    avisos.append(f"{f['tk']}: la gráfica da {d['c']} % y la cotización {f['c']} %")
+            except Exception as e:  # noqa: BLE001
+                avisos.append(f"{f['tk']}: sin gráfica ({str(e)[:80]})")
+            time.sleep(0.6)
 
     indices = {}
     for tk, nombre in INDICES.items():
