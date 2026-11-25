@@ -1,4 +1,5 @@
-# Recoge cada mañana los titulares de las fuentes del catálogo, el radar amplio y las tendencias de búsqueda,
+# Recoge cada mañana los titulares de las fuentes del catálogo, el radar amplio, las tendencias de búsqueda y las
+# cotizaciones de los valores que más se mueven,
 # y los guarda en la rama «datos» (no se publica en la web y no engorda el historial de main: se reescribe en cada
 # ejecución con los últimos 15 días). La tarea diaria de The Daily Iván los lee de ahí.
 name: Fuentes
@@ -13,6 +14,7 @@ on:
     paths:
       - scripts/recoger_fuentes.py
       - scripts/fuentes_catalogo.py
+      - scripts/valores.py
       - .github/workflows/fuentes.yml
 
 permissions:
@@ -45,6 +47,13 @@ jobs:
         env:
           DATOS_DIR: ${{ github.workspace }}/almacen/datos
         run: python3 repo/scripts/recoger_fuentes.py
+
+      - name: Valores que más se mueven (cotizaciones de la sesión)
+        continue-on-error: true
+        timeout-minutes: 8
+        env:
+          DATOS_DIR: ${{ github.workspace }}/almacen/datos
+        run: python3 repo/scripts/valores.py
 
       - name: Guardar en la rama datos
         if: always()
