@@ -270,12 +270,16 @@ class Cotizaciones:
                     t = dt.datetime.fromisoformat(q.get("last_time"))
                 except (TypeError, ValueError):
                     t = None
-                out[tk] = {"precio": precio, "prev": prev, "c": round((precio / prev - 1) * 100, 2),
-                           "c_fuente": _num(q.get("change_pct")), "bolsa": bolsa_de(q.get("exchange"), tk),
+                c_pub = _num(q.get("change_pct"))
+                # la variación publicada se calcula con el precio sin redondear: es más exacta en valores baratos
+                c_calc = round((precio / prev - 1) * 100, 2)
+                out[tk] = {"precio": precio, "prev": prev,
+                           "c": c_pub if c_pub is not None and abs(c_pub - c_calc) < 1 else c_calc,
+                           "c_fuente": c_pub, "c_calc": c_calc, "bolsa": bolsa_de(q.get("exchange"), tk),
                            "moneda": q.get("currencyCode") or "", "zona": zona,
                            "sesion": t.astimezone(ZoneInfo(zona)).date().isoformat() if t else None,
                            "hora_madrid": t.astimezone(MADRID).strftime("%H:%M") if t else None,
-                           "abierta": q.get("curmktstatus") == "REG_MKT", "g": None}
+                           "abierta": abierta(zona), "g": None}
             time.sleep(0.5)
         return out
 
@@ -299,6 +303,13 @@ class Cotizaciones:
             raise RuntimeError("sesión sin barras suficientes")
         return {"c": round((hoy[-1] / prev - 1) * 100, 2), "g": _reducir([round((c / prev - 1) * 100, 2) for c in hoy]),
                 "sesion": dia.isoformat()}
+
+
+def abierta(zona):
+    """¿Está la bolsa en sesión regular ahora mismo? (por horario; no cuenta festivos)"""
+    ahora = dt.datetime.now(ZoneInfo(zona))
+    ini, fin = SESION.get(zona, SESION_EU)
+    return ahora.weekday() < 5 and ini <= ahora.strftime("%H:%M") <= fin
 
 
 def _reducir(g):
@@ -359,9 +370,9 @@ def main():
     simbolos = list(miembros) + list(INDICES)
     cot = fuente.cotizaciones(simbolos)
     log(f"Cotizaciones: {len(cot)} de {len(simbolos)}")
-    raras = [t for t, d in cot.items() if d["c_fuente"] is not None and abs(d["c_fuente"] - d["c"]) > 0.05]
+    raras = [t for t, d in cot.items() if d["c_fuente"] is not None and abs(d["c_fuente"] - d["c_calc"]) >= 1]
     if raras:
-        log("Variación calculada distinta de la publicada:", raras[:20])
+        log("Variación publicada muy distinta de la calculada (se usa la calculada):", raras[:20])
     fallos = {t: "sin datos" for t in simbolos if t not in cot}
     if fallos:
         log("Sin datos:", ", ".join(list(fallos)[:40]))
