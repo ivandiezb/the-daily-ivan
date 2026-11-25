@@ -408,7 +408,9 @@ def completar_rodadas(cot, fuente, avisos):
         d, e = cot[tk], cache.get(tk) or {}
         if d["sesion"] and e.get("sesion") == d["sesion"] and e.get("prev"):
             d["prev"], d["origen"] = e["prev"], "cache"
-            d["c"] = round((d["precio"] / e["prev"] - 1) * 100, 2)
+            # si la caché es de después del cierre (mismo último precio), su variación publicada es la exacta
+            mismo = e.get("c") is not None and e.get("last") and abs(e["last"] / d["precio"] - 1) < 1e-6
+            d["c"] = e["c"] if mismo else round((d["precio"] / e["prev"] - 1) * 100, 2)
         else:
             pendientes.append(tk)
 
@@ -437,7 +439,7 @@ def completar_rodadas(cot, fuente, avisos):
     ahora = dt.datetime.now(MADRID).isoformat(timespec="seconds")
     for tk, d in cot.items():
         if d["origen"] == "cotizacion" and d["sesion"]:
-            cache[tk] = {"sesion": d["sesion"], "last": d["precio"], "prev": d["prev"], "visto": ahora}
+            cache[tk] = {"sesion": d["sesion"], "last": d["precio"], "prev": d["prev"], "c": d["c"], "visto": ahora}
     json.dump(cache, open(ruta, "w"), ensure_ascii=False, separators=(",", ":"))
 
 
@@ -454,6 +456,10 @@ def main():
     fuente = Cotizaciones()
     simbolos = list(miembros) + list(INDICES)
     cot = fuente.cotizaciones(simbolos)
+    faltan = [t for t in simbolos if t not in cot]
+    if faltan:                          # segundo intento para los que no han llegado (a veces falla uno suelto)
+        time.sleep(2)
+        cot.update(fuente.cotizaciones(faltan, lote=10))
     log(f"Cotizaciones: {len(cot)} de {len(simbolos)}")
     completar_rodadas(cot, fuente, avisos)
     raras = [t for t, d in cot.items() if d["c_fuente"] is not None and abs(d["c_fuente"] - d["c_calc"]) >= 1]
