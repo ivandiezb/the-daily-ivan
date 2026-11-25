@@ -230,6 +230,45 @@ def main():
         nombres = lambda e: [m.get("n") for m in e.get("mercados", [])]
         if nombres(ed) != nombres(prev):
             aviso("el panel de mercados no tiene los mismos instrumentos que la edición anterior")
+    if "Russell 2000" not in [m.get("n") for m in ed.get("mercados") or []]:
+        aviso("mercados: falta el Russell 2000 (python3 scripts/valores.py edicion … lo pone detrás del Dow Jones)")
+
+    # Valores que más se mueven (datos de GitHub: scripts/valores.py)
+    val = ed.get("valores")
+    if val is None:
+        aviso("falta el bloque «valores» (python3 scripts/valores.py edicion W/datos/valores/<hoy>.json W/page.html)")
+    else:
+        if not val.get("s"):
+            err("valores: falta «s» (momento de las cotizaciones, p. ej. «cierre del 24 nov»)")
+        vistos = set()
+        for lado, signo in (("suben", 1), ("bajan", -1)):
+            filas = val.get(lado) or []
+            if len(filas) > 5:
+                err(f"valores/{lado}: {len(filas)} valores (como mucho 5)")
+            cs = []
+            for f in filas:
+                donde = f"valores/{lado}/{f.get('n')}"
+                if not f.get("n") or not f.get("b"):
+                    err(f"{donde}: falta el nombre o la bolsa")
+                c = f.get("c")
+                if not isinstance(c, (int, float)) or c * signo <= 0 or abs(c) > 60:
+                    err(f"{donde}: variación «{c}» no válida para «{lado}»")
+                    continue
+                cs.append(c)
+                g = f.get("g")
+                if g is None:
+                    aviso(f"{donde}: sin gráfica")
+                elif not (isinstance(g, list) and 2 <= len(g) <= 120 and all(isinstance(x, (int, float)) for x in g)):
+                    err(f"{donde}: la gráfica «g» no es una lista de 2 a 120 números")
+                elif abs(g[-1] - c) > 0.6:
+                    aviso(f"{donde}: la gráfica termina en {g[-1]} % y la variación es {c} %")
+                if f.get("n") in vistos:
+                    err(f"{donde}: valor repetido")
+                vistos.add(f.get("n"))
+            if cs != sorted(cs, reverse=signo > 0):
+                err(f"valores/{lado}: no está ordenado de mayor a menor movimiento")
+        if len(vistos) < 4:
+            err(f"valores: solo {len(vistos)} valores (mínimo 4)")
 
     for r in ed.get("radar") or []:
         if r.get("u") and portada(r["u"]):

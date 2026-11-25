@@ -11,6 +11,11 @@ Criterio de selección (cada columna, ordenada por variación):
   · «bajan»: lo mismo con los que más bajan.
   Si un lado no tiene bastantes valores en positivo (o en negativo), se completa con el otro grupo.
 
+Uso en la edición (lo ejecuta la tarea diaria o la actualización, con los datos traídos de la rama «datos»):
+  python3 scripts/valores.py edicion <datos/valores/AAAA-MM-DD.json> <page.html> [--sin-panel]
+  Escribe el bloque «valores» en el JSON de la edición, pone o actualiza el Russell 2000 en el panel de mercados
+  (detrás del Dow Jones) y avisa si los índices del panel no cuadran con las cotizaciones.
+
 Fuentes: composición de los índices, de Wikipedia (con respaldo en universo.json); cotizaciones y evolución en el
 día, del servicio de datos de la web de CNBC (Yahoo Finance bloquea las peticiones desde GitHub).
 Solo biblioteca estándar.
@@ -442,5 +447,90 @@ def main():
         sys.exit("No se ha podido elegir ningún valor")
 
 
+# ---------------------------------------------------------------- volcado en la edición
+MESES = "ene feb mar abr may jun jul ago sep oct nov dic".split()
+EEUU = {"Nasdaq", "NYSE", "NYSE American", "NYSE Arca", "CBOE", "Cboe"}
+RE_ED = re.compile(r'(<script type="application/json" id="edition">)(.*?)(</script>)', re.S)
+
+
+def _dia(iso):
+    d = dt.date.fromisoformat(iso)
+    return f"{d.day} {MESES[d.month - 1]}"
+
+
+def cabecera(filas, generado):
+    """«cierre del 24 nov», «en sesión · 16:47» o la mezcla por zonas (Europa / EE. UU.)."""
+    hora = dt.datetime.fromisoformat(generado).astimezone(MADRID).strftime("%H:%M")
+    zonas = {}
+    for f in filas:
+        z = "EE. UU." if f.get("b") in EEUU else "Europa"
+        zonas.setdefault(z, []).append(f)
+    estado = {z: (any(f.get("abierta") for f in fs), max(f.get("sesion") or "" for f in fs)) for z, fs in zonas.items()}
+    if all(a for a, _ in estado.values()):
+        return f"en sesión · {hora}"
+    if not any(a for a, _ in estado.values()):
+        return "cierre del " + _dia(max(d for _, d in estado.values()))
+    return " · ".join(f"{z} {hora}" if a else f"{z} al cierre" for z, (a, d) in sorted(estado.items(), key=lambda x: x[0] != "Europa"))
+
+
+def cmd_edicion(args):
+    import argparse
+    ap = argparse.ArgumentParser(prog="valores.py edicion")
+    ap.add_argument("datos"); ap.add_argument("pagina"); ap.add_argument("--sin-panel", action="store_true")
+    a = ap.parse_args(args)
+    d = json.load(open(a.datos))
+    src = open(a.pagina).read()
+    m = RE_ED.search(src)
+    if not m:
+        sys.exit("No encuentro el JSON de la edición en " + a.pagina)
+    ed = json.loads(m.group(2))
+    gen = dt.datetime.fromisoformat(d["generado"])
+    edad = (dt.datetime.now(MADRID) - gen).total_seconds() / 3600
+    if edad > 20:
+        sys.exit(f"VALORES_VIEJOS: los datos son de {d['generado']} (hace {edad:.0f} h); no se tocan los valores")
+    filas = (d.get("suben") or []) + (d.get("bajan") or [])
+    if len(filas) < 4:
+        sys.exit("VALORES_INSUFICIENTES: menos de 4 valores en los datos; no se tocan los valores")
+    limpia = lambda f: {"n": f["n"], "b": f["b"], "c": f["c"], "tk": f["tk"], **({"g": f["g"]} if f.get("g") else {})}
+    ed["valores"] = {"s": cabecera(filas, d["generado"]), "fuente": "CNBC",
+                     "suben": [limpia(f) for f in d.get("suben") or []],
+                     "bajan": [limpia(f) for f in d.get("bajan") or []]}
+    print(f"Valores: {ed['valores']['s']} · suben " + ", ".join(f"{f['n']} {f['c']:+.2f} %" for f in ed['valores']['suben'])
+          + " · bajan " + ", ".join(f"{f['n']} {f['c']:+.2f} %" for f in ed['valores']['bajan']))
+    sin_g = [f["n"] for f in filas if not f.get("g")]
+    if sin_g:
+        print("AVISO: sin gráfica:", ", ".join(sin_g))
+
+    idx = d.get("indices") or {}
+    panel = ed.get("mercados") or []
+    if not a.sin_panel and idx.get("Russell 2000"):
+        r = idx["Russell 2000"]
+        momento = f"{r['hora']}" if r.get("abierta") else f"cierre {_dia(r['sesion'])}"
+        fila = {"n": "Russell 2000", "tipo": "indice", "v": r["v"], "c": round((r["v"] / r["prev"] - 1) * 100, 2),
+                "prev": r["prev"], "dec": 2, "s": f"{momento} · CNBC", "u": "https://www.cnbc.com/quotes/.RUT"}
+        nombres = [x.get("n") for x in panel]
+        if "Russell 2000" in nombres:
+            panel[nombres.index("Russell 2000")] = fila
+        else:
+            pos = nombres.index("Dow Jones") + 1 if "Dow Jones" in nombres else len([x for x in panel if x.get("tipo") == "indice"])
+            panel.insert(pos, fila)
+        ed["mercados"] = panel
+        print(f"Panel: Russell 2000 {fila['v']} ({fila['c']:+.2f} %, {fila['s']})")
+    # Contraste de los índices del panel con las cotizaciones (mismo instrumento, distinta fuente)
+    for x in panel:
+        r = idx.get(x.get("n"))
+        if r and isinstance(x.get("v"), (int, float)) and x.get("n") != "Russell 2000":
+            dif = abs(x["v"] / r["v"] - 1) * 100
+            if dif > 0.15 and abs(x["v"] / r["prev"] - 1) * 100 > 0.15:
+                print(f"AVISO: panel/{x['n']} = {x['v']}, pero las cotizaciones dan {r['v']} "
+                      f"({'en sesión' if r.get('abierta') else 'cierre ' + _dia(r['sesion'])}) y cierre anterior {r['prev']}")
+    nuevo = json.dumps(ed, ensure_ascii=False, indent=1).replace("</", "<\\/")
+    open(a.pagina, "w").write(src[:m.start(2)] + nuevo + src[m.end(2):])
+    print("VALORES_OK")
+
+
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 1 and sys.argv[1] == "edicion":
+        cmd_edicion(sys.argv[2:])
+    else:
+        main()

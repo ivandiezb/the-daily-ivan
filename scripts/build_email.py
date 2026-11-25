@@ -17,8 +17,11 @@ Gmail-safe by design (checked against what the Gmail connector actually stores, 
 import html, json, math, os, re, sys
 
 # La verificación ya no se muestra (todas las noticias cumplen las reglas de fuentes; 13 nov 2026): solo las excepciones
-# llevan una etiqueta corta junto al código, igual que en la web.
-AVISO_CONF = {"en-desarrollo": "En desarrollo", "una-fuente": "Una sola fuente"}
+# se señalan, igual que en la web: «En desarrollo» junto al título y «Una sola fuente original» al final de las fuentes
+# (25 nov 2026).
+AVISO_CONF = {"en-desarrollo": "En desarrollo"}
+AVISO_FUENTE = "Una sola fuente original"
+WARN = "#9A5800"
 # block kind: (band background, band text, left rule / label colour)
 BANDS = {"blue": ("#D6E2F4", "#14325F", "#2F5F9E"), "gray": ("#E1E5EA", "#262D36", "#5A6470"),
          "sand": ("#F2E0C4", "#5E3A10", "#9A6524"), "green": ("#D5EBDD", "#174A2C", "#2E7149"),
@@ -219,6 +222,31 @@ def main(page, url, out, respaldo=None):
             H.append(f'<p style="color:{INK2};font-size:13px;margin:8px 0 0">{e(d["mercadosNota"])}</p>')
             T.append(d["mercadosNota"])
 
+    def movers_table():
+        """Valores que más se mueven: suben y bajan lado a lado, con nombre, bolsa y variación. Sin gráfica (Gmail no
+        muestra SVG) y con el mínimo de estilos: el correo va justo de tamaño (Gmail recorta a partir de ~102 KB)."""
+        v = d.get("valores") or {}
+        su, ba = v.get("suben") or [], v.get("bajan") or []
+        if not (su or ba):
+            return
+        meta = f' <span style="color:{INK2};font-weight:normal;letter-spacing:0">· {e(v["s"])}</span>' if v.get("s") else ""
+        H.append(f'<div style="color:{BANDS["blue"][2]};font:bold 12px {SANS};letter-spacing:1px;margin:20px 0 4px">VALORES QUE MÁS SE MUEVEN{meta}</div>')
+        T.extend(["", "Valores que más se mueven" + (f" ({v['s']})" if v.get("s") else "")])
+
+        def celdas(f, color):
+            if not f:
+                return "<td></td><td></td>"
+            pct = ("+" if f["c"] > 0 else "−") + num(abs(f["c"]), 2) + "&nbsp;%"
+            return (f'<td>{e(f["n"])} <small style="color:{INK2}">{e(f["b"])}</small></td>'
+                    f'<td align="right" style="color:{color};white-space:nowrap"><b>{pct}</b></td>')
+        rows = [f'<tr><td colspan="2" style="color:{UP}"><b>&#9650; SUBEN</b></td><td colspan="2" style="color:{DOWN}"><b>&#9660; BAJAN</b></td></tr>']
+        for i in range(max(len(su), len(ba))):
+            rows.append("<tr>" + celdas(su[i] if i < len(su) else None, UP) + celdas(ba[i] if i < len(ba) else None, DOWN) + "</tr>")
+        H.append(f'<table width="100%" cellpadding="4" cellspacing="0" style="font-family:{SANS};font-size:14px;border-top:1px solid {RULE};border-bottom:1px solid {RULE}">{"".join(rows)}</table>')
+        for titulo, filas in (("Suben", su), ("Bajan", ba)):
+            T.append(titulo + ": " + " · ".join(f"{f['n']} ({f['b']}) {'+' if f['c'] > 0 else '−'}{num(abs(f['c']), 2)} %" for f in filas))
+        H.append(f'<p style="color:{INK2};font-size:12px;margin:6px 0 0">Por columna, 2 del Ibex 35 y 3 del Euro Stoxx 50 y el S&amp;P 500. Cotizaciones: CNBC.</p>')
+
     # Fab-four column: 50% wide when the message is >= COL_BREAK px, 100% below (no media queries needed).
     col = (f"display:inline-block;vertical-align:top;width:100%;min-width:50%;max-width:100%;"
            f"width:calc(({COL_BREAK}px - 100%)*{COL_BREAK})")
@@ -271,12 +299,16 @@ def main(page, url, out, respaldo=None):
                 links = " · ".join(f'<a href="{e(f["u"])}" style="color:{INK2}">{e(n)}</a>'
                                    for f, n in zip(it["fuentes"], nombres(it["fuentes"])))
                 # la «cobertura» solo sirve a la tarea para ordenar las noticias: no se muestra (23 oct 2026)
-                P.append(f'<p style="color:{INK2};margin:8px 0 0;font-size:13px;font-style:italic">Fuentes: {links}</p>')
-                T.append("Fuentes: " + " · ".join(f"{n} <{f['u']}>" for f, n in zip(it["fuentes"], nombres(it["fuentes"]))))
+                una = it.get("conf") == "una-fuente"
+                av = f' · <span style="color:{WARN};white-space:nowrap">&#9432;&nbsp;{AVISO_FUENTE}</span>' if una else ""
+                P.append(f'<p style="color:{INK2};margin:8px 0 0;font-size:13px;font-style:italic">Fuentes: {links}{av}</p>')
+                T.append("Fuentes: " + " · ".join(f"{n} <{f['u']}>" for f, n in zip(it["fuentes"], nombres(it["fuentes"])))
+                         + (f" ({AVISO_FUENTE})" if una else ""))
             blocks.append("\n".join(P))
         H.append(columns(blocks, sec["items"]))
         if sec["id"] == "mercados":
             market_table()
+            movers_table()
 
     if d.get("radar"):
         h2("Otras noticias en el radar", "gray")
