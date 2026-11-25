@@ -1,0 +1,42 @@
+# Temporal: comprueba qué fuentes de cotizaciones responden desde GitHub Actions. Se borrará tras la prueba.
+name: Diag cotizaciones
+on: workflow_dispatch
+jobs:
+  probar:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - run: |
+          python3 - <<'PY'
+          import urllib.request, urllib.error, time, json
+          UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          def get(u, h=None):
+              try:
+                  r = urllib.request.urlopen(urllib.request.Request(u, headers=dict({"User-Agent": UA}, **(h or {}))), timeout=20)
+                  b = r.read(); return r.status, b[:300].decode("utf-8", "replace").replace("\n", " | ")
+              except urllib.error.HTTPError as e:
+                  return e.code, e.read()[:160].decode("utf-8", "replace").replace("\n", " ")
+              except Exception as e:
+                  return "ERR", str(e)[:160]
+          pruebas = [
+            ("stooq quote", "https://stooq.com/q/l/?s=tef.es,aapl.us,sap.de,^ibex&f=sd2t2ohlcvp&h&e=csv"),
+            ("stooq intradia", "https://stooq.com/q/d/l/?s=aapl.us&i=5"),
+            ("stooq diario es", "https://stooq.com/q/d/l/?s=tef.es&i=d"),
+            ("bme ibex", "https://www.bolsamadrid.es/esp/aspx/Mercados/Precios.aspx?indice=ESI100000000"),
+            ("google finance", "https://www.google.com/finance/quote/TEF:BME"),
+            ("nasdaq api", "https://api.nasdaq.com/api/quote/NVDA/chart?assetclass=stocks"),
+            ("cnbc quote", "https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=TEF-ES|NVDA&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json&events=1"),
+            ("cnbc chart", "https://ts-api.cnbc.com/harmony/app/charts/1D.json?symbol=NVDA"),
+            ("marketwatch", "https://www.marketwatch.com/investing/stock/nvda"),
+          ]
+          for n, u in pruebas:
+              s, b = get(u); print(f"[{n}] {s} :: {b}", flush=True); time.sleep(2)
+          print("--- Yahoo en serie, 8 s entre peticiones", flush=True)
+          ok = 0
+          for i, tk in enumerate(["TEF.MC","NVDA","SAP.DE","^RUT","MTS.MC","AAPL","ASML.AS","CLNX.MC","^IBEX","MSFT"]):
+              host = "query1" if i % 2 == 0 else "query2"
+              s, b = get(f"https://{host}.finance.yahoo.com/v8/finance/chart/{tk}?range=1d&interval=5m")
+              ok += s == 200
+              print(f"[yahoo {host} {tk}] {s} :: {b[:120]}", flush=True); time.sleep(8)
+          print("Yahoo OK:", ok, "de 10")
+          PY
