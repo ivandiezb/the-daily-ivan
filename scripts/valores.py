@@ -212,7 +212,9 @@ def universo():
 # de CNBC responde para Madrid, el resto de Europa, EE. UU. y los índices.
 QUOTE = ("https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols={}"
          "&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json&events=1")
-CHART = "https://ts-api.cnbc.com/harmony/app/charts/1D.json?symbol={}"
+# 5D: barras de 5 minutos de los últimos ~8 días (cubre los fines de semana; 1D solo da las últimas 48 horas)
+CHART = "https://ts-api.cnbc.com/harmony/app/charts/5D.json?symbol={}"
+CACHE = "cotizaciones.json"
 SUF_CNBC = {".MC": "-ES", ".DE": "-DE", ".PA": "-FR", ".AS": "-NL", ".MI": "-IT", ".BR": "-BE", ".HE": "-FI",
             ".IR": "-IE", ".LS": "-PT"}
 IDX_CNBC = {"^IBEX": ".IBEX", "^STOXX50E": ".STOXX50E", "^GSPC": ".SPX", "^IXIC": ".IXIC", "^DJI": ".DJI",
@@ -234,7 +236,8 @@ def a_cnbc(tk):
         return IDX_CNBC[tk]
     for suf, nuevo in SUF_CNBC.items():
         if tk.endswith(suf):
-            return tk[:-len(suf)] + nuevo
+            base = tk[:-len(suf)]
+            return base if re.search(r"-[A-Z]{2}$", base) else base + nuevo  # «NDA-FI» ya viene con país
     return tk
 
 
@@ -271,43 +274,68 @@ class Cotizaciones:
                 if not tk or q.get("code") not in (0, "0") or not precio or not prev:
                     continue
                 zona = ZONAS.get(q.get("timeZone") or "", "Europe/Madrid")
-                try:
-                    t = dt.datetime.fromisoformat(q.get("last_time"))
-                except (TypeError, ValueError):
-                    t = None
-                c_pub = _num(q.get("change_pct"))
+                lt = str(q.get("last_time") or "")
+                sesion, hora = None, None
+                if re.fullmatch(r"\d{4}-\d{2}-\d{2}", lt):      # sin hora: cotización «pasada» de día
+                    sesion = lt
+                else:
+                    try:
+                        t = dt.datetime.fromisoformat(lt)
+                        sesion = t.astimezone(ZoneInfo(zona)).date().isoformat()
+                        hora = t.astimezone(MADRID).strftime("%H:%M")
+                    except (TypeError, ValueError):
+                        pass
+                # Antes de la apertura, CNBC «pasa de día» la cotización: deja el último cierre como cierre anterior
+                # y la variación en «UNCH» (comprobado de madrugada con Tokio y Sídney). Entonces la variación de la
+                # última sesión se saca de la caché de cotizaciones anteriores o de las barras.
+                rodada = str(q.get("change_pct") or "").upper() in ("UNCH", "") and not _num(q.get("open"))
+                c_pub = None if rodada else _num(q.get("change_pct"))
                 # la variación publicada se calcula con el precio sin redondear: es más exacta en valores baratos
-                c_calc = round((precio / prev - 1) * 100, 2)
-                out[tk] = {"precio": precio, "prev": prev,
-                           "c": c_pub if c_pub is not None and abs(c_pub - c_calc) < 1 else c_calc,
+                c_calc = None if rodada else round((precio / prev - 1) * 100, 2)
+                out[tk] = {"precio": precio, "prev": None if rodada else prev,
+                           "c": None if rodada else (c_pub if c_pub is not None and abs(c_pub - c_calc) < 1 else c_calc),
                            "c_fuente": c_pub, "c_calc": c_calc, "bolsa": bolsa_de(q.get("exchange"), tk),
-                           "moneda": q.get("currencyCode") or "", "zona": zona,
-                           "sesion": t.astimezone(ZoneInfo(zona)).date().isoformat() if t else None,
-                           "hora_madrid": t.astimezone(MADRID).strftime("%H:%M") if t else None,
-                           "abierta": abierta(zona), "g": None}
+                           "moneda": q.get("currencyCode") or "", "zona": zona, "sesion": sesion, "hora_madrid": hora,
+                           "abierta": abierta(zona), "rodada": rodada, "origen": None if rodada else "cotizacion",
+                           "g": None}
             time.sleep(0.5)
         return out
 
-    def grafica(self, tk, prev, zona):
-        """Evolución de la última sesión regular, en % sobre el cierre anterior."""
+    def sesiones(self, tk, zona):
+        """Barras de 5 minutos de la sesión regular, agrupadas por día (hora local de la bolsa)."""
         j = json.loads(leer(CHART.format(urllib.parse.quote(a_cnbc(tk))), intentos=2, tiempo=20))
-        barras = ((j.get("barData") or {}).get("priceBars") or [])
         z = ZoneInfo(zona)
-        pts = []
-        for b in barras:
+        ini, fin = SESION.get(zona, SESION_EU)
+        dias = {}
+        for b in ((j.get("barData") or {}).get("priceBars") or []):
             c, ms = _num(b.get("close")), b.get("tradeTimeinMills")
             if c is None or not ms:
                 continue
-            pts.append((dt.datetime.fromtimestamp(int(ms) / 1000, z), c))
-        if not pts:
+            t = dt.datetime.fromtimestamp(int(ms) / 1000, z)
+            if ini <= t.strftime("%H:%M") <= fin:
+                dias.setdefault(t.date().isoformat(), []).append(c)
+        return dias
+
+    def grafica(self, tk, prev, zona, sesion=None):
+        """Evolución de la sesión indicada (por defecto, la última con barras), en % sobre el cierre anterior."""
+        dias = self.sesiones(tk, zona)
+        if not dias:
             raise RuntimeError("sin barras")
-        dia = pts[-1][0].date()
-        ini, fin = SESION.get(zona, SESION_EU)
-        hoy = [c for t, c in pts if t.date() == dia and ini <= t.strftime("%H:%M") <= fin]
+        dia = sesion if sesion in dias else max(dias)
+        hoy = dias[dia]
         if len(hoy) < 2:
             raise RuntimeError("sesión sin barras suficientes")
         return {"c": round((hoy[-1] / prev - 1) * 100, 2), "g": _reducir([round((c / prev - 1) * 100, 2) for c in hoy]),
-                "sesion": dia.isoformat()}
+                "sesion": dia}
+
+    def desde_barras(self, tk, zona, sesion):
+        """Variación aproximada de una sesión: último precio de esa sesión frente al último de la anterior."""
+        dias = self.sesiones(tk, zona)
+        orden = sorted(dias)
+        if sesion not in dias or orden.index(sesion) == 0:
+            raise RuntimeError("faltan barras de la sesión o de la anterior")
+        prev = dias[orden[orden.index(sesion) - 1]][-1]
+        return prev, round((dias[sesion][-1] / prev - 1) * 100, 2)
 
 
 def abierta(zona):
@@ -361,6 +389,58 @@ def columna(ibex, inter, sube):
     return sorted(a + b, key=lambda x: x["c"], reverse=sube)
 
 
+def completar_rodadas(cot, fuente, avisos):
+    """Variación de la última sesión para las cotizaciones «pasadas de día» (antes de la apertura) y caché.
+
+    1) Caché de cotizaciones anteriores (datos/valores/cotizaciones.json): si una ejecución anterior vio esa misma
+       sesión, su «cierre anterior» es oficial y da la variación exacta. La actualización de media tarde y la
+       recogida programada la rellenan cada día.
+    2) Si no está en la caché, barras de 5 minutos: último precio de la sesión frente al de la anterior (aproximado).
+    Al final guarda en la caché todas las cotizaciones normales de esta ejecución."""
+    ruta = os.path.join(SALIDA, CACHE)
+    try:
+        cache = json.load(open(ruta))
+    except Exception:  # noqa: BLE001
+        cache = {}
+    rodadas = [tk for tk, d in cot.items() if d["rodada"]]
+    pendientes = []
+    for tk in rodadas:
+        d, e = cot[tk], cache.get(tk) or {}
+        if d["sesion"] and e.get("sesion") == d["sesion"] and e.get("prev"):
+            d["prev"], d["origen"] = e["prev"], "cache"
+            d["c"] = round((d["precio"] / e["prev"] - 1) * 100, 2)
+        else:
+            pendientes.append(tk)
+
+    def barras(tk):
+        try:
+            return tk, fuente.desde_barras(tk, cot[tk]["zona"], cot[tk]["sesion"]), None
+        except Exception as e:  # noqa: BLE001
+            return tk, None, str(e)[:80]
+    from concurrent.futures import ThreadPoolExecutor
+    sin = []
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        for tk, r, err in ex.map(barras, pendientes):
+            if r:
+                cot[tk]["prev"], cot[tk]["c"], cot[tk]["origen"] = r[0], r[1], "barras"
+            else:
+                sin.append(tk)
+    for tk in sin:
+        cot.pop(tk, None)
+    if rodadas:
+        n_cache = sum(1 for tk in rodadas if (cot.get(tk) or {}).get("origen") == "cache")
+        msg = (f"{len(rodadas)} cotizaciones pasadas de día: {n_cache} con la caché, "
+               f"{len(pendientes) - len(sin)} con barras (aproximadas), {len(sin)} sin datos")
+        log(msg)
+        if len(pendientes) > 20:
+            avisos.append(msg)
+    ahora = dt.datetime.now(MADRID).isoformat(timespec="seconds")
+    for tk, d in cot.items():
+        if d["origen"] == "cotizacion" and d["sesion"]:
+            cache[tk] = {"sesion": d["sesion"], "last": d["precio"], "prev": d["prev"], "visto": ahora}
+    json.dump(cache, open(ruta, "w"), ensure_ascii=False, separators=(",", ":"))
+
+
 def main():
     ahora = dt.datetime.now(MADRID)
     os.makedirs(SALIDA, exist_ok=True)
@@ -375,6 +455,7 @@ def main():
     simbolos = list(miembros) + list(INDICES)
     cot = fuente.cotizaciones(simbolos)
     log(f"Cotizaciones: {len(cot)} de {len(simbolos)}")
+    completar_rodadas(cot, fuente, avisos)
     raras = [t for t, d in cot.items() if d["c_fuente"] is not None and abs(d["c_fuente"] - d["c_calc"]) >= 1]
     if raras:
         log("Variación publicada muy distinta de la calculada (se usa la calculada):", raras[:20])
@@ -408,7 +489,7 @@ def main():
         f.pop("grupo", None)
         if not f.get("g"):
             try:
-                d = fuente.grafica(f["tk"], f["prev"], f.pop("zona"))
+                d = fuente.grafica(f["tk"], f["prev"], f.pop("zona"), f.get("sesion"))
                 f["g"] = d["g"]
                 if d and abs(d["c"] - f["c"]) > 0.3:
                     avisos.append(f"{f['tk']}: la gráfica da {d['c']} % y la cotización {f['c']} %")
