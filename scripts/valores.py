@@ -519,7 +519,8 @@ def cmd_edicion(args):
     # Contraste de los índices del panel con las cotizaciones (mismo instrumento, distinta fuente)
     for x in panel:
         r = idx.get(x.get("n"))
-        if r and isinstance(x.get("v"), (int, float)) and x.get("n") != "Russell 2000":
+        # solo con la bolsa cerrada: el panel debe dar su último cierre o el anterior (en sesión, las horas difieren)
+        if r and not r.get("abierta") and isinstance(x.get("v"), (int, float)) and x.get("n") != "Russell 2000":
             dif = abs(x["v"] / r["v"] - 1) * 100
             if dif > 0.15 and abs(x["v"] / r["prev"] - 1) * 100 > 0.15:
                 print(f"AVISO: panel/{x['n']} = {x['v']}, pero las cotizaciones dan {r['v']} "

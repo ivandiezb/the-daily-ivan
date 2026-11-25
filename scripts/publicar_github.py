@@ -210,6 +210,7 @@ def cmd_edicion(a):
     log(f"Edición {a.fecha}: JSON {len(texto_ed)} caracteres → {len(ed_b64)} comprimido; Instagram {len(ig_b64)}.")
 
     enviada = None
+    t0 = time.time()  # todo el comando debe caber en los 10 minutos que la sesión da a la herramienta Bash
     try:
         log(f"main tiene ahora la edición del {main_tiene(a.fecha)[1]}.")
     except Exception as e:
@@ -228,8 +229,9 @@ def cmd_edicion(a):
         vias = vias[1:2]
     if a.via in ("todas", "rama"):
         vias.append(("rama publicar-*", lambda: via_rama(a.fecha, texto_ed, texto_ig, mensaje)))
-    # dos rondas por todas las vías, con un minuto entre ellas: los cortes de la API o del proxy suelen ser breves
-    for ronda in range(2):
+    # cuatro rondas por todas las vías, con 1, 2 y 2 minutos de espera: los cortes de la API o del proxy suelen ser
+    # breves, pero el 25 nov 2026 el servicio de credenciales del proxy devolvió 503 durante más de un cuarto de hora
+    for ronda in range(4):
         for nombre, fn in vias:
             try:
                 r = fn()
@@ -238,17 +240,19 @@ def cmd_edicion(a):
                 break
             except Exception as e:
                 log(f"Vía {nombre} no disponible: {e}")
-        if enviada or not vias:
+        if enviada or not vias or ronda == 3:
             break
-        log("Ninguna vía ha funcionado; se reintenta dentro de un minuto.")
-        time.sleep(60)
+        espera = 60 * min(ronda + 1, 2)
+        log(f"Ninguna vía ha funcionado; se reintenta dentro de {espera // 60} min.")
+        time.sleep(espera)
     if not enviada:
         motivo = "ninguna vía de envío ha funcionado (detalle arriba)"
         log(f"WEB_FALLO: {motivo}")
         log(aviso(f"No se pudo publicar la edición del {a.fecha}", "```\n" + "\n".join(registro) + "\n```"))
         return 1
 
-    limite = time.time() + a.esperar
+    # si el envío ha tardado, se espera menos la confirmación (al menos 2,5 min) para no pasar de ~9,5 min en total
+    limite = time.time() + max(150, min(a.esperar, 570 - (time.time() - t0)))
     en_main, actual, sha = False, "desconocida", ""
     while time.time() < limite:
         time.sleep(15)
