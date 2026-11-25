@@ -140,7 +140,7 @@ def balance(items):
     return best[1], best[2]
 
 
-def main(page, url, out, respaldo=None):
+def main(page, url, out, respaldo=None, sin_valores=False):
     # Los enlaces principales del correo van siempre a la web pública. Si alguien pasa la página de Claude como
     # enlace principal, pasa a ser solo el enlace de respaldo.
     if "claude.ai" in (url or ""):
@@ -281,7 +281,7 @@ def main(page, url, out, respaldo=None):
             size = "16px" if it.get("breve") else "18px"
             aviso = (f'<span style="color:#9A5800;border:1px solid #9A5800;font:bold 11px {MONO};padding:0 4px;border-radius:3px;'
                      f'vertical-align:2px">{e(AVISO_CONF[it["conf"]])}</span>&nbsp; ') if it.get("conf") in AVISO_CONF else ""
-            P.append(f'<div style="font:bold {size}/1.3 {SANS};margin:2px 0 4px"><span style="background-color:{CHIP};color:#FFFFFF;font:bold 12px {MONO};padding:1px 6px;border-radius:3px;vertical-align:2px">{e(it["code"])}</span>&nbsp; {aviso}{e(it["titulo"])}</div>')
+            P.append(f'<div style="font:bold {size}/1.3 {SANS};margin:2px 0 4px"><span style="background-color:{CHIP};color:#FFF;font:bold 12px {MONO};padding:1px 6px;border-radius:3px">{e(it["code"])}</span>&nbsp; {aviso}{e(it["titulo"])}</div>')
             T += ["", f"[{it['code']}] " + (f"({AVISO_CONF[it['conf']]}) " if it.get("conf") in AVISO_CONF else "") + it["titulo"]]
             if it.get("breve"):
                 body = " ".join(it[k] for k in ("hecho", "importa", "vigilar") if it.get(k))
@@ -308,7 +308,8 @@ def main(page, url, out, respaldo=None):
         H.append(columns(blocks, sec["items"]))
         if sec["id"] == "mercados":
             market_table()
-            movers_table()
+            if not sin_valores:
+                movers_table()
 
     if d.get("radar"):
         h2("Otras noticias en el radar", "gray")
@@ -347,8 +348,15 @@ def main(page, url, out, respaldo=None):
     open(os.path.join(out, "email.html"), "w", encoding="utf-8").write(body)
     open(os.path.join(out, "email.txt"), "w", encoding="utf-8").write("\n".join(T))
     size = len(body.encode("utf-8"))
+    # Los valores que más se mueven son lo primero que sobra: si el correo se pasa de ~95 KB, se rehace sin ellos
+    # (siguen en la web) antes de que haya que recortar noticias.
+    if size > 95_000 and d.get("valores") and not sin_valores:
+        print(f"NOTA: con los valores el email pesaría {size / 1000:.0f} KB; va sin ese bloque (sigue en la web). "
+              "No hace falta recortar nada por esto.", file=sys.stderr)
+        return main(page, url, out, respaldo, sin_valores=True)
     if size > 95_000:
-        print(f"AVISO: el email pesa {size // 1024} KB; Gmail recorta los mensajes de más de ~102 KB.", file=sys.stderr)
+        print(f"AVISO: el email pesa {size / 1000:.0f} KB (más de 95); Gmail recorta los mensajes de más de ~102 KB.",
+              file=sys.stderr)
     print(f"{brand} · {d['fechaTexto']}")
 
 
