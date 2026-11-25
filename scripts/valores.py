@@ -11,7 +11,8 @@ Criterio de selección (cada columna, ordenada por variación):
   · «bajan»: lo mismo con los que más bajan.
   Si un lado no tiene bastantes valores en positivo (o en negativo), se completa con el otro grupo.
 
-Fuentes: composición de los índices, de Wikipedia (con respaldo en universo.json); cotizaciones, de Yahoo Finance.
+Fuentes: composición de los índices, de Wikipedia (con respaldo en universo.json); cotizaciones y evolución en el
+día, del servicio de datos de la web de CNBC (Yahoo Finance bloquea las peticiones desde GitHub).
 Solo biblioteca estándar.
 """
 import datetime as dt
@@ -37,13 +38,7 @@ DIAS_GUARDADOS = 15
 INDICES = {"^IBEX": "Ibex 35", "^STOXX50E": "Euro Stoxx 50", "^GSPC": "S&P 500", "^IXIC": "Nasdaq Composite",
            "^DJI": "Dow Jones", "^RUT": "Russell 2000"}
 
-# Bolsa de cotización, tal como se muestra al lector (código de Yahoo → nombre)
-BOLSAS = {"MCE": "Madrid", "NMS": "Nasdaq", "NGM": "Nasdaq", "NCM": "Nasdaq", "NAS": "Nasdaq", "NYQ": "NYSE",
-          "NYS": "NYSE", "ASE": "NYSE American", "PCX": "NYSE Arca", "BTS": "Cboe", "GER": "Fráncfort",
-          "FRA": "Fráncfort", "PAR": "París", "AMS": "Ámsterdam", "MIL": "Milán", "BRU": "Bruselas",
-          "HEL": "Helsinki", "ISE": "Dublín", "LIS": "Lisboa", "VIE": "Viena", "LSE": "Londres", "EBS": "Zúrich",
-          "STO": "Estocolmo", "CPH": "Copenhague"}
-# Sufijo de Yahoo según la bolsa principal que indique Wikipedia (Euro Stoxx 50)
+# Sufijo del símbolo (convención .DE, .PA…) según la bolsa principal que indique Wikipedia (Euro Stoxx 50)
 SUFIJOS = [("xetra", ".DE"), ("frankfurt", ".DE"), ("deutsche", ".DE"), ("paris", ".PA"), ("amsterdam", ".AS"),
            ("milan", ".MI"), ("italiana", ".MI"), ("madrid", ".MC"), ("bme", ".MC"), ("brussels", ".BR"),
            ("helsinki", ".HE"), ("dublin", ".IR"), ("lisbon", ".LS")]
@@ -178,7 +173,7 @@ def sp500():
     for f in filas:
         if len(f) <= max(it, inn):
             continue
-        tk = f[it].strip().upper().replace(".", "-")
+        tk = f[it].strip().upper()
         if tk:
             out.append({"tk": tk, "n": f[inn], "i": "sp500"})
     return out
@@ -207,135 +202,103 @@ def universo():
     return datos, avisos
 
 
-# ---------------------------------------------------------------- cotizaciones (Yahoo Finance)
-class Yahoo:
-    """Cliente mínimo: cookie + «crumb» como la web de Yahoo, peticiones en serie y esperas ante el 429."""
-    BASE = "https://query1.finance.yahoo.com"
+# ---------------------------------------------------------------- cotizaciones (servicio de datos de CNBC)
+# Yahoo Finance bloquea las peticiones desde GitHub Actions (HTTP 429); el servicio de cotizaciones que usa la web
+# de CNBC responde para Madrid, el resto de Europa, EE. UU. y los índices.
+QUOTE = ("https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols={}"
+         "&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json&events=1")
+CHART = "https://ts-api.cnbc.com/harmony/app/charts/1D.json?symbol={}"
+SUF_CNBC = {".MC": "-ES", ".DE": "-DE", ".PA": "-FR", ".AS": "-NL", ".MI": "-IT", ".BR": "-BE", ".HE": "-FI",
+            ".IR": "-IE", ".LS": "-PT"}
+IDX_CNBC = {"^IBEX": ".IBEX", "^STOXX50E": ".STOXX50E", "^GSPC": ".SPX", "^IXIC": ".IXIC", "^DJI": ".DJI",
+            "^RUT": ".RUT"}
+ZONAS = {"CET": "Europe/Madrid", "CEST": "Europe/Madrid", "EET": "Europe/Helsinki", "EEST": "Europe/Helsinki",
+         "EST": "America/New_York", "EDT": "America/New_York", "GMT": "Europe/London", "BST": "Europe/London"}
+# Sesión regular (hora local de cada bolsa) para quedarse solo con ella en las gráficas
+SESION = {"America/New_York": ("09:30", "16:00"), "Europe/Helsinki": ("10:00", "18:35"),
+          "Europe/London": ("08:00", "16:35")}
+SESION_EU = ("09:00", "17:40")
+BOLSAS_CNBC = [("mercado continuo", "Madrid"), ("madrid", "Madrid"), ("xetra", "Fráncfort"),
+               ("frankfurt", "Fráncfort"), ("paris", "París"), ("amsterdam", "Ámsterdam"), ("milan", "Milán"),
+               ("brussels", "Bruselas"), ("helsinki", "Helsinki"), ("irish", "Dublín"), ("dublin", "Dublín"),
+               ("lisbon", "Lisboa"), ("nasdaq", "Nasdaq"), ("nyse", "NYSE"), ("new york", "NYSE")]
 
-    def __init__(self):
-        import http.cookiejar
-        self.op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
-        self.op.addheaders = [("User-Agent", UA), ("Accept", "application/json,text/plain,*/*"),
-                              ("Accept-Language", "es-ES,es;q=0.9,en;q=0.8")]
-        self.crumb = None
-        try:
-            try:
-                self.op.open("https://fc.yahoo.com", timeout=15).read()
-            except urllib.error.HTTPError:
-                pass                      # responde 404, pero deja la cookie
-            c = self.op.open(self.BASE + "/v1/test/getcrumb", timeout=15).read().decode().strip()
-            self.crumb = c if c and "<" not in c and len(c) < 40 else None
-        except Exception as e:  # noqa: BLE001
-            log("Yahoo: sin crumb:", e)
-        log("Yahoo: crumb", "conseguido" if self.crumb else "NO conseguido")
 
-    def get(self, ruta, params):
-        if self.crumb:
-            params = dict(params, crumb=self.crumb)
-        url = self.BASE + ruta + "?" + urllib.parse.urlencode(params, safe=",^")
-        for i in range(4):
-            try:
-                return json.loads(self.op.open(url, timeout=25).read().decode("utf-8", "replace"))
-            except urllib.error.HTTPError as e:
-                if e.code in (429, 500, 502, 503) and i < 3:
-                    time.sleep(3 * 2 ** i)
-                    continue
-                raise
-            except Exception:  # noqa: BLE001
-                if i < 3:
-                    time.sleep(2)
-                    continue
-                raise
+def a_cnbc(tk):
+    if tk in IDX_CNBC:
+        return IDX_CNBC[tk]
+    for suf, nuevo in SUF_CNBC.items():
+        if tk.endswith(suf):
+            return tk[:-len(suf)] + nuevo
+    return tk
 
+
+def _num(x):
+    try:
+        return float(str(x).replace(",", "").replace("%", "").replace("+", ""))
+    except (TypeError, ValueError):
+        return None
+
+
+def bolsa_de(nombre, tk):
+    n = (nombre or "").lower()
+    for k, v in BOLSAS_CNBC:
+        if k in n:
+            return v
+    return {"-ES": "Madrid", "-DE": "Fráncfort", "-FR": "París", "-NL": "Ámsterdam", "-IT": "Milán",
+            "-BE": "Bruselas", "-FI": "Helsinki", "-IE": "Dublín"}.get(a_cnbc(tk)[-3:], nombre or "—")
+
+
+class Cotizaciones:
     def cotizaciones(self, simbolos, lote=40):
         out = {}
         for i in range(0, len(simbolos), lote):
             parte = simbolos[i:i + lote]
+            mapa = {a_cnbc(t): t for t in parte}
             try:
-                j = self.get("/v7/finance/quote", {"symbols": ",".join(parte), "lang": "es-ES", "region": "ES"})
+                j = json.loads(leer(QUOTE.format(urllib.parse.quote("|".join(mapa), safe="|."))))
             except Exception as e:  # noqa: BLE001
-                log(f"Yahoo quote: lote {i // lote + 1} sin datos: {e}")
+                log(f"Cotizaciones: lote {i // lote + 1} sin datos: {e}")
                 continue
-            for q in (j.get("quoteResponse") or {}).get("result") or []:
-                d = _de_quote(q)
-                if d:
-                    out[q["symbol"]] = d
-            time.sleep(0.7)
-        return out
-
-    def spark(self, simbolos, lote=20):
-        """Respaldo: evolución en el día de varios símbolos por petición (sirve para elegir y para la gráfica)."""
-        out = {}
-        for i in range(0, len(simbolos), lote):
-            parte = simbolos[i:i + lote]
-            try:
-                j = self.get("/v8/finance/spark", {"symbols": ",".join(parte), "range": "1d", "interval": "5m"})
-            except Exception as e:  # noqa: BLE001
-                log(f"Yahoo spark: lote {i // lote + 1} sin datos: {e}")
-                continue
-            items = j.items() if isinstance(j, dict) and "spark" not in j else \
-                [(r.get("symbol"), (r.get("response") or [{}])[0]) for r in (j.get("spark") or {}).get("result") or []]
-            for tk, r in items:
+            for q in ((j.get("FormattedQuoteResult") or {}).get("FormattedQuote") or []):
+                tk = mapa.get(q.get("symbol"))
+                precio, prev = _num(q.get("last")), _num(q.get("previous_day_closing"))
+                if not tk or q.get("code") not in (0, "0") or not precio or not prev:
+                    continue
+                zona = ZONAS.get(q.get("timeZone") or "", "Europe/Madrid")
                 try:
-                    d = _de_serie(r)
-                    if d:
-                        out[tk] = d
-                except Exception as e:  # noqa: BLE001
-                    log("spark", tk, e)
-            time.sleep(0.7)
+                    t = dt.datetime.fromisoformat(q.get("last_time"))
+                except (TypeError, ValueError):
+                    t = None
+                out[tk] = {"precio": precio, "prev": prev, "c": round((precio / prev - 1) * 100, 2),
+                           "c_fuente": _num(q.get("change_pct")), "bolsa": bolsa_de(q.get("exchange"), tk),
+                           "moneda": q.get("currencyCode") or "", "zona": zona,
+                           "sesion": t.astimezone(ZoneInfo(zona)).date().isoformat() if t else None,
+                           "hora_madrid": t.astimezone(MADRID).strftime("%H:%M") if t else None,
+                           "abierta": q.get("curmktstatus") == "REG_MKT", "g": None}
+            time.sleep(0.5)
         return out
 
-    def grafica(self, tk):
-        j = self.get("/v8/finance/chart/" + urllib.parse.quote(tk),
-                     {"range": "1d", "interval": "5m", "includePrePost": "false"})
-        res = (j.get("chart") or {}).get("result") or []
-        if not res:
-            raise RuntimeError((j.get("chart") or {}).get("error") or "sin datos")
-        return _de_serie(res[0])
-
-
-def _fecha(ts, tzname):
-    if not ts:
-        return None, None
-    tz = ZoneInfo(tzname or "UTC")
-    return (dt.datetime.fromtimestamp(ts, tz).date().isoformat(),
-            dt.datetime.fromtimestamp(ts, MADRID).strftime("%H:%M"))
-
-
-def _de_quote(q):
-    precio, prev = q.get("regularMarketPrice"), q.get("regularMarketPreviousClose")
-    if not precio or not prev:
-        return None
-    ses, hora = _fecha(q.get("regularMarketTime"), q.get("exchangeTimezoneName"))
-    return {"precio": precio, "prev": prev, "c": round((precio / prev - 1) * 100, 2), "bolsa": q.get("exchange") or "",
-            "moneda": q.get("currency") or "", "sesion": ses, "hora_madrid": hora,
-            "abierta": q.get("marketState") == "REGULAR", "g": None}
-
-
-def _de_serie(r):
-    """Respuesta de chart/spark (formato completo o simplificado) → precio, cierre anterior y serie en %."""
-    m = r.get("meta") or {}
-    if "indicators" in r:
-        ts, cl = r.get("timestamp") or [], (((r.get("indicators") or {}).get("quote") or [{}])[0].get("close") or [])
-    else:
-        ts, cl = r.get("timestamp") or [], r.get("close") or []
-    pares = [(t, c) for t, c in zip(ts, cl) if c is not None]
-    prev = m.get("chartPreviousClose") or m.get("previousClose") or r.get("chartPreviousClose") or r.get("previousClose")
-    precio = m.get("regularMarketPrice") or (pares[-1][1] if pares else None)
-    if not prev or not precio:
-        return None
-    ses, hora = _fecha(m.get("regularMarketTime") or (pares[-1][0] if pares else None),
-                       m.get("exchangeTimezoneName") or r.get("exchangeTimezoneName"))
-    return {"precio": precio, "prev": prev, "c": round((precio / prev - 1) * 100, 2),
-            "bolsa": m.get("exchangeName") or "", "moneda": m.get("currency") or "", "sesion": ses,
-            "hora_madrid": hora, "abierta": _abierta(m),
-            "g": _reducir([round((c / prev - 1) * 100, 2) for _, c in pares]) or None}
-
-
-def _abierta(m):
-    p = (m.get("currentTradingPeriod") or {}).get("regular") or {}
-    ahora = time.time()
-    return bool(p.get("start") and p.get("end") and p["start"] <= ahora <= p["end"])
+    def grafica(self, tk, prev, zona):
+        """Evolución de la última sesión regular, en % sobre el cierre anterior."""
+        j = json.loads(leer(CHART.format(urllib.parse.quote(a_cnbc(tk))), intentos=2, tiempo=20))
+        barras = ((j.get("barData") or {}).get("priceBars") or [])
+        z = ZoneInfo(zona)
+        pts = []
+        for b in barras:
+            c, ms = _num(b.get("close")), b.get("tradeTimeinMills")
+            if c is None or not ms:
+                continue
+            pts.append((dt.datetime.fromtimestamp(int(ms) / 1000, z), c))
+        if not pts:
+            raise RuntimeError("sin barras")
+        dia = pts[-1][0].date()
+        ini, fin = SESION.get(zona, SESION_EU)
+        hoy = [c for t, c in pts if t.date() == dia and ini <= t.strftime("%H:%M") <= fin]
+        if len(hoy) < 2:
+            raise RuntimeError("sesión sin barras suficientes")
+        return {"c": round((hoy[-1] / prev - 1) * 100, 2), "g": _reducir([round((c / prev - 1) * 100, 2) for c in hoy]),
+                "sesion": dia.isoformat()}
 
 
 def _reducir(g):
@@ -392,14 +355,13 @@ def main():
             miembros.setdefault(x["tk"], dict(x))
     log(f"Universo: {sum(len(uni.get(k, [])) for k in ('ibex', 'eurostoxx', 'sp500'))} valores "
         f"({len(miembros)} símbolos distintos)")
-    yahoo = Yahoo()
+    fuente = Cotizaciones()
     simbolos = list(miembros) + list(INDICES)
-    cot = yahoo.cotizaciones(simbolos)
-    log(f"Cotizaciones (quote): {len(cot)} de {len(simbolos)}")
-    if len(cot) < 0.6 * len(simbolos):
-        faltan = [t for t in simbolos if t not in cot]
-        cot.update(yahoo.spark(faltan))
-        log(f"Cotizaciones tras el respaldo (spark): {len(cot)} de {len(simbolos)}")
+    cot = fuente.cotizaciones(simbolos)
+    log(f"Cotizaciones: {len(cot)} de {len(simbolos)}")
+    raras = [t for t, d in cot.items() if d["c_fuente"] is not None and abs(d["c_fuente"] - d["c"]) > 0.05]
+    if raras:
+        log("Variación calculada distinta de la publicada:", raras[:20])
     fallos = {t: "sin datos" for t in simbolos if t not in cot}
     if fallos:
         log("Sin datos:", ", ".join(list(fallos)[:40]))
@@ -417,25 +379,27 @@ def main():
         if abs(d["c"]) > 60:            # dato anómalo (desdoblamiento, error de la fuente)
             avisos.append(f"{tk}: variación anómala {d['c']} %, descartado")
             continue
-        filas.append({"n": corto(x["n"]), "tk": tk, "b": BOLSAS.get(d["bolsa"], d["bolsa"] or "—"),
+        filas.append({"n": corto(x["n"]), "tk": tk, "b": d["bolsa"],
                       "indice": {"ibex": "Ibex 35", "eurostoxx": "Euro Stoxx 50", "sp500": "S&P 500"}[x["i"]],
                       "c": d["c"], "v": round(d["precio"], 4), "prev": round(d["prev"], 4), "moneda": d["moneda"],
                       "sesion": d["sesion"], "hora": d["hora_madrid"], "abierta": d["abierta"], "g": d["g"],
+                      "zona": d["zona"],
                       "grupo": "ibex" if x["i"] == "ibex" else "inter"})
     ibex = [f for f in filas if f["grupo"] == "ibex"]
     inter = [f for f in filas if f["grupo"] == "inter" and not f["tk"].endswith(".MC")]
     suben, bajan = columna(ibex, inter, True), columna(ibex, inter, False)
     for f in suben + bajan:
         f.pop("grupo", None)
-        if not f["g"]:
+        if not f.get("g"):
             try:
-                d = yahoo.grafica(f["tk"])
-                f["g"] = d["g"] if d else None
+                d = fuente.grafica(f["tk"], f["prev"], f.pop("zona"))
+                f["g"] = d["g"]
                 if d and abs(d["c"] - f["c"]) > 0.3:
                     avisos.append(f"{f['tk']}: la gráfica da {d['c']} % y la cotización {f['c']} %")
             except Exception as e:  # noqa: BLE001
                 avisos.append(f"{f['tk']}: sin gráfica ({str(e)[:80]})")
             time.sleep(0.6)
+        f.pop("zona", None)
 
     indices = {}
     for tk, nombre in INDICES.items():
@@ -445,10 +409,10 @@ def main():
                                "sesion": d["sesion"], "hora": d["hora_madrid"], "abierta": d["abierta"]}
     salida = {
         "generado": ahora.isoformat(timespec="seconds"),
-        "fuente": "Yahoo Finance (cotizaciones); Wikipedia (composición de los índices)",
+        "fuente": "CNBC (cotizaciones y gráficas); Wikipedia (composición de los índices)",
         "criterio": "Por columna: los 2 valores del Ibex 35 y los 3 del Euro Stoxx 50 y el S&P 500 que más suben "
                     "(o bajan) en la última sesión; si un grupo no llega, se completa con el otro.",
-        "sesiones": {BOLSAS.get(b, b): s for b, s in sorted(ultima.items())},
+        "sesiones": dict(sorted(ultima.items())),
         "valores_con_datos": len(filas),
         "suben": suben, "bajan": bajan, "indices": indices,
         "avisos": avisos, "sin_datos": len(fallos),
