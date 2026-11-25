@@ -466,6 +466,8 @@ def cabecera(filas, generado):
         z = "EE. UU." if f.get("b") in EEUU else "Europa"
         zonas.setdefault(z, []).append(f)
     estado = {z: (any(f.get("abierta") for f in fs), max(f.get("sesion") or "" for f in fs)) for z, fs in zonas.items()}
+    if dt.datetime.fromisoformat(generado).astimezone(MADRID).date() != dt.datetime.now(MADRID).date():
+        hora = _dia(dt.datetime.fromisoformat(generado).astimezone(MADRID).date().isoformat()) + ", " + hora
     if all(a for a, _ in estado.values()):
         return f"en sesión · {hora}"
     if not any(a for a, _ in estado.values()):
@@ -489,6 +491,9 @@ def cmd_edicion(args):
     if edad > 20:
         sys.exit(f"VALORES_VIEJOS: los datos son de {d['generado']} (hace {edad:.0f} h); no se tocan los valores")
     filas = (d.get("suben") or []) + (d.get("bajan") or [])
+    if gen.astimezone(MADRID).date() != dt.datetime.now(MADRID).date() and any(f.get("abierta") for f in filas):
+        sys.exit(f"VALORES_VIEJOS: los datos ({d['generado']}) son de una sesión de otro día que aún no había cerrado; "
+                 "no se tocan los valores")
     if len(filas) < 4:
         sys.exit("VALORES_INSUFICIENTES: menos de 4 valores en los datos; no se tocan los valores")
     limpia = lambda f: {"n": f["n"], "b": f["b"], "c": f["c"], "tk": f["tk"], **({"g": f["g"]} if f.get("g") else {})}
