@@ -322,6 +322,10 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
 .vl-h{padding:9px 14px 8px;font-family:var(--f-display);font-weight:700;font-stretch:85%;text-transform:uppercase;letter-spacing:.08em;font-size:12px;border-bottom:1px solid var(--rule)}
 .vl-row{display:grid;grid-template-columns:minmax(0,1fr) 84px 5.7em;column-gap:14px;align-items:center;padding:8px 14px;border-top:1px solid var(--rule)}
 .vl-h + .vl-row{border-top:0}
+/* Each stock row is a link to a Google search for its quote */
+a.vl-row{color:inherit;text-decoration:none;-webkit-tap-highlight-color:transparent}
+a.vl-row:hover,a.vl-row:active{background:var(--accent-soft)}
+a.vl-row:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:4px}
 .vl-id{min-width:0}
 .vl-n{display:block;font-family:var(--f-display);font-weight:650;font-stretch:88%;font-size:15px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .vl-x{display:block;font-family:var(--f-mono);font-size:10.5px;color:var(--ink-2);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -2587,7 +2591,15 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
   /* Verification is no longer shown (every story meets the sourcing rules); only the exceptions are flagged:
      «en desarrollo» next to the headline, «una sola fuente original» at the end of the sources */
   var AVISO_CONF = {'en-desarrollo': 'En desarrollo', 'una-fuente': 'Una sola fuente original'};
-  var VL_NOTA = 'Por columna, los 2 valores del Ibex 35 y los 3 del Euro Stoxx 50 y el S&P 500 que más suben o bajan en la sesión. La línea discontinua marca el cierre anterior. Cotizaciones: CNBC.';
+  var VL_NOTA = 'Por columna, los 2 valores del Ibex 35 y los 3 del Euro Stoxx 50 y el S&P 500 que más suben o bajan en la sesión. La línea discontinua marca el cierre anterior. Toca un valor para ver su cotización en Google. Cotizaciones: CNBC.';
+  /* Google search for a stock's quote: «Telefónica BME:TEF» (Google Finance exchange code), or «<name> acciones» */
+  var GEX = {'Madrid': 'BME', 'Nasdaq': 'NASDAQ', 'NYSE': 'NYSE', 'Fráncfort': 'ETR', 'París': 'EPA', 'Ámsterdam': 'AMS',
+             'Milán': 'BIT', 'Bruselas': 'EBR', 'Helsinki': 'HEL', 'Dublín': 'ISE', 'Lisboa': 'ELI'};
+  function gUrl(r){
+    var base = String(r.tk || '').replace(/\.(MC|DE|PA|AS|MI|BR|HE|IR|LS)$/, '').replace(/-[A-Z]{2}$/, '');
+    var ex = GEX[r.b];
+    return 'https://www.google.com/search?q=' + encodeURIComponent(r.n + (ex && base ? ' ' + ex + ':' + base : ' acciones'));
+  }
   function link(t, u, cls){
     var a = el('a', cls || null, t); a.href = u; a.target = '_blank'; a.rel = 'noopener'; return a;
   }
@@ -2753,8 +2765,10 @@ a.tr-t:hover{color:var(--accent);text-decoration:underline}
         var col = el('div','vl-col');
         col.appendChild(el('div','vl-h ' + c[2], (c[2] === 'vl-up' ? '▲ ' : '▼ ') + c[0]));
         c[1].forEach(function(r){
-          var row = el('div','vl-row');
-          row.setAttribute('aria-label', r.n + ', ' + r.b + ': ' + (r.c > 0 ? '+' : '') + fmtNum(r.c, 2) + ' %');
+          var row = el('a','vl-row');
+          row.href = gUrl(r); row.target = '_blank'; row.rel = 'noopener';
+          row.title = 'Ver la cotización de ' + r.n + ' en Google';
+          row.setAttribute('aria-label', r.n + ', ' + r.b + ': ' + (r.c > 0 ? '+' : '') + fmtNum(r.c, 2) + ' %. Ver la cotización en Google');
           var id = el('span','vl-id'); id.appendChild(el('span','vl-n', r.n)); id.appendChild(el('span','vl-x', r.b));
           row.appendChild(id);
           row.appendChild(spark(r.g, c[2]));

@@ -14,13 +14,23 @@ Gmail-safe by design (checked against what the Gmail connector actually stores, 
 - layout: dispatches use the "fab four" hybrid — two equal columns when the message is at least
   620px wide (computer, iPad), one full-width column below that (phones), with no media queries.
 """
-import html, json, math, os, re, sys
+import html, json, math, os, re, sys, urllib.parse
 
 # La verificación ya no se muestra (todas las noticias cumplen las reglas de fuentes; 13 nov 2026): solo las excepciones
 # se señalan, igual que en la web: «En desarrollo» junto al título y «Una sola fuente original» al final de las fuentes
 # (25 nov 2026).
 AVISO_CONF = {"en-desarrollo": "En desarrollo"}
 AVISO_FUENTE = "Una sola fuente original"
+# Valores que más se mueven: cada nombre lleva a una búsqueda de Google de su cotización (igual que en la web)
+GEX = {"Madrid": "BME", "Nasdaq": "NASDAQ", "NYSE": "NYSE", "Fráncfort": "ETR", "París": "EPA", "Ámsterdam": "AMS",
+       "Milán": "BIT", "Bruselas": "EBR", "Helsinki": "HEL", "Dublín": "ISE", "Lisboa": "ELI"}
+
+
+def google(f):
+    base = re.sub(r"-[A-Z]{2}$", "", re.sub(r"\.(MC|DE|PA|AS|MI|BR|HE|IR|LS)$", "", f.get("tk") or ""))
+    ex = GEX.get(f.get("b"))
+    q = f["n"] + (f" {ex}:{base}" if ex and base else " acciones")
+    return "https://www.google.com/search?q=" + urllib.parse.quote_plus(q)
 WARN = "#9A5800"
 # block kind: (band background, band text, left rule / label colour)
 BANDS = {"blue": ("#D6E2F4", "#14325F", "#2F5F9E"), "gray": ("#E1E5EA", "#262D36", "#5A6470"),
@@ -237,7 +247,8 @@ def main(page, url, out, respaldo=None, sin_valores=False):
             if not f:
                 return "<td></td><td></td>"
             pct = ("+" if f["c"] > 0 else "−") + num(abs(f["c"]), 2) + "&nbsp;%"
-            return (f'<td>{e(f["n"])} <small style="color:{INK2}">{e(f["b"])}</small></td>'
+            return (f'<td><a href="{e(google(f))}" style="color:{INK};text-decoration:none">{e(f["n"])}</a> '
+                    f'<small style="color:{INK2}">{e(f["b"])}</small></td>'
                     f'<td align="right" style="color:{color};white-space:nowrap"><b>{pct}</b></td>')
         rows = [f'<tr><td colspan="2" style="color:{UP}"><b>&#9650; SUBEN</b></td><td colspan="2" style="color:{DOWN}"><b>&#9660; BAJAN</b></td></tr>']
         for i in range(max(len(su), len(ba))):
