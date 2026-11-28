@@ -1,0 +1,2949 @@
+{
+"ibex": [
+{
+"tk": "ACS.MC",
+"n": "ACS",
+"i": "ibex"
+},
+{
+"tk": "ACX.MC",
+"n": "Acerinox",
+"i": "ibex"
+},
+{
+"tk": "AMS.MC",
+"n": "Amadeus IT Group",
+"i": "ibex"
+},
+{
+"tk": "ANA.MC",
+"n": "Acciona",
+"i": "ibex"
+},
+{
+"tk": "ANE.MC",
+"n": "Acciona Energía",
+"i": "ibex"
+},
+{
+"tk": "BBVA.MC",
+"n": "BBVA",
+"i": "ibex"
+},
+{
+"tk": "BKT.MC",
+"n": "Bankinter",
+"i": "ibex"
+},
+{
+"tk": "CABK.MC",
+"n": "CaixaBank",
+"i": "ibex"
+},
+{
+"tk": "CLNX.MC",
+"n": "Cellnex Telecom",
+"i": "ibex"
+},
+{
+"tk": "COL.MC",
+"n": "Inmobiliaria Colonial",
+"i": "ibex"
+},
+{
+"tk": "AENA.MC",
+"n": "AENA",
+"i": "ibex"
+},
+{
+"tk": "ELE.MC",
+"n": "Endesa",
+"i": "ibex"
+},
+{
+"tk": "ENG.MC",
+"n": "Enagás",
+"i": "ibex"
+},
+{
+"tk": "FDR.MC",
+"n": "Fluidra",
+"i": "ibex"
+},
+{
+"tk": "FER.MC",
+"n": "Ferrovial",
+"i": "ibex"
+},
+{
+"tk": "GRF.MC",
+"n": "Grifols",
+"i": "ibex"
+},
+{
+"tk": "IAG.MC",
+"n": "International Airlines Group",
+"i": "ibex"
+},
+{
+"tk": "IBE.MC",
+"n": "Iberdrola",
+"i": "ibex"
+},
+{
+"tk": "IDR.MC",
+"n": "Indra",
+"i": "ibex"
+},
+{
+"tk": "ITX.MC",
+"n": "Inditex",
+"i": "ibex"
+},
+{
+"tk": "LOG.MC",
+"n": "Logista",
+"i": "ibex"
+},
+{
+"tk": "MAP.MC",
+"n": "Mapfre",
+"i": "ibex"
+},
+{
+"tk": "MRL.MC",
+"n": "Merlin Properties",
+"i": "ibex"
+},
+{
+"tk": "MTS.MC",
+"n": "ArcelorMittal",
+"i": "ibex"
+},
+{
+"tk": "NTGY.MC",
+"n": "Naturgy",
+"i": "ibex"
+},
+{
+"tk": "PUIG.MC",
+"n": "Puig",
+"i": "ibex"
+},
+{
+"tk": "RED.MC",
+"n": "Redeia Corporación",
+"i": "ibex"
+},
+{
+"tk": "REP.MC",
+"n": "Repsol",
+"i": "ibex"
+},
+{
+"tk": "ROVI.MC",
+"n": "Laboratorios Rovi [es]",
+"i": "ibex"
+},
+{
+"tk": "SAB.MC",
+"n": "Banco Sabadell",
+"i": "ibex"
+},
+{
+"tk": "SAN.MC",
+"n": "Santander",
+"i": "ibex"
+},
+{
+"tk": "SCYR.MC",
+"n": "Sacyr",
+"i": "ibex"
+},
+{
+"tk": "SLR.MC",
+"n": "Solaria",
+"i": "ibex"
+},
+{
+"tk": "TEF.MC",
+"n": "Telefónica",
+"i": "ibex"
+},
+{
+"tk": "UNI.MC",
+"n": "Unicaja",
+"i": "ibex"
+}
+],
+"eurostoxx": [
+{
+"tk": "ADS.DE",
+"n": "Adidas",
+"i": "eurostoxx"
+},
+{
+"tk": "ADYEN.AS",
+"n": "Adyen",
+"i": "eurostoxx"
+},
+{
+"tk": "AD.AS",
+"n": "Ahold Delhaize",
+"i": "eurostoxx"
+},
+{
+"tk": "AI.PA",
+"n": "Air Liquide",
+"i": "eurostoxx"
+},
+{
+"tk": "AIR.PA",
+"n": "Airbus",
+"i": "eurostoxx"
+},
+{
+"tk": "ALV.DE",
+"n": "Allianz",
+"i": "eurostoxx"
+},
+{
+"tk": "ABI.BR",
+"n": "Anheuser-Busch InBev",
+"i": "eurostoxx"
+},
+{
+"tk": "ARGX.BR",
+"n": "Argenx",
+"i": "eurostoxx"
+},
+{
+"tk": "ASML.AS",
+"n": "ASML Holding",
+"i": "eurostoxx"
+},
+{
+"tk": "CS.PA",
+"n": "Axa",
+"i": "eurostoxx"
+},
+{
+"tk": "BAS.DE",
+"n": "BASF",
+"i": "eurostoxx"
+},
+{
+"tk": "BAYN.DE",
+"n": "Bayer",
+"i": "eurostoxx"
+},
+{
+"tk": "BBVA.MC",
+"n": "BBVA",
+"i": "eurostoxx"
+},
+{
+"tk": "SAN.MC",
+"n": "Banco Santander",
+"i": "eurostoxx"
+},
+{
+"tk": "BMW.DE",
+"n": "BMW",
+"i": "eurostoxx"
+},
+{
+"tk": "BNP.PA",
+"n": "BNP Paribas",
+"i": "eurostoxx"
+},
+{
+"tk": "BN.PA",
+"n": "Danone",
+"i": "eurostoxx"
+},
+{
+"tk": "DBK.DE",
+"n": "Deutsche Bank",
+"i": "eurostoxx"
+},
+{
+"tk": "DB1.DE",
+"n": "Deutsche Börse",
+"i": "eurostoxx"
+},
+{
+"tk": "DHL.DE",
+"n": "Deutsche Post",
+"i": "eurostoxx"
+},
+{
+"tk": "DTE.DE",
+"n": "Deutsche Telekom",
+"i": "eurostoxx"
+},
+{
+"tk": "ENEL.MI",
+"n": "Enel",
+"i": "eurostoxx"
+},
+{
+"tk": "ENGI.PA",
+"n": "Engie",
+"i": "eurostoxx"
+},
+{
+"tk": "ENI.MI",
+"n": "Eni",
+"i": "eurostoxx"
+},
+{
+"tk": "EL.PA",
+"n": "EssilorLuxottica",
+"i": "eurostoxx"
+},
+{
+"tk": "RACE.MI",
+"n": "Ferrari",
+"i": "eurostoxx"
+},
+{
+"tk": "RMS.PA",
+"n": "Hermès",
+"i": "eurostoxx"
+},
+{
+"tk": "IBE.MC",
+"n": "Iberdrola",
+"i": "eurostoxx"
+},
+{
+"tk": "ITX.MC",
+"n": "Inditex",
+"i": "eurostoxx"
+},
+{
+"tk": "IFX.DE",
+"n": "Infineon Technologies",
+"i": "eurostoxx"
+},
+{
+"tk": "INGA.AS",
+"n": "ING Group",
+"i": "eurostoxx"
+},
+{
+"tk": "ISP.MI",
+"n": "Intesa Sanpaolo",
+"i": "eurostoxx"
+},
+{
+"tk": "OR.PA",
+"n": "L'Oréal",
+"i": "eurostoxx"
+},
+{
+"tk": "MC.PA",
+"n": "LVMH Moët Hennessy Louis Vuitton",
+"i": "eurostoxx"
+},
+{
+"tk": "MBG.DE",
+"n": "Mercedes-Benz Group",
+"i": "eurostoxx"
+},
+{
+"tk": "MUV2.DE",
+"n": "Munich Re",
+"i": "eurostoxx"
+},
+{
+"tk": "NOKIA.HE",
+"n": "Nokia",
+"i": "eurostoxx"
+},
+{
+"tk": "NDA-FI.HE",
+"n": "Nordea",
+"i": "eurostoxx"
+},
+{
+"tk": "PRX.AS",
+"n": "Prosus",
+"i": "eurostoxx"
+},
+{
+"tk": "RHM.DE",
+"n": "Rheinmetall",
+"i": "eurostoxx"
+},
+{
+"tk": "SAF.PA",
+"n": "Safran",
+"i": "eurostoxx"
+},
+{
+"tk": "SGO.PA",
+"n": "Saint-Gobain",
+"i": "eurostoxx"
+},
+{
+"tk": "SAN.PA",
+"n": "Sanofi",
+"i": "eurostoxx"
+},
+{
+"tk": "SAP.DE",
+"n": "SAP",
+"i": "eurostoxx"
+},
+{
+"tk": "SU.PA",
+"n": "Schneider Electric",
+"i": "eurostoxx"
+},
+{
+"tk": "SIE.DE",
+"n": "Siemens",
+"i": "eurostoxx"
+},
+{
+"tk": "ENR.DE",
+"n": "Siemens Energy",
+"i": "eurostoxx"
+},
+{
+"tk": "TTE.PA",
+"n": "TotalEnergies",
+"i": "eurostoxx"
+},
+{
+"tk": "DG.PA",
+"n": "Vinci SA",
+"i": "eurostoxx"
+},
+{
+"tk": "UCG.MI",
+"n": "UniCredit",
+"i": "eurostoxx"
+}
+],
+"sp500": [
+{
+"tk": "MMM",
+"n": "3M",
+"i": "sp500"
+},
+{
+"tk": "AOS",
+"n": "A. O. Smith",
+"i": "sp500"
+},
+{
+"tk": "ABT",
+"n": "Abbott Laboratories",
+"i": "sp500"
+},
+{
+"tk": "ABBV",
+"n": "AbbVie",
+"i": "sp500"
+},
+{
+"tk": "ACN",
+"n": "Accenture",
+"i": "sp500"
+},
+{
+"tk": "ADBE",
+"n": "Adobe Inc.",
+"i": "sp500"
+},
+{
+"tk": "AMD",
+"n": "Advanced Micro Devices",
+"i": "sp500"
+},
+{
+"tk": "AES",
+"n": "AES Corporation",
+"i": "sp500"
+},
+{
+"tk": "AFL",
+"n": "Aflac",
+"i": "sp500"
+},
+{
+"tk": "A",
+"n": "Agilent Technologies",
+"i": "sp500"
+},
+{
+"tk": "APD",
+"n": "Air Products",
+"i": "sp500"
+},
+{
+"tk": "ABNB",
+"n": "Airbnb",
+"i": "sp500"
+},
+{
+"tk": "AKAM",
+"n": "Akamai Technologies",
+"i": "sp500"
+},
+{
+"tk": "ALB",
+"n": "Albemarle Corporation",
+"i": "sp500"
+},
+{
+"tk": "ARE",
+"n": "Alexandria Real Estate Equities",
+"i": "sp500"
+},
+{
+"tk": "ALGN",
+"n": "Align Technology",
+"i": "sp500"
+},
+{
+"tk": "ALLE",
+"n": "Allegion",
+"i": "sp500"
+},
+{
+"tk": "LNT",
+"n": "Alliant Energy",
+"i": "sp500"
+},
+{
+"tk": "ALL",
+"n": "Allstate",
+"i": "sp500"
+},
+{
+"tk": "GOOGL",
+"n": "Alphabet Inc. (Class A)",
+"i": "sp500"
+},
+{
+"tk": "GOOG",
+"n": "Alphabet Inc. (Class C)",
+"i": "sp500"
+},
+{
+"tk": "MO",
+"n": "Altria",
+"i": "sp500"
+},
+{
+"tk": "AMZN",
+"n": "Amazon",
+"i": "sp500"
+},
+{
+"tk": "AMCR",
+"n": "Amcor",
+"i": "sp500"
+},
+{
+"tk": "AEE",
+"n": "Ameren",
+"i": "sp500"
+},
+{
+"tk": "AEP",
+"n": "American Electric Power",
+"i": "sp500"
+},
+{
+"tk": "AXP",
+"n": "American Express",
+"i": "sp500"
+},
+{
+"tk": "AIG",
+"n": "American International Group",
+"i": "sp500"
+},
+{
+"tk": "AMT",
+"n": "American Tower",
+"i": "sp500"
+},
+{
+"tk": "AWK",
+"n": "American Water Works",
+"i": "sp500"
+},
+{
+"tk": "AMP",
+"n": "Ameriprise Financial",
+"i": "sp500"
+},
+{
+"tk": "AME",
+"n": "Ametek",
+"i": "sp500"
+},
+{
+"tk": "AMGN",
+"n": "Amgen",
+"i": "sp500"
+},
+{
+"tk": "APH",
+"n": "Amphenol",
+"i": "sp500"
+},
+{
+"tk": "ADI",
+"n": "Analog Devices",
+"i": "sp500"
+},
+{
+"tk": "AON",
+"n": "Aon plc",
+"i": "sp500"
+},
+{
+"tk": "APA",
+"n": "APA Corporation",
+"i": "sp500"
+},
+{
+"tk": "APO",
+"n": "Apollo Global Management",
+"i": "sp500"
+},
+{
+"tk": "AAPL",
+"n": "Apple Inc.",
+"i": "sp500"
+},
+{
+"tk": "AMAT",
+"n": "Applied Materials",
+"i": "sp500"
+},
+{
+"tk": "APP",
+"n": "AppLovin",
+"i": "sp500"
+},
+{
+"tk": "APTV",
+"n": "Aptiv",
+"i": "sp500"
+},
+{
+"tk": "ACGL",
+"n": "Arch Capital Group",
+"i": "sp500"
+},
+{
+"tk": "ADM",
+"n": "Archer Daniels Midland",
+"i": "sp500"
+},
+{
+"tk": "ARES",
+"n": "Ares Management",
+"i": "sp500"
+},
+{
+"tk": "ANET",
+"n": "Arista Networks",
+"i": "sp500"
+},
+{
+"tk": "AJG",
+"n": "Arthur J. Gallagher & Co.",
+"i": "sp500"
+},
+{
+"tk": "AIZ",
+"n": "Assurant",
+"i": "sp500"
+},
+{
+"tk": "T",
+"n": "AT&T",
+"i": "sp500"
+},
+{
+"tk": "ATO",
+"n": "Atmos Energy",
+"i": "sp500"
+},
+{
+"tk": "ADSK",
+"n": "Autodesk",
+"i": "sp500"
+},
+{
+"tk": "ADP",
+"n": "Automatic Data Processing",
+"i": "sp500"
+},
+{
+"tk": "AZO",
+"n": "AutoZone",
+"i": "sp500"
+},
+{
+"tk": "AVY",
+"n": "Avery Dennison",
+"i": "sp500"
+},
+{
+"tk": "AXON",
+"n": "Axon Enterprise",
+"i": "sp500"
+},
+{
+"tk": "BKR",
+"n": "Baker Hughes",
+"i": "sp500"
+},
+{
+"tk": "BALL",
+"n": "Ball Corporation",
+"i": "sp500"
+},
+{
+"tk": "BAC",
+"n": "Bank of America",
+"i": "sp500"
+},
+{
+"tk": "BAX",
+"n": "Baxter International",
+"i": "sp500"
+},
+{
+"tk": "BDX",
+"n": "Becton Dickinson",
+"i": "sp500"
+},
+{
+"tk": "BRK.B",
+"n": "Berkshire Hathaway",
+"i": "sp500"
+},
+{
+"tk": "BBY",
+"n": "Best Buy",
+"i": "sp500"
+},
+{
+"tk": "TECH",
+"n": "Bio-Techne",
+"i": "sp500"
+},
+{
+"tk": "BIIB",
+"n": "Biogen",
+"i": "sp500"
+},
+{
+"tk": "BLK",
+"n": "BlackRock",
+"i": "sp500"
+},
+{
+"tk": "BX",
+"n": "Blackstone Inc.",
+"i": "sp500"
+},
+{
+"tk": "XYZ",
+"n": "Block, Inc.",
+"i": "sp500"
+},
+{
+"tk": "BE",
+"n": "Bloom Energy",
+"i": "sp500"
+},
+{
+"tk": "BNY",
+"n": "BNY Mellon",
+"i": "sp500"
+},
+{
+"tk": "BA",
+"n": "Boeing",
+"i": "sp500"
+},
+{
+"tk": "BKNG",
+"n": "Booking Holdings",
+"i": "sp500"
+},
+{
+"tk": "BSX",
+"n": "Boston Scientific",
+"i": "sp500"
+},
+{
+"tk": "BMY",
+"n": "Bristol Myers Squibb",
+"i": "sp500"
+},
+{
+"tk": "AVGO",
+"n": "Broadcom",
+"i": "sp500"
+},
+{
+"tk": "BR",
+"n": "Broadridge Financial Solutions",
+"i": "sp500"
+},
+{
+"tk": "BRO",
+"n": "Brown & Brown",
+"i": "sp500"
+},
+{
+"tk": "BF.B",
+"n": "Brown–Forman",
+"i": "sp500"
+},
+{
+"tk": "BG",
+"n": "Bunge Global",
+"i": "sp500"
+},
+{
+"tk": "BXP",
+"n": "BXP, Inc.",
+"i": "sp500"
+},
+{
+"tk": "CHRW",
+"n": "C.H. Robinson",
+"i": "sp500"
+},
+{
+"tk": "CDNS",
+"n": "Cadence Design Systems",
+"i": "sp500"
+},
+{
+"tk": "CPT",
+"n": "Camden Property Trust",
+"i": "sp500"
+},
+{
+"tk": "COF",
+"n": "Capital One",
+"i": "sp500"
+},
+{
+"tk": "CAH",
+"n": "Cardinal Health",
+"i": "sp500"
+},
+{
+"tk": "CCL",
+"n": "Carnival Corporation",
+"i": "sp500"
+},
+{
+"tk": "CARR",
+"n": "Carrier Global",
+"i": "sp500"
+},
+{
+"tk": "CVNA",
+"n": "Carvana",
+"i": "sp500"
+},
+{
+"tk": "CASY",
+"n": "Casey's",
+"i": "sp500"
+},
+{
+"tk": "CAT",
+"n": "Caterpillar Inc.",
+"i": "sp500"
+},
+{
+"tk": "CBOE",
+"n": "Cboe Global Markets",
+"i": "sp500"
+},
+{
+"tk": "CBRE",
+"n": "CBRE Group",
+"i": "sp500"
+},
+{
+"tk": "CDW",
+"n": "CDW Corporation",
+"i": "sp500"
+},
+{
+"tk": "COR",
+"n": "Cencora",
+"i": "sp500"
+},
+{
+"tk": "CNC",
+"n": "Centene Corporation",
+"i": "sp500"
+},
+{
+"tk": "CNP",
+"n": "CenterPoint Energy",
+"i": "sp500"
+},
+{
+"tk": "CF",
+"n": "CF Industries",
+"i": "sp500"
+},
+{
+"tk": "CRL",
+"n": "Charles River Laboratories",
+"i": "sp500"
+},
+{
+"tk": "SCHW",
+"n": "Charles Schwab Corporation",
+"i": "sp500"
+},
+{
+"tk": "CHTR",
+"n": "Charter Communications",
+"i": "sp500"
+},
+{
+"tk": "CVX",
+"n": "Chevron Corporation",
+"i": "sp500"
+},
+{
+"tk": "CMG",
+"n": "Chipotle Mexican Grill",
+"i": "sp500"
+},
+{
+"tk": "CB",
+"n": "Chubb Limited",
+"i": "sp500"
+},
+{
+"tk": "CHD",
+"n": "Church & Dwight",
+"i": "sp500"
+},
+{
+"tk": "CIEN",
+"n": "Ciena",
+"i": "sp500"
+},
+{
+"tk": "CI",
+"n": "Cigna",
+"i": "sp500"
+},
+{
+"tk": "CINF",
+"n": "Cincinnati Financial",
+"i": "sp500"
+},
+{
+"tk": "CTAS",
+"n": "Cintas",
+"i": "sp500"
+},
+{
+"tk": "CSCO",
+"n": "Cisco",
+"i": "sp500"
+},
+{
+"tk": "C",
+"n": "Citigroup",
+"i": "sp500"
+},
+{
+"tk": "CFG",
+"n": "Citizens Financial Group",
+"i": "sp500"
+},
+{
+"tk": "CLX",
+"n": "Clorox",
+"i": "sp500"
+},
+{
+"tk": "CME",
+"n": "CME Group",
+"i": "sp500"
+},
+{
+"tk": "CMS",
+"n": "CMS Energy",
+"i": "sp500"
+},
+{
+"tk": "KO",
+"n": "Coca-Cola Company (The)",
+"i": "sp500"
+},
+{
+"tk": "CTSH",
+"n": "Cognizant",
+"i": "sp500"
+},
+{
+"tk": "COHR",
+"n": "Coherent Corp.",
+"i": "sp500"
+},
+{
+"tk": "COIN",
+"n": "Coinbase",
+"i": "sp500"
+},
+{
+"tk": "CL",
+"n": "Colgate-Palmolive",
+"i": "sp500"
+},
+{
+"tk": "CMCSA",
+"n": "Comcast",
+"i": "sp500"
+},
+{
+"tk": "FIX",
+"n": "Comfort Systems USA",
+"i": "sp500"
+},
+{
+"tk": "COP",
+"n": "ConocoPhillips",
+"i": "sp500"
+},
+{
+"tk": "ED",
+"n": "Consolidated Edison",
+"i": "sp500"
+},
+{
+"tk": "STZ",
+"n": "Constellation Brands",
+"i": "sp500"
+},
+{
+"tk": "CEG",
+"n": "Constellation Energy",
+"i": "sp500"
+},
+{
+"tk": "COO",
+"n": "Cooper Companies (The)",
+"i": "sp500"
+},
+{
+"tk": "CPRT",
+"n": "Copart",
+"i": "sp500"
+},
+{
+"tk": "GLW",
+"n": "Corning Inc.",
+"i": "sp500"
+},
+{
+"tk": "CPAY",
+"n": "Corpay",
+"i": "sp500"
+},
+{
+"tk": "CSGP",
+"n": "CoStar Group",
+"i": "sp500"
+},
+{
+"tk": "COST",
+"n": "Costco",
+"i": "sp500"
+},
+{
+"tk": "CRH",
+"n": "CRH plc",
+"i": "sp500"
+},
+{
+"tk": "CRWD",
+"n": "CrowdStrike",
+"i": "sp500"
+},
+{
+"tk": "CCI",
+"n": "Crown Castle",
+"i": "sp500"
+},
+{
+"tk": "CSX",
+"n": "CSX Corporation",
+"i": "sp500"
+},
+{
+"tk": "CMI",
+"n": "Cummins",
+"i": "sp500"
+},
+{
+"tk": "CVS",
+"n": "CVS Health",
+"i": "sp500"
+},
+{
+"tk": "DHR",
+"n": "Danaher Corporation",
+"i": "sp500"
+},
+{
+"tk": "DRI",
+"n": "Darden Restaurants",
+"i": "sp500"
+},
+{
+"tk": "DDOG",
+"n": "Datadog",
+"i": "sp500"
+},
+{
+"tk": "DVA",
+"n": "DaVita",
+"i": "sp500"
+},
+{
+"tk": "DECK",
+"n": "Deckers Brands",
+"i": "sp500"
+},
+{
+"tk": "DE",
+"n": "Deere & Company",
+"i": "sp500"
+},
+{
+"tk": "DELL",
+"n": "Dell Technologies",
+"i": "sp500"
+},
+{
+"tk": "DAL",
+"n": "Delta Air Lines",
+"i": "sp500"
+},
+{
+"tk": "DVN",
+"n": "Devon Energy",
+"i": "sp500"
+},
+{
+"tk": "DXCM",
+"n": "Dexcom",
+"i": "sp500"
+},
+{
+"tk": "FANG",
+"n": "Diamondback Energy",
+"i": "sp500"
+},
+{
+"tk": "DLR",
+"n": "Digital Realty",
+"i": "sp500"
+},
+{
+"tk": "DG",
+"n": "Dollar General",
+"i": "sp500"
+},
+{
+"tk": "DLTR",
+"n": "Dollar Tree",
+"i": "sp500"
+},
+{
+"tk": "D",
+"n": "Dominion Energy",
+"i": "sp500"
+},
+{
+"tk": "DPZ",
+"n": "Domino's",
+"i": "sp500"
+},
+{
+"tk": "DASH",
+"n": "DoorDash",
+"i": "sp500"
+},
+{
+"tk": "DOV",
+"n": "Dover Corporation",
+"i": "sp500"
+},
+{
+"tk": "DOW",
+"n": "Dow Inc.",
+"i": "sp500"
+},
+{
+"tk": "DHI",
+"n": "D. R. Horton",
+"i": "sp500"
+},
+{
+"tk": "DTE",
+"n": "DTE Energy",
+"i": "sp500"
+},
+{
+"tk": "DUK",
+"n": "Duke Energy",
+"i": "sp500"
+},
+{
+"tk": "DD",
+"n": "DuPont",
+"i": "sp500"
+},
+{
+"tk": "ETN",
+"n": "Eaton Corporation",
+"i": "sp500"
+},
+{
+"tk": "EBAY",
+"n": "eBay Inc.",
+"i": "sp500"
+},
+{
+"tk": "ECHO",
+"n": "EchoStar",
+"i": "sp500"
+},
+{
+"tk": "ECL",
+"n": "Ecolab",
+"i": "sp500"
+},
+{
+"tk": "EIX",
+"n": "Edison International",
+"i": "sp500"
+},
+{
+"tk": "EW",
+"n": "Edwards Lifesciences",
+"i": "sp500"
+},
+{
+"tk": "ELV",
+"n": "Elevance Health",
+"i": "sp500"
+},
+{
+"tk": "EME",
+"n": "Emcor",
+"i": "sp500"
+},
+{
+"tk": "EMR",
+"n": "Emerson Electric",
+"i": "sp500"
+},
+{
+"tk": "ETR",
+"n": "Entergy",
+"i": "sp500"
+},
+{
+"tk": "EOG",
+"n": "EOG Resources",
+"i": "sp500"
+},
+{
+"tk": "EQT",
+"n": "EQT Corporation",
+"i": "sp500"
+},
+{
+"tk": "EFX",
+"n": "Equifax",
+"i": "sp500"
+},
+{
+"tk": "EQIX",
+"n": "Equinix",
+"i": "sp500"
+},
+{
+"tk": "ERIE",
+"n": "Erie Indemnity",
+"i": "sp500"
+},
+{
+"tk": "ESS",
+"n": "Essex Property Trust",
+"i": "sp500"
+},
+{
+"tk": "EL",
+"n": "Estée Lauder Companies (The)",
+"i": "sp500"
+},
+{
+"tk": "EG",
+"n": "Everest Group",
+"i": "sp500"
+},
+{
+"tk": "EVRG",
+"n": "Evergy",
+"i": "sp500"
+},
+{
+"tk": "P",
+"n": "Everpure",
+"i": "sp500"
+},
+{
+"tk": "ES",
+"n": "Eversource Energy",
+"i": "sp500"
+},
+{
+"tk": "EXC",
+"n": "Exelon",
+"i": "sp500"
+},
+{
+"tk": "EXE",
+"n": "Expand Energy",
+"i": "sp500"
+},
+{
+"tk": "EXPE",
+"n": "Expedia Group",
+"i": "sp500"
+},
+{
+"tk": "EXPD",
+"n": "Expeditors International",
+"i": "sp500"
+},
+{
+"tk": "EXR",
+"n": "Extra Space Storage",
+"i": "sp500"
+},
+{
+"tk": "XOM",
+"n": "ExxonMobil",
+"i": "sp500"
+},
+{
+"tk": "FFIV",
+"n": "F5, Inc.",
+"i": "sp500"
+},
+{
+"tk": "FDS",
+"n": "FactSet",
+"i": "sp500"
+},
+{
+"tk": "FICO",
+"n": "Fair Isaac",
+"i": "sp500"
+},
+{
+"tk": "FAST",
+"n": "Fastenal",
+"i": "sp500"
+},
+{
+"tk": "FRT",
+"n": "Federal Realty Investment Trust",
+"i": "sp500"
+},
+{
+"tk": "FDX",
+"n": "FedEx",
+"i": "sp500"
+},
+{
+"tk": "FDXF",
+"n": "FedEx Freight",
+"i": "sp500"
+},
+{
+"tk": "FERG",
+"n": "Ferguson Enterprises",
+"i": "sp500"
+},
+{
+"tk": "FIS",
+"n": "Fidelity National Information Services",
+"i": "sp500"
+},
+{
+"tk": "FITB",
+"n": "Fifth Third Bancorp",
+"i": "sp500"
+},
+{
+"tk": "FSLR",
+"n": "First Solar",
+"i": "sp500"
+},
+{
+"tk": "FE",
+"n": "FirstEnergy",
+"i": "sp500"
+},
+{
+"tk": "FISV",
+"n": "Fiserv",
+"i": "sp500"
+},
+{
+"tk": "FLEX",
+"n": "Flex Ltd.",
+"i": "sp500"
+},
+{
+"tk": "F",
+"n": "Ford Motor Company",
+"i": "sp500"
+},
+{
+"tk": "FTNT",
+"n": "Fortinet",
+"i": "sp500"
+},
+{
+"tk": "FTV",
+"n": "Fortive",
+"i": "sp500"
+},
+{
+"tk": "FOXA",
+"n": "Fox Corporation (Class A)",
+"i": "sp500"
+},
+{
+"tk": "FOX",
+"n": "Fox Corporation (Class B)",
+"i": "sp500"
+},
+{
+"tk": "BEN",
+"n": "Franklin Resources",
+"i": "sp500"
+},
+{
+"tk": "FCX",
+"n": "Freeport-McMoRan",
+"i": "sp500"
+},
+{
+"tk": "GRMN",
+"n": "Garmin",
+"i": "sp500"
+},
+{
+"tk": "IT",
+"n": "Gartner",
+"i": "sp500"
+},
+{
+"tk": "GE",
+"n": "GE Aerospace",
+"i": "sp500"
+},
+{
+"tk": "GEHC",
+"n": "GE HealthCare",
+"i": "sp500"
+},
+{
+"tk": "GEV",
+"n": "GE Vernova",
+"i": "sp500"
+},
+{
+"tk": "GEN",
+"n": "Gen Digital",
+"i": "sp500"
+},
+{
+"tk": "GNRC",
+"n": "Generac",
+"i": "sp500"
+},
+{
+"tk": "GD",
+"n": "General Dynamics",
+"i": "sp500"
+},
+{
+"tk": "GIS",
+"n": "General Mills",
+"i": "sp500"
+},
+{
+"tk": "GM",
+"n": "General Motors",
+"i": "sp500"
+},
+{
+"tk": "GPC",
+"n": "Genuine Parts Company",
+"i": "sp500"
+},
+{
+"tk": "GILD",
+"n": "Gilead Sciences",
+"i": "sp500"
+},
+{
+"tk": "GPN",
+"n": "Global Payments",
+"i": "sp500"
+},
+{
+"tk": "GL",
+"n": "Globe Life",
+"i": "sp500"
+},
+{
+"tk": "GDDY",
+"n": "GoDaddy",
+"i": "sp500"
+},
+{
+"tk": "GS",
+"n": "Goldman Sachs",
+"i": "sp500"
+},
+{
+"tk": "HAL",
+"n": "Halliburton",
+"i": "sp500"
+},
+{
+"tk": "HIG",
+"n": "Hartford (The)",
+"i": "sp500"
+},
+{
+"tk": "HAS",
+"n": "Hasbro",
+"i": "sp500"
+},
+{
+"tk": "HCA",
+"n": "HCA Healthcare",
+"i": "sp500"
+},
+{
+"tk": "DOC",
+"n": "Healthpeak Properties",
+"i": "sp500"
+},
+{
+"tk": "HSIC",
+"n": "Henry Schein",
+"i": "sp500"
+},
+{
+"tk": "HSY",
+"n": "Hershey Company (The)",
+"i": "sp500"
+},
+{
+"tk": "HPE",
+"n": "Hewlett Packard Enterprise",
+"i": "sp500"
+},
+{
+"tk": "HLT",
+"n": "Hilton Worldwide",
+"i": "sp500"
+},
+{
+"tk": "HD",
+"n": "Home Depot (The)",
+"i": "sp500"
+},
+{
+"tk": "HONA",
+"n": "Honeywell Aerospace",
+"i": "sp500"
+},
+{
+"tk": "HON",
+"n": "Honeywell Technologies",
+"i": "sp500"
+},
+{
+"tk": "HRL",
+"n": "Hormel Foods",
+"i": "sp500"
+},
+{
+"tk": "HST",
+"n": "Host Hotels & Resorts",
+"i": "sp500"
+},
+{
+"tk": "HWM",
+"n": "Howmet Aerospace",
+"i": "sp500"
+},
+{
+"tk": "HPQ",
+"n": "HP Inc.",
+"i": "sp500"
+},
+{
+"tk": "HUBB",
+"n": "Hubbell Incorporated",
+"i": "sp500"
+},
+{
+"tk": "HUM",
+"n": "Humana",
+"i": "sp500"
+},
+{
+"tk": "HBAN",
+"n": "Huntington Bancshares",
+"i": "sp500"
+},
+{
+"tk": "HII",
+"n": "Huntington Ingalls Industries",
+"i": "sp500"
+},
+{
+"tk": "IBM",
+"n": "IBM",
+"i": "sp500"
+},
+{
+"tk": "IEX",
+"n": "IDEX Corporation",
+"i": "sp500"
+},
+{
+"tk": "IDXX",
+"n": "Idexx Laboratories",
+"i": "sp500"
+},
+{
+"tk": "ITW",
+"n": "Illinois Tool Works",
+"i": "sp500"
+},
+{
+"tk": "ILMN",
+"n": "Illumina, Inc.",
+"i": "sp500"
+},
+{
+"tk": "INCY",
+"n": "Incyte",
+"i": "sp500"
+},
+{
+"tk": "IR",
+"n": "Ingersoll Rand",
+"i": "sp500"
+},
+{
+"tk": "PODD",
+"n": "Insulet Corporation",
+"i": "sp500"
+},
+{
+"tk": "INTC",
+"n": "Intel",
+"i": "sp500"
+},
+{
+"tk": "IBKR",
+"n": "Interactive Brokers",
+"i": "sp500"
+},
+{
+"tk": "ICE",
+"n": "Intercontinental Exchange",
+"i": "sp500"
+},
+{
+"tk": "IFF",
+"n": "International Flavors & Fragrances",
+"i": "sp500"
+},
+{
+"tk": "IP",
+"n": "International Paper",
+"i": "sp500"
+},
+{
+"tk": "INTU",
+"n": "Intuit",
+"i": "sp500"
+},
+{
+"tk": "ISRG",
+"n": "Intuitive Surgical",
+"i": "sp500"
+},
+{
+"tk": "IVZ",
+"n": "Invesco",
+"i": "sp500"
+},
+{
+"tk": "INVH",
+"n": "Invitation Homes",
+"i": "sp500"
+},
+{
+"tk": "IQV",
+"n": "IQVIA",
+"i": "sp500"
+},
+{
+"tk": "IRM",
+"n": "Iron Mountain",
+"i": "sp500"
+},
+{
+"tk": "JBHT",
+"n": "J.B. Hunt",
+"i": "sp500"
+},
+{
+"tk": "JBL",
+"n": "Jabil",
+"i": "sp500"
+},
+{
+"tk": "JKHY",
+"n": "Jack Henry & Associates",
+"i": "sp500"
+},
+{
+"tk": "J",
+"n": "Jacobs Solutions",
+"i": "sp500"
+},
+{
+"tk": "JNJ",
+"n": "Johnson & Johnson",
+"i": "sp500"
+},
+{
+"tk": "JCI",
+"n": "Johnson Controls",
+"i": "sp500"
+},
+{
+"tk": "JPM",
+"n": "JPMorgan Chase",
+"i": "sp500"
+},
+{
+"tk": "KDP",
+"n": "Keurig Dr Pepper",
+"i": "sp500"
+},
+{
+"tk": "KEY",
+"n": "KeyCorp",
+"i": "sp500"
+},
+{
+"tk": "KEYS",
+"n": "Keysight Technologies",
+"i": "sp500"
+},
+{
+"tk": "KMB",
+"n": "Kimberly-Clark",
+"i": "sp500"
+},
+{
+"tk": "KIM",
+"n": "Kimco Realty",
+"i": "sp500"
+},
+{
+"tk": "KMI",
+"n": "Kinder Morgan",
+"i": "sp500"
+},
+{
+"tk": "KKR",
+"n": "KKR & Co.",
+"i": "sp500"
+},
+{
+"tk": "KLAC",
+"n": "KLA Corporation",
+"i": "sp500"
+},
+{
+"tk": "KHC",
+"n": "Kraft Heinz",
+"i": "sp500"
+},
+{
+"tk": "KR",
+"n": "Kroger",
+"i": "sp500"
+},
+{
+"tk": "LHX",
+"n": "L3Harris",
+"i": "sp500"
+},
+{
+"tk": "LH",
+"n": "Labcorp",
+"i": "sp500"
+},
+{
+"tk": "LRCX",
+"n": "Lam Research",
+"i": "sp500"
+},
+{
+"tk": "LVS",
+"n": "Las Vegas Sands",
+"i": "sp500"
+},
+{
+"tk": "LDOS",
+"n": "Leidos",
+"i": "sp500"
+},
+{
+"tk": "LEN",
+"n": "Lennar",
+"i": "sp500"
+},
+{
+"tk": "LII",
+"n": "Lennox International",
+"i": "sp500"
+},
+{
+"tk": "LLY",
+"n": "Lilly (Eli)",
+"i": "sp500"
+},
+{
+"tk": "LIN",
+"n": "Linde plc",
+"i": "sp500"
+},
+{
+"tk": "LYV",
+"n": "Live Nation Entertainment",
+"i": "sp500"
+},
+{
+"tk": "LMT",
+"n": "Lockheed Martin",
+"i": "sp500"
+},
+{
+"tk": "L",
+"n": "Loews Corporation",
+"i": "sp500"
+},
+{
+"tk": "LOW",
+"n": "Lowe's",
+"i": "sp500"
+},
+{
+"tk": "LULU",
+"n": "Lululemon Athletica",
+"i": "sp500"
+},
+{
+"tk": "LITE",
+"n": "Lumentum",
+"i": "sp500"
+},
+{
+"tk": "LYB",
+"n": "LyondellBasell",
+"i": "sp500"
+},
+{
+"tk": "MTB",
+"n": "M&T Bank",
+"i": "sp500"
+},
+{
+"tk": "MPC",
+"n": "Marathon Petroleum",
+"i": "sp500"
+},
+{
+"tk": "MAR",
+"n": "Marriott International",
+"i": "sp500"
+},
+{
+"tk": "MRSH",
+"n": "Marsh McLennan",
+"i": "sp500"
+},
+{
+"tk": "MLM",
+"n": "Martin Marietta Materials",
+"i": "sp500"
+},
+{
+"tk": "MRVL",
+"n": "Marvell Technology",
+"i": "sp500"
+},
+{
+"tk": "MAS",
+"n": "Masco",
+"i": "sp500"
+},
+{
+"tk": "MA",
+"n": "Mastercard",
+"i": "sp500"
+},
+{
+"tk": "MKC",
+"n": "McCormick & Company",
+"i": "sp500"
+},
+{
+"tk": "MCD",
+"n": "McDonald's",
+"i": "sp500"
+},
+{
+"tk": "MCK",
+"n": "McKesson",
+"i": "sp500"
+},
+{
+"tk": "MDT",
+"n": "Medtronic",
+"i": "sp500"
+},
+{
+"tk": "MRK",
+"n": "Merck & Co.",
+"i": "sp500"
+},
+{
+"tk": "META",
+"n": "Meta Platforms",
+"i": "sp500"
+},
+{
+"tk": "MET",
+"n": "MetLife",
+"i": "sp500"
+},
+{
+"tk": "MTD",
+"n": "Mettler Toledo",
+"i": "sp500"
+},
+{
+"tk": "MGM",
+"n": "MGM Resorts",
+"i": "sp500"
+},
+{
+"tk": "MCHP",
+"n": "Microchip Technology",
+"i": "sp500"
+},
+{
+"tk": "MU",
+"n": "Micron Technology",
+"i": "sp500"
+},
+{
+"tk": "MSFT",
+"n": "Microsoft",
+"i": "sp500"
+},
+{
+"tk": "MAA",
+"n": "Mid-America Apartment Communities",
+"i": "sp500"
+},
+{
+"tk": "MRNA",
+"n": "Moderna",
+"i": "sp500"
+},
+{
+"tk": "MDLZ",
+"n": "Mondelez International",
+"i": "sp500"
+},
+{
+"tk": "MPWR",
+"n": "Monolithic Power Systems",
+"i": "sp500"
+},
+{
+"tk": "MNST",
+"n": "Monster Beverage",
+"i": "sp500"
+},
+{
+"tk": "MCO",
+"n": "Moody's Corporation",
+"i": "sp500"
+},
+{
+"tk": "MS",
+"n": "Morgan Stanley",
+"i": "sp500"
+},
+{
+"tk": "MOS",
+"n": "Mosaic Company (The)",
+"i": "sp500"
+},
+{
+"tk": "MSI",
+"n": "Motorola Solutions",
+"i": "sp500"
+},
+{
+"tk": "MSCI",
+"n": "MSCI",
+"i": "sp500"
+},
+{
+"tk": "NDAQ",
+"n": "Nasdaq, Inc.",
+"i": "sp500"
+},
+{
+"tk": "NTAP",
+"n": "NetApp",
+"i": "sp500"
+},
+{
+"tk": "NFLX",
+"n": "Netflix",
+"i": "sp500"
+},
+{
+"tk": "NEM",
+"n": "Newmont",
+"i": "sp500"
+},
+{
+"tk": "NWSA",
+"n": "News Corp (Class A)",
+"i": "sp500"
+},
+{
+"tk": "NWS",
+"n": "News Corp (Class B)",
+"i": "sp500"
+},
+{
+"tk": "NEE",
+"n": "NextEra Energy",
+"i": "sp500"
+},
+{
+"tk": "NKE",
+"n": "Nike, Inc.",
+"i": "sp500"
+},
+{
+"tk": "NI",
+"n": "NiSource",
+"i": "sp500"
+},
+{
+"tk": "NDSN",
+"n": "Nordson Corporation",
+"i": "sp500"
+},
+{
+"tk": "NSC",
+"n": "Norfolk Southern",
+"i": "sp500"
+},
+{
+"tk": "NTRS",
+"n": "Northern Trust",
+"i": "sp500"
+},
+{
+"tk": "NOC",
+"n": "Northrop Grumman",
+"i": "sp500"
+},
+{
+"tk": "NCLH",
+"n": "Norwegian Cruise Line Holdings",
+"i": "sp500"
+},
+{
+"tk": "NRG",
+"n": "NRG Energy",
+"i": "sp500"
+},
+{
+"tk": "NUE",
+"n": "Nucor",
+"i": "sp500"
+},
+{
+"tk": "NVDA",
+"n": "Nvidia",
+"i": "sp500"
+},
+{
+"tk": "NVR",
+"n": "NVR, Inc.",
+"i": "sp500"
+},
+{
+"tk": "NXPI",
+"n": "NXP Semiconductors",
+"i": "sp500"
+},
+{
+"tk": "ORLY",
+"n": "O'Reilly Automotive",
+"i": "sp500"
+},
+{
+"tk": "OXY",
+"n": "Occidental Petroleum",
+"i": "sp500"
+},
+{
+"tk": "OKTA",
+"n": "Okta, Inc.",
+"i": "sp500"
+},
+{
+"tk": "ODFL",
+"n": "Old Dominion",
+"i": "sp500"
+},
+{
+"tk": "OMC",
+"n": "Omnicom Group",
+"i": "sp500"
+},
+{
+"tk": "ON",
+"n": "ON Semiconductor",
+"i": "sp500"
+},
+{
+"tk": "OKE",
+"n": "Oneok",
+"i": "sp500"
+},
+{
+"tk": "ORCL",
+"n": "Oracle Corporation",
+"i": "sp500"
+},
+{
+"tk": "OTIS",
+"n": "Otis Worldwide",
+"i": "sp500"
+},
+{
+"tk": "PCAR",
+"n": "Paccar",
+"i": "sp500"
+},
+{
+"tk": "PKG",
+"n": "Packaging Corporation of America",
+"i": "sp500"
+},
+{
+"tk": "PLTR",
+"n": "Palantir Technologies",
+"i": "sp500"
+},
+{
+"tk": "PANW",
+"n": "Palo Alto Networks",
+"i": "sp500"
+},
+{
+"tk": "PH",
+"n": "Parker Hannifin",
+"i": "sp500"
+},
+{
+"tk": "PAYX",
+"n": "Paychex",
+"i": "sp500"
+},
+{
+"tk": "PYPL",
+"n": "PayPal",
+"i": "sp500"
+},
+{
+"tk": "PNR",
+"n": "Pentair",
+"i": "sp500"
+},
+{
+"tk": "PEP",
+"n": "PepsiCo",
+"i": "sp500"
+},
+{
+"tk": "PFE",
+"n": "Pfizer",
+"i": "sp500"
+},
+{
+"tk": "PCG",
+"n": "PG&E Corporation",
+"i": "sp500"
+},
+{
+"tk": "PM",
+"n": "Philip Morris International",
+"i": "sp500"
+},
+{
+"tk": "PSX",
+"n": "Phillips 66",
+"i": "sp500"
+},
+{
+"tk": "PNW",
+"n": "Pinnacle West Capital",
+"i": "sp500"
+},
+{
+"tk": "PNC",
+"n": "PNC Financial Services",
+"i": "sp500"
+},
+{
+"tk": "PPG",
+"n": "PPG Industries",
+"i": "sp500"
+},
+{
+"tk": "PPL",
+"n": "PPL Corporation",
+"i": "sp500"
+},
+{
+"tk": "PFG",
+"n": "Principal Financial Group",
+"i": "sp500"
+},
+{
+"tk": "PG",
+"n": "Procter & Gamble",
+"i": "sp500"
+},
+{
+"tk": "PGR",
+"n": "Progressive Corporation",
+"i": "sp500"
+},
+{
+"tk": "PLD",
+"n": "Prologis",
+"i": "sp500"
+},
+{
+"tk": "PRU",
+"n": "Prudential Financial",
+"i": "sp500"
+},
+{
+"tk": "PTC",
+"n": "PTC Inc.",
+"i": "sp500"
+},
+{
+"tk": "PEG",
+"n": "Public Service Enterprise Group",
+"i": "sp500"
+},
+{
+"tk": "PSA",
+"n": "Public Storage",
+"i": "sp500"
+},
+{
+"tk": "PHM",
+"n": "PulteGroup",
+"i": "sp500"
+},
+{
+"tk": "Q",
+"n": "Qnity Electronics",
+"i": "sp500"
+},
+{
+"tk": "QCOM",
+"n": "Qualcomm",
+"i": "sp500"
+},
+{
+"tk": "PWR",
+"n": "Quanta Services",
+"i": "sp500"
+},
+{
+"tk": "DGX",
+"n": "Quest Diagnostics",
+"i": "sp500"
+},
+{
+"tk": "RL",
+"n": "Ralph Lauren Corporation",
+"i": "sp500"
+},
+{
+"tk": "RJF",
+"n": "Raymond James Financial",
+"i": "sp500"
+},
+{
+"tk": "RDDT",
+"n": "Reddit",
+"i": "sp500"
+},
+{
+"tk": "O",
+"n": "Realty Income",
+"i": "sp500"
+},
+{
+"tk": "REG",
+"n": "Regency Centers",
+"i": "sp500"
+},
+{
+"tk": "REGN",
+"n": "Regeneron Pharmaceuticals",
+"i": "sp500"
+},
+{
+"tk": "RF",
+"n": "Regions Financial Corporation",
+"i": "sp500"
+},
+{
+"tk": "RSG",
+"n": "Republic Services",
+"i": "sp500"
+},
+{
+"tk": "RMD",
+"n": "ResMed",
+"i": "sp500"
+},
+{
+"tk": "RVTY",
+"n": "Revvity",
+"i": "sp500"
+},
+{
+"tk": "HOOD",
+"n": "Robinhood Markets",
+"i": "sp500"
+},
+{
+"tk": "ROK",
+"n": "Rockwell Automation",
+"i": "sp500"
+},
+{
+"tk": "ROL",
+"n": "Rollins, Inc.",
+"i": "sp500"
+},
+{
+"tk": "ROP",
+"n": "Roper Technologies",
+"i": "sp500"
+},
+{
+"tk": "ROST",
+"n": "Ross Stores",
+"i": "sp500"
+},
+{
+"tk": "RCL",
+"n": "Royal Caribbean Group",
+"i": "sp500"
+},
+{
+"tk": "RTX",
+"n": "RTX Corporation",
+"i": "sp500"
+},
+{
+"tk": "SPGI",
+"n": "S&P Global",
+"i": "sp500"
+},
+{
+"tk": "CRM",
+"n": "Salesforce",
+"i": "sp500"
+},
+{
+"tk": "SNDK",
+"n": "Sandisk",
+"i": "sp500"
+},
+{
+"tk": "SBAC",
+"n": "SBA Communications",
+"i": "sp500"
+},
+{
+"tk": "SLB",
+"n": "Schlumberger",
+"i": "sp500"
+},
+{
+"tk": "STX",
+"n": "Seagate Technology",
+"i": "sp500"
+},
+{
+"tk": "SRE",
+"n": "Sempra",
+"i": "sp500"
+},
+{
+"tk": "NOW",
+"n": "ServiceNow",
+"i": "sp500"
+},
+{
+"tk": "SHW",
+"n": "Sherwin-Williams",
+"i": "sp500"
+},
+{
+"tk": "SPG",
+"n": "Simon Property Group",
+"i": "sp500"
+},
+{
+"tk": "SKYD",
+"n": "Skydance",
+"i": "sp500"
+},
+{
+"tk": "SWKS",
+"n": "Skyworks Solutions",
+"i": "sp500"
+},
+{
+"tk": "SJM",
+"n": "J.M. Smucker Company (The)",
+"i": "sp500"
+},
+{
+"tk": "SW",
+"n": "Smurfit Westrock",
+"i": "sp500"
+},
+{
+"tk": "SNA",
+"n": "Snap-on",
+"i": "sp500"
+},
+{
+"tk": "SOLV",
+"n": "Solventum",
+"i": "sp500"
+},
+{
+"tk": "SO",
+"n": "Southern Company",
+"i": "sp500"
+},
+{
+"tk": "LUV",
+"n": "Southwest Airlines",
+"i": "sp500"
+},
+{
+"tk": "SWK",
+"n": "Stanley Black & Decker",
+"i": "sp500"
+},
+{
+"tk": "SBUX",
+"n": "Starbucks",
+"i": "sp500"
+},
+{
+"tk": "STT",
+"n": "State Street Corporation",
+"i": "sp500"
+},
+{
+"tk": "STLD",
+"n": "Steel Dynamics",
+"i": "sp500"
+},
+{
+"tk": "STE",
+"n": "Steris",
+"i": "sp500"
+},
+{
+"tk": "SYK",
+"n": "Stryker Corporation",
+"i": "sp500"
+},
+{
+"tk": "SMCI",
+"n": "Supermicro",
+"i": "sp500"
+},
+{
+"tk": "SYF",
+"n": "Synchrony Financial",
+"i": "sp500"
+},
+{
+"tk": "SNPS",
+"n": "Synopsys",
+"i": "sp500"
+},
+{
+"tk": "SYY",
+"n": "Sysco",
+"i": "sp500"
+},
+{
+"tk": "TMUS",
+"n": "T-Mobile US",
+"i": "sp500"
+},
+{
+"tk": "TROW",
+"n": "T. Rowe Price",
+"i": "sp500"
+},
+{
+"tk": "TTWO",
+"n": "Take-Two Interactive",
+"i": "sp500"
+},
+{
+"tk": "TPR",
+"n": "Tapestry, Inc.",
+"i": "sp500"
+},
+{
+"tk": "TRGP",
+"n": "Targa Resources",
+"i": "sp500"
+},
+{
+"tk": "TGT",
+"n": "Target Corporation",
+"i": "sp500"
+},
+{
+"tk": "TEL",
+"n": "TE Connectivity",
+"i": "sp500"
+},
+{
+"tk": "TDY",
+"n": "Teledyne Technologies",
+"i": "sp500"
+},
+{
+"tk": "TER",
+"n": "Teradyne",
+"i": "sp500"
+},
+{
+"tk": "TSLA",
+"n": "Tesla, Inc.",
+"i": "sp500"
+},
+{
+"tk": "TXN",
+"n": "Texas Instruments",
+"i": "sp500"
+},
+{
+"tk": "TPL",
+"n": "Texas Pacific Land Corporation",
+"i": "sp500"
+},
+{
+"tk": "TXT",
+"n": "Textron",
+"i": "sp500"
+},
+{
+"tk": "TMO",
+"n": "Thermo Fisher Scientific",
+"i": "sp500"
+},
+{
+"tk": "TJX",
+"n": "TJX Companies",
+"i": "sp500"
+},
+{
+"tk": "TKO",
+"n": "TKO Group Holdings",
+"i": "sp500"
+},
+{
+"tk": "TSCO",
+"n": "Tractor Supply",
+"i": "sp500"
+},
+{
+"tk": "TT",
+"n": "Trane Technologies",
+"i": "sp500"
+},
+{
+"tk": "TDG",
+"n": "TransDigm Group",
+"i": "sp500"
+},
+{
+"tk": "TRV",
+"n": "Travelers Companies (The)",
+"i": "sp500"
+},
+{
+"tk": "TRMB",
+"n": "Trimble Inc.",
+"i": "sp500"
+},
+{
+"tk": "TFC",
+"n": "Truist Financial",
+"i": "sp500"
+},
+{
+"tk": "TWLO",
+"n": "Twilio",
+"i": "sp500"
+},
+{
+"tk": "TYL",
+"n": "Tyler Technologies",
+"i": "sp500"
+},
+{
+"tk": "TSN",
+"n": "Tyson Foods",
+"i": "sp500"
+},
+{
+"tk": "USB",
+"n": "U.S. Bancorp",
+"i": "sp500"
+},
+{
+"tk": "UBER",
+"n": "Uber",
+"i": "sp500"
+},
+{
+"tk": "UDR",
+"n": "UDR, Inc.",
+"i": "sp500"
+},
+{
+"tk": "ULTA",
+"n": "Ulta Beauty",
+"i": "sp500"
+},
+{
+"tk": "UNP",
+"n": "Union Pacific Corporation",
+"i": "sp500"
+},
+{
+"tk": "UAL",
+"n": "United Airlines Holdings",
+"i": "sp500"
+},
+{
+"tk": "UPS",
+"n": "United Parcel Service",
+"i": "sp500"
+},
+{
+"tk": "URI",
+"n": "United Rentals",
+"i": "sp500"
+},
+{
+"tk": "UNH",
+"n": "UnitedHealth Group",
+"i": "sp500"
+},
+{
+"tk": "UHS",
+"n": "Universal Health Services",
+"i": "sp500"
+},
+{
+"tk": "VLO",
+"n": "Valero Energy",
+"i": "sp500"
+},
+{
+"tk": "VEEV",
+"n": "Veeva Systems",
+"i": "sp500"
+},
+{
+"tk": "VTR",
+"n": "Ventas",
+"i": "sp500"
+},
+{
+"tk": "VLTO",
+"n": "Veralto",
+"i": "sp500"
+},
+{
+"tk": "VRSN",
+"n": "Verisign",
+"i": "sp500"
+},
+{
+"tk": "VRSK",
+"n": "Verisk Analytics",
+"i": "sp500"
+},
+{
+"tk": "VZ",
+"n": "Verizon",
+"i": "sp500"
+},
+{
+"tk": "VRTX",
+"n": "Vertex Pharmaceuticals",
+"i": "sp500"
+},
+{
+"tk": "VRT",
+"n": "Vertiv",
+"i": "sp500"
+},
+{
+"tk": "VTRS",
+"n": "Viatris",
+"i": "sp500"
+},
+{
+"tk": "VICI",
+"n": "Vici Properties",
+"i": "sp500"
+},
+{
+"tk": "V",
+"n": "Visa Inc.",
+"i": "sp500"
+},
+{
+"tk": "VST",
+"n": "Vistra Corp.",
+"i": "sp500"
+},
+{
+"tk": "VMRK",
+"n": "Vivmark Residential",
+"i": "sp500"
+},
+{
+"tk": "VMC",
+"n": "Vulcan Materials Company",
+"i": "sp500"
+},
+{
+"tk": "VYLR",
+"n": "Vylor",
+"i": "sp500"
+},
+{
+"tk": "WRB",
+"n": "W. R. Berkley Corporation",
+"i": "sp500"
+},
+{
+"tk": "GWW",
+"n": "W. W. Grainger",
+"i": "sp500"
+},
+{
+"tk": "WAB",
+"n": "Wabtec",
+"i": "sp500"
+},
+{
+"tk": "WMT",
+"n": "Walmart",
+"i": "sp500"
+},
+{
+"tk": "DIS",
+"n": "Walt Disney Company (The)",
+"i": "sp500"
+},
+{
+"tk": "WM",
+"n": "Waste Management",
+"i": "sp500"
+},
+{
+"tk": "WAT",
+"n": "Waters Corporation",
+"i": "sp500"
+},
+{
+"tk": "WEC",
+"n": "WEC Energy Group",
+"i": "sp500"
+},
+{
+"tk": "WFC",
+"n": "Wells Fargo",
+"i": "sp500"
+},
+{
+"tk": "WELL",
+"n": "Welltower",
+"i": "sp500"
+},
+{
+"tk": "WST",
+"n": "West Pharmaceutical Services",
+"i": "sp500"
+},
+{
+"tk": "WDC",
+"n": "Western Digital",
+"i": "sp500"
+},
+{
+"tk": "WY",
+"n": "Weyerhaeuser",
+"i": "sp500"
+},
+{
+"tk": "WSM",
+"n": "Williams-Sonoma, Inc.",
+"i": "sp500"
+},
+{
+"tk": "WMB",
+"n": "Williams Companies",
+"i": "sp500"
+},
+{
+"tk": "WTW",
+"n": "Willis Towers Watson",
+"i": "sp500"
+},
+{
+"tk": "WDAY",
+"n": "Workday, Inc.",
+"i": "sp500"
+},
+{
+"tk": "WYNN",
+"n": "Wynn Resorts",
+"i": "sp500"
+},
+{
+"tk": "XEL",
+"n": "Xcel Energy",
+"i": "sp500"
+},
+{
+"tk": "XYL",
+"n": "Xylem Inc.",
+"i": "sp500"
+},
+{
+"tk": "YUM",
+"n": "Yum! Brands",
+"i": "sp500"
+},
+{
+"tk": "ZBRA",
+"n": "Zebra Technologies",
+"i": "sp500"
+},
+{
+"tk": "ZBH",
+"n": "Zimmer Biomet",
+"i": "sp500"
+},
+{
+"tk": "ZTS",
+"n": "Zoetis",
+"i": "sp500"
+}
+],
+"fecha": "2026-11-28"
+}

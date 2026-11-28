@@ -1,0 +1,3082 @@
+{
+"fecha": "2026-11-22",
+"hora": "16:50",
+"google": {
+"ES": {
+"geo": "ES",
+"url": "https://trends.google.com/trending/rss?geo=ES",
+"ok": true,
+"items": [
+{
+"t": "liverpool - manchester united",
+"trafico": "1000+",
+"fecha": "2026-11-22T16:40+01:00",
+"noticias": [
+{
+"t": "Liverpool vs Man Utd LIVE! Premier League match updates, free highlights, news and score",
+"u": "https://www.skysports.com/football/live-blog/13610924/liverpool-vs-man-utd-live-premier-league-match-updates-free-highlights-news-and-score",
+"s": "Sky Sports"
+},
+{
+"t": "Liverpool v Manchester United: Premier League – live",
+"u": "https://www.theguardian.com/football/live/2026/nov/22/liverpool-v-manchester-united-premier-league-live",
+"s": "The Guardian"
+},
+{
+"t": "'He will see what Man Utd are made of' - Pulis on Pochettino's first game",
+"u": "https://www.bbc.com/sport/football/articles/ckqx5w58dgv7o",
+"s": "BBC"
+}
+],
+"n": 1000
+},
+{
+"t": "piloto de motociclismo",
+"trafico": "200+",
+"fecha": "2026-11-22T16:40+01:00",
+"noticias": [
+{
+"t": "‘El Trueno de Cervera’ supera a ‘El Doctor’: así queda el palmarés de MotoGP",
+"u": "https://as.com/motor/fotorrelato/el-trueno-de-cervera-supera-a-el-doctor-asi-queda-el-palmares-de-motogp-f202611-f/",
+"s": "Diario AS"
+},
+{
+"t": "Cuántos títulos tiene Ducati y cuál es la escudería que más ha ganado en MotoGP",
+"u": "https://www.marca.com/motor/motogp/2026/11/22/cuantos-titulos-ducati-escuderia-ganado-motogp.html",
+"s": "MARCA"
+},
+{
+"t": "Marc Márquez vs Valentino Rossi: quién tiene más títulos de MotoGP",
+"u": "https://www.motociclismo.es/mundial-motogp/marc-marquez-vs-valentino-rossi-quien-tiene-mas-titulos-motogp_336285_102.html",
+"s": "Motociclismo"
+}
+],
+"n": 200
+},
+{
+"t": "ryan reynolds",
+"trafico": "100+",
+"fecha": "2026-11-22T16:40+01:00",
+"noticias": [
+{
+"t": "Blake Lively Shares Photos From Her Unexpected and Whimsical Date Night Activity",
+"u": "https://www.instyle.com/blake-lively-unexpected-activity-date-night-pottery-12265468",
+"s": "InStyle"
+},
+{
+"t": "Blake Lively fans spot alarming detail in her date night selfie with husband Ryan Reynolds: 'That is not him!'",
+"u": "https://www.dailymail.com/tvshowbiz/article-16309365/Blake-Lively-alarming-date-night-selfie-Ryan-Reynolds.html",
+"s": "Daily Mail"
+},
+{
+"t": "Blake Lively’s Date Night Selfie With Ryan Reynolds Sparks Frenzy As Fans Spot Alarming Detail In Background",
+"u": "https://www.inkl.com/news/blake-livelys-date-night-selfie-with-ryan-reynolds-sparks-frenzy-as-fans-spot-alarming-detail-in-background",
+"s": "inkl"
+}
+],
+"n": 100
+},
+{
+"t": "zabiri",
+"trafico": "500+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "“Jugar para ganar te da mucho más que jugar para no perder”",
+"u": "https://www.realracingclub.es/noticias/jugar-para-ganar-te-da-mucho-mas-que-jugar-para-no-perder",
+"s": "Real Racing Club"
+},
+{
+"t": "Zabiri, goleador del Racing, estará disponible contra la Real Sociedad",
+"u": "https://cadenaser.com/cantabria/2026/11/20/zabiri-goleador-del-racing-estara-disponible-contra-la-real-sociedad-radio-santander/",
+"s": "Cadena SER"
+},
+{
+"t": "Maguette sufre una rotura de fibras en los isquiotibiales",
+"u": "https://www.eldiariomontanes.es/deportes/racing/maguette-sufre-rotura-fibras-isquiotibiales-20261120125702-nt.html",
+"s": "El Diario Montañés"
+}
+],
+"n": 500
+},
+{
+"t": "classement fc barcelone – villarreal",
+"trafico": "200+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "FC Barcelone 3-2 Villarreal, La Liga : Le Barça renverse Villarreal !",
+"u": "https://www.lequipe.fr/Football/match-direct/championnat-d-espagne/2026-2027/fc-barcelone-villarreal-live/693199",
+"s": "L'Équipe"
+},
+{
+"t": "13e journée de Liga: suivez Barcelone - Villarreal EN DIRECT",
+"u": "https://www.eurosport.fr/football/la-liga/2026-2027/fc-barcelone-villarreal_mtc21891371/live-commentary.shtml",
+"s": "Eurosport"
+},
+{
+"t": "FC Barcelone : grosse inquiétude pour Lamine Yamal à l’échauffement",
+"u": "https://www.footmercato.net/a5385593357897416148-fc-barcelone-grosse-inquietude-pour-lamine-yamal-a-lechauffement",
+"s": "Foot Mercato"
+}
+],
+"n": 200
+},
+{
+"t": "sporting de gijon",
+"trafico": "200+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Real Sporting - UD Las Palmas, en directo: LaLiga Hypermotion, hoy en vivo",
+"u": "https://as.com/futbol/segunda/real-sporting-ud-las-palmas-en-directo-laliga-hypermotion-hoy-en-vivo-f202611-d/",
+"s": "Diario AS"
+},
+{
+"t": "Previa: Ferrari y Hugo apuntan al 11 de un Sporting que quiere asaltar el Playoff impulsados por un gran tifo al comienzo de la batalla",
+"u": "https://www.lavozdeasturias.es/noticia/sporting1905/2026/11/21/previa-ferrari-hugo-apuntan-novedades-alineacion-sporting-quiere-asaltar-playoff-impulsado-gran-tifo-comienzo-batalla/00031795299111625236410.htm",
+"s": "La Voz de Asturias"
+},
+{
+"t": "Sporting-Las Palmas en El Molinón",
+"u": "https://www.realsporting.com/noticias/sporting-las-palmas-en-el-molinon",
+"s": "Real Sporting"
+}
+],
+"n": 200
+},
+{
+"t": "privatización",
+"trafico": "100+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Las redes clientelares detrás de la privatización de la acogida de menores migrantes en Euskadi",
+"u": "https://www.elsaltodiario.com/euskal-herria/redes-clientelares-detras-privatizacion-acogida-menores-migrantes-euskadi",
+"s": "El Salto"
+},
+{
+"t": "Cientos de manifestantes exigen justicia por los 7.291 fallecidos en las residencias de Madrid en la pandemia",
+"u": "https://elpais.com/economia/2026-11-21/cientos-de-manifestantes-exigen-justicia-por-los-7291-fallecidos-en-las-residencias-de-madrid-en-la-pandemia.html",
+"s": "EL PAÍS"
+},
+{
+"t": "Cientos de personas se manifiestan en Madrid para reclamar plazas públicas en residencias",
+"u": "https://www.diariosur.es/sociedad/cientos-personas-manifiestan-madrid-reclamar-plazas-pblicas-20261121170506-vi.html",
+"s": "Diario Sur"
+}
+],
+"n": 100
+},
+{
+"t": "valencia - breogán",
+"trafico": "500+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Un homenaje a los orígenes en la visita del Río Breogán al Roig Arena",
+"u": "https://www.valenciabasket.com/un-homenaje-a-los-origenes-en-la-visita-del-rio-breogan-al-roig-arena",
+"s": "Valencia Basket Club"
+},
+{
+"t": "La montaña más alta para el Breo en el momento más dulce",
+"u": "https://www.lavozdegalicia.es/noticia/lugo/2026/11/22/montana-alta-breo-momento-dulce/0003_202611L22P52992.htm",
+"s": "La Voz de Galicia"
+},
+{
+"t": "El descarte de Xavi Albert en el Valencia Basket - Río Breogán de Liga Endesa",
+"u": "https://www.levante-emv.com/deportes/2026/11/22/descarte-xavi-albert-valencia-basket-rio-breogan-lig-endesa-136723659.html",
+"s": "Levante-EMV"
+}
+],
+"n": 500
+},
+{
+"t": "anne hathaway",
+"trafico": "200+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Number Two Most Wanted: New Documentary Hunts Colorado’s Infamous ‘Mad Pooper’",
+"u": "https://gearjunkie.com/outdoor/documentary-colorado-mad-pooper",
+"s": "GearJunkie"
+},
+{
+"t": "In Pursuit of the Pooper",
+"u": "https://coloradotimesrecorder.com/2026/11/in-pursuit-of-the-pooper/83463/",
+"s": "Colorado Times Recorder"
+},
+{
+"t": "‘The Mad Pooper’ Case: Why Did She Leave Taco Bell Napkins? (Exclusive Clip)",
+"u": "https://extratv.com/2026/11/16/the-mad-pooper-case-why-did-she-leave-taco-bell-napkins-exclusive-clip/",
+"s": "Extra"
+}
+],
+"n": 200
+},
+{
+"t": "tallulah willis",
+"trafico": "200+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Bruce Willis Seen in New Photo with Daughter Tallulah amid His Dementia Diagnosis",
+"u": "https://people.com/bruce-willis-seen-in-new-photo-shared-by-daughter-tallulah-12270959",
+"s": "People.com"
+},
+{
+"t": "Daughter Tallulah Willis shares new photos of spending time with Bruce Willis amid his ongoing battle wit",
+"u": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/daughter-tallulah-willis-shares-new-photos-of-spending-time-with-bruce-willis-amid-his-ongoing-battle-with-dementia/articleshow/136067324.cms",
+"s": "The Times of India"
+},
+{
+"t": "Bruce Willis Seen in Rare Photo, 3 Years After Dementia Diagnosis",
+"u": "https://www.newsweek.com/bruce-willis-new-photo-rare-daughter-tallulah-demi-moore-dementia-diagnosis-12753524",
+"s": "Newsweek"
+}
+],
+"n": 200
+}
+]
+},
+"US": {
+"geo": "US",
+"url": "https://trends.google.com/trending/rss?geo=US",
+"ok": true,
+"items": [
+{
+"t": "delta flights",
+"trafico": "2000+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Delta Air Lines automation issue triggers hundreds of Thanksgiving travel delays in Atlanta",
+"u": "https://www.fox5atlanta.com/news/delta-air-lines-automation-issue-triggers-hundreds-thanksgiving-travel-delays-atlanta",
+"s": "FOX 5 Atlanta"
+},
+{
+"t": "\"Ground delay\" issued for Delta Flights set to arrive at Hartsfield Airport",
+"u": "https://www.11alive.com/article/travel/flights/ground-delay-issued-for-delta-flights-set-to-arrive-at-hartsfield-airport/85-4b871a06-44d5-4344-b8db-042a8c090c4e",
+"s": "11Alive.com"
+},
+{
+"t": "Ground stop issued for Delta flights en route to Atlanta",
+"u": "https://www.atlantanewsfirst.com/2026/11/22/ground-stop-issued-delta-flights-en-route-atlanta/",
+"s": "Atlanta News First"
+}
+],
+"n": 2000
+},
+{
+"t": "walmart black friday",
+"trafico": "1000+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Black Friday store hours 2026: When do doors open at Walmart, Target, Kohl's, Macy's, Best Buy, Costco and other retailers?",
+"u": "https://shopping.yahoo.com/deals/breaking-news/article/black-friday-store-hours-2026-when-do-doors-open-at-walmart-target-kohls-macys-best-buy-costco-and-other-retailers-182104117.html",
+"s": "Yahoo"
+},
+{
+"t": "Shopping early on Black Friday? These stores are opening before dawn",
+"u": "https://www.nbcchicago.com/news/local/shopping-early-on-black-friday-these-stores-are-opening-before-dawn/4019879/",
+"s": "NBC 5 Chicago"
+},
+{
+"t": "When is Black Friday 2026? Some retailers are already offering deals",
+"u": "https://www.freep.com/story/life/shopping/2026/11/20/black-friday-2026-retailers-sales-michigan/92878772007/",
+"s": "Detroit Free Press"
+}
+],
+"n": 1000
+},
+{
+"t": "trabzonspor vs eyüpspor",
+"trafico": "200+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Trendyol Süper Lig'de 12. haftanın VAR hakemleri açıklandı",
+"u": "https://www.haber.tr/trendyol-super-ligde-12-haftanin-var-hakemleri-aciklandi",
+"s": "Haber TR"
+},
+{
+"t": "Trabzonspor taraftarlarının isteği gerçek oldu! Başkan Doğan'a teşekkür ettiler",
+"u": "https://www.61saat.com/trabzonspor-taraftarlarinin-istegi-gercek-oldu-baskan-dogana-tesekkur-ettiler",
+"s": "61SAAT"
+},
+{
+"t": "Süper Lig'de Trabzonspor, Eyüpspor'u ağırlıyor - Trabzonspor - Spor Haberleri",
+"u": "https://www.milliyet.com.tr/skorer/super-ligde-trabzonspor-eyupsporu-agirliyor-7705726",
+"s": "Milliyet"
+}
+],
+"n": 200
+},
+{
+"t": "sen john kennedy",
+"trafico": "200+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [],
+"n": 200
+},
+{
+"t": "denver weather",
+"trafico": "200+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Denver weather: Afternoon sun and much colder stretch ahead",
+"u": "https://kdvr.com/weather/weather-forecast/denver-weather-afternoon-sun-and-much-colder-stretch-ahead/",
+"s": "KDVR"
+},
+{
+"t": "Snow to pick up in Colorado mountains, colder fall temps this weekend",
+"u": "https://www.9news.com/article/weather/weather-colorado/snow-colorado-mountains-forecast/73-6d5427a0-5fab-444e-a038-7020f83a5266",
+"s": "9NEWS"
+},
+{
+"t": "It snowed (a least a little) and more snow is on the way Fri & Sat",
+"u": "https://opensnow.com/dailysnow/colorado/post/44984",
+"s": "OpenSnow"
+}
+],
+"n": 200
+},
+{
+"t": "real sociedad",
+"trafico": "500+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "🚨 Racing Santander-Real Sociedad: both sides rotate their starting XIs",
+"u": "https://sports.yahoo.com/articles/racing-santander-real-sociedad-both-141100730.html",
+"s": "Yahoo Sports"
+},
+{
+"t": "Racing-Real Sociedad: Racing hosts with three players ruled out",
+"u": "https://www.tufutbolero.com/en/news/racing-real-sociedad-racing-hosts-with-three-players-ruled-fcf0d2",
+"s": "Tu Futbolero"
+},
+{
+"t": "Racing Santander vs Real Sociedad: Lineups, Prediction, Odds & Bet Builder Tip",
+"u": "https://www.whoscored.com/articles/CSmhj4JbhkKOQFzSsInNvA/show/cng111-20261122-racing-santander-vs-real-sociedad-prediction-1795332055",
+"s": "WhoScored.com"
+}
+],
+"n": 500
+},
+{
+"t": "tom jackson espn",
+"trafico": "100000+",
+"fecha": "2026-11-22T16:00+01:00",
+"noticias": [
+{
+"t": "Tom Jackson, Broncos star LB and Hall of Fame broadcaster at ESPN, dies at 75",
+"u": "https://www.espn.com/nfl/story/_/id/50561778/tom-jackson-broncos-star-espn-legend-dies-75",
+"s": "ESPN"
+},
+{
+"t": "Former ESPN analyst and Broncos linebacker Tom Jackson dies at 75 years old",
+"u": "https://sports.yahoo.com/nfl/breaking-news/article/former-espn-analyst-and-broncos-linebacker-tom-jackson-dies-at-75-years-old-151357345.html",
+"s": "Yahoo Sports"
+},
+{
+"t": "Broncos Ring of Fame linebacker and Hall of Fame broadcaster Tom Jackson dies at 75",
+"u": "https://www.cbssports.com/nfl/news/broncos-ring-of-fame-linebacker-and-hall-of-fame-broadcaster-tom-jackson-dies-at-75/",
+"s": "CBS Sports"
+}
+],
+"n": 100000
+},
+{
+"t": "gene hackman dog adoption",
+"trafico": "200+",
+"fecha": "2026-11-22T16:00+01:00",
+"noticias": [
+{
+"t": "Bo Derek and John Corbett adopted Gene Hackman’s dog after his death: ‘Perfect gentleman’",
+"u": "https://ew.com/bo-derek-john-corbett-adopted-gene-hackman-dog-after-death-12269646",
+"s": "Entertainment Weekly"
+},
+{
+"t": "The Dog Found Beside Gene Hackman’s Wife Has a New Home—and Its New Owner Is a Hollywood A-Lister",
+"u": "https://parade.com/news/the-dog-found-beside-gene-hackman-wife-new-owner-hollywood-a-lister",
+"s": "Parade Magazine"
+},
+{
+"t": "Bo Derek and John Corbett Adopt Gene Hackman's Dog Bear",
+"u": "https://cwibc.co.id/en/derek-corbett-adopt-hackman-dog",
+"s": "cwibc.co.id"
+}
+],
+"n": 200
+},
+{
+"t": "pau navarro",
+"trafico": "500+",
+"fecha": "2026-11-22T15:50+01:00",
+"noticias": [
+{
+"t": "Spain La Liga Soccer",
+"u": "https://www.wvnews.com/sports/pro/spain-la-liga-soccer/image_552c346d-a83b-5d80-90a8-4e686fd75c13.html",
+"s": "WV News"
+},
+{
+"t": "Flick, sobre la baja de Lamine en el primer partido de España: \"Estaba hablado con De la Fuente\"",
+"u": "https://onefootball.com/en/video/flick-sobre-la-baja-de-lamine-en-el-primer-partido-de-espana-estaba-hablado-con-de-la-fuente-43813223",
+"s": "OneFootball"
+},
+{
+"t": "Concern at Barcelona as Yamal receives treatment before Villarreal clash",
+"u": "https://www.goal.com/en/news/concern-at-barcelona-as-yamal-receives-treatment-before-villarreal-clash/blt4c2a29043b6d29f8",
+"s": "Goal.com"
+}
+],
+"n": 500
+},
+{
+"t": "fcs playoffs",
+"trafico": "2000+",
+"fecha": "2026-11-22T15:50+01:00",
+"noticias": [
+{
+"t": "Predicting every at-large team for the 2026 FCS playoffs",
+"u": "https://www.ncaa.com/news/football/article/2026-11-21/predicting-every-large-team-2026-fcs-playoffs",
+"s": "NCAA.com"
+},
+{
+"t": "2026 FCS Football Playoff Bracket Predictions (Nov. 21)",
+"u": "https://www.si.com/college/fcs/big-sky/2026-fcs-football-playoff-bracket-predictions-final-selection-sunday",
+"s": "Sports Illustrated"
+},
+{
+"t": "2026 FCS Football Postseason Qualifiers and Conference Champions",
+"u": "https://theanalyst.com/articles/fcs-football-postseason-qualifiers-and-conference-champions",
+"s": "Opta Analyst"
+}
+],
+"n": 2000
+}
+]
+},
+"GB": {
+"geo": "GB",
+"url": "https://trends.google.com/trending/rss?geo=GB",
+"ok": true,
+"items": [
+{
+"t": "cody gakpo",
+"trafico": "200+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Liverpool v Manchester United: Team news",
+"u": "https://www.liverpoolfc.com/news/liverpool-v-manchester-united-team-news-premier-league-112026",
+"s": "Liverpool FC"
+},
+{
+"t": "Conor Bradley and Giovanni Leoni return to Liverpool team training",
+"u": "https://www.thetimes.com/sport/football/article/conor-bradley-giovanni-leoni-return-to-liverpool-team-training-kq2rt7mcn",
+"s": "The Times"
+},
+{
+"t": "Liverpool’s Conor Bradley, Giovanni Leoni return to team training after injury layoffs - The Athletic",
+"u": "https://www.nytimes.com/athletic/7791674/2026/11/18/conor-bradley-giovanni-leoni-liverpool-injury-update/",
+"s": "The New York Times"
+}
+],
+"n": 200
+},
+{
+"t": "uta arad - universitatea craiova",
+"trafico": "200+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Probleme la Universitatea Craiova, înainte de meciul cu UTA! Filipe Coelho a făcut anunțul",
+"u": "https://www.digisport.ro/fotbal/liga-1/probleme-la-universitatea-craiova-inainte-de-meciul-cu-uta-filipe-coelho-a-facut-anuntul-4618069",
+"s": "Digi Sport"
+},
+{
+"t": "Adi Mihalcea întâlnește patru etape consecutive din Superliga numai antrenori portughezi, la rând e Filipe Coelho: „O altă școală și mentalitate!”",
+"u": "https://www.prosport.ro/fotbal-intern/superliga/adrian-mihalcea-despre-duelul-uta-universitatea-craiova-antrenori-portughezi20575122-20575122",
+"s": "Prosport"
+},
+{
+"t": "Mihalcea nu se așteaptă la menajamente din partea Craiovei: „Au un lot extrem de competitiv”",
+"u": "https://specialarad.ro/mihalcea-nu-se-asteapta-din-partea-craiovei/",
+"s": "Special Arad"
+}
+],
+"n": 200
+},
+{
+"t": "falmouth flooding",
+"trafico": "200+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "UK weather: More frost and a warning of heavy rain",
+"u": "https://www.bbc.co.uk/weather/articles/ckvg251xz51do",
+"s": "BBC"
+},
+{
+"t": "Met Office issues weather warning for rain",
+"u": "https://www.bbc.com/news/articles/cmkg5rn9nk7wo",
+"s": "BBC"
+},
+{
+"t": "Cold gives way to rain in parts of UK as weather warning issued for south-west England",
+"u": "https://www.theguardian.com/uk-news/2026/nov/21/uk-weather-cold-rain-warning-south-west-england",
+"s": "The Guardian"
+}
+],
+"n": 200
+},
+{
+"t": "bruno guimaraes newcastle return boos",
+"trafico": "1000+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "The truth about Bruno Guimaraes’ controversial move to Arsenal",
+"u": "https://www.telegraph.co.uk/football/2026/11/21/inside-bruno-guimaraes-controversial-move-arsenal-newcastle/",
+"s": "The Telegraph"
+},
+{
+"t": "Bruno Guimaraes: Arsenal midfielder is growing in stature but Mikel Arteta still wants more from Brazilian ahead of Newcastle return",
+"u": "https://www.skysports.com/football/news/13612946/bruno-guimaraes-arsenal-midfielder-is-growing-in-stature-but-mikel-arteta-still-wants-more-from-brazilian-ahead-of-newcastle-return",
+"s": "Sky Sports"
+},
+{
+"t": "Bruno Guimaraes breaks silence on Newcastle boos and Arsenal ‘frustration’",
+"u": "https://www.standard.co.uk/sport/football/arsenal-fc-bruno-guimaraes-newcastle-b1305895.html",
+"s": "London Evening Standard"
+}
+],
+"n": 1000
+},
+{
+"t": "bologna fc",
+"trafico": "100+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "LIVE Alle 15 Bologna-Udinese, le ufficiali: Palladino con Cambiaghi, Zanetti lascia Davis in tribuna",
+"u": "https://www.gazzetta.it/Calcio/Serie-A/Bologna/22-11-2026/bologna-udinese-live-serie-a-risultato-e-gol-in-diretta.shtml",
+"s": "La Gazzetta dello Sport"
+},
+{
+"t": "FORMAZIONI UFFICIALI - Davis in tribuna! Berardi, El Sha, Bernardeschi, Muric, Odgaard e Okoye...",
+"u": "https://www.sosfanta.com/news/formazioni-ufficiali-davis-in-tribuna-berardi-el-sha-bernardeschi-muric-odgaard-e-okoye/",
+"s": "SOS Fanta"
+},
+{
+"t": "Bologna-Udinese, dove vedere la partita in tv: gli orari",
+"u": "https://sport.sky.it/calcio/serie-a/2026/11/22/bologna-udinese-dove-vedere-tv-streaming",
+"s": "Sky Sport"
+}
+],
+"n": 100
+},
+{
+"t": "gakpo",
+"trafico": "200+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Liverpool v Manchester United: Team news",
+"u": "https://www.liverpoolfc.com/news/liverpool-v-manchester-united-team-news-premier-league-112026",
+"s": "Liverpool FC"
+},
+{
+"t": "Conor Bradley and Giovanni Leoni return to Liverpool team training",
+"u": "https://www.thetimes.com/sport/football/article/conor-bradley-giovanni-leoni-return-to-liverpool-team-training-kq2rt7mcn",
+"s": "The Times"
+},
+{
+"t": "Liverpool’s Conor Bradley, Giovanni Leoni return to team training after injury layoffs - The Athletic",
+"u": "https://www.nytimes.com/athletic/7791674/2026/11/18/conor-bradley-giovanni-leoni-liverpool-injury-update/",
+"s": "The New York Times"
+}
+],
+"n": 200
+},
+{
+"t": "grand slam of darts",
+"trafico": "10000+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Grand Slam of Darts 2026 LIVE: Michael van Gerwen vs Gian van Veen in semi-final - updates, scores & results",
+"u": "https://www.bbc.co.uk/sport/darts/live/c9gkljvv65ldt",
+"s": "BBC"
+},
+{
+"t": "Grand Slam of Darts 2026 LIVE: Semifinal score, updates and commentary",
+"u": "https://www.espn.co.uk/darts/story/_/id/50560840/grand-slam-2026-darts-semifinals-live",
+"s": "ESPN"
+},
+{
+"t": "Grand Slam of Darts day nine predictions, betting tips and odds: Doets to push Iceman all the way",
+"u": "https://www.racingpost.com/sport/darts-tips/grand-slam-of-darts-day-9-predictions-betting-tips-and-odds-aTZGZ9k2Yuwy/",
+"s": "Racing Post"
+}
+],
+"n": 10000
+},
+{
+"t": "trabzonspor vs eyüpspor",
+"trafico": "200+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Trendyol Süper Lig'de 12. haftanın VAR hakemleri açıklandı",
+"u": "https://www.haber.tr/trendyol-super-ligde-12-haftanin-var-hakemleri-aciklandi",
+"s": "Haber TR"
+},
+{
+"t": "Trabzonspor taraftarlarının isteği gerçek oldu! Başkan Doğan'a teşekkür ettiler",
+"u": "https://www.61saat.com/trabzonspor-taraftarlarinin-istegi-gercek-oldu-baskan-dogana-tesekkur-ettiler",
+"s": "61SAAT"
+},
+{
+"t": "Thomas Reis: Kağıt üzerinde kolay ama...",
+"u": "https://www.kuzeyekspres.com.tr/haber/29205686/thomas-reis-kagit-uzerinde-kolay-ama",
+"s": "Kuzey Ekspres"
+}
+],
+"n": 200
+},
+{
+"t": "man u v liverpool",
+"trafico": "1000+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Two Premier League fixture updates for Liverpool in January",
+"u": "https://www.liverpoolfc.com/news/liverpool-premier-league-fixture-updates-january-manchester-united-everton",
+"s": "Liverpool FC"
+},
+{
+"t": "Three fixture changes in early 2027",
+"u": "https://www.manutd.com/en/news/three-fixture-changes-for-man-utd-in-early-2027",
+"s": "Manchester United"
+},
+{
+"t": "Premier League matches in January confirmed",
+"u": "https://www.arsenal.com/news/premier-league-matches-in-january-confirmed-aeXLo3r79Ycr",
+"s": "Arsenal.com"
+}
+],
+"n": 1000
+},
+{
+"t": "fc barcelona vs villarreal cf standings",
+"trafico": "10000+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "Barcelona 3-2 Villarreal: Barca score three in 10 minutes to return to top of La Liga",
+"u": "https://www.bbc.co.uk/sport/football/live/cqe87553peegt",
+"s": "BBC"
+},
+{
+"t": "FC Barcelona 3-2 Villarreal LIVE – La Liga latest as Gerard Martin and Fermin Lopez score to complete second half turnaround",
+"u": "https://www.tntsports.co.uk/football/la-liga/2026-2027/fc-barcelona-villarreal-cf_mtc21891371/live-commentary.shtml",
+"s": "TNT Sports"
+},
+{
+"t": "Flick explains Garcia and De Jong's positions, justifies reliance on Adeyemi",
+"u": "https://www.livescore.com/en/news/football/more/flick-explains-garcia-and-de-jongs-positions-justifies-reliance-on-adeyemi-goal/",
+"s": "LiveScore"
+}
+],
+"n": 10000
+}
+]
+},
+"FR": {
+"geo": "FR",
+"url": "https://trends.google.com/trending/rss?geo=FR",
+"ok": true,
+"items": [
+{
+"t": "liverpool – man utd",
+"trafico": "2000+",
+"fecha": "2026-11-22T16:40+01:00",
+"noticias": [
+{
+"t": "Liverpool v Manchester United: Premier League – live",
+"u": "https://www.theguardian.com/football/live/2026/nov/22/liverpool-v-manchester-united-premier-league-live",
+"s": "The Guardian"
+},
+{
+"t": "Liverpool vs Man Utd LIVE! Premier League match updates, free highlights, news and score",
+"u": "https://www.skysports.com/football/live-blog/13610924/liverpool-vs-man-utd-live-premier-league-match-updates-free-highlights-news-and-score",
+"s": "Sky Sports"
+},
+{
+"t": "'He will see what Man Utd are made of' - Pulis on Pochettino's first game",
+"u": "https://www.bbc.com/sport/football/articles/ckqx5w58dgv7o",
+"s": "BBC"
+}
+],
+"n": 2000
+},
+{
+"t": "lorient – rennes",
+"trafico": "2000+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Lorient - Rennes, Ligue 1, match en direct le 22/11/2026",
+"u": "https://www.lequipe.fr/Football/match-direct/ligue-1/2026-2027/lorient-rennes-live/690351",
+"s": "L'Équipe"
+},
+{
+"t": "FC Lorient / SRFC : Le Match Center !",
+"u": "https://www.staderennais.com/actualites/ligue-1-mcdonalds/fc-lorient-srfc-le-match-center",
+"s": "Stade Rennais"
+},
+{
+"t": "L1 (J11) : Tout savoir sur Lorient - Rennes : Sports - Orange",
+"u": "https://sports.orange.fr/football/ligue-1/avant-match/l1-j11-tout-savoir-sur-lorient-rennes-exclu-CNT000002tWVnx.html",
+"s": "Sports - Orange"
+}
+],
+"n": 2000
+},
+{
+"t": "trabzonspor – eyüpspor",
+"trafico": "200+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Trendyol Süper Lig'de 12. haftanın VAR hakemleri açıklandı",
+"u": "https://www.haber.tr/trendyol-super-ligde-12-haftanin-var-hakemleri-aciklandi",
+"s": "Haber TR"
+},
+{
+"t": "Trabzonspor taraftarlarının isteği gerçek oldu! Başkan Doğan'a teşekkür ettiler",
+"u": "https://www.61saat.com/trabzonspor-taraftarlarinin-istegi-gercek-oldu-baskan-dogana-tesekkur-ettiler",
+"s": "61SAAT"
+},
+{
+"t": "Trabzonspor Taraftarı Yağmura Aldırmadı: Papara Park’ta Maç Öncesi Neler Konuşuldu?",
+"u": "https://www.takagazete.com.tr/trabzonspor-taraftari-yagmura-aldirmadi-papara-parkta-mac-oncesi-neler-konusuldu",
+"s": "Taka Gazete"
+}
+],
+"n": 200
+},
+{
+"t": "jean-luc lemoine",
+"trafico": "200+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "« Ce n’est pas pour moi » : pourquoi Jean-Luc Lemoine a-t-il refusé de passer les essais de « Slam » sur France 3",
+"u": "https://programmetv.ouest-france.fr/personnalites/jean-luc-lemoine/ce-nest-pas-pour-moi-pourquoi-jean-luc-lemoine-a-t-il-refuse-de-passer-les-essais-de-slam-sur-france-3-1ef35622-e4ed-11f1-bd4e-6f30b8f49e21",
+"s": "Programme TV Ouest-France"
+},
+{
+"t": "INTERVIEW - Jean-Luc Lemoine : ’’C’est un métier d’incertitudes, mais je ne changerais ça pour rien au monde’’",
+"u": "https://www.gala.fr/culture/television/interview-jean-luc-lemoine-c-est-un-metier-d-incertitudes-mais-je-ne-changerais-ca-pour-rien-au-monde-20261117",
+"s": "Gala"
+},
+{
+"t": "Devine si tu peux ! : Émission 1 (1/2) 17-11-2026",
+"u": "https://www.m6.fr/devine-si-tu-peux-p_28624/emission-1-1-2-c_13206118",
+"s": "M6+"
+}
+],
+"n": 200
+},
+{
+"t": "giovanni de gennaro",
+"trafico": "200+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Documenti, lettere e un hard disk per sciogliere il mistero sul suicidio di De Gennaro",
+"u": "https://www.repubblica.it/cronaca/2026/11/22/news/suicidio_de_gennaro_mistero_inchiesta-425741209/",
+"s": "la Repubblica"
+},
+{
+"t": "Di cosa era accusato Gianni De Gennaro",
+"u": "https://www.ilpost.it/2026/11/21/accuse-indagine-gianni-de-gennaro-via-damelio/",
+"s": "Il Post"
+},
+{
+"t": "L'ex capo della Polizia De Gennaro si è ucciso, sconvolto dalle indagini su Via d'Amelio",
+"u": "https://www.ansa.it/sito/notizie/cronaca/2026/11/21/lex-capo-della-polizia-de-gennaro-si-e-ucciso-sparandosi.-la-procura-indaga-per_5bcb2e78-76a6-4c7d-b2ba-61000e349ee9.html",
+"s": "ANSA"
+}
+],
+"n": 200
+},
+{
+"t": "yassir zabiri",
+"trafico": "200+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Qualifs CAN 2027 : Yassir Zabiri buteur, Brahim Diaz passeur, le Maroc est déjà devant !",
+"u": "https://www.beinsports.com/fr-fr/football/qualifications-coupe-dafrique-des-nations/articles-video/qualifs-can-2027-yassir-zabiri-buteur-brahim-diaz-passeur-le-maroc-est-d%C3%A9j%C3%A0-devant-2026-11-13",
+"s": "beIN SPORTS"
+},
+{
+"t": "Stade Rennais. Comment Yassir Zabiri est passé du banc de touche en Ligue 1 à top buteur européen en Espagne",
+"u": "https://www.ouest-france.fr/sport/football/stade-rennais/stade-rennais-comment-yassir-zabiri-est-passe-du-banc-de-touche-en-ligue-1-a-top-buteur-europeen-en-espagne-4f5b3b0e-e402-11f1-9a72-32f9104dab1b",
+"s": "Ouest-France"
+},
+{
+"t": "Mercato Rennes : Pourquoi Yassir Zabiri rechigne déjà à revenir au Roazhon Park ?",
+"u": "https://www.score.fr/football/articles/mercato-rennes-pourquoi-yassir-zabiri-rechigne-deja-a-revenir-au-roazhon-park/",
+"s": "Score.fr"
+}
+],
+"n": 200
+},
+{
+"t": "fc barcelona vs villarreal cf standings",
+"trafico": "2000+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Barcelona 3-2 Villarreal: Barca score three in 10 minutes to return to top of La Liga",
+"u": "https://www.bbc.com/sport/football/live/cqe87553peegt",
+"s": "BBC"
+},
+{
+"t": "Liga leaders Barca mount impressive Villarreal comeback win",
+"u": "https://www.france24.com/en/live-news/20261122-liga-leaders-barca-mount-impressive-villarreal-comeback-win",
+"s": "France 24"
+},
+{
+"t": "Flick explains García and De Jong positions and justifies faith in Adeyemi",
+"u": "https://www.goal.com/en/news/flick-explains-garcia-and-de-jong-positions-and-justifies-faith-in-adeyemi/blt4fe7555b6c6a64a4",
+"s": "Goal.com"
+}
+],
+"n": 2000
+},
+{
+"t": "marcelo arévalo",
+"trafico": "200+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Hot Shot: Olivetti supera a Arévalo/Pavic con una gran volea en la final de Turín",
+"u": "https://www.atptour.com/es/video/hot-shot-olivettis-deft-volley-is-too-good-for-arevalo--pavic-in-nitto-atp-finals-2026-final",
+"s": "ATP Tour"
+},
+{
+"t": "Este es el premio económico que pueden obtener el salvadoreño Marcelo Arévalo y Mate Pavic si levantan el título del las Finales ATP",
+"u": "https://www.infobae.com/el-salvador/2026/11/22/este-es-el-premio-economico-que-pueden-obtener-el-salvadoreno-marcelo-arevalo-y-mate-pavic-si-levantan-el-titulo-del-las-finales-atp/",
+"s": "Infobae"
+},
+{
+"t": "Marcelo Arévalo y Mate Pavić avanzan a la final de las Finales ATP",
+"u": "https://www.elsalvador.com/deportes/mas-deportes/marcelo-arevalo-final-atp/1305176/2026/",
+"s": "elsalvador.com"
+}
+],
+"n": 200
+},
+{
+"t": "om le mans",
+"trafico": "1000+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "« C'était un rêve de gosse » : Antoine Rabillard, un minot devenu Manceau de retour au Vélodrome",
+"u": "https://www.lequipe.fr/Football/Article/-c-etait-un-reve-de-gosse-antoine-rabillard-l-olympien-de-coeur-devenu-chouchou-des-manceaux-de-retour-au-velodrome-pour-affronter-l-om/1745168",
+"s": "L'Équipe"
+},
+{
+"t": "OM - Le Mans : à quelle heure et sur quelle chaîne voir le match de la 11e journée de Ligue 1 ?",
+"u": "https://selectra.info/telecom/actualites/marche/ou-regarder-om-le-mans",
+"s": "Selectra"
+},
+{
+"t": "L1 (J11) : Tout savoir sur Marseille - Le Mans : Sports - Orange",
+"u": "https://sports.orange.fr/football/ligue-1/avant-match/l1-j11-tout-savoir-sur-marseille-le-mans-exclu-CNT000002tWVs2.html",
+"s": "Sports - Orange"
+}
+],
+"n": 1000
+},
+{
+"t": "un dimanche à la campagne invités aujourd'hui",
+"trafico": "2000+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "Un dimanche à la campagne, la suite en replay - Un dimanche à la campagne",
+"u": "https://www.france.tv/france-2/un-dimanche-a-la-campagne/9052393-un-dimanche-a-la-campagne-la-suite.html",
+"s": "France TV"
+},
+{
+"t": "Un dimanche à la campagne : qui sont les invités de Frédéric Lopez ce dimanche 22 novembre",
+"u": "https://www.programme-television.org/news/tv/emissions-tele/un-dimanche-a-la-campagne-qui-sont-les-invites-de-frederic-lopez-ce-dimanche-22-novembre-143307",
+"s": "Télé 7 Jours"
+},
+{
+"t": "Un Dimanche à la campagne : qui sont les invités du programme du Béarnais Frédéric Lopez ce dimanche 22 novembre",
+"u": "https://www.larepubliquedespyrenees.fr/culture-et-loisirs/television/un-dimanche-a-la-campagne-qui-sont-les-invites-du-programme-du-bearnais-frederic-lopez-ce-dimanche-22-novembre-31590149.php",
+"s": "La République des Pyrénées"
+}
+],
+"n": 2000
+}
+]
+},
+"DE": {
+"geo": "DE",
+"url": "https://trends.google.com/trending/rss?geo=DE",
+"ok": true,
+"items": [
+{
+"t": "geissblog",
+"trafico": "200+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Die Mitgliederversammlung 2026 im Liveticker",
+"u": "https://fc.de/die-mitgliederversammlung-2026-im-liveticker",
+"s": "1. FC Köln"
+},
+{
+"t": "Fußball-Bundesliga - NLZ-Bau in Sicht: 1. FC Köln prüft auch Stadionausbau - Sport - SZ.de",
+"u": "https://www.sueddeutsche.de/sport/fussball-bundesliga-nlz-bau-in-sicht-1-fc-koeln-prueft-auch-stadionausbau-dpa.urn-newsml-dpa-com-20090101-261122-930-34379",
+"s": "SZ.de"
+},
+{
+"t": "Liveblog der MV 2026: So läuft die Mitgliederversammlung des 1. FC Köln",
+"u": "https://geissblog.koeln/2026/11/liveblog-so-laeuft-die-mitgliederversammlung-2026-des-1-fc-koeln/",
+"s": "geissblog"
+}
+],
+"n": 200
+},
+{
+"t": "seifenoper",
+"trafico": "1000+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "AWZ Folge 5085 bei RTL+: Flirt auf dem Eis! Joana und Collin treffen sich wieder",
+"u": "https://www.swp.de/unterhaltung/tv/alles-was-zaehlt-seifenoper-awz-folge-5085-bei-rtl-flirt-auf-dem-eis-joana-und-collin-treffen-sich-wieder-79768582.html",
+"s": "swp.de"
+},
+{
+"t": "„AWZ“: Magische Begegnung – Joana trifft „Mr. Aschenputtel“!",
+"u": "https://www.hoerzu.de/aktuelles/awz-magische-begegnung---joana-trifft-mr.-aschenputtel/",
+"s": "HÖRZU"
+},
+{
+"t": "Die AWZ-Wochenvorschau (Teil 3): Wird Joana Collin wiederfinden?",
+"u": "https://www.rtl.de/sendungen/alles-was-zaehlt/videos/die-awz-wochenvorschau-teil-3-wird-joana-collin-wiederfinden-6afdc27405283398f90f570e.html",
+"s": "RTL.de"
+}
+],
+"n": 1000
+},
+{
+"t": "trabzonspor – eyüpspor",
+"trafico": "2000+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "Trabzonspor’da savunmada cezalı Nwaiwu sebebiyle zorunlu değişim ve eksikler: Fırtına'da 6 eksik",
+"u": "https://www.gunebakis.com.tr/trabzonsporda-savunmada-cezali-nwaiwu-sebebiyle-zorunlu-degisim-ve-eksikler-firtinada-6-eksik/29200881",
+"s": "Günebakış Gazetesi Trabzon"
+},
+{
+"t": "Thomas Reis'ten Eyüpspor uyarısı! \"En zor maçlar bunlar\"",
+"u": "https://www.haber61.net/trabzonspor/thomas-reis-ten-eyupspor-uyarisi-en-zor-maclar-bunlar/650226",
+"s": "Haber61"
+},
+{
+"t": "Trabzonspor maçı öncesi ücretsiz olacak",
+"u": "https://www.61saat.com/trabzonspor-maci-oncesi-ucretsiz-olacak",
+"s": "61SAAT"
+}
+],
+"n": 2000
+},
+{
+"t": "am flughafen",
+"trafico": "2000+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "US-Einwanderungsbehörde ICE: US-Gouverneur kritisiert ICE-Einsatz am Flughafen Seattle",
+"u": "https://www.zeit.de/politik/ausland/2026-11/ice-festnahme-flughafen-seattle-bob-ferguson-gxe",
+"s": "DIE ZEIT"
+},
+{
+"t": "Gouverneur ergebt schwere Vorwürfe gegen ICE: \"Völlig außer Kontrolle\"",
+"u": "https://web.de/magazine/politik/us-politik/gouverneur-ergebt-schwere-vorwuerfe-ice-voellig-kontrolle-42972110",
+"s": "WEB.DE"
+},
+{
+"t": "USA News: Gouverneur verurteilt ICE-Festnahmen am Flughafen: „Vollkommen außer Kontrolle“",
+"u": "https://www.sueddeutsche.de/politik/usa-news-liveblog-ice-flughafen-seattle-festnahmen-gouverneur-bob-ferguson-li.3578585",
+"s": "SZ.de"
+}
+],
+"n": 2000
+},
+{
+"t": "uta arad - universitatea craiova",
+"trafico": "500+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "UTA Arad - Universitatea Craiova LIVE VIDEO, 17:30, Digi Sport 1. Oltenii au câștigat clar în tur! Echipele",
+"u": "https://www.digisport.ro/fotbal/liga-1/uta-arad-universitatea-craiova-live-video-duminica-1730-digi-sport-1-oltenii-au-castigat-clar-in-tur-4617389",
+"s": "Digi Sport"
+},
+{
+"t": "Adi Mihalcea întâlnește patru etape consecutive din Superliga numai antrenori portughezi, la rând e Filipe Coelho: „O altă școală și mentalitate!”",
+"u": "https://www.prosport.ro/fotbal-intern/superliga/adrian-mihalcea-despre-duelul-uta-universitatea-craiova-antrenori-portughezi20575122-20575122",
+"s": "Prosport"
+},
+{
+"t": "Universitatea Craiova a detronat-o pe Dinamo, iar oltenii au un mesaj pentru rivale! Ce se întâmplă în vestiarul liderului | VIDEO",
+"u": "https://orangesport.ro/universitatea-craiova-a-detronat-o-pe-dinamo-iar-oltenii-au-un-mesaj-pentru-rivale-ce-se-intampla-in-vestiarul-liderului-video-23001084",
+"s": "Orangesport"
+}
+],
+"n": 500
+},
+{
+"t": "stanley cup sport",
+"trafico": "500+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "Calvin Pickard’s uncertain future looms as Filip Gustavsson returns to Wild - The Athletic",
+"u": "https://www.nytimes.com/athletic/7801031/2026/11/22/wild-filip-gustavsson-calvin-pickard-return/",
+"s": "The New York Times"
+},
+{
+"t": "MN Wild Goalie Raves About Locker Room, Jesper Wallstedt on Way Out",
+"u": "https://sports.yahoo.com/articles/mn-wild-goalie-raves-locker-152441717.html",
+"s": "Yahoo Sports"
+},
+{
+"t": "Wild assign goaltender Filip Gustavsson to AHL on conditioning assignment",
+"u": "https://www.sportsnet.ca/nhl/article/wild-assign-goaltender-filip-gustavsson-to-ahl-on-conditioning-assignment/",
+"s": "Sportsnet.ca"
+}
+],
+"n": 500
+},
+{
+"t": "παναθηναϊκόσ εναντίον οφη",
+"trafico": "200+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "Παναθηναϊκός: Η ενδεκάδα του Τριφυλλιού κόντρα στον ΟΦΗ",
+"u": "https://www.sport24.gr/football/panathinaikos-i-endekada-tou-trifilliou-kontra-ston-ofi/",
+"s": "Sport24"
+},
+{
+"t": "Παγκάκης: «Υποψιασμένος και σε εγρήγορση ο Παναθηναϊκός με ΟΦΗ»",
+"u": "https://www.sport-fm.gr/article/podosfairo/superleague1/pagkakis-upopsiasmenos-kai-se-egrigorsi-o-panathinaikos-me-ofi/5162707",
+"s": "bwinΣΠΟΡ FM 94.6"
+},
+{
+"t": "Παναθηναϊκός – ΟΦΗ: Η ώρα του αγώνα της Super League και το κανάλι που θα τον μεταδώσει",
+"u": "https://www.newsit.gr/athlitika/panathinaikos-ofi-i-ora-tou-agona-tis-super-league-kai-to-kanali-pou-tha-ton-metadosei/4828640/",
+"s": "NewsIT"
+}
+],
+"n": 200
+},
+{
+"t": "blockbuster",
+"trafico": "200+",
+"fecha": "2026-11-22T16:00+01:00",
+"noticias": [
+{
+"t": "Endlich mal wieder ein richtig gutes Remake! Dieser Fantasy-Blockbuster ist absolut großartig – und eines der Black-Friday-Highlights von Amazon",
+"u": "https://www.filmstarts.de/nachrichten/1000233373.html",
+"s": "Filmstarts"
+},
+{
+"t": "Dieser Sci-Fi-Blockbuster bei Netflix rettet euren Sonntagabend: Mehr Bombast geht nicht",
+"u": "https://www.moviepilot.de/news/dieser-sci-fi-blockbuster-bei-netflix-rettet-euren-sonntagabend-mehr-bombast-geht-nicht-1165580",
+"s": "moviepilot.de"
+},
+{
+"t": "Heute Abend im TV: Die Fortsetzung zu einem der größten Actionklassiker aller Zeiten",
+"u": "https://www.filmstarts.de/nachrichten/1000232847.html",
+"s": "Filmstarts"
+}
+],
+"n": 200
+},
+{
+"t": "racing santander – real sociedad",
+"trafico": "200+",
+"fecha": "2026-11-22T16:00+01:00",
+"noticias": [
+{
+"t": "🚨 Racing Santander-Real Sociedad: both sides rotate their starting XIs",
+"u": "https://sports.yahoo.com/articles/racing-santander-real-sociedad-both-141100730.html",
+"s": "Yahoo Sports"
+},
+{
+"t": "Racing-Real Sociedad: Racing hosts with three players ruled out",
+"u": "https://www.tufutbolero.com/en/news/racing-real-sociedad-racing-hosts-with-three-players-ruled-fcf0d2",
+"s": "Tu Futbolero"
+},
+{
+"t": "Racing Santander vs Real Sociedad: Lineups, Prediction, Odds & Bet Builder Tip",
+"u": "https://www.whoscored.com/articles/CSmhj4JbhkKOQFzSsInNvA/show/cng111-20261122-racing-santander-vs-real-sociedad-prediction-1795332055",
+"s": "WhoScored.com"
+}
+],
+"n": 200
+},
+{
+"t": "saarbrücken – sv wehen",
+"trafico": "2000+",
+"fecha": "2026-11-22T15:50+01:00",
+"noticias": [
+{
+"t": "Liveticker | 1. FC Saarbrücken - SV Wehen Wiesbaden : | 14. Spieltag | 3. Liga 2026/27",
+"u": "https://www.kicker.de/saarbruecken-gegen-wiesbaden-2026-liga-5233347/ticker",
+"s": "Kicker"
+},
+{
+"t": "Zuletzt in Brighton: Saarbrücken testet DIESEN Innenverteidiger",
+"u": "https://www.bild.de/sport/fussball/zuletzt-in-brighton-saarbruecken-testet-diesen-innenverteidiger-6b004ca3b237b5b41c9a2a51",
+"s": "BILD"
+},
+{
+"t": "Hilfe für die geplagte Abwehr? Saarbrücken testet Ex-Brighton-Talent Atom",
+"u": "https://www.n-tv.de/sport/fussball/transfermarkt/Transfer-Ticker-1-FC-Saarbruecken-testet-Noel-Bigo-Atom-nach-Abschied-von-Brighton-Hove-Albion-id31560863.html",
+"s": "n-tv.de"
+}
+],
+"n": 2000
+}
+]
+},
+"IT": {
+"geo": "IT",
+"url": "https://trends.google.com/trending/rss?geo=IT",
+"ok": true,
+"items": [
+{
+"t": "liverpool - manchester united",
+"trafico": "1000+",
+"fecha": "2026-11-22T16:40+01:00",
+"noticias": [
+{
+"t": "'He will see what Man Utd are made of' - Pulis on Pochettino's first game",
+"u": "https://www.bbc.com/sport/football/articles/ckqx5w58dgv7o",
+"s": "BBC"
+},
+{
+"t": "Classic Liverpool vs. Manchester United: Reds in seventh heaven",
+"u": "https://www.dazn.com/en-US/news/soccer/classic-liverpool-vs-manchester-united-salah-seven/t70ues6pnrky1u6uw7bmpf1ul",
+"s": "DAZN"
+},
+{
+"t": "Betfred bonus code BETFRED50: Get £50 in Premier League free bets",
+"u": "https://mybettingsites.co.uk/news/betfred-bonus-code-betfred50-get-50-in-premier-league-free-bets-22nd-nov/",
+"s": "MyBettingSites.co.uk"
+}
+],
+"n": 1000
+},
+{
+"t": "albano olivetti",
+"trafico": "200+",
+"fecha": "2026-11-22T16:40+01:00",
+"noticias": [
+{
+"t": "Nitto ATP Finals: Arribage/Olivetti raggiungono Arevalo/Pavic in finale",
+"u": "https://www.supertennis.tv/News/Atp/nitto-atp-finals-semifinali-doppio-recap",
+"s": "SuperTennis"
+},
+{
+"t": "Atp Finals: Arevalo-Pavic i primi finalisti nel doppio",
+"u": "https://www.ansa.it/sito/notizie/sport/tennis/2026/11/21/atp-finals-arevalo-pavic-i-primi-finalisti-nel-doppio_e6c421c5-9c3b-443c-82ca-ace93049a2c5.html",
+"s": "ANSA"
+},
+{
+"t": "Diretta Marcelo Arevalo - Mate Pavic vs Christian Harrison - Neal Skupski Men Double - ATP Finals 2026",
+"u": "https://www.repubblica.it/sport/dirette/tennis/atp-finals-2026/diretta-marcelo-arevalo-mate-pavic-christian-harrison-neal-skupski-1ldnyb20o4h8373voo6exezv8/",
+"s": "la Repubblica"
+}
+],
+"n": 200
+},
+{
+"t": "singapore",
+"trafico": "200+",
+"fecha": "2026-11-22T16:40+01:00",
+"noticias": [
+{
+"t": "Singapore and China: Innovating together for new opportunities",
+"u": "https://www.businesstimes.com.sg/opinion-features/singapore-and-china-innovating-together-new-opportunities",
+"s": "The Business Times"
+},
+{
+"t": "Singapore-China ties: Willingness to innovate together key to decades-long partnership, says DPM Gan",
+"u": "https://www.channelnewsasia.com/watch/singapore-china-ties-willingness-innovate-together-key-decades-long-partnership-says-dpm-gan-6573011",
+"s": "CNA"
+},
+{
+"t": "Chinese vice premier to visit Singapore",
+"u": "https://english.news.cn/20261120/18afcc32a5c74087a208bdc050d7b90f/c.html",
+"s": "Xinhua"
+}
+],
+"n": 200
+},
+{
+"t": "mentana",
+"trafico": "200+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Francesca Fagnani, la casa mozzafiato al ghetto di Roma con Enrico Mentana: il terrazzo con vista sulla Sinagoga, gli interni raffinati...",
+"u": "https://www.ilmessaggero.it/schede/francesca_fagnani_dove_vive_casa_roma_ghetto-9906224.html",
+"s": "Il Messaggero"
+},
+{
+"t": "Francesca Fagnani, la casa mozzafiato al ghetto di Roma con Enrico Mentana: il terrazzo con vista sulla Sinagoga, gli interni raffinati e la scala a chiocciola",
+"u": "https://www.ilgazzettino.it/gossip/francesca_fagnani_dove_vive_casa-9906288.html",
+"s": "Il Gazzettino"
+},
+{
+"t": "Francesca Fagnani a Domenica In: la casa mozzafiato al ghetto di Roma con Enrico Mentana",
+"u": "https://www.ilmattino.it/schede/francesca_fagnani_domenica_in_belve_enrico_mentana-9906244.html",
+"s": "Il Mattino"
+}
+],
+"n": 200
+},
+{
+"t": "teramo ancona",
+"trafico": "100+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Ancona, missione compattezza: dopo l'eliminazione dalla Coppa la sfida con il Teramo diventa decisiva",
+"u": "https://www.corriereadriatico.it/sport/ancona_missione_compattezza_teramo-9900660.html",
+"s": "Corriere Adriatico"
+},
+{
+"t": "Calcio serie D, la tredicesima giornata",
+"u": "https://www.rete8.it/sport/calcio/calcio-serie-d-la-tredicesima-giornata/",
+"s": "Rete8"
+},
+{
+"t": "Il Teramo capolista all’esame Ancona: torna bomber Njambe",
+"u": "https://www.ilcentro.it/sport/il-teramo-capolista-allesame-ancona-torna-bomber-njambe-jwxyjrsh",
+"s": "il Centro"
+}
+],
+"n": 100
+},
+{
+"t": "francesca fagnani",
+"trafico": "1000+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "\"Domenica In\"",
+"u": "https://www.rai.it/ufficiostampa/articoli/2026/11/Domenica-In-7ce867ef-1897-4bf2-8b89-7c11c1d43aa2.html",
+"s": "Rai.it"
+},
+{
+"t": "Domenica In, gli ospiti di Mara Venier del 22 novembre",
+"u": "https://www.gazzetta.it/spettacolo-tv-gossip/22-11-2026/domenica-in-oggi-ospiti-e-anticipazioni-22-novembre-con-mara-venier.shtml",
+"s": "La Gazzetta dello Sport"
+},
+{
+"t": "Domenica In, Monica Guerritore e la malattia: dalla diagnosi alla scelta di togliersi la parrucca",
+"u": "https://www.adnkronos.com/spettacoli/monice-guerritore-malattia-ballando-con-le-stelle-ospite-oggi-domenica-in_6mv0aMYlu3KMBrvN9RE0uA",
+"s": "Adnkronos"
+}
+],
+"n": 1000
+},
+{
+"t": "fc barcelona vs villarreal cf standings",
+"trafico": "1000+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Barcelona 3-2 Villarreal: Barca score three in 10 minutes to return to top of La Liga",
+"u": "https://www.bbc.com/sport/football/live/cqe87553peegt",
+"s": "BBC"
+},
+{
+"t": "Licensable picture: Soccer 2026: LaLiga: FC Barcelona - Villarreal CF",
+"u": "https://www.reutersconnect.com/item/soccer-2026-laliga-fc-barcelona-villarreal-cf/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBPWlVWNUQ",
+"s": "Reuters Connect"
+},
+{
+"t": "Flick explains García and De Jong positions and justifies faith in Adeyemi",
+"u": "https://www.goal.com/en/news/flick-explains-garcia-and-de-jong-positions-and-justifies-faith-in-adeyemi/blt4fe7555b6c6a64a4",
+"s": "Goal.com"
+}
+],
+"n": 1000
+},
+{
+"t": "francesco passaro",
+"trafico": "200+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Metz: Passaro vola in finale",
+"u": "https://www.supertennis.tv/News/Challenger/Metz-Passaro-in-fnale",
+"s": "SuperTennis"
+},
+{
+"t": "Pesaro. Tennis, Luca Nardi bella vittoria in Francia. Raggiunto il terzio turno al 125 di Metz",
+"u": "https://lapiazzarimini.it/2026/pesaro-tennis-luca-nardi-bella-vittoria-in-francia-raggiunto-il-terzio-turno-al-125-di-metz/",
+"s": "La Piazza di Rimini e Pesaro-Urbino"
+},
+{
+"t": "ATP Challenger Metz, Passaro avanza",
+"u": "https://www.umbriatv.com/notizie/sport/tennis/atp-challenger-metz-passaro-avanza/",
+"s": "Umbria TV"
+}
+],
+"n": 200
+},
+{
+"t": "alessandro di battista",
+"trafico": "200+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Alessandro Di Battista si candida? Chi lo sostiene da Rula Jebreal a Scanzi e dove può arrivare l'ex M5S",
+"u": "https://www.virgilio.it/notizie/alessandro-di-battista-si-candida-chi-lo-sostiene-da-rula-jebreal-a-scanzi-e-dove-puo-arrivare-l-ex-m5s-1798240",
+"s": "Virgilio"
+},
+{
+"t": "«Se Alessandro Di Battista si candida, io ci sono», l'annuncio di Rula Jebreal. Accetta pure Scanzi: dove possono arrivare",
+"u": "https://www.open.online/2026/11/22/elezioni-politiche-27-schierarsi-di-battista-jebreal-scanzi/",
+"s": "Open"
+},
+{
+"t": "Problemi in vista a Sinistra: e se tornasse davvero Di Battista?",
+"u": "https://www.lavocedelpatriota.it/problemi-in-vista-a-sinistra-e-se-tornasse-davvero-di-battista/",
+"s": "La Voce del Patriota"
+}
+],
+"n": 200
+},
+{
+"t": "arevalo",
+"trafico": "100+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Arevalo/Pavic reach title match at Nitto ATP Finals",
+"u": "https://www.atptour.com/en/news/harrison-skupski-arevalo-pavic-nitto-atp-finals-2026-saturday",
+"s": "ATP Tour"
+},
+{
+"t": "Sports News, Transfers, Scores | Watch Live Sport",
+"u": "https://www.skysports.com/tennis/watch/7763496560380886112/nitto-atp-finals-2026",
+"s": "Sky Sports"
+},
+{
+"t": "Marcelo Arévalo and Mate Pavić Defeat Harrison and Skupski to Reach Nitto ATP Finals 2026 Doubles Final",
+"u": "https://speaks.co.in/sports/nitto-atp-finals-2026/",
+"s": "Speaks Media"
+}
+],
+"n": 100
+}
+]
+},
+"PT": {
+"geo": "PT",
+"url": "https://trends.google.com/trending/rss?geo=PT",
+"ok": true,
+"items": [
+{
+"t": "olhanense",
+"trafico": "200+",
+"fecha": "2026-11-22T15:50+01:00",
+"noticias": [
+{
+"t": "Gil Vicente 1-0 Olhanense ao Vivo :: Taça de Portugal Generali Tranquilidade 2026/27",
+"u": "https://www.zerozero.pt/live-ao-minuto/2026-11-22-gil-vicente-olhanense/12799249",
+"s": "zerozero.pt"
+},
+{
+"t": "Farense 0-0 CD Fátima ao Vivo :: Taça de Portugal Generali Tranquilidade 2026/27",
+"u": "https://www.zerozero.pt/live-ao-minuto/2026-11-22-farense-cd-fatima/12799251",
+"s": "zerozero.pt"
+},
+{
+"t": "Atlético CP 1-0 Casa Pia AC ao Vivo :: Taça de Portugal Generali Tranquilidade 2026/27",
+"u": "https://www.zerozero.pt/live-ao-minuto/2026-11-21-atletico-cp-casa-pia-ac/12799248",
+"s": "zerozero.pt"
+}
+],
+"n": 200
+},
+{
+"t": "cascais",
+"trafico": "500+",
+"fecha": "2026-11-22T15:40+01:00",
+"noticias": [
+{
+"t": "Terra tremeu durante a madrugada deste domingo em Cascais",
+"u": "https://www.cmjornal.pt/sociedade/detalhe/terra-tremeu-durante-a-madrugada-deste-domingo-em-cascais",
+"s": "Correio da Manhã"
+},
+{
+"t": "Sismo de magnitude 3,4 na escala de Richter sentido em Sines e em Cascais",
+"u": "https://www.rtp.pt/noticias/pais/sismo-de-magnitude-3-4-na-escala-de-richter-sentido-em-sines-e-em-cascais_n1780450",
+"s": "RTP"
+},
+{
+"t": "Depois dos sismos de sexta-feira, a terra voltou a tremer em Cascais",
+"u": "https://sapo.pt/artigo/depois-dos-sismos-de-sexta-feira-a-terra-voltou-a-tremer-em-cascais-6b02f3a22feb67ff6b5b5099",
+"s": "SAPO"
+}
+],
+"n": 500
+},
+{
+"t": "vizela - feirense",
+"trafico": "500+",
+"fecha": "2026-11-22T15:20+01:00",
+"noticias": [
+{
+"t": "Marcos Bastidas sente Vizela a crescer: «Nos últimos dois jogos já se viu evolução»",
+"u": "https://www.record.pt/futebol/futebol-nacional/2--liga/vizela/detalhe/marcos-bastidas-sente-vizela-a-crescer-nos-ultimos-dois-jogos-ja-se-viu-evolucao",
+"s": "Record"
+},
+{
+"t": "FC Vizela x Feirense - Resumo, Destaques e Crónica do Jogo",
+"u": "https://sapo.pt/artigo/fc-vizela-x-feirense-resumo-destaques-e-cronica-do-jogo-6b03040d2feb67ff6b5e7fe6",
+"s": "SAPO"
+},
+{
+"t": "Nomeações para a Liga Meu Super",
+"u": "https://www.fpf.pt/pt/News/Todas-as-not%C3%ADcias/Not%C3%ADcia/news/58819",
+"s": "FPF"
+}
+],
+"n": 500
+},
+{
+"t": "sérgio conceição",
+"trafico": "5000+",
+"fecha": "2026-11-22T14:30+01:00",
+"noticias": [
+{
+"t": "Sérgio Conceição de volta ao Parma",
+"u": "https://www.abola.pt/noticias/sergio-conceicao-de-volta-ao-parma-2026112212561074356",
+"s": "A Bola"
+},
+{
+"t": "Sérgio Conceição homenageado pelo Parma: «Uma grande emoção voltar aqui»",
+"u": "https://sapo.pt/artigo/sergio-conceicao-homenageado-pelo-parma-uma-grande-emocao-voltar-aqui-6b02e1782feb67ff6b585ba5",
+"s": "SAPO"
+},
+{
+"t": "FOTO: Sérgio Conceição homenageado pelo Parma",
+"u": "https://cnnportugal.iol.pt/made-in/sergio-conceicao/foto-sergio-conceicao-homenageado-pelo-parma",
+"s": "CNN Portugal"
+}
+],
+"n": 5000
+},
+{
+"t": "miley cyrus",
+"trafico": "1000+",
+"fecha": "2026-11-22T14:30+01:00",
+"noticias": [
+{
+"t": "Miley Cyrus marries Maxx Morando in California ceremony",
+"u": "https://www.bbc.com/news/articles/cq8e0p87l89lo",
+"s": "BBC"
+},
+{
+"t": "Miley Cyrus Marries Maxx Morando in Palm Springs Wedding",
+"u": "https://people.com/miley-cyrus-marries-maxx-morando-11877139",
+"s": "People.com"
+},
+{
+"t": "Who is Elizabeth Hurley, Billy Ray Cyrus's reported fiancée? The actress who was at Miley's wedding",
+"u": "https://www.nacionale.com/en/articles/who-is-elizabeth-hurley-billy-ray-cyrus-fiancee-actress-miley-cyrus-wedding",
+"s": "Nacionale"
+}
+],
+"n": 1000
+},
+{
+"t": "marc marquez",
+"trafico": "2000+",
+"fecha": "2026-11-22T14:30+01:00",
+"noticias": [
+{
+"t": "MotoGP: Marc Márquez é campeão do Mundo pela oitava vez",
+"u": "https://maisfutebol.iol.pt/motogp/grande-premio-portugal/motogp-marc-marquez-e-campeao-do-mundo-pela-oitava-vez",
+"s": "Maisfutebol"
+},
+{
+"t": "Moto GP: Márquez tenta título em Portugal",
+"u": "https://www.abola.pt/liveblog/moto-gp-marquez-tenta-titulo-em-portugal",
+"s": "A Bola"
+},
+{
+"t": "Marco Bezzecchi “muito feliz” com vitória na corrida sprint",
+"u": "https://madeira.rtp.pt/desporto/marco-bezzecchi-muito-feliz-com-vitoria-na-corrida-sprint/",
+"s": "RTP Madeira"
+}
+],
+"n": 2000
+},
+{
+"t": "torreense benfica",
+"trafico": "1000+",
+"fecha": "2026-11-22T14:30+01:00",
+"noticias": [
+{
+"t": "Onze do Benfica para o Torreense pode surpreender (fotos)",
+"u": "https://www.abola.pt/noticias/onze-do-benfica-para-o-torreense-pode-surpreender-fotos-2026112116202467449",
+"s": "A Bola"
+},
+{
+"t": "Taça de Portugal. Benfica defronta o Torreense este domingo",
+"u": "https://www.rtp.pt/noticias/desporto/taca-de-portugal-benfica-defronta-o-torreense-este-domingo_v1780919",
+"s": "RTP"
+},
+{
+"t": "O fator que não pesa na escolha do guarda-redes, a obrigação de passar e duas ausências: o que disse Marco Silva",
+"u": "https://www.record.pt/futebol/futebol-nacional/liga-betclic/benfica/detalhe/em-direto-siga-a-conferencia-de-marco-silva-de-antevisao-ao-jogo-com-o-torreense",
+"s": "Record"
+}
+],
+"n": 1000
+},
+{
+"t": "barcelona x villarreal",
+"trafico": "1000+",
+"fecha": "2026-11-22T14:00+01:00",
+"noticias": [
+{
+"t": "O Barcelona perdia em casa por 0-2 e Yamal conseguiu fazer isto num penálti",
+"u": "https://www.abola.pt/video/o-barcelona-perdia-em-casa-por-0-2-e-yamal-conseguiu-fazer-isto-num-penalti-2026112214052645683",
+"s": "A Bola"
+},
+{
+"t": "VÍDEO: Barcelona opera reviravolta e vence na receção ao Villarreal",
+"u": "https://tvi.iol.pt/noticias/espanha/barcelona/video-barcelona-opera-reviravolta-e-vence-na-rececao-ao-villarreal",
+"s": "TVI"
+},
+{
+"t": "Fibra de líder: Barcelona desenha reviravolta contra o Villarreal",
+"u": "https://sapo.pt/artigo/fibra-de-lider-barcelona-desenha-reviravolta-contra-o-villarreal-6b03050e5fe32317aecc893d",
+"s": "SAPO"
+}
+],
+"n": 1000
+},
+{
+"t": "imigração nos estados unidos",
+"trafico": "500+",
+"fecha": "2026-11-22T13:50+01:00",
+"noticias": [],
+"n": 500
+},
+{
+"t": "fogo",
+"trafico": "500+",
+"fecha": "2026-11-22T13:50+01:00",
+"noticias": [
+{
+"t": "Número de armas apreendidas pela GNR cresce 49,6% até junho",
+"u": "https://www.jn.pt/justica/artigo/numero-de-armas-apreendidas-pela-gnr-cresce-496-ate-junho/18150628",
+"s": "Jornal de Notícias"
+},
+{
+"t": "GNR apreende mais de 7.300 armas de fogo e 417.000 munições desde 2022",
+"u": "https://www.impala.pt/noticias/politica/gnr-apreende-mais-de-7-300-armas-de-fogo-e-417-000-municoes-desde-2022/",
+"s": "Portal Impala"
+},
+{
+"t": "GNR apreendeu mais 49,6% de armas no primeiro semestre",
+"u": "https://omirante.pt/nacional/2026-11-21-gnr-apreendeu-mais-496-de-armas-no-primeiro-semestre-1420caf2",
+"s": "O Mirante"
+}
+],
+"n": 500
+}
+]
+},
+"MX": {
+"geo": "MX",
+"url": "https://trends.google.com/trending/rss?geo=MX",
+"ok": true,
+"items": [
+{
+"t": "liverpool - manchester united",
+"trafico": "2000+",
+"fecha": "2026-11-22T16:40+01:00",
+"noticias": [
+{
+"t": "'He will see what Man Utd are made of' - Pulis on Pochettino's first game",
+"u": "https://www.bbc.com/sport/football/articles/ckqx5w58dgv7o",
+"s": "BBC"
+},
+{
+"t": "Andoni Iraola programme notes | Why Liverpool need to be 'all in' from the off today",
+"u": "https://www.liverpoolfc.com/news/andoni-iraola-programme-notes-liverpool-all-in-manchester-united",
+"s": "Liverpool FC"
+},
+{
+"t": "Premier League - Liverpool v Manchester United",
+"u": "https://www.reutersconnect.com/item/premier-league-liverpool-v-manchester-united/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQk0xMk9VVzc",
+"s": "Reuters Connect"
+}
+],
+"n": 2000
+},
+{
+"t": "epicentro temblor hoy",
+"trafico": "200+",
+"fecha": "2026-11-22T16:40+01:00",
+"noticias": [
+{
+"t": "Temblor hoy en México 22 de noviembre de 2026: se registra sismo de magnitud 4.0 en Baja California",
+"u": "https://www.infobae.com/mexico/2026/11/22/temblor-hoy-en-mexico-noticias-actividad-sismica-22-de-noviembre-de-2026/",
+"s": "Infobae"
+},
+{
+"t": "Temblor hoy México 22 de noviembre sismo en CDM y Epicentro Según SNN",
+"u": "https://rpp.pe/mundo/mexico/cual-fue-el-ultimo-temblor-en-mexico-hoy-22-de-noviembre-segun-ssn-live-3724",
+"s": "RPP Noticias"
+},
+{
+"t": "Temblor HOY 22 de noviembre: Sigue las ÚLTIMAS noticias de sismos en México AL MOMENTO",
+"u": "https://www.mediotiempo.com/actualidad/comunidad/temblor-hoy-22-de-noviembre-2026-sigue-ultimas-noticias-de-sismos-en-mexico-al",
+"s": "Mediotiempo"
+}
+],
+"n": 200
+},
+{
+"t": "real sociedad",
+"trafico": "200+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Racing Santander vs Real Sociedad: Lineups, Prediction, Odds & Bet Builder Tip",
+"u": "https://www.whoscored.com/articles/CSmhj4JbhkKOQFzSsInNvA/show/cng111-20261122-racing-santander-vs-real-sociedad-prediction-1795332055",
+"s": "WhoScored.com"
+},
+{
+"t": "Preview: Racing de Santander vs Real Sociedad - prediction, team news, lineups",
+"u": "https://www.sportsmole.co.uk/football/real-sociedad/preview/racing-vs-real-sociedad-prediction-team-news-lineups_609535.html",
+"s": "Sports Mole"
+},
+{
+"t": "Racing Santander vs Real Sociedad Confirmed Lineups",
+"u": "https://www.whoscored.com/news/ZE4G4aukmUeD0GZbzG2NTg/show/cng112-20261122-racing-santander-vs-real-sociedad-confirmed-lineup-1795357353",
+"s": "WhoScored.com"
+}
+],
+"n": 200
+},
+{
+"t": "arsenal - west ham",
+"trafico": "100+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Arsenal vs West Ham United: Women's Super League stats & head-to-head",
+"u": "https://www.bbc.com/sport/football/live/cwq6egg8pjn6t",
+"s": "BBC"
+},
+{
+"t": "Matchday Gallery | Hammers face Gunners at Emirates Stadium",
+"u": "https://www.whufc.com/en/news/matchday-gallery-or-hammers-face-gunners-at-emirates-stadium",
+"s": "West Ham United"
+},
+{
+"t": "MOTD Live: Women's Super League on BBC Two England: full details and when it's on",
+"u": "https://www.tvguide.co.uk/schedule/f662f29c-1195-5376-a383-6364ac5b3c64/motd-live-womens-super-league",
+"s": "TVGuide.co.uk"
+}
+],
+"n": 100
+},
+{
+"t": "odessa",
+"trafico": "200+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Russia Hits Ukrainian Energy Facilities, Straining Power Supply",
+"u": "https://www.bloomberg.com/news/articles/2026-11-22/russia-hits-ukrainian-energy-facilities-straining-power-supply",
+"s": "Bloomberg.com"
+},
+{
+"t": "Winter Nightmare Looms Early in Ukraine as Russia Strikes Relentlessly",
+"u": "https://www.nytimes.com/2026/11/16/world/europe/russia-ukraine-winter-campaign.html",
+"s": "The New York Times"
+},
+{
+"t": "Russian forces hit industrial facility in Rivne region overnight, one person injured",
+"u": "https://www.ukrinform.net/rubric-ato/4187093-russian-forces-hit-industrial-facility-in-rivne-region-overnight-one-person-injured.html",
+"s": "Ukrinform"
+}
+],
+"n": 200
+},
+{
+"t": "22 de noviembre que se celebra",
+"trafico": "100+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "¿Buscas saber el santoral de hoy domingo 22 de noviembre de 2026?",
+"u": "https://www.univision.com/shows/primer-impacto/conoce-el-santo-que-se-conmemora-hoy-domingo-22-de-noviembre",
+"s": "Univision"
+},
+{
+"t": "Santa Cecilia: cuál es su historia y qué oración rezar para pedir su ayuda",
+"u": "https://es-us.noticias.yahoo.com/santa-cecilia-cu%C3%A1l-historia-oraci%C3%B3n-131330164.html",
+"s": "Yahoo"
+},
+{
+"t": "¡Brindan por su pasión musical!",
+"u": "https://www.tabascohoy.com/brindan-por-su-pasion-musical/",
+"s": "Tabasco HOY"
+}
+],
+"n": 100
+},
+{
+"t": "genoa",
+"trafico": "100+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Sassuolo-Genoa, le formazioni ufficiali: D'Aversa con Esposito. De Rossi sceglie Baldanzi",
+"u": "https://www.gazzetta.it/calcio/fantanews/22-11-2026/sassuolo-genoa-le-formazioni-ufficiali-tutti-i-titolari.shtml",
+"s": "La Gazzetta dello Sport"
+},
+{
+"t": "Serie A Enilive | Sassuolo-Genoa live",
+"u": "https://www.sassuolocalcio.it/en/featured/serie-a-enilive-sassuolo-genoa-live/",
+"s": "U.S. Sassuolo Calcio"
+},
+{
+"t": "Sassuolo-Genoa, dove vedere la partita in tv: gli orari",
+"u": "https://sport.sky.it/calcio/serie-a/2026/11/22/sassuolo-genoa-dove-vedere-tv-streaming",
+"s": "Sky Sport"
+}
+],
+"n": 100
+},
+{
+"t": "lamine yamal",
+"trafico": "500+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "La maldición de Mbappé alcanza a Yamal: un récord histórico nefasto y Raphinha paga el precio",
+"u": "https://www.goal.com/es-mx/noticias/la-maldicion-de-mbappe-alcanza-a-yamal-un-record-historico-nefasto-y-raphinha-paga-el-precio/blt049a22c7245535b3",
+"s": "Goal.com"
+},
+{
+"t": "¿Es correcto el penalti señalado a favor del Barcelona? Respuesta contundente",
+"u": "https://www.goal.com/es-mx/noticias/es-correcto-el-penalti-senalado-a-favor-del-barcelona-respuesta-contundente/blt8c1256b691dfcaac",
+"s": "Goal.com"
+},
+{
+"t": "Preocupación en el Barcelona: Yamal recibe tratamiento antes del duelo ante el Villarreal",
+"u": "https://www.goal.com/es-mx/noticias/preocupacion-en-el-barcelona-yamal-recibe-tratamiento-antes-del-duelo-ante-el-villarreal/blt4c2a29043b6d29f8",
+"s": "Goal.com"
+}
+],
+"n": 500
+},
+{
+"t": "racing de santander vs. real sociedad",
+"trafico": "500+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "Racing Club vs. Real Sociedad: horarios, fecha y dónde ver el partido de la Jornada 13 | Canal 5 Home | Canal5",
+"u": "https://www.televisa.com/canal5/racing-club-vs-real-sociedad-horarios-fecha-y-donde-ver-el-partido-de-la-jornada-13",
+"s": "Televisa"
+},
+{
+"t": "Racing de Santander vs. Real Sociedad en vivo: dónde ver por TV y streaming online, por la jornada 13 de la...",
+"u": "https://bolavip.com/mx/futbol-internacional/racing-de-santander-vs-real-sociedad-en-vivo-donde-ver-por-tv-y-streaming-online-por-la-jornada-13-de-la-laliga",
+"s": "Bolavip México"
+},
+{
+"t": "Racing - Real Sociedad, en directo: LaLiga EA Sports, hoy en vivo",
+"u": "https://as.com/futbol/primera/racing-real-sociedad-en-directo-laliga-ea-sports-hoy-en-vivo-f202611-d/",
+"s": "Diario AS"
+}
+],
+"n": 500
+},
+{
+"t": "kim kardashian",
+"trafico": "500+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "F1 2026 Las Vegas Grand Prix Photos: Kim Kardashian, Chris Pratt, Hannah Waddingham & More",
+"u": "https://deadline.com/gallery/f1-2026-las-vegas-grand-prix-photos/",
+"s": "Deadline"
+},
+{
+"t": "Keanu Reeves Draws Attention With Back-to-Back Appearances at 2026 Las Vegas Grand Prix",
+"u": "https://speaks.co.in/sports/keanu-reeves-draws-attention-with-back-to-back-appearances-at-2026-las-vegas-grand-prix/",
+"s": "Speaks Media"
+},
+{
+"t": "Photo: Las Vegas Formula One Grand Prix Race - LAS20261121815",
+"u": "https://www.upi.com/News_Photos/view/upi/b74dc20a43ab359bee98449114dfafc4/Las-Vegas-Formula-One-Grand-Prix-Race/",
+"s": "UPI.com"
+}
+],
+"n": 500
+}
+]
+},
+"AR": {
+"geo": "AR",
+"url": "https://trends.google.com/trending/rss?geo=AR",
+"ok": true,
+"items": [
+{
+"t": "liverpool - manchester united",
+"trafico": "200+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "'He will see what Man Utd are made of' - Pulis on Pochettino's first game",
+"u": "https://www.bbc.com/sport/football/articles/ckqx5w58dgv7o",
+"s": "BBC"
+},
+{
+"t": "Gary Neville and Jamie Carragher disagree as 8 pundits make Liverpool vs Man Utd prediction",
+"u": "https://www.liverpool.com/liverpool-fc-news/features/gary-neville-jamie-carragher-disagree-34949161",
+"s": "Liverpool.com"
+},
+{
+"t": "Betfred bonus code BETFRED50: Get £50 in Premier League free bets",
+"u": "https://mybettingsites.co.uk/news/betfred-bonus-code-betfred50-get-50-in-premier-league-free-bets-22nd-nov/",
+"s": "MyBettingSites.co.uk"
+}
+],
+"n": 200
+},
+{
+"t": "hull city",
+"trafico": "100+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Hull City ile Brighton & Hove Albion Premier League maçında karşılaşıyor",
+"u": "https://www.haber.tr/hull-city-ile-brighton-hove-albion-premier-league-macinda-karsilasiyor-1",
+"s": "Haber TR"
+},
+{
+"t": "Hull City - Brighton Maç Tahmini: Ev sahibi ekip galibiyet serisine geri dönmeyi hedefliyor.",
+"u": "https://www.vietnam.vn/tr/nhan-dinh-hull-city-vs-brighton-chu-nha-tim-lai-chien-thang",
+"s": "Vietnam.vn"
+},
+{
+"t": "Hull City-Brighton canlı izle! beIN SPORTS 3 yayın ekranı",
+"u": "https://www.turkgun.com/futbol/hull-city-brighton-canli-izle-bein-sports-3/418792",
+"s": "Türkgün"
+}
+],
+"n": 100
+},
+{
+"t": "luz veronica estrada holguin",
+"trafico": "100+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [],
+"n": 100
+},
+{
+"t": "posiciones de fc barcelona contra villarreal club de fútbol",
+"trafico": "10000+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "Barcelona 3-2 Villarreal: Barca score three in 10 minutes to return to top of La Liga",
+"u": "https://www.bbc.com/sport/football/live/cqe87553peegt",
+"s": "BBC"
+},
+{
+"t": "Barcelona vs. Villarreal - Game Highlights",
+"u": "https://www.espn.com/video/clip/_/id/50562096/barcelona-vs-villarreal-game-highlights",
+"s": "ESPN"
+},
+{
+"t": "Barcelona x Villarreal CF - Highlights, Summary and Match Report",
+"u": "https://sports.yahoo.com/articles/barcelona-x-villarreal-cf-highlights-131700164.html",
+"s": "Yahoo Sports"
+}
+],
+"n": 10000
+},
+{
+"t": "moria casán",
+"trafico": "200+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "Moria Casán reveló cómo fue su primera noche con Pato Galmarini y la frase que descomprimió la situación",
+"u": "https://www.infobae.com/teleshow/2026/11/22/moria-casan-revelo-como-fue-su-primera-noche-con-pato-galmarini-y-la-frase-que-descomprimio-la-situacion/",
+"s": "Infobae"
+},
+{
+"t": "Todo sigue igual: Moria Casán contó cómo fue su primer encuentro íntimo con Pato Galmarini",
+"u": "https://www.eltrecetv.com.ar/todo-sigue-igual/2026/11/21/todo-sigue-igual-moria-casan-conto-como-fue-su-primer-encuentro-intimo-con-pato-galmarini/",
+"s": "eltrecetv"
+},
+{
+"t": "Moria recordó su primera noche con Pato Galmarini y la frase que ayudó a distender el encuentro",
+"u": "https://www.contextotucuman.com/nota/429088/moria-recordo-su-primera-noche-con-pato-galmarini-y-la-frase-que-ayudo-a-distender-el-encuentro.html",
+"s": "Contexto Tucumán"
+}
+],
+"n": 200
+},
+{
+"t": "central",
+"trafico": "500+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "Rosario Central vs Gimnasia de Mendoza, EN VIVO: a qué hora es, formaciones y cómo ver el partido de octavos de final del Torneo Clausura",
+"u": "https://www.clarin.com/deportes/rosario-central-vs-gimnasia-mendoza-vivo-hora-formaciones-ver-partido-octavos-final-torneo-clausura_0_gobGFAwNy6.html",
+"s": "Clarin.com"
+},
+{
+"t": "Volver a la final, la meta de Rosario Central de cara a los playoff",
+"u": "https://www.tycsports.com/liga-profesional-de-futbol/la-meta-de-rosario-central-de-cara-a-los-playoff-id772477.html",
+"s": "TyC Sports"
+},
+{
+"t": "Gimnasia visita a Rosario Central por los octavos de final del Torneo Clausura",
+"u": "https://www.elsol.com.ar/deportes/gimnasia-visita-a-rosario-central-por-los-octavos-de-final-del-torneo-clausura/",
+"s": "Diario El Sol Mendoza"
+}
+],
+"n": 500
+},
+{
+"t": "paris fc",
+"trafico": "100+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "Preview: Paris FC vs Angers - prediction, team news, lineups",
+"u": "https://www.sportsmole.co.uk/football/paris-fc/preview/paris-fc-vs-angers-prediction-team-news-lineups_609533.html",
+"s": "Sports Mole"
+},
+{
+"t": "Licensable picture: Ligue 1 - Paris FC v Angers SCO",
+"u": "https://www.reutersconnect.com/item/ligue-1-paris-fc-v-angers-sco/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQk0wWkhUUlk",
+"s": "Reuters Connect"
+},
+{
+"t": "Paris FC Sets Matchday Schedule for Angers Clash at Jean Bouin",
+"u": "https://www.limapagi.id/en/paris-fc-angers-matchday-schedule",
+"s": "Limapagi"
+}
+],
+"n": 100
+},
+{
+"t": "feriado 23 de noviembre",
+"trafico": "100+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "Fin de semana largo: por qué es feriado el lunes 23 y qué días de descanso quedan en el año",
+"u": "https://www.lanueva.com/nota/2026-11-22-11-34-0-fin-de-semana-largo-por-que-es-feriado-el-lunes-23-y-que-dias-de-descanso-quedan-en-el-ano",
+"s": "La Nueva Provincia"
+},
+{
+"t": "¿Es feriado mañana, lunes 23 de noviembre, en la Argentina?",
+"u": "https://www.lanacion.com.ar/feriados/2026/es-feriado-manana-lunes-23-de-noviembre-en-la-argentina-nid22112026/",
+"s": "La Nación"
+},
+{
+"t": "Feriado: cómo funcionarán los comercios y los servicios municipales",
+"u": "https://www.lagaceta.com.ar/nota/1163539/sociedad/feriado-como-funcionaran-comercios-servicios-municipales.html",
+"s": "La Gaceta"
+}
+],
+"n": 100
+},
+{
+"t": "copa potrero hoy",
+"trafico": "100+",
+"fecha": "2026-11-22T16:00+01:00",
+"noticias": [
+{
+"t": "Valentín Perrone y una posición expectante para comenzar el GP de Portugal",
+"u": "https://www.espn.com.ar/motociclismo/nota/_/id/17541761/valentin-perrone-y-una-posicion-expectante-para-comenzar-el-gp-de-portugal",
+"s": "ESPN Argentina"
+},
+{
+"t": "VIDEO: resumen de cuartos de final de la Copa Potrero 2026",
+"u": "https://www.espn.com.co/futbol/argentina/nota/_/id/17542870/video-copa-potrero-2026-resumen-goles-cuartos-de-final",
+"s": "ESPN Colombia"
+},
+{
+"t": "Dónde ver los partidos y cómo funciona el torneo del Kun Agüero",
+"u": "https://bardeo.news/deportes/donde-ver-los-partidos-y-como-funciona-el-torneo-del-kun-aguero_a6afb448742fa9d9e6e279fe5",
+"s": "Bardeo.news"
+}
+],
+"n": 100
+},
+{
+"t": "argentina sub-17 - selección de fútbol sub-17 de mozambique",
+"trafico": "5000+",
+"fecha": "2026-11-22T15:50+01:00",
+"noticias": [
+{
+"t": "A qué hora juega hoy la Selección Sub 17 vs. Mozambique y por dónde ver EN VIVO el Mundial",
+"u": "https://www.ole.com.ar/seleccion/seleccion-argentina-sub-17-vs-mozambique-mundial-sub-17-vivo-hora-ver-tv_0_KeS78LHtKm.html",
+"s": "Olé"
+},
+{
+"t": "Argentina vs. Mozambique, por el Mundial Sub 17: horario, formaciones y dónde ver en vivo",
+"u": "https://www.tycsports.com/competencias-y-deportes/fifa-mundial-sub-17-qatar-2026-argentina-vs-mozambique-grupo-c-fecha-2-id772506.html",
+"s": "TyC Sports"
+},
+{
+"t": "Mundial Sub 17: Argentina se mide ante Mozambique en Qatar",
+"u": "https://www.afa.com.ar/es/posts/mundial-sub-17-argentina-se-mide-ante-mozambique-en-qatar",
+"s": "AFA"
+}
+],
+"n": 5000
+}
+]
+},
+"BR": {
+"geo": "BR",
+"url": "https://trends.google.com/trending/rss?geo=BR",
+"ok": true,
+"items": [
+{
+"t": "sergio pérez",
+"trafico": "100+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Rafael Câmara valoriza corrida positiva e constância em Las Vegas",
+"u": "https://ge.globo.com/motor/formula-1/noticia/2026/11/22/rafael-camara-valoriza-corrida-positiva-e-constancia-em-las-vegas.ghtml",
+"s": "ge"
+},
+{
+"t": "Fórmula 1: Sergio Pérez é considerado único culpado por acidente com Rafa Câmara e será punido no Qatar",
+"u": "https://www.espn.com.br/f1/artigo/_/id/17547500/formula-1-sergio-perez-e-considerado-unico-culpado-por-acidente-com-rafa-camara-e-sera-punido-no-qatar",
+"s": "ESPN Brasil"
+},
+{
+"t": "Pole Position: Bortoleto de 'cabeça erguida' e Câmara espera decisão hoje sobre GPs finais",
+"u": "https://www.uol.com.br/esporte/colunas/pole-position/2026/11/22/bortoleto-quer-esquecer-las-vegas-e-camara-aguarda-decisao-da-haas-hoje.htm",
+"s": "UOL"
+}
+],
+"n": 100
+},
+{
+"t": "usdt",
+"trafico": "100+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Tether Treasury Transfers About 143 Million USDT Worth $142 Million to Unknown Wallet",
+"u": "https://www.tradingview.com/news/binance_news:eb0be3978094b:0-tether-treasury-transfers-about-143-million-usdt-worth-142-million-to-unknown-wallet/",
+"s": "TradingView"
+},
+{
+"t": "Bitfinex Sends 312.9 Million USDT to Treasury as Tether USDt price Comes Into Focus",
+"u": "https://www.ad-hoc-news.de/boerse/news/marktberichte/bitfinex-sends-312-9-million-usdt-to-treasury-as-tether-usdt-price-comes-into-focus/70520656",
+"s": "ad-hoc-news.de"
+},
+{
+"t": "320 Million Tether (USDT) Transfer Moves From Tether Treasury to Bitfinex",
+"u": "https://www.tokenpost.com/news/investing/61102",
+"s": "www.tokenpost.com"
+}
+],
+"n": 100
+},
+{
+"t": "real sociedad",
+"trafico": "500+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Racing Santander vs Real Sociedad: Lineups, Prediction, Odds & Bet Builder Tip",
+"u": "https://www.whoscored.com/articles/CSmhj4JbhkKOQFzSsInNvA/show/cng111-20261122-racing-santander-vs-real-sociedad-prediction-1795332055",
+"s": "WhoScored.com"
+},
+{
+"t": "Preview: Racing de Santander vs Real Sociedad - prediction, team news, lineups",
+"u": "https://www.sportsmole.co.uk/football/real-sociedad/preview/racing-vs-real-sociedad-prediction-team-news-lineups_609535.html",
+"s": "Sports Mole"
+},
+{
+"t": "Racing Santander vs Real Sociedad Confirmed Lineups",
+"u": "https://www.whoscored.com/news/ZE4G4aukmUeD0GZbzG2NTg/show/cng112-20261122-racing-santander-vs-real-sociedad-confirmed-lineup-1795357353",
+"s": "WhoScored.com"
+}
+],
+"n": 500
+},
+{
+"t": "posiciones de fc barcelona contra villarreal club de fútbol",
+"trafico": "5000+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "Barcelona 3-2 Villarreal: Barca score three in 10 minutes to return to top of La Liga",
+"u": "https://www.bbc.com/sport/football/live/cqe87553peegt",
+"s": "BBC"
+},
+{
+"t": "Barcelona vs. Villarreal - Game Highlights",
+"u": "https://www.espn.com/video/clip/_/id/50562096/barcelona-vs-villarreal-game-highlights",
+"s": "ESPN"
+},
+{
+"t": "Barcelona x Villarreal CF - Highlights, Summary and Match Report",
+"u": "https://sports.yahoo.com/articles/barcelona-x-villarreal-cf-highlights-131700164.html",
+"s": "Yahoo Sports"
+}
+],
+"n": 5000
+},
+{
+"t": "banco do brasil",
+"trafico": "2000+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "Banco do Brasil compra briga com o agro e ignora a ingerência política que corrói as estatais",
+"u": "https://veja.abril.com.br/economia/banco-do-brasil-compra-briga-com-o-agro-e-ignora-a-ingerencia-politica-que-corroi-as-estatais/",
+"s": "VEJA"
+},
+{
+"t": "Cresce pressão por substituição de Tarciana Medeiros no BB",
+"u": "https://www.gazetadopovo.com.br/economia/governo-pressiona-por-troca-no-comando-do-banco-do-brasil-apos-tombo-no-lucro/",
+"s": "Gazeta do Povo"
+},
+{
+"t": "Vale a pena encarar a crise do Banco do Brasil (BBAS3) por uma alta de apenas 5%? XP diz o que fazer com as ações agora",
+"u": "https://www.seudinheiro.com/2026/empresas/vale-a-pena-encarar-a-crise-do-banco-do-brasil-bbas3-por-uma-alta-de-apenas-5-xp-diz-o-que-fazer-com-as-acoes-agora-miql/",
+"s": "Seu Dinheiro"
+}
+],
+"n": 2000
+},
+{
+"t": "rockstar gta vi",
+"trafico": "100+",
+"fecha": "2026-11-22T16:00+01:00",
+"noticias": [
+{
+"t": "Grand Theft Auto VI Now Available",
+"u": "https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available",
+"s": "Rockstar Games"
+},
+{
+"t": "GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history",
+"u": "https://www.bbc.com/news/articles/c9zr5nyv5dj2o",
+"s": "BBC"
+},
+{
+"t": "Grand Theft Auto Used to Satirize American Life. Now We’ve Caught Up With It.",
+"u": "https://www.nytimes.com/2026/11/19/magazine/grand-theft-auto-six.html",
+"s": "The New York Times"
+}
+],
+"n": 100
+},
+{
+"t": "rayssa leal",
+"trafico": "100+",
+"fecha": "2026-11-22T16:00+01:00",
+"noticias": [
+{
+"t": "Rayssa Leal vai à final da Copa do Mundo de skate na liderança; Simonetto também avança",
+"u": "https://ge.globo.com/skate/noticia/2026/11/22/rayssa-leal-garante-vaga-na-final-da-copa-do-mundo-de-skate-street.ghtml",
+"s": "ge"
+},
+{
+"t": "Rayssa Leal avança às semifinais da Copa do Mundo de skate street no Japão",
+"u": "https://www.estadao.com.br/esportes/rayssa-leal-avanca-as-semifinais-da-copa-do-mundo-de-skate-street-no-japao/",
+"s": "Estadão"
+},
+{
+"t": "Rayssa Leal lidera semifinal e disputa título da Copa do Mundo de skate street no Japão",
+"u": "https://www.metro1.com.br/noticias/esportes/191768,rayssa-leal-lidera-semifinal-e-disputa-titulo-da-copa-do-mundo-de-skate-street-no-japao",
+"s": "Rádio Metrópole"
+}
+],
+"n": 100
+},
+{
+"t": "conferência das nações unidas sobre as mudanças climáticas de 2026",
+"trafico": "500+",
+"fecha": "2026-11-22T15:50+01:00",
+"noticias": [
+{
+"t": "'Uma vergonha': Líderes da União Europeia deixaram plenária após colapso das negociações na COP31",
+"u": "https://g1.globo.com/meio-ambiente/noticia/2026/11/22/uma-vergonha-delegados-da-uniao-europeia-deixam-plenaria-apos-colapso-de-negociacoes-na-cop31.ghtml",
+"s": "G1"
+},
+{
+"t": "COP31 se torna a mais longa conferência climática da ONU",
+"u": "https://www1.folha.uol.com.br/ambiente/2026/11/cop31-se-torna-a-mais-longa-conferencia-climatica-da-onu.shtml",
+"s": "Folha de S.Paulo"
+},
+{
+"t": "Negociações na COP31 fracassam após UE e outros países rejeitarem acordo",
+"u": "https://www.cnnbrasil.com.br/internacional/negociacoes-na-cop31-fracassam-apos-ue-e-outros-paises-rejeitarem-acordo/",
+"s": "CNN Brasil"
+}
+],
+"n": 500
+},
+{
+"t": "aparecida",
+"trafico": "200+",
+"fecha": "2026-11-22T15:50+01:00",
+"noticias": [
+{
+"t": "Aparecida tem escolas alagadas e carros submersos após fortes chuvas de sexta",
+"u": "https://www1.folha.uol.com.br/cotidiano/2026/11/aparecida-tem-escolas-alagada-e-carros-submersos-apos-fortes-chuvas-de-sexta.shtml",
+"s": "Folha de S.Paulo"
+},
+{
+"t": "Temporal afeta escolas e derruba casa em Aparecida: 'A gente fica assustado, enchente devastadora', diz morador",
+"u": "https://g1.globo.com/sp/vale-do-paraiba-regiao/noticia/2026/11/21/temporal-afeta-escolas-e-derruba-casa-em-aparecida-a-gente-fica-assustado-enchente-devastadora-diz-morador.ghtml",
+"s": "G1"
+},
+{
+"t": "Temporais provocam alagamentos e danos em imóveis no estado de SP",
+"u": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/temporais-provocam-alagamentos-e-danos-em-imoveis-no-estado-de-sp",
+"s": "Agência Brasil"
+}
+],
+"n": 200
+},
+{
+"t": "arsenal w.f.c. x west ham",
+"trafico": "500+",
+"fecha": "2026-11-22T15:50+01:00",
+"noticias": [
+{
+"t": "Manchester City vs Tottenham Hotspur: Women's Super League stats & head-to-head",
+"u": "https://www.bbc.com/sport/football/live/cm879ddeq2jet",
+"s": "BBC"
+},
+{
+"t": "Arsenal v West Ham, Manchester City 1-3 Tottenham: WSL clockwatch – live",
+"u": "https://www.theguardian.com/football/live/2026/nov/22/wsl-manchester-city-tottenham-birmingham-manchester-united-arsenal-west-ham-live",
+"s": "The Guardian"
+},
+{
+"t": "City’s unbeaten run ended by Spurs",
+"u": "https://www.mancity.com/news/womens/man-city-tottenham-hotspur-wsl-match-report-november-2026-63930945",
+"s": "Manchester City FC"
+}
+],
+"n": 500
+}
+]
+},
+"IN": {
+"geo": "IN",
+"url": "https://trends.google.com/trending/rss?geo=IN",
+"ok": true,
+"items": [
+{
+"t": "সোনা",
+"trafico": "1000+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Gold Price: ২৪ ঘণ্টায় হু হু করে কমল সোনার দাম? আজ কত হাজার কমে কিনতে পারবেন?",
+"u": "https://bengali.abplive.com/business/gold-price-today-kolkata-20-november-2026-silver-price-gold-price-updates-1199838",
+"s": "ABP Ananda"
+},
+{
+"t": "এক বছরে প্রায় ৫৯০০০ টাকা সস্তা সোনা! আরও কততে নামতে পারে? পূর্বাভাস বিশেষজ্ঞদের | Hindustan Times Bangla",
+"u": "https://www.hindustantimes.com/bangla/news/gold-has-become-cheaper-by-nearly-rs-59000-over-the-past-year-how-much-lower-could-it-go-experts-share-their-forecasts-271795336172599.html",
+"s": "Hindustan Times"
+},
+{
+"t": "শুক্রবার একধাক্কায় অনেকটা কমে গেল সোনার দাম, পড়ল রুপোর দরও! বিয়ের মরসুমে কিছুটা স্বস্তিতে মধ্যবিত্ত",
+"u": "https://www.thewall.in/business/kolkata-gold-silver-price-drop-november-20-wedding-season-relief/tid/209949",
+"s": "TheWall"
+}
+],
+"n": 1000
+},
+{
+"t": "hyderabad",
+"trafico": "200+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Hyderabad police step up security after email warns of possible bomb attacks",
+"u": "https://www.telegraphindia.com/india/hyderabad-police-step-up-security-after-email-warns-of-possible-bomb-attacks/cid/2190756",
+"s": "Telegraph India"
+},
+{
+"t": "Hyderabad police heighten security after email warns of terror attack",
+"u": "https://telanganatoday.com/hyderabad-police-heighten-security-after-email-warns-of-terror-attack-7a7258ca",
+"s": "Telangana Today"
+},
+{
+"t": "Hyderabad on high alert following threat email targeting key locations",
+"u": "https://hyderabadmail.com/hyderabad-high-alert-threat-email-key-locations/",
+"s": "Hyderabad Mail"
+}
+],
+"n": 200
+},
+{
+"t": "yassir zabiri",
+"trafico": "200+",
+"fecha": "2026-11-22T16:30+01:00",
+"noticias": [
+{
+"t": "Juventus vs. Venezia (22 Nov, 2026) Team Stats",
+"u": "https://www.espn.in/football/team-stats/_/gameId/401875008/league/ita.1",
+"s": "ESPN India"
+},
+{
+"t": "Bulo Bulo vs. Always Ready (23 Nov, 2026) Live Score",
+"u": "https://www.espn.in/football/match/_/gameId/401930028/always-ready-san-antonio-bulo-bulo",
+"s": "ESPN India"
+},
+{
+"t": "Barcelona vs. Villarreal (22 Nov, 2026) Team Stats",
+"u": "https://www.espn.in/football/team-stats/_/gameId/401882804/league/esp.1",
+"s": "ESPN India"
+}
+],
+"n": 200
+},
+{
+"t": "gta vi game",
+"trafico": "5000+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "Grand Theft Auto VI Now Available",
+"u": "https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available",
+"s": "Rockstar Games"
+},
+{
+"t": "Grand Theft Auto VI Shatters Entertainment Box Office Records with $3.79 Billion in Day One Retail Sales",
+"u": "https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records",
+"s": "Take-Two Interactive Software, Inc."
+},
+{
+"t": "Did you come down with GTA flu? I won’t judge – I may even join you in Vice City | Imogen West-Knights",
+"u": "https://www.theguardian.com/commentisfree/2026/nov/21/gta-6-flu-vice-city-gamers-sick-day",
+"s": "The Guardian"
+}
+],
+"n": 5000
+},
+{
+"t": "augsburg vs mainz",
+"trafico": "200+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "Augsburg vs Mainz 05 live today: who is showing the match on TV and via live stream?",
+"u": "https://www.goal.com/en-in/news/augsburg-vs-mainz-05-live-today-who-is-showing-the-match-on-tv-and-via-live-stream/blt360113faa52c3b00",
+"s": "Goal.com"
+},
+{
+"t": "FC Augsburg vs FSV Mainz 05 - Prediction, where to watch, kick-off time and line-ups 22-11-2026",
+"u": "https://onefootball.com/en/betting/predictions/fc-augsburg-vs-fsv-mainz-05-22-11-2026",
+"s": "OneFootball"
+},
+{
+"t": "Augsburg-Mainz preview: Augsburg arrive with five absentees",
+"u": "https://www.tufutbolero.com/en/news/augsburg-mainz-preview-augsburg-arrive-with-five-absentees-fcccf3",
+"s": "Tu Futbolero"
+}
+],
+"n": 200
+},
+{
+"t": "aakasamlo oka tara movie",
+"trafico": "500+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "Filmmaker Arun Gopy Hails Dulquer Salmaan After Watching Aakasamlo Oka Tara With Non-Malayali Audiences",
+"u": "https://www.ndtv.com/entertainment/filmmaker-arun-gopy-hails-dulquer-salmaan-after-watching-aakasamlo-oka-tara-with-non-malayali-audiences-12361550",
+"s": "NDTV"
+},
+{
+"t": "‘Aaksamlo Oka Tara’ movie review: Dulquer Salmaan, Satvika Veeravalli shine in a Telugu film about hope",
+"u": "https://www.thehindu.com/entertainment/movies/aaksamlo-oka-tara-movie-review-dulquer-salmaan-satvika-veeravalli-shine-in-a-telugu-film-about-hope/article71721323.ece",
+"s": "The Hindu"
+},
+{
+"t": "'Aakasamlo Oka Tara (AOT)' shows strong growth on Day 2, nearly matching 'Sita Ramam' opening | Box Office",
+"u": "https://www.theweek.in/news/entertainment/2026/11/22/aakasamlo-oka-tara-aot-box-office-day-2.html",
+"s": "The Week"
+}
+],
+"n": 500
+},
+{
+"t": "dawood ibrahim",
+"trafico": "200+",
+"fecha": "2026-11-22T16:00+01:00",
+"noticias": [
+{
+"t": "Gangster linked to Dawood Ibrahim killed in U.P. encounter",
+"u": "https://www.thehindu.com/news/national/uttar-pradesh/gangster-linked-to-dawood-ibrahim-killed-in-up-encounter/article71723107.ece",
+"s": "The Hindu"
+},
+{
+"t": "D-Company shooter killed by cops, days after gang war murder in Delhi",
+"u": "https://timesofindia.indiatimes.com/city/delhi/d-company-shooter-killed-by-cops-days-after-gang-war-murder-in-delhi/articleshow/136042956.cms",
+"s": "The Times of India"
+},
+{
+"t": "The Naseem Durrani rap sheet: 26 cases in 16 years, a Chhota Shakeel link, plot to kill Tarek Fatah",
+"u": "https://theprint.in/india/the-naseem-durrani-rap-sheet-26-cases-in-16-years-a-chhota-shakeel-link-plot-to-kill-tarek-fatah/3104990/",
+"s": "ThePrint"
+}
+],
+"n": 200
+},
+{
+"t": "तस्करी",
+"trafico": "200+",
+"fecha": "2026-11-22T16:00+01:00",
+"noticias": [
+{
+"t": "झांसी में तस्करों का अनोखा जुगाड़, हैंडपंप चलाते ही निकलने लगी कच्ची शराब",
+"u": "https://www.aajtak.in/short-videos/video/jhansi-police-uncover-hidden-illicit-liquor-stock-underground-using-handpump-woman-arrested-mmtc-2702991-2026-11-22",
+"s": "AajTak"
+},
+{
+"t": "ओडिशा से दो वाहनों में सुकमा आ रहा था 14.52 लाख का गांजा, एक आरोपी गिरफ्तार",
+"u": "https://navbharatlive.com/chhattisgarh/sukma/odisha-sukma-2-vahan-14-52-lakh-ganja-aaropi-giraftar-rkb06",
+"s": "Navbharat Live"
+},
+{
+"t": "सीजी: रायगढ़ में 25 किलो गांजे के साथ नाबालिग समेत पांच आरोपी गिरफ्तार",
+"u": "https://www.amarujala.com/chhattisgarh/five-accused-including-a-minor-arrested-with-25-kg-of-ganja-in-raigarh-2026-11-22",
+"s": "Amar Ujala"
+}
+],
+"n": 200
+},
+{
+"t": "velislava petrova",
+"trafico": "200+",
+"fecha": "2026-11-22T15:40+01:00",
+"noticias": [
+{
+"t": "India, Bulgaria discuss bilateral ties, IMEC, Black Sea situation",
+"u": "https://www.thehindu.com/news/national/india-bulgaria-discuss-bilateral-ties-imec-black-sea-situation/article71729472.ece",
+"s": "The Hindu"
+},
+{
+"t": "India, Bulgaria review bilateral ties, discuss IMEC and Black Sea situation",
+"u": "https://government.economictimes.indiatimes.com/news/governance/india-bulgaria-review-bilateral-ties-discuss-imec-and-black-sea-situation/136075322?utm_source=latest_news&utm_medium=homepage",
+"s": "ET Government"
+},
+{
+"t": "Bulgaria welcomes India’s Ukraine ceasefire proposal, says Delhi shows it can be a global power",
+"u": "https://indianexpress.com/article/india/bulgaria-foreign-minister-velislava-petrova-chamova-interview-india-eu-fta-ukraine-black-sea-10972956/",
+"s": "The Indian Express"
+}
+],
+"n": 200
+},
+{
+"t": "श्वेता तिवारी",
+"trafico": "200+",
+"fecha": "2026-11-22T15:40+01:00",
+"noticias": [
+{
+"t": "सीधे पल्ले की साड़ी में इठलाईं-बलखाती दिखीं Shweta Tiwari, 46 की उम्र में दिखाईं कातिलाना अदाएं",
+"u": "https://www.jagran.com/photo-stories/shweta-tiwari-looks-glamorous-in-green-purple-saree-latest-photos-goes-viral-on-instagram-147002",
+"s": "Jagran"
+}
+],
+"n": 200
+}
+]
+},
+"JP": {
+"geo": "JP",
+"url": "https://trends.google.com/trending/rss?geo=JP",
+"ok": true,
+"items": [
+{
+"t": "リヴァプール 対 マンu",
+"trafico": "1000+",
+"fecha": "2026-11-22T16:40+01:00",
+"noticias": [
+{
+"t": "【11月23日】リヴァプールvsマンチェスター・ユナイテッドのテレビ放送・ネット配信予定・視聴方法｜プレミアリーグ第11節",
+"u": "https://www.dazn.com/ja-JP/news/%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC/liverpool-vs-manchester-united-premier-league-md11-livestreaming-20261123/okjdwgelxu471tagphwcc83ha",
+"s": "DAZN"
+},
+{
+"t": "なぜ“アンフィールド神話”は崩壊したのか？リヴァプールの要塞がかつての威圧感を取り戻すために（GOAL）",
+"u": "https://news.yahoo.co.jp/articles/fa7ff78de0d426b85aff1fbed2277b130988b37b?page=4",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "リヴァプール対マンチェスター・ユナイテッド、予想スタメン＆フォーメーション。注目のライバル対決の布陣は？",
+"u": "https://www.footballchannel.jp/2026/11/21/post1058340/",
+"s": "フットボールチャンネル"
+}
+],
+"n": 1000
+},
+{
+"t": "liverpool vs man utd",
+"trafico": "200+",
+"fecha": "2026-11-22T16:40+01:00",
+"noticias": [
+{
+"t": "'He will see what Man Utd are made of' - Pulis on Pochettino's first game",
+"u": "https://www.bbc.com/sport/football/articles/ckqx5w58dgv7o",
+"s": "BBC"
+},
+{
+"t": "Andoni Iraola programme notes | Why Liverpool need to be 'all in' from the off today",
+"u": "https://www.liverpoolfc.com/news/andoni-iraola-programme-notes-liverpool-all-in-manchester-united",
+"s": "Liverpool FC"
+},
+{
+"t": "Premier League - Liverpool v Manchester United",
+"u": "https://www.reutersconnect.com/item/premier-league-liverpool-v-manchester-united/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQk0xMk9VVzc",
+"s": "Reuters Connect"
+}
+],
+"n": 200
+},
+{
+"t": "fc barcelona vs villarreal cf standings",
+"trafico": "500+",
+"fecha": "2026-11-22T16:20+01:00",
+"noticias": [
+{
+"t": "Barcelona 3-2 Villarreal: Barca score three in 10 minutes to return to top of La Liga",
+"u": "https://www.bbc.com/sport/football/live/cqe87553peegt",
+"s": "BBC"
+},
+{
+"t": "Barcelona vs. Villarreal - Game Highlights",
+"u": "https://www.espn.com/video/clip/_/id/50562096/barcelona-vs-villarreal-game-highlights",
+"s": "ESPN"
+},
+{
+"t": "Barcelona x Villarreal CF - Highlights, Summary and Match Report",
+"u": "https://sports.yahoo.com/articles/barcelona-x-villarreal-cf-highlights-131700164.html",
+"s": "Yahoo Sports"
+}
+],
+"n": 500
+},
+{
+"t": "レアルソシエダ",
+"trafico": "200+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "【11月23日】ラシンvsレアル・ソシエダのテレビ放送・ネット配信予定・視聴方法｜ラ・リーガ第13節",
+"u": "https://www.dazn.com/ja-JP/news/%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC/racing-real-sociedad-la-liga-md13-livestreaming-20261123/ps7c4uwcssk13qboa5floguu",
+"s": "DAZN"
+},
+{
+"t": "【ラ・リーガ第13節】 ラージョ vs バレンシア",
+"u": "https://sports.yahoo.co.jp/video/player/28794639",
+"s": "スポーツナビ"
+},
+{
+"t": "【11月22日】ラージョ・バジェカーノvsバレンシアのテレビ放送/ネット配信予定・キックオフ時間｜ラ・リーガ第13節",
+"u": "https://www.goal.com/jp/%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9/rajo-valencia-laliga-md13-20261122/blt4782010286524386",
+"s": "Goal.com"
+}
+],
+"n": 200
+},
+{
+"t": "ボランチ",
+"trafico": "2000+",
+"fecha": "2026-11-22T16:10+01:00",
+"noticias": [
+{
+"t": "67年ぶり屈辱…… チェルシーがホームでリーズ相手に大敗 シアラー氏も苦言「あらゆる面で改善が必要」",
+"u": "https://news.yahoo.co.jp/articles/493cf47daf4a99886db9e9df0853430093e5d553",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "「我々は今、精神的に脆弱だ」リーズに４失点惨敗のチェルシー、シャビ・アロンソ監督が危機感を露わに「何としても現状を打開しなければならない」",
+"u": "https://article.auone.jp/6c2b3f05-f5ce-4964-be7d-1fb1d75a5d81",
+"s": "au Webポータル"
+},
+{
+"t": "田中碧リーズ、27年ぶりチェルシーを敵地で４発撃破「勝利に値するプレー」ファルケ監督喜ぶ",
+"u": "https://www.nikkansports.com/soccer/world/news/202611220000037.html",
+"s": "日刊スポーツ"
+}
+],
+"n": 2000
+},
+{
+"t": "被告",
+"trafico": "2000+",
+"fecha": "2026-11-22T16:00+01:00",
+"noticias": [],
+"n": 2000
+},
+{
+"t": "佐久間朱莉",
+"trafico": "1000+",
+"fecha": "2026-11-22T15:50+01:00",
+"noticias": [
+{
+"t": "佐久間朱莉が痛恨ダボで予選落ち…解説者「ちょっと気持ちは切れちゃったかな…」国内女子第２日",
+"u": "https://www.nikkansports.com/sports/golf/news/202611200001303.html",
+"s": "日刊スポーツ"
+},
+{
+"t": "限定プリファードライの落とし穴 「本当に恥ずかしい」佐久間朱莉と永井花奈が痛恨の罰打",
+"u": "https://www.alba.co.jp/articles/category/tour/jlpga/post/2o0ihc25pan/",
+"s": "ALBA Net"
+},
+{
+"t": "永井花奈も大会初日ペナルティ時の対応を謝罪「不快な思いをさせてしまったことを心よりお詫び申し上げます」 周知方法に問題提起も",
+"u": "https://www.daily.co.jp/golf/2026/11/22/0021063296.shtml",
+"s": "デイリースポーツ"
+}
+],
+"n": 1000
+},
+{
+"t": "市川紗椰",
+"trafico": "1000+",
+"fecha": "2026-11-22T15:50+01:00",
+"noticias": [
+{
+"t": "話題のＳｕｉｃａ新キャラ「どくうさぎ」選考委員が魅力熱弁「媚びる気配のない存在感」「抜群にかわいい」…モデルの市川紗椰",
+"u": "https://news.yahoo.co.jp/articles/58ceb0473596c734308afecd928ae6d4bf91af7e",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "話題のＳｕｉｃａ新キャラ「どくうさぎ」選考委員が魅力熱弁「媚びる気配のない存在感」「抜群にかわいい」…モデルの市川紗椰",
+"u": "https://www.yomiuri.co.jp/culture/hochi/20261122064-OHT1T51311/",
+"s": "読売新聞"
+},
+{
+"t": "「Suicaペンギン→紫うさぎ」は序章にすぎない…次にJR東が改札から“変える”ものとは？",
+"u": "https://diamond.jp/articles/-/403780?page=5",
+"s": "ダイヤモンド・オンライン"
+}
+],
+"n": 1000
+},
+{
+"t": "吉本新喜劇",
+"trafico": "100+",
+"fecha": "2026-11-22T15:50+01:00",
+"noticias": [
+{
+"t": "『吉本新喜劇東京特別公演』、キスマイ二階堂、羽鳥慎一、玉川徹、萩本欽一、氷川きよしら豪華日替わりゲスト集結！",
+"u": "https://news.yahoo.co.jp/articles/2c7636ea130140afd1e7281dc7581e450e455108",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "間寛平・アキの新喜劇東京特別公演、毎日乱入する超豪華日替わりゲストが決定!",
+"u": "https://topics.smt.docomo.ne.jp/article/magazine_fany/entertainment/magazine_fany-297504",
+"s": "ｄメニューニュース"
+},
+{
+"t": "玉川徹氏、悲願の吉本新喜劇出演が決定 6年間京大生活「新喜劇に出るのは、私にとってすごいこと」間寛平にギャグもおねだり",
+"u": "https://article.auone.jp/004ef3eb-2775-4757-8a50-551415a23090",
+"s": "au Webポータル"
+}
+],
+"n": 100
+},
+{
+"t": "配当利回り",
+"trafico": "500+",
+"fecha": "2026-11-22T15:40+01:00",
+"noticias": [],
+"n": 500
+}
+]
+}
+},
+"wikipedia": {
+"es": {
+"lang": "es",
+"ok": true,
+"items": [
+{
+"t": "El Chapo Isidro",
+"v": 61950,
+"movil": 0.96,
+"u": "https://es.wikipedia.org/wiki/El_Chapo_Isidro"
+},
+{
+"t": "Aníbal Gordon",
+"v": 49862,
+"movil": 0.93,
+"u": "https://es.wikipedia.org/wiki/Aníbal_Gordon"
+},
+{
+"t": "Clube Atlético Mineiro",
+"v": 20274,
+"movil": 0.91,
+"u": "https://es.wikipedia.org/wiki/Clube_Atlético_Mineiro"
+},
+{
+"t": "Jesús de Miguel Alameda",
+"v": 19413,
+"movil": 0.95,
+"u": "https://es.wikipedia.org/wiki/Jesús_de_Miguel_Alameda"
+},
+{
+"t": "Hipótesis de Riemann",
+"v": 18125,
+"movil": 0.76,
+"u": "https://es.wikipedia.org/wiki/Hipótesis_de_Riemann"
+},
+{
+"t": "Los juegos del hambre: amanecer en la cosecha",
+"v": 17417,
+"movil": 0.93,
+"u": "https://es.wikipedia.org/wiki/Los_juegos_del_hambre:_amanecer_en_la_cosecha"
+},
+{
+"t": "Tomás Cuello",
+"v": 17184,
+"movil": 0.96,
+"u": "https://es.wikipedia.org/wiki/Tomás_Cuello"
+},
+{
+"t": "Isabel de Baviera",
+"v": 15987,
+"movil": 0.95,
+"u": "https://es.wikipedia.org/wiki/Isabel_de_Baviera"
+},
+{
+"t": "Grand Theft Auto VI",
+"v": 15634,
+"movil": 0.8,
+"u": "https://es.wikipedia.org/wiki/Grand_Theft_Auto_VI"
+},
+{
+"t": "Alberto Núñez Feijóo",
+"v": 13109,
+"movil": 0.87,
+"u": "https://es.wikipedia.org/wiki/Alberto_Núñez_Feijóo"
+},
+{
+"t": "Carlos Espí",
+"v": 12218,
+"movil": 0.94,
+"u": "https://es.wikipedia.org/wiki/Carlos_Espí"
+},
+{
+"t": "Eduardo Domínguez (entrenador)",
+"v": 10665,
+"movil": 0.93,
+"u": "https://es.wikipedia.org/wiki/Eduardo_Domínguez_(entrenador)"
+},
+{
+"t": "Ferran Adrià",
+"v": 10648,
+"movil": 0.96,
+"u": "https://es.wikipedia.org/wiki/Ferran_Adrià"
+},
+{
+"t": "Francisco José I de Austria",
+"v": 10262,
+"movil": 0.93,
+"u": "https://es.wikipedia.org/wiki/Francisco_José_I_de_Austria"
+},
+{
+"t": "Ben Shelton",
+"v": 10241,
+"movil": 0.94,
+"u": "https://es.wikipedia.org/wiki/Ben_Shelton"
+},
+{
+"t": "Santiago Ascacíbar",
+"v": 10105,
+"movil": 0.93,
+"u": "https://es.wikipedia.org/wiki/Santiago_Ascacíbar"
+},
+{
+"t": "Elecciones generales de España de 2026",
+"v": 9764,
+"movil": 0.81,
+"u": "https://es.wikipedia.org/wiki/Elecciones_generales_de_España_de_2026"
+},
+{
+"t": "Gordon (miniserie)",
+"v": 9470,
+"movil": 0.89,
+"u": "https://es.wikipedia.org/wiki/Gordon_(miniserie)"
+},
+{
+"t": "Maximiliano de México",
+"v": 9182,
+"movil": 0.95,
+"u": "https://es.wikipedia.org/wiki/Maximiliano_de_México"
+},
+{
+"t": "Robert Pattinson",
+"v": 9072,
+"movil": 0.92,
+"u": "https://es.wikipedia.org/wiki/Robert_Pattinson"
+},
+{
+"t": "Victoria Eugenia de Battenberg",
+"v": 8882,
+"movil": 0.95,
+"u": "https://es.wikipedia.org/wiki/Victoria_Eugenia_de_Battenberg"
+},
+{
+"t": "Frente Amplio (España)",
+"v": 8857,
+"movil": 0.9,
+"u": "https://es.wikipedia.org/wiki/Frente_Amplio_(España)"
+},
+{
+"t": "Carlos Alcaraz",
+"v": 8132,
+"movil": 0.91,
+"u": "https://es.wikipedia.org/wiki/Carlos_Alcaraz"
+},
+{
+"t": "Copa Mundial de Fútbol Sub-17 de 2026",
+"v": 8092,
+"movil": 0.73,
+"u": "https://es.wikipedia.org/wiki/Copa_Mundial_de_Fútbol_Sub-17_de_2026"
+},
+{
+"t": "Grand Theft Auto",
+"v": 7427,
+"movil": 0.85,
+"u": "https://es.wikipedia.org/wiki/Grand_Theft_Auto"
+}
+],
+"descartados_bots": [
+"Microsoft Office"
+],
+"dia": "2026-11-21",
+"url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/es.wikipedia/all-access/2026/11/21"
+},
+"en": {
+"lang": "en",
+"ok": true,
+"items": [
+{
+"t": "Grand Theft Auto VI",
+"v": 393338,
+"movil": 0.7,
+"u": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI"
+},
+{
+"t": "Riemann hypothesis",
+"v": 388288,
+"movil": 0.64,
+"u": "https://en.wikipedia.org/wiki/Riemann_hypothesis"
+},
+{
+"t": "Ramayana: Part 1",
+"v": 357351,
+"movil": 0.9,
+"u": "https://en.wikipedia.org/wiki/Ramayana:_Part_1"
+},
+{
+"t": "The Hunger Games: Sunrise on the Reaping",
+"v": 204097,
+"movil": 0.81,
+"u": "https://en.wikipedia.org/wiki/The_Hunger_Games:_Sunrise_on_the_Reaping"
+},
+{
+"t": ".xxx",
+"v": 148049,
+"movil": 0.98,
+"u": "https://en.wikipedia.org/wiki/.xxx"
+},
+{
+"t": "Deaths in 2026",
+"v": 124212,
+"movil": 0.5,
+"u": "https://en.wikipedia.org/wiki/Deaths_in_2026"
+},
+{
+"t": "O.M: Operation Mole",
+"v": 123978,
+"movil": 0.9,
+"u": "https://en.wikipedia.org/wiki/O.M:_Operation_Mole"
+},
+{
+"t": "List of highest-grossing Indian films",
+"v": 122695,
+"movil": 0.88,
+"u": "https://en.wikipedia.org/wiki/List_of_highest-grossing_Indian_films"
+},
+{
+"t": "Ansel Adams",
+"v": 121328,
+"movil": 0.85,
+"u": "https://en.wikipedia.org/wiki/Ansel_Adams"
+},
+{
+"t": "Robert Pattinson",
+"v": 119357,
+"movil": 0.81,
+"u": "https://en.wikipedia.org/wiki/Robert_Pattinson"
+},
+{
+"t": "The Body (TV series)",
+"v": 109819,
+"movil": 0.83,
+"u": "https://en.wikipedia.org/wiki/The_Body_(TV_series)"
+},
+{
+"t": "Grand Theft Auto",
+"v": 103318,
+"movil": 0.73,
+"u": "https://en.wikipedia.org/wiki/Grand_Theft_Auto"
+},
+{
+"t": "Levent Alpöge",
+"v": 102891,
+"movil": 0.58,
+"u": "https://en.wikipedia.org/wiki/Levent_Alpöge"
+},
+{
+"t": "UFC Fight Night: Procházka vs. Stirling",
+"v": 102387,
+"movil": 0.73,
+"u": "https://en.wikipedia.org/wiki/UFC_Fight_Night:_Procházka_vs._Stirling"
+},
+{
+"t": "Nikhil Chaudhary (cricketer)",
+"v": 100364,
+"movil": 0.92,
+"u": "https://en.wikipedia.org/wiki/Nikhil_Chaudhary_(cricketer)"
+},
+{
+"t": "XXX (2002 film)",
+"v": 92338,
+"movil": 0.97,
+"u": "https://en.wikipedia.org/wiki/XXX_(2002_film)"
+},
+{
+"t": "Jeff Bezos",
+"v": 86703,
+"movil": 0.85,
+"u": "https://en.wikipedia.org/wiki/Jeff_Bezos"
+},
+{
+"t": "Joseph Zada",
+"v": 82604,
+"movil": 0.89,
+"u": "https://en.wikipedia.org/wiki/Joseph_Zada"
+},
+{
+"t": "Survivor Series: WarGames (2026)",
+"v": 82093,
+"movil": 0.81,
+"u": "https://en.wikipedia.org/wiki/Survivor_Series:_WarGames_(2026)"
+},
+{
+"t": "Rockstar Games",
+"v": 77791,
+"movil": 0.75,
+"u": "https://en.wikipedia.org/wiki/Rockstar_Games"
+},
+{
+"t": "XXX: State of the Union",
+"v": 76640,
+"movil": 0.99,
+"u": "https://en.wikipedia.org/wiki/XXX:_State_of_the_Union"
+},
+{
+"t": "Elizabeth Holmes",
+"v": 76587,
+"movil": 0.83,
+"u": "https://en.wikipedia.org/wiki/Elizabeth_Holmes"
+},
+{
+"t": "John Madden",
+"v": 74612,
+"movil": 0.85,
+"u": "https://en.wikipedia.org/wiki/John_Madden"
+},
+{
+"t": "The Odyssey (2026 film)",
+"v": 73833,
+"movil": 0.78,
+"u": "https://en.wikipedia.org/wiki/The_Odyssey_(2026_film)"
+},
+{
+"t": "You Can See Everything",
+"v": 71854,
+"movil": 0.79,
+"u": "https://en.wikipedia.org/wiki/You_Can_See_Everything"
+}
+],
+"descartados_bots": [],
+"dia": "2026-11-21",
+"url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/2026/11/21"
+}
+}
+}

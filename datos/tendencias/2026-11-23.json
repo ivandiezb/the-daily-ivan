@@ -1,0 +1,3107 @@
+{
+"fecha": "2026-11-23",
+"hora": "16:50",
+"google": {
+"ES": {
+"geo": "ES",
+"url": "https://trends.google.com/trending/rss?geo=ES",
+"ok": true,
+"items": [
+{
+"t": "pension",
+"trafico": "5000+",
+"fecha": "2026-11-23T16:40+01:00",
+"noticias": [
+{
+"t": "Sánchez propone un impuesto para “ultrarricos” con fortunas superiores a 100 millones de euros",
+"u": "https://elpais.com/economia/2026-11-23/sanchez-propone-un-impuesto-para-ultrarricos-con-fortunas-superiores-a-100-millones-de-euros.html",
+"s": "EL PAÍS"
+},
+{
+"t": "Sánchez agita el populismo económico y carga contra las multinacionales, el Ibex y los ricos a una semana del 29-N",
+"u": "https://www.elespanol.com/invertia/economia/macroeconomia/20261123/sanchez-agita-populismo-economico-carga-multinacionales-ibex-ricos-semana/1003744468278_0.html",
+"s": "El Español"
+},
+{
+"t": "Sánchez retoca su programa ocho días después de presentarlo para redoblar su \"robo\" de votantes a Frente Amplio",
+"u": "https://www.elconfidencial.com/espana/2026-11-23/sanchez-retoca-programa-ocho-dias-despues_4470558/",
+"s": "El Confidencial"
+}
+],
+"n": 5000
+},
+{
+"t": "periodista",
+"trafico": "200+",
+"fecha": "2026-11-23T16:40+01:00",
+"noticias": [
+{
+"t": "El periodismo está de luto: adiós a Esteban Morales",
+"u": "https://www.canarias7.es/canarias/gran-canaria/las-palmas-de-gran-canaria/periodismo-luto-adios-esteban-morales-20261123132521-nt.html",
+"s": "Canarias7"
+},
+{
+"t": "El periodista Esteban Morales fallece a los 70 años",
+"u": "https://rtvc.es/el-periodista-esteban-morales-fallece-a-los-70-anos-23-noviembre-2026/",
+"s": "Radio Televisión Canaria"
+},
+{
+"t": "Muere el periodista canario Estebán Morales a los 70 años",
+"u": "https://www.eldia.es/canarias/2026/11/23/muere-periodista-canario-esteban-morales-136756030.html",
+"s": "Eldía"
+}
+],
+"n": 200
+},
+{
+"t": "álvaro arbeloa",
+"trafico": "200+",
+"fecha": "2026-11-23T16:40+01:00",
+"noticias": [
+{
+"t": "Arbeloa le da la vuelta",
+"u": "https://as.com/futbol/arbeloa-le-da-la-vuelta-f202611-n/",
+"s": "Diario AS"
+},
+{
+"t": "La 'masterclass' de Arbeloa: \"Parecían Maldini y Baresi\"",
+"u": "https://www.marca.com/futbol/premier-league/2026/11/23/masterclass-arbeloa-parecian-maldini-baresi.html",
+"s": "MARCA"
+},
+{
+"t": "Manchester City-Fulham, Arbeloa: «Affengruber y Bassey, como Baresi y Maldini ante Haaland»",
+"u": "https://www.goal.com/es/noticias/manchester-city-fulham-arbeloa-affengruber-y-bassey-como-baresi-y-maldini-ante-haaland/blt0074834f8c4cdf98",
+"s": "Goal.com"
+}
+],
+"n": 200
+},
+{
+"t": "vuelo",
+"trafico": "500+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "De las freidoras de Iberostar al depósito de un A350: a bordo del primer avión con la mezcla de combustible sostenible el futuro",
+"u": "https://www.elmundo.es/economia/empresas/2026/11/23/6b042d35e85eceb17f8b4573.html",
+"s": "El Mundo"
+},
+{
+"t": "Moeve y World2Fly operan el primer vuelo en España que combina SAF sintético y biológico con queroseno",
+"u": "https://www.expansion.com/sostenibilidad/2026/11/23/moeve-world2fly-operan-primer-vuelo-espana-combina-saf-sintetico-biologico-queroseno.html",
+"s": "Expansión"
+},
+{
+"t": "Moeve estrena su combustible procedente del hidrógeno verde en un primer vuelo comercial",
+"u": "https://www.lavanguardia.com/dinero/20261123/11691145/moeve-estrena-combustible-procedente-hidrogeno-verde-vuelo-comercial.html",
+"s": "La Vanguardia"
+}
+],
+"n": 500
+},
+{
+"t": "openai",
+"trafico": "200+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "Perplexity and Intelligence",
+"u": "https://openai.com/index/perplexity-and-intelligence/",
+"s": "OpenAI"
+},
+{
+"t": "OpenAI scientist proposes industry AI limits tied to model intelligence metric",
+"u": "https://www.reuters.com/business/openai-scientist-proposes-industry-ai-limits-tied-model-intelligence-metric-2026-11-22/",
+"s": "Reuters"
+},
+{
+"t": "OpenAI Calls For Leading AI Firms to Agree on AI Development Limits",
+"u": "https://www.theinformation.com/briefings/openai-calls-leading-ai-firms-agree-ai-development-limits",
+"s": "The Information"
+}
+],
+"n": 200
+},
+{
+"t": "msci world",
+"trafico": "100+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "KI-Ausverkauf drückt MSCI World: So viel Tech steckt in deinem Welt-ETF",
+"u": "https://extraetf.com/de/news/ki-ausverkauf-drueckt-msci-world",
+"s": "extraETF"
+},
+{
+"t": "iShares MSCI World ETF: Indexumbau zum Handelsschluss 30. November 2026",
+"u": "https://trading-treff.de/wirtschaft/ishares-msci-world-etf-indexumbau-zum-handelsschluss-30-november-2026",
+"s": "Trading-Treff"
+},
+{
+"t": "MSCI World unter 200-Tage-Linie",
+"u": "https://www.boerse.de/nachrichten/MSCI-World-unter-200-Tage-Linie/38734466",
+"s": "boerse.de"
+}
+],
+"n": 100
+},
+{
+"t": "avengers doomsday",
+"trafico": "200+",
+"fecha": "2026-11-23T16:20+01:00",
+"noticias": [
+{
+"t": "Joe Russo Talks ‘Doomsday’ Teaser-Trailer Strategy Ahead Of Rumored Monday Drop: “I Have To interact With Fans”",
+"u": "https://deadline.com/2026/11/joe-russo-doomsday-trailer-strategy-rumored-monday-fans-1237231111/",
+"s": "Deadline"
+},
+{
+"t": "Avengers: Doomsday Trailer: The MCU Assembles For Its Biggest Battle Yet",
+"u": "https://www.slashfilm.com/2324859/avengers-doomsday-trailer-mcu-biggest-battle/",
+"s": "SlashFilm"
+},
+{
+"t": "Avengers: Doomsday Character Poster Focuses On The McU's New Captain America, Sam Wilson",
+"u": "https://www.imdb.com/es/news/ni66124262/?ref_=int_nwr_3",
+"s": "IMDb"
+}
+],
+"n": 200
+},
+{
+"t": "cafetería",
+"trafico": "200+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "Cierra por jubilación una mítica cafetería del centro de Albacete",
+"u": "https://www.eldigitaldealbacete.com/2026/11/23/cierra-por-jubilacion-una-mitica-cafeteria-del-centro-de-albacete/",
+"s": "El Digital de Albacete"
+},
+{
+"t": "La Gran Vía bilbaína se queda sin cafeterías",
+"u": "https://www.elcorreo.com/bizkaia/gran-via-bilbaina-queda-cafeterias-20261120005748-nt.html",
+"s": "El Correo"
+},
+{
+"t": "Una mochila abandonada obliga a cortar el tráfico en la avenida de Lugo y O Hórreo, en Santiago, y a desplegar a los Tédax",
+"u": "https://www.lavozdegalicia.es/noticia/santiago/2026/11/23/mochila-abandonada-obliga-cortar-tafico-avenida-lugo-horeo-esantaigo-tramo-avenida-lugo-horreo-cortado-mocila-abandonada/0003_202611S23C2992.htm",
+"s": "La Voz de Galicia"
+}
+],
+"n": 200
+},
+{
+"t": "frente frío",
+"trafico": "200+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "Se pronostica Frente Frío 8 con lluvias muy fuertes a chubascos en Tamaulipas, NL y Coahuila; temperaturas de hasta -10 °C",
+"u": "https://vanguardia.com.mx/informacion/se-pronostica-frente-frio-8-con-lluvias-muy-fuertes-a-chubascos-en-tamaulipas-nl-y-coahuila-temperaturas-de-hasta-10-c-OI24979263",
+"s": "vanguardia.com.mx"
+},
+{
+"t": "Granizo en México hoy, 23 de noviembre 2026: alerta máxima por caída de hielos en estos 8 estados",
+"u": "https://www.ambito.com/mexico/informacion-general/granizo-mexico-hoy-23-noviembre-2026-alerta-maxima-caida-hielos-estos-8-estados-n6348220",
+"s": "Ambito"
+},
+{
+"t": "Protección Civil de Papantla coordina acciones preventivas ante el paso del frente frío número 8",
+"u": "https://graficoaldia.mx/2026/11/23/proteccion-civil-de-papantla-coordina-acciones-preventivas-ante-el-paso-del-frente-frio-numero-8/",
+"s": "Diario Gráfico"
+}
+],
+"n": 200
+},
+{
+"t": "envidia",
+"trafico": "100+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "\"¿Sabes cuántos ultrarricos hay en España? Unas 150 personas. Una vergüenza, somos un país de pobres en el que se utiliza a aquellos que son exitosos para generar envidia\"",
+"u": "https://www.cope.es/programas/mediodia-cope/monologo-pilar-garcia-de-la-granja/monologos/ultrarricos-hay-espana-150-personas-vergueenza-pais-pobres-utiliza-son-exitosos-generar-envidia-20261123_3480214.html",
+"s": "COPE"
+},
+{
+"t": "Eduard Fernández, actor (61 años): “En mis primeras sesiones de terapia pensaba en todo el daño que me habían hecho mis padres, pero cuando eres padre empiezas a preguntarte qué daño estás haciendo tú”",
+"u": "https://www.lavanguardia.com/clic/20261123/11689347/eduard-fernandez-actor-61-anos-mis-primeras-sesiones-terapia-pensaba-dano-me-habian-hecho-mis-padres-padre-empiezas-preguntarte-que-dano-estas-haciendo.html",
+"s": "La Vanguardia"
+},
+{
+"t": "‘El mal padre’: otra de tensiones entre un padre y sus hijos. Y está bien",
+"u": "https://elpais.com/cultura/cine/2026-11-20/el-mal-padre-otra-de-tensiones-entre-un-padre-y-sus-hijos-y-esta-bien.html",
+"s": "EL PAÍS"
+}
+],
+"n": 100
+}
+]
+},
+"US": {
+"geo": "US",
+"url": "https://trends.google.com/trending/rss?geo=US",
+"ok": true,
+"items": [
+{
+"t": "north korea",
+"trafico": "200+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "How Kim Jong Un Gets Away With Building Nukes and Ghosting Trump",
+"u": "https://www.wsj.com/world/asia/kim-jong-un-north-korea-trump-2920ff49",
+"s": "WSJ"
+},
+{
+"t": "Trump Getting Ghosted By Dictator Who Stole His Heart: Report",
+"u": "https://www.huffpost.com/entry/trump-kim-jong-un-north-korea-nuclear-snub_n_6b037dade4b0e97a9407e334",
+"s": "HuffPost"
+},
+{
+"t": "Kim ghosts Trump while building up nuclear arsenal",
+"u": "https://www.telegraph.co.uk/world-news/2026/11/22/kim-ghosts-trump-while-building-up-nuclear-arsenal/",
+"s": "The Telegraph"
+}
+],
+"n": 200
+},
+{
+"t": "sophie cunningham indiana fever offseason",
+"trafico": "1000+",
+"fecha": "2026-11-23T16:20+01:00",
+"noticias": [
+{
+"t": "Who will WNBA teams draft if JuJu Watkins and other top prospects stay in college?",
+"u": "https://www.nytimes.com/athletic/7796210/2026/11/20/wnba-draft-2027-top-prospects-juju-watkins/",
+"s": "The New York Times"
+},
+{
+"t": "New WNBA Mock Draft 2027 Drops from Top Experts amid JuJu Watkins & Hannah Hidalgo Speculation",
+"u": "https://bleacherreport.com/articles/25536405-new-wnba-mock-draft-2027-drops-top-experts-amid-juju-watkins-hannah-hidalgo-speculation",
+"s": "Bleacher Report"
+},
+{
+"t": "Sophie Cunningham has curious JuJu Watkins advice after WNBA draft lottery",
+"u": "https://sports.yahoo.com/articles/sophie-cunningham-curious-juju-watkins-144548974.html",
+"s": "Yahoo Sports"
+}
+],
+"n": 1000
+},
+{
+"t": "costco stock",
+"trafico": "500+",
+"fecha": "2026-11-23T16:20+01:00",
+"noticias": [
+{
+"t": "Here’s How Many Shares of Costco You’d Need for $5,000 in Yearly Dividends.",
+"u": "https://finance.yahoo.com/markets/stocks/articles/many-shares-costco-d-5-115002243.html",
+"s": "Yahoo Finance"
+},
+{
+"t": "Will Costco Do a Stock Split Before the End of 2026?",
+"u": "https://www.fool.com/investing/2026/11/23/will-costco-do-a-stock-split-before-the-end-of-2026/",
+"s": "The Motley Fool"
+},
+{
+"t": "Jim Cramer says Costco's hefty special dividend signals ‘more gains ahead’",
+"u": "https://www.cnbc.com/2026/11/16/costco-special-dividend-jim-cramer.html",
+"s": "CNBC"
+}
+],
+"n": 500
+},
+{
+"t": "al-shamal vs al-ahli",
+"trafico": "500+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "Al Shamal vs Al Ahli Preview & Prediction | 2026-27 AFC Champions League Elite | League Stage",
+"u": "https://www.thestatszone.com/al-shamal-vs-al-ahli-preview-prediction-2026-27-afc-champions-league-elite-league-stage-240883",
+"s": "The Stats Zone"
+},
+{
+"t": "An extraordinary night with a taste of revenge: Mahrez reopens the book of memories against Al-Ahli",
+"u": "https://www.goal.com/en-in/news/an-extraordinary-night-with-a-taste-of-revenge-mahrez-reopens-the-book-of-memories-against-al-ahli/blt82f4c191a1c34093",
+"s": "Goal.com"
+},
+{
+"t": "'Yesterday's friend': Riyad Mahrez surprises Al-Ahli players before Al-Shamal clash",
+"u": "https://www.yardbarker.com/soccer/articles/yesterdays_friend_riyad_mahrez_surprises_al_ahli_players_before_al_shamal_clash/s1_17790_44605348",
+"s": "Yardbarker"
+}
+],
+"n": 500
+},
+{
+"t": "pfe stock",
+"trafico": "200+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "Will Pfizer Stock Ever Get Back To Its Old High?",
+"u": "https://finance.yahoo.com/markets/stocks/articles/pfizer-stock-ever-back-old-144547790.html",
+"s": "Yahoo Finance"
+},
+{
+"t": "Will Pfizer Stock Ever Get Back To Its Old High?",
+"u": "https://www.trefis.com/stock/pfe/articles/627687/will-pfizer-stock-ever-get-back-to-its-old-high/2026-11-23",
+"s": "Trefis"
+},
+{
+"t": "Pfizer's Launched and Acquired Drugs Grew 32% in Q3 — and 3 Other Reasons to Buy the Stock Before 2027",
+"u": "https://finance.yahoo.com/healthcare/articles/pfizers-launched-acquired-drugs-grew-223502254.html",
+"s": "Yahoo Finance"
+}
+],
+"n": 200
+},
+{
+"t": "tesla stock",
+"trafico": "5000+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "Cathie Wood Says TSLA Holders ‘Will Get’ A Premium If SpaceX Buys Tesla — HSBC Puts It At Over 30%",
+"u": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-says-tsla-holders-071405988.html",
+"s": "Yahoo Finance"
+},
+{
+"t": "Is SpaceX-Tesla Merger Imminent?",
+"u": "https://puck.news/wall-street/2026/11/is-spacex-tesla-merger-imminent",
+"s": "Puck"
+},
+{
+"t": "Should You Buy Tesla or SpaceX Stock Before Their Potential Merger?",
+"u": "https://www.fool.com/investing/2026/11/22/should-you-buy-tesla-or-spacex-stock-before-merger/",
+"s": "The Motley Fool"
+}
+],
+"n": 5000
+},
+{
+"t": "apple stock",
+"trafico": "2000+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "Berkshire Hathaway is keeping a quarter of its investments tied up in Apple",
+"u": "https://appleinsider.com/articles/26/11/23/berkshire-hathaway-is-keeping-a-quarter-of-its-investments-tied-up-in-apple",
+"s": "AppleInsider"
+},
+{
+"t": "Apple Is Now 25% of Berkshire Hathaway's Stock Portfolio. Here's What Holding Every Share Tells Investors.",
+"u": "https://www.fool.com/investing/2026/11/22/apple-is-now-25-of-berkshire-hathaway-s-stock-portfolio-here-s-what-holding-every-share-tells-investors/",
+"s": "The Motley Fool"
+},
+{
+"t": "3 Berkshire 13F moves you may have missed while watching Anthropic and Nvidia",
+"u": "https://www.fool.com.au/2026/11/19/3-berkshire-13f-moves-you-may-have-missed-while-watching-anthropic-and-nvidia/",
+"s": "The Motley Fool Australia"
+}
+],
+"n": 2000
+},
+{
+"t": "ko stock",
+"trafico": "200+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "Coca-Cola Stock Could Lose Its Fizz. Its Valuation Is the Highest in 25 Years.",
+"u": "https://www.barrons.com/articles/buy-coca-cola-stock-price-pick-e6a89bce",
+"s": "Barron's"
+},
+{
+"t": "How Many Shares of Coca-Cola or PepsiCo Pay $1,000 a Month in Dividends?",
+"u": "https://finance.yahoo.com/markets/stocks/articles/many-shares-coca-cola-pepsico-165027632.html",
+"s": "Yahoo Finance"
+},
+{
+"t": "Is The Coca-Cola (NYSE:KO) Built For A Choppier Market?",
+"u": "https://kalkinemedia.com/us/stocks/bluechip/is-the-coca-cola-nyseko-built-for-a-choppier-market",
+"s": "Kalkine Media"
+}
+],
+"n": 200
+},
+{
+"t": "vrt stock",
+"trafico": "200+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "What Is Behind The Fall In Vertiv Stock?",
+"u": "https://finance.yahoo.com/markets/stocks/articles/behind-fall-vertiv-stock-121423381.html",
+"s": "Yahoo Finance"
+},
+{
+"t": "VRT Shares In Focus As Baird Says ‘Wall Of Worry Is Too High’ Despite Strong Fundamentals — What The Analyst Sees",
+"u": "https://www.tradingview.com/news/stocktwits:4c735bf7a094b:0-vrt-shares-in-focus-as-baird-says-wall-of-worry-is-too-high-despite-strong-fundamentals-what-the-analyst-sees/",
+"s": "TradingView"
+},
+{
+"t": "Evercore’s $325 Target Says Vertiv’s Selloff Went Too Far",
+"u": "https://www.tikr.com/blog/evercores-325-target-says-vertivs-selloff-went-too-far",
+"s": "TIKR.com"
+}
+],
+"n": 200
+},
+{
+"t": "paul goldschmidt",
+"trafico": "10000+",
+"fecha": "2026-11-23T15:50+01:00",
+"noticias": [
+{
+"t": "Mets To Sign Paul Goldschmidt",
+"u": "https://www.mlbtraderumors.com/2026/11/mets-sign-paul-goldschmidt.html",
+"s": "MLB Trade Rumors"
+},
+{
+"t": "1B Goldschmidt agrees to deal with busy Mets (source)",
+"u": "https://www.mlb.com/news/paul-goldschmidt-mets-contract",
+"s": "MLB.com"
+},
+{
+"t": "Mets to sign ex-Yankees first baseman after landing Tarik Skubal",
+"u": "https://sports.yahoo.com/articles/mets-sign-ex-yankees-first-150803633.html",
+"s": "Yahoo Sports"
+}
+],
+"n": 10000
+}
+]
+},
+"GB": {
+"geo": "GB",
+"url": "https://trends.google.com/trending/rss?geo=GB",
+"ok": true,
+"items": [
+{
+"t": "al-shamal vs al-ahli",
+"trafico": "200+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "\"Yesterday's friend\": Riyad Mahrez surprises Al-Ahli players before Al-Shamal clash",
+"u": "https://www.livescore.com/en/news/football/more/yesterdays-friend-riyad-mahrez-surprises-al-ahli-players-before-al-shamal-clash-goal/",
+"s": "LiveScore"
+},
+{
+"t": "Al Shamal vs Al Ahli Preview & Prediction | 2026-27 AFC Champions League Elite | League Stage",
+"u": "https://www.thestatszone.com/al-shamal-vs-al-ahli-preview-prediction-2026-27-afc-champions-league-elite-league-stage-240883",
+"s": "The Stats Zone"
+},
+{
+"t": "check headline: Al Ahli boss Pušić demands ‘maximum effort’ ahead of Al Shamal clash",
+"u": "https://www.thechronicle.com.au/sport/check-headline-al-ahli-boss-pui-demands-maximum-effort-ahead-of-al-shamal-clash/video/2d8409bd443d0c5f80595214e900782e",
+"s": "Toowoomba Chronicle"
+}
+],
+"n": 200
+},
+{
+"t": "hacker",
+"trafico": "1000+",
+"fecha": "2026-11-23T16:20+01:00",
+"noticias": [
+{
+"t": "GTA 6 hacker released on licence with warning 'don't let this happen again'",
+"u": "https://www.bbc.co.uk/news/articles/cqpv9kr7pxmro",
+"s": "BBC"
+},
+{
+"t": "Hacker sentenced for leaking Grand Theft Auto VI clips during cybercrime spree",
+"u": "https://news.sky.com/story/hacker-sentenced-for-leaking-grand-theft-auto-vi-clips-during-cybercrime-spree-13615501",
+"s": "Sky News"
+},
+{
+"t": "GTA 6 hacker pleads guilty after release from secure hospital",
+"u": "https://www.bbc.com/news/articles/cq99exy89dngo",
+"s": "BBC"
+}
+],
+"n": 1000
+},
+{
+"t": "xabi alonso",
+"trafico": "200+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "'Fragile' and 'miles off it' - Alonso's Chelsea honeymoon is over",
+"u": "https://www.bbc.com/sport/football/articles/cwe8944d004yo",
+"s": "BBC"
+},
+{
+"t": "Leeds dominate Chelsea for first Stamford Bridge win since 1999",
+"u": "https://www.bbc.co.uk/sport/videos/c3vg27y5ljd7o",
+"s": "BBC"
+},
+{
+"t": "Romeo Lavia: This is not the moment to panic | News | Official Site",
+"u": "https://www.chelseafc.com/en/news/article/romeo-lavia-this-is-not-the-moment-to-panic",
+"s": "Chelsea Football Club"
+}
+],
+"n": 200
+},
+{
+"t": "next vendor cyber security breach",
+"trafico": "200+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "Next data accessed in cyber breach",
+"u": "https://www.bbc.co.uk/news/articles/cqj3kjr7ez3vo",
+"s": "BBC"
+},
+{
+"t": "Next issues cyber-attack warning after ‘benign’ data accessed by hackers",
+"u": "https://www.theguardian.com/business/2026/nov/23/next-issues-cyber-attack-warning-after-benign-data-accessed-by-hackers",
+"s": "The Guardian"
+},
+{
+"t": "Next says some data accessed in cyber incident affecting online supplier",
+"u": "https://www.independent.co.uk/news/business/spencer-b3089823.html",
+"s": "The Independent"
+}
+],
+"n": 200
+},
+{
+"t": "dow jones index",
+"trafico": "200+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "Tech stock sell-off drags markets down as Anthropic shares slide",
+"u": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo",
+"s": "BBC"
+},
+{
+"t": "Anthropic’s IPO was great for the tech elite – and not so great for the rest of us | Steven Greenhouse",
+"u": "https://www.theguardian.com/commentisfree/2026/nov/23/anthropic-ipo-tech-elite-stock-bubble",
+"s": "The Guardian"
+},
+{
+"t": "Did Anthropic and its bankers get a key call wrong after IPO?",
+"u": "https://www.ft.com/content/d501198c-14a4-4b96-8880-c3997545902e",
+"s": "Financial Times"
+}
+],
+"n": 200
+},
+{
+"t": "spx",
+"trafico": "200+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "SPX - wave count and long-term correction targets for SP:SPX by Supergalactic",
+"u": "https://www.tradingview.com/chart/SPX/vNszcHXo-SPX-wave-count-and-long-term-correction-targets/",
+"s": "TradingView"
+},
+{
+"t": "Mapping the Market: More losses could be ahead for beaten-down S&P 500",
+"u": "https://www.reuters.com/markets/us/global-markets-technicals-graphics-2026-11-23/",
+"s": "Reuters"
+},
+{
+"t": "CNA Explains: Why are stock markets falling so sharply, and could this become another dotcom crash?",
+"u": "https://www.channelnewsasia.com/business/cna-explains-ai-stock-market-correction-dotcom-crash-6574601",
+"s": "CNA"
+}
+],
+"n": 200
+},
+{
+"t": "btc usd",
+"trafico": "200+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "Crypto Crashes Pile Up as Once-Diehard Fans Chase New Bets",
+"u": "https://finance.yahoo.com/markets/crypto/articles/crypto-crashes-pile-once-diehard-133000604.html",
+"s": "Yahoo Finance"
+},
+{
+"t": "Bitcoin (BTC) price rebounds from 2-year low as Wall Street futures recover: Crypto Markets Today",
+"u": "https://www.coindesk.com/markets/2026/11/23/bitcoin-rebounds-from-2-year-low-as-wall-street-futures-recover",
+"s": "CoinDesk"
+},
+{
+"t": "Capitulation Meets Support",
+"u": "https://research.glassnode.com/the-week-onchain-week-46-2026/",
+"s": "Glassnode Research"
+}
+],
+"n": 200
+},
+{
+"t": "uk eu post brexit relationship reset",
+"trafico": "200+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "Burnham setting out new UK-EU deal in the House of Commons",
+"u": "https://www.bbc.co.uk/news/live/c65y195llkvyt",
+"s": "BBC"
+},
+{
+"t": "Former Tory PMs ‘can’t face up to their bad Brexit deal’, says Burnham – UK politics live",
+"u": "https://www.theguardian.com/politics/live/2026/nov/23/andy-burnham-brexit-europe-eu-uk-summit-deal-commons-cbi-farage-badenoch-haigh-politics-latest-news-updates",
+"s": "The Guardian"
+},
+{
+"t": "Theresa May 'aghast' at Burnham's EU plans and says 'Brexit is done'",
+"u": "https://www.bbc.com/news/articles/cvj6l8y3x1x4o",
+"s": "BBC"
+}
+],
+"n": 200
+},
+{
+"t": "eugene laverty",
+"trafico": "200+",
+"fecha": "2026-11-23T15:50+01:00",
+"noticias": [
+{
+"t": "Ex-MotoGP, World Superbike rider makes shock racing return in BSB with Ducati",
+"u": "https://www.crash.net/bsb/news/1110842/1/ex-motogp-world-superbike-rider-makes-shock-racing-return-bsb-ducati",
+"s": "Crash.net"
+},
+{
+"t": "bsb superbike motoamerica laverty baz ducati bmw",
+"u": "https://www.speedweek.com/en/a/worldsbk-wc/eugene-laverty-comeback-ducati-bsb-superbike-baz-bmw",
+"s": "SPEEDWEEK.com"
+},
+{
+"t": "Retired World Supersport and Superbike runner-up to make shock return to racing in BSB next season",
+"u": "https://www.motorcyclenews.com/sport/british-superbikes/2026/november/eugene-laverty-fleetsafe-ducati-2027/",
+"s": "Motorcycle News"
+}
+],
+"n": 200
+},
+{
+"t": "google stock",
+"trafico": "200+",
+"fecha": "2026-11-23T15:50+01:00",
+"noticias": [
+{
+"t": "Prediction: Here’s Where Alphabet Stock Will Be in 5 Years",
+"u": "https://finance.yahoo.com/markets/stocks/articles/prediction-where-alphabet-stock-5-081002070.html",
+"s": "Yahoo Finance"
+},
+{
+"t": "Google Can Spend $48 Billion More On AI From Its Own Cash. Is That Enough For Nvidia?",
+"u": "https://www.trefis.com/stock/googl/articles/627438/google-can-spend-48-billion-more-on-ai-from-its-own-cash-is-that-enough-for-nvidia/2026-11-23",
+"s": "Trefis"
+},
+{
+"t": "Key facts: Alphabet raises AI capex; Search slows; FCF turns negative",
+"u": "https://www.tradingview.com/news/tradingview:ad9989668767f:0-key-facts-alphabet-raises-ai-capex-search-slows-fcf-turns-negative/",
+"s": "TradingView"
+}
+],
+"n": 200
+}
+]
+},
+"FR": {
+"geo": "FR",
+"url": "https://trends.google.com/trending/rss?geo=FR",
+"ok": true,
+"items": [
+{
+"t": "donyell malen",
+"trafico": "200+",
+"fecha": "2026-11-23T16:40+01:00",
+"noticias": [
+{
+"t": "26 buts en 27 matches en 2026, un quadruplé ce samedi : l'attaquant de l'AS Rome Donyell Malen sera une sacrée menace pour le PSG en Ligue des champions",
+"u": "https://www.lequipe.fr/Football/Article/26-buts-en-27-matches-en-2026-un-quadruple-ce-samedi-l-attaquant-de-l-as-rome-donyell-malen-sera-une-sacree-menace-pour-le-psg-en-ligue-des-champions/1745274",
+"s": "L'Équipe"
+},
+{
+"t": "« En ce moment, Malen est extraordinaire ! » : Gian Piero Gasperini explique comment l’ancien attaquant d’Aston Villa a égalé un record de la Roma vieux de 66 ans grâce à un quadruplé contre Parme",
+"u": "https://fr.news.yahoo.com/sport/moment-malen-extraordinaire-gian-piero-092614668.html",
+"s": "Yahoo Actualités"
+},
+{
+"t": "Serie A : avant de défier un PSG amoindri, l’AS Roma étrille Parme",
+"u": "https://www.footmercato.net/a1188542057697198293-serie-a-avant-de-defier-un-psg-amoindri-las-roma-etrille-parme",
+"s": "Foot Mercato"
+}
+],
+"n": 200
+},
+{
+"t": "loïs openda",
+"trafico": "200+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "OL : Openda prêté dès son retour de Lyon",
+"u": "https://www.foot01.com/ol/ol-openda-prete-des-son-retour-de-lyon",
+"s": "Foot01"
+},
+{
+"t": "Mercato - La réponse de Michael Gerlinger sur la rumeur d'un départ de Loïs Openda",
+"u": "https://madeingones.ouest-france.fr/mercato-ol/article-mercato-la-reponse-de-michael-gerlinger-sur-la-rumeur-d-un-depart-de-lois-openda-546182.html",
+"s": "MadeInGones"
+},
+{
+"t": "Chute spectaculaire : Lois Openda et la Juventus menacés par un nouveau scénario catastrophe",
+"u": "https://fr.news.yahoo.com/sport/pire-sc%C3%A9nario-profile-chute-spectaculaire-083538015.html",
+"s": "Yahoo Actualités"
+}
+],
+"n": 200
+},
+{
+"t": "route des gets",
+"trafico": "1000+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "Un important glissement de terrain bloque la route entre Taninges et Les Gets, une déviation mise en place",
+"u": "https://france3-regions.franceinfo.fr/auvergne-rhone-alpes/haute-savoie/un-important-glissement-de-terrain-bloque-la-route-entre-taninges-et-les-gets-une-deviation-mise-en-place-3454215.html",
+"s": "France 3 Régions"
+},
+{
+"t": "Éboulement en Haute-Savoie : la RD 902 totalement fermée à la circulation",
+"u": "https://www.lemessager.fr/649360669/article/2026-11-23/eboulement-en-haute-savoie-la-rd-902-totalement-fermee-la-circulation",
+"s": "Le Messager"
+},
+{
+"t": "Les Gets : Glissement de terrain ce dimanche soir, une route coupée",
+"u": "https://www.laradioplus.com/news/locales/129715/les-gets-glissement-de-terrain-ce-dimanche-soir-une-route-coupee",
+"s": "La Radio Plus"
+}
+],
+"n": 1000
+},
+{
+"t": "cyberleek",
+"trafico": "500+",
+"fecha": "2026-11-23T16:20+01:00",
+"noticias": [
+{
+"t": "Could This Major GTA VI Leak Make It Playable On PC?",
+"u": "https://rockstarintel.com/could-this-major-gta-vi-leak-make-it-playable-on-pc/",
+"s": "RockstarINTEL"
+},
+{
+"t": "GTA 6 Leaker Dangles a PC Port Behind a $15 Million Crypto Pump",
+"u": "https://decrypt.co/383756/gta-6-leaker-dangles-pc-port-15-million-crypto-pump",
+"s": "Decrypt"
+},
+{
+"t": "The GTAs that are still worth playing while you wait for GTA 6 on PC",
+"u": "https://www.pcgamer.com/games/grand-theft-auto/the-gtas-that-are-still-worth-playing-while-you-wait-for-gta-6-on-pc/",
+"s": "PC Gamer"
+}
+],
+"n": 500
+},
+{
+"t": "fun radio",
+"trafico": "200+",
+"fecha": "2026-11-23T16:20+01:00",
+"noticias": [
+{
+"t": "Cyril Hanouna : Fun Radio et l’animateur enterrent « d’un commun accord » l’émission « Ça va secouer »",
+"u": "https://www.20minutes.fr/arts-stars/medias/4265141-20261123-cyril-hanouna-fun-radio-animateur-enterrent-commun-accord-emission-ca-va-secouer",
+"s": "20 Minutes"
+},
+{
+"t": "Clap de fin pour Cyril Hanouna sur Fun Radio, l'émission \"Ça va secouer\" s'arrête ce lundi soir",
+"u": "https://www.laprovence.com/article/culture-loisirs/1564569771879915/clap-de-fin-pour-cyril-hanouna-sur-fun-radio-lemission-ca-va-secouer-sarrete-ce-lundi-soir",
+"s": "La Provence"
+},
+{
+"t": "Après des audiences décevantes, Cyril Hanouna arrête son émission sur Fun Radio",
+"u": "https://www.leparisien.fr/culture-loisirs/tv/apres-des-audiences-decevantes-cyril-hanouna-arrete-son-emission-sur-fun-radio-23-11-2026-5ZPYNTUQJRFWNKWB4O4JNXXLSU.php",
+"s": "Le Parisien"
+}
+],
+"n": 200
+},
+{
+"t": "flers",
+"trafico": "200+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "« Une mesure de bon sens et de protection vitale » : devenu obligatoire, le casque de trottinette se décline en plusieurs formats",
+"u": "https://www.lunion.fr/id841947/article/2026-11-23/une-mesure-de-bon-sens-et-de-protection-vitale-devenu-obligatoire-le-casque-de",
+"s": "L'Union"
+},
+{
+"t": "Trottinettes électriques, gyropodes… Le port du casque et de gilet de sécurité devient obligatoire en Haute-Saône",
+"u": "https://www.macommune.info/trottinettes-electriques-gyropodes-le-port-du-casque-et-de-gilet-de-securite-devient-obligatoire-en-haute-saone/",
+"s": "maCommune.info"
+},
+{
+"t": "Trottinettes : une 4e commune du Nord Ardennes prend un arrêté municipal",
+"u": "https://www.lardennais.fr/id841844/article/2026-11-22/trottinettes-une-4e-commune-du-nord-ardennes-prend-un-arrete-municipal",
+"s": "L'Ardennais"
+}
+],
+"n": 200
+},
+{
+"t": "twickenham",
+"trafico": "200+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "Nations Championship: England will not get carried away by win against All Blacks - Matt Dawson",
+"u": "https://www.bbc.com/sport/rugby-union/articles/ckr5gdpm1q5no",
+"s": "BBC"
+},
+{
+"t": "Slade helps sparkling England power to record victory as All Blacks wilt again",
+"u": "https://www.theguardian.com/sport/2026/nov/21/england-new-zealand-nations-championship-rugby-union-match-report",
+"s": "The Guardian"
+},
+{
+"t": "Genge urges England to do it all again in bid for All Blacks' hat-trick",
+"u": "https://www.rfi.fr/en/sports/20261122-genge-urges-england-to-do-it-all-again-in-bid-for-all-blacks-hat-trick",
+"s": "RFI"
+}
+],
+"n": 200
+},
+{
+"t": "température",
+"trafico": "5000+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "Jusqu'à -4 °C dès demain matin : Météo-France annonce le gel dans ces villes jusqu'à jeudi",
+"u": "https://selectra.info/energie/actualites/marche/gel-nord-est-jeudi-26-novembre-villes",
+"s": "Selectra"
+},
+{
+"t": "Chute des températures: peut-on s'attendre à de la neige en plaine cette semaine?",
+"u": "https://www.bfmtv.com/meteo/neige/chute-des-temperatures-peut-on-s-attendre-a-de-la-neige-en-plaine-cette-semaine_AN-202611230592.html",
+"s": "BFM"
+},
+{
+"t": "L'hiver arrive : jusqu'à 8°C sous les normales et des journées sans dégel",
+"u": "https://actualite.lachainemeteo.com/actualite-meteo/2026-11-23/l-hiver-arrive-jusqu-a-8-c-sous-les-normales-et-des-journees-sans-degel-94489",
+"s": "La Chaîne Météo"
+}
+],
+"n": 5000
+},
+{
+"t": "montluçon",
+"trafico": "200+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "Mort au centre pénitentiaire de Riom : le détenu qui s'est suicidé est l'homme suspecté du meurtre de sa compagne à Montluçon",
+"u": "https://www.lamontagne.fr/riom-63200/faits-divers/mort-au-centre-penitentiaire-de-riom-le-detenu-qui-s-est-suicide-est-l-homme-suspecte-du-meurtre-de-sa-compagne-a-montlucon_15088803/",
+"s": "La Montagne"
+},
+{
+"t": "Puy-de-Dôme : un homme de 34 ans en détention provisoire à la prison de Riom retrouvé mort dans sa cellule",
+"u": "https://www.leparisien.fr/faits-divers/puy-de-dome-un-homme-de-34-ans-en-detention-provisoire-a-la-prison-de-riom-retrouve-mort-dans-sa-cellule-22-11-2026-T66EH5E6KNEVRIZFYEJOYMQHGY.php",
+"s": "Le Parisien"
+},
+{
+"t": "Femme retrouvée morte à son domicile à Montluçon : le conjoint retrouvé mort dans sa cellule, une enquête ouverte",
+"u": "https://france3-regions.franceinfo.fr/auvergne-rhone-alpes/allier/montlucon/femme-retrouvee-morte-a-son-domicile-a-montlucon-le-conjoint-retrouve-mort-dans-sa-cellule-une-enquete-ouverte-3453996.html",
+"s": "France 3 Régions"
+}
+],
+"n": 200
+},
+{
+"t": "météo-france",
+"trafico": "1000+",
+"fecha": "2026-11-23T15:50+01:00",
+"noticias": [
+{
+"t": "Prévisions météo du lundi 23 novembre 2026 à Lyon",
+"u": "https://www.20minutes.fr/planete/previsions-meteo/4264830-20261123-meteo-lyon-previsions-lundi-23-novembre-2026",
+"s": "20 Minutes"
+},
+{
+"t": "Un coup de froid annoncé à Lyon, les températures en chute libre : les prévisions de Météo-France",
+"u": "https://actu.fr/auvergne-rhone-alpes/lyon_69123/un-coup-de-froid-annonce-a-lyon-les-temperatures-en-chute-libre-les-previsions-de-meteo-france_65087813.html",
+"s": "Actu.fr"
+},
+{
+"t": "Météo : pluie, grisaille et baisse des températures, à quoi s’attendre cette semaine à Lyon ?",
+"u": "https://www.lyoncapitale.fr/actualite/meteo-pluie-grisaille-et-baisse-des-temperatures-a-quoi-sattendre-cette-semaine-a-lyon",
+"s": "Lyon Capitale"
+}
+],
+"n": 1000
+}
+]
+},
+"DE": {
+"geo": "DE",
+"url": "https://trends.google.com/trending/rss?geo=DE",
+"ok": true,
+"items": [
+{
+"t": "leonida github",
+"trafico": "200+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "Cyberleek claims modders could get GTA 6 running on PC within a week after reported Xbox build leak",
+"u": "https://www.tweaktown.com/news/114815/cyberleek-claims-modders-could-get-gta-6-running-on-pc-within-a-week-after-reported-xbox-build-leak/index.html",
+"s": "TweakTown"
+},
+{
+"t": "Could This Major GTA VI Leak Make It Playable On PC?",
+"u": "https://rockstarintel.com/could-this-major-gta-vi-leak-make-it-playable-on-pc/",
+"s": "RockstarINTEL"
+},
+{
+"t": "Developers have released the Leonida tool for natively running Grand Theft Auto VI on PC.",
+"u": "https://en.gamegpu.com/news/igry/razrabotchiki-predstavili-instrument-leonida-dlya-nativnogo-zapuska-grand-theft-auto-vi-na-pk",
+"s": "GameGPU"
+}
+],
+"n": 200
+},
+{
+"t": "asml aktie",
+"trafico": "200+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "ASML-Aktie mit neuem 6-Monats-Tief",
+"u": "https://www.boerse.de/nachrichten/ASML-Aktie-mit-neuem-6-Monats-Tief/38731562",
+"s": "boerse.de"
+},
+{
+"t": "Chinesischer Diplomat: Exportbeschränkungen für Chipausrüstung gefährden Tauwetter im Handel zwischen EU und China",
+"u": "https://de.marketscreener.com/boerse-nachrichten/chinesischer-diplomat-exportbeschraenkungen-fuer-chipausruestung-gefaehrden-tauwetter-im-handel-zwische-ce785edfd08bf724",
+"s": "MarketScreener Deutschland"
+},
+{
+"t": "ASML Holding Aktie: Kurs erholt sich trotz Nasdaq-Turbulenzen deutlich",
+"u": "https://goldesel.de/aktien/news/asml-holding-aktie-kurs-erholt-sich-trotz-nasdaq-turbulenzen-deutlich",
+"s": "Goldesel.de"
+}
+],
+"n": 200
+},
+{
+"t": "leonida",
+"trafico": "200+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "Ad of the Day: Spectrum puts GTA VI fans’ patience to the test",
+"u": "https://www.thedrum.com/news/ad-of-the-day-spectrum-puts-gta-vi-fans-patience-to-the-test",
+"s": "The Drum"
+},
+{
+"t": "Mapped: The worst UK towns to live in if you're trying to download Grand Theft Auto VI",
+"u": "https://www.gbnews.com/tech/worst-towns-download-gta-6-uk",
+"s": "GB News"
+},
+{
+"t": "Download Grand Theft Auto VI Faster and Get to Leonida Sooner With Spectrum Internet Gig",
+"u": "https://roastbrief.us/download-grand-theft-auto-vi-faster-and-get-to-leonida-sooner-with-spectrum-internet-gig/",
+"s": "Roastbrief US"
+}
+],
+"n": 200
+},
+{
+"t": "finanzen invest",
+"trafico": "200+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "Take Two Aktie News: Take Two am Nachmittag mit roten Vorzeichen",
+"u": "https://www.finanzen.net/nachricht/aktien/take_two-aktie-kursbewegung-23-11-2026-13018276",
+"s": "Finanzen.net"
+},
+{
+"t": "Take Two Aktie News: Take Two am Nachmittag mit Kursplus",
+"u": "https://www.finanzen.net/nachricht/aktien/take_two-aktie-kursbewegung-20-11-2026-13018276",
+"s": "Finanzen.net"
+},
+{
+"t": "Take Two Aktie News: Take Two tendiert am Abend auf rotem Terrain",
+"u": "https://www.finanzen.net/nachricht/aktien/take_two-aktie-kursbewegung-20-11-2026-15223226",
+"s": "Finanzen.net"
+}
+],
+"n": 200
+},
+{
+"t": "schuldenbremse",
+"trafico": "200+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "Autobahngebühren: Die Maut ist unvermeidbar",
+"u": "https://www.zeit.de/mobilitaet/2026-11/pkw-maut-autobahn-gebuehren-autofahrer",
+"s": "DIE ZEIT"
+},
+{
+"t": "Neues Finanzierungsmodell für die Autobahn GmbH umstritten",
+"u": "https://www.bundestag.de/dokumente/textarchiv/2026/kw48-pa-verkehr-1233478",
+"s": "Deutscher Bundestag"
+},
+{
+"t": "(S+) Autobahn GmbH: Gutachter sieht Schulden als Umgehung der Schuldenbremse",
+"u": "https://www.spiegel.de/wirtschaft/gutachter-sieht-autobahn-schulden-als-umgehung-der-schuldenbremse-a-d03e377a-694b-4f1e-8737-5f93bd1bf7b3",
+"s": "Spiegel"
+}
+],
+"n": 200
+},
+{
+"t": "iren aktie",
+"trafico": "100+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "Warum die IREN-Aktie heute deutlich zulegt",
+"u": "https://de.investing.com/news/stock-market-news/warum-die-irenaktie-heute-deutlich-zulegt-93CH-3782174",
+"s": "Investing.com Deutsch"
+},
+{
+"t": "IREN Has Lost 70% in a Year. Bernstein Still Sees $55",
+"u": "https://www.tikr.com/de/blog/iren-has-lost-70-in-a-year-bernstein-still-sees-55",
+"s": "TIKR.com"
+},
+{
+"t": "IREN Aktie: Nvidia hat gute Worte für Cloud-Anbieter",
+"u": "https://trading-treff.de/trading/iren-aktie-nvidia-hat-gute-worte-fuer-cloud-anbieter",
+"s": "Trading-Treff"
+}
+],
+"n": 100
+},
+{
+"t": "parastu ahmadi",
+"trafico": "200+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "Menschenrechte: Bericht: Iranische Sängerin nach Urteil ausgepeitscht",
+"u": "https://www.zeit.de/news/2026-11/23/bericht-iranische-saengerin-nach-urteil-ausgepeitscht",
+"s": "DIE ZEIT"
+},
+{
+"t": "Sie streamte ein Konzert via YouTube: Iranische Justiz lässt Sängerin offenbar auspeitschen",
+"u": "https://www.tagesspiegel.de/internationales/dpa-iranische-justiz-lasst-sangerin-offenbar-auspeitschen-16316554.html",
+"s": "Tagesspiegel"
+},
+{
+"t": "Bericht: Iranische Sängerin nach Urteil ausgepeitscht",
+"u": "https://bnn.de/nachrichten/deutschland-und-welt/bericht-iranische-saengerin-nach-urteil-ausgepeitscht",
+"s": "Badische Neueste Nachrichten"
+}
+],
+"n": 200
+},
+{
+"t": "micron aktie",
+"trafico": "200+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "Alphabet, Nvidia und Sandisk – Tech-Abverkauf im Check",
+"u": "https://www.onvista.de/news/2026/11-23-alphabet-nvidia-und-sandisk-tech-abverkauf-im-check-41122786-19-26579377",
+"s": "Onvista"
+},
+{
+"t": "Micron-Aktie steigt 6 %: Erholung nach 23,6 % Wochenverlust",
+"u": "https://de.investing.com/news/stock-market-news/warum-die-aktie-von-micron-technologie-heute-kraftig-zulegt-93CH-3782050",
+"s": "Investing.com Deutsch"
+},
+{
+"t": "Micron nach Jensen-Event: Wie ein einziger Abend die Bewertung des Speicher-Spezialisten neu kalibrieren könnte",
+"u": "https://www.ariva.de/news/micron-nach-jensen-event-wie-ein-einziger-abend-die-12215811",
+"s": "Ariva"
+}
+],
+"n": 200
+},
+{
+"t": "mittelrheinpokal",
+"trafico": "100+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "Mittelrheinpokal: Viertelfinalisten fix – so geht es jetzt weiter",
+"u": "https://www.fupa.net/news/mittelrheinpokal-viertelfinalisten-fix-so-geht-es-jetzt-weiter-3234373",
+"s": "FuPa ⚽️"
+},
+{
+"t": "Bitburger-Pokal: Alle drei Drittligisten ziehen ins Viertelfinale ein",
+"u": "https://www.fvm.de/news/uebersicht/detailseite/bitburger-pokal-alle-drei-drittligisten-ziehen-ins-viertelfinale-ein/",
+"s": "Fussball-Verband Mittelrhein"
+},
+{
+"t": "Pokal-Auslosung am 30.11.",
+"u": "https://viktoria1904.de/pokal-auslosung-am-30-11/",
+"s": "Viktoria Köln 1904"
+}
+],
+"n": 100
+},
+{
+"t": "tsmc aktie",
+"trafico": "100+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "Taiwan Semiconductor Manufacturing Aktie News: Taiwan Semiconductor Manufacturing haussiert am Nachmittag",
+"u": "https://www.finanzen.net/nachricht/aktien/taiwan_semiconductor_manufacturing-aktie-kursbewegung-23-11-2026-12722314",
+"s": "Finanzen.net"
+},
+{
+"t": "„Das wirft alle in China zurück“: Neue US-Regeln stoppen Chip-Lieferungen von TSMC und Samsung",
+"u": "https://www.fr.de/wirtschaft/chipgiganten-setzen-lieferungen-nach-china-aus-und-gefaehrden-xis-ki-ambitionen-zr-94604007.html",
+"s": "Frankfurter Rundschau"
+},
+{
+"t": "TSMC im Schatten Pekings: Welche Warnsignale Chinas Tech-Giganten jetzt an Anleger senden",
+"u": "https://www.ariva.de/news/tsmc-im-schatten-pekings-welche-warnsignale-chinas-12215991",
+"s": "Ariva"
+}
+],
+"n": 100
+}
+]
+},
+"IT": {
+"geo": "IT",
+"url": "https://trends.google.com/trending/rss?geo=IT",
+"ok": true,
+"items": [
+{
+"t": "luna piena novembre 2026",
+"trafico": "500+",
+"fecha": "2026-11-23T16:40+01:00",
+"noticias": [
+{
+"t": "Ariete - 2/13",
+"u": "https://www.ilfattoquotidiano.it/2026/11/23/oroscopo-della-settimana-del-23-novembre-vergine-dovrai-prendere-una-decisione-importante-pesci-attenzione-alle-discussioni-in-amore-gemelli-potresti-ricevere-una-notizia-inattesa/8580694/2/",
+"s": "Il Fatto Quotidiano"
+},
+{
+"t": "L’Oroscopo della settimana di Marie Claire dal 23 al 29 novembre",
+"u": "https://www.marieclaire.it/lifestyle/coolmix/a74372132/oroscopo-23-al-29-novembre-2026/",
+"s": "Marie Claire"
+},
+{
+"t": "Classifica segni più fortunati della settimana dal 23 Novembre al 29 Novembre 2026",
+"u": "https://www.virgilio.it/oroscopo/classifiche/segni-piu-fortunati-della-settimana-23-novembre-29-novembre-2026/",
+"s": "Virgilio"
+}
+],
+"n": 500
+},
+{
+"t": "el gouna - zamalek",
+"trafico": "200+",
+"fecha": "2026-11-23T16:40+01:00",
+"noticias": [
+{
+"t": "Live score: El Gouna v Zamalek (Egyptian Premier League) - Egyptian Football - Sports",
+"u": "https://english.ahram.org.eg/News/583169.aspx",
+"s": "Ahram Online"
+},
+{
+"t": "Start Your Week with 7+ Odds: Accumulator Tips for November 23rd, 2026",
+"u": "https://www.telecomasia.net/sports-betting/tips/accumulator/accumulator-tip-for-23-november-2026/",
+"s": "Telecom Asia Sport"
+}
+],
+"n": 200
+},
+{
+"t": "branco di lupi",
+"trafico": "200+",
+"fecha": "2026-11-23T16:40+01:00",
+"noticias": [
+{
+"t": "Cane sbranato dal lupo, denunciato il proprietario: «Doveva custodirlo»",
+"u": "https://www.ilgazzettino.it/nordest/belluno/cane_sbranato_lupo_denuncia_proprietario-9904847.html",
+"s": "Il Gazzettino"
+},
+{
+"t": "Lupi, come evitare si avvicino alle case e ai bambini: «Niente immondizia all'esterno delle abitazioni, cani sempre a guinzaglio e non inseguirli per scattare foto»",
+"u": "https://corrieredelveneto.corriere.it/notizie/belluno/cronaca/26_novembre_21/lupi-come-evitare-si-avvicino-alle-case-e-ai-bambini-niente-immondizia-all-esterno-delle-abitazioni-cani-sempre-a-guinzaglio-e-2c76308e-f463-4d5e-aa3a-dec6eaa58xlk.shtml",
+"s": "Corriere del Veneto"
+},
+{
+"t": "DOPO LA NOTTE DEI LUPI A TAIBON, ORA TOCCA A RIVAMONTE: IL VIDEO DELLA NOTTE",
+"u": "https://www.radiopiu.net/wordpress/dopo-la-notte-dei-lupi-a-taibon-ora-tocca-a-rivamonte-il-video-della-notte/",
+"s": "Radio Più"
+}
+],
+"n": 200
+},
+{
+"t": "casello",
+"trafico": "100+",
+"fecha": "2026-11-23T16:40+01:00",
+"noticias": [
+{
+"t": "Albignasego, firmato protocollo per nuovo svincolo tra casello Padova sud e anello tangenziale",
+"u": "https://tgpadova.telenuovo.it/attualita/2026/11/20/albignasego-firmato-protocollo-per-nuovo-svincolo-tra-casello-padova-sud-e-anello-tangenziale",
+"s": "TgPadova"
+},
+{
+"t": "Nuovo svincolo a Padova Sud e complanare di Albignasego: il progetto per risolvere il problema del traffico",
+"u": "https://www.mattinopadova.it/cronaca/albignasego-nuovo-svincolo-a13-traffico-via-roma-progetto-costi-f8mgl0ix",
+"s": "Il Mattino di Padova"
+},
+{
+"t": "Firmato il protocollo per il nuovo svincolo tra casello di Padova sud e anello della tangenziale",
+"u": "https://www.padovaoggi.it/attualita/albignasego-protocollo-svincolo-tangenziale-20-novembre-2026.html",
+"s": "PadovaOggi"
+}
+],
+"n": 100
+},
+{
+"t": "massimo rivola",
+"trafico": "200+",
+"fecha": "2026-11-23T16:20+01:00",
+"noticias": [
+{
+"t": "IL RUGGITO DI APRILIA RACING: È IL TEAM CAMPIONE DEL MONDO MOTOGP 2026",
+"u": "https://www.aprilia.com/it_IT/mondo-aprilia/racing/aprilia-motogp-2026-team-world-champion/",
+"s": "Aprilia"
+},
+{
+"t": "Rivola: \"Sono convinto che ci attende un futuro radioso\"",
+"u": "https://www.motogp.com/it/videos/2026/11/21/rivola-im-convinced-we-have-a-bright-future/1267175",
+"s": "www.motogp.com"
+},
+{
+"t": "Piaggio, Aprilia Racing conquista il 55° titolo mondiale",
+"u": "https://teleborsa.ansa.it/notiziario/economia/piaggio-aprilia-racing-conquista-il-55-titolo-mondiale/",
+"s": "ANSA"
+}
+],
+"n": 200
+},
+{
+"t": "الجونة ضد الزمالك",
+"trafico": "200+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "أحمد شريف يتصدر هجوم الزمالك في مواجهة الجونة بالجولة التاسعة من الدوري",
+"u": "https://www.akhbrna.ae/sports/ahmd-shryf-ytsdr-hjwm-alzmalk/",
+"s": "صحيفة اخبارنا"
+},
+{
+"t": "استعاد ذاكرة التهديف.. الدباغ يسجل ثنائية للزمالك في 7 دقائق أمام الجونة (فيديو)",
+"u": "https://www.yallakora.com/egyptian-league/3031/news/574630/%D8%A7%D8%B3%D8%AA%D8%B9%D8%A7%D8%AF-%D8%B0%D8%A7%D9%83%D8%B1%D8%A9-%D8%A7%D9%84%D8%AA%D9%87%D8%AF%D9%8A%D9%81-%D8%A7%D9%84%D8%AF%D8%A8%D8%A7%D8%BA-%D9%8A%D8%B3%D8%AC%D9%84-%D8%AB%D9%86%D8%A7%D8%A6%D9%8A%D8%A9-%D9%84%D9%84%D8%B2%D9%85%D8%A7%D9%84%D9%83-%D9%81%D9%8A-7-%D8%AF%D9%82%D8%A7%D8%A6%D9%82-%D8%A3%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D8%AC%D9%88%D9%86%D8%A9-%D9%81%D9%8A%D8%AF%D9%8A%D9%88-",
+"s": "يلاكورة"
+},
+{
+"t": "معتمد جمال يعلن تشكيل الزمالك في مواجهة الجونة",
+"u": "https://www.zamaleksc.com/post.html?id=15994",
+"s": "الموقع الرسمي للنادي الزمالك"
+}
+],
+"n": 200
+},
+{
+"t": "nvidia aktie",
+"trafico": "100+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "16:26 Huang kommt zurück - Dax schießt nach oben",
+"u": "https://www.n-tv.de/wirtschaft/der_boersen_tag/Der-Boersen-Tag-Montag-23-November-2026-id31565044.html",
+"s": "n-tv.de"
+},
+{
+"t": "Nvidia: Jensen Huang kehrt als Chef zurück",
+"u": "https://www.spiegel.de/wirtschaft/nvidia-jensen-huang-kehrt-als-chef-zurueck-a-0b0c979f-9cf5-4e4d-be27-79ecbbb6945e",
+"s": "Spiegel"
+},
+{
+"t": "rump fordert Rückkehr von Nvidia-Boss Jensen Huang",
+"u": "https://www.bild.de/politik/ausland-und-internationales/rump-fordert-rueckkehr-von-nvidia-boss-jensen-huang-6b03ef1266a00c9ca1fdfd46",
+"s": "BILD"
+}
+],
+"n": 100
+},
+{
+"t": "stipendi noipa",
+"trafico": "10000+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "NoiPA, cedolino e pagamenti novembre 2026: arrivano aumenti e arretrati",
+"u": "https://tg24.sky.it/economia/2026/11/23/noipa-cedolino-novembre-2026-aumenti-arrestrati",
+"s": "Sky TG24"
+},
+{
+"t": "Stipendio docenti e ATA, lunedì 23 la mensilità di novembre. A dicembre la tredicesima, si punta alla data del 15",
+"u": "https://www.orizzontescuola.it/stipendio-docenti-e-ata-lunedi-23-la-mensilita-di-novembre-a-dicembre-la-tredicesima-si-punta-alla-data-del-15/",
+"s": "Orizzonte Scuola Notizie"
+},
+{
+"t": "NoiPA novembre 2026, aumenti e arretrati in busta paga: quanto spetta in più",
+"u": "https://quifinanza.it/lavoro/calendario-pagamenti-noipa-novembre-2026/1025367/",
+"s": "QuiFinanza"
+}
+],
+"n": 10000
+},
+{
+"t": "corrado augias: saluto di un maestro",
+"trafico": "500+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "Stasera su La7, l'addio di Corrado Augias al suo pubblico, la scaletta l'ha decisa lui i giorni prima di morire",
+"u": "https://www.corriere.it/spettacoli/26_novembre_22/lunedi-su-la7-l-addio-di-corrado-augias-al-suo-pubblico-la-scaletta-l-ha-decisa-lui-i-giorni-prima-di-morire-4601b3c2-64f7-4a49-85e9-c9d0f09f5xlk.shtml",
+"s": "Corriere della Sera"
+},
+{
+"t": "Alessandro Baricco: “Bisogna riempire il vuoto lasciato da Augias”",
+"u": "https://www.repubblica.it/cultura/2026/11/23/news/alessandro_baricco_corrado_augias_auditorium_roma_ricordo_funerali-425742682/",
+"s": "la Repubblica"
+},
+{
+"t": "Natalia Augias: \"Il saluto di mio padre con le parole di Seneca: tieni stretta ogni ora, dipenderai meno dal domani se ti impadronirai dell’oggi\"",
+"u": "https://www.huffingtonpost.it/cultura/2026/11/20/news/natalia_augias_il_saluto_di_mio_padre_con_le_parole_di_seneca_tieni_stretta_ogni_ora_dipenderai_meno_dal_domani_se_ti_im-23282637/",
+"s": "HuffPost Italia"
+}
+],
+"n": 500
+},
+{
+"t": "ancona today",
+"trafico": "100+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "Auto si ribalta dopo lo schianto e vola nel fosso: ragazza intrappolata tra le lamiere",
+"u": "https://www.anconatoday.it/cronaca/incidente-stradale/ieri-sera-falconara-auto-fosso.html",
+"s": "AnconaToday"
+},
+{
+"t": "Travolge una 22enne e fugge a piedi: denunciato a Falconara un ristoratore ubriaco",
+"u": "https://www.corriereadriatico.it/ancona/falconara_travolge_fugge_piedi_denunciato_ristoratore_ubriaco-9906481.html",
+"s": "Corriere Adriatico"
+},
+{
+"t": "Incidente a Falconara Marittima, auto si ribalta e finisce in un fosso: ragazza estratta dai Vigili del Fuoco",
+"u": "https://www.la-notizia.net/2026/11/22/incidente-a-falconara-marittima/",
+"s": "La Notizia.net"
+}
+],
+"n": 100
+}
+]
+},
+"PT": {
+"geo": "PT",
+"url": "https://trends.google.com/trending/rss?geo=PT",
+"ok": true,
+"items": [
+{
+"t": "pimpinha jardim",
+"trafico": "100+",
+"fecha": "2026-11-23T16:20+01:00",
+"noticias": [
+{
+"t": "Pimpinha Jardim vive dias felizes com o novo amor no paraíso",
+"u": "https://www.cmjornal.pt/vidas/detalhe/pimpinha-jardim-vive-dias-felizes-com-o-novo-amor-no-paraiso",
+"s": "Correio da Manhã"
+},
+{
+"t": "A relação era secreta, mas agora eles já não escondem. Após divórcio polémico, rosto da TVI volta a sorrir ao lado de outro famoso: as fotos que comprovam",
+"u": "https://www.iol.pt/divorcio/traicao/a-relacao-era-secreta-mas-agora-eles-ja-nao-escondem-apos-divorcio-polemico-rosto-da-tvi-volta-a-sorrir-ao-lado-de-outro-famoso-as-fotos-que-comprovam",
+"s": "Notícias de hoje - IOL"
+},
+{
+"t": "Novas fotos da viagem romântica de Pimpinha Jardim com o namorado",
+"u": "https://www.noticiasaominuto.com/fama/3088594/novas-fotos-da-viagem-romantica-de-pimpinha-jardim-com-o-namorado",
+"s": "Notícias ao Minuto"
+}
+],
+"n": 100
+},
+{
+"t": "cyberleek",
+"trafico": "100+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "Could This Major GTA VI Leak Make It Playable On PC?",
+"u": "https://rockstarintel.com/could-this-major-gta-vi-leak-make-it-playable-on-pc/",
+"s": "RockstarINTEL"
+},
+{
+"t": "Developers have released the Leonida tool for natively running Grand Theft Auto VI on PC.",
+"u": "https://en.gamegpu.com/news/igry/razrabotchiki-predstavili-instrument-leonida-dlya-nativnogo-zapuska-grand-theft-auto-vi-na-pk",
+"s": "GameGPU"
+},
+{
+"t": "Infamous GTA 6 leaker CyberLeek is back, and this time the group claims to have leaked a full development build of the game",
+"u": "https://www.eurogamer.net/cyberleek-gta-6-dev-build",
+"s": "Eurogamer.net"
+}
+],
+"n": 100
+},
+{
+"t": "nasdaq",
+"trafico": "100+",
+"fecha": "2026-11-23T15:40+01:00",
+"noticias": [
+{
+"t": "Nasdaq roars back by 7% as Nvidia soars on Huang’s return, S&P 500 rebounds 5%: Live updates",
+"u": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html",
+"s": "CNBC"
+},
+{
+"t": "US OPEN: Huang Returns to Nvidia; Wall Street Experiences One of Its Strongest Trading Sessions in Years",
+"u": "https://www.xtb.com/cy/market-analysis/news-and-research/us-open-huang-returns-to-nvidia-wall-street-experiences-one-of-its-strongest-trading-sessions-in-years",
+"s": "XTB.com"
+},
+{
+"t": "Nasdaq 100 Futures Halted for Volatility After 7% Rise, Bloomberg Reports",
+"u": "https://www.marketscreener.com/news/nasdaq-100-futures-halted-for-volatility-after-7-rise-bloomberg-reports-ce7851dada8efe21",
+"s": "marketscreener.com"
+}
+],
+"n": 100
+},
+{
+"t": "nvidia",
+"trafico": "5000+",
+"fecha": "2026-11-23T15:20+01:00",
+"noticias": [
+{
+"t": "Jensen Huang regressa à liderança da Nvidia. Ações disparam 24%",
+"u": "https://www.jornaldenegocios.pt/empresas/tecnologias/detalhe/jensen-huang-de-regresso-a-lideranca-da-nvidia",
+"s": "Jornal de Negócios"
+},
+{
+"t": "Projeto piloto nas prisões visa prevenir reincidência de homicídios em contexto de intimidade",
+"u": "https://www.rtp.pt/noticias/pais/projeto-piloto-nas-prisoes-visa-prevenir-reincidencia-de-homicidios-em-contexto-de-intimidade_v1781107",
+"s": "RTP"
+},
+{
+"t": "Trump celebra regresso de Jensen Huang à liderança da Nvidia",
+"u": "https://cnnportugal.iol.pt/trump/jensen-huang/trump-celebra-regresso-de-jensen-huang-a-lideranca-da-nvidia/20261123/6b0453b90cf2c0fc744b7401",
+"s": "CNN Portugal"
+}
+],
+"n": 5000
+},
+{
+"t": "nvidia stock",
+"trafico": "5000+",
+"fecha": "2026-11-23T15:10+01:00",
+"noticias": [
+{
+"t": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+"u": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+"s": "NVIDIA Newsroom"
+},
+{
+"t": "Stock market today: Nvidia stock soars after company reinstates Jensen Huang as CEO; Dow, S&P 500, Nasdaq surge",
+"u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-nvidia-reinstates-jensen-huang-141511975.html",
+"s": "Yahoo Finance"
+},
+{
+"t": "World in Brief: Asian tech stock sell-off continues; COP31 collapses",
+"u": "https://www.economist.com/the-world-in-brief/2026/11/23/e6e19a5b-7c86-42da-a814-be646f87075c",
+"s": "The Economist"
+}
+],
+"n": 5000
+},
+{
+"t": "fk neftchi farg'ona - al-hilal",
+"trafico": "200+",
+"fecha": "2026-11-23T15:00+01:00",
+"noticias": [
+{
+"t": "Neftchi Fargona vs Al Hilal: TV channel, live stream & kick-off time | AFC Champions League Elite",
+"u": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-neftchi-fargona-v-al-hilal/blt05776295656fa3f0",
+"s": "Goal.com"
+},
+{
+"t": "Simone Inzaghi and Mohammed Kanno Speak ahead of the match against Uzbekistan’s Neftchi",
+"u": "https://alhilal.com/en/news/simone-inzaghi-and-mohammed-kanno-speak-ahead-of-the-match-against-uzbekistans-neftchi",
+"s": "الموقع الرسمي لنادي الهلال السعودي"
+},
+{
+"t": "Uzbek clubs to face Saudi teams today",
+"u": "https://qalampir.uz/en/news/bugun-uzbekiston-klublari-saudiya-zhamoalariga-k-arshi-uynaydi-146791",
+"s": "Qalampir.uz"
+}
+],
+"n": 200
+},
+{
+"t": "azeite",
+"trafico": "200+",
+"fecha": "2026-11-23T14:40+01:00",
+"noticias": [
+{
+"t": "Produção mundial de azeite cresce 6,4% em 2026/27, consumo também aumenta",
+"u": "https://expresso.pt/economia/economia_agricultura/2026-11-23-producao-mundial-de-azeite-cresce-64-em-2026-27-consumo-tambem-aumenta-3c6f6ec9",
+"s": "Expresso"
+},
+{
+"t": "Uma azeitona não vale sempre o mesmo. Porque é que em Portugal continuamos a pagar como se valesse?",
+"u": "https://www.agroportal.pt/uma-azeitona-nao-vale-sempre-o-mesmo-porque-e-que-em-portugal-continuamos-a-pagar-como-se-valesse/",
+"s": "Agroportal"
+},
+{
+"t": "Portugal ruma à segunda maior colheita de azeite de sempre",
+"u": "https://sapo.pt/artigo/portugal-ruma-a-segunda-maior-colheita-de-azeite-de-sempre-6b044996b111ab45ff698e25",
+"s": "SAPO"
+}
+],
+"n": 200
+},
+{
+"t": "campeão",
+"trafico": "100+",
+"fecha": "2026-11-23T14:10+01:00",
+"noticias": [
+{
+"t": "Em imagens. Os bastidores do Grande Prémio de MotoGP em Portimão",
+"u": "https://www.dn.pt/desporto/em-imagens-os-bastidores-do-grande-prmio-de-motogp-em-portimo",
+"s": "Diário de Notícias"
+},
+{
+"t": "É de gritos! Marc Márquez é campeão do mundo de Moto GP em Portugal",
+"u": "https://www.abola.pt/noticias/e-de-gritos-marc-marquez-e-campeao-do-mundo-de-moto-gp-em-portugal-2026112213435890850",
+"s": "A Bola"
+},
+{
+"t": "Temos campeão! Marc Márquez consagra-se em Portimão",
+"u": "https://www.sporttv.pt/noticias/885494/temos-campeao-marc-marquez-consagra-se-em-portimao",
+"s": "Sport TV"
+}
+],
+"n": 100
+},
+{
+"t": "estátua",
+"trafico": "200+",
+"fecha": "2026-11-23T13:40+01:00",
+"noticias": [
+{
+"t": "VÍDEO: museu de CR7 em Xangai inaugura estátua de sete metros",
+"u": "https://cnnportugal.iol.pt/china/cristiano-ronaldo/video-museu-de-cr7-em-shangai-inaugura-estatua-de-sete-metros",
+"s": "CNN Portugal"
+},
+{
+"t": "Estátua de sete metros com cores da Seleção abre museu de Cristiano Ronaldo em Xangai",
+"u": "https://sapo.pt/artigo/estatua-de-sete-metros-com-cores-da-selecao-abre-museu-de-cristiano-ronaldo-em-xangai-6b040abe5fe32317aee9f5a8",
+"s": "SAPO"
+},
+{
+"t": "Estátua de sete metros de Cristiano Ronaldo inaugurada na China. Veja o vídeo",
+"u": "https://www.ojogo.pt/internacional/artigo/estatua-de-sete-metros-de-cristiano-ronaldo-inaugurada-na-china-veja-o-video/18151243",
+"s": "O Jogo"
+}
+],
+"n": 200
+},
+{
+"t": "estarreja",
+"trafico": "500+",
+"fecha": "2026-11-23T13:30+01:00",
+"noticias": [
+{
+"t": "Lego monta fábrica de mil milhões em Estarreja que vai criar mil empregos diretos",
+"u": "https://eco.sapo.pt/2026/11/23/lego-monta-fabrica-de-mil-milhoes-em-estarreja-que-vai-criar-mil-empregos-diretos/",
+"s": "ECO"
+},
+{
+"t": "15h Nvidia dispara 30% após regresso de Jensen Huang",
+"u": "https://www.rtp.pt/noticias/noticiario-antena1/15h-nvidia-dispara-30-apos-regresso-de-jensen-huang_a1_1781114",
+"s": "RTP"
+},
+{
+"t": "“Não me deixem ficar mal\": peça a peça, Montenegro pede que não se falhe com a fábrica da Lego",
+"u": "https://expresso.pt/governo/2026-11-23-video-nao-me-deixem-ficar-mal-peca-a-peca-montenegro-pede-aos-envolvidos-que-nao-falhem-com-a-fabrica-da-lego-e67daf03",
+"s": "Expresso"
+}
+],
+"n": 500
+}
+]
+},
+"MX": {
+"geo": "MX",
+"url": "https://trends.google.com/trending/rss?geo=MX",
+"ok": true,
+"items": [
+{
+"t": "al-shamal - al-ahli saudi",
+"trafico": "500+",
+"fecha": "2026-11-23T16:20+01:00",
+"noticias": [
+{
+"t": "\"Yesterday's friend\": Riyad Mahrez surprises Al-Ahli players before Al-Shamal clash",
+"u": "https://www.livescore.com/en/news/football/more/yesterdays-friend-riyad-mahrez-surprises-al-ahli-players-before-al-shamal-clash-goal/",
+"s": "LiveScore"
+},
+{
+"t": "Al-Shamal vs Al Ahli: TV channel, live stream and kick-off time for AFC Champions League Elite",
+"u": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-al-shamal-v-al-ahli/blt9ed97a81c53e3b75",
+"s": "Goal.com"
+},
+{
+"t": "check headline: Al Ahli boss Pušić demands ‘maximum effort’ ahead of Al Shamal clash",
+"u": "https://www.thechronicle.com.au/sport/check-headline-al-ahli-boss-pui-demands-maximum-effort-ahead-of-al-shamal-clash/video/2d8409bd443d0c5f80595214e900782e",
+"s": "Toowoomba Chronicle"
+}
+],
+"n": 500
+},
+{
+"t": "estudiante",
+"trafico": "200+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "Exige Congreso de Michoacán respetar suspensión sobre sucesión en la UMSNH",
+"u": "https://www.jornada.com.mx/noticia/2026/11/20/estados/rectora-de-la-umsnh-podria-enfrentar-destitucion-por-desacato-advierte-diputada",
+"s": "La Jornada"
+},
+{
+"t": "CANDIDATAS Y CANDIDATOS A RECTORÍA PRESENTAN PROPUESTAS A MORADORES DE CASAS DEL ESTUDIANTE",
+"u": "https://cbtelevision.com.mx/candidatas-y-candidatos-a-rectoria-presentan-propuestas-a-moradores-de-casas-del-estudiante/",
+"s": "CB Televisión"
+},
+{
+"t": "Son seis los aspirantes a la rectoría nicolaita",
+"u": "https://primeraplana.mx/archivos/1169688",
+"s": "Primera Plana MX"
+}
+],
+"n": 200
+},
+{
+"t": "champions",
+"trafico": "500+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "Confirmed: Barcelona squad list to face Sabah | UEFA Champions League",
+"u": "https://barcauniversal.com/confirmed-barcelona-squad-list-to-face-sabah-uefa-champions-league/",
+"s": "Barca Universal"
+},
+{
+"t": "Flick springs a surprise on Yamal ahead of Azerbaijan trip",
+"u": "https://www.goal.com/en/news/flick-springs-a-surprise-on-yamal-ahead-of-azerbaijan-trip/blt10cb1ee0125ce7fe",
+"s": "Goal.com"
+},
+{
+"t": "Lamine Yamal ruled out of Champions League clash with ankle discomfort",
+"u": "https://www.besoccer.com/new/lamine-yamal-ruled-out-of-champions-league-clash-with-ankle-discomfort-1442967",
+"s": "BeSoccer Livescore"
+}
+],
+"n": 500
+},
+{
+"t": "s&p 500",
+"trafico": "200+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "Futures rally after Wall Street's nightmare week",
+"u": "https://www.cnbc.com/2026/11/23/futures-rally-after-wall-streets-nightmare-week-.html",
+"s": "CNBC"
+},
+{
+"t": "Wall Street set to rebound after AI stock sell-off",
+"u": "https://www.ft.com/content/0f5a7285-fbf1-4120-86df-c9cca29644fc?syn-25a6b1a6=1",
+"s": "Financial Times"
+},
+{
+"t": "Nasdaq 100 futures soar over 3% as Wall Street looks to rebound from bruising week",
+"u": "https://www.investing.com/news/stock-market-news/wall-street-futures-jump-after-major-indexes-enter-correction-territory-5044226",
+"s": "Investing.com"
+}
+],
+"n": 200
+},
+{
+"t": "estaciones de radio",
+"trafico": "100+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "The Rolling Stones, Slayer o Fleetwood Mac: las estrellas de rock y metal que participan en GTA VI como locutores de radio",
+"u": "https://mariskalrock.com/actualidad/the-rolling-stones-slayer-o-fleetwood-mac-las-estrellas-de-rock-y-metal-que-participan-en-gta-vi-como-locutores-de-radio/",
+"s": "MariskalRock.com"
+},
+{
+"t": "¿Qué artistas latinos aparecen en GTA 6? Esta es la lista de canciones de sus estaciones de radio",
+"u": "https://www.record.com.mx/historia/soundtrack-gta-6-2026112104021509978",
+"s": "Récord"
+},
+{
+"t": "Esta es la canción inédita de D’Angelo que suena en el GTA VI",
+"u": "https://themedizine.com/p/cancion-inedita-dangelo-gta-vi",
+"s": "The Medizine"
+}
+],
+"n": 100
+},
+{
+"t": "carlos slim domit",
+"trafico": "100+",
+"fecha": "2026-11-23T15:50+01:00",
+"noticias": [
+{
+"t": "Antes de impulsar a Checo Pérez, Carlos Slim Domit coleccionaba piezas de leyendas de Fórmula 1; convirtió su oficina en un museo del automovilismo",
+"u": "https://www.marca.com/mx/motor/formula-1/2026/11/20/impulsar-checo-perez-carlos-slim-domit-coleccionaba-piezas-leyendas-formula-1-convirtio-oficina-museo-automovilismo.html",
+"s": "MARCA"
+},
+{
+"t": "Carlos Slim Domit, billonario: “Si por desgracia cometemos errores debemos aprender de ellos, porque constituyen lecciones de vida que nos van forjando profesionalmente”",
+"u": "https://www.marca.com/mx/actualidad/dinero/2026/11/22/carlos-slim-domit-billonario-desgracia-cometemos-errores-debemos-aprender-constituyen-lecciones-vida-forjando-profesionalmente.html",
+"s": "MARCA"
+},
+{
+"t": "Carlos Slim Domit: “Si por desgracia cometemos errores debemos aprender de ellos, porque constituyen lecciones de vida que nos van forjando profesionalmente”",
+"u": "https://radiomitre.cienradios.com/curiosidades/carlos-slim-domit-si-por-desgracia-cometemos-errores-debemos-aprender-de-ellos-porque-constituyen-lecciones-de-vida-que-nos-van-forjando-profesionalmente/",
+"s": "Radio Mitre"
+}
+],
+"n": 100
+},
+{
+"t": "avengers doomsday",
+"trafico": "1000+",
+"fecha": "2026-11-23T15:40+01:00",
+"noticias": [
+{
+"t": "Joe Russo Talks ‘Doomsday’ Teaser-Trailer Strategy Ahead Of Rumored Monday Drop: “I Have To interact With Fans”",
+"u": "https://deadline.com/2026/11/joe-russo-doomsday-trailer-strategy-rumored-monday-fans-1237231111/",
+"s": "Deadline"
+},
+{
+"t": "Marvel Reportedly Has a Cinema-Exclusive ‘Avengers: Doomsday’ Clip Heading to Theaters",
+"u": "https://www.imdb.com/es/news/ni66124470/?ref_=int_nwr_7",
+"s": "IMDb"
+},
+{
+"t": "Final 'Avengers: Doomsday' Trailer Explains Chris Evans' Return, 'Endgame' Fallout and More",
+"u": "https://www.thewrap.com/creative-content/movies/avengers-doomsday-final-trailer/",
+"s": "TheWrap"
+}
+],
+"n": 1000
+},
+{
+"t": "nvidia acciones",
+"trafico": "1000+",
+"fecha": "2026-11-23T15:30+01:00",
+"noticias": [
+{
+"t": "Nvidia reinstala a Jensen Huang como su director ejecutivo, hubo unanimidad por la junta directiva",
+"u": "https://www.univision.com/shows/la-voz-de-la-manana/nvidia-reinstala-a-jensen-huang-como-su-director-ejecutivo-hubo-unanimidad-por-la-junta-directiva-video",
+"s": "Univision"
+},
+{
+"t": "Nvidia restituye a Jensen Huang como CEO tras escándalo de adulterio y espionaje",
+"u": "https://www.jornada.com.mx/noticia/2026/11/23/economia/nvidia-restituye-a-jensen-huang-como-director-tras-escandalo-de-adulterio-y-espionaje",
+"s": "La Jornada"
+},
+{
+"t": "Regreso de Jensen Huang a Nvidia ‘dispara’ acciones en Wall Street: Ganan más de 31%",
+"u": "https://www.elfinanciero.com.mx/mercados/2026/11/23/bmv-wall-street-acciones-hoy-23-de-noviembre-de-2026/",
+"s": "El Financiero"
+}
+],
+"n": 1000
+},
+{
+"t": "black ecco",
+"trafico": "200+",
+"fecha": "2026-11-23T15:30+01:00",
+"noticias": [
+{
+"t": "Pemex adjudicó casi mil mdp a Black Ecco TI durante gestión de Octavio Romero",
+"u": "https://www.eluniversal.com.mx/nacion/pemex-adjudico-casi-mil-mdp-a-black-ecco-ti-durante-gestion-de-octavio-romero-empresa-tenia-evaluacion-de-riesgo-condicionado/",
+"s": "El Universal"
+},
+{
+"t": "Black Ecco: Empresas ligadas simulan competir por contratos y venden equipos a doble precio",
+"u": "https://www.ejecentral.com.mx/nuestro-eje/black-ecco-empresas-ligadas-simulan-competir-por-contratos-y-venden-equipos-a-doble-precio",
+"s": "Eje Central"
+},
+{
+"t": "Pemex adjudicó hasta 976 millones de pesos a Black Ecco TI; ASF detectó sobreprecios en contratos vinculados",
+"u": "https://sociedad-noticias.com/2026/11/23/pemex-adjudico-hasta-976-millones-de-pesos-a-black-ecco-ti-asf-detecto-sobreprecios-en-contratos-vinculados/",
+"s": "Sociedad Noticias"
+}
+],
+"n": 200
+},
+{
+"t": "nvidia stock",
+"trafico": "10000+",
+"fecha": "2026-11-23T15:20+01:00",
+"noticias": [
+{
+"t": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+"u": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+"s": "NVIDIA Newsroom"
+},
+{
+"t": "Trump says \"no reason to believe\" Jensen Huang's return to Nvidia poses national security risk",
+"u": "https://www.cbsnews.com/news/nvidia-jensen-huang-trump-comment-national-security-risk/",
+"s": "CBS News"
+},
+{
+"t": "Stock market today: Nvidia stock soars after company reinstates Jensen Huang as CEO; Dow, S&P 500, Nasdaq surge",
+"u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-nvidia-reinstates-jensen-huang-141511975.html",
+"s": "Yahoo Finance"
+}
+],
+"n": 10000
+}
+]
+},
+"AR": {
+"geo": "AR",
+"url": "https://trends.google.com/trending/rss?geo=AR",
+"ok": true,
+"items": [
+{
+"t": "newells",
+"trafico": "1000+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "Gimnasia vs. Newell's, por el Torneo Clausura: horario, formaciones y cómo ver por TV",
+"u": "https://www.ole.com.ar/futbol-primera/gimnasia-vs-newells-torneo-clausura-octavos-final-horario-ver-formaciones_0_rEOkw58onI.html",
+"s": "Olé"
+},
+{
+"t": "Newell's ganó una vez de visitante y no es favorito en La Plata, pero puede dar el golpe",
+"u": "https://www.lacapital.com.ar/ovacion/newells-gano-una-vez-visitante-y-no-es-favorito-la-plata-pero-puede-dar-el-golpe-n10293648.html",
+"s": "La Capital"
+},
+{
+"t": "Los datos que ponen a Gimnasia como un candidato en los playoffs del Clausura",
+"u": "https://www.tycsports.com/liga-profesional-de-futbol/invicto-de-diez-partidos-y-la-fortaleza-de-local-gimnasia-va-por-un-paso-de-candidato-en-playoffs-id772624.html",
+"s": "TyC Sports"
+}
+],
+"n": 1000
+},
+{
+"t": "infoeme",
+"trafico": "100+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "Olavarría cumple, pero los regalos te los llevás vos",
+"u": "https://www.olavarria.gov.ar/olavarria-cumple-pero-los-regalos-te-los-llevas-vos/",
+"s": "Olavarria.gov.ar"
+},
+{
+"t": "En el cumpleaños de Olavarría, los regalos van para los olavarrienses",
+"u": "https://www.infoeme.com/informacion-general/2026-11-22-18-5-5-en-el-cumpleanos-de-olavarria-los-regalos-van-para-los-olavarrienses",
+"s": "Infoeme"
+},
+{
+"t": "Olavarría cumple 159 años: el acto protocolar será en la Plaza Coronel Olavarría",
+"u": "https://enlineanoticias.com.ar/ciudad/olavarria-cumple-159-anos-el-acto-protocolar-sera-en-la-plaza-coronel-olavarria/",
+"s": "En Linea Noticias"
+}
+],
+"n": 100
+},
+{
+"t": "clase turista",
+"trafico": "200+",
+"fecha": "2026-11-23T16:20+01:00",
+"noticias": [
+{
+"t": "Una conocida seguidora de la F1 se sorprendió al compartir su vuelo con Franco Colapinto en clase turista: “Es el hombre del pueblo”",
+"u": "https://www.infobae.com/deportes/2026/11/23/una-conocida-seguidora-de-la-f1-se-sorprendio-al-compartir-su-vuelo-con-franco-colapinto-en-clase-turista-es-el-hombre-del-pueblo/",
+"s": "Infobae"
+},
+{
+"t": "Colapinto, otra vez en clase turista: lo filmaron al volver del GP de Las Vegas con el casco en la mano",
+"u": "https://www.lanacion.com.ar/deportes/automovilismo/colapinto-otra-vez-en-clase-turista-lo-filmaron-al-volver-del-gp-de-las-vegas-con-el-casco-en-la-nid23112026/",
+"s": "La Nación"
+},
+{
+"t": "Franco Colapinto volvió a sorprender en las redes: lo filmaron viajando en clase turista después del GP de Las Vegas",
+"u": "https://tn.com.ar/deportes/automovilismo/2026/11/23/franco-colapinto-volvio-a-sorprender-en-las-redes-lo-filmaron-viajando-en-clase-turista-despues-del-gp-de-las-vegas/",
+"s": "TN"
+}
+],
+"n": 200
+},
+{
+"t": "tini stoessel",
+"trafico": "100+",
+"fecha": "2026-11-23T16:20+01:00",
+"noticias": [
+{
+"t": "Nicki Nicole se prepara para la boda de Tini y De Paul: qué les va a regalar y quién la va a acompañar",
+"u": "https://tn.com.ar/show/famosos/2026/11/22/nicki-nicole-se-prepara-para-la-boda-de-tini-y-de-paul-que-dijo-de-su-vestido-el-regalo-y-si-va-acompanada/",
+"s": "TN"
+},
+{
+"t": "Rodrigo de Paul confirmó la fecha de su casamiento con Tini Stoessel: qué se sabe sobre el evento",
+"u": "https://www.clarin.com/fama/rodrigo-paul-confirmo-fecha-casamiento-tini-stoessel-sabe-evento_0_DMSm9hqlVj.html",
+"s": "Clarin.com"
+},
+{
+"t": "Rodrigo De Paul confirmó cuándo se casa con Tini Stoessel: la fecha y los detalles de la boda",
+"u": "https://www.somosjujuy.com.ar/espectaculos/rodrigo-paul-confirmo-cuando-casa-tini-stoessel-fecha-detalles-boda-n127522",
+"s": "Somos Jujuy"
+}
+],
+"n": 100
+},
+{
+"t": "anthropic",
+"trafico": "200+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "Pouncing on Anthropic Won’t Make You Rich",
+"u": "https://www.wsj.com/finance/stocks/pouncing-on-anthropic-wont-make-you-rich-4d500a06",
+"s": "WSJ"
+},
+{
+"t": "Anthropic Shares Churn, Defying AI Trade Rally on Huang’s Return",
+"u": "https://www.bloomberg.com/news/articles/2026-11-23/anthropic-shares-churn-defying-ai-trade-rally-on-huang-s-return",
+"s": "Bloomberg.com"
+},
+{
+"t": "Anthropic’s IPO was great for the tech elite – and not so great for the rest of us | Steven Greenhouse",
+"u": "https://www.theguardian.com/commentisfree/2026/nov/23/anthropic-ipo-tech-elite-stock-bubble",
+"s": "The Guardian"
+}
+],
+"n": 200
+},
+{
+"t": "línea sarmiento",
+"trafico": "200+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "El tren Sarmiento reanudó su servicio completo tras las obras de renovación durante el fin de semana largo",
+"u": "https://tn.com.ar/sociedad/2026/11/23/el-tren-sarmiento-reanudo-su-servicio-completo-tras-las-obras-de-renovacion-durante-el-fin-de-semana-largo/",
+"s": "TN"
+},
+{
+"t": "Línea Mitre: avanzan las obras de renovación de vías durante el fin de semana largo",
+"u": "https://www.argentina.gob.ar/noticias/linea-mitre-avanzan-las-obras-de-renovacion-de-vias-durante-el-fin-de-semana-largo",
+"s": "Argentina.gob.ar"
+},
+{
+"t": "Transporte público por el feriado: dos líneas de trenes estarán limitadas durante el fin de semana largo",
+"u": "https://www.perfil.com/sociedad/transporte-publico-por-el-feriado-dos-lineas-de-trenes-estaran-limitadas-durante-el-fin-de-semana-largo-a50-jsm-aJESO6G43mEe",
+"s": "Perfil"
+}
+],
+"n": 200
+},
+{
+"t": "investing",
+"trafico": "100+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "If a Stock Market Crash Is Coming, Warren Buffett Says This Is the No. 1 Move All Investors Should Make",
+"u": "https://finance.yahoo.com/markets/stocks/articles/stock-market-crash-coming-warren-005002440.html",
+"s": "Yahoo Finance"
+},
+{
+"t": "The Market Could Drop Even More. 3 Ways to Prepare Your Portfolio.",
+"u": "https://www.barrons.com/articles/ai-stock-markets-asset-allocation-120e66b9",
+"s": "Barron's"
+},
+{
+"t": "After Another Frustrating Reversal, Let’s Recall a Different Buffett Quote",
+"u": "https://pro.thestreet.com/portfolio/after-another-frustrating-reversal-lets-recall-a-different-buffett-quote",
+"s": "RealMoney Pro"
+}
+],
+"n": 100
+},
+{
+"t": "avengers doomsday",
+"trafico": "200+",
+"fecha": "2026-11-23T15:30+01:00",
+"noticias": [
+{
+"t": "A New ‘Avengers: Doomsday’ Trailer Heralds a Crisis on All Earths",
+"u": "https://gizmodo.com/a-new-avengers-doomsday-trailer-heralds-a-crisis-on-all-earths-2000843702",
+"s": "Gizmodo"
+},
+{
+"t": "The Decade's Biggest MCU Event Confirmed in New Avengers: Doomsday Update",
+"u": "https://www.cbr.com/marvel-avengers-doomsday-final-trailer/",
+"s": "Comic Book Resources"
+},
+{
+"t": "Avengers: Doomsday New Trailer Dropping Today? Hayley Atwell May Have Spilled It",
+"u": "https://www.esquireindia.co.in/entertainment/at-the-movies/avengers-doomsday-new-trailer-dropping-today-hayley-atwell-may-have-spilled-it",
+"s": "Esquire India"
+}
+],
+"n": 200
+},
+{
+"t": "tradingview",
+"trafico": "500+",
+"fecha": "2026-11-23T15:30+01:00",
+"noticias": [
+{
+"t": "Futures rally after Wall Street's nightmare week",
+"u": "https://www.cnbc.com/2026/11/23/futures-rally-after-wall-streets-nightmare-week-.html",
+"s": "CNBC"
+},
+{
+"t": "Wall Street set to rebound after AI stock sell-off",
+"u": "https://www.ft.com/content/0f5a7285-fbf1-4120-86df-c9cca29644fc?syn-25a6b1a6=1",
+"s": "Financial Times"
+},
+{
+"t": "Stock Market Today: Nasdaq surges 7.4%, S&P 500 and Dow jump after Nvidia reinstates Jensen Huang; Nvidia shares up 30% — live updates",
+"u": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-slides-tech-rout-anthropic-ipo",
+"s": "MarketWatch"
+}
+],
+"n": 500
+},
+{
+"t": "telekino 2455 resultados",
+"trafico": "2000+",
+"fecha": "2026-11-23T15:30+01:00",
+"noticias": [
+{
+"t": "TELEKINO de AYER: controlá el cartón del sorteo y los resultados del domingo 22 de noviembre",
+"u": "https://www.tycsports.com/interes-general/telekino-de-hoy-controla-el-carton-del-sorteo-y-los-resultados-del-domingo-22-de-noviembre-id772558.html",
+"s": "TyC Sports"
+},
+{
+"t": "Lotería. Telekino: los números ganadores del sorteo 2.455 del domingo 22 de noviembre de 2026",
+"u": "https://www.lavoz.com.ar/servicios/telekino-numeros-ganadores-sorteo-2455-domingo-22-noviembre-2026_0_OZleQ8hkkS.html",
+"s": "La Voz del Interior"
+},
+{
+"t": "Telekino: el pozo millonario sigue vacante y se sorteará el próximo domingo 29 de noviembre 2026",
+"u": "https://www.rionegro.com.ar/servicios/telekino-pozo-mayor-vacante-rumbo-al-cierre-de-noviembre-2026-4809580/",
+"s": "Diario Río Negro"
+}
+],
+"n": 2000
+}
+]
+},
+"BR": {
+"geo": "BR",
+"url": "https://trends.google.com/trending/rss?geo=BR",
+"ok": true,
+"items": [
+{
+"t": "carlos vinícius",
+"trafico": "500+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "Pré-contrato com o Vasco mexe com emocional de Carlos Vinícius, e atacante toma decisão sobre jogos restantes do Grêmio",
+"u": "https://www.espn.com.br/futebol/gremio/artigo/_/id/17552204/pre-contrato-vasco-mexe-emocional-carlos-vinicius-atacante-decisao-jogos-restantes-gremio",
+"s": "ESPN Brasil"
+},
+{
+"t": "Saiba o que o Grêmio pensa sobre ainda utilizar Carlos Vinicius, acertado com o Vasco",
+"u": "https://ge.globo.com/rs/futebol/times/gremio/noticia/2026/11/20/saiba-o-que-o-gremio-pensa-sobre-ainda-utilizar-carlos-vinicius-acertado-com-o-vasco.ghtml",
+"s": "ge"
+},
+{
+"t": "Milly Lacombe: Carlos Vinícius parece contar com queda do Grêmio",
+"u": "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/11/19/milly-lacombe-carlos-vinicius-parece-contar-com-queda-do-gremio.ghtm",
+"s": "UOL"
+}
+],
+"n": 500
+},
+{
+"t": "leonardo jardim",
+"trafico": "200+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "Jardim usará rodadas finais por feito no Flamengo enquanto reflete sobre permanência em 2027; saiba o que pesa",
+"u": "https://oglobo.globo.com/blogs/diogo-dantas/coluna/2026/11/jardim-usara-rodadas-finais-por-feito-no-flamengo-enquanto-reflete-sobre-permanencia-em-2027-saiba-o-que-pesa.ghtml",
+"s": "O GLOBO"
+},
+{
+"t": "De saída do Flamengo, Leonardo Jardim desperta interesse de clubes do Oriente Médio e até de seleção",
+"u": "https://www.espn.com.br/futebol/flamengo/artigo/_/id/17552482/de-saida-do-flamengo-leonardo-jardim-desperta-interesse-de-clubes-do-oriente-medio-e-ate-de-selecao",
+"s": "ESPN Brasil"
+},
+{
+"t": "Título de Jardim no Flamengo amplia domínio de técnicos portugueses no Brasileiro",
+"u": "https://www1.folha.uol.com.br/esporte/2026/11/titulo-de-jardim-no-flamengo-amplia-dominio-de-tecnicos-portugueses-no-brasileiro.shtml",
+"s": "Folha de S.Paulo"
+}
+],
+"n": 200
+},
+{
+"t": "asteras tripolis aris salonika 23/11/2026",
+"trafico": "200+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "Asteras Tripolis vs Aris: Greek Super League stats & head-to-head",
+"u": "https://www.bbc.com/sport/football/live/cmj4r8gjy8ggt",
+"s": "BBC"
+},
+{
+"t": "Asteras Tripolis vs Aris Prediction, Betting Tips, Lineups & Odds | 23 Nov 2026",
+"u": "https://www.sportsgambler.com/betting-tips/football/asteras-tripolis-vs-aris-prediction-lineups-odds-2026-11-23/",
+"s": "Sportsgambler"
+}
+],
+"n": 200
+},
+{
+"t": "brb",
+"trafico": "200+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "CVM suspende registro de BRB e Ambipar por falta de informações",
+"u": "https://economia.uol.com.br/noticias/redacao/2026/11/23/cvm-suspende-registro-de-cinco-companhias-por-falta-de-informacoes.ghtm",
+"s": "UOL Economia"
+},
+{
+"t": "CVM suspende registro de Refit, BRB e Ambipar",
+"u": "https://oglobo.globo.com/economia/negocios/noticia/2026/11/23/cvm-suspende-registro-de-refit-brb-ambipar.ghtml",
+"s": "O GLOBO"
+},
+{
+"t": "CVM suspende registro da Ambipar (AMBP3) e do BRB (BSLI3); ações não podem ser negociadas",
+"u": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/cvm-suspende-registro-da-ambipar-ambp3-e-do-brb-bsli3-acoes-nao-podem-ser-negociadas/",
+"s": "Estadão"
+}
+],
+"n": 200
+},
+{
+"t": "pedagogia",
+"trafico": "200+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "70% dos cursos de pedagogia dedicam apenas 2,5% da grade horária",
+"u": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/70-dos-cursos-de-pedagogia-dedicam-apenas-25-da-grade-horaria",
+"s": "Agência Brasil"
+},
+{
+"t": "MEC apresenta programa Toda Matemática em evento no Maranhão",
+"u": "https://sbtnews.sbt.com.br/noticia/brasil/mec-apresenta-programa-toda-matematica-em-evento-no-maranhao",
+"s": "SBT News"
+},
+{
+"t": "Pedagogia em MS dedica menos de 4% ao ensino de matemática",
+"u": "https://www.campograndenews.com.br/educacao-e-tecnologia/ensino-de-matematica-ocupa-menos-de-5-da-formacao-em-pedagogia-em-ms",
+"s": "Campo Grande News"
+}
+],
+"n": 200
+},
+{
+"t": "fiorentina",
+"trafico": "100+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "Le partite di oggi: Monza-Fiorentina. In campo anche Premier e Liga",
+"u": "https://www.gazzetta.it/Calcio/Serie-A/23-11-2026/le-partite-di-oggi-in-campo-serie-a-liga-e-premier-league.shtml",
+"s": "La Gazzetta dello Sport"
+},
+{
+"t": "Bolis: \"Fiorentina, troppi gol subiti. La rosa è da altri palcoscenici\"",
+"u": "https://www.violanews.com/news-viola/radio-e-tv/bolis-fiorentina-troppi-gol-subiti-la-rosa-e-da-altri-palcoscenici/",
+"s": "Viola News"
+},
+{
+"t": "Monza-Fiorentina chiude la giornata 12 di Serie A, dove vederla in tv e diretta streaming e formazioni",
+"u": "https://www.dazn.com/it-IT/news/calcio/monza-fiorentina-2026-dove-vedere-diretta-streaming-orario-formazioni/vrs4qupfgoes18z8x4660tqic",
+"s": "DAZN"
+}
+],
+"n": 100
+},
+{
+"t": "tst - tribunal superior do trabalho",
+"trafico": "200+",
+"fecha": "2026-11-23T16:20+01:00",
+"noticias": [],
+"n": 200
+},
+{
+"t": "bomba nuclear",
+"trafico": "200+",
+"fecha": "2026-11-23T16:20+01:00",
+"noticias": [
+{
+"t": "Kremlin desmente mídia alemã sobre suposto lançamento de satélite russo com armamento nuclear Por Reuters",
+"u": "https://br.investing.com/news/world-news/kremlin-desmente-midia-alema-sobre-suposto-lancamento-de-satelite-russo-com-armamento-nuclear-2135304",
+"s": "Investing.com Brasil - Finanças, Câmbio e Investimentos"
+},
+{
+"t": "Rússia planeja lançar satélite com arma nuclear ainda neste ano, diz emissora alemã",
+"u": "https://noticias.uol.com.br/internacional/ultimas-noticias/2026/11/23/russia-planeja-lancar-satelite-com-arma-nuclear-neste-ano-diz-imprensa.ghtm",
+"s": "UOL Notícias"
+},
+{
+"t": "Kremlin desmente mídia alemã sobre lançamento de satélite russo com armamento nuclear",
+"u": "https://www.infomoney.com.br/mundo/kremlin-desmente-midia-alema-sobre-lancamento-de-satelite-russo-com-armamento-nuclear/",
+"s": "InfoMoney"
+}
+],
+"n": 200
+},
+{
+"t": "cyberleek gta 6",
+"trafico": "1000+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "Could This Major GTA VI Leak Make It Playable On PC?",
+"u": "https://rockstarintel.com/could-this-major-gta-vi-leak-make-it-playable-on-pc/",
+"s": "RockstarINTEL"
+},
+{
+"t": "Cyberleek claims modders could get GTA 6 running on PC within a week after reported Xbox build leak",
+"u": "https://www.tweaktown.com/news/114815/cyberleek-claims-modders-could-get-gta-6-running-on-pc-within-a-week-after-reported-xbox-build-leak/index.html",
+"s": "TweakTown"
+},
+{
+"t": "Developers have released the Leonida tool for natively running Grand Theft Auto VI on PC.",
+"u": "https://en.gamegpu.com/news/igry/razrabotchiki-predstavili-instrument-leonida-dlya-nativnogo-zapuska-grand-theft-auto-vi-na-pk",
+"s": "GameGPU"
+}
+],
+"n": 1000
+},
+{
+"t": "braskem",
+"trafico": "200+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "Exclusivo: Braskem fecha acordo com credores de US$ 4,9 bilhões, com aporte de US$ 1,3 bi da Petrobras, dizem fontes",
+"u": "https://valor.globo.com/empresas/noticia/2026/11/23/exclusivo-braskem-fecha-acordo-com-credores-de-us-49-bilhoes-com-aporte-de-us-13-bi-da-petrobras-dizem-fontes.ghtml",
+"s": "Valor Econômico"
+},
+{
+"t": "No fim, a Petrobras vai colocar dinheiro para salvar a Braskem",
+"u": "https://veja.abril.com.br/economia/no-fim-a-petrobras-vai-colocar-dinheiro-para-salvar-a-braskem/",
+"s": "VEJA"
+},
+{
+"t": "Braskem sobe forte com notícia sobre acordo com credores para reestruturar dívidas",
+"u": "https://www.infomoney.com.br/mercados/braskem-sobe-forte-com-noticia-sobre-acordo-com-credores-para-reestruturar-dividas/",
+"s": "InfoMoney"
+}
+],
+"n": 200
+}
+]
+},
+"IN": {
+"geo": "IN",
+"url": "https://trends.google.com/trending/rss?geo=IN",
+"ok": true,
+"items": [
+{
+"t": "മമ്മൂട്ടി",
+"trafico": "500+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "ഇങ്ങനെ പോയാല്‍ 100 കോടി കടക്കും; സമ്മിശ്ര പ്രതികരണത്തിലും മികച്ച കലക്ഷനുമായി 'ഒ.എം'; രണ്ടാം ദിനം നേടിയത്",
+"u": "https://www.manoramanews.com/entertainment/box-office/2026/11/22/om-operation-mole-is-registering-strong-numbers-at-the-global-box-office.html",
+"s": "Manorama News"
+},
+{
+"t": "രണ്ട് ദിവസം കൊണ്ട് 61 കോടി; തിയറ്റർ ഇളക്കിമറിച്ച് ധനുഷ്, മമ്മുട്ടി ചിത്രം ഓം | Madhyamam",
+"u": "https://www.madhyamam.com/entertainment/movie-news/om-box-office-hits-61cr-1574795",
+"s": "Madhyamam"
+},
+{
+"t": "'മേക്കപ്പ് അഴിച്ച് മമ്മൂക്ക, ഓം'മിലെ ആ കോടതി രംഗം വീണ്ടും എടുക്കണമെന്ന് സംവിധായകൻ', കുറിപ്പ് വൈറൽ",
+"u": "https://malayalam.oneindia.com/movie-news/om-movie-director-asked-mammootty-for-a-reshoot-of-the-courtroom-scene-in-after-he-changed-costume-605099.html",
+"s": "Oneindia Malayalam"
+}
+],
+"n": 500
+},
+{
+"t": "వర్షిణి",
+"trafico": "200+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "Varshini-Sudheer: నన్ను చూడు నాతో మాట్లాడు.. సుధీర్‌పై వర్షిణి.. రాం ప్రసాద్‌ని నామినేట్ చేసిన దేబ్జానీ",
+"u": "https://telugu.samayam.com/tv/bigg-boss-telugu/bigg-boss-10-telugu-day-78-promo-3-sudheer-nominates-varshini-and-debjani-to-ram-prasad/articleshow/136099045.cms",
+"s": "Samayam Telugu"
+},
+{
+"t": "బిగ్ బాస్ లో వ‌ర్షిణి అపూర్వ‌ల వాగ్వావాదం",
+"u": "https://teluguism.com/argument-between-varshini-and-apurva-in-bigg-boss/",
+"s": "TeluguISM"
+},
+{
+"t": "సింపథీ కార్డ్ ప్లే చేయకు..ఒక్కసారైనా గెలిచావా?వర్షిణిపై సృష్టి ఫైర్!",
+"u": "https://www.bigtvlive.com/tv/srishti-brings-the-big-nomination-strom-in-house-day-72-promo-1-release.html",
+"s": "BigTvLive"
+}
+],
+"n": 200
+},
+{
+"t": "റിയാദ്",
+"trafico": "200+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "സ്വയംരക്ഷയ്ക്ക് തിരിച്ചടിക്കുമെന്ന് മുന്നറിയിപ്പ്: ഗൾഫ് മേഖലയിൽ വീണ്ടും വ്യോമാക്രമണ ഭീഷണി, നിർണായക ഉത്തരവുമായി സൗദി",
+"u": "https://www.manoramaonline.com/global-malayali/gulf/2026/11/22/iran-attack-bahrain-industrial-facility-houthi-missile-drone-saudi-arabia.html",
+"s": "Manorama Online"
+},
+{
+"t": "ഹുദെദ തുറമുഖം ആക്രമിക്കാന്‍ സൗദി നീക്കം; ജനങ്ങളോട് ഒഴിയാന്‍ നിര്‍ദേശം",
+"u": "https://www.manoramanews.com/gulf-and-global/middle-east/2026/11/20/saudi-arabia-moves-to-hodeidah-port-attack.html",
+"s": "Manorama News"
+},
+{
+"t": "ഹൊദൈദയ്ക്ക് പിന്നാലെ ജിദ്ദയും ലക്ഷ്യം? സൗദിക്ക് ഹൂതികളുടെ മുന്നറിയിപ്പ്; ചെങ്കടലിൽ സംഘർഷം കടുക്കുന്നു",
+"u": "https://www.southlive.in/houthis-issue-warning-to-saudi-arabia-tensions-escalate-in-the-red-sea/",
+"s": "SouthLive"
+}
+],
+"n": 200
+},
+{
+"t": "avengers doomsday",
+"trafico": "10000+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "'Avengers: Doomsday' Final Trailer Has Fantastic Four Calling On Steve Rogers",
+"u": "https://deadline.com/2026/11/avengers-doomsday-final-trailer-1237231535/",
+"s": "Deadline"
+},
+{
+"t": "‘Avengers: Doomsday’ final trailer: Doctor Doom’s face-off against superheroes",
+"u": "https://www.telegraphindia.com/entertainment/avengers-doomsday-final-trailer-doctor-doom-face-off-against-the-superheroes/cid/2190896",
+"s": "Telegraph India"
+},
+{
+"t": "Hayley Atwell Reveals When the Final ‘Avengers: Doomsday’ Trailer Is Arriving",
+"u": "https://www.imdb.com/news/ni66122426/?ref_=ttnw_art_perm",
+"s": "IMDb"
+}
+],
+"n": 10000
+},
+{
+"t": "al-shamal vs al-ahli",
+"trafico": "1000+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "\"Yesterday's friend\": Riyad Mahrez surprises Al-Ahli players before Al-Shamal clash",
+"u": "https://www.goal.com/en-in/news/yesterday-s-friend-riyad-mahrez-surprises-al-ahli-players-before-al-shamal-clash/bltee1f3e007e6ec555",
+"s": "Goal.com"
+},
+{
+"t": "Al Shamal vs Al Ahli Preview & Prediction | 2026-27 AFC Champions League Elite | League Stage",
+"u": "https://www.thestatszone.com/al-shamal-vs-al-ahli-preview-prediction-2026-27-afc-champions-league-elite-league-stage-240883",
+"s": "The Stats Zone"
+},
+{
+"t": "check headline: Al Ahli boss Pušić demands ‘maximum effort’ ahead of Al Shamal clash",
+"u": "https://www.thechronicle.com.au/sport/check-headline-al-ahli-boss-pui-demands-maximum-effort-ahead-of-al-shamal-clash/video/2d8409bd443d0c5f80595214e900782e",
+"s": "Toowoomba Chronicle"
+}
+],
+"n": 1000
+},
+{
+"t": "lottery sambad today",
+"trafico": "2000+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "Nagaland State Lottery Dear Clover Monday Result Today 8 PM: Who Won Rs 1 Crore Jackpot? Full Winners List Here",
+"u": "https://newsable.asianetnews.com/entertainment/nagaland-state-lottery-dear-clover-monday-result-today-8-pm-who-won-rs-1-crore-jackpot-full-winners-list-here-articleshow-oryiq20",
+"s": "Asianet Newsable"
+},
+{
+"t": "Nagaland State Lottery Sambad Dear Elite Saturday result for November 21, 2026",
+"u": "https://www.easternmirrornagaland.com/nagaland-state-lottery-sambad-dear-elite-saturday-result-for-november-21-2026",
+"s": "Eastern Mirror"
+},
+{
+"t": "Nagaland State Lottery Dear Magic Sunday Result Today 8 PM: Who Won Rs 1 Crore Jackpot? Full Winners List Here",
+"u": "https://newsable.asianetnews.com/india/nagaland-state-lottery-dear-magic-sunday-result-today-8-pm-who-won-rs-1-crore-jackpot-full-winners-list-here-articleshow-7hh7xcf",
+"s": "Asianet Newsable"
+}
+],
+"n": 2000
+},
+{
+"t": "patrick stewart",
+"trafico": "200+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "Patrick Stewart's Cause of Death Revealed",
+"u": "https://www.tmz.com/2026/11/19/patrick-stewart-cause-of-death/",
+"s": "TMZ"
+},
+{
+"t": "Patrick Stewart cause of death revealed",
+"u": "https://www.latimes.com/entertainment-arts/story/2026-11-19/patrick-stewart-cause-of-death-revealed",
+"s": "Los Angeles Times"
+},
+{
+"t": "Ian McKellen Fuels Fears After Patrick Stewart’s Death as Sources Reveal the Real Reason He’s ‘A Lot More Vulnerable’",
+"u": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/ian-mckellen-fuels-fears-patrick-185836923.html",
+"s": "Yahoo"
+}
+],
+"n": 200
+},
+{
+"t": "ugc net",
+"trafico": "2000+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "CSIR UGC NET December 2026 exam schedule released; check subject-wise exam dates",
+"u": "https://bestcolleges.indiatoday.in/latest-news/csir-ugc-net-december-2026-exam-schedule-released-check-subject-wise-exam-dates-12681",
+"s": "India Today"
+},
+{
+"t": "UGC NET December 2026: Check Exam Dates For History, Sociology, English And More",
+"u": "https://www.ndtv.com/education/ugc-net-december-2026-check-exam-dates-for-history-sociology-english-and-more-12361988",
+"s": "NDTV"
+},
+{
+"t": "NTA Releases Subject-Wise UGC-NET December 2026 Schedule, Exams to Begin on December 14",
+"u": "https://boldnewsonline.com/nta-releases-subject-wise-ugc-net-december-2026-schedule-exams-to-begin-on-december-14/",
+"s": "Bold News"
+}
+],
+"n": 2000
+},
+{
+"t": "xmen",
+"trafico": "200+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "Jennifer Lawrence Had One Complaint About Playing Mystique In X-Men I Didn't See Coming",
+"u": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/jennifer-lawrence-had-one-complaint-130729039.html",
+"s": "Yahoo"
+},
+{
+"t": "Jennifer Lawrence Calls Mystique Hair a Mullet",
+"u": "https://wisevoter.com/world/us/2026/11/22/jennifer-lawrence-mystique-hair-makeup-mullet",
+"s": "Wisevoter"
+},
+{
+"t": "Forget Doomsday, The X-Men Movies Had A Perfect Sequel 9 Years Ago",
+"u": "https://screenrant.com/the-gifted-perfect-x-men-movie-sequel/",
+"s": "ScreenRant"
+}
+],
+"n": 200
+},
+{
+"t": "nvidia market cap",
+"trafico": "200+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "Nvidia on Pace for Record $847 Billion Gain",
+"u": "https://www.barrons.com/livecoverage/stock-market-news-today-112326/card/nvidia-on-pace-for-record-847-billion-gain-O7GADHjd2tR2zQy9XKhZ?mod=bar_FV",
+"s": "Barron's"
+},
+{
+"t": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+"u": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+"s": "NVIDIA Newsroom"
+},
+{
+"t": "Nvidia reinstates Jensen Huang as CEO with immediate effect, shares surge 25%",
+"u": "https://www.telegraphindia.com/business/nvidia-reinstates-jensen-huang-as-ceo-with-immediate-effect-shares-surge-25-per-cent/cid/2190918",
+"s": "Telegraph India"
+}
+],
+"n": 200
+}
+]
+},
+"JP": {
+"geo": "JP",
+"url": "https://trends.google.com/trending/rss?geo=JP",
+"ok": true,
+"items": [
+{
+"t": "inac神戸レオネッサ",
+"trafico": "500+",
+"fecha": "2026-11-23T16:30+01:00",
+"noticias": [
+{
+"t": "0-6大敗に日本代表が一喝「プロ意識が足りない」 直近2試合11失点…再起へ「のし上がっていく」（FOOTBALL ZONE）",
+"u": "https://news.yahoo.co.jp/articles/6b529018ed777a1f13a23d3d1b7dc969d401c3c8",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "INAC神戸 日テレ東京Vに0-6で大敗 5試合勝ちなし サッカー女子・WEリーグ|スポーツ",
+"u": "http://www.kobe-np.co.jp/news/sports/202611/0021065937.shtml",
+"s": "神戸新聞"
+},
+{
+"t": "大宮がINAC破る サッカー女子WEリーグ",
+"u": "https://www.sanspo.com/article/20261119-JN4T2OJGPNLHNL5ORGPNYQGD4I/",
+"s": "サンスポ"
+}
+],
+"n": 500
+},
+{
+"t": "ナスダック100",
+"trafico": "1000+",
+"fecha": "2026-11-23T16:20+01:00",
+"noticias": [
+{
+"t": "米株価指数先物 時間外取引 上昇、ナスダック１００先物は２．８％超の上げ",
+"u": "https://kabutan.jp/news/marketnews/?b=n202611230028",
+"s": "株探"
+},
+{
+"t": "米株価指数先物 時間外取引 ダウ先物は１０００ドル超の上昇",
+"u": "https://fx.minkabu.jp/news/385193",
+"s": "みんかぶ FX/為替"
+},
+{
+"t": "AI売りの後に先物反発、ベッセント財務長官がNvidiaを調査へ",
+"u": "https://jp.investing.com/news/economy-news/article-1767253",
+"s": "Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース"
+}
+],
+"n": 1000
+},
+{
+"t": "nasdaq100",
+"trafico": "200+",
+"fecha": "2026-11-23T16:20+01:00",
+"noticias": [
+{
+"t": "世紀の空売りバーリ氏､エヌビディアのプット売却－Nasdaq100は売らず | TBS CROSS DIG with Bloomberg",
+"u": "https://newsdig.tbs.co.jp/articles/withbloomberg/3103328",
+"s": "TBS NEWS DIG"
+},
+{
+"t": "マイケル・バーリ氏、NVIDIAとルルレモンの取締役就任を冗談交じりに表明 NVDAは40%下落",
+"u": "https://finance.biggo.jp/news/ceb3a10b-b57b-43bf-bad0-407ef930a9b0",
+"s": "BigGo ファイナンス"
+},
+{
+"t": "AI空売り取引の利益確定が始まったか？「ビッグ・ショート」のベリー氏、エヌビディアおよび半導体ETFのプットオプション保有量を半減",
+"u": "https://www.moomoo.com/ja/news/post/1005406915",
+"s": "Moomoo"
+}
+],
+"n": 200
+},
+{
+"t": "qqq",
+"trafico": "100+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "‘Anyone forecasting 2027 is forecasting data centers’: The Fed is about to hike into an AI boom it can’t cool, and Main Street gets the bill",
+"u": "https://finance.yahoo.com/economy/policy/articles/anyone-forecasting-2027-forecasting-data-154459270.html",
+"s": "Yahoo Finance"
+},
+{
+"t": "AI surge could strain US capacity and overheat economy, Fed's Goolsbee says",
+"u": "https://www.reuters.com/business/feds-goolsbee-says-ai-surge-could-strain-us-capacity-overheat-economy-2026-11-19/",
+"s": "Reuters"
+},
+{
+"t": "Federal Reserve Chairman Kevin Warsh during a conference on the economic impacts of new technologies",
+"u": "https://www.galvnews.com/news_reuters/business/federal-reserve-chairman-kevin-warsh-during-a-conference-on-the-economic-impacts-of-new-technologies/image_d766743e-3d30-5bdc-b8a8-3f010a40a17c.html",
+"s": "The Daily News | Texas' Oldest Newspaper"
+}
+],
+"n": 100
+},
+{
+"t": "ブロードコム 株価",
+"trafico": "200+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "リンクス・エクイティ、懸念にもかかわらずブロードコム株のセンチメント改善を予測",
+"u": "https://jp.investing.com/news/analyst-ratings/article-93CH-1767420",
+"s": "Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース"
+},
+{
+"t": "ブロードコム（AVGO）の機関投資家の資金動向：オプション資金の62%がプットに集中、11月20日",
+"u": "https://www.moomoo.com/ja/community/feed/institutional-flow-in-broadcom-avgo-62-of-the-options-money-117652648558597",
+"s": "Moomoo"
+},
+{
+"t": "ジェンスン・フアン氏がNVIDIA CEOを電撃辞任、Broadcomは逆行高6%・AIサプライチェーンはほぼ全面安",
+"u": "https://finance.biggo.jp/news/96d7094a-7d26-4753-afbd-70fc2f51cdd8",
+"s": "BigGo ファイナンス"
+}
+],
+"n": 200
+},
+{
+"t": "ramu",
+"trafico": "100+",
+"fecha": "2026-11-23T16:10+01:00",
+"noticias": [
+{
+"t": "「やあ！！失礼」 148センチグラドル、90センチ『花柄上下』にファン歓声 「いかすぜぇ」「久し振りに見たけど相変わらず…」",
+"u": "https://news.yahoo.co.jp/articles/fc4f93fe77340a2f98d99b0ec4cdd667a3956580",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "【実際の投稿】RaMu、「いかすぜぇ」と歓声の飛んだ90センチ花柄ランジェリー",
+"u": "https://www.chunichi.co.jp/article/1342807",
+"s": "中日新聞Web"
+}
+],
+"n": 100
+},
+{
+"t": "ヤッホイ",
+"trafico": "1000+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [],
+"n": 1000
+},
+{
+"t": "花田 虎上",
+"trafico": "100+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [],
+"n": 100
+},
+{
+"t": "美股",
+"trafico": "100+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "美股前瞻|三大股指期货集体拉升 科技股普涨 贝森特公开反对美联储继续紧缩",
+"u": "https://feng.ifeng.com/c/8yIDKKWGCQN",
+"s": "凤凰网"
+},
+{
+"t": "11月23日国际晨讯 | 美股三大股指期货全线拉升 美联储“最青睐通胀指标”将公布",
+"u": "https://www.sohu.com/a/1105079589_120988576?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+"s": "Sohu"
+},
+{
+"t": "纳斯达克100指数反弹，投资者重新评估人工智能板块抛售潮",
+"u": "https://www.vtmarkets.com/cn/analysis/nasdaq-100-rebounds-as-investors-reassess-ai-sell-off/",
+"s": "VT Markets"
+}
+],
+"n": 100
+},
+{
+"t": "ダウ",
+"trafico": "200+",
+"fecha": "2026-11-23T16:00+01:00",
+"noticias": [
+{
+"t": "〔米株式〕ダウ大幅反発、一時1400ドル超高＝ナスダックも急伸（23日午前）（時事通信）",
+"u": "https://news.yahoo.co.jp/articles/59b81691d550e42e8a4ff286ab404cf0d92d249e",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "NYダウ取引開始直後に1300ドル超上昇 エヌビディア・フアン氏CEO復帰受け ナスダック総合も6％超急騰",
+"u": "https://newsdig.tbs.co.jp/articles/-/3105571",
+"s": "TBS NEWS DIG"
+},
+{
+"t": "ＮＹ株、大幅反発して始まる",
+"u": "https://www.shimotsuke.co.jp/articles/-/1464781",
+"s": "下野新聞社"
+}
+],
+"n": 200
+}
+]
+}
+},
+"wikipedia": {
+"es": {
+"lang": "es",
+"ok": true,
+"items": [
+{
+"t": "Aníbal Gordon",
+"v": 56462,
+"movil": 0.94,
+"u": "https://es.wikipedia.org/wiki/Aníbal_Gordon"
+},
+{
+"t": "Marc Márquez",
+"v": 39031,
+"movil": 0.89,
+"u": "https://es.wikipedia.org/wiki/Marc_Márquez"
+},
+{
+"t": "El Chapo Isidro",
+"v": 28310,
+"movil": 0.93,
+"u": "https://es.wikipedia.org/wiki/El_Chapo_Isidro"
+},
+{
+"t": "Carlos Alcaraz",
+"v": 25145,
+"movil": 0.88,
+"u": "https://es.wikipedia.org/wiki/Carlos_Alcaraz"
+},
+{
+"t": "Copa Sudamericana",
+"v": 23468,
+"movil": 0.82,
+"u": "https://es.wikipedia.org/wiki/Copa_Sudamericana"
+},
+{
+"t": "Rodolfo Arruabarrena",
+"v": 21230,
+"movil": 0.9,
+"u": "https://es.wikipedia.org/wiki/Rodolfo_Arruabarrena"
+},
+{
+"t": "Elvira Lindo",
+"v": 20231,
+"movil": 0.94,
+"u": "https://es.wikipedia.org/wiki/Elvira_Lindo"
+},
+{
+"t": "MotoGP",
+"v": 18805,
+"movil": 0.83,
+"u": "https://es.wikipedia.org/wiki/MotoGP"
+},
+{
+"t": "Ferran Adrià",
+"v": 18403,
+"movil": 0.96,
+"u": "https://es.wikipedia.org/wiki/Ferran_Adrià"
+},
+{
+"t": "Isabel de Baviera",
+"v": 18356,
+"movil": 0.95,
+"u": "https://es.wikipedia.org/wiki/Isabel_de_Baviera"
+},
+{
+"t": "Los juegos del hambre: amanecer en la cosecha",
+"v": 18252,
+"movil": 0.94,
+"u": "https://es.wikipedia.org/wiki/Los_juegos_del_hambre:_amanecer_en_la_cosecha"
+},
+{
+"t": "Albert DeSalvo",
+"v": 18176,
+"movil": 0.94,
+"u": "https://es.wikipedia.org/wiki/Albert_DeSalvo"
+},
+{
+"t": "Leandro Paredes",
+"v": 17919,
+"movil": 0.92,
+"u": "https://es.wikipedia.org/wiki/Leandro_Paredes"
+},
+{
+"t": "Club Atlético Boca Juniors",
+"v": 16976,
+"movil": 0.83,
+"u": "https://es.wikipedia.org/wiki/Club_Atlético_Boca_Juniors"
+},
+{
+"t": "Azúcar Moreno",
+"v": 15779,
+"movil": 0.95,
+"u": "https://es.wikipedia.org/wiki/Azúcar_Moreno"
+},
+{
+"t": "Almudena Grandes",
+"v": 15596,
+"movil": 0.94,
+"u": "https://es.wikipedia.org/wiki/Almudena_Grandes"
+},
+{
+"t": "Miley Cyrus",
+"v": 14967,
+"movil": 0.96,
+"u": "https://es.wikipedia.org/wiki/Miley_Cyrus"
+},
+{
+"t": "Giacomo Agostini",
+"v": 14775,
+"movil": 0.89,
+"u": "https://es.wikipedia.org/wiki/Giacomo_Agostini"
+},
+{
+"t": "ATP Finals",
+"v": 14374,
+"movil": 0.84,
+"u": "https://es.wikipedia.org/wiki/ATP_Finals"
+},
+{
+"t": "Cecilia de Roma",
+"v": 14357,
+"movil": 0.93,
+"u": "https://es.wikipedia.org/wiki/Cecilia_de_Roma"
+},
+{
+"t": "Valentino Rossi",
+"v": 14210,
+"movil": 0.89,
+"u": "https://es.wikipedia.org/wiki/Valentino_Rossi"
+},
+{
+"t": "Isabel Allende",
+"v": 13810,
+"movil": 0.94,
+"u": "https://es.wikipedia.org/wiki/Isabel_Allende"
+},
+{
+"t": "Sebastián Villa",
+"v": 13107,
+"movil": 0.92,
+"u": "https://es.wikipedia.org/wiki/Sebastián_Villa"
+},
+{
+"t": "Tomás Cuello",
+"v": 13064,
+"movil": 0.96,
+"u": "https://es.wikipedia.org/wiki/Tomás_Cuello"
+},
+{
+"t": "Facundo Herrera",
+"v": 12682,
+"movil": 0.89,
+"u": "https://es.wikipedia.org/wiki/Facundo_Herrera"
+}
+],
+"descartados_bots": [],
+"dia": "2026-11-22",
+"url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/es.wikipedia/all-access/2026/11/22"
+},
+"en": {
+"lang": "en",
+"ok": true,
+"items": [
+{
+"t": "Ramayana: Part 1",
+"v": 384249,
+"movil": 0.91,
+"u": "https://en.wikipedia.org/wiki/Ramayana:_Part_1"
+},
+{
+"t": "Grand Theft Auto VI",
+"v": 308867,
+"movil": 0.67,
+"u": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI"
+},
+{
+"t": "Tom Jackson (American football, born 1951)",
+"v": 263973,
+"movil": 0.86,
+"u": "https://en.wikipedia.org/wiki/Tom_Jackson_(American_football,_born_1951)"
+},
+{
+"t": "The Hunger Games: Sunrise on the Reaping",
+"v": 222399,
+"movil": 0.81,
+"u": "https://en.wikipedia.org/wiki/The_Hunger_Games:_Sunrise_on_the_Reaping"
+},
+{
+"t": "Riemann hypothesis",
+"v": 205793,
+"movil": 0.56,
+"u": "https://en.wikipedia.org/wiki/Riemann_hypothesis"
+},
+{
+"t": "Miley Cyrus",
+"v": 170642,
+"movil": 0.88,
+"u": "https://en.wikipedia.org/wiki/Miley_Cyrus"
+},
+{
+"t": "List of highest-grossing Indian films",
+"v": 137636,
+"movil": 0.89,
+"u": "https://en.wikipedia.org/wiki/List_of_highest-grossing_Indian_films"
+},
+{
+"t": "Deaths in 2026",
+"v": 131500,
+"movil": 0.49,
+"u": "https://en.wikipedia.org/wiki/Deaths_in_2026"
+},
+{
+"t": ".xxx",
+"v": 113918,
+"movil": 0.98,
+"u": "https://en.wikipedia.org/wiki/.xxx"
+},
+{
+"t": "The Body (TV series)",
+"v": 112346,
+"movil": 0.83,
+"u": "https://en.wikipedia.org/wiki/The_Body_(TV_series)"
+},
+{
+"t": "O.M: Operation Mole",
+"v": 109915,
+"movil": 0.91,
+"u": "https://en.wikipedia.org/wiki/O.M:_Operation_Mole"
+},
+{
+"t": "Ansel Adams",
+"v": 106888,
+"movil": 0.85,
+"u": "https://en.wikipedia.org/wiki/Ansel_Adams"
+},
+{
+"t": "S Club",
+"v": 104957,
+"movil": 0.88,
+"u": "https://en.wikipedia.org/wiki/S_Club"
+},
+{
+"t": "Joseph Zada",
+"v": 98864,
+"movil": 0.87,
+"u": "https://en.wikipedia.org/wiki/Joseph_Zada"
+},
+{
+"t": "Robert Pattinson",
+"v": 96131,
+"movil": 0.8,
+"u": "https://en.wikipedia.org/wiki/Robert_Pattinson"
+},
+{
+"t": "XXX: Return of Xander Cage",
+"v": 91679,
+"movil": 0.95,
+"u": "https://en.wikipedia.org/wiki/XXX:_Return_of_Xander_Cage"
+},
+{
+"t": "Elizabeth Holmes",
+"v": 89425,
+"movil": 0.83,
+"u": "https://en.wikipedia.org/wiki/Elizabeth_Holmes"
+},
+{
+"t": "Grand Theft Auto",
+"v": 85598,
+"movil": 0.71,
+"u": "https://en.wikipedia.org/wiki/Grand_Theft_Auto"
+},
+{
+"t": "XXX (2002 film)",
+"v": 82069,
+"movil": 0.98,
+"u": "https://en.wikipedia.org/wiki/XXX_(2002_film)"
+},
+{
+"t": "Mckenna Grace",
+"v": 79779,
+"movil": 0.85,
+"u": "https://en.wikipedia.org/wiki/Mckenna_Grace"
+},
+{
+"t": "You Can See Everything",
+"v": 79673,
+"movil": 0.78,
+"u": "https://en.wikipedia.org/wiki/You_Can_See_Everything"
+},
+{
+"t": "Sunrise on the Reaping",
+"v": 78767,
+"movil": 0.82,
+"u": "https://en.wikipedia.org/wiki/Sunrise_on_the_Reaping"
+},
+{
+"t": "Mauricio Pochettino",
+"v": 77374,
+"movil": 0.85,
+"u": "https://en.wikipedia.org/wiki/Mauricio_Pochettino"
+},
+{
+"t": "John Madden",
+"v": 76290,
+"movil": 0.86,
+"u": "https://en.wikipedia.org/wiki/John_Madden"
+},
+{
+"t": "The Odyssey (2026 film)",
+"v": 75108,
+"movil": 0.79,
+"u": "https://en.wikipedia.org/wiki/The_Odyssey_(2026_film)"
+}
+],
+"descartados_bots": [],
+"dia": "2026-11-22",
+"url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/2026/11/22"
+}
+}
+}

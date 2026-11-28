@@ -1,0 +1,3117 @@
+{
+"fecha": "2026-11-17",
+"hora": "16:50",
+"google": {
+"ES": {
+"geo": "ES",
+"url": "https://trends.google.com/trending/rss?geo=ES",
+"ok": true,
+"items": [
+{
+"t": "reforma",
+"trafico": "200+",
+"fecha": "2026-11-17T16:30+01:00",
+"noticias": [
+{
+"t": "Competencia pide al Gobierno una reforma urgente de su estructura ante la \"atribución masiva de funciones\"",
+"u": "https://www.elconfidencial.com/empresas/2026-11-17/cnmc-gobierno-reforma-urgente-masiva-funciones_4466175/",
+"s": "El Confidencial"
+},
+{
+"t": "Competencia reclama una reforma \"urgente\" de su estructura ante la ampliación de sus funciones",
+"u": "https://www.elperiodico.com/es/economia/20261117/competencia-reclama-reforma-urgente-estructura-136511402",
+"s": "El Periódico"
+},
+{
+"t": "Así es la propuesta del PP para que 150.000 'exiliados' por ETA puedan votar en el País Vasco: \"Se restablece la igualdad violada\"",
+"u": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/16/6afb4ba7e85ececc148b459b.html",
+"s": "El Mundo"
+}
+],
+"n": 200
+},
+{
+"t": "venezuela",
+"trafico": "200+",
+"fecha": "2026-11-17T16:30+01:00",
+"noticias": [
+{
+"t": "Venezuela tacha de «injerencia» las declaraciones del presidente uruguayo en Madrid sobre la democracia en el país",
+"u": "https://www.abc.es/internacional/venezuela-tacha-injerencia-declaraciones-presidente-uruguayo-madrid-20261117115114-nt.html",
+"s": "ABC"
+},
+{
+"t": "Venezuela cuestiona unas declaraciones \"injerencistas\" del presidente uruguayo, Yamandú Orsi",
+"u": "https://www.swissinfo.ch/spa/venezuela-cuestiona-unas-declaraciones-%22injerencistas%22-del-presidente-uruguayo%2C-yamand%C3%BA-orsi/92394194",
+"s": "SWI swissinfo.ch"
+},
+{
+"t": "Orsi reivindica las relaciones \"excelentes\" con Milei y considera clave el triunfo de Lula para Mercosur",
+"u": "https://www.europapress.es/internacional/noticia-orsi-reivindica-relaciones-excelentes-milei-considera-clave-triunfo-lula-mercosur-20261116115737.html",
+"s": "Europa Press"
+}
+],
+"n": 200
+},
+{
+"t": "posiciones de selección de fútbol de malaui contra selección de fútbol de egipto",
+"trafico": "500+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "Malawi vs Egypt: Africa Cup of Nations Qualification stats & head-to-head",
+"u": "https://www.bbc.com/sport/football/live/c54gnlrrgwn9t",
+"s": "BBC"
+},
+{
+"t": "Salah breaks Egypt scoring record as Tunisia lose to Libya",
+"u": "https://www.reuters.com/sports/soccer/salah-breaks-egypt-scoring-record-tunisia-lose-libya-2026-11-13/",
+"s": "Reuters"
+},
+{
+"t": "Mohamed Salah becomes Egypt's all-time record goalscorer",
+"u": "https://www.liverpoolfc.com/news/mohamed-salah-becomes-egypt-all-time-record-goalscorer",
+"s": "Liverpool FC"
+}
+],
+"n": 500
+},
+{
+"t": "álvaro cervera",
+"trafico": "200+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "Cervera responde a Piqué por Owono: “Debería ver la acción”",
+"u": "https://as.com/futbol/segunda/cervera-responde-a-pique-deberia-ver-la-accion-f202611-n/",
+"s": "Diario AS"
+},
+{
+"t": "Cervera (Tenerife) responde a Piqué: \"No es una acción que se ve todos los días, creo que se podía haber evitado\"",
+"u": "https://www.elconfidencial.com/deportes/futbol/2026-11-17/alvaro-cervera-tenerife-jesus-owono-gerard-pique-respuesta_4466702/",
+"s": "El Confidencial"
+},
+{
+"t": "INSIDE | Por y para siempre, Jesús de Miguel Alameda",
+"u": "https://www.clubdeportivotenerife.es/noticias/inside-or-por-y-para-siempre-jesus-de-miguel-alameda",
+"s": "CD Tenerife"
+}
+],
+"n": 200
+},
+{
+"t": "fernando grande-marlaska",
+"trafico": "500+",
+"fecha": "2026-11-17T16:00+01:00",
+"noticias": [
+{
+"t": "Si te gustó el ministro Marlaska, ya verás el ministro Albiol",
+"u": "https://www.eldiario.es/opinion/zona-critica/si-gusto-ministro-marlaska-veras-ministro-albiol_129_13666068.html",
+"s": "elDiario.es"
+},
+{
+"t": "Marlaska y el cortafuegos ministerial",
+"u": "https://www.elconfidencial.com/cultura/2026-11-15/marlaska-y-el-cortafuegos-ministerial_4464586/",
+"s": "El Confidencial"
+},
+{
+"t": "Grande-Marlaska, el ministro ignífugo",
+"u": "https://www.lamarea.com/2026/11/12/grande-marlaska/",
+"s": "lamarea.com"
+}
+],
+"n": 500
+},
+{
+"t": "fernando clavijo",
+"trafico": "1000+",
+"fecha": "2026-11-17T16:00+01:00",
+"noticias": [
+{
+"t": "Archipiélago Noticias Canarias - 16/11/26",
+"u": "https://www.rtve.es/play/audios/canarias-informativos/archipielago-noticias-canarias-16-11-26/17316765/",
+"s": "RTVE.es"
+},
+{
+"t": "Clavijo afea al Gobierno su \"falta de previsión\" con la inmigración",
+"u": "https://www.abc.es/espana/clavijo-afea-gobierno-falta-prevision-inmigracion-20261117150935-nt.html",
+"s": "ABC"
+},
+{
+"t": "Fernando Clavijo valora el repunte migratorio en las islas: \"La situación lejos de mejorar ha empeorado\"",
+"u": "https://www.canarias7.es/politica/fernando-clavijo-valora-repunte-migratorio-islas-situacion-20261117113229-nt.html",
+"s": "Canarias7"
+}
+],
+"n": 1000
+},
+{
+"t": "paraguay vs",
+"trafico": "100+",
+"fecha": "2026-11-17T16:00+01:00",
+"noticias": [
+{
+"t": "Japón 1 - Paraguay 2: resumen, resultado y goles del partido",
+"u": "https://as.com/futbol/internacional/japon-paraguay-en-directo-amistosos-internacionales-hoy-en-vivo-f202611-d/",
+"s": "Diario AS"
+},
+{
+"t": "Japón - Paraguay en directo - Amistosos: Resultados y resúmenes de Fútbol - 17/11/2026",
+"u": "https://www.eurosport.es/futbol/amistosos/2026/japon-paraguay_mtc22009217/live.shtml",
+"s": "Eurosport"
+},
+{
+"t": "Un año después, los \"sobrevivientes\" del último duelo ante Japón",
+"u": "https://www.vssports.com.py/versus/2026/11/17/un-ano-despues-los-sobrevivientes-del-ultimo-duelo-ante-japon",
+"s": "VS Sports"
+}
+],
+"n": 100
+},
+{
+"t": "josé ángel carmona",
+"trafico": "500+",
+"fecha": "2026-11-17T15:50+01:00",
+"noticias": [
+{
+"t": "JOSÉ ÁNGEL CARMONA SUFRE UNA FRACTURA DE TIBIA Y PERONÉ DE SU PIERNA DERECHA",
+"u": "https://sevillafc.es/actualidad/noticias/parte-medico-jose-angel-carmona-noviembre-2026",
+"s": "Sevilla FC"
+},
+{
+"t": "Carmona se fractura la tibia y el peroné en el entrenamiento: adiós a la temporada",
+"u": "https://www.marca.com/futbol/sevilla/2026/11/17/carmona-sufre-fractura-tibia-perone.html",
+"s": "MARCA"
+},
+{
+"t": "Carmona se lesiona de gravedad",
+"u": "https://as.com/futbol/carmona-se-lesiona-de-gravedad-f202611-n/",
+"s": "Diario AS"
+}
+],
+"n": 500
+},
+{
+"t": "paraguay vs japon",
+"trafico": "100+",
+"fecha": "2026-11-17T15:50+01:00",
+"noticias": [
+{
+"t": "El Salvador vs San Martín FR de S60-SELECCIONES NACIONALES ABSOLUTAS",
+"u": "https://futbolme.com/resultados-directo/partido/el-salvador-san-martin-fr/1373574/enfrentamientos",
+"s": "Futbolme"
+},
+{
+"t": "Jornada - CAMPEONATO EUROPEO SUB-19 DE LA UEFA - Edición 2025-26 - Nombre fase 225",
+"u": "https://futbolme.com/resultados-directo/torneo/campeonato-europeo-sub-19-de-la-uefa/191/jornada/225/grupo/10",
+"s": "Futbolme"
+},
+{
+"t": "Mali vs Zimbabue de S63-SELECCIONES NACIONALES SUB-23",
+"u": "https://futbolme.com/resultados-directo/partido/mali-zimbabue/1373563",
+"s": "Futbolme"
+}
+],
+"n": 100
+},
+{
+"t": "basket zaragoza",
+"trafico": "200+",
+"fecha": "2026-11-17T15:40+01:00",
+"noticias": [
+{
+"t": "DOS PARTIDOS LEJOS DE CASA",
+"u": "https://www.casademontzaragoza.es/noticias/dos-partidos-lejos-de-casa",
+"s": "Basket Zaragoza |"
+},
+{
+"t": "CASADEMONT ZARAGOZA PELEA HASTA EL FINAL EN BADALONA",
+"u": "https://www.casademontzaragoza.es/noticias/casademont-zaragoza-pelea-hasta-el-final-en-badalona",
+"s": "Basket Zaragoza |"
+},
+{
+"t": "¡Necesitamos el Olímpic de las grandes citas!",
+"u": "https://www.penya.com/es/inicio/noticias/288-2026-2027/5637-necesitamos-el-olimpic-de-las-grandes-citas",
+"s": "Penya"
+}
+],
+"n": 200
+}
+]
+},
+"US": {
+"geo": "US",
+"url": "https://trends.google.com/trending/rss?geo=US",
+"ok": true,
+"items": [
+{
+"t": "togo vs algeria",
+"trafico": "500+",
+"fecha": "2026-11-17T16:30+01:00",
+"noticias": [
+{
+"t": "Algeria vs Togo: Africa Cup of Nations Qualification stats & head-to-head",
+"u": "https://www.bbc.com/sport/football/live/c620r0842054t",
+"s": "BBC"
+},
+{
+"t": "The secret behind the exclusion: did Luca Zidane pay the price for his father's stance on the thorny issue?",
+"u": "https://www.yardbarker.com/soccer/articles/the_secret_behind_the_exclusion_did_luca_zidane_pay_the_price_for_his_fathers_stance_on_the_thorny_issue/s1_17790_44545811",
+"s": "Yardbarker"
+},
+{
+"t": "Togo Football Chief Accuses Algeria of Neglecting Team at Airport",
+"u": "https://www.moroccoworldnews.com/2026/11/346651/togo-football-chief-accuses-algeria-of-neglecting-team-at-airport/",
+"s": "Morocco World News"
+}
+],
+"n": 500
+},
+{
+"t": "kenya vs south africa",
+"trafico": "200+",
+"fecha": "2026-11-17T16:30+01:00",
+"noticias": [
+{
+"t": "Kenya vs. South Africa - AFCON qualifier LIVE updates, as it happens",
+"u": "https://www.espn.com/espn/story/_/id/50510841/kenya-vs-south-africa-afcon-qualifier-live-updates-happens",
+"s": "ESPN"
+},
+{
+"t": "Kenya vs South Africa Afcon clash live on NTV",
+"u": "https://nation.africa/kenya/sports/football/kenya-vs-south-africa-afcon-clash-live-on-ntv-5673304",
+"s": "Daily Nation"
+},
+{
+"t": "“All the best to our Harambee Stars as you take on Bafana Bafana this evening at Nyayo National Stadium. You showed courage and character in South Africa last week. Tonight, draw strength from the roar of your home crowd, fight for every ball and give Ken",
+"u": "https://www.facebook.com/kenyanewsagency/posts/all-the-best-to-our-harambee-stars-as-you-take-on-bafana-bafana-this-evening-at-/1450795393902769/",
+"s": "Facebook"
+}
+],
+"n": 200
+},
+{
+"t": "crm stock",
+"trafico": "200+",
+"fecha": "2026-11-17T16:30+01:00",
+"noticias": [
+{
+"t": "Salesforce shares drop on AI concerns and spending caution",
+"u": "https://www.streetinsider.com/Investing/Salesforce+shares+drop+on+AI+concerns+and+spending+caution/27361597.html",
+"s": "StreetInsider"
+},
+{
+"t": "CRM support and resistance levels as stock hits oversold territory",
+"u": "https://www.investing.com/news/stock-market-news/crm-support-and-resistance-levels-as-stock-hits-oversold-territory-93CH-5033460",
+"s": "Investing.com"
+},
+{
+"t": "Investors Heavily Search Duke Energy Corporation (DUK): Here is What You Need to Know",
+"u": "https://finance.yahoo.com/markets/stocks/articles/investors-heavily-search-duke-energy-202144563.html",
+"s": "Yahoo Finance"
+}
+],
+"n": 200
+},
+{
+"t": "sierra leone vs dr congo",
+"trafico": "1000+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "TotalEnergies CAF AFCON 2027 Qualifiers: DR Congo extend perfect run as Guinea-Bissau and Zimbabwe held to draws",
+"u": "https://www.cafonline.com/afcon2025/news/totalenergies-caf-afcon-2027-qualifiers-dr-congo-extend-perfect-run-as-guinea-bissau-and-zimbabwe-held-to-draws/",
+"s": "CAFOnline.com"
+},
+{
+"t": "Congo DR vs Sierra Leone: Africa Cup of Nations Qualification stats & head-to-head",
+"u": "https://www.bbc.com/sport/football/live/cqkgjm5yly1vt",
+"s": "BBC"
+},
+{
+"t": "AFCON 2027: Gomes Da Rosa gives up on qualification chances",
+"u": "https://panafricafootball.com/article/gomes-da-rosa-afcon-qualification",
+"s": "Pan Africa Football"
+}
+],
+"n": 1000
+},
+{
+"t": "jetblue turbulence fort lauderdale airport",
+"trafico": "2000+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "Several people injured after turbulence on flight headed to Florida, officials say",
+"u": "https://www.cnn.com/2026/11/17/us/jetblue-turbulence-flight-fort-lauderdale",
+"s": "CNN"
+},
+{
+"t": "Five people injured amid severe turbulence on JetBlue flight to Florida",
+"u": "https://www.theguardian.com/us-news/2026/nov/17/five-injured-turbulence-jetblue-flight",
+"s": "The Guardian"
+},
+{
+"t": "5 people report injuries after JetBlue flight encounters severe turbulence before landing at FLL",
+"u": "https://www.local10.com/news/local/2026/11/17/5-people-report-injuries-after-jetblue-flight-encounters-severe-turbulence-before-landing-at-fll/",
+"s": "WPLG Local 10"
+}
+],
+"n": 2000
+},
+{
+"t": "mansfield university",
+"trafico": "200+",
+"fecha": "2026-11-17T16:00+01:00",
+"noticias": [
+{
+"t": "Mansfield University to close",
+"u": "https://www.lockhaven.com/news/urgent-information/2026/11/mansfield-university-to-close/",
+"s": "Lock Haven Express"
+},
+{
+"t": "PASSHE plans to shut down Mansfield University campus in 2028",
+"u": "https://www.inquirer.com/education/mansfield-university-close-passhe-state-system-20261117.html",
+"s": "Inquirer.com"
+},
+{
+"t": "Commonwealth University's Mansfield campus set to close",
+"u": "https://www.northcentralpa.com/education/commonwealth-universitys-mansfield-campus-set-to-close/article_f0d9236e-a5cc-4d16-92c8-2fc27b508da2.html",
+"s": "NorthcentralPA.com"
+}
+],
+"n": 200
+},
+{
+"t": "turkey",
+"trafico": "2000+",
+"fecha": "2026-11-17T15:40+01:00",
+"noticias": [
+{
+"t": "Giant sinkholes tear through Turkey’s parched farmland",
+"u": "https://www.ft.com/content/1350f0c8-deb3-4388-8b8a-cf6a1a93c0d4?syn-25a6b1a6=1",
+"s": "Financial Times"
+},
+{
+"t": "British carmakers face limbo over EU’s Made in Europe rules",
+"u": "https://www.thetimes.com/business/companies-markets/article/eu-made-in-europe-rules-uk-carmakers-d805z25w8",
+"s": "The Times"
+},
+{
+"t": "Webinar : Where does Europe stand in a world of power politics ? An update on the ongoing European negotiations on Made in Europe",
+"u": "https://www.veblen-institute.org/Webinar-Where-does-Europe-stand-in-a-world-of-power-politics-An-update-on-the.html",
+"s": "veblen-institute.org"
+}
+],
+"n": 2000
+},
+{
+"t": "granblue fantasy relink leaving ps plus",
+"trafico": "500+",
+"fecha": "2026-11-17T15:40+01:00",
+"noticias": [
+{
+"t": "Games Leaving PlayStation Plus in December 2026 Confirmed",
+"u": "https://www.playstationlifestyle.net/2026/11/16/games-leaving-ps-plus-extra-premium-december-2026",
+"s": "PlayStation LifeStyle"
+},
+{
+"t": "PlayStation Plus issues December free game update, last chance to play 100-hour RPG",
+"u": "https://www.gamingbible.com/news/platform/playstation/playstation-plus-december-free-game-update-035399-20261117",
+"s": "GAMINGbible"
+},
+{
+"t": "Rockstar's Two Biggest Games Leave PS Plus Today",
+"u": "https://www.thegamer.com/gta-5-red-dead-redemption-2-leaving-ps-plus/",
+"s": "TheGamer"
+}
+],
+"n": 500
+},
+{
+"t": "unh stock",
+"trafico": "500+",
+"fecha": "2026-11-17T15:40+01:00",
+"noticias": [
+{
+"t": "Unitedhealth Group Inc Stock (UNH) Opened Down by 4.78% on Nov 17: What Investors Need To Know",
+"u": "https://www.tradingkey.com/news/market-movers/262309213-market-movers-unh-20261117",
+"s": "TradingKey"
+},
+{
+"t": "Why is UnitedHealth stock sliding today?",
+"u": "https://www.investing.com/news/stock-market-news/why-is-unitedhealth-stock-sliding-today-93CH-5033395",
+"s": "Investing.com"
+},
+{
+"t": "UnitedHealth (UNH) Shares Dip Premarket Amid New Federal Healthc",
+"u": "https://www.gurufocus.com/news/9205170/unitedhealth-unh-shares-dip-premarket-amid-new-federal-healthcare-fraud-regulations",
+"s": "GuruFocus"
+}
+],
+"n": 500
+},
+{
+"t": "hero world challenge",
+"trafico": "2000+",
+"fecha": "2026-11-17T15:30+01:00",
+"noticias": [
+{
+"t": "Tiger Woods to return for next month's Hero World Challenge",
+"u": "https://www.espn.com/golf/story/_/id/50511075/tiger-woods-return-next-month-hero-world-challenge",
+"s": "ESPN"
+},
+{
+"t": "Tiger Woods to return to competitive golf next month for Hero World Challenge",
+"u": "https://www.nytimes.com/athletic/7788310/2026/11/17/tiger-woods-return-golf-hero-world-challenge/",
+"s": "The New York Times"
+},
+{
+"t": "Tiger Woods: 15-time major champion to make PGA Tour comeback at December's Hero World Challenge in Bahamas",
+"u": "https://www.skysports.com/golf/news/13613268/tiger-woods-15-time-major-champion-to-make-pga-tour-comeback-at-decembers-hero-world-challenge-in-bahamas",
+"s": "Sky Sports"
+}
+],
+"n": 2000
+}
+]
+},
+"GB": {
+"geo": "GB",
+"url": "https://trends.google.com/trending/rss?geo=GB",
+"ok": true,
+"items": [
+{
+"t": "togo vs algeria",
+"trafico": "500+",
+"fecha": "2026-11-17T16:30+01:00",
+"noticias": [
+{
+"t": "Algeria vs Togo: Africa Cup of Nations Qualification stats & head-to-head",
+"u": "https://www.bbc.co.uk/sport/football/live/c620r0842054t",
+"s": "BBC"
+},
+{
+"t": "The secret behind the exclusion: did Luca Zidane pay the price for his father's stance on the thorny issue?",
+"u": "https://www.livescore.com/en/news/football/more/the-secret-behind-the-exclusion-did-luca-zidane-pay-the-price-for-his-fathers-stance-on-the-thorny-issue-goal/",
+"s": "LiveScore"
+},
+{
+"t": "Algeria coach: Facing Togo is difficult in AFCON qualifiers",
+"u": "https://panafricafootball.com/article/algeria-coach-togo-afcon-criticism-11-26",
+"s": "Pan Africa Football"
+}
+],
+"n": 500
+},
+{
+"t": "kenya vs south africa",
+"trafico": "200+",
+"fecha": "2026-11-17T16:30+01:00",
+"noticias": [
+{
+"t": "Kenya v South Africa - Kick off time, how to watch Bafana in second AFCON qualifier",
+"u": "https://www.espn.co.uk/espn/story/_/id/50499451/kenya-bafana-kick-how-watch-afcon-qualifier",
+"s": "ESPN"
+},
+{
+"t": "South Africa vs Kenya: Africa Cup of Nations Qualification stats & head-to-head",
+"u": "https://www.bbc.co.uk/sport/football/live/c9j34kkv32l4t",
+"s": "BBC"
+},
+{
+"t": "McCarthy vs Mosimane and five other showdowns to watch in Harambee Stars clash against South Africa",
+"u": "https://www.mozzartsport.co.ke/football/news/mccarthy-vs-mosimane-and-five-other-showdowns-to-watch-in-harambee-stars-clash-against-south-africa/70748",
+"s": "Mozzart Sport Kenya"
+}
+],
+"n": 200
+},
+{
+"t": "josé mourinho",
+"trafico": "100+",
+"fecha": "2026-11-17T16:30+01:00",
+"noticias": [
+{
+"t": "Chivu wins Panchina d’Oro with 16 of 43 votes as Inter trail Lazio by a point",
+"u": "https://www.livescore.com/en/news/football/serie-a/chivu-wins-panchina-doro-with-16-of-43-votes-as-inter-trail-lazio-by-a-point-sempreinter/",
+"s": "LiveScore"
+},
+{
+"t": "Romanian coach Cristian Chivu becomes third foreigner ever to be awarded Italy’s “Panchina d'Oro”",
+"u": "https://www.romania-insider.com/life/romanian-coach-cristian-chivu-becomes-third-foreigner-ever",
+"s": "Romania Insider"
+},
+{
+"t": "Chivu 'embarrassed' by comparisons to Inter 'legend' Mourinho",
+"u": "https://www.beinsports.com/en-us/soccer/serie-a/articles/chivu-embarrassed-by-comparisons-to-inter-legend-mourinho-2026-11-16",
+"s": "beIN SPORTS"
+}
+],
+"n": 100
+},
+{
+"t": "sierra leone vs dr congo",
+"trafico": "500+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "Congo DR vs Sierra Leone: Africa Cup of Nations Qualification stats & head-to-head",
+"u": "https://www.bbc.co.uk/sport/football/live/cqkgjm5yly1vt",
+"s": "BBC"
+},
+{
+"t": "TotalEnergies CAF AFCON 2027 Qualifiers: DR Congo extend perfect run as Guinea-Bissau and Zimbabwe held to draws",
+"u": "https://www.cafonline.com/afcon2025/news/totalenergies-caf-afcon-2027-qualifiers-dr-congo-extend-perfect-run-as-guinea-bissau-and-zimbabwe-held-to-draws/",
+"s": "CAFOnline.com"
+},
+{
+"t": "Poland vs Sweden Prediction, Betting Tips, Team News - 17 November 2026",
+"u": "https://insights.betfred.com/football/sierra-leone-v-congo-dr-prediction-leopards-can-stay-perfect-in-group-e/",
+"s": "Betfred Insights"
+}
+],
+"n": 500
+},
+{
+"t": "emergency",
+"trafico": "2000+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "FEMA and FCC Schedule 2026 Nationwide Test of the Emergency Alert System for November 17",
+"u": "https://www.hstoday.us/subject-matter-areas/emergency-preparedness/fema-and-fcc-schedule-2026-nationwide-test-of-the-emergency-alert-system-for-november-17/",
+"s": "Homeland Security Today"
+},
+{
+"t": "November 17 blackout hoax: How a conspiracy theory went viral around the world - Truth or Fake",
+"u": "https://www.france24.com/en/tv-shows/truth-or-fake/20261116-november-17-blackout-hoax-how-a-conspiracy-theory-went-viral-around-the-world",
+"s": "France 24"
+},
+{
+"t": "No, The Internet Is Not Going Into Global Shutdown On November 17 (Hopefully)",
+"u": "https://www.iflscience.com/no-the-internet-is-not-going-into-global-shutdown-on-november-17-hopefully-85195",
+"s": "IFLScience"
+}
+],
+"n": 2000
+},
+{
+"t": "james blunt ryan air",
+"trafico": "500+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "James Blunt ‘legally changes name to Ryan Air’",
+"u": "https://www.telegraph.co.uk/news/2026/11/17/james-blunt-name-change-ryan-air-album-tops-charts/",
+"s": "The Telegraph"
+},
+{
+"t": "James Blunt appears to confirm legal name change after album success",
+"u": "https://www.independent.co.uk/arts-entertainment/music/news/james-blunt-name-change-airplane-mode-album-b3086232.html",
+"s": "The Independent"
+},
+{
+"t": "James Blunt Flies to His Third U.K. No. 1 Album With ‘Airplane Mode’",
+"u": "https://www.billboard.com/music/chart-beat/james-blunt-airplane-mode-number-one-album-uk-1236381701/",
+"s": "Billboard"
+}
+],
+"n": 500
+},
+{
+"t": "george ford",
+"trafico": "200+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "\"Finished\" - Three players who won’t play for England again",
+"u": "https://www.ruck.co.uk/england-rugby-news/finished-three-players-who-wont-play-for-england-again",
+"s": "Ruck.co.uk"
+},
+{
+"t": "Nations Championship: England's Will Joseph in line to start against New Zealand",
+"u": "https://www.bbc.co.uk/sport/rugby-union/articles/cmx20pnd853po",
+"s": "BBC"
+},
+{
+"t": "Will Joseph poised to start for England against All Blacks after five-try burst",
+"u": "https://www.theguardian.com/sport/2026/nov/16/will-joseph-steve-borthwick-england-new-zealand-nations-championship-rugby-union",
+"s": "The Guardian"
+}
+],
+"n": 200
+},
+{
+"t": "africa cup of nations qualification",
+"trafico": "2000+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "Somalia vs Ghana: Africa Cup of Nations Qualification stats & head-to-head",
+"u": "https://www.bbc.co.uk/sport/football/live/cr62p3jyq2ewt",
+"s": "BBC"
+},
+{
+"t": "Ghana revive TotalEnergies AFCON qualification hopes, Guinea go top and Benin wins it very late",
+"u": "https://www.cafonline.com/afcon2025/news/ghana-revive-totalenergies-afcon-qualification-hopes-guinea-go-top-and-benin-wins-it-very-late/",
+"s": "CAFOnline.com"
+},
+{
+"t": "'We can do even better in the next one' - Kim Lars",
+"u": "https://www.ghanaweb.com/GhanaHomePage/SportsArchive/We-can-do-even-better-in-the-next-one-Kim-Lars-2061507",
+"s": "GhanaWeb"
+}
+],
+"n": 2000
+},
+{
+"t": "lloyd scott",
+"trafico": "200+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "Lloyd Scott: Footballer and prolific charity fundraiser dies",
+"u": "https://www.bbc.co.uk/news/articles/c6x20pvdnqpqo",
+"s": "BBC"
+},
+{
+"t": "England legend pays tribute to goalkeeper who broke London Marathon record",
+"u": "https://www.dailystar.co.uk/sport/football/england-legend-pays-tribute-goalkeeper-37884455",
+"s": "Daily Star"
+},
+{
+"t": "Former football club of charity fundraiser Lloyd Scott pay tribute",
+"u": "https://www.thurrockgazette.co.uk/news/26737416.dagenham-redbridge-pay-tribute-ex-keeper-lloyd-scott/",
+"s": "Thurrock Gazette"
+}
+],
+"n": 200
+},
+{
+"t": "pakistan vs india football",
+"trafico": "200+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "Bangladesh 0-1 Pakistan (14 Nov, 2026) Final Score",
+"u": "https://www.espn.co.uk/football/match/_/gameId/401934183/pakistan-bangladesh",
+"s": "ESPN"
+},
+{
+"t": "India vs Pakistan LIVE: SAFF Championship final",
+"u": "https://www.aljazeera.com/sports/liveblog/2026/11/17/india-vs-pakistan-live-saff-championship-final",
+"s": "Al Jazeera"
+},
+{
+"t": "We know how to hurt India, says Pakistan coach Solano ahead of SAFF Championship final",
+"u": "https://www.dawn.com/news/2044966",
+"s": "Dawn"
+}
+],
+"n": 200
+}
+]
+},
+"FR": {
+"geo": "FR",
+"url": "https://trends.google.com/trending/rss?geo=FR",
+"ok": true,
+"items": [
+{
+"t": "sierra leone – rd congo",
+"trafico": "2000+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "Sierra Leone - RD Congo. À quelle heure et sur quelle chaîne suivre le match des éliminatoires de la CAN 2027 ?",
+"u": "https://www.ouest-france.fr/sport/football/coupe-d-afrique-des-nations/sierra-leone-rd-congo-a-quelle-heure-et-sur-quelle-chaine-suivre-le-match-des-eliminatoires-de-la-can-2027-45e3fdea-e1f5-11f1-9a29-f4bab172af08",
+"s": "Ouest-France"
+},
+{
+"t": "La RD Congo domine la Sierra Leone en qualification pour la CAN et consolide sa place de leader",
+"u": "https://www.lequipe.fr/Football/Actualites/La-rd-congo-domine-la-sierra-leone-en-qualification-pour-la-can-et-consolide-sa-place-de-leader/1743232",
+"s": "L'Équipe"
+},
+{
+"t": "CAN 2027: Sierra Leone-RD Congo, quelle chaîne diffuse le match ?",
+"u": "https://www.sports.fr/football/can/can-2027-sierra-leone-rd-congo-quelle-chaine-diffuse-le-match-1063798.html",
+"s": "Sports.fr"
+}
+],
+"n": 2000
+},
+{
+"t": "miserey-salines",
+"trafico": "500+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "Une jeune femme de 20 ans percutée par un TGV près de Besançon, une enquête ouverte",
+"u": "https://france3-regions.franceinfo.fr/bourgogne-franche-comte/doubs/besancon/une-personne-percutee-par-un-train-pres-de-besancon-les-secours-mobilises-sur-place-3451044.html",
+"s": "France 3 Régions"
+},
+{
+"t": "Doubs. Une jeune femme de 20 ans décède après avoir été percutée par un TGV à Miserey-Salines",
+"u": "https://www.estrepublicain.fr/faits-divers-justice/2026/11/17/une-jeune-femme-de-20-ans-decede-apres-avoir-ete-percutee-par-un-tgv",
+"s": "L'Est Républicain"
+},
+{
+"t": "Miserey-Salines : une jeune femme de 20 ans percutée par un train",
+"u": "https://pleinair.net/actualites/item/22227-miserey-salines-une-jeune-femme-de-20-ans-percutee-par-un-train",
+"s": "Plein Air"
+}
+],
+"n": 500
+},
+{
+"t": "santé mentale",
+"trafico": "200+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "Mieux soutenir les pratiques orientées vers le rétablissement",
+"u": "https://www.santementale.fr/2026/11/mieux-soutenir-les-pratiques-orientees-vers-le-retablissement/",
+"s": "Santé Mentale"
+},
+{
+"t": "On sait enfin pourquoi les personnes TDAH ont du mal à arriver à l’heure",
+"u": "https://www.nouvelobs.com/sciences/20261116.OBS120171/on-sait-enfin-pourquoi-les-personnes-tdah-ont-du-mal-a-arriver-a-l-heure.html",
+"s": "Le Nouvel Obs"
+},
+{
+"t": "TDAH : quels sont ses vrais effets sur la santé ?",
+"u": "https://www.pourquoidocteur.fr/Articles/Question-d-actu/56310-TDAH-vrais-effets-sante",
+"s": "Pourquoi Docteur"
+}
+],
+"n": 200
+},
+{
+"t": "sony",
+"trafico": "200+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "PlayStation defeats $2.6 billion UK class action lawsuit over game pricing",
+"u": "https://www.thegamebusiness.com/p/playstation-defeats-26-billion-uk",
+"s": "The Game Business"
+},
+{
+"t": "Update on £162 payout for PlayStation users after Sony accused of ‘overcharging'",
+"u": "https://www.thesun.co.uk/tech/41050157/playstation-gamers-uk-payout-sony-overcharging/",
+"s": "The Sun"
+},
+{
+"t": "Sony Wins PlayStation Digital Games Lawsuit",
+"u": "https://insider-gaming.com/sony-wins-playstation-digital-games-lawsuit/",
+"s": "Insider Gaming"
+}
+],
+"n": 200
+},
+{
+"t": "togo – algérie",
+"trafico": "5000+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "Togo-Algérie: à quelle heure et sur quelle chaîne TV voir le match de qualification pour la CAN 2027?",
+"u": "https://rmcsport.bfmtv.com/football/coupe-d-afrique-des-nations/togo-algerie-a-quelle-heure-et-sur-quelle-chaine-tv-voir-le-match-de-qualification-pour-la-can-2027_AV-202611170619.html",
+"s": "RMC Sport"
+},
+{
+"t": "DIRECT. Togo - Algérie : suivez le match de la 4e journée des éliminatoires de la CAN 2027 en live",
+"u": "https://www.ouest-france.fr/sport/football/coupe-d-afrique-des-nations/direct/direct-togo-algerie-suivez-le-match-de-la-4e-journee-des-eliminatoires-de-la-can-2027-en-live-11324223-2daa-40f8-a51e-a1371ce1750c",
+"s": "Ouest-France"
+},
+{
+"t": "Algérie : Maza et Hadj Moussa forfait à leur tour : Sports - Orange",
+"u": "https://sports.orange.fr/football/can/article/algerie-maza-et-hadj-moussa-forfait-a-leur-tour-exclu-CNT000002tJFcg.html",
+"s": "Sports - Orange"
+}
+],
+"n": 5000
+},
+{
+"t": "libye – tunisie",
+"trafico": "500+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "Libye - Tunisie. À quelle heure et sur quelle chaîne suivre le match des éliminatoires de la CAN 2027 ?",
+"u": "https://www.ouest-france.fr/sport/football/coupe-d-afrique-des-nations/libye-tunisie-a-quelle-heure-et-sur-quelle-chaine-suivre-le-match-des-eliminatoires-de-la-can-2027-61f9d30a-e1f1-11f1-9a29-f4bab172af08",
+"s": "Ouest-France"
+},
+{
+"t": "L'exploit pour la Libye, la réaction du Nigeria pour les qualifications de la CAN 2027",
+"u": "https://www.lequipe.fr/Football/Actualites/L-exploit-pour-la-libye-la-reaction-du-nigeria-pour-les-qualifications-de-la-can-2027/1743473",
+"s": "L'Équipe"
+},
+{
+"t": "Football : le sélectionneur tunisien en colère contre son équipe qui « ne réussira pas, même avec Guardiola",
+"u": "https://www.leparisien.fr/sports/football/football-le-selectionneur-tunisien-en-colere-contre-son-equipe-qui-ne-reussira-pas-meme-avec-guardiola-14-11-2026-5Y7V63K575DZRPX2QA2PDTTAZY.php",
+"s": "Le Parisien"
+}
+],
+"n": 500
+},
+{
+"t": "nitto atp finals",
+"trafico": "200+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "Nitto, ATP & FITP announce new HVO initiative as part of commitment to cut Nitto ATP Finals carbon emissions",
+"u": "https://www.atptour.com/en/news/new-hvo-initiative-as-part-of-commitment-to-cut-nitto-atp-finals-carbon-emissions",
+"s": "ATP Tour"
+},
+{
+"t": "Moovit & FITP join forces: CO₂ Counter makes debut at the Nitto ATP Finals",
+"u": "https://www.nittoatpfinals.com/en/news/moovit-nitto-atp-finals-2026",
+"s": "Nitto ATP Finals"
+},
+{
+"t": "Medvedev masters home hope Cobolli on Nitto ATP Finals return",
+"u": "https://www.atptour.com/en/news/medvedev-cobolli-nitto-atp-finals-2026-monday",
+"s": "ATP Tour"
+}
+],
+"n": 200
+},
+{
+"t": "frederik x",
+"trafico": "200+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "Frederik X de Danemark pleure la disparition d’un proche collaborateur",
+"u": "https://fr.news.yahoo.com/frederik-x-danemark-pleure-disparition-112100167.html",
+"s": "Yahoo Actualités"
+},
+{
+"t": "Frederik X de Danemark pleure la disparition d’un proche collaborateur",
+"u": "https://www.pointdevue.fr/royal/danemark/frederik-x-de-danemark-pleure-la-disparition-dun-proche-collaborateur",
+"s": "Point de Vue"
+}
+],
+"n": 200
+},
+{
+"t": "croissance économique",
+"trafico": "200+",
+"fecha": "2026-11-17T15:50+01:00",
+"noticias": [
+{
+"t": "La Commission européenne confirme le décrochage de la France dans ses prévisions économiques d’automne",
+"u": "https://www.lemonde.fr/economie/article/2026/11/17/la-commission-europeenne-confirme-le-decrochage-de-la-france-dans-ses-previsions-economiques-d-automne_6812945_3234.html",
+"s": "Le Monde.fr"
+},
+{
+"t": "Dette: la Commission européenne s'attend à une nouvelle dégradation des finances publiques de la France",
+"u": "https://www.lesechos.fr/monde/europe/dette-la-commission-europeenne-sattend-a-une-nouvelle-degradation-des-finances-publiques-de-la-france-2263005",
+"s": "Les Echos"
+},
+{
+"t": "Zone euro : Bruxelles relève ses prévisions de croissance et s'inquiète du déficit français",
+"u": "https://actu.orange.fr/economie/zone-euro-bruxelles-releve-ses-previsions-de-croissance-et-s-inquiete-du-deficit-francais-CNT000002tLppH.html",
+"s": "Orange Actualités"
+}
+],
+"n": 200
+},
+{
+"t": "optimizely",
+"trafico": "200+",
+"fecha": "2026-11-17T15:50+01:00",
+"noticias": [
+{
+"t": "Popular websites compromised in bid to steal crypto, target iPhone users",
+"u": "https://www.reuters.com/legal/government/popular-websites-subverted-bid-steal-crypto-target-iphone-users-2026-11-17/",
+"s": "Reuters"
+},
+{
+"t": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
+"u": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
+"s": "The Hacker News"
+},
+{
+"t": "Cyber Attack Hits 178 Major Websites: Full List of Organizations",
+"u": "https://www.newsweek.com/cyber-attack-websites-affected-12725863",
+"s": "Newsweek"
+}
+],
+"n": 200
+}
+]
+},
+"DE": {
+"geo": "DE",
+"url": "https://trends.google.com/trending/rss?geo=DE",
+"ok": true,
+"items": [
+{
+"t": "michael van gerwen",
+"trafico": "1000+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "Darts-Star Micheal van Gerwen: „Eine der schwierigsten Phasen meines Lebens“",
+"u": "https://sportbild.bild.de/sportmix/darts-star-micheal-van-gerwen-eine-der-schwierigsten-phasen-meines-lebens-6afb0b5b9cd46e5bcae6b437",
+"s": "Sport Bild"
+},
+{
+"t": "High Finish und verfehlte Matchdarts: Coates verpasst Überraschung gegen Van Gerwen",
+"u": "https://www.kicker.de/high-finish-und-verfehlte-matchdarts-coates-verpasst-ueberraschung-gegen-van-gerwen-1271668/video",
+"s": "Kicker"
+},
+{
+"t": "\"Das ist doch nicht zu glauben!\" Thriller um MvG beim Grand Slam of Darts",
+"u": "https://www.sport1.de/news/darts-sport/grand-slam-of-darts/2026/11/darts-michael-van-gerwen-landet-zittersieg",
+"s": "SPORT1"
+}
+],
+"n": 1000
+},
+{
+"t": "heizölpreise sinken",
+"trafico": "200+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "Heizen kostet diesen Winter im Schnitt 2300 Euro mehr",
+"u": "https://www.focus.de/finanzen/heizen-kostet-diesen-winter-im-schnitt-2300-euro-mehr_563f0cef-9e6b-48d7-baed-bfe34fd0a58e.html",
+"s": "FOCUS online"
+},
+{
+"t": "Energiepreise: So teuer wird Heizen diesen Winter",
+"u": "https://www.zeit.de/wirtschaft/2026-11/energiepreise-heizkosten-winter-gas-strom",
+"s": "DIE ZEIT"
+},
+{
+"t": "Heizölpreise bleiben hoch: Jetzt kaufen oder abwarten? Das sagt der Experte",
+"u": "https://www.morgenpost.de/wirtschaft/article413230955/heizoel-kaufen-heizoelpreise-abwarten-bestellen-tipps-experte.html",
+"s": "Berliner Morgenpost"
+}
+],
+"n": 200
+},
+{
+"t": "watenstedt",
+"trafico": "200+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "Feuer am Montagabend - Großeinsatz in Watenstedt",
+"u": "https://regionalheute.de/salzgitter/feuer-am-montagabend-grosseinsatz-in-watenstedt-salzgitter-1794852024/",
+"s": "regionalHeute.de"
+},
+{
+"t": "Rauchschwaden über Watenstedt: Feuerwehr bekämpft Wohnungsbrand",
+"u": "https://www.braunschweiger-zeitung.de/niedersachsen/salzgitter/article413697384/rauchschwaden-ueber-watenstedt-gebaeude-steht-in-brand.html",
+"s": "Braunschweiger Zeitung"
+},
+{
+"t": "Polizei-News Salzgitter, 17.11.26: Pressemitteilung der Polizeiinspektion SZ/PE/WF vom 17.11.2026.",
+"u": "https://www.news.de/lokales/860196610/blaulicht-news-polizei-einsatz-salzgitter-17-11-26-brand-heute/1/",
+"s": "News.de"
+}
+],
+"n": 200
+},
+{
+"t": "the terminal list",
+"trafico": "200+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "‘The Terminal List’ Prequel ‘Cry Havoc’ In The Works At Amazon",
+"u": "https://deadline.com/2026/11/the-terminal-list-prequel-cry-havoc-amazon-1237225564/",
+"s": "Deadline"
+},
+{
+"t": "Fourth ‘Terminal List’ Show in the Works at Prime Video",
+"u": "https://www.imdb.com/fr/news/ni66114345/?ref_=nwc_art_perm",
+"s": "IMDb"
+},
+{
+"t": "‘The Terminal List’ Keeps Growing: Prime Video Developing ‘Cry Havoc’ Spinoff",
+"u": "https://www.thewrap.com/creative-content/tv-shows/the-terminal-list-cry-havoc-spinoff-prime-video/",
+"s": "TheWrap"
+}
+],
+"n": 200
+},
+{
+"t": "björn höcke",
+"trafico": "200+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "Kriegsgedenken: Höcke empört mit Aussagen zu Volkstrauertag",
+"u": "https://www.zeit.de/news/2026-11/17/hoecke-empoert-mit-aussagen-zu-volkstrauertag",
+"s": "DIE ZEIT"
+},
+{
+"t": "Frederik Schindler analysiert Björn Höckes umstrittene Rede zum Volkstrauertag",
+"u": "https://www.welt.de/politik/deutschland/video6afc67ccbb7e7a6679f917d7/frederik-schindler-analysiert-bjoern-hoeckes-umstrittene-rede-zum-volkstrauertag.html",
+"s": "WELT"
+},
+{
+"t": "AfD: Björn Höcke löst mit Aussagen zum Volkstrauertag Empörung aus - Politik - SZ.de",
+"u": "https://www.sueddeutsche.de/politik/bjoern-hoecke-volkstrauertag-afd-antisemitismus-erinnerungskultur-li.3581762",
+"s": "SZ.de"
+}
+],
+"n": 200
+},
+{
+"t": "fahndung",
+"trafico": "2000+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "Nach öffentlicher Fahndung: Vermisste aus Emmerthal gefunden",
+"u": "https://www.tagesschau.de/inland/regional/niedersachsen/nach-oeffentlicher-fahndung-66-jaehrige-aus-emmerthal-gefunden-vermisste,aktuellhannover-3702.html",
+"s": "tagesschau.de"
+},
+{
+"t": "66-Jährige aus Emmerthal vermisst: Wer hat Petra G. gesehen?",
+"u": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/66-jaehrige-aus-emmerthal-vermisst-wer-hat-petra-g-gesehen,aktuellhannover-3702.html",
+"s": "NDR.de"
+},
+{
+"t": "Kirchohsen: Suche nach vermisster Person bislang erfolglos",
+"u": "https://www.radio-aktiv.de/2026/11/14/kirchohsen-suche-nach-vermisster-person-bislang-erfolglos/",
+"s": "radio aktiv"
+}
+],
+"n": 2000
+},
+{
+"t": "karl geiger",
+"trafico": "500+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "Nächster Rückschlag für Skispringer Geiger",
+"u": "https://web.de/magazine/sport/wintersport/skispringen/naechster-rueckschlag-skispringer-geiger-42954854",
+"s": "WEB.DE"
+},
+{
+"t": "Fragen und Antworten: Alles Wichtige zum Skispringen der Männer",
+"u": "https://www.sportschau.de/wintersport/skispringen/alles-wichtige-zum-skispringen-der-maenner,faq-vor-dem-skisprung-weltcup-102.html",
+"s": "sportschau.de"
+},
+{
+"t": "Hier läuft der Skisprung-Weltcup live im TV und Stream",
+"u": "https://www.sport.de/news/ne17349920/hier-laeuft-der-skisprung-weltcup-in-lillehammer-live-im-tv-und-stream/",
+"s": "sport.de"
+}
+],
+"n": 500
+},
+{
+"t": "wagenfeld",
+"trafico": "200+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "200.000 Euro Schaden nach Hausbrand in Wagenfeld",
+"u": "https://www.ndr.de/nachrichten/niedersachsen/oldenburg_ostfriesland/200000-euro-schaden-nach-hausbrand-in-wagenfeld,brand-1210.html",
+"s": "NDR.de"
+},
+{
+"t": "Feuer in der Nacht: Flammen zerstören Wohnhaus in Wagenfeld",
+"u": "https://www.kreiszeitung.de/lokales/diepholz/wagenfeld-ort53277/feuer-in-der-nacht-flammen-zerstoeren-wohnhaus-in-wagenfeld-94593674.html",
+"s": "Kreiszeitung"
+},
+{
+"t": "Dachstuhl eines Mehrfamilienhauses in Wagenfeld gerät in Brand",
+"u": "https://www.weser-kurier.de/landkreis-diepholz/gemeinde-wagenfeld/dachstuhl-eines-mehrfamilienhauses-in-wagenfeld-geraet-in-brand-doc88ibijllqlh1fsfc1834",
+"s": "Weser Kurier"
+}
+],
+"n": 200
+},
+{
+"t": "beelitz",
+"trafico": "200+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "Mehr als 50 Pakete in Waldstück bei Beelitz gefunden",
+"u": "https://www.rbb24.de/panorama/beitrag/2026/11/beelitz-mehr-als-50-pakete-in-waldstueck-gefunden.html",
+"s": "rbb24.de"
+},
+{
+"t": "Polizeiticker Potsdam-Mittelmark: Aktuelle Polizeimeldungen vom 17.11.2026",
+"u": "https://www.maz-online.de/lokales/potsdam-mittelmark/polizeiticker-potsdam-mittelmark-aktuelle-polizeimeldungen-vom-17-11-2026-LNOWYRHH6VC5VEMZMUTYFOS3N4.html",
+"s": "Märkische Allgemeine Zeitung"
+},
+{
+"t": "Mehrere Duzend aufgerissene Pakete in Wald entdeckt",
+"u": "https://polizei.brandenburg.de/pressemeldung/mehrere-duzend-aufgerissene-pakete-in-wa/5716019",
+"s": "Polizei Brandenburg"
+}
+],
+"n": 200
+},
+{
+"t": "säugling",
+"trafico": "1000+",
+"fecha": "2026-11-17T16:00+01:00",
+"noticias": [
+{
+"t": "Rheinland-Pfalz: Baby ausgesetzt: Staatsanwaltschaft Trier klagt 21-Jährige an",
+"u": "https://www.tagesschau.de/inland/regional/rheinlandpfalz/swr-baby-ausgesetzt-staatsanwaltschaft-trier-klagt-21-jaehrige-an-100.html",
+"s": "tagesschau.de"
+},
+{
+"t": "Das fordern Staatsanwaltschaft und Verteidigung",
+"u": "https://www.swr.de/swraktuell/rheinland-pfalz/ludwigshafen/das-fordern-staatsanwaltschaft-und-verteidigung-100.html",
+"s": "SWR"
+},
+{
+"t": "Trier: Mutter (21) angeklagt, weil sie ihr drei Tage altes Baby in einem Park aussetzte",
+"u": "https://www.rtl.de/news/trier-mutter-21-angeklagt-weil-sie-ihr-drei-tage-altes-baby-in-einem-park-aussetzte-id31544555.html",
+"s": "RTL.de"
+}
+],
+"n": 1000
+}
+]
+},
+"IT": {
+"geo": "IT",
+"url": "https://trends.google.com/trending/rss?geo=IT",
+"ok": true,
+"items": [
+{
+"t": "siracusa oggi",
+"trafico": "200+",
+"fecha": "2026-11-17T15:50+01:00",
+"noticias": [
+{
+"t": "Autogru si ribalta per il cedimento del marciapiede, feriti due operai nel siracusano",
+"u": "https://www.siracusaoggi.it/autogru-si-ribalta-per-il-cedimento-del-marciapiede-feriti-due-operai-nel-siracusano/",
+"s": "SiracusaOggi.it"
+},
+{
+"t": "Si capovolge gru a Lentini, due operai precipitano dal quinto piano, interviene l’elisoccorso",
+"u": "https://www.siracusa2000.com/index.php/2026/11/16/si-capovolge-gru-a-lentini-due-operai-precipitano-dal-quinto-piano-interviene-lelisoccorso/",
+"s": "siracusa2000.com"
+},
+{
+"t": "Lentini, camion con cestello si ribalta in via Agnone: due operai feriti, uno è grave",
+"u": "https://www.radiounavocevicina.it/main/lentini-camion-con-cestello-si-ribalta-in-via-agnone-due-operai-feriti-uno-e-grave/",
+"s": "- Radio Una Voce Vicina"
+}
+],
+"n": 200
+},
+{
+"t": "francesi",
+"trafico": "500+",
+"fecha": "2026-11-17T15:40+01:00",
+"noticias": [
+{
+"t": "L'operazione segreta dei soldati francesi in Ucraina, il governo non smentisce e la Russia attacca: «Partecipazione diretta alla guerra»",
+"u": "https://www.corriere.it/esteri/26_novembre_17/francia-operazione-segreta-soldati-ucraina-governo-non-smentisce-russia-partecipazione-guerra-e86ee85b-add7-4c20-99e7-19366b879xlk.shtml",
+"s": "Corriere della Sera"
+},
+{
+"t": "Contingenti militari francesi operano in Ucraina. Mosca: “Lo sappiamo, è partecipazione diretta alla guerra”",
+"u": "https://www.ilfattoquotidiano.it/2026/11/17/soldati-francesi-ucraina-lavrov-guerra-notizie/8574668/",
+"s": "Il Fatto Quotidiano"
+},
+{
+"t": "Polonia, esercitazioni militari di 11 Paesi per l'Ucraina",
+"u": "https://tg24.sky.it/mondo/video/2026/11/17/polonia-esercitazioni-militari-paesi-ucraina-1140585",
+"s": "Sky TG24"
+}
+],
+"n": 500
+},
+{
+"t": "credito",
+"trafico": "2000+",
+"fecha": "2026-11-17T15:30+01:00",
+"noticias": [
+{
+"t": "Credito gasolio, riapre la piattaforma: 60 milioni e domande entro il 30 novembre",
+"u": "https://www.uominietrasporti.it/professione/leggi-e-politica/credito-gasolio-riapre-la-piattaforma-60-milioni-e-domande-entro-il-30-novembre/",
+"s": "Uomini e Trasporti"
+},
+{
+"t": "Credito d’imposta gasolio autotrasporto: al via le domande per il periodo 1°settembre-5 ottobre 2026 dal 16 al 30 novembre 2026",
+"u": "https://www.assotir.it/notizie/news-generiche/credito-dimposta-gasolio-autotrasporto-al-via-le-domande-per-il-periodo-1settembre-5-ottobre-2026-dal-16-al-30-novembre-2026/",
+"s": "Assotir"
+},
+{
+"t": "Comunicati stampa - Caro carburanti, pubblicato il bando da 4 milioni per sostenere le imprese del settore lapideo. Al via le domande. L’assessore Cani: “Un aiuto concreto per tutelare la competitività del comparto”",
+"u": "https://www.regione.sardegna.it/notizie/caro-carburanti-pubblicato-il-bando-da-4-milioni",
+"s": "Regione Autonoma della Sardegna"
+}
+],
+"n": 2000
+},
+{
+"t": "frecciarossa",
+"trafico": "1000+",
+"fecha": "2026-11-17T15:20+01:00",
+"noticias": [
+{
+"t": "Frecciarossa Parigi-Milano con 246 viaggiatori a bordo bloccato sul ponte ferroviario di Rho per tre ore a causa di un guasto elettrico",
+"u": "https://milano.corriere.it/notizie/cronaca/26_novembre_17/rho-treno-dell-alta-velocita-bloccato-su-un-ponte-per-un-guasto-elettrico-430-passeggeri-a-bordo-0737eafe-5b5e-45be-a883-ce37b8a83xlk.shtml",
+"s": "Corriere Milano"
+},
+{
+"t": "Frecciarossa Parigi-Milano bloccato per 3 ore su un ponte a Rho, poi i passeggeri \"in salvo\" su un secondo convoglio",
+"u": "https://www.milanotoday.it/cronaca/treno-frecciarossa-bloccato-parigi-milano.html",
+"s": "MilanoToday"
+},
+{
+"t": "Frecciarossa Parigi-Milano bloccato tre ore su un ponte a Rho dopo un guasto elettrico",
+"u": "https://pasqualepillitteri.it/news/34297/frecciarossa-parigi-milano-bloccato-rho-ponte-guasto",
+"s": "Pasquale Pillitteri"
+}
+],
+"n": 1000
+},
+{
+"t": "dario baccin",
+"trafico": "1000+",
+"fecha": "2026-11-17T15:10+01:00",
+"noticias": [
+{
+"t": "Inter, il talento sloveno Stefan Capin è il primo colpo di Baccin per gennaio",
+"u": "https://www.ilgiornaledellosport.net/2026/11/16/inter-talento-sloveno-stefan-capin-primo-colpo-baccin-gennaio/",
+"s": "Il Giornale dello Sport"
+},
+{
+"t": "TRIBUNA.COM * SERIE A: «COLPO DI MERCATO DELL'INTER: TUTTO FATTO PER UN CLASSE 2011, A GENNAIO IL TESSERAMENTO",
+"u": "https://www.agenziagiornalisticaopinione.it/opinionmix/tribuna-com-serie-a-colpo-di-mercato-dellinter-tutto-fatto-per-un-classe-2011-a-gennaio-il-tesseramento/",
+"s": "agenzia giornalistica opinione"
+},
+{
+"t": "FCINTER1908 / Inter, le mani su Stefan Ćapin: già in gol, tesserato a gennaio. Ecco chi è",
+"u": "https://www.fcinter1908.it/calciomercato/mercato-inter/fcinter1908-inter-le-mani-su-capin/",
+"s": "FC Inter 1908"
+}
+],
+"n": 1000
+},
+{
+"t": "corea del sud",
+"trafico": "2000+",
+"fecha": "2026-11-17T15:10+01:00",
+"noticias": [
+{
+"t": "Incursione aerea russa nella Corea del Sud: Seul fa decollare i caccia",
+"u": "https://www.rainews.it/articoli/2026/11/incursione-aerea-russa-nella-corea-del-sud-seul-fa-decollare-i-caccia-6f46ea5a-50fe-4b7e-95a0-129da116867a.html",
+"s": "RaiNews"
+},
+{
+"t": "Aerei russi nei cieli di Giappone, Sudcorea e Taiwan: Tokyo protesta",
+"u": "https://tg24.sky.it/mondo/2026/11/17/aerei-russi-giappone-corea-sud-taiwan",
+"s": "Sky TG24"
+},
+{
+"t": "Aerei russi violano lo spazio aereo giapponese, Tokyo e la Corea del Sud fanno decollare i caccia",
+"u": "https://www.dire.it/17-11-2026/1290067-aerei-russi-violano-lo-spazio-aereo-giapponese-tokyo-fa-decollare-i-caccia/",
+"s": "Agenzia Dire"
+}
+],
+"n": 2000
+},
+{
+"t": "ascolti tv 16 novembre 2026",
+"trafico": "10000+",
+"fecha": "2026-11-17T15:10+01:00",
+"noticias": [
+{
+"t": "Successo fiction Farouk, Ammirati (Rai Fiction): \"Progetto di grande qualità e forte impatto\"",
+"u": "https://www.rai.it/ufficiostampa/articoli/2026/11/Successo-fiction-Farouk-Ammirati-Rai-Fiction-Progetto-di-grande-qualita-e-forte-impatto-0854ead5-705b-4e0d-ad3d-e2e38b625cfb.html",
+"s": "Rai.it"
+},
+{
+"t": "Stasera in TV: film, programmi e serie di oggi lunedì 16 novembre",
+"u": "https://www.repubblica.it/spettacoli/tv-radio/2026/11/16/news/stasera_in_tv_film_programmi_serie_di_oggi_lunedi_16_novembre-425724736/",
+"s": "la Repubblica"
+},
+{
+"t": "Ascolti tv ieri (16 novembre): Ilary Blasi e il GF Vip si arrendono a Rai 1, cala Giletti, Balivo sale col ‘caso’ Ballando",
+"u": "https://www.libero.it/magazine/news/ascolti-tv-lunedi-16-novembre-2026-chi-ha-vinto-tra-177-giorni-rapimento-farouk-kassam-grande-fratello-vip-giletti-liorni-de-martino-scotti-231682",
+"s": "Libero"
+}
+],
+"n": 10000
+},
+{
+"t": "ministero della giustizia",
+"trafico": "500+",
+"fecha": "2026-11-17T15:00+01:00",
+"noticias": [
+{
+"t": "Programma pilota per avvocati pubblici: 41 persone hanno ottenuto l'abilitazione all'esercizio della professione dal Ministero della Giustizia.",
+"u": "https://www.vietnam.vn/it/thi-diem-luat-su-cong-41-nguoi-duoc-bo-tu-phap-cap-chung-chi-hanh-nghe",
+"s": "Vietnam.vn"
+},
+{
+"t": "Bac Ninh assegna 5 avvocati pubblici ad agenzie chiave.",
+"u": "https://www.vietnam.vn/it/bac-ninh-bo-tri-5-luat-su-cong-tai-cac-co-quan-trong-yeu",
+"s": "Vietnam.vn"
+},
+{
+"t": "Porena: \"Una giustizia lenta scoraggia gli investimenti\"",
+"u": "https://www.ilrestodelcarlino.it/ferrara/cronaca/porena-una-giustizia-lenta-scoraggia-d9f7999c",
+"s": "Il Resto del Carlino"
+}
+],
+"n": 500
+},
+{
+"t": "hilary duff",
+"trafico": "500+",
+"fecha": "2026-11-17T15:00+01:00",
+"noticias": [],
+"n": 500
+},
+{
+"t": "india vs pakistan",
+"trafico": "200+",
+"fecha": "2026-11-17T15:00+01:00",
+"noticias": [
+{
+"t": "India vs. Pakistan LIVE: SAFF Cup Final score, updates and commentary",
+"u": "https://www.espn.in/football/story/_/id/50509628/india-pakistan-live-saff-cup-final-updates",
+"s": "ESPN India"
+},
+{
+"t": "India vs Pakistan football, SAFF Championship 2026 final: Know IND vs PAK match time and where to watch live",
+"u": "https://www.olympics.com/en/news/saff-championship-2026-football-final-india-vs-pakistan-live-streaming",
+"s": "Olympics"
+},
+{
+"t": "India vs Bhutan Ends In A Thrilling Win For The Blue Tigers In SAFF Semi-Finals",
+"u": "https://www.sportscapemagazine.com/blog/india-vs-bhutan-saff-championship-semi-final-win",
+"s": "Sportscape Magazine"
+}
+],
+"n": 200
+}
+]
+},
+"PT": {
+"geo": "PT",
+"url": "https://trends.google.com/trending/rss?geo=PT",
+"ok": true,
+"items": [
+{
+"t": "seleção portuguesa de futebol sub-17",
+"trafico": "200+",
+"fecha": "2026-11-17T16:30+01:00",
+"noticias": [
+{
+"t": "Sub-17: Portugal (com Cristianinho) brilha na segunda parte e segue em frente como líder",
+"u": "https://www.abola.pt/noticias/sub-17-portugal-com-cristianinho-brilha-na-segunda-parte-e-segue-em-frente-como-lider-2026111713074761587",
+"s": "A Bola"
+},
+{
+"t": "Portugal segue para a Ronda 2",
+"u": "https://www.fpf.pt/pt/News/Todas-as-not%C3%ADcias/Not%C3%ADcia/news/58804",
+"s": "FPF"
+},
+{
+"t": "Notícias - António Pereira marca no triunfo da seleção sub-17",
+"u": "https://www.fcporto.pt/pt/noticias/20261117-pt-antonio-pereira-marca-no-triunfo-da-selecao-sub-17",
+"s": "FC Porto"
+}
+],
+"n": 200
+},
+{
+"t": "jorge simão",
+"trafico": "100+",
+"fecha": "2026-11-17T16:30+01:00",
+"noticias": [
+{
+"t": "Jorge Simão já está em Chaves e deverá orientar o primeiro treino esta tarde",
+"u": "https://www.record.pt/futebol/futebol-nacional/2--liga/chaves/detalhe/jorge-simao-ja-esta-em-chaves-e-devera-orientar-o-primeiro-treino-esta-tarde",
+"s": "Record"
+},
+{
+"t": "Mercado: Jorge Simão será o novo treinador do Chaves",
+"u": "https://www.abola.pt/noticias/mercado-jorge-simao-sera-o-novo-treinador-do-chaves-2026111711392039089",
+"s": "A Bola"
+},
+{
+"t": "Jorge Simão sucede a Vítor Martins no comando técnico do Desportivo de Chaves",
+"u": "https://www.rtp.pt/noticias/futebol-nacional/jorge-simao-sucede-a-vitor-martins-no-comando-tecnico-do-desportivo-de-chaves_d1779735",
+"s": "RTP"
+}
+],
+"n": 100
+},
+{
+"t": "bomba",
+"trafico": "200+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "Serviços secretos dos EUA detetam planos do Irão para possível ataque com bomba radioativa em Washington",
+"u": "https://www.dn.pt/internacional/servios-secretos-dos-eua-detetam-planos-do-iro-para-possvel-ataque-com-bomba-radioativa-em-washington",
+"s": "Diário de Notícias"
+},
+{
+"t": "Em direto/ Trump diz que Irão vai \"pagar caro\" se seguir com plano de atacar Washington",
+"u": "https://observador.pt/liveblogs/trump-viaja-hoje-para-as-filipinas-com-encontro-com-putin-e-xi-na-agenda/",
+"s": "Observador"
+},
+{
+"t": "EUA detetam plano iraniano para ataques com bomba a responsáveis da Administração Trump",
+"u": "https://www.jornaldenegocios.pt/economia/mundo/americas/detalhe/eua-detetam-plano-iraniano-para-ataques-com-bomba-a-responsaveis-da-administracao-trump",
+"s": "Jornal de Negócios"
+}
+],
+"n": 200
+},
+{
+"t": "seleção galesa de futebol",
+"trafico": "200+",
+"fecha": "2026-11-17T14:50+01:00",
+"noticias": [
+{
+"t": "Seleção portuguesa tenta em Cardiff assegurar primeiro lugar do grupo de qualificação para a Liga das Nações",
+"u": "https://www.rtp.pt/noticias/selecao-nacional/selecao-portuguesa-tenta-em-cardiff-assegurar-primeiro-lugar-do-grupo-de-qualificacao-para-a-liga-das-nacoes_d1779696",
+"s": "RTP"
+},
+{
+"t": "Jesus mexe na defesa: os onzes prováveis para o encontro frente ao País de Gales",
+"u": "https://maisfutebol.iol.pt/liga-das-nacoes/portugal/jesus-mexe-na-defesa-os-onzes-provaveis-para-o-encontro-frente-ao-pais-de-gales",
+"s": "Maisfutebol"
+},
+{
+"t": "Liga das Nações: as escolhas de Jesus em Gales e o mesmo na bancada",
+"u": "https://www.abola.pt/noticias/liga-das-nacoes-as-escolhas-de-jesus-em-gales-e-o-mesmo-na-bancada-2026111708051542936",
+"s": "A Bola"
+}
+],
+"n": 200
+},
+{
+"t": "sindicato",
+"trafico": "5000+",
+"fecha": "2026-11-17T14:40+01:00",
+"noticias": [
+{
+"t": "Sindicato apela à adesão à greve da Administração Pública",
+"u": "https://www.dnoticias.pt/2026/11/16/513079-sindicato-apela-a-adesao-a-greve-da-administracao-publica/",
+"s": "dnoticias.pt"
+},
+{
+"t": "USAM convoca plenário sindical para preparar concentração marcada para 20 de novembro",
+"u": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30009511/usam-convoca-plenario-sindical-para-preparar-concentracao-marcada-para-20-de-novembro.html",
+"s": "JM Madeira"
+},
+{
+"t": "Sindicato dos Professores da Madeira associa-se à greve geral de sexta-feira",
+"u": "https://sapo.pt/artigo/sindicato-dos-professores-da-madeira-associa-se-a-greve-geral-de-sexta-feira-6afc598456a09239b45c3741",
+"s": "SAPO"
+}
+],
+"n": 5000
+},
+{
+"t": "joão miguel tavares",
+"trafico": "200+",
+"fecha": "2026-11-17T14:40+01:00",
+"noticias": [
+{
+"t": "João Miguel Tavares: “A capacidade do homem de se isolar e viver na sua, mas infeliz, é muito grande”",
+"u": "https://www.publico.pt/2026/11/17/impar/noticia/joao-miguel-tavares-capacidade-homem-isolar-viver-infeliz-2195094",
+"s": "Público"
+},
+{
+"t": "Ministro da mesma tenda, ministro das ULS e ministro do diluviozinho",
+"u": "https://sicnoticias.pt/programas/programa-cujo-nome-estamos-legalmente-impedidos-de-dizer/2026-11-14-video-ministro-da-mesma-tenda-ministro-das-uls-e-ministro-do-diluviozinho-c315b342",
+"s": "SIC Notícias"
+},
+{
+"t": "O diluviozinho e outros temporais",
+"u": "https://expresso.pt/podcasts/governo-sombra/2026-11-14-o-diluviozinho-e-outros-temporais-acd0507e",
+"s": "Expresso"
+}
+],
+"n": 200
+},
+{
+"t": "estados unidos",
+"trafico": "2000+",
+"fecha": "2026-11-17T14:30+01:00",
+"noticias": [
+{
+"t": "Estados Unidos impulsa un proyecto de inteligencia artificial que posicionará a El Salvador como referente tecnológico",
+"u": "https://www.infobae.com/el-salvador/2026/11/17/estados-unidos-impulsa-un-proyecto-de-inteligencia-artificial-que-posicionara-a-el-salvador-como-referente-tecnologico/",
+"s": "Infobae"
+},
+{
+"t": "El Salvador implementará infraestructura de IA respaldada por consorcio estadounidense, Dell y NVIDIA",
+"u": "https://diario.elmundo.sv/economia/el-salvador-implementara-infraestructura-de-ia-respaldada-por-consorcio-estadounidense-dell-y-nvidia",
+"s": "Diario El Mundo"
+},
+{
+"t": "Alerta en Washington: Irán tendría planes para atacar a funcionarios de Trump",
+"u": "https://www.minuto60.com/mundo/ee-uu-alerta-sobre-posible-ataque-iran-gobierno-trump/19057",
+"s": "Minuto60"
+}
+],
+"n": 2000
+},
+{
+"t": "adalberto campos fernandes",
+"trafico": "200+",
+"fecha": "2026-11-17T14:30+01:00",
+"noticias": [
+{
+"t": "Urgências hospitalares: Adalberto Campos Fernandes fala de \"imoralidade atroz\"",
+"u": "https://www.rtp.pt/noticias/mundo/urgencias-hospitalares-adalberto-campos-fernandes-fala-de-imoralidade-atroz_v1779635",
+"s": "RTP"
+},
+{
+"t": "Coordenador do Pacto para a Saúde critica Governo: \"Nenhum ator político pode ficar descansado\" com o se passa nas urgências hospitalares",
+"u": "https://expresso.pt/sociedade/saude/2026-11-17-coordenador-do-pacto-para-a-saude-critica-governo-nenhum-ator-politico-pode-ficar-descansado-com-o-se-passa-nas-urgencias-hospitalares-23b8ced1",
+"s": "Expresso"
+},
+{
+"t": "Conselheiro de Seguro critica “imoralidade atroz” nas urgências hospitalares",
+"u": "https://eco.sapo.pt/2026/11/17/conselheiro-de-seguro-critica-imoralidade-atroz-nas-urgencias-hospitalares/",
+"s": "ECO"
+}
+],
+"n": 200
+},
+{
+"t": "nba 2k27",
+"trafico": "500+",
+"fecha": "2026-11-17T14:00+01:00",
+"noticias": [
+{
+"t": "Loucura do GTA VI chega à NBA: Miami Heat mudam camisola e pavilhão e até já houve alertas para quebra de rendimento",
+"u": "https://www.record.pt/record-gaming/detalhe/loucura-do-gta-vi-chega-a-nba-miami-heat-mudam-camisola-e-pavilhao-e-ate-ja-houve-alertas-para-quebra-de-rendimento",
+"s": "Record"
+},
+{
+"t": "Miami usa lançamento de GTA VI para promover a cidade que serviu de inspiração ao jogo",
+"u": "https://www.jornaldenegocios.pt/multimedia/negocios-tv/detalhe/miami-usa-lancamento-de-gta-vi-para-promover-a-cidade-que-serviu-de-inspiracao-ao-jogo",
+"s": "Jornal de Negócios"
+},
+{
+"t": "GTA 6 permite acesso a NBA 2K27",
+"u": "https://www.eurogamer.pt/gta-6-permite-acesso-a-nba-2k27",
+"s": "Eurogamer.pt"
+}
+],
+"n": 500
+},
+{
+"t": "dodi lukebakio",
+"trafico": "200+",
+"fecha": "2026-11-17T12:50+01:00",
+"noticias": [
+{
+"t": "Benfica: Lukebakio volta para acabar o trabalho",
+"u": "https://www.abola.pt/noticias/benfica-lukebakio-volta-para-acabar-o-trabalho-2026111618561257338",
+"s": "A Bola"
+},
+{
+"t": "Imprensa belga cheia de elogios para jogador do Benfica: «Ele traz sempre algo especial com muita eficiência»",
+"u": "https://bolanarede.pt/nacional/benfica/imprensa-belga-cheia-de-elogios-para-jogador-do-benfica-ele-traz-sempre-algo-especial-com-muita-eficiencia/",
+"s": "Bola na Rede"
+},
+{
+"t": "Lukebakio volta da seleção e Benfica tem nova luta aberta no ataque",
+"u": "https://glorioso1904.pt/lukebakio-volta-da-selecao-e-benfica-tem-nova-luta-aberta-no-ataque",
+"s": "Glorioso 1904"
+}
+],
+"n": 200
+}
+]
+},
+"MX": {
+"geo": "MX",
+"url": "https://trends.google.com/trending/rss?geo=MX",
+"ok": true,
+"items": [
+{
+"t": "scotiabank",
+"trafico": "200+",
+"fecha": "2026-11-17T16:40+01:00",
+"noticias": [
+{
+"t": "CP: Strong volume momentum and prebuilt capacity support a path toward mid-teens earnings growth",
+"u": "https://www.tradingview.com/news/urn:summary_document_transcript:quartr.com:4663121:0-cp-strong-volume-momentum-and-prebuilt-capacity-support-a-path-toward-mid-teens-earnings-growth/",
+"s": "TradingView"
+},
+{
+"t": "CPKC at 26th Annual Scotiabank Transportation & Industrials Conference: growth outlook",
+"u": "https://ca.investing.com/news/stock-market-news/cpkc-at-26th-annual-scotiabank-transportation--industrials-conference-growth-outlook-93CH-4964130",
+"s": "Investing.com Canada"
+},
+{
+"t": "Canadian Pacific Kansas City stock: executives set for Nov. 17 event",
+"u": "https://www.ad-hoc-news.de/boerse/news/corporate-news/canadian-pacific-kansas-city-stock-executives-set-for-nov-17-event/70526550",
+"s": "ad-hoc-news.de"
+}
+],
+"n": 200
+},
+{
+"t": "al calor politico",
+"trafico": "200+",
+"fecha": "2026-11-17T16:40+01:00",
+"noticias": [
+{
+"t": "Cierra la Xalapa-Misantla: Derrumbe en \"La Z\" bloquea la circulación por Frente Frío 6",
+"u": "https://palabrasclaras.mx/estatal/cierra-la-xalapa-misantla-derrumbe-en-la-z-bloquea-la-circulacion-por-frente-frio-6/",
+"s": "PalabrasClaras.mx"
+},
+{
+"t": "Derrumbe causó el cierre total de carretera en Yecuatla, este martes tras fuertes lluvias",
+"u": "https://www.alcalorpolitico.com/informacion/derrumbe-causo-el-cierre-total-de-carretera-en-yecuatla-este-martes-tras-fuertes-lluvias-453522.html",
+"s": "Al Calor Político"
+},
+{
+"t": "Derrumbe bloquea carretera Xalapa-Misantla",
+"u": "https://www.meganoticias.mx/xalapa/noticia/derrumbe-bloquea-carretera-xalapa-misantla/789330",
+"s": "Meganoticias.mx"
+}
+],
+"n": 200
+},
+{
+"t": "kenia - sudáfrica",
+"trafico": "500+",
+"fecha": "2026-11-17T16:30+01:00",
+"noticias": [
+{
+"t": "Kenia vs Sudáfrica EN VIVO, minuto a minuto en Eliminatorias a la Copa Africana",
+"u": "https://www.vavel.com/mx/futbol-internacional/2026/11/17/1279557-kenia-vs-sudafrica-en-vivo-eliminatorias-a-la-copa-africana.html",
+"s": "VAVEL.com"
+},
+{
+"t": "5 pronósticos para la jornada entre semana de Clasificación para la Copa Africana de Naciones",
+"u": "https://www.goal.com/es/apuestas/opinion/pronosticos-entre-semana-clasificacion-copa-africana-de-naciones/A%3Ablt84c968cc12fd74f5",
+"s": "Goal.com"
+},
+{
+"t": "Cómo y dónde ver Kenia vs Sudáfrica EN VIVO por beIN SPORTS",
+"u": "https://www.beinsports.com/es-us/football/africa-cup-of-nations-qualification/articles/c%C3%B3mo-y-d%C3%B3nde-ver-kenia-vs-sud%C3%A1frica-en-vivo-por-bein-sports-2026-11-16",
+"s": "beIN SPORTS"
+}
+],
+"n": 500
+},
+{
+"t": "el economista",
+"trafico": "200+",
+"fecha": "2026-11-17T16:30+01:00",
+"noticias": [
+{
+"t": "VOTUdos",
+"u": "https://www.eleconomista.com.mx/cartones/votudos-20261117-844314.html",
+"s": "El Economista"
+},
+{
+"t": "Un minuto y jamás",
+"u": "https://es-us.noticias.yahoo.com/minuto-jam%C3%A1s-145204203.html",
+"s": "Yahoo"
+},
+{
+"t": "Los China men",
+"u": "https://www.elfinanciero.com.mx/opinion/raymundo-riva-palacio/2026/11/17/los-china-men/",
+"s": "El Financiero"
+}
+],
+"n": 200
+},
+{
+"t": "israel vs austria",
+"trafico": "100+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "Israel vs Austria Bet Builder Tips Tonight (7.45pm KO): our 5/1 three-leg pick",
+"u": "https://www.squawka.com/en/news/israel-vs-austria-bet-builder-tips-tonight-17-11-2026/",
+"s": "Squawka"
+},
+{
+"t": "Israel vs. Austria live today: Who is showing the match on TV and via live stream?",
+"u": "https://www.goal.com/en-ca/news/israel-vs-austria-live-today-who-is-showing-the-match-on-tv-and-via-live-stream/blt59741e7c19677e2f",
+"s": "Goal.com"
+},
+{
+"t": "Israel vs Austria Prediction, Betting Tips, Team News - 17 November 2026",
+"u": "https://insights.betfred.com/football/israel-vs-austria-prediction-betting-tips-tuesday-17-november-2026/",
+"s": "Betfred Insights"
+}
+],
+"n": 100
+},
+{
+"t": "nitto atp finals",
+"trafico": "100+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "Alcaraz dispatches Tiafoe for opening win in Turin",
+"u": "https://www.atptour.com/en/news/alcaraz-tiafoe-nitto-atp-finals-2026-monday",
+"s": "ATP Tour"
+},
+{
+"t": "'Superman' Alcaraz fires warning shot with Medvedev next in line | Daily Sabah",
+"u": "https://www.dailysabah.com/sports/tennis/superman-alcaraz-fires-warning-shot-with-medvedev-next-in-line",
+"s": "Daily Sabah"
+},
+{
+"t": "ATP Finals",
+"u": "https://www.reutersconnect.com/item/atp-finals/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkcxMUNINVA%3D?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
+"s": "Reuters Connect"
+}
+],
+"n": 100
+},
+{
+"t": "posiciones de selección de fútbol de malaui contra selección de fútbol de egipto",
+"trafico": "500+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "Malawi vs Egypt: Africa Cup of Nations Qualification stats & head-to-head",
+"u": "https://www.bbc.com/sport/football/live/c54gnlrrgwn9t",
+"s": "BBC"
+},
+{
+"t": "Salah breaks Egypt scoring record as Tunisia lose to Libya",
+"u": "https://www.reuters.com/sports/soccer/salah-breaks-egypt-scoring-record-tunisia-lose-libya-2026-11-13/",
+"s": "Reuters"
+},
+{
+"t": "Mohamed Salah becomes Egypt's all-time record goalscorer",
+"u": "https://www.liverpoolfc.com/news/mohamed-salah-becomes-egypt-all-time-record-goalscorer",
+"s": "Liverpool FC"
+}
+],
+"n": 500
+},
+{
+"t": "josh o'connor",
+"trafico": "200+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "Josh O'Connor WON'T be the next James Bond as actor 'turns down role' after previously insisting he would be 'taking some time out' in 2027",
+"u": "https://www.dailymail.com/tvshowbiz/article-16282763/Josh-OConnor-WONT-James-Bond.html",
+"s": "Daily Mail"
+},
+{
+"t": "Southampton-born actor misses out on James Bond role",
+"u": "https://www.dailyecho.co.uk/news/26733943.southampton-star-josh-oconnor-misses-becoming-007/",
+"s": "Daily Echo"
+},
+{
+"t": "Denis Villeneuve Originally Wanted Josh O'Connor For James Bond Before He Pulled Himself Out Of Contention",
+"u": "https://theplaylist.net/denis-villeneuve-josh-oconnor-james-bond-bond-26-20261117/",
+"s": "The Playlist"
+}
+],
+"n": 200
+},
+{
+"t": "arabia saudita vs",
+"trafico": "200+",
+"fecha": "2026-11-17T16:00+01:00",
+"noticias": [
+{
+"t": "Nuevo golpe: Arabia Saudí pierde a su estrella para el amistoso ante Uzbekistán",
+"u": "https://www.goal.com/es-mx/noticias/nuevo-golpe-arabia-saudi-pierde-a-su-estrella-para-el-amistoso-ante-uzbekistan/blt09fd3602a31fa391",
+"s": "Goal.com"
+},
+{
+"t": "Apuestas Arabia Saudita - Uzbekistán",
+"u": "https://gainblers.com/es/apuestas/futbol/internacional/amistosos/arabiasaudita-uzbekistan/",
+"s": "Gainblers"
+},
+{
+"t": "Arabia Saudita vs Uzbekistán EN VIVO, resultado, goles y minuto a minuto en partido amistoso (0-0)",
+"u": "https://www.vavel.com/mx/futbol-internacional/2026/11/17/1279567-arabia-saudita-vs-uzbekistan-en-vivo-partido-amistoso.html",
+"s": "VAVEL.com"
+}
+],
+"n": 200
+},
+{
+"t": "whats",
+"trafico": "200+",
+"fecha": "2026-11-17T16:00+01:00",
+"noticias": [
+{
+"t": "‘This is only a test’: Tuesday’s emergency alert test comes at anxious moment in the US",
+"u": "https://www.cnn.com/2026/11/16/media/eas-test-federal-emergency-alert-system-fema-media",
+"s": "CNN"
+},
+{
+"t": "FEMA will test its Emergency Alert System today. Here’s what to expect.",
+"u": "https://www.washingtonpost.com/nation/2026/11/17/fema-test-its-emergency-alert-system-tuesday/",
+"s": "The Washington Post"
+},
+{
+"t": "FEMA and FCC Schedule 2026 Nationwide Test of the Emergency Alert System for November 17",
+"u": "https://www.hstoday.us/subject-matter-areas/emergency-preparedness/fema-and-fcc-schedule-2026-nationwide-test-of-the-emergency-alert-system-for-november-17/",
+"s": "Homeland Security Today"
+}
+],
+"n": 200
+}
+]
+},
+"AR": {
+"geo": "AR",
+"url": "https://trends.google.com/trending/rss?geo=AR",
+"ok": true,
+"items": [
+{
+"t": "posiciones de selección de fútbol de malaui contra selección de fútbol de egipto",
+"trafico": "500+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "Malawi vs Egypt: Africa Cup of Nations Qualification stats & head-to-head",
+"u": "https://www.bbc.com/sport/football/live/c54gnlrrgwn9t",
+"s": "BBC"
+},
+{
+"t": "Salah breaks Egypt scoring record as Tunisia lose to Libya",
+"u": "https://www.reuters.com/sports/soccer/salah-breaks-egypt-scoring-record-tunisia-lose-libya-2026-11-13/",
+"s": "Reuters"
+},
+{
+"t": "Mohamed Salah becomes Egypt's all-time record goalscorer",
+"u": "https://www.liverpoolfc.com/news/mohamed-salah-becomes-egypt-all-time-record-goalscorer",
+"s": "Liverpool FC"
+}
+],
+"n": 500
+},
+{
+"t": "nadia podoroska",
+"trafico": "200+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "November 18, 2026: Florian Broska vs Christian Langmo Prediction Market",
+"u": "https://robinhood.com/us/en/prediction-markets/tennis/events/8c1c82c2-266f-4e09-ab03-a0f3f31931c1/",
+"s": "Robinhood"
+},
+{
+"t": "November 16, 2026: Michael Agwi vs Luka Mikrut Tennis Prediction Market",
+"u": "https://robinhood.com/us/en/prediction-markets/tennis/events/c0d36ca1-2d2f-4385-ba42-887cf86b1c58/",
+"s": "Robinhood"
+},
+{
+"t": "November 17, 2026: Theodore Dean vs Drew Van Orderlain Tennis Prediction Market",
+"u": "https://robinhood.com/us/en/prediction-markets/tennis/events/20ab6a9d-6a7f-48cc-b0bf-59452c0fb0fa/",
+"s": "Robinhood"
+}
+],
+"n": 200
+},
+{
+"t": "moratoria",
+"trafico": "200+",
+"fecha": "2026-11-17T15:50+01:00",
+"noticias": [
+{
+"t": "Jubilaciones de Anses: cuánto cobro en diciembre 2026 con el aumento, el bono y el aguinaldo",
+"u": "https://www.lanacion.com.ar/economia/jubilaciones-de-anses-cuanto-cobro-en-noviembre-2026-con-el-aumento-el-bono-y-el-aguinaldo-nid16112026/",
+"s": "La Nación"
+},
+{
+"t": "Jubilados de Anses: qué día cobran el aguinaldo en diciembre 2026",
+"u": "https://www.eldia.com/la-ciudad/en-anses-confirman-la-fecha-de-pago-del-aguinaldo-la-ciudad_1794892351",
+"s": "Diario El Día de La Plata"
+},
+{
+"t": "Aguinaldo para jubilados ANSES: de cuánto sería el SAC con el último aumento del año",
+"u": "https://www.cronista.com/informacion-gral/aguinaldo-para-jubilados-anses-de-cuanto-seria-el-sac-con-el-ultimo-aumento-del-ano/",
+"s": "El Cronista"
+}
+],
+"n": 200
+},
+{
+"t": "periodista nelson castro",
+"trafico": "100+",
+"fecha": "2026-11-17T15:50+01:00",
+"noticias": [
+{
+"t": "Furia en las redes libertarias por lo que dijo Nelson Castro sobre Milei",
+"u": "https://noticias.perfil.com/noticias/politica/furia-en-las-redes-libertarias-por-lo-que-dijo-nelson-castro-sobre-milei.phtml",
+"s": "Revista Noticias"
+},
+{
+"t": "La homilía histórica del presidente Milei",
+"u": "https://www.infobae.com/opinion/2026/11/15/la-homilia-historica-del-presidente-milei/",
+"s": "Infobae"
+},
+{
+"t": "Tomás Dente explotó en vivo contra Nelson Castro por criticar a Milei: \"Estoy como loco\"",
+"u": "https://www.eldestapeweb.com/espectaculos/tomas-dente-exploto-vivo-nelson-castro-criticar-milei-estoy-loco-20261116135556",
+"s": "El Destape"
+}
+],
+"n": 100
+},
+{
+"t": "nigeria vs",
+"trafico": "100+",
+"fecha": "2026-11-17T15:50+01:00",
+"noticias": [
+{
+"t": "Nigeria captain Wilfred Ndidi thrilled by Super Eagles' emerging talents",
+"u": "https://www.flashscore.com/news/soccer-africa-cup-of-nations-nigeria-captain-wilfred-ndidi-thrilled-by-super-eagles-emerging-talents/j74SpR2s/",
+"s": "Flashscore.com"
+},
+{
+"t": "'I don't care' - Eric Chelle fires back at critics over Super Eagles tactics",
+"u": "https://www.pulse.ng/story/eric-chelle-fires-back-at-critics-over-super-eagles-tactics-2026111707172805746",
+"s": "Pulse Nigeria"
+},
+{
+"t": "“Scoring Is My Job, But Winning Is What Matters” – Arokodare’s Message Ahead of Tanzania Clash",
+"u": "https://www.sports247.ng/scoring-is-my-job-but-winning-is-what-matters-arokodares-message-ahead-of-tanzania-clash/",
+"s": "Sports247 Nigeria"
+}
+],
+"n": 100
+},
+{
+"t": "mercado de divisas",
+"trafico": "500+",
+"fecha": "2026-11-17T15:10+01:00",
+"noticias": [
+{
+"t": "Dólar: el tipo de cambio real tocó mínimos desde el inicio del esquema de bandas y crece la alerta por la demanda de divisas",
+"u": "https://www.ambito.com/economia/dolar-el-tipo-cambio-real-toco-minimos-el-inicio-del-esquema-bandas-y-crece-la-alerta-la-demanda-divisas-n6345728",
+"s": "Ambito"
+},
+{
+"t": "Dólar: el tipo de cambio real toca mínimos desde el inicio de las bandas y crece la alerta por la demanda de divisas",
+"u": "https://rosariofinanzas.ar/noticias/dolar-el-tipo-de-cambio-real-toca-minimos-desde-el-inicio-de-las-bandas-y-crece-la-alerta-por-la-demanda-de-divisas",
+"s": "Rosario Finanzas"
+},
+{
+"t": "Un índice del Banco Central muestra que el peso vuelve a acelerar su apreciación",
+"u": "https://www.lanacion.com.ar/economia/un-indice-del-banco-central-muestra-que-el-peso-vuelve-a-acelerar-su-apreciacion-nid12112026/",
+"s": "La Nación"
+}
+],
+"n": 500
+},
+{
+"t": "médico",
+"trafico": "100+",
+"fecha": "2026-11-17T15:10+01:00",
+"noticias": [
+{
+"t": "Agravaron la imputación contra el entrenador de rugby que golpeó a un médico en una pizzería y le agregaron un antecedente",
+"u": "https://www.lanacion.com.ar/seguridad/agravaron-la-imputacion-contra-el-entrenador-de-rugby-que-golpeo-a-un-medico-en-una-pizzeria-y-le-nid16112026/",
+"s": "La Nación"
+},
+{
+"t": "El relato de otra víctima del profesor de rugby que golpeó a un médico en Córdoba: “Me fracturó el cráneo”",
+"u": "https://www.infobae.com/sociedad/policiales/2026/11/17/el-relato-de-otra-victima-del-profesor-de-rugby-que-golpeo-a-un-medico-en-cordoba-me-fracturo-el-craneo/",
+"s": "Infobae"
+},
+{
+"t": "El relato del médico atacado por un rugbier en una pizzería de Córdoba: \"Me podría haber matado\"",
+"u": "https://tn.com.ar/policiales/2026/11/16/el-dramatico-relato-del-medico-atacado-por-un-rugbier-en-una-pizzeria-de-cordoba-me-podria-haber-matado/",
+"s": "TN"
+}
+],
+"n": 100
+},
+{
+"t": "egipto vs",
+"trafico": "500+",
+"fecha": "2026-11-17T14:50+01:00",
+"noticias": [
+{
+"t": "Con una celebración especial para Salah, Egipto reabre el debate sobre su máximo goleador histórico",
+"u": "https://www.goal.com/es/noticias/con-una-celebracion-especial-para-salah-egipto-reabre-el-debate-sobre-su-maximo-goleador-historico/blt57d4a4a548b44b08",
+"s": "Goal.com"
+},
+{
+"t": "Panenkazo de Salah para agrandar su leyenda y minutos para Hamza Abdelkarim",
+"u": "https://www.mundodeportivo.com/futbol/internacional/20261113/1004250792/panenkazo-salah-agrandar-leyenda-minutos-hamza-abdelkarim.html",
+"s": "Mundo Deportivo"
+},
+{
+"t": "¿Cuál es la situación de Mohamed Salah? Ali Maher sorprende a Malaui con dos cambios",
+"u": "https://es-us.noticias.yahoo.com/deportes/cu%C3%A1l-situaci%C3%B3n-mohamed-salah-ali-120531213.html",
+"s": "Yahoo"
+}
+],
+"n": 500
+},
+{
+"t": "rafael jódar",
+"trafico": "200+",
+"fecha": "2026-11-17T14:50+01:00",
+"noticias": [
+{
+"t": "Arthur Fils vs. Rafael Jódar: a qué hora juegan y dónde ver en vivo las ATP Finals 2026",
+"u": "https://www.espn.com.ar/tenis/nota/_/id/17523189/arthur-fils-vs-rafael-jodar-a-que-hora-juegan-y-donde-ver-en-vivo-las-atp-finals-2026-resultado",
+"s": "ESPN Argentina"
+},
+{
+"t": "Arthur Fils - Rafa Jódar: resumen, resultado y estadísticas de las ATP Finals",
+"u": "https://www.marca.com/tenis/copa-masters/arthur-fils-rafa-jodar/2026/11/17/04_0414_20261117_5-directo.html",
+"s": "MARCA"
+},
+{
+"t": "Arthur Fils derrota a Rafa Jódar y agota las opciones del español",
+"u": "https://www.infobae.com/america/agencias/2026/11/17/arthur-fils-derrota-a-rafa-jodar-y-agota-las-opciones-del-espanol/",
+"s": "Infobae"
+}
+],
+"n": 200
+},
+{
+"t": "paraguay vs",
+"trafico": "2000+",
+"fecha": "2026-11-17T14:10+01:00",
+"noticias": [
+{
+"t": "Ver EN VIVO Japón vs Paraguay: dónde seguirlo por TV y ONLINE",
+"u": "https://www.tycsports.com/amistosos-de-selecciones/japon-vs-paraguay-en-vivo-donde-ver-por-tv-y-online-id771139.html",
+"s": "TyC Sports"
+},
+{
+"t": "El elogio top de Gustavo Alfaro para Japón: \"Está entre las diez mejores selecciones del mundo\"",
+"u": "https://www.ole.com.ar/futbol-internacional/america/gustavo-alfaro-paraguay-japon-fecha-fifa-amistoso_0_pyEifCTwzA.html",
+"s": "Olé"
+},
+{
+"t": "Paraguay venció 2-1 a Japón, en un amistoso internacional",
+"u": "https://www.lanacion.com.ar/deportes/canchallena/paraguay-vencio-2-1-a-japon-en-un-amistoso-internacional-nid17112026/",
+"s": "La Nación"
+}
+],
+"n": 2000
+}
+]
+},
+"BR": {
+"geo": "BR",
+"url": "https://trends.google.com/trending/rss?geo=BR",
+"ok": true,
+"items": [
+{
+"t": "hora extra",
+"trafico": "200+",
+"fecha": "2026-11-17T16:30+01:00",
+"noticias": [
+{
+"t": "Dino decide julgar mérito de ações que questionam escala 5x2, diz que liminar segue valendo e dá prazo para partes se manifestarem",
+"u": "https://g1.globo.com/politica/noticia/2026/11/17/escala-5x2-decisao-dino.ghtml",
+"s": "G1"
+},
+{
+"t": "Dino dá prazos para manifestações antes de levar fim da 6x1 ao plenário do STF",
+"u": "https://noticias.uol.com.br/politica/ultimas-noticias/2026/11/17/dino-prazos-manifestacoes-6x1.ghtm",
+"s": "UOL Notícias"
+},
+{
+"t": "STF pode barrar o fim da escala 6×1? O que diz o autor da proposta",
+"u": "https://veja.abril.com.br/politica/stf-pode-barrar-o-fim-da-escala-6x1-o-que-diz-o-autor-da-proposta/",
+"s": "VEJA"
+}
+],
+"n": 200
+},
+{
+"t": "poliana rocha",
+"trafico": "2000+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "Poliana Rocha celebra 50 anos com luxo, presença da família e ausência de Virgínia; saiba o que rolou",
+"u": "https://gshow.globo.com/cultura-pop/famosos/noticia/poliana-rocha-celebra-50-anos-com-luxo-presenca-da-familia-e-ausencia-de-virginia-saiba-o-que-rolou.ghtml",
+"s": "Gshow"
+},
+{
+"t": "Poliana Rocha faz 50 anos com festa de luxo em Goiânia e convidados sem celular",
+"u": "https://www.uol.com.br/splash/noticias/2026/11/16/poliana-rocha-faz-50-anos-com-festa-em-goiania-e-convidados-sem-celular.ghtm",
+"s": "UOL"
+},
+{
+"t": "Roupa de Margareth Serrão na festa de Poliana Rocha vira assunto: 'Igual a Patrícia Abravanel'",
+"u": "https://www.terra.com.br/diversao/gente/roupa-de-margareth-serrao-na-festa-de-poliana-rocha-vira-assunto-igual-a-patricia-abravanel,39019a14121fb43fa7be6b172f131b3453b8eize.html",
+"s": "Terra"
+}
+],
+"n": 2000
+},
+{
+"t": "poupança",
+"trafico": "200+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "STJ: Poupança usada como conta-corrente não afasta impenhorabilidade",
+"u": "https://www.migalhas.com.br/quentes/468727/stj-poupanca-usada-como-conta-corrente-nao-afasta-impenhorabilidade",
+"s": "Migalhas"
+},
+{
+"t": "Poupança de até 40 salários mínimos usada como conta-corrente não pode ser penhorada, define STJ",
+"u": "https://extra.globo.com/economia/noticia/2026/11/poupanca-de-ate-40-salarios-minimos-usada-como-conta-corrente-nao-pode-ser-penhorada-define-stj.ghtml",
+"s": "Extra online"
+},
+{
+"t": "Repetitivo: impenhorabilidade de poupança e outros investimentos",
+"u": "https://www.stj.jus.br/sites/portalp/paginas/comunicacao/noticias/2026/17112026-poupanca-usada-como-conta-corrente-nao-afasta-impenhorabilidade--define-corte-especial-em-repetitivo.aspx",
+"s": "STJ - Superior Tribunal de Justiça"
+}
+],
+"n": 200
+},
+{
+"t": "graduação",
+"trafico": "200+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "Ministro promete para este mês regra que afeta pós-graduação EAD: ‘Barriga de aluguel tem de acabar’",
+"u": "https://www.estadao.com.br/educacao/ministro-promete-para-este-mes-regra-que-afeta-pos-graduacao-ead-barriga-de-aluguel-tem-de-acabar/",
+"s": "Estadão"
+},
+{
+"t": "MEC fiscaliza pós-graduação para combater irregularidades",
+"u": "https://ultimosegundo.ig.com.br/educacao/2026-11-16/mec-fiscaliza-pos-graduacao-para-combater-irregularidades.html",
+"s": "iG Último Segundo"
+},
+{
+"t": "Mercado de pós-graduação online explode com cursos “barriga de aluguel” e sem supervisão do MEC",
+"u": "https://www.apufsc.org.br/2026/11/16/mercado-de-pos-graduacao-online-explode-com-cursos-barriga-de-aluguel-e-sem-supervisao-do-mec/",
+"s": "Apufsc-Sindical"
+}
+],
+"n": 200
+},
+{
+"t": "mina naval",
+"trafico": "200+",
+"fecha": "2026-11-17T15:40+01:00",
+"noticias": [
+{
+"t": "Petroleiro pega fogo no Estreito de Ormuz e Irã faz novo ataque ao Bahrein após volta de tensões no Oriente Médio",
+"u": "https://g1.globo.com/mundo/noticia/2026/11/17/petroleiro-estreito-de-ormuz-tripulacao-desaparecida.ghtml",
+"s": "G1"
+},
+{
+"t": "Petroleiros são atacados em Hormuz e drone causa alerta no Iraque",
+"u": "https://noticias.uol.com.br/internacional/ultimas-noticias/2026/11/17/petroleiros-sao-atacados-em-ormuz-e-drone-causa-alerta-no-iraque.ghtm",
+"s": "UOL Notícias"
+},
+{
+"t": "Irã diz que afundou supernavio com 2 milhões de barris de petróleo",
+"u": "https://www.dw.com/pt-br/ir%C3%A3-diz-que-afundou-supernavio-com-2-milh%C3%B5es-de-barris-de-petr%C3%B3leo/a-79952899",
+"s": "DW.com"
+}
+],
+"n": 200
+},
+{
+"t": "amaury lorenzo",
+"trafico": "200+",
+"fecha": "2026-11-17T15:40+01:00",
+"noticias": [
+{
+"t": "Sucesso em 'Por você', Amaury Lorenzo reflete: 'Já passei fome, como vou me deslumbrar?'",
+"u": "https://extra.globo.com/entretenimento/tv/noticia/2026/11/sucesso-em-por-voce-amaury-lorenzo-reflete-ja-passei-fome-como-vou-me-deslumbrar.ghtml",
+"s": "Extra online"
+},
+{
+"t": "“Já passei fome”: Amaury Lorenzo revela dificuldades antes de conquistar a fama",
+"u": "https://ncnews.com.br/2026/11/17/amaury-lorenzo-passou-fome-antes-da-fama/",
+"s": "ncnews.com.br"
+},
+{
+"t": "De tiro nas costas a inspiração para a TV: história pessoal de Amaury Lorenzo é contada na novela 'Por você'",
+"u": "https://extra.globo.com/entretenimento/tv/noticia/2026/11/de-tiro-nas-costas-a-inspiracao-para-a-tv-historia-pessoal-de-amaury-lorenzo-e-contada-na-novela-por-voce.ghtml",
+"s": "Extra online"
+}
+],
+"n": 200
+},
+{
+"t": "nigeria fc",
+"trafico": "200+",
+"fecha": "2026-11-17T15:30+01:00",
+"noticias": [
+{
+"t": "Fans thank Abia govt for sacking Enyimba management, call for total turnaround",
+"u": "https://dailypost.ng/2026/11/17/fans-thank-abia-govt-for-sacking-enyimba-management-call-for-total-turnaround/",
+"s": "Daily Post Nigeria"
+},
+{
+"t": "Abia govt sacks Kanu Nwankwo as Eyimba FC Chairman – FRCN HQ",
+"u": "https://radionigeria.gov.ng/2026/11/17/abia-govt-sacks-kanu-nwankwo-as-eyimba-fc-chairman/",
+"s": "FRCN HQ"
+},
+{
+"t": "NPFL: Abia government moves to rescue Enyimba, Abia Warriors",
+"u": "https://nigerianobservernews.com/2026/11/npfl-abia-government-moves-to-rescue-enyimba-abia-warriors/",
+"s": "The Nigerian Observer"
+}
+],
+"n": 200
+},
+{
+"t": "carminha",
+"trafico": "2000+",
+"fecha": "2026-11-17T15:10+01:00",
+"noticias": [
+{
+"t": "Ibope da reprise de Avenida Brasil dá recado claro à Globo sobre continuação",
+"u": "https://noticiasdatv.uol.com.br/noticia/novelas/ibope-da-reprise-de-avenida-brasil-da-recado-claro-a-globo-sobre-continuacao-159362",
+"s": "Notícias da TV"
+},
+{
+"t": "Resumo de Avenida Brasil (16 a 20/11): Completamente fora de si, Max sequestra Carminha e Nina e transforma a casa de Lucinda em fogueira",
+"u": "https://www.adorocinema.com/noticias/series/noticia-1000232587/",
+"s": "AdoroCinema"
+},
+{
+"t": "'Avenida Brasil': Tufão expulsa Carminha da mansão e Ivana ameaça Max com uma faca nesta segunda (16)",
+"u": "https://www.diariodolitoral.com.br/entretenimento/avenida-brasil-tufao-expulsa-carminha-da-mansao-e-ivana-ameaca-max-com-uma-faca-nesta-segunda-16/",
+"s": "Diário do Litoral"
+}
+],
+"n": 2000
+},
+{
+"t": "manifestação",
+"trafico": "1000+",
+"fecha": "2026-11-17T15:00+01:00",
+"noticias": [
+{
+"t": "[PR] SISMMAR questiona projetos que ameaçam direitos dos servidores",
+"u": "https://cnte.org.br/noticias/pr-sismmar-questiona-projetos-que-ameacam-direitos-dos-servidores-791f",
+"s": "CNTE-CUT"
+},
+{
+"t": "Trabalhadores da prefeitura de Araucária farão manifestação contra cortes no VA",
+"u": "https://www.plural.jor.br/trabalhadores-da-prefeitura-de-araucaria-farao-manifestacao-contra-cortes-no-va/",
+"s": "Jornal Plural"
+},
+{
+"t": "Dino decide julgar mérito de ações que questionam escala 5x2, diz que liminar segue valendo e dá prazo para partes se manifestarem",
+"u": "https://g1.globo.com/politica/noticia/2026/11/17/escala-5x2-decisao-dino.ghtml",
+"s": "G1"
+}
+],
+"n": 1000
+},
+{
+"t": "stf escultura xango",
+"trafico": "1000+",
+"fecha": "2026-11-17T14:40+01:00",
+"noticias": [
+{
+"t": "Símbolo da Justiça, Oxê de Xangô será inaugurado no STF nesta terça-feira",
+"u": "https://www.migalhas.com.br/quentes/468628/simbolo-da-justica-oxe-de-xango-sera-inaugurado-no-stf-nesta-terca",
+"s": "Migalhas"
+},
+{
+"t": "Opinião - Rodrigo Toniol: Por mais machados de Xangô nos tribunais brasileiros",
+"u": "https://www1.folha.uol.com.br/colunas/rodrigo-toniol/2026/11/por-mais-machados-de-xango-nos-tribunais-brasileiross.shtml",
+"s": "Folha de S.Paulo"
+},
+{
+"t": "Oxê de Xangô",
+"u": "https://agenciabrasil.ebc.com.br/tags/oxe-de-xango",
+"s": "Agência Brasil"
+}
+],
+"n": 1000
+}
+]
+},
+"IN": {
+"geo": "IN",
+"url": "https://trends.google.com/trending/rss?geo=IN",
+"ok": true,
+"items": [
+{
+"t": "kenya vs south africa",
+"trafico": "500+",
+"fecha": "2026-11-17T16:30+01:00",
+"noticias": [
+{
+"t": "Kenya v South Africa - Kick off time, how to watch Bafana in second AFCON qualifier",
+"u": "https://www.espn.in/espn/story/_/id/50499451/kenya-bafana-kick-how-watch-afcon-qualifier",
+"s": "ESPN India"
+},
+{
+"t": "McCarthy declares zero sympathy for home country ahead of duel with Harambee Stars",
+"u": "https://capitalfm.africa/mccarthy-declares-zero-sympathy-for-home-country-ahead-of-duel-with-harambee-stars/",
+"s": "Capital FM Africa"
+},
+{
+"t": "Bafana’s qualification route demands and calculations",
+"u": "https://www.kickoff.com/psl/sa-national-teams/bafana-bafana-in-qualification-mountain-climb",
+"s": "KickOff"
+}
+],
+"n": 500
+},
+{
+"t": "আগামীকালের আবহাওয়া",
+"trafico": "20000+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "ঘূর্ণিঝড়ে পরিণত ‘আকভান’, শক্তি বাড়িয়ে চলতি সপ্তাহেই ল্যান্ডফল! বাংলার ৬ জেলায় হলুদ সতর্কতা",
+"u": "https://www.thewall.in/west-bengal/cyclone-akvan-intensifies-moves-towards-coast-west-bengal-weather-alert/tid/209613",
+"s": "TheWall"
+},
+{
+"t": "আগামী ৫ দিন...! আবহাওয়ার তুমুল রদবদলের হুঁশিয়ারি, দক্ষিণবঙ্গের ৬ জেলা কাঁপাবে ঝড়, বৃষ্টি, বজ্রপাত, কী হবে কলকাতায়? জানিয়ে দিল IMD",
+"u": "https://bengali.news18.com/photogallery/kolkata/imd-bengal-weather-update-the-next-5-days-rainfall-forecast-for-6-districts-of-south-bengal-stormy-wind-rain-lightning-to-hit-these-states-what-will-happen-in-kolkata-imd-gave-report-sanj-2966272.html",
+"s": "News18 Bengali"
+},
+{
+"t": "WB Cyclone Alerts: ঘূর্ণিঝড় 'আখভান'র দাপটে বঙ্গে অতিভারী বৃষ্টির শঙ্কা! আগামী কয়েকদিন কেমন থাকবে আবহাওয়া?",
+"u": "https://bangla.asianetnews.com/west-bengal/wb-cyclone-alerts-there-was-heavy-rain-and-storm-chances-several-parts-of-west-bengal-check-the-forecast-update-anbmp/photoshow-v6o4ito",
+"s": "Asianet News Bangla"
+}
+],
+"n": 20000
+},
+{
+"t": "sierra leone vs dr congo",
+"trafico": "500+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "TotalEnergies CAF AFCON 2027 Qualifiers: DR Congo extend perfect run as Guinea-Bissau and Zimbabwe held to draws",
+"u": "https://www.cafonline.com/afcon2025/news/totalenergies-caf-afcon-2027-qualifiers-dr-congo-extend-perfect-run-as-guinea-bissau-and-zimbabwe-held-to-draws/",
+"s": "CAFOnline.com"
+},
+{
+"t": "Poland vs Sweden Prediction, Betting Tips, Team News - 17 November 2026",
+"u": "https://insights.betfred.com/football/sierra-leone-v-congo-dr-prediction-leopards-can-stay-perfect-in-group-e/",
+"s": "Betfred Insights"
+},
+{
+"t": "CAN 2027: Without a point, Sierra Leone calls up Malachi Jones against the DRC",
+"u": "https://beninwebtv.com/en/can-2027-without-a-point-sierra-leone-calls-up-malachi-jones-against-the-drc/",
+"s": "beninwebtv.com"
+}
+],
+"n": 500
+},
+{
+"t": "togo vs algeria",
+"trafico": "500+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "Togo vs Algeria AFCON 2027 Qualifiers LIVE Streaming info — When, where to watch TOG v ALG?",
+"u": "https://sportstar.thehindu.com/football/togo-vs-algeria-afcon-2027-qualifiers-live-streaming-info-tog-v-alg-tv-channel-where-to-watch/article71712217.ece",
+"s": "Sportstar"
+},
+{
+"t": "The secret behind the exclusion: did Luca Zidane pay the price for his father's stance on the thorny issue?",
+"u": "https://www.goal.com/en/lists/the-secret-behind-the-exclusion-did-luca-zidane-pay-the-price-for-his-father-s-stance-on-the-thorny-issue/blt8e667515920b777a",
+"s": "Goal.com"
+},
+{
+"t": "Togo Football Chief Accuses Algeria of Neglecting Team at Airport",
+"u": "https://www.moroccoworldnews.com/2026/11/346651/togo-football-chief-accuses-algeria-of-neglecting-team-at-airport/",
+"s": "Morocco World News"
+}
+],
+"n": 500
+},
+{
+"t": "gambia vs côte d'ivoire",
+"trafico": "200+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "Gambia vs Ivory Coast AFCON 2027 Qualifiers LIVE Streaming info — When, where to watch GAM v CIV?",
+"u": "https://sportstar.thehindu.com/football/gambia-vs-ivory-coast-afcon-2027-qualifiers-live-streaming-info-gam-v-civ-tv-channel-where-to-watch/article71711741.ece",
+"s": "Sportstar"
+},
+{
+"t": "Ivory Coast release defender Emmanuel Agbadou due to injury",
+"u": "https://africasoccer.com/ivory-coast-release-defender-emmanuel-agbadou-ahead-of-gambia-return-clash/",
+"s": "AfricaSoccer.com"
+},
+{
+"t": "Liberia vs Cape Verde: First Half Spread",
+"u": "https://www.coinbase.com/en-mx/predictions/event/KXAFCON1HSPREAD-26NOV17LBRCPV",
+"s": "Coinbase"
+}
+],
+"n": 200
+},
+{
+"t": "fake silver foil sweets hyderabad",
+"trafico": "200+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "Hyderabad Police arrest four for using aluminium foil disguised as silver foil in sweets, paan and bakery products",
+"u": "https://www.thehindu.com/news/cities/Hyderabad/aluminium-foil-disguised-as-silver-foil-used-in-sweets-paan-and-bakery-products/article71711303.ece",
+"s": "The Hindu"
+},
+{
+"t": "Hyderabad Police Bust 4 Fake Silver Waraq Units in Charminar",
+"u": "https://www.deccanchronicle.com/southern-states/telangana/hyderabad-police-bust-4-fake-silver-waraq-units-in-charminar-2005219",
+"s": "Deccan Chronicle"
+},
+{
+"t": "Hyderabad police bust alleged fake silver waraq manufacturing racket",
+"u": "https://telanganatoday.com/hyderabad-police-bust-alleged-fake-silver-waraq-manufacturing-racket",
+"s": "Telangana Today"
+}
+],
+"n": 200
+},
+{
+"t": "ఆసియా కప్",
+"trafico": "500+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "ఫైనల్ తర్వాత హైవోల్టేజ్ డ్రామా.. పాక్ ప్లేయర్ల వెంట పడ్డ భారత ఆటగాళ్లు.. సెలబ్రేషన్స్ వీడియో వైరల్..!",
+"u": "https://telugu.samayam.com/sports/cricket/news/watch-india-players-aggressive-celebration-after-thrilling-last-over-win-vs-pak-in-u19-asia-cup-final/articleshow/135847440.cms",
+"s": "Samayam Telugu"
+},
+{
+"t": "పాకిస్తాన్‌ చేస్తే తప్పు లేదా?.. మాది తప్పుగా అనిపిస్తోందా?: భారత కెప్టెన్‌",
+"u": "https://www.sakshi.com/telugu-news/sports/people-should-see-how-pak-celebrated-ind-u19-captain-asia-cup-celebrations",
+"s": "Sakshi"
+},
+{
+"t": "IND vs PAK: ఎవర్రా మీరు ఇంత వైల్డ్‌గా ఉన్నారు.. కోచ్ చెప్పినా ఆగట్లేదుగా.. టీమిండియానా మజాకా!",
+"u": "https://telugu.news18.com/news/sports/u19-asia-cup-final-ind-vs-pak-team-indian-player-aggressive-celebrations-in-front-of-pakistan-players-after-victory-arv-3266626.html",
+"s": "News18 Telugu"
+}
+],
+"n": 500
+},
+{
+"t": "தமிழக முதல்வர்",
+"trafico": "200+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "சோனியா காந்தி சுயசரிதை வெளியீடு நிகழ்வில் விஜய் பங்கேற்பு",
+"u": "https://www.bbc.com/tamil/watch/cm98xl71l55zo",
+"s": "BBC"
+},
+{
+"t": "முதல்வர் விஜய்யுடன் ஒரேயொரு படம்; பணிப்பெண்ணுக்காக பிரியங்கா வைத்த கோரிக்கை!",
+"u": "https://www.dinamani.com/tamilnadu/2026/Nov/17/just-one-film-with-chief-minister-vijay-priyankas-request-on-behalf-of-her-domestic-help",
+"s": "DinaMani"
+},
+{
+"t": "ராகுல் அருகே விஜய்- பின் வரிசைக்கு தள்ளப்பட்ட கர்நாடக முதல்வர்",
+"u": "https://www.nakkheeran.in/24-by-7-news/vijay-beside-rahul-karnataka-chief-minister-pushed-to-the-back-row-12814818",
+"s": "Nakkheeran"
+}
+],
+"n": 200
+},
+{
+"t": "मुद्रास्फीति",
+"trafico": "200+",
+"fecha": "2026-11-17T15:50+01:00",
+"noticias": [
+{
+"t": "इटली की मुद्रास्फीति अक्टूबर में ऊर्जा लागत के कारण 5.5% तक पहुंची",
+"u": "https://hi.investing.com/news/economic-indicators/article-93CH-769085",
+"s": "Investing.com भारत"
+},
+{
+"t": "इटली की मुद्रास्फीति दर अक्टूबर में बढ़कर 5.5 प्रतिशत हुई",
+"u": "https://qna.org.qa/hi-IN/News-Area/News/2026-11/17/0041-%E0%A4%87%E0%A4%9F%E0%A4%B2-%E0%A4%95-%E0%A4%AE%E0%A4%A6%E0%A4%B0%E0%A4%B8%E0%A4%AB%E0%A4%A4-%E0%A4%A6%E0%A4%B0-%E0%A4%85%E0%A4%95%E0%A4%9F%E0%A4%AC%E0%A4%B0-%E0%A4%AE-%E0%A4%AC%E0%A4%A2%E0%A4%95%E0%A4%B0-55-%E0%A4%AA%E0%A4%B0%E0%A4%A4%E0%A4%B6%E0%A4%A4-%E0%A4%B9%E0%A4%88",
+"s": "Qatar news agency"
+},
+{
+"t": "साल के अंत के दबावों के बीच मुद्रास्फीति को नियंत्रित करना।",
+"u": "https://www.vietnam.vn/hi/kiem-soat-lam-phat-truoc-nhung-ap-luc-cuoi-nam",
+"s": "Vietnam.vn"
+}
+],
+"n": 200
+},
+{
+"t": "aaj ka राशिफल",
+"trafico": "200+",
+"fecha": "2026-11-17T15:50+01:00",
+"noticias": [
+{
+"t": "Aaj ka Love Rashifal 17 November 2026: वृश्चिक राशि वालों पर चढ़ेगा प्यार का रंग, जानें अन्य राशियों का हाल",
+"u": "https://www.aajtak.in/religion/rashiphal/story/love-horoscope-today-17-november-2026-aaj-ka-love-rashifal-all-zodiac-signs-predictions-in-hindi-dskc-2697849-2026-11-17",
+"s": "AajTak"
+},
+{
+"t": "मंगलवार को इन 4 राशियों को मिल सकता है भाग्य का साथ, कारोबार में मुनाफे से प्रमोशन तक खुशखबरियां, ये हैं कल",
+"u": "https://www.indiatv.in/rashifal/17-november-2026-mangalwar-lucky-rashi-tuesday-will-be-special-day-for-these-4-zodiac-signs-kal-ki-bhagyashli-rashiyan-2026-11-16-1254725",
+"s": "India TV Hindi"
+},
+{
+"t": "Aaj Ka Makar Rashifal 17 November 2026: बिजनेस में होगा अच्छा मुनाफा, रचनात्मक कार्यों में बढ़ेगी रुचि",
+"u": "https://www.abplive.com/lifestyle/religion/makar-rashifal-aaj-ka-17-november-2026-pandit-suresh-shrimali-live-update-3215698",
+"s": "ABP News"
+}
+],
+"n": 200
+}
+]
+},
+"JP": {
+"geo": "JP",
+"url": "https://trends.google.com/trending/rss?geo=JP",
+"ok": true,
+"items": [
+{
+"t": "本田圭佑",
+"trafico": "100+",
+"fecha": "2026-11-17T16:30+01:00",
+"noticias": [],
+"n": 100
+},
+{
+"t": "日本代表 次の監督",
+"trafico": "1000+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "11.14 前田 大然(日本代表)& ガブリエウ(ブラジル代表) 日本1点目のハンド疑惑 よく見ると...? | みずほブルーチャレンジ2026",
+"u": "https://abema.tv/video/episode/416-1_s10_p1319",
+"s": "ABEMA"
+},
+{
+"t": "ブラジルに再び勝った森保ジャパン、なぜ監督を交代させなければならないのか",
+"u": "https://jbpress.ismedia.jp/articles/-/98050",
+"s": "JBpress"
+},
+{
+"t": "「森保監督、釈明させてください！」ブラジル戦後の舞台裏、敵FWヴィニシウスとの“やり取り”をよりによって目撃されてしまい…",
+"u": "https://article.auone.jp/62600079-d696-40c7-816e-b1e980c7cdd5",
+"s": "au Webポータル"
+}
+],
+"n": 1000
+},
+{
+"t": "gta 6",
+"trafico": "100+",
+"fecha": "2026-11-17T16:20+01:00",
+"noticias": [
+{
+"t": "GTA 6: How one school is battling the 'GTA flu' with warnings to parents and prizes for pupils",
+"u": "https://www.bbc.com/news/articles/crp3e10kpz19o",
+"s": "BBC"
+},
+{
+"t": "GTA 6 could make gaming history. Its mature rating should give parents pause.",
+"u": "https://www.yahoo.com/entertainment/article/gta-6-could-make-gaming-history-its-mature-rating-should-give-parents-pause-175742822.html",
+"s": "Yahoo"
+},
+{
+"t": "UK Conservative leader Kemi Badenoch is more worried \"about the amount of time\" people will spend on GTA 6 than the game's violent content",
+"u": "https://www.eurogamer.net/uk-conservative-kemi-badenoch-gta-6",
+"s": "Eurogamer.net"
+}
+],
+"n": 100
+},
+{
+"t": "久保建英",
+"trafico": "5000+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [],
+"n": 5000
+},
+{
+"t": "アジアカップ サッカー",
+"trafico": "200+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "「日本はブラジルを破り、韓国はサウジに足をすくわれた」21年ぶりの敗戦に韓国メディア嘆き…森保ジャパンとの差に悲観「別れが近づいている」「問題の先が見えない」（CoCoKARAnext）",
+"u": "https://news.yahoo.co.jp/articles/5202e997faf076698c66b11712bac93d9a920ab2",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "［サッカー］韓国代表の黄仁範「暫定監督体制は代表チームにプラスにならない」",
+"u": "https://japanese.joins.com/JArticle/357768",
+"s": "中央日報"
+},
+{
+"t": "森保J、王国ブラジルに２度目の勝利「ますます広がる両国のサッカー格差」韓国メディア落胆「黄金期を迎えた日本にさらに後れを取る」",
+"u": "https://article.auone.jp/89f7b0f2-446d-4f4a-8b4a-bf2005e89aad",
+"s": "au Webポータル"
+}
+],
+"n": 200
+},
+{
+"t": "内村有希容疑者",
+"trafico": "2000+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "吹奏楽部コーチを\"不同意性交\"容疑で逮捕 生徒が寝ている部屋に侵入し犯行 県内外の学校で指導 熊本",
+"u": "https://newsdig.tbs.co.jp/articles/rkk/3092890?page=2",
+"s": "TBS NEWS DIG"
+},
+{
+"t": "吹奏楽部コーチを\"不同意性交\"容疑で逮捕 生徒が寝ている部屋に侵入し犯行 県内外の学校で指導 熊本",
+"u": "https://article.auone.jp/feda9587-5ed3-40bd-84ba-c008044aa826",
+"s": "au Webポータル"
+},
+{
+"t": "吹奏楽部コーチを\"不同意性交\"容疑で逮捕 生徒が寝ている部屋に侵入し犯行 県内外の学校で指導 熊本",
+"u": "https://newsdig.tbs.co.jp/articles/rkk/3092890?page=3",
+"s": "TBS NEWS DIG"
+}
+],
+"n": 2000
+},
+{
+"t": "jal ブラックフライデー",
+"trafico": "500+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "クラコン会員限定！限定クーポンで最大50,000円割引も！ブラックフライデーセール開催中☆さらにeJALポイントもプレゼント！",
+"u": "https://www.consadole-sapporo.jp/news/2026/11/16009/",
+"s": "北海道コンサドーレ札幌オフィシャルサイト"
+},
+{
+"t": "ジェットスター、国内18路線・海外13路線すべてが対象のブラックフライデーセール。片道3696円から（トラベル Watch）",
+"u": "https://news.yahoo.co.jp/articles/bffebf9b92aa7686af3e19588e5cde2a2b2adfc5",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "特別企画「ANA BLACK FRIDAY」開催 〜あなたの旅を、もっと特別に〜｜プレスリリース",
+"u": "https://www.anahd.co.jp/group/pr/202611/20261116-2.html",
+"s": "ANA"
+}
+],
+"n": 500
+},
+{
+"t": "冨安健洋",
+"trafico": "200+",
+"fecha": "2026-11-17T16:10+01:00",
+"noticias": [
+{
+"t": "鎌田と冨安所属のクリスタルパレスがトーマス・フランク新監督の就任を発表（スポニチアネックス）",
+"u": "https://news.yahoo.co.jp/articles/310c2346b86cddc0dcb21e4fb9ebc786209cc2f5",
+"s": "Yahoo!ニュース"
+},
+{
+"t": "鎌田大地と冨安健洋が所属のクリスタルパレス新監督に53歳フランク氏が就任",
+"u": "https://www.nikkansports.com/soccer/world/news/202611170000274.html",
+"s": "日刊スポーツ"
+},
+{
+"t": "「倍増だと？」古巣の会長激怒！ クリスタル・パレスを追われたフランス人指揮官の“図太い要求”「戻ってきても険悪になっていた」",
+"u": "https://article.auone.jp/a33fceed-4dab-43c1-b5a1-2be28057fd7d",
+"s": "au Webポータル"
+}
+],
+"n": 200
+},
+{
+"t": "神村学園",
+"trafico": "200+",
+"fecha": "2026-11-17T16:00+01:00",
+"noticias": [
+{
+"t": "高校サッカー選手権は「死の組」なしか 流経大柏、静岡学園、神村学園など群雄割拠",
+"u": "https://sports.yahoo.co.jp/column/detail/2026111700003-spnavi?p=2",
+"s": "スポーツナビ"
+},
+{
+"t": "組み合わせ決定及びチケット販売概要のお知らせ 第105回全国高等学校サッカー選手権大会",
+"u": "https://www.jfa.jp/news/00037038/",
+"s": "JFA"
+},
+{
+"t": "神奈川代表の日大藤沢、１回戦は初出場の生駒 主将中村「粘り強い戦いを」 全国高校サッカー",
+"u": "https://www.kanaloco.jp/sports/soccer/article-1321068.html",
+"s": "カナロコ"
+}
+],
+"n": 200
+},
+{
+"t": "google play",
+"trafico": "200+",
+"fecha": "2026-11-17T16:00+01:00",
+"noticias": [
+{
+"t": "メルカリ、Google Play ストアでアプリが検索・ダウンロードできない状態に",
+"u": "https://www.itmedia.co.jp/news/article/2611/17/2000003274/",
+"s": "ITmedia"
+},
+{
+"t": "メルカリAndroid版がGoogle Playストアから消える不具合発生",
+"u": "https://x.com/i/trending/2122625800591540541",
+"s": "X"
+},
+{
+"t": "メルカリ、Android版がPlayストアから消える不具合 新規ダウンロード不可に、削除しないよう呼びかけ",
+"u": "https://0115765.com/archives/214256",
+"s": "オタク総研"
+}
+],
+"n": 200
+}
+]
+}
+},
+"wikipedia": {
+"es": {
+"lang": "es",
+"ok": true,
+"items": [
+{
+"t": "Miguel Ángel Félix Gallardo",
+"v": 54912,
+"movil": 0.9,
+"u": "https://es.wikipedia.org/wiki/Miguel_Ángel_Félix_Gallardo"
+},
+{
+"t": "Robert Pattinson",
+"v": 41876,
+"movil": 0.83,
+"u": "https://es.wikipedia.org/wiki/Robert_Pattinson"
+},
+{
+"t": "León XIV",
+"v": 27331,
+"movil": 0.82,
+"u": "https://es.wikipedia.org/wiki/León_XIV"
+},
+{
+"t": "Isabel de Baviera",
+"v": 25073,
+"movil": 0.91,
+"u": "https://es.wikipedia.org/wiki/Isabel_de_Baviera"
+},
+{
+"t": "Luis Lorenzo Crespo",
+"v": 21399,
+"movil": 0.91,
+"u": "https://es.wikipedia.org/wiki/Luis_Lorenzo_Crespo"
+},
+{
+"t": "Jordi Wild",
+"v": 18986,
+"movil": 0.88,
+"u": "https://es.wikipedia.org/wiki/Jordi_Wild"
+},
+{
+"t": "Francisco José I de Austria",
+"v": 16397,
+"movil": 0.91,
+"u": "https://es.wikipedia.org/wiki/Francisco_José_I_de_Austria"
+},
+{
+"t": "Maximiliano de México",
+"v": 14433,
+"movil": 0.94,
+"u": "https://es.wikipedia.org/wiki/Maximiliano_de_México"
+},
+{
+"t": "Ronaldinho",
+"v": 14187,
+"movil": 0.88,
+"u": "https://es.wikipedia.org/wiki/Ronaldinho"
+},
+{
+"t": "Frente Amplio (España)",
+"v": 13277,
+"movil": 0.79,
+"u": "https://es.wikipedia.org/wiki/Frente_Amplio_(España)"
+},
+{
+"t": "Santiago Abascal",
+"v": 13209,
+"movil": 0.87,
+"u": "https://es.wikipedia.org/wiki/Santiago_Abascal"
+},
+{
+"t": "Milagros Tolón",
+"v": 11934,
+"movil": 0.92,
+"u": "https://es.wikipedia.org/wiki/Milagros_Tolón"
+},
+{
+"t": "Isabel Medina Peralta",
+"v": 11773,
+"movil": 0.86,
+"u": "https://es.wikipedia.org/wiki/Isabel_Medina_Peralta"
+},
+{
+"t": "Toribio de Mogrovejo",
+"v": 11396,
+"movil": 0.84,
+"u": "https://es.wikipedia.org/wiki/Toribio_de_Mogrovejo"
+},
+{
+"t": "Liga de Naciones de la UEFA 2026-27",
+"v": 11382,
+"movil": 0.67,
+"u": "https://es.wikipedia.org/wiki/Liga_de_Naciones_de_la_UEFA_2026-27"
+},
+{
+"t": "Liga de Naciones de la UEFA",
+"v": 11322,
+"movil": 0.73,
+"u": "https://es.wikipedia.org/wiki/Liga_de_Naciones_de_la_UEFA"
+},
+{
+"t": "Antonio de Nigris",
+"v": 10623,
+"movil": 0.97,
+"u": "https://es.wikipedia.org/wiki/Antonio_de_Nigris"
+},
+{
+"t": "Elecciones generales de España de 2026",
+"v": 10531,
+"movil": 0.69,
+"u": "https://es.wikipedia.org/wiki/Elecciones_generales_de_España_de_2026"
+},
+{
+"t": "Pedro Sánchez",
+"v": 10171,
+"movil": 0.82,
+"u": "https://es.wikipedia.org/wiki/Pedro_Sánchez"
+},
+{
+"t": "Toma del Palacio de Justicia",
+"v": 10154,
+"movil": 0.93,
+"u": "https://es.wikipedia.org/wiki/Toma_del_Palacio_de_Justicia"
+},
+{
+"t": "Rafael Caro Quintero",
+"v": 9055,
+"movil": 0.91,
+"u": "https://es.wikipedia.org/wiki/Rafael_Caro_Quintero"
+},
+{
+"t": "Ho Chi Minh",
+"v": 8958,
+"movil": 0.79,
+"u": "https://es.wikipedia.org/wiki/Ho_Chi_Minh"
+},
+{
+"t": "Liga1 2026 (Perú)",
+"v": 8711,
+"movil": 0.64,
+"u": "https://es.wikipedia.org/wiki/Liga1_2026_(Perú)"
+},
+{
+"t": "Francisco (papa)",
+"v": 8596,
+"movil": 0.81,
+"u": "https://es.wikipedia.org/wiki/Francisco_(papa)"
+},
+{
+"t": "Enrique Camarena Salazar",
+"v": 8380,
+"movil": 0.87,
+"u": "https://es.wikipedia.org/wiki/Enrique_Camarena_Salazar"
+}
+],
+"descartados_bots": [],
+"dia": "2026-11-16",
+"url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/es.wikipedia/all-access/2026/11/16"
+},
+"en": {
+"lang": "en",
+"ok": true,
+"items": [
+{
+"t": "Robert Pattinson",
+"v": 1363657,
+"movil": 0.73,
+"u": "https://en.wikipedia.org/wiki/Robert_Pattinson"
+},
+{
+"t": "Ramayana: Part 1",
+"v": 551941,
+"movil": 0.88,
+"u": "https://en.wikipedia.org/wiki/Ramayana:_Part_1"
+},
+{
+"t": "Archive of Our Own",
+"v": 463687,
+"movil": 0.84,
+"u": "https://en.wikipedia.org/wiki/Archive_of_Our_Own"
+},
+{
+"t": "Suki Waterhouse",
+"v": 378948,
+"movil": 0.79,
+"u": "https://en.wikipedia.org/wiki/Suki_Waterhouse"
+},
+{
+"t": "List of highest-grossing Indian films",
+"v": 206909,
+"movil": 0.86,
+"u": "https://en.wikipedia.org/wiki/List_of_highest-grossing_Indian_films"
+},
+{
+"t": "Robert Pattinson filmography",
+"v": 191139,
+"movil": 0.7,
+"u": "https://en.wikipedia.org/wiki/Robert_Pattinson_filmography"
+},
+{
+"t": "Saturn Devouring His Son",
+"v": 176155,
+"movil": 0.74,
+"u": "https://en.wikipedia.org/wiki/Saturn_Devouring_His_Son"
+},
+{
+"t": "Jensen Huang",
+"v": 162987,
+"movil": 0.61,
+"u": "https://en.wikipedia.org/wiki/Jensen_Huang"
+},
+{
+"t": ".xxx",
+"v": 153348,
+"movil": 0.98,
+"u": "https://en.wikipedia.org/wiki/.xxx"
+},
+{
+"t": "The Body (TV series)",
+"v": 136145,
+"movil": 0.8,
+"u": "https://en.wikipedia.org/wiki/The_Body_(TV_series)"
+},
+{
+"t": "Deaths in 2026",
+"v": 134818,
+"movil": 0.46,
+"u": "https://en.wikipedia.org/wiki/Deaths_in_2026"
+},
+{
+"t": "Mordechai Vanunu",
+"v": 132656,
+"movil": 0.86,
+"u": "https://en.wikipedia.org/wiki/Mordechai_Vanunu"
+},
+{
+"t": "Russell Brand",
+"v": 127981,
+"movil": 0.76,
+"u": "https://en.wikipedia.org/wiki/Russell_Brand"
+},
+{
+"t": "Sharad Kapoor",
+"v": 118510,
+"movil": 0.92,
+"u": "https://en.wikipedia.org/wiki/Sharad_Kapoor"
+},
+{
+"t": "Daniel Craig",
+"v": 107838,
+"movil": 0.67,
+"u": "https://en.wikipedia.org/wiki/Daniel_Craig"
+},
+{
+"t": "List of James Bond films",
+"v": 106736,
+"movil": 0.65,
+"u": "https://en.wikipedia.org/wiki/List_of_James_Bond_films"
+},
+{
+"t": "Grand Theft Auto VI",
+"v": 106689,
+"movil": 0.62,
+"u": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI"
+},
+{
+"t": "Sean Duffy",
+"v": 102558,
+"movil": 0.72,
+"u": "https://en.wikipedia.org/wiki/Sean_Duffy"
+},
+{
+"t": "2026–27 UEFA Nations League",
+"v": 100581,
+"movil": 0.55,
+"u": "https://en.wikipedia.org/wiki/2026–27_UEFA_Nations_League"
+},
+{
+"t": "John Malkovich",
+"v": 93805,
+"movil": 0.82,
+"u": "https://en.wikipedia.org/wiki/John_Malkovich"
+},
+{
+"t": "Jeff Bezos",
+"v": 92773,
+"movil": 0.66,
+"u": "https://en.wikipedia.org/wiki/Jeff_Bezos"
+},
+{
+"t": "69th Annual Grammy Awards",
+"v": 92752,
+"movil": 0.62,
+"u": "https://en.wikipedia.org/wiki/69th_Annual_Grammy_Awards"
+},
+{
+"t": "Ebenezer (2026 film)",
+"v": 87439,
+"movil": 0.7,
+"u": "https://en.wikipedia.org/wiki/Ebenezer_(2026_film)"
+},
+{
+"t": "Elizabeth Holmes",
+"v": 84504,
+"movil": 0.77,
+"u": "https://en.wikipedia.org/wiki/Elizabeth_Holmes"
+},
+{
+"t": "Palestine national football team",
+"v": 83074,
+"movil": 0.17,
+"u": "https://en.wikipedia.org/wiki/Palestine_national_football_team"
+}
+],
+"descartados_bots": [],
+"dia": "2026-11-16",
+"url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/2026/11/16"
+}
+}
+}
